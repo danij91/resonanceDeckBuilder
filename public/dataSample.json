@@ -1,0 +1,260 @@
+{
+  "keepCardNum": 0,
+  "roleList": [10000072, 10000352, 10000389, 10000071, 10000031],
+  "otherCard": 0,
+  "cardList": [
+    {
+      "targetType": 0,
+      "id": "10600367",
+      "useParam": -1,
+      "useType": 1,
+      "skillId": 12301615,
+      "ownerId": 10000031
+    },
+    {
+      "useParamMap": [],
+      "targetType": 0,
+      "id": "10600262",
+      "useParam": -1,
+      "useType": 1,
+      "ownerId": 10000031,
+      "skillId": 12300420,
+      "equipIdList": []
+    },
+    {
+      "targetType": 0,
+      "id": "10600279",
+      "useParam": -1,
+      "useType": 1,
+      "ownerId": 10000071,
+      "skillId": "12300177",
+      "skillIndex": 1
+    },
+    {
+      "targetType": 0,
+      "id": "10600351",
+      "useParam": -1,
+      "useType": 1,
+      "skillId": 12301494,
+      "ownerId": 10000072
+    },
+    {
+      "targetType": 0,
+      "id": "10600189",
+      "useParam": -1,
+      "useType": 1,
+      "skillId": 12300331,
+      "ownerId": 10000389
+    },
+    {
+      "targetType": 0,
+      "id": "10600353",
+      "useParam": -1,
+      "useType": 1,
+      "ownerId": 10000072,
+      "skillId": "12300035",
+      "skillIndex": 3
+    },
+    {
+      "targetType": 0,
+      "id": "10600350",
+      "useParam": -1,
+      "useType": 1,
+      "skillId": 12301493,
+      "ownerId": 10000072
+    },
+    {
+      "targetType": 0,
+      "id": "10600293",
+      "useParam": -1,
+      "useType": 1,
+      "ownerId": 10000031,
+      "skillId": "12300055",
+      "skillIndex": 1
+    },
+    {
+      "targetType": 0,
+      "id": "10600188",
+      "useParam": -1,
+      "useType": 1,
+      "skillId": 12300330,
+      "ownerId": 10000389
+    },
+    {
+      "equipIdList": [],
+      "targetType": 0,
+      "id": "10600224",
+      "useParam": -1,
+      "ownerId": 10000352,
+      "useType": 1,
+      "skillId": "12300667",
+      "skillIndex": 2
+    },
+    {
+      "targetType": 0,
+      "id": "10600190",
+      "useParam": -1,
+      "useType": 1,
+      "ownerId": 10000389,
+      "skillId": "12300297",
+      "skillIndex": 2
+    },
+    {
+      "targetType": 0,
+      "id": "10600294",
+      "useParam": -1,
+      "useType": 1,
+      "ownerId": 10000031,
+      "skillId": "12300072",
+      "skillIndex": 3
+    },
+    {
+      "targetType": 0,
+      "id": "10600280",
+      "useParam": -1,
+      "useType": 1,
+      "ownerId": 10000071,
+      "skillId": "12300194",
+      "skillIndex": 3
+    },
+    {
+      "equipIdList": [],
+      "targetType": 0,
+      "id": "10600226",
+      "useParam": -1,
+      "ownerId": 10000352,
+      "useType": 1,
+      "skillId": "12300417",
+      "skillIndex": 1
+    },
+    {
+      "equipIdList": [],
+      "targetType": 0,
+      "id": "10600223",
+      "useParam": -1,
+      "ownerId": 10000352,
+      "useType": 1,
+      "skillId": "12300419",
+      "skillIndex": 3
+    },
+    {
+      "targetType": 0,
+      "id": "10600172",
+      "useParam": -1,
+      "useType": 1,
+      "ownerId": 10000389,
+      "skillId": "12300060",
+      "skillIndex": 1
+    },
+    {
+      "targetType": 0,
+      "id": "10600349",
+      "useParam": -1,
+      "useType": 1,
+      "skillId": 12301492,
+      "ownerId": 10000072
+    },
+    {
+      "targetType": 0,
+      "id": "10600284",
+      "useParam": -1,
+      "useType": 1,
+      "ownerId": 10000031,
+      "skillId": "12300056",
+      "skillIndex": 2
+    },
+    {
+      "targetType": 0,
+      "id": "10600192",
+      "useParam": -1,
+      "useType": 1,
+      "skillId": 12300617,
+      "ownerId": 10000031
+    },
+    {
+      "targetType": 0,
+      "id": "10600295",
+      "useParam": -1,
+      "useType": 1,
+      "ownerId": 10000072,
+      "skillId": "12300033",
+      "skillIndex": 1
+    },
+    {
+      "targetType": 0,
+      "id": "10600258",
+      "useParam": -1,
+      "useType": 1,
+      "ownerId": 10000389,
+      "skillId": "12300147",
+      "skillIndex": 3
+    },
+    {
+      "useParamMap": {
+        "3": 5
+      },
+      "targetType": 0,
+      "id": "10600352",
+      "useParam": -1,
+      "useType": 2,
+      "skillId": 12301488,
+      "ownerId": 10000072
+    },
+    {
+      "useParamMap": {
+        "3": 0
+      },
+      "targetType": 0,
+      "id": "10600113",
+      "useParam": -1,
+      "useType": 2,
+      "ownerId": 10000071,
+      "skillId": "12300115",
+      "skillIndex": 2
+    },
+    {
+      "useParamMap": {
+        "3": 0
+      },
+      "targetType": 0,
+      "id": "10600296",
+      "useParam": -1,
+      "useType": 2,
+      "ownerId": 10000072,
+      "skillId": "12300034",
+      "skillIndex": 2
+    }
+  ],
+  "header": 10000072,
+  "discardType": 1,
+  "cardIdMap": {
+    "10600188": 1,
+    "10600277": 0,
+    "10600113": 1,
+    "10600192": 1,
+    "10600279": 1,
+    "10600367": 1,
+    "10600284": 1,
+    "10600293": 1,
+    "10600280": 1,
+    "10600189": 1,
+    "10600223": 1,
+    "10600294": 1,
+    "10600351": 1,
+    "10600226": 1,
+    "10600350": 1,
+    "10600262": 3,
+    "10600352": 1,
+    "10600172": 1,
+    "10600296": 1,
+    "10600224": 1,
+    "10600190": 1,
+    "10600295": 1,
+    "10600353": 1,
+    "10600258": 1,
+    "10600349": 1
+  },
+  "isSpCardOn": false,
+  "isLeaderCardOn": false
+}
+
