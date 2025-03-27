@@ -1,0 +1,1146 @@
+{
+    "eq00001": {
+        "id": "eq00001",
+        "name": "eqmt_name_eq00001",
+        "url": "https://patchwiki.biligame.com/images/resonance/8/82/fsgbawbdejfqb0r5eeaadi676lyr53c.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00001",
+        "type": "acc"
+    },
+    "eq00002": {
+        "id": "eq00002",
+        "name": "eqmt_name_eq00002",
+        "url": "https://patchwiki.biligame.com/images/resonance/thumb/e/ee/fq0fep0m7gviwrodzkw2e9ob2vagiyx.png/180px-%E4%BC%AA%E7%A5%9E%E4%BD%8E%E8%AF%AD.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00002",
+        "type": "acc"
+    },
+    "eq00003": {
+        "id": "eq00003",
+        "name": "eqmt_name_eq00003",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjE4/MDAxNzM5MDAzMDQ4Njgy.wz7wbNvBL8FzGmZ0CaW7NjxuJNylruigHENvgj0SCmUg.w7WhK-CicD2skUmH2howWXyhm77yVYMs7LoJrzg0eIsg.PNG/%E7%A9%BA%E9%97%B4%E5%88%87%E7%BA%BF.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00003",
+        "type": "weapon"
+    },
+    "eq00004": {
+        "id": "eq00004",
+        "name": "eqmt_name_eq00004",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMjFfMzgg/MDAxNzQwMTIyODkyNTk0.7cZ-1k0660HUNXfW0ZlAkcRVkeK-kJJEct9fPJIeWPMg.PHJb6HlnE8V9WHixG27J0dMoL_U2mEwrOtvY6JEAQ4wg.PNG/%E9%94%99%E5%B3%B0%E5%87%BA%E8%A1%8C.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00004",
+        "type": "armor"
+    },
+    "eq00005": {
+        "id": "eq00005",
+        "name": "eqmt_name_eq00005",
+        "url": "https://patchwiki.biligame.com/images/resonance/thumb/0/03/a4chummn0r5oq3g7juvkkf4cb5r6z4o.png/180px-%E9%B9%85%E5%88%B6%E5%8F%91%E5%B0%84%E5%99%A8.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00005",
+        "type": "weapon"
+    },
+    "eq00006": {
+        "id": "eq00006",
+        "name": "eqmt_name_eq00006",
+        "url": "https://patchwiki.biligame.com/images/resonance/0/04/elis0i72m658wfs4vvej2u0ur0k1ylo.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00006",
+        "type": "weapon"
+    },
+    "eq00007": {
+        "id": "eq00007",
+        "name": "eqmt_name_eq00007",
+        "url": "https://patchwiki.biligame.com/images/resonance/e/ed/aqtq93lbvwji00ccc7zp64b11wt2gy1.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00007",
+        "type": "acc"
+    },
+    "eq00008": {
+        "id": "eq00008",
+        "name": "eqmt_name_eq00008",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfMjIz/MDAxNzM4OTIzMjM2NTg0.NzRpAMELBOXCc96NVGiyggwez6IpwcgMT1LzDRe6Zjkg.BqqEFF3tDTjnfpqrFpV8uwMZMQ7W1DLV6woFxspIIJ4g.PNG/%E9%9D%A1%E8%8D%89%E9%BE%99%E9%9B%80.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00008",
+        "type": "weapon"
+    },
+    "eq00009": {
+        "id": "eq00009",
+        "name": "eqmt_name_eq00009",
+        "url": "https://patchwiki.biligame.com/images/resonance/3/32/1wfa0a62uu5euofd33o16bnhgwvtjiz.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00009",
+        "type": "armor"
+    },
+    "eq00010": {
+        "id": "eq00010",
+        "name": "eqmt_name_eq00010",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfNDMg/MDAxNzM5MDAyOTU2Nzc0.XDEDnsLuoyIgP5AZIEGtcrksCijMbNlIJFePndDqgz8g.R_PygI1zBKktB_BChmqafrFd3ex-hKtfzXgokAkFilAg.PNG/%E6%94%BE%E9%80%90%E4%BB%A3%E7%A0%81.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00010",
+        "type": "weapon"
+    },
+    "eq00011": {
+        "id": "eq00011",
+        "name": "eqmt_name_eq00011",
+        "url": "https://patchwiki.biligame.com/images/resonance/c/c7/1p192n7rlcfijz2e77mrnfqdzl4b9vr.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00011",
+        "type": "acc"
+    },
+    "eq00012": {
+        "id": "eq00012",
+        "name": "eqmt_name_eq00012",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfOTEg/MDAxNzM4OTk1MTI5OTE4.6t2vB2VcZ8da-rZjLkQy7DXcwpYP56bPK_aoOaUxMiog.PFDXeMH7GWdNZRgNkhoEA_BwJomI2nXmUmu0o3ZhnIIg.PNG/%CE%B2%E4%B8%96%E7%95%8C%E7%BA%BF%E4%B9%8B%E7%9B%92.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00012",
+        "type": "acc"
+    },
+    "eq00013": {
+        "id": "eq00013",
+        "name": "eqmt_name_eq00013",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTQ3/MDAxNzM5MDA2MjI4NjYw.QmbCwftxCRjUyqaJdtftuEVYrOt94WVC_YSsYsf5KL4g.4jwKwbii_OJlcDhHcFSgnpvFDvvZvYHOvPFlrZV7F7Yg.PNG/%E5%AF%BB%E5%AE%9D%E6%9E%AA.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00013",
+        "type": "weapon"
+    },
+    "eq00014": {
+        "id": "eq00014",
+        "name": "eqmt_name_eq00014",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMjFfMyAg/MDAxNzQwMTIzMTg2MjU1.CtEizWZlK4VIC3Qc8ko8mwM38_nhOWM1BLKnwzTcM8Ag.nxJsOqYxa0Bjq7UJkFDOmWMA4_rG2ek7kawEuw_46pIg.PNG/%E6%96%AD%E5%89%91%E4%B9%8B%E7%81%AB.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00014",
+        "type": "weapon"
+    },
+    "eq00015": {
+        "id": "eq00015",
+        "name": "eqmt_name_eq00015",
+        "url": "https://patchwiki.biligame.com/images/resonance/c/c2/7d3r94iruwid406wsevid46naxo05ou.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00015",
+        "type": "weapon"
+    },
+    "eq00016": {
+        "id": "eq00016",
+        "name": "eqmt_name_eq00016",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMTJfMTIx/MDAxNzM5MzQyNDk5NjQ2.JBS8g3BAH9pBv2Dcv1-fEYXwbgMhPJP68NL3VMHMbQQg.eoelw2BaGs0zHQQdF-75efiUkoIAQ5kFW2gJXHkho5Ig.PNG/%E5%A5%94%E9%9B%B7%E7%A0%B4%E5%BD%B1%E5%89%91.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00016",
+        "type": "weapon"
+    },
+    "eq00017": {
+        "id": "eq00017",
+        "name": "eqmt_name_eq00017",
+        "url": "https://patchwiki.biligame.com/images/resonance/7/72/0fwpj0d3zu8x9kxyaolkyj6f6x69lgw.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00017",
+        "type": "armor"
+    },
+    "eq00018": {
+        "id": "eq00018",
+        "name": "eqmt_name_eq00018",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTU2/MDAxNzM5MDA2NDUwOTMy.yEg8KsxU5c9HcHUQFncc_l5KVSwsK9Njs3kuu2Mznkkg.SjLF_7ENQ8r_G0uVcuqTOEW6YtsJKXW_CIri65NZUhYg.PNG/%E4%BB%99%E4%BA%BA%E6%8E%8C%E6%9D%BF%E7%94%B2.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00018",
+        "type": "armor"
+    },
+    "eq00019": {
+        "id": "eq00019",
+        "name": "eqmt_name_eq00019",
+        "url": "https://patchwiki.biligame.com/images/resonance/thumb/2/21/q8pwtms9cy3cyy3oinlvfcltx60c6ye.png/180px-%E4%B8%96%E7%95%8C%E5%9B%A2%E7%BB%93.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00019",
+        "type": "weapon"
+    },
+    "eq00020": {
+        "id": "eq00020",
+        "name": "eqmt_name_eq00020",
+        "url": "https://patchwiki.biligame.com/images/resonance/5/5c/9f6rog2fsu4psvalntk8ptbd3wgr16u.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00020",
+        "type": "acc"
+    },
+    "eq00021": {
+        "id": "eq00021",
+        "name": "eqmt_name_eq00021",
+        "url": "https://patchwiki.biligame.com/images/resonance/7/7f/b8gsk7fr8a023mh1w1rtovcsju20q6n.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00021",
+        "type": "acc"
+    },
+    "eq00022": {
+        "id": "eq00022",
+        "name": "eqmt_name_eq00022",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfNTUg/MDAxNzM4OTIzMzkyNzQz.rXpwr27wk-19qbX4Nu5pd6uLWFQ0I2rBNssHgbiFfssg.QEnMnOx3hfZ-F-KOpYKK5LgITx5VBfCgCH9oXxIv7tIg.PNG/%E6%9C%88%E8%90%BD%E7%BA%A2%E4%BA%91%E5%AE%9D%E7%8E%BA.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00022",
+        "type": "acc"
+    },
+    "eq00023": {
+        "id": "eq00023",
+        "name": "eqmt_name_eq00023",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMTJfNTUg/MDAxNzM5MzQyNjU4NTQ5.3RMMR1ulJTvExrEXYzDAbKhphUTsejHH0vR8tSumxFwg.wbjY1CV7dhOYogs3NZH7mknDuE8hlncjAfGHz4gprkEg.PNG/%E5%A4%96%E7%95%8C%E6%98%9F%E8%BE%B0.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00023",
+        "type": "weapon"
+    },
+    "eq00024": {
+        "id": "eq00024",
+        "name": "eqmt_name_eq00024",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMjFfMTI4/MDAxNzQwMTIyNDU0ODY0.1FFzN6fyn4lm7R1mmBqQPeByTlMziGfw6ExkdRIDX0Ig.dNSqJgONVRRsWQw40RfD9xjmL7tUqK7a5_lkJD6LHYUg.PNG/%E4%BA%8C%E7%BA%A7%E7%9B%B8%E5%8F%98.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00024",
+        "type": "weapon"
+    },
+    "eq00025": {
+        "id": "eq00025",
+        "name": "eqmt_name_eq00025",
+        "url": "https://patchwiki.biligame.com/images/resonance/d/dd/a8jqvtha6mao3msc4nj1pqm2khvdzzw.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00025",
+        "type": "acc"
+    },
+    "eq00026": {
+        "id": "eq00026",
+        "name": "eqmt_name_eq00026",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTE0/MDAxNzM4OTk1MDI2Njg1.uoz7O0-efQ1fwqGzPk0pprg2rT2XVjpVvezeteM7jFEg.p6zZdOiOS-5WaoY1mmQYbrF2VHxB1qBt8f8xN5yS04wg.PNG/%E6%B8%85%E9%86%92%E6%A2%A6%E7%BA%A4%E7%BB%B4.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00026",
+        "type": "armor"
+    },
+    "eq00027": {
+        "id": "eq00027",
+        "name": "eqmt_name_eq00027",
+        "url": "https://patchwiki.biligame.com/images/resonance/1/19/n5i1ju6wx0403o5vcfksrr4u2xw04hh.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00027",
+        "type": "weapon"
+    },
+    "eq00028": {
+        "id": "eq00028",
+        "name": "eqmt_name_eq00028",
+        "url": "https://patchwiki.biligame.com/images/resonance/c/c8/ca4mgfb3y4i88a8imc2wozt58xp8c9g.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00028",
+        "type": "acc"
+    },
+    "eq00029": {
+        "id": "eq00029",
+        "name": "eqmt_name_eq00029",
+        "url": "https://patchwiki.biligame.com/images/resonance/7/7a/m2ie2i3hi6arp0phlfvhzo5bx7lf97e.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00029",
+        "type": "acc"
+    },
+    "eq00030": {
+        "id": "eq00030",
+        "name": "eqmt_name_eq00030",
+        "url": "https://patchwiki.biligame.com/images/resonance/8/81/bz2isfp1ut28h07bglc7kedicjmnh3g.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00030",
+        "type": "armor"
+    },
+    "eq00031": {
+        "id": "eq00031",
+        "name": "eqmt_name_eq00031",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTM3/MDAxNzM4OTk0OTIwNjY3.zYkBFphQ8sa9qBm1hfjJYkjbLdL0Nfn9ctXUNHe1g7Eg.bAMGbOt88sgPcbd4KR5z20widIrGciJZyYsClqwOYSEg.PNG/%E6%A0%B8%E5%AD%90%E8%BE%90%E5%B0%84.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00031",
+        "type": "weapon"
+    },
+    "eq00032": {
+        "id": "eq00032",
+        "name": "eqmt_name_eq00032",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTU2/MDAxNzM5MDA2MzUyMzkw.LjExuf5tB1akVrXW4v7NuK2LpAHa8hODJVmpxBjTDTQg.mflzyq8BMEZj1nP0rMYOZmhi8ph6cKbPhpOABfDw0Lwg.PNG/%E8%83%A1%E5%B0%94%E9%A1%BF%E6%B0%94%E7%90%83.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00032",
+        "type": "acc"
+    },
+    "eq00033": {
+        "id": "eq00033",
+        "name": "eqmt_name_eq00033",
+        "url": "https://patchwiki.biligame.com/images/resonance/d/d8/rlujekmb872ruu7xyjjpuaowtem7jfz.png",
+        "rarity": "UR",
+        "desc": "eqmt_desc_eq00033",
+        "type": "weapon"
+    },
+    "eq00034": {
+        "id": "eq00034",
+        "name": "eqmt_name_eq00034",
+        "url": "https://imgproxy.shelter.id/sig/w:200/rt:fill/Z3M6Ly9zaGVsdGVyLW1lZGlhL3UvYkI1OHJHc2Z1SU0wVEQ2SUtKNDNFTTM3Ukt4MS9pbWFnZXMvMTc0MTg3MTAwODQ2Nl81ODQ0OTJhMS0xMTQyLTRkYmYtYjNkNS1iOGJlZGFjNGVlOWEud2VicA==",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00034",
+        "type": "acc"
+    },
+    "eq00035": {
+        "id": "eq00035",
+        "name": "eqmt_name_eq00035",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjc0/MDAxNzM4OTk5MzI2Mjk3.xfwE9u3rqMWmBVkSll154T4i5CNEASl3UBKecC9n4NIg.3fA19vdk9BI9HFEA5XFzFFVz_TQr5mKcPUdOCuRq_J0g.PNG/%E9%AB%98%E7%BB%B4%E6%9E%84%E9%80%A0%E4%BD%93.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00035",
+        "type": "armor"
+    },
+    "eq00036": {
+        "id": "eq00036",
+        "name": "eqmt_name_eq00036",
+        "url": "https://patchwiki.biligame.com/images/resonance/thumb/9/9d/aff9bba7yvqjdwnqbv49l5dd41wp5uc.png/180px-%E7%90%83%E7%8A%B6%E9%97%AA%E7%94%B5.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00036",
+        "type": "weapon"
+    },
+    "eq00037": {
+        "id": "eq00037",
+        "name": "eqmt_name_eq00037",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMTJfNTgg/MDAxNzM5MzQ0MzU1MjI1.qIp_gBhqj7i5MiYBaRfXRZVnPkiCrX9IGdNLEvI4Iekg.w4Hr-UQIaOsWicm188Nzug7C6G2dQPESo2WpYetalWIg.PNG/%E9%9B%B7%E5%87%BB%E6%B7%B1%E7%9C%A0%E6%9C%A8%E7%94%B2.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00037",
+        "type": "armor"
+    },
+    "eq00038": {
+        "id": "eq00038",
+        "name": "eqmt_name_eq00038",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMTJfNTQg/MDAxNzM5MzQ0MjE4NTAy.1TwWjPZbb0gxLWc15u81Y3SfWoD7floKL-wEL2V5RgEg.dtBeqtP9_Ac8KTr2WkuhfV1c5dCnqmGBgnVcS5PfDiUg.PNG/%E9%9B%B7%E5%87%BB%E6%B7%B1%E7%9C%A0%E6%9C%A8%E5%89%91.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00038",
+        "type": "weapon"
+    },
+    "eq00039": {
+        "id": "eq00039",
+        "name": "eqmt_name_eq00039",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMTJfMjUg/MDAxNzM5MzQ0NDcwODkw.CcA0ZpDEFylVxs0lvXCSARrkqZi0vT1ELD3Zy_s3RMgg.Xo6RqOpOX5B9G4u0jYxKtpfkIKhhDqkH8TaZN2f-v6gg.PNG/%E9%9B%B7%E5%87%BB%E6%B7%B1%E7%9C%A0%E6%9C%A8%E6%8A%A4%E7%AC%A6.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00039",
+        "type": "acc"
+    },
+    "eq00040": {
+        "id": "eq00040",
+        "name": "eqmt_name_eq00040",
+        "url": "https://patchwiki.biligame.com/images/resonance/thumb/0/05/to1z30rsts7thcmqdhji2bqs610cdf9.png/180px-%E5%B0%BC%E5%85%8B%E5%A1%94%E5%B0%94%E6%9C%80%E5%90%8E%E8%A7%A3.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00040",
+        "type": "weapon"
+    },
+    "eq00041": {
+        "id": "eq00041",
+        "name": "eqmt_name_eq00041",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjc2/MDAxNzM5MDA1MzYyMzEw.o1D6yeX2L_BMGh3chsZ7VoYZXK1wbvL3UMORbxrCYIog.pU07NqGg8CmFNyE1PhS-2cZeeCwbMs-_SwvEcDI_Fjwg.PNG/%E5%8C%97%E9%A3%8E%E8%8D%86%E6%A3%98.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00041",
+        "type": "weapon"
+    },
+    "eq00042": {
+        "id": "eq00042",
+        "name": "eqmt_name_eq00042",
+        "url": "https://patchwiki.biligame.com/images/resonance/thumb/e/ed/dskko5zj0p62y07ldpzigup7o27s2oi.png/180px-%E6%9C%BA%E7%A5%9E%E7%94%B2%E8%83%84.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00042",
+        "type": "armor"
+    },
+    "eq00043": {
+        "id": "eq00043",
+        "name": "eqmt_name_eq00043",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTc0/MDAxNzM5MDAyMjY4MTY3.ODYV1UmGwfRBjNLZy7yZF0vv7AAypYxMh2IBsohaXuog.pOpm7DyWiXEl2bI1HsqHVG1s6XMWQlatpr3mD0R_NBcg.PNG/%E6%B4%BB%E7%81%AB%E7%86%94%E5%B2%A9.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00043",
+        "type": "weapon"
+    },
+    "eq00044": {
+        "id": "eq00044",
+        "name": "eqmt_name_eq00044",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTA2/MDAxNzM4OTgzODg0Mjk0.bMm6i2LkjXQCYkDnTd14ENuL6CGkKkGnb-dpv9Kkhtwg.t8Ly5W7KTUPc2bvKSGluZjVJ7UN3JtqgzDdKY8yhr3Qg.PNG/%E5%85%89%E8%8A%92%E8%BF%BD%E5%87%BB%E8%80%85.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00044",
+        "type": "weapon"
+    },
+    "eq00045": {
+        "id": "eq00045",
+        "name": "eqmt_name_eq00045",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTAz/MDAxNzM4OTk0NzU1NDQ3.CVFKRYwYGC-BoWAdcqB2WGn0x04AfwsLuylA-wuKJc8g.3Ame94dtPr41W6LgZG_FfdyS60e1s7hsPLciis2SMaUg.PNG/%E5%8D%87%E6%9E%84%E6%89%8B%E6%9C%AF%E5%99%A8.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00045",
+        "type": "acc"
+    },
+    "eq00046": {
+        "id": "eq00046",
+        "name": "eqmt_name_eq00046",
+        "url": "https://imgproxy.shelter.id/sig/w:200/rt:fill/Z3M6Ly9zaGVsdGVyLW1lZGlhL3UvYkI1OHJHc2Z1SU0wVEQ2SUtKNDNFTTM3Ukt4MS9pbWFnZXMvMTc0MTg3MTAwODQ2Nl8yMDQxYTVjMC0yZTljLTQxMDAtOGQwMS00MmI4MzdlNTA2M2Eud2VicA==",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00046",
+        "type": "armor"
+    },
+    "eq00047": {
+        "id": "eq00047",
+        "name": "eqmt_name_eq00047",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMTJfMTQ3/MDAxNzM5MzQ0NTMxMzY5.CZjimdQSq5MQJeLzhmCa5qch-qWfEdhDAz02rRVCmOIg.Kp1hpwvyc93dCmcYr_fVWDAxTBB6vEW0oFpIv0IGKTAg.PNG/%E5%A4%96%E9%83%A8%E8%AE%B0%E5%BF%86%E7%9F%A9%E9%98%B5.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00047",
+        "type": "armor"
+    },
+    "eq00048": {
+        "id": "eq00048",
+        "name": "eqmt_name_eq00048",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMTJfMTkz/MDAxNzM5MzQzMDYwOTU4.ymKykeD0INzw7hzW8XLSyvs8jmAfUyRrrodP5m_ME_Yg.nC6a-rSVBmXS7GSheU7XeQ4P39wJo2tYxtZMlH6vqa0g.PNG/%E5%86%85%E5%AD%98%E6%B8%85%E5%BF%83%E5%92%92.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00048",
+        "type": "armor"
+    },
+    "eq00049": {
+        "id": "eq00049",
+        "name": "eqmt_name_eq00049",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjk3/MDAxNzM5MDAyMDEyNDkz.0JC2Lfwbj_0iMu5qObV5yMj9VEjH6YwZNVxYYikH8lwg.FrcXc37-xRbAYhpe5iyS9NMh9Wn6tPana4UaMWAdl5gg.PNG/%E5%8D%95%E6%9E%81%E7%A3%81%E6%80%A7.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00049",
+        "type": "acc"
+    },
+    "eq00050": {
+        "id": "eq00050",
+        "name": "eqmt_name_eq00050",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTA1/MDAxNzM5MDAyMjE0MTM5.6fZVX9VZEDogolK-fQ6oKUVOH5NnBpiN_Al7QMfZMcog.gYWshtnxzzHdglzHEN4PqRiR5gDOthtQxSnjvxL6CaYg.PNG/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00050",
+        "type": "acc"
+    },
+    "eq00051": {
+        "id": "eq00051",
+        "name": "eqmt_name_eq00051",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjMg/MDAxNzM4OTk5NjIwNDE4.DTiwg2UgTMklOrucleS9Go1c6KyAX7cx84fdXgMkEVYg.PZx08j4zw5Z__se7XsUXpgKL9RmHBslyGKwgLhiwzy4g.PNG/%E6%97%A0%E9%99%90%E9%9D%9E%E6%A6%82%E7%8E%87%E6%8A%A4%E7%94%B2.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00051",
+        "type": "armor"
+    },
+    "eq00052": {
+        "id": "eq00052",
+        "name": "eqmt_name_eq00052",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMTJfMjMg/MDAxNzM5MzQzMTg4OTYw.gFSbumOPOZnYwuJ2WRGjGscKgh9zKQkCq1w7l-VHKp0g.AIIr343spBM02cvy7xfRLnLmBlQGeHYjwTeSZpu-Fnsg.PNG/%E9%BB%91%E6%9C%88%E5%8F%9B%E5%BF%8D%E6%8A%A4%E9%A2%9D.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00052",
+        "type": "armor"
+    },
+    "eq00053": {
+        "id": "eq00053",
+        "name": "eqmt_name_eq00053",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMzYg/MDAxNzM5MDAyMzY0MTA0.aaVcTdgMVbypKQHg-BCeBU5aoYj3oR_QmBb99MjcRdQg.LO0xlFPVVDKBw2hdo-xMAmzbs80JLimF6p8o1Rhoup0g.PNG/%E9%80%86%E7%86%B5%E4%B8%A5%E5%86%AC.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00053",
+        "type": "weapon"
+    },
+    "eq00054": {
+        "id": "eq00054",
+        "name": "eqmt_name_eq00054",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMTJfMjI2/MDAxNzM5MzQzODkwMTI2.8IdSU4dg8QtlsdUejihfqPxpZCvNkKsREZ7jdAYRsGMg.C6bn6yjHGzKenkm9C7ci15ILznxehlPu567LEIeeuJEg.PNG/%E6%8A%97%E6%8B%92%E4%BB%8E%E4%B8%A5.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00054",
+        "type": "weapon"
+    },
+    "eq00055": {
+        "id": "eq00055",
+        "name": "eqmt_name_eq00055",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMTJfMTQg/MDAxNzM5MzQyOTA0Mjg4.OFDzY9bFl7I4FGRUeL2oxo7mSzHqx5Ia4Y30tIpQEHcg.bGdHANqe_c-L9Iqdyc-tNr7kvcO-xNCQr-LRFErh0oog.PNG/%E4%BA%94%E9%9B%B7%E4%BE%9B%E7%94%B5%E7%AC%A6.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00055",
+        "type": "weapon"
+    },
+    "eq00056": {
+        "id": "eq00056",
+        "name": "eqmt_name_eq00056",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfOTYg/MDAxNzM4OTk5NDQyNTE2.vz3lPSR-aX32s3-H3HTtoi8pJgReSP7L4TlW4oggXQMg.xgNRu3unjG5LHwiX_Yv2JO7FafzgEwtnG1X4hh5tj0sg.PNG/%E4%B8%87%E5%8F%98%E7%9C%BC%E7%9C%B8.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00056",
+        "type": "acc"
+    },
+    "eq00057": {
+        "id": "eq00057",
+        "name": "eqmt_name_eq00057",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjk2/MDAxNzM4OTg0MzAzMDg5.obgDyFpaw-7a5twSUE20PradmJ-cL_CMh6IxOHD4WyUg._QuHOTEjyqukk6N-oMpXr4Q9fQGSi4Jy9LGNmjlJHmYg.PNG/%E6%9A%97%E5%BD%B1%E5%AF%BB%E8%B8%AA%E8%80%85.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00057",
+        "type": "weapon"
+    },
+    "eq00058": {
+        "id": "eq00058",
+        "name": "eqmt_name_eq00058",
+        "url": "https://patchwiki.biligame.com/images/resonance/thumb/7/7c/pjn1ne2c2zshcaz3re8w8ktxk5n67h0.png/180px-%E9%AA%A8%E9%BE%99%E6%8A%A4%E7%94%B2.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00058",
+        "type": "armor"
+    },
+    "eq00059": {
+        "id": "eq00059",
+        "name": "eqmt_name_eq00059",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjQw/MDAxNzM4OTgzNTA1Mzg5.nCPQ4dwQ-cx4xxAc3QSk0PpD4htmC4lZyPhPjzmUHnAg.y03WNdKVgxg8_zza1mUYqlFfbaVV6POfwYGEM1BlrTYg.PNG/%E7%81%AB%E5%B1%B1.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00059",
+        "type": "weapon"
+    },
+    "eq00060": {
+        "id": "eq00060",
+        "name": "eqmt_name_eq00060",
+        "url": "https://patchwiki.biligame.com/images/resonance/thumb/b/b7/292hgakxb4hti6y4vzra9mwnu7prkp7.png/180px-%E5%A4%A9%E7%BD%A1%E4%BC%8F%E9%AD%94%E5%89%91.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00060",
+        "type": "weapon"
+    },
+    "eq00061": {
+        "id": "eq00061",
+        "name": "eqmt_name_eq00061",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTcx/MDAxNzM4OTg0MTYwNTk5.KZlaDDVaLYF1IdB0l81xUxNQsMoUcnJN93djatCOX1cg.hbCWnoCdnr7kP2-cOB5Xuq99POzzeXeT07scCWpAR54g.PNG/%E7%82%BD%E7%84%B0%E4%BE%B5%E8%9A%80%E8%80%85.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00061",
+        "type": "weapon"
+    },
+    "eq00062": {
+        "id": "eq00062",
+        "name": "eqmt_name_eq00062",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMTJfMTcz/MDAxNzM5MzQ0MDY0NDAz.1zqLJ4RZCNYhAWQoBCWSfY7YCL2MyZjhnx0unJggaJcg.NwViIsiy2uQZyRjl9zsFqjQlNm9XUmBxe6_F1LaHzWUg.PNG/%E8%BF%9D%E7%A6%81%E5%B7%A5%E8%89%BA%E5%93%81.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00062",
+        "type": "weapon"
+    },
+    "eq00063": {
+        "id": "eq00063",
+        "name": "eqmt_name_eq00063",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjMw/MDAxNzM4OTk4OTE1MDM5.owM7QkEcC3hCyLqYSIgUCI_1bmeMXzP1AUVlMl7WQ-sg.kPVNGrvOtnzdI5rO8YoIlgGcGEdgFZz3NVz7pm7EQAkg.PNG/%E7%8B%A1%E8%AF%88%E8%83%8C%E5%8F%9B.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00063",
+        "type": "weapon"
+    },
+    "eq00064": {
+        "id": "eq00064",
+        "name": "eqmt_name_eq00064",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfOTAg/MDAxNzM4OTg0NTQxODk1.V97GRuzi1Gx41vFTnDacxeyumf5S7cyQQELlX4oh1Dsg.XIm3aXkprGZA12az7YfzaWwF_jgqBsL3S2x_x6w6j4Ig.PNG/%E6%98%9F%E6%A0%B8%E4%BD%99%E7%83%AC.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00064",
+        "type": "acc"
+    },
+    "eq00065": {
+        "id": "eq00065",
+        "name": "eqmt_name_eq00065",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfNTYg/MDAxNzM4OTgzNTk5ODUz.1R7grbmgCAUIS8NzD-QFDl4juWbT6qierE-qmK5af38g.DnkmNRGisLIqnsaQexe5Q_tzyW6lJ2JGGecQ9gNejUkg.PNG/%E4%B8%83%E5%BC%A6%E5%BC%93.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00065",
+        "type": "weapon"
+    },
+    "eq00066": {
+        "id": "eq00066",
+        "name": "eqmt_name_eq00066",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjI2/MDAxNzM4OTk5OTM2NzI0.P9LEDTWSZhCYoeq5HkSYyAGLl8ny7wYspwWCNjPvmjgg.Rs8g9-KcGvqR9le2jaaDJbMUEectLzeLerInoJo3rjog.PNG/%E6%98%9F%E5%BC%A7%E6%B3%A2%E7%BA%B9.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00066",
+        "type": "weapon"
+    },
+    "eq00067": {
+        "id": "eq00067",
+        "name": "eqmt_name_eq00067",
+        "url": "https://imgproxy.shelter.id/sig/w:200/rt:fill/Z3M6Ly9zaGVsdGVyLW1lZGlhL3UvYkI1OHJHc2Z1SU0wVEQ2SUtKNDNFTTM3Ukt4MS9pbWFnZXMvMTc0MTg3MTAwODQ2Nl82M2M1ZjVlMS1jZDM0LTQxZmUtYWIyYi1jYTYzOTc2Y2UxNzUud2VicA==",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00067",
+        "type": "weapon"
+    },
+    "eq00068": {
+        "id": "eq00068",
+        "name": "eqmt_name_eq00068",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfMTU4/MDAxNzM4OTIxMTYwODU2.BEb2TeMqposwPT4Yzm0TIY-KdHh6Io0Q5FPH1kA-_6Ag.XM5MM6WX2qvu0u6Y4ZrRetHhrXMOwk-ryBe8AcXH5l4g.PNG/%E7%81%B5%E7%8B%90%E5%90%8D%E5%BC%93.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00068",
+        "type": "weapon"
+    },
+    "eq00069": {
+        "id": "eq00069",
+        "name": "eqmt_name_eq00069",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjc0/MDAxNzM5MDAxOTI1Mzgx.V9YhHqMBikl9-2dYLbqK5kg0IW4F4KzMXoPHeUeO7Hgg.gTY9LD52DyUk46T8FQu8cQZFFzyUjKQO5QP5jPuNcOcg.PNG/%E6%A8%A1%E6%8B%9F%E6%98%9F%E8%BE%B0.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00069",
+        "type": "armor"
+    },
+    "eq00070": {
+        "id": "eq00070",
+        "name": "eqmt_name_eq00070",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTQy/MDAxNzM4OTk5ODA2NDU4.MHNf32-hi46yvG08vrKC6YGRTb8NFGzZjb4LYmlmbNwg.eE9nrvXyEMQfUrB1WV2ZYJRF7x7SNHcEp5_9APBaslIg.PNG/%E6%B7%B1%E6%B5%B7%E6%8E%A2%E9%92%88.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00070",
+        "type": "weapon"
+    },
+    "eq00071": {
+        "id": "eq00071",
+        "name": "eqmt_name_eq00071",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTA4/MDAxNzM5MDA1MTg1NjM1.vYNTXhKBAzJ9F2_W4wt-KsrDnrIXrJxR9pNTWR6oiS0g.hwtzGSqcBjC_VP_y7HyyTF6HexKcEx2mZ6xp5Bx2zeQg.PNG/%E9%98%BF%E5%8F%A4%E7%BA%B3%E6%89%98.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00071",
+        "type": "weapon"
+    },
+    "eq00072": {
+        "id": "eq00072",
+        "name": "eqmt_name_eq00072",
+        "url": "https://patchwiki.biligame.com/images/resonance/thumb/b/bc/cz4wfdkygpte4pmgdrq7kcc8dcfmpa8.png/180px-%E6%B6%B2%E6%B0%AE%E5%96%B7%E5%B0%84%E5%99%A8.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00072",
+        "type": "weapon"
+    },
+    "eq00073": {
+        "id": "eq00073",
+        "name": "eqmt_name_eq00073",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjY4/MDAxNzM4OTgzMjAwMDUw.04ffbxSsXqJJ80gTjAVqzynTvOl2_Rea3FCFl_9NW0og.FbcmxfMTL1CjmV-5ZZerK87xrg-pvqMswPrvu67H5YMg.PNG/%E9%87%8E%E5%BF%83.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00073",
+        "type": "weapon"
+    },
+    "eq00074": {
+        "id": "eq00074",
+        "name": "eqmt_name_eq00074",
+        "url": "https://imgproxy.shelter.id/sig/w:200/rt:fill/Z3M6Ly9zaGVsdGVyLW1lZGlhL3UvYkI1OHJHc2Z1SU0wVEQ2SUtKNDNFTTM3Ukt4MS9pbWFnZXMvMTc0MTg3MTAwODQ2Nl80MjdiOGVkMi1jZTc5LTRkMDQtOTNjMi1lNWJjYjQ0NDQzZTMud2VicA==",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00074",
+        "type": "weapon"
+    },
+    "eq00075": {
+        "id": "eq00075",
+        "name": "eqmt_name_eq00075",
+        "url": "https://imgproxy.shelter.id/sig/w:200/rt:fill/Z3M6Ly9zaGVsdGVyLW1lZGlhL3UvYkI1OHJHc2Z1SU0wVEQ2SUtKNDNFTTM3Ukt4MS9pbWFnZXMvMTc0MTg3MTAwODQ2Nl83NTc0ZTBjMi1mNGYzLTRjNDUtOTZkOC0yNGU2MTdjMWJkZjMud2VicA==",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00075",
+        "type": "armor"
+    },
+    "eq00076": {
+        "id": "eq00076",
+        "name": "eqmt_name_eq00076",
+        "url": "https://patchwiki.biligame.com/images/resonance/thumb/8/8c/rsld04tq34rt4fvhq8ecwbw01ynru0n.png/180px-%E5%A5%A5%E5%B0%BC%E5%85%B0%E6%B3%95%E6%9D%96.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00076",
+        "type": "weapon"
+    },
+    "eq00077": {
+        "id": "eq00077",
+        "name": "eqmt_name_eq00077",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjMw/MDAxNzM4OTk5MjM0OTg5.etWPsZZy0KKQhzNYQN9hKrx0S1-aPrQ_7uesm4diohwg.ueKbWW5Sg0LS1d4Rd7epubqGhW_Yfkye74SwuI-vI9Ig.PNG/%E4%B8%8D%E5%8F%AF%E8%A7%81%E4%B9%8B%E8%A7%A6.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00077",
+        "type": "weapon"
+    },
+    "eq00078": {
+        "id": "eq00078",
+        "name": "eqmt_name_eq00078",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMTJfMTE2/MDAxNzM5MzQzNjQ3MjY5.glRdZ-MXNVT1yACN0H6k4XlyyUlWaPfDlxw2Yz7QmXAg.hMPn96UC4Cx3Ck_hTiItssce_jt0CkIEgHRHSFu-csMg.PNG/%E6%88%98%E6%9C%AF%E9%A3%8E%E6%B0%B4%E6%97%A0%E4%BA%BA%E6%9C%BA.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00078",
+        "type": "acc"
+    },
+    "eq00079": {
+        "id": "eq00079",
+        "name": "eqmt_name_eq00079",
+        "url": "https://imgproxy.shelter.id/sig/w:200/rt:fill/Z3M6Ly9zaGVsdGVyLW1lZGlhL3UvYkI1OHJHc2Z1SU0wVEQ2SUtKNDNFTTM3Ukt4MS9pbWFnZXMvMTc0MTg3MTAwODQ2NV81MzA0NmJhMy1lZWI0LTQ0YWYtODlhYy0wYmRjZTliZTUxM2Yud2VicA==",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00079",
+        "type": "armor"
+    },
+    "eq00080": {
+        "id": "eq00080",
+        "name": "eqmt_name_eq00080",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTMw/MDAxNzM4OTg0NDQ5MDY3.XGu77F0FBfz1dyea7VPNQ8LPC2fxRTeOsOjiIHZWDZ8g.GLZSKHCSJ8_-Ylz71c71ZKLy5veXTYCgoaOrys7Y4tMg.PNG/%E8%8A%B1%E5%9B%AD%E5%AE%88%E6%8A%A4.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00080",
+        "type": "armor"
+    },
+    "eq00081": {
+        "id": "eq00081",
+        "name": "eqmt_name_eq00081",
+        "url": "https://patchwiki.biligame.com/images/resonance/thumb/f/ff/3oa8flve1va1fwlag1ro9qygjjjlzzb.png/180px-%E6%B7%B1%E7%BA%A2%E8%B0%B6%E8%A8%80.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00081",
+        "type": "armor"
+    },
+    "eq00082": {
+        "id": "eq00082",
+        "name": "eqmt_name_eq00082",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTM0/MDAxNzM5MDA1NTAzNTM5.Owt3xNFIjyENUkOx2F4alWl7LC4aiTtWaRM_mTNkIGUg.q5A7Kew6cdackPGIBbsDOe2ASk80Qlg3_RD5PxC_Fssg.PNG/%E5%82%AC%E7%9C%A0%E6%80%80%E8%A1%A8.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00082",
+        "type": "acc"
+    },
+    "eq00083": {
+        "id": "eq00083",
+        "name": "eqmt_name_eq00083",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfNzgg/MDAxNzM4OTk0MjQwNzgx.qrNj0jK42Ro2rJnOblTdWYrZMBqcITkX8DfWNnQCU9Ug.nT1CWutR2VDgB4zjrenytUvRT3cj-27RpMbKiEcpSKUg.PNG/%E7%AE%80%E5%B9%B6%E9%BB%91%E7%9F%B3.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00083",
+        "type": "weapon"
+    },
+    "eq00084": {
+        "id": "eq00084",
+        "name": "eqmt_name_eq00084",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfMjMx/MDAxNzM4OTIyMzgzODUw.vpEDwSbHjWAZxDR1SpGFq7-JoptcfWNbMyTTREDH2NEg.gkAXbjeuTgXHtQsU24W47mrO-vqO5Asy03nZXQUvDuUg.PNG/%E6%98%A5%E7%A7%8B%E5%90%88%E8%AF%9A%E5%8D%B0.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00084",
+        "type": "acc"
+    },
+    "eq00085": {
+        "id": "eq00085",
+        "name": "eqmt_name_eq00085",
+        "url": "https://patchwiki.biligame.com/images/resonance/thumb/d/d1/jpkyg9bmz4tdclbxvp7ns49iv4jmw7l.png/180px-%E6%B2%BB%E6%84%88%E9%98%B2%E5%BC%B9%E8%A1%A3.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00085",
+        "type": "armor"
+    },
+    "eq00086": {
+        "id": "eq00086",
+        "name": "eqmt_name_eq00086",
+        "url": "https://patchwiki.biligame.com/images/resonance/thumb/c/c3/fxi71egqvm0mk6u8ew32k9g3dgo2mou.png/180px-%E5%85%8B%E6%8B%89%E5%B0%BC%E5%BC%A7%E5%85%89.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00086",
+        "type": "acc"
+    },
+    "eq00087": {
+        "id": "eq00087",
+        "name": "eqmt_name_eq00087",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjU5/MDAxNzM4OTk0NDAyMTkz.qbOD5wic0uF4br7GPBaK89w4zjBlOz7CumjTxVOnMMMg.KcsJCva95VQhoiRfU1lIbjGXALcS6unDF0lPKhetRPMg.PNG/%E5%BB%B6%E5%B1%95%E6%97%B6%E9%97%B4%E7%BA%BF.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00087",
+        "type": "weapon"
+    },
+    "eq00088": {
+        "id": "eq00088",
+        "name": "eqmt_name_eq00088",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjk2/MDAxNzM4OTgzMzM3OTk4._uKd6a2gXs_5cRl9hCK0F-LSwFftMXHIu9xlXTZmkCIg.e8ZHFLb8RmR2274clWXw6AulXVxpbbyU-RDO2TyHodcg.PNG/%E9%9B%B7%E7%A5%9E.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00088",
+        "type": "weapon"
+    },
+    "eq00089": {
+        "id": "eq00089",
+        "name": "eqmt_name_eq00089",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfNDYg/MDAxNzM4OTIyMjIyOTMy.WW3teJHqax5nP0uCOzWSredkDPUeu2QwLrZ1HQem-Pwg.Ti05GAmcShb7aCGdcH_I0cfDGK9SMhvF82orgg6Nps4g.PNG/%E5%A4%A9%E7%8E%8B%E5%AE%9D%E9%93%A0.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00089",
+        "type": "armor"
+    },
+    "eq00090": {
+        "id": "eq00090",
+        "name": "eqmt_name_eq00090",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTQ0/MDAxNzM4OTk0NDgwNTA4.18odBZTo3QgkcDotj8JhhpRTqNNNN9-SGDmxaLKEVQEg.p1hbeEEH9yu4Zc7_AADELQ7UWfww8FwYbF92vlz9xNgg.PNG/%E9%BB%91%E7%9F%B3%E6%8A%A4%E7%94%B2%E7%BB%84.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00090",
+        "type": "armor"
+    },
+    "eq00091": {
+        "id": "eq00091",
+        "name": "eqmt_name_eq00091",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfOTYg/MDAxNzM4OTIxNDI3MzUx.HRVICZ9j_QHAK2XXTU-9ucKBtkAMgVLs_rlUHE2T5LIg.BZbCGPhMFI1qScQQSvA4HpTeMGZhEwmA6GLczEiU-DYg.PNG/%E9%9B%BE%E5%A4%9C%E6%B5%81%E6%98%9F.png",
+        "rarity": "SSR",
+        "desc": "eqmt_desc_eq00091",
+        "type": "weapon"
+    },
+    "eq00092": {
+        "id": "eq00092",
+        "name": "eqmt_name_eq00092",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjc3/MDAxNzM5MDAxNTA4MDUy.-fbk-ZbsjquLbnkxAbMyjd69rH_WSGI1pHywVtJwwq4g.3DKcCHTKe87IxDWzeZgA18bwhYZUOzSVx589QBa4a3cg.PNG/%E5%85%B1%E6%8C%AF%E4%BD%93%E7%BA%A4%E7%BB%B4.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00092",
+        "type": "armor"
+    },
+    "eq00093": {
+        "id": "eq00093",
+        "name": "eqmt_name_eq00093",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfMTcg/MDAxNzM4OTI0OTYzNTk0.3eWC0rDXhAGutauZbiK4qX03WSKIYxxdY6wiqNMmnVYg.LBhmY6wwA444ocrL6GigRlWV1Gi9e4Of_bd2PaeICEwg.PNG/%E5%85%89%E6%98%8E%E4%B9%8B%E6%84%BF.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00093",
+        "type": "weapon"
+    },
+    "eq00094": {
+        "id": "eq00094",
+        "name": "eqmt_name_eq00094",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfNTMg/MDAxNzM5MDAxNDI2MDAx.HbL5cUqE8hWVCrRq5sV6rmj8xV-ehhtV6OJfOLfD5vkg.4nPpn-nC5hsf0NE8lLqFmt61_Gm4aC7APsXupbA2ttcg.PNG/%E2%80%9C%E6%9E%81%E5%9D%90%E6%A0%87%E2%80%9D%E6%8C%87%E6%8C%A5%E6%97%A0%E4%BA%BA%E6%9C%BA.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00094",
+        "type": "acc"
+    },
+    "eq00095": {
+        "id": "eq00095",
+        "name": "eqmt_name_eq00095",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjg1/MDAxNzM4OTg2ODAwNDI2.SaujwEv2LQt7MXPHUcdNoQyoz8cs5avbiGzFqPBI3Sog.-UECVg5BR4ZMzjP8rVeDCHNwqjFFjnerGA8odASMLZog.PNG/%E5%8A%A8%E5%8A%9B%E4%BC%90%E6%9C%A8%E6%96%A7.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00095",
+        "type": "weapon"
+    },
+    "eq00096": {
+        "id": "eq00096",
+        "name": "eqmt_name_eq00096",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTk4/MDAxNzM4OTg2OTcwNDc2.GOJUzxmlyU3x8mUoS7hXIg5RjWPAwzIbcPoNQk9o9sYg.l273qEQ4Aqm0kCSOhbxyvIrTc0l1C2lKwtmNitcYyvMg.PNG/%E5%8A%A8%E8%83%BD%E5%9B%9E%E6%94%B6%E5%99%A8.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00096",
+        "type": "acc"
+    },
+    "eq00097": {
+        "id": "eq00097",
+        "name": "eqmt_name_eq00097",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTMz/MDAxNzM4OTg2NjUwNjU5.En9B17sqa-WtD0mfehKbspHNPkAr0uHo-0azbEgE7tkg.JIh7bIP0oph3KyivOx2ioDZwhuZm92DYvImGU5JMHMQg.PNG/%E8%80%81%E5%85%B5%E6%AD%A5%E6%9E%AA.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00097",
+        "type": "weapon"
+    },
+    "eq00098": {
+        "id": "eq00098",
+        "name": "eqmt_name_eq00098",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfNTAg/MDAxNzM4OTk4NzA2NzI3.-E-eRn-eJDaJ_aeFMpk54hV3oIqktLLV4JsEiM8aZqUg.VD1Kc9u_wH9yppG3Gbb8QSyCqsv9GKiRxcATinEhqaYg.PNG/%E6%97%A0%E6%84%8F%E8%AF%86%E5%AD%A6%E4%B9%A0%E8%A3%85%E7%BD%AE.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00098",
+        "type": "acc"
+    },
+    "eq00099": {
+        "id": "eq00099",
+        "name": "eqmt_name_eq00099",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjc3/MDAxNzM5MDAxMzM5ODQ5.Hb_sjot1VmZ601-0A0m6W1QW86dg6M7tycszNBtffxwg.wXSplIc9-3GHWG-5G8_vAwxImjrlB8lImdf3pPwjuQ8g.PNG/%E5%94%A4%E9%9B%B7%E7%BA%BF%E5%9C%88MK1.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00099",
+        "type": "weapon"
+    },
+    "eq00100": {
+        "id": "eq00100",
+        "name": "eqmt_name_eq00100",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfMjEx/MDAxNzM4OTE5ODkwNzc1.fl2WOL6cPwTBeR71wUbnrzhQcMIeCs_mfsb_GrzZQ0og.oKMvergBz9PVnO1nqfz6f3p6Zw46UoDl151DAxGGZ90g.PNG/%E2%80%9C%E7%BD%AA%E8%AF%81%E2%80%9D%E6%8A%98%E5%8F%A0%E7%8B%99%E5%87%BB%E6%AD%A5%E6%9E%AA.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00100",
+        "type": "weapon"
+    },
+    "eq00101": {
+        "id": "eq00101",
+        "name": "eqmt_name_eq00101",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjQy/MDAxNzM5MDA1MDYyMDMy.0xqn73mQ7-Sov3wnAJJS_p1ex1hKTyEBzuvotuE0bSMg.GwDCYijLFZ7xjsbScxc3D3JTXpSUSNcZ1xMnxGgwQNMg.PNG/%E3%80%8A%E7%B4%AB%E8%89%B2%E6%98%9F%E6%9C%9F%E5%9B%9B%E3%80%8B.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00101",
+        "type": "weapon"
+    },
+    "eq00102": {
+        "id": "eq00102",
+        "name": "eqmt_name_eq00102",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfNzgg/MDAxNzM4OTg2ODk4Mjk3.CUdOXKobYSGP_lO2YTbJn_UZEd5H5mJPotXsdwKo09gg.Wmgy6Rtok9PducoErnCOGa2WbSvbHRf_YqSlJQtydQsg.PNG/%E5%8C%97%E9%98%B5%E9%98%B2%E5%BE%A1%E7%BA%A4%E7%BB%B4.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00102",
+        "type": "armor"
+    },
+    "eq00103": {
+        "id": "eq00103",
+        "name": "eqmt_name_eq00103",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjgx/MDAxNzM4OTk4NjExOTEw.AWH3xQaqrAgNmsCRcpiwgSTx6o67LbNb_5wvT-wUiP4g.L6x4pqrUP1YA3ZZ3-utdoO_QanCWZZXPdsAIXipiIQwg.PNG/%E5%BE%A1%E9%99%A9%E9%87%91%E5%B1%9E.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00103",
+        "type": "armor"
+    },
+    "eq00104": {
+        "id": "eq00104",
+        "name": "eqmt_name_eq00104",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTYx/MDAxNzM4OTk3NzIxOTc0.xfgyjedtA_g8C_LwoOE6I4wLACjAApn21tARjkKPt7sg.SVsAgKHOeACOVdJRXbhmZ99r3r24jB1r_eAJWuvf714g.PNG/%E5%BE%A1%E6%95%8C%E9%97%AA%E5%85%89%E5%99%A8.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00104",
+        "type": "weapon"
+    },
+    "eq00105": {
+        "id": "eq00105",
+        "name": "eqmt_name_eq00105",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfMjkw/MDAxNzM4OTI1NDUwNjI5.WT-lMj_ETgjhgfGlFBxbRDpeMe7NhSuYAY-AgoYlFyQg.NMUB7c1GDCP2fjkT3tpqbNZBgC3QvWdu87EEQ5TSRcAg.PNG/%E7%8B%AE%E5%AD%90%E7%BA%B9%E7%AB%A0.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00105",
+        "type": "acc"
+    },
+    "eq00106": {
+        "id": "eq00106",
+        "name": "eqmt_name_eq00106",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfOTYg/MDAxNzM4OTI1MjAwMjMw.tNBpfWIxaq-BP39DcvtuM44efaF8TacJTSYG2xaJ3zMg.XrzGewBW4miorqYtmFnUZV0dXYS-8KUzmZ4GDoWXuWIg.PNG/%E8%89%AF%E5%A4%9C%E8%BF%9C%E6%98%9F.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00106",
+        "type": "weapon"
+    },
+    "eq00107": {
+        "id": "eq00107",
+        "name": "eqmt_name_eq00107",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjIg/MDAxNzM5MDAxMTY2Mzk4.dh4EWysAOPTnArXpkpC-8oE7Pxm2_sGBSKa73rejUCwg.RgZEwmiutzlq5bO9wSa7vmI8cX5NCIgfwjFWCPI15Ysg.PNG/%E5%86%85%E8%84%8F%E9%87%87%E9%9B%86%E5%99%A8MK0.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00107",
+        "type": "weapon"
+    },
+    "eq00108": {
+        "id": "eq00108",
+        "name": "eqmt_name_eq00108",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfMTcy/MDAxNzM4OTIwMzE1MTY3.bujH87jrnn7ABUVcg5W8c1YV1DHrPy86l1K7klLMy_wg.BogKkYeXwZsIlkPxAwa6ND09kOdN5b6TmxkSFLzquEIg.PNG/%E7%83%AD%E5%85%89%E5%AD%A6%E8%BF%B7%E5%BD%A9.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00108",
+        "type": "armor"
+    },
+    "eq00109": {
+        "id": "eq00109",
+        "name": "eqmt_name_eq00109",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMTJfMTI4/MDAxNzM5MzQ0NzIyNTMz.9VQgd23zCfG1mdhLEdFiuTmGHx8VZZ66YCnSOTIrZ2Ug.bnxvJ3pheEsp9m8t_lkwLoQFsGwo2eyRJ5hGmHMcOcEg.PNG/%E6%8E%90%E4%BA%BA%E4%B8%AD%E6%8A%A2%E6%95%91%E5%99%A8.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00109",
+        "type": "acc"
+    },
+    "eq00110": {
+        "id": "eq00110",
+        "name": "eqmt_name_eq00110",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfMTU4/MDAxNzM4OTI1MzQ4MzU2.rLDvC9DwDRGusiCxfnpRWseTbWtW2u-orovq9_A3niQg.dWBJhXidYhAkP-ognJLndfmxijVHsB0_ZbgtsOLftRgg.PNG/%E5%BC%82%E7%95%8C%E6%98%9F%E5%85%89.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00110",
+        "type": "armor"
+    },
+    "eq00111": {
+        "id": "eq00111",
+        "name": "eqmt_name_eq00111",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMTJfMTkx/MDAxNzM5MzQ1MzcwMjI1.1Uduz5EAElHbv7nqoeTaaoxL2ph2muTFvddrOLCLvm0g.SuEpipQFyJoS_gqsJaPoKqDvQOqrNuJW1Y6gk_9dJcAg.PNG/%E4%B8%B4%E7%95%8C%E8%B4%A8%E9%87%8F.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00111",
+        "type": "weapon"
+    },
+    "eq00112": {
+        "id": "eq00112",
+        "name": "eqmt_name_eq00112",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfNTUg/MDAxNzM4OTIwNDQ5MzM2.f_YrGg-dG7wVHzSgTBDazGcPJ7ppaH5dYh41kM0iZO8g.9wi5KWXEC1GZNMr1xRgv-cMouqNJGFLL5MOqhYZjk0wg.PNG/%E2%80%9C%E5%9B%9B%E7%BF%BC%E5%A6%96%E9%BE%99%E2%80%9D%E7%8B%99%E5%87%BB%E6%97%A0%E4%BA%BA%E6%9C%BA.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00112",
+        "type": "acc"
+    },
+    "eq00113": {
+        "id": "eq00113",
+        "name": "eqmt_name_eq00113",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfMTU2/MDAxNzM4OTIwMTE0MjA3._hiktkO3NNNlcvnmpEe-TiSx4NCDMRubz1KUp-hRHTwg.VeyZGPVlA2tM-3WD-NmJuHnlRbSNeoyo65BIVGLtEZEg.PNG/%E2%80%9C%E6%B8%85%E7%AE%97%E2%80%9D%E6%89%8B%E6%9D%96%E5%89%91.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00113",
+        "type": "weapon"
+    },
+    "eq00114": {
+        "id": "eq00114",
+        "name": "eqmt_name_eq00114",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTY2/MDAxNzM5MDA0OTAyMTYx.yhOjPgMoSKITAsXpFZDsN8Og4F8rSs8acj4-r-TO4C4g.Bmgy9jxvR463i3IbYCUNGUgOwAcKVNSAptdAgSN7km4g.PNG/%E5%85%8B%E9%87%8C%E5%AE%89%E7%85%A7%E7%9B%B8%E6%9C%BA.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00114",
+        "type": "acc"
+    },
+    "eq00115": {
+        "id": "eq00115",
+        "name": "eqmt_name_eq00115",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTUg/MDAxNzM4OTk3OTIyMjMx.ev-9-710TkjnqZWKrR_ylRviXJXAtLJJwg_PNnwKv6Mg.mZxiX_5Q-ZkHD-Na1Nk5Y3zUXVRd6KgRGsKI-Bxh5nUg.PNG/%E8%A7%A3%E5%89%96%E5%B7%A5%E5%85%B7C.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00115",
+        "type": "weapon"
+    },
+    "eq00116": {
+        "id": "eq00116",
+        "name": "eqmt_name_eq00116",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfNDAg/MDAxNzM4OTI1NTk2NDEy.NfGwSb_GiKMKNp0tigEXABtj9P5Zj_gp9F8hy_WvCe0g.68YugHl_PXf64VJlJ0mKA8Zaog1D6R8TDY6rLyEnoIkg.PNG/%E7%81%B5%E6%B3%89.png",
+        "rarity": "SR",
+        "desc": "eqmt_desc_eq00116",
+        "type": "acc"
+    },
+    "eq00117": {
+        "id": "eq00117",
+        "name": "eqmt_name_eq00117",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfODgg/MDAxNzM4OTk3Mjc4ODA5.cB8kMZ2cD8NtrnXu1_4EXccgzvtAEf8OVijzn4khn3Ag.xusWQeVDUjZxxd8x_wjQmnskUoVZ4Kp1h5zAEPpWc94g.PNG/%E4%BA%8C%E5%8F%B7%E7%8E%A9%E5%85%B7.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00117",
+        "type": "weapon"
+    },
+    "eq00118": {
+        "id": "eq00118",
+        "name": "eqmt_name_eq00118",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfMTc1/MDAxNzM4OTI0ODI2Nzgx.SsKp9srYJjBvYKjU2qzvsUie1UVPR2tWUEs8IQuDs20g.H2s2pO6boFxirk0RKllYrKXsZxMEv_cu4x8fULCBljsg.PNG/%E7%8C%AB%E7%BA%B9%E7%AB%A0.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00118",
+        "type": "acc"
+    },
+    "eq00119": {
+        "id": "eq00119",
+        "name": "eqmt_name_eq00119",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjU4/MDAxNzM4OTg1ODkyMzc4.GPrD___u4QzJmtzqZg32-XkVxt-OrdyWJtop0INV0t4g.E2t0-LfXKmP3_9MlR9KfQrM_0CqqtQCuOTKICrBpi5Mg.PNG/%E9%AB%98%E7%83%AD%E9%87%8F%E5%86%9B%E7%B2%AE.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00119",
+        "type": "acc"
+    },
+    "eq00120": {
+        "id": "eq00120",
+        "name": "eqmt_name_eq00120",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjIw/MDAxNzM4OTg1NjgwMDY2.BVxZkhnTuPhoF1D3WrrTSHq8LoID8di_k4n5UaSptr8g._VrTc30-But5LFKnxBCZzBZOkHlDDoqwejxqxOU_z0Ag.PNG/%E6%80%A5%E6%95%91%E6%8A%A4%E7%94%B2.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00120",
+        "type": "armor"
+    },
+    "eq00121": {
+        "id": "eq00121",
+        "name": "eqmt_name_eq00121",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjQw/MDAxNzM4OTg2MDE1ODA1.T6eNIC4hZA6mC9lAYSM--UPyX2KPbd0ZmYKlvApez5Mg.lTUSF4zUzzotJL1SZNptjifb3t3Zs9XBS6UepwW6vLMg.PNG/%E7%89%B9%E6%B5%93%E5%8A%9F%E8%83%BD%E9%A5%AE%E6%96%99.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00121",
+        "type": "acc"
+    },
+    "eq00122": {
+        "id": "eq00122",
+        "name": "eqmt_name_eq00122",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTY2/MDAxNzM4OTk3Mzc1MjI1.24_8M9WtEYqni4GtSKBrZRjGx7-MT1S4BUrLJvSpqq8g.tmNzHSjDHwiUFDy3IDetLR93dpYA3E1EGJHOTwSU3x4g.PNG/%E6%A0%87%E5%87%86%E9%98%B2%E5%BE%A1%E7%BA%A4%E7%BB%B4.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00122",
+        "type": "armor"
+    },
+    "eq00123": {
+        "id": "eq00123",
+        "name": "eqmt_name_eq00123",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfNjYg/MDAxNzM5MDAwODc0OTgy.lE--6T5PEkM52OtrvqRcCRxxfwcp-lilmJqWOrtFYXog.13KnIN5qazqKA44ALODnldYnhEXJQPgjp1uSx-S8168g.PNG/%E4%B8%87%E7%94%A8%E8%B5%B7%E5%AD%90.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00123",
+        "type": "weapon"
+    },
+    "eq00124": {
+        "id": "eq00124",
+        "name": "eqmt_name_eq00124",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfMTYw/MDAxNzM4OTI0NzExODU2.5uXQ0AZ6CDqohBv9byyVJJQL6t5UqKhp6sdmOqrAl3Ig.OW-Mz_7d1pTTIWUGzh48ohL5uyiW3Egc7qgVvz90V_kg.PNG/%E7%BA%A2%E9%93%9C%E6%8A%A4%E7%94%B2.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00124",
+        "type": "armor"
+    },
+    "eq00125": {
+        "id": "eq00125",
+        "name": "eqmt_name_eq00125",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjk0/MDAxNzM5MDA0Mjk2NzA5.6-NrZVihk_sFzQ_ujDsOLMk69GkUpA5-1vKSC8HiNUgg.yzwdjvF7FEpiv2OXxk5VUMIB4x-wsAEp2gp4RrMDIvIg.PNG/%E6%B4%9B%E5%85%8B%E7%BB%B4%E5%B0%94%E9%87%91%E5%B1%9E.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00125",
+        "type": "armor"
+    },
+    "eq00126": {
+        "id": "eq00126",
+        "name": "eqmt_name_eq00126",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfMjA0/MDAxNzM4OTI0MTk5NzU1.2viqh9OQrxCf0VHvIz-oLDbHYdLQfiKF13fUbAceFzwg.0qhb3LymyzjDzDH3R6QCl2qQ9p10sgT4NPjRtds0Cf0g.PNG/%E5%BC%95%E9%AD%94%E6%B3%95%E6%9D%96.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00126",
+        "type": "weapon"
+    },
+    "eq00127": {
+        "id": "eq00127",
+        "name": "eqmt_name_eq00127",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTM5/MDAxNzM5MDAwNzE3MTUy._JDF41Vk7aNB3i9yTmhpb3MSGntRepefFcpyEvV3yOog.O2oTTLoWVnbqkqMF2H8Lkz8yN2RlCj4T6rWx-Ctssowg.PNG/%E9%9D%9E%E9%87%91%E5%B1%9E%E6%9D%90%E6%96%99%E9%95%80%E5%B1%82.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00127",
+        "type": "armor"
+    },
+    "eq00128": {
+        "id": "eq00128",
+        "name": "eqmt_name_eq00128",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTAw/MDAxNzM4OTg1MTY0MTQ4.g9eGBvo1XMNg2qMXgvhQ7tt_w-xB_dGaOatPo7megy8g.rkgk0jrkOc3d7ijCPeTaGEBeS15iOzmRL44K_5zt2RIg.PNG/%E7%8B%A9%E7%8C%8E%E5%B7%A6%E8%BD%AE.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00128",
+        "type": "weapon"
+    },
+    "eq00129": {
+        "id": "eq00129",
+        "name": "eqmt_name_eq00129",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjYx/MDAxNzM4OTg1NTYxNzMy.PDNsVAXjaGVKh9xrGA233TRTT-FdzAP7Rzwc_NmDuEkg.eFHiGJxC6diORWgrcsaNdRGfORSZZfizkW7et5FaUjkg.PNG/%E8%8D%92%E9%87%8E%E7%8C%8E%E5%88%80.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00129",
+        "type": "weapon"
+    },
+    "eq00130": {
+        "id": "eq00130",
+        "name": "eqmt_name_eq00130",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfMTE4/MDAxNzM4OTE4Nzk3MTIx.QQipiwXq9MUC18Xwg1-d9w4iKKWh7HU57sKUwjtW8hcg.vxM6z8D-UmqY-LUim6BBXTBaVVoancKHtq44TIPHzqgg.PNG/%E9%B1%BC%E8%82%A0%E7%9F%AD%E5%88%80.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00130",
+        "type": "weapon"
+    },
+    "eq00131": {
+        "id": "eq00131",
+        "name": "eqmt_name_eq00131",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjA0/MDAxNzM4OTk3NDU3Mzky.Me9HknS_a-Umudtj8JKkXivCAUHp_1s0Vfj1brvTPzQg.c_dEYIhJxKcnIkVzreGZiGdZRr2HMtTilgH4RgY0Qd0g.PNG/%E6%8F%90%E7%A5%9E%E9%86%92%E8%84%91%E4%BB%AA.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00131",
+        "type": "acc"
+    },
+    "eq00132": {
+        "id": "eq00132",
+        "name": "eqmt_name_eq00132",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfMjU0/MDAxNzM4OTI0NTQ0ODk4.Mcmd0rqloY1CCYbhk1I5s1Bi2w750MM0XuJlhPyLVAUg.Y2C889qSsYf5aENa0YNKL_OhEMJ5u3WvL3niVMkwUIMg.PNG/%E9%99%84%E9%AD%94%E7%9F%AD%E5%89%91.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00132",
+        "type": "weapon"
+    },
+    "eq00133": {
+        "id": "eq00133",
+        "name": "eqmt_name_eq00133",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjcw/MDAxNzM5MDAwNDQ4MTU5._KN4eMfHbDgUcuUQdInlKt7E3EJ99u_6GruTl-8CYWgg.X0G3hw7koNBBinRYdgA-y4sCf0ZGn_SiB2z1xIkxef4g.PNG/%E4%BE%BF%E6%90%BA%E9%99%A4%E9%A2%A4%E5%99%A8.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00133",
+        "type": "acc"
+    },
+    "eq00134": {
+        "id": "eq00134",
+        "name": "eqmt_name_eq00134",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTYg/MDAxNzM4OTk3MDA0NDM5.qcG6ayl7zDK9SSbbT-B1AuKYXgfOwdooCkhw04QuFYQg.zMctIc9gK0koZ4psc5lqa7viIXPN48q6XdhxuCfJxaYg.PNG/%E8%B4%A8%E9%87%8F%E6%8A%95%E5%B0%84%E5%99%A8.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00134",
+        "type": "weapon"
+    },
+    "eq00135": {
+        "id": "eq00135",
+        "name": "eqmt_name_eq00135",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfODYg/MDAxNzM5MDAzOTI0MjA3.3V01GdWIF0KwfAQn2k5SBWLudGjDCw9dCebfrky0NcYg.EitbIgcdMpXgmtBg3GG4xqSWnDOTtx49RFtURF2V1Q4g.PNG/%E6%8E%A5%E5%8A%9F%E9%93%81%E9%94%85.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00135",
+        "type": "acc"
+    },
+    "eq00136": {
+        "id": "eq00136",
+        "name": "eqmt_name_eq00136",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfMTA3/MDAxNzM4OTE5MjI1MTkz.MpOTWq_4k0AoUTsjvm3duqHdsQkIszMah3TocFvFL6Ug.DbhB50Lylea_fzAfF9k2BOXpHzH9O0JCo7R7Tvle5xUg.PNG/%E8%A5%BF%E8%A3%85%E5%87%AF%E5%A4%AB%E6%8B%89.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00136",
+        "type": "armor"
+    },
+    "eq00137": {
+        "id": "eq00137",
+        "name": "eqmt_name_eq00137",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfODMg/MDAxNzM4OTg2MTExMjMz.brazvdBpOFoFmQA05dlms909FCGwQNVrqCGaKTSIgkYg.5OkWfCZmEgge4ONW5uL8WtZPX-gZS1i3-UIowDF0EaQg.PNG/%E7%A0%B4%E7%89%87%E5%A5%97.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00137",
+        "type": "acc"
+    },
+    "eq00138": {
+        "id": "eq00138",
+        "name": "eqmt_name_eq00138",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjgw/MDAxNzM5MDA0MjA1NzQx.xEsWfbVvAYv5bZPvXJiGz8q9W0mUwE6PuMz8sv38p7Qg.KqgdSrPj3ct2M63-j3i5RToHjTPe54kPY0REoD-3lEUg.PNG/%E9%94%A1%E7%BA%B8%E5%B8%BD.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00138",
+        "type": "acc"
+    },
+    "eq00139": {
+        "id": "eq00139",
+        "name": "eqmt_name_eq00139",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMzYg/MDAxNzM5MDA0Mzk1NzA4.lE8rPOt8mH1yXo7bagOw9KKduPrO12r0yRJYapF5bEQg.0RF2RDed1R_pg9I8U0Gq4kbZlgyIXd3JD_xI0prLkKwg.PNG/%E5%93%88%E9%87%8C%E6%A3%AE%E8%A3%85%E7%BD%AE.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00139",
+        "type": "acc"
+    },
+    "eq00140": {
+        "id": "eq00140",
+        "name": "eqmt_name_eq00140",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfNDAg/MDAxNzM4OTE3Njg2Nzkz.m5XQEl0nQTpm_IrTK68hhEpdEAS_USgfIDrnoeop9l0g.5VT_AuZsCWZ7BnOpSz1BUYjlS4lgQt32LHEoDaVw8Lgg.PNG/%E9%BB%91%E6%9C%88%E6%AF%92%E9%95%96.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00140",
+        "type": "weapon"
+    },
+    "eq00141": {
+        "id": "eq00141",
+        "name": "eqmt_name_eq00141",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDdfMTQy/MDAxNzM4OTE5NDM4MDEw.BK67ZFPU9Tn2YB_yNGxHq0OJ2uKLW_AVSDxZWh0riN8g.EjFS5FNM4Qj2cbmNoxaj-ulOFGvv6EWj9kYYE6CeceYg.PNG/%E9%BB%91%E6%9C%88%E7%83%9F%E9%9B%BE%E5%BC%B9.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00141",
+        "type": "acc"
+    },
+    "eq00142": {
+        "id": "eq00142",
+        "name": "eqmt_name_eq00142",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMTA0/MDAxNzM5MDAwOTY5MDQ5.DyVnS23vQEqF28MPkLac7J3519T-aeCLoswbyiO_v-4g.kY9LxmWdpqeMh6vBsvkYLp4SE6MBzWLEhzUvebdWMygg.PNG/A77%E5%BC%8F%E8%88%AA%E5%A4%A9%E6%89%8B%E6%9E%AA.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00142",
+        "type": "weapon"
+    },
+    "eq00143": {
+        "id": "eq00143",
+        "name": "eqmt_name_eq00143",
+        "url": "https://nng-phinf.pstatic.net/MjAyNTAyMDhfMjI5/MDAxNzM5MDA0MDgwOTA3.rWkY5vzHgAz7KY6frW_TcO6lxxXXW0DzcaCop42OZpYg.GdOrZU-H8lEgg1jwLXEM_RaN_vGziYo8KLhwWwXxooUg.PNG/N%E5%B0%84%E7%BA%BF%E6%9E%AA.png",
+        "rarity": "R",
+        "desc": "eqmt_desc_eq00143",
+        "type": "weapon"
+    }
+}

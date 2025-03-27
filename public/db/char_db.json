@@ -1,0 +1,3242 @@
+{
+  "10000004": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000004_1",
+        "desc": "char_awake_desc_10000004_1"
+      },
+      {
+        "name": "char_awake_name_10000004_2",
+        "desc": "char_awake_desc_10000004_2"
+      },
+      {
+        "name": "char_awake_name_10000004_3",
+        "desc": "char_awake_desc_10000004_3"
+      },
+      {
+        "name": "char_awake_name_10000004_4",
+        "desc": "char_awake_desc_10000004_4"
+      },
+      {
+        "name": "char_awake_name_10000004_5",
+        "desc": "char_awake_desc_10000004_5"
+      }
+    ],
+    "desc": "char_desc_10000004",
+    "id": 10000004,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/e/ea/g7qvkhgksqc6dmeoeogo5cg6xdyb8r4.png",
+    "name": "char_name_10000004",
+    "rarity": "SSR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000004_1",
+        "desc": "char_reson_desc_10000004_1"
+      },
+      {
+        "name": "char_reson_name_10000004_2",
+        "desc": "char_reson_desc_10000004_2"
+      },
+      {
+        "name": "char_reson_name_10000004_3",
+        "desc": "char_reson_desc_10000004_3"
+      },
+      {
+        "name": "char_reson_name_10000004_4",
+        "desc": "char_reson_desc_10000004_4"
+      },
+      {
+        "name": "char_reson_name_10000004_5",
+        "desc": "char_reson_desc_10000004_5"
+      }
+    ],
+    "skills": {
+      "1": "10600034",
+      "2": "10600004",
+      "3": "10600005"
+    },
+    "produceSkills": [
+      "10600004",
+      "10600005",
+      "10600034",
+      "10600114",
+      "10600115",
+      "10600143"
+    ]
+  },
+  "10000025": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000025_1",
+        "desc": "char_awake_desc_10000025_1"
+      },
+      {
+        "name": "char_awake_name_10000025_2",
+        "desc": "char_awake_desc_10000025_2"
+      },
+      {
+        "name": "char_awake_name_10000025_3",
+        "desc": "char_awake_desc_10000025_3"
+      },
+      {
+        "name": "char_awake_name_10000025_4",
+        "desc": "char_awake_desc_10000025_4"
+      },
+      {
+        "name": "char_awake_name_10000025_5",
+        "desc": "char_awake_desc_10000025_5"
+      }
+    ],
+    "desc": "char_desc_10000025",
+    "id": 10000025,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/5/5f/fove629a7cnqli99apcr5nfpfm9uz22.png",
+    "name": "char_name_10000025",
+    "produceSkills": [
+      "10600014",
+      "10600015",
+      "10600016",
+      "10600202"
+    ],
+    "rarity": "R",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000025_1",
+        "desc": "char_reson_desc_10000025_1"
+      },
+      {
+        "name": "char_reson_name_10000025_2",
+        "desc": "char_reson_desc_10000025_2"
+      },
+      {
+        "name": "char_reson_name_10000025_3",
+        "desc": "char_reson_desc_10000025_3"
+      },
+      {
+        "name": "char_reson_name_10000025_4",
+        "desc": "char_reson_desc_10000025_4"
+      }
+    ],
+    "skills": {
+      "1": "10600014",
+      "2": "10600015",
+      "3": "10600016"
+    }
+  },
+  "10000027": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000027_1",
+        "desc": "char_awake_desc_10000027_1"
+      },
+      {
+        "name": "char_awake_name_10000027_2",
+        "desc": "char_awake_desc_10000027_2"
+      },
+      {
+        "name": "char_awake_name_10000027_3",
+        "desc": "char_awake_desc_10000027_3"
+      },
+      {
+        "name": "char_awake_name_10000027_4",
+        "desc": "char_awake_desc_10000027_4"
+      },
+      {
+        "name": "char_awake_name_10000027_5",
+        "desc": "char_awake_desc_10000027_5"
+      }
+    ],
+    "desc": "char_desc_10000027",
+    "id": 10000027,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/b/b1/nxypaywi8et5ui4ogaqqepgdd3xjxzx.png",
+    "name": "char_name_10000027",
+    "produceSkills": [
+      "10600167",
+      "10600290",
+      "10600291",
+      "10600292"
+    ],
+    "rarity": "R",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000027_1",
+        "desc": "char_reson_desc_10000027_1"
+      },
+      {
+        "name": "char_reson_name_10000027_2",
+        "desc": "char_reson_desc_10000027_2"
+      },
+      {
+        "name": "char_reson_name_10000027_3",
+        "desc": "char_reson_desc_10000027_3"
+      },
+      {
+        "name": "char_reson_name_10000027_4",
+        "desc": "char_reson_desc_10000027_4"
+      }
+    ],
+    "skills": {
+      "1": "10600167",
+      "2": "10600290",
+      "3": "10600291"
+    }
+  },
+  "10000031": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000031_1",
+        "desc": "char_awake_desc_10000031_1"
+      },
+      {
+        "name": "char_awake_name_10000031_2",
+        "desc": "char_awake_desc_10000031_2"
+      },
+      {
+        "name": "char_awake_name_10000031_3",
+        "desc": "char_awake_desc_10000031_3"
+      },
+      {
+        "name": "char_awake_name_10000031_4",
+        "desc": "char_awake_desc_10000031_4"
+      },
+      {
+        "name": "char_awake_name_10000031_5",
+        "desc": "char_awake_desc_10000031_5"
+      }
+    ],
+    "desc": "char_desc_10000031",
+    "id": 10000031,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/9/9e/jn2p7d9fuxa2b4kijg6vljnsyctac2x.png",
+    "name": "char_name_10000031",
+    "produceSkills": [
+      "10600192",
+      "10600262",
+      "10600284",
+      "10600293",
+      "10600294",
+      "10600367"
+    ],
+    "rarity": "SSR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000031_1",
+        "desc": "char_reson_desc_10000031_1"
+      },
+      {
+        "name": "char_reson_name_10000031_2",
+        "desc": "char_reson_desc_10000031_2"
+      },
+      {
+        "name": "char_reson_name_10000031_3",
+        "desc": "char_reson_desc_10000031_3"
+      },
+      {
+        "name": "char_reson_name_10000031_4",
+        "desc": "char_reson_desc_10000031_4"
+      },
+      {
+        "name": "char_reson_name_10000031_5",
+        "desc": "char_reson_desc_10000031_5"
+      }
+    ],
+    "skills": {
+      "1": "10600293",
+      "2": "10600284",
+      "3": "10600294"
+    }
+  },
+  "10000032": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000032_1",
+        "desc": "char_awake_desc_10000032_1"
+      },
+      {
+        "name": "char_awake_name_10000032_2",
+        "desc": "char_awake_desc_10000032_2"
+      },
+      {
+        "name": "char_awake_name_10000032_3",
+        "desc": "char_awake_desc_10000032_3"
+      },
+      {
+        "name": "char_awake_name_10000032_4",
+        "desc": "char_awake_desc_10000032_4"
+      },
+      {
+        "name": "char_awake_name_10000032_5",
+        "desc": "char_awake_desc_10000032_5"
+      }
+    ],
+    "desc": "char_desc_10000032",
+    "id": 10000032,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/0/01/23b1it2iy06w1ijt2ncayvr3i768ehk.png",
+    "name": "char_name_10000032",
+    "produceSkills": [
+      "10600100",
+      "10600101",
+      "10600102"
+    ],
+    "rarity": "SSR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000032_1",
+        "desc": "char_reson_desc_10000032_1"
+      },
+      {
+        "name": "char_reson_name_10000032_2",
+        "desc": "char_reson_desc_10000032_2"
+      },
+      {
+        "name": "char_reson_name_10000032_3",
+        "desc": "char_reson_desc_10000032_3"
+      },
+      {
+        "name": "char_reson_name_10000032_4",
+        "desc": "char_reson_desc_10000032_4"
+      },
+      {
+        "name": "char_reson_name_10000032_5",
+        "desc": "char_reson_desc_10000032_5"
+      }
+    ],
+    "skills": {
+      "1": "10600102",
+      "2": "10600101",
+      "3": "10600100"
+    }
+  },
+  "10000035": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000035_1",
+        "desc": "char_awake_desc_10000035_1"
+      },
+      {
+        "name": "char_awake_name_10000035_2",
+        "desc": "char_awake_desc_10000035_2"
+      },
+      {
+        "name": "char_awake_name_10000035_3",
+        "desc": "char_awake_desc_10000035_3"
+      },
+      {
+        "name": "char_awake_name_10000035_4",
+        "desc": "char_awake_desc_10000035_4"
+      },
+      {
+        "name": "char_awake_name_10000035_5",
+        "desc": "char_awake_desc_10000035_5"
+      }
+    ],
+    "desc": "char_desc_10000035",
+    "id": 10000035,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/7/76/lpcgzcy77vj8pba9o4zavicup2cdtod.png",
+    "name": "char_name_10000035",
+    "rarity": "SSR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000035_1",
+        "desc": "char_reson_desc_10000035_1"
+      },
+      {
+        "name": "char_reson_name_10000035_2",
+        "desc": "char_reson_desc_10000035_2"
+      },
+      {
+        "name": "char_reson_name_10000035_3",
+        "desc": "char_reson_desc_10000035_3"
+      },
+      {
+        "name": "char_reson_name_10000035_4",
+        "desc": "char_reson_desc_10000035_4"
+      },
+      {
+        "name": "char_reson_name_10000035_5",
+        "desc": "char_reson_desc_10000035_5"
+      }
+    ],
+    "skills": {
+      "1": "10600119",
+      "2": "10600314",
+      "3": "10600315"
+    },
+    "produceSkills": [
+      "10600119",
+      "10600314",
+      "10600315"
+    ]
+  },
+  "10000047": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000047_1",
+        "desc": "char_awake_desc_10000047_1"
+      },
+      {
+        "name": "char_awake_name_10000047_2",
+        "desc": "char_awake_desc_10000047_2"
+      },
+      {
+        "name": "char_awake_name_10000047_3",
+        "desc": "char_awake_desc_10000047_3"
+      },
+      {
+        "name": "char_awake_name_10000047_4",
+        "desc": "char_awake_desc_10000047_4"
+      },
+      {
+        "name": "char_awake_name_10000047_5",
+        "desc": "char_awake_desc_10000047_5"
+      }
+    ],
+    "desc": "char_desc_10000047",
+    "id": 10000047,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/c/c3/roqtb4sm1phw9jx2521gtzfg49k7ogz.png",
+    "name": "char_name_10000047",
+    "produceSkills": [
+      "10600043",
+      "10600044",
+      "10600075",
+      "10600091",
+      "10600099"
+    ],
+    "rarity": "SR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000047_1",
+        "desc": "char_reson_desc_10000047_1"
+      },
+      {
+        "name": "char_reson_name_10000047_2",
+        "desc": "char_reson_desc_10000047_2"
+      },
+      {
+        "name": "char_reson_name_10000047_3",
+        "desc": "char_reson_desc_10000047_3"
+      },
+      {
+        "name": "char_reson_name_10000047_4",
+        "desc": "char_reson_desc_10000047_4"
+      },
+      {
+        "name": "char_reson_name_10000047_5",
+        "desc": "char_reson_desc_10000047_5"
+      }
+    ],
+    "skills": {
+      "1": "10600043",
+      "2": "10600091",
+      "3": "10600099"
+    }
+  },
+  "10000051": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000051_1",
+        "desc": "char_awake_desc_10000051_1"
+      },
+      {
+        "name": "char_awake_name_10000051_2",
+        "desc": "char_awake_desc_10000051_2"
+      },
+      {
+        "name": "char_awake_name_10000051_3",
+        "desc": "char_awake_desc_10000051_3"
+      },
+      {
+        "name": "char_awake_name_10000051_4",
+        "desc": "char_awake_desc_10000051_4"
+      },
+      {
+        "name": "char_awake_name_10000051_5",
+        "desc": "char_awake_desc_10000051_5"
+      }
+    ],
+    "desc": "char_desc_10000051",
+    "id": 10000051,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/9/9d/pxkxvbdqdbtdh35t8o2rjzigmkw5pqu.png",
+    "name": "char_name_10000051",
+    "produceSkills": [
+      "10600251",
+      "10600255",
+      "10600256"
+    ],
+    "rarity": "SSR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000051_1",
+        "desc": "char_reson_desc_10000051_1"
+      },
+      {
+        "name": "char_reson_name_10000051_2",
+        "desc": "char_reson_desc_10000051_2"
+      },
+      {
+        "name": "char_reson_name_10000051_3",
+        "desc": "char_reson_desc_10000051_3"
+      },
+      {
+        "name": "char_reson_name_10000051_4",
+        "desc": "char_reson_desc_10000051_4"
+      },
+      {
+        "name": "char_reson_name_10000051_5",
+        "desc": "char_reson_desc_10000051_5"
+      }
+    ],
+    "skills": {
+      "1": "10600251",
+      "2": "10600255",
+      "3": "10600256"
+    }
+  },
+  "10000052": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000052_1",
+        "desc": "char_awake_desc_10000052_1"
+      },
+      {
+        "name": "char_awake_name_10000052_2",
+        "desc": "char_awake_desc_10000052_2"
+      },
+      {
+        "name": "char_awake_name_10000052_3",
+        "desc": "char_awake_desc_10000052_3"
+      },
+      {
+        "name": "char_awake_name_10000052_4",
+        "desc": "char_awake_desc_10000052_4"
+      },
+      {
+        "name": "char_awake_name_10000052_5",
+        "desc": "char_awake_desc_10000052_5"
+      }
+    ],
+    "desc": "char_desc_10000052",
+    "id": 10000052,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/9/99/qjewxjjz056p4j7pjtrlv0v76tog4ij.png",
+    "name": "char_name_10000052",
+    "produceSkills": [
+      "10600050",
+      "10600134",
+      "10600137",
+      "10600171"
+    ],
+    "rarity": "SR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000052_1",
+        "desc": "char_reson_desc_10000052_1"
+      },
+      {
+        "name": "char_reson_name_10000052_2",
+        "desc": "char_reson_desc_10000052_2"
+      },
+      {
+        "name": "char_reson_name_10000052_3",
+        "desc": "char_reson_desc_10000052_3"
+      },
+      {
+        "name": "char_reson_name_10000052_4",
+        "desc": "char_reson_desc_10000052_4"
+      },
+      {
+        "name": "char_reson_name_10000052_5",
+        "desc": "char_reson_desc_10000052_5"
+      }
+    ],
+    "skills": {
+      "1": "10600050",
+      "2": "10600134",
+      "3": "10600171"
+    }
+  },
+  "10000053": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000053_1",
+        "desc": "char_awake_desc_10000053_1"
+      },
+      {
+        "name": "char_awake_name_10000053_2",
+        "desc": "char_awake_desc_10000053_2"
+      },
+      {
+        "name": "char_awake_name_10000053_3",
+        "desc": "char_awake_desc_10000053_3"
+      },
+      {
+        "name": "char_awake_name_10000053_4",
+        "desc": "char_awake_desc_10000053_4"
+      },
+      {
+        "name": "char_awake_name_10000053_5",
+        "desc": "char_awake_desc_10000053_5"
+      }
+    ],
+    "desc": "char_desc_10000053",
+    "id": 10000053,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/7/78/ks7xx4q5rjap3tai1pyu7bftgnvgwsx.png",
+    "name": "char_name_10000053",
+    "produceSkills": [
+      "10600183",
+      "10600235",
+      "10600241"
+    ],
+    "rarity": "SR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000053_1",
+        "desc": "char_reson_desc_10000053_1"
+      },
+      {
+        "name": "char_reson_name_10000053_2",
+        "desc": "char_reson_desc_10000053_2"
+      },
+      {
+        "name": "char_reson_name_10000053_3",
+        "desc": "char_reson_desc_10000053_3"
+      },
+      {
+        "name": "char_reson_name_10000053_4",
+        "desc": "char_reson_desc_10000053_4"
+      },
+      {
+        "name": "char_reson_name_10000053_5",
+        "desc": "char_reson_desc_10000053_5"
+      }
+    ],
+    "skills": {
+      "1": "10600183",
+      "2": "10600235",
+      "3": "10600241"
+    }
+  },
+  "10000054": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000054_1",
+        "desc": "char_awake_desc_10000054_1"
+      },
+      {
+        "name": "char_awake_name_10000054_2",
+        "desc": "char_awake_desc_10000054_2"
+      },
+      {
+        "name": "char_awake_name_10000054_3",
+        "desc": "char_awake_desc_10000054_3"
+      },
+      {
+        "name": "char_awake_name_10000054_4",
+        "desc": "char_awake_desc_10000054_4"
+      },
+      {
+        "name": "char_awake_name_10000054_5",
+        "desc": "char_awake_desc_10000054_5"
+      }
+    ],
+    "desc": "char_desc_10000054",
+    "id": 10000054,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/a/a0/djgvzxvmqbiky8n0pze1ybsksxqus3w.png",
+    "name": "char_name_10000054",
+    "rarity": "SSR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000054_1",
+        "desc": "char_reson_desc_10000054_1"
+      },
+      {
+        "name": "char_reson_name_10000054_2",
+        "desc": "char_reson_desc_10000054_2"
+      },
+      {
+        "name": "char_reson_name_10000054_3",
+        "desc": "char_reson_desc_10000054_3"
+      },
+      {
+        "name": "char_reson_name_10000054_4",
+        "desc": "char_reson_desc_10000054_4"
+      },
+      {
+        "name": "char_reson_name_10000054_5",
+        "desc": "char_reson_desc_10000054_5"
+      }
+    ],
+    "skills": {
+      "1": "10600045",
+      "2": "10600046",
+      "3": "10600055"
+    },
+    "produceSkills": [
+      "10600045",
+      "10600046",
+      "10600055",
+      "10600076",
+      "10600262",
+      "10600270",
+      "10600282"
+    ]
+  },
+  "10000055": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000055_1",
+        "desc": "char_awake_desc_10000055_1"
+      },
+      {
+        "name": "char_awake_name_10000055_2",
+        "desc": "char_awake_desc_10000055_2"
+      },
+      {
+        "name": "char_awake_name_10000055_3",
+        "desc": "char_awake_desc_10000055_3"
+      },
+      {
+        "name": "char_awake_name_10000055_4",
+        "desc": "char_awake_desc_10000055_4"
+      },
+      {
+        "name": "char_awake_name_10000055_5",
+        "desc": "char_awake_desc_10000055_5"
+      }
+    ],
+    "desc": "char_desc_10000055",
+    "id": 10000055,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/3/37/n97nt1jynha8vkehmpx39z7nyqjvxzl.png",
+    "name": "char_name_10000055",
+    "produceSkills": [
+      "10600037",
+      "10600038",
+      "10600056",
+      "10600058",
+      "10600059",
+      "10600060",
+      "10600061",
+      "10600063",
+      "10600065",
+      "10600247",
+      "10600248",
+      "10600270"
+    ],
+    "rarity": "SR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000055_1",
+        "desc": "char_reson_desc_10000055_1"
+      },
+      {
+        "name": "char_reson_name_10000055_2",
+        "desc": "char_reson_desc_10000055_2"
+      },
+      {
+        "name": "char_reson_name_10000055_3",
+        "desc": "char_reson_desc_10000055_3"
+      },
+      {
+        "name": "char_reson_name_10000055_4",
+        "desc": "char_reson_desc_10000055_4"
+      },
+      {
+        "name": "char_reson_name_10000055_5",
+        "desc": "char_reson_desc_10000055_5"
+      }
+    ],
+    "skills": {
+      "1": "10600056",
+      "2": "10600060",
+      "3": "10600058"
+    }
+  },
+  "10000059": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000059_1",
+        "desc": "char_awake_desc_10000059_1"
+      },
+      {
+        "name": "char_awake_name_10000059_2",
+        "desc": "char_awake_desc_10000059_2"
+      },
+      {
+        "name": "char_awake_name_10000059_3",
+        "desc": "char_awake_desc_10000059_3"
+      },
+      {
+        "name": "char_awake_name_10000059_4",
+        "desc": "char_awake_desc_10000059_4"
+      },
+      {
+        "name": "char_awake_name_10000059_5",
+        "desc": "char_awake_desc_10000059_5"
+      }
+    ],
+    "desc": "char_desc_10000059",
+    "id": 10000059,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/d/da/693zk462exf86w0saftvznuqupwmuej.png",
+    "name": "char_name_10000059",
+    "rarity": "SSR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000059_1",
+        "desc": "char_reson_desc_10000059_1"
+      },
+      {
+        "name": "char_reson_name_10000059_2",
+        "desc": "char_reson_desc_10000059_2"
+      },
+      {
+        "name": "char_reson_name_10000059_3",
+        "desc": "char_reson_desc_10000059_3"
+      },
+      {
+        "name": "char_reson_name_10000059_4",
+        "desc": "char_reson_desc_10000059_4"
+      },
+      {
+        "name": "char_reson_name_10000059_5",
+        "desc": "char_reson_desc_10000059_5"
+      }
+    ],
+    "skills": {
+      "1": "10600078",
+      "2": "10600079",
+      "3": "10600080"
+    },
+    "produceSkills": [
+      "10600009",
+      "10600035",
+      "10600051",
+      "10600078",
+      "10600079",
+      "10600080",
+      "10600154",
+      "10600159",
+      "10600249"
+    ]
+  },
+  "10000060": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000060_1",
+        "desc": "char_awake_desc_10000060_1"
+      },
+      {
+        "name": "char_awake_name_10000060_2",
+        "desc": "char_awake_desc_10000060_2"
+      },
+      {
+        "name": "char_awake_name_10000060_3",
+        "desc": "char_awake_desc_10000060_3"
+      },
+      {
+        "name": "char_awake_name_10000060_4",
+        "desc": "char_awake_desc_10000060_4"
+      },
+      {
+        "name": "char_awake_name_10000060_5",
+        "desc": "char_awake_desc_10000060_5"
+      }
+    ],
+    "desc": "char_desc_10000060",
+    "id": 10000060,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/1/10/9jnvutq72ulmhglhqf05tx8be60y060.png",
+    "name": "char_name_10000060",
+    "produceSkills": [
+      "10600081",
+      "10600082",
+      "10600085"
+    ],
+    "rarity": "R",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000060_1",
+        "desc": "char_reson_desc_10000060_1"
+      },
+      {
+        "name": "char_reson_name_10000060_2",
+        "desc": "char_reson_desc_10000060_2"
+      },
+      {
+        "name": "char_reson_name_10000060_3",
+        "desc": "char_reson_desc_10000060_3"
+      },
+      {
+        "name": "char_reson_name_10000060_4",
+        "desc": "char_reson_desc_10000060_4"
+      }
+    ],
+    "skills": {
+      "1": "10600081",
+      "2": "10600085",
+      "3": "10600082"
+    }
+  },
+  "10000062": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000062_1",
+        "desc": "char_awake_desc_10000062_1"
+      },
+      {
+        "name": "char_awake_name_10000062_2",
+        "desc": "char_awake_desc_10000062_2"
+      },
+      {
+        "name": "char_awake_name_10000062_3",
+        "desc": "char_awake_desc_10000062_3"
+      },
+      {
+        "name": "char_awake_name_10000062_4",
+        "desc": "char_awake_desc_10000062_4"
+      },
+      {
+        "name": "char_awake_name_10000062_5",
+        "desc": "char_awake_desc_10000062_5"
+      }
+    ],
+    "desc": "char_desc_10000062",
+    "id": 10000062,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/0/01/gyndf2dte9v73p4vnip0jdfud7hc4wc.png",
+    "name": "char_name_10000062",
+    "produceSkills": [
+      "10600087",
+      "10600088",
+      "10600089"
+    ],
+    "rarity": "R",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000062_1",
+        "desc": "char_reson_desc_10000062_1"
+      },
+      {
+        "name": "char_reson_name_10000062_2",
+        "desc": "char_reson_desc_10000062_2"
+      },
+      {
+        "name": "char_reson_name_10000062_3",
+        "desc": "char_reson_desc_10000062_3"
+      },
+      {
+        "name": "char_reson_name_10000062_4",
+        "desc": "char_reson_desc_10000062_4"
+      }
+    ],
+    "skills": {
+      "1": "10600087",
+      "2": "10600089",
+      "3": "10600088"
+    }
+  },
+  "10000063": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000063_1",
+        "desc": "char_awake_desc_10000063_1"
+      },
+      {
+        "name": "char_awake_name_10000063_2",
+        "desc": "char_awake_desc_10000063_2"
+      },
+      {
+        "name": "char_awake_name_10000063_3",
+        "desc": "char_awake_desc_10000063_3"
+      },
+      {
+        "name": "char_awake_name_10000063_4",
+        "desc": "char_awake_desc_10000063_4"
+      },
+      {
+        "name": "char_awake_name_10000063_5",
+        "desc": "char_awake_desc_10000063_5"
+      }
+    ],
+    "desc": "char_desc_10000063",
+    "id": 10000063,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/2/23/02x7kk8z0mhlutgr1hthb57lllztzli.png",
+    "name": "char_name_10000063",
+    "produceSkills": [
+      "10600074",
+      "10600090",
+      "10600092",
+      "10600131"
+    ],
+    "rarity": "SR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000063_1",
+        "desc": "char_reson_desc_10000063_1"
+      },
+      {
+        "name": "char_reson_name_10000063_2",
+        "desc": "char_reson_desc_10000063_2"
+      },
+      {
+        "name": "char_reson_name_10000063_3",
+        "desc": "char_reson_desc_10000063_3"
+      },
+      {
+        "name": "char_reson_name_10000063_4",
+        "desc": "char_reson_desc_10000063_4"
+      },
+      {
+        "name": "char_reson_name_10000063_5",
+        "desc": "char_reson_desc_10000063_5"
+      }
+    ],
+    "skills": {
+      "1": "10600090",
+      "2": "10600074",
+      "3": "10600092"
+    }
+  },
+  "10000064": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000064_1",
+        "desc": "char_awake_desc_10000064_1"
+      },
+      {
+        "name": "char_awake_name_10000064_2",
+        "desc": "char_awake_desc_10000064_2"
+      },
+      {
+        "name": "char_awake_name_10000064_3",
+        "desc": "char_awake_desc_10000064_3"
+      },
+      {
+        "name": "char_awake_name_10000064_4",
+        "desc": "char_awake_desc_10000064_4"
+      },
+      {
+        "name": "char_awake_name_10000064_5",
+        "desc": "char_awake_desc_10000064_5"
+      }
+    ],
+    "desc": "char_desc_10000064",
+    "id": 10000064,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/8/85/6kryyqwf1welefa9294dbt006rx35i6.png",
+    "name": "char_name_10000064",
+    "produceSkills": [
+      "10600093",
+      "10600094",
+      "10600095"
+    ],
+    "rarity": "SR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000064_1",
+        "desc": "char_reson_desc_10000064_1"
+      },
+      {
+        "name": "char_reson_name_10000064_2",
+        "desc": "char_reson_desc_10000064_2"
+      },
+      {
+        "name": "char_reson_name_10000064_3",
+        "desc": "char_reson_desc_10000064_3"
+      },
+      {
+        "name": "char_reson_name_10000064_4",
+        "desc": "char_reson_desc_10000064_4"
+      },
+      {
+        "name": "char_reson_name_10000064_5",
+        "desc": "char_reson_desc_10000064_5"
+      }
+    ],
+    "skills": {
+      "1": "10600093",
+      "2": "10600095",
+      "3": "10600094"
+    }
+  },
+  "10000065": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000065_1",
+        "desc": "char_awake_desc_10000065_1"
+      },
+      {
+        "name": "char_awake_name_10000065_2",
+        "desc": "char_awake_desc_10000065_2"
+      },
+      {
+        "name": "char_awake_name_10000065_3",
+        "desc": "char_awake_desc_10000065_3"
+      },
+      {
+        "name": "char_awake_name_10000065_4",
+        "desc": "char_awake_desc_10000065_4"
+      },
+      {
+        "name": "char_awake_name_10000065_5",
+        "desc": "char_awake_desc_10000065_5"
+      }
+    ],
+    "desc": "char_desc_10000065",
+    "id": 10000065,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/7/7d/13feh8v5q8fybzjsubge8qtqqdvkmyz.png",
+    "name": "char_name_10000065",
+    "produceSkills": [
+      "10600096",
+      "10600097",
+      "10600098"
+    ],
+    "rarity": "R",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000065_1",
+        "desc": "char_reson_desc_10000065_1"
+      },
+      {
+        "name": "char_reson_name_10000065_2",
+        "desc": "char_reson_desc_10000065_2"
+      },
+      {
+        "name": "char_reson_name_10000065_3",
+        "desc": "char_reson_desc_10000065_3"
+      },
+      {
+        "name": "char_reson_name_10000065_4",
+        "desc": "char_reson_desc_10000065_4"
+      }
+    ],
+    "skills": {
+      "1": "10600096",
+      "2": "10600097",
+      "3": "10600098"
+    }
+  },
+  "10000068": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000068_1",
+        "desc": "char_awake_desc_10000068_1"
+      },
+      {
+        "name": "char_awake_name_10000068_2",
+        "desc": "char_awake_desc_10000068_2"
+      },
+      {
+        "name": "char_awake_name_10000068_3",
+        "desc": "char_awake_desc_10000068_3"
+      },
+      {
+        "name": "char_awake_name_10000068_4",
+        "desc": "char_awake_desc_10000068_4"
+      },
+      {
+        "name": "char_awake_name_10000068_5",
+        "desc": "char_awake_desc_10000068_5"
+      }
+    ],
+    "desc": "char_desc_10000068",
+    "id": 10000068,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/f/fc/74hn5lon3upuc416a3eekpcpqe3ch3q.png",
+    "name": "char_name_10000068",
+    "produceSkills": [
+      "10600048",
+      "10600103",
+      "10600104"
+    ],
+    "rarity": "SR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000068_1",
+        "desc": "char_reson_desc_10000068_1"
+      },
+      {
+        "name": "char_reson_name_10000068_2",
+        "desc": "char_reson_desc_10000068_2"
+      },
+      {
+        "name": "char_reson_name_10000068_3",
+        "desc": "char_reson_desc_10000068_3"
+      },
+      {
+        "name": "char_reson_name_10000068_4",
+        "desc": "char_reson_desc_10000068_4"
+      },
+      {
+        "name": "char_reson_name_10000068_5",
+        "desc": "char_reson_desc_10000068_5"
+      }
+    ],
+    "skills": {
+      "1": "10600048",
+      "2": "10600103",
+      "3": "10600104"
+    }
+  },
+  "10000069": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000069_1",
+        "desc": "char_awake_desc_10000069_1"
+      },
+      {
+        "name": "char_awake_name_10000069_2",
+        "desc": "char_awake_desc_10000069_2"
+      },
+      {
+        "name": "char_awake_name_10000069_3",
+        "desc": "char_awake_desc_10000069_3"
+      },
+      {
+        "name": "char_awake_name_10000069_4",
+        "desc": "char_awake_desc_10000069_4"
+      },
+      {
+        "name": "char_awake_name_10000069_5",
+        "desc": "char_awake_desc_10000069_5"
+      }
+    ],
+    "desc": "char_desc_10000069",
+    "id": 10000069,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/2/28/bqsrujv5775aocb9p7op05xrx852q7a.png",
+    "name": "char_name_10000069",
+    "rarity": "SSR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000069_1",
+        "desc": "char_reson_desc_10000069_1"
+      },
+      {
+        "name": "char_reson_name_10000069_2",
+        "desc": "char_reson_desc_10000069_2"
+      },
+      {
+        "name": "char_reson_name_10000069_3",
+        "desc": "char_reson_desc_10000069_3"
+      },
+      {
+        "name": "char_reson_name_10000069_4",
+        "desc": "char_reson_desc_10000069_4"
+      },
+      {
+        "name": "char_reson_name_10000069_5",
+        "desc": "char_reson_desc_10000069_5"
+      }
+    ],
+    "skills": {
+      "1": "10600107",
+      "2": "10600073",
+      "3": "10600106"
+    },
+    "produceSkills": [
+      "10600073",
+      "10600106",
+      "10600107"
+    ]
+  },
+  "10000071": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000071_1",
+        "desc": "char_awake_desc_10000071_1"
+      },
+      {
+        "name": "char_awake_name_10000071_2",
+        "desc": "char_awake_desc_10000071_2"
+      },
+      {
+        "name": "char_awake_name_10000071_3",
+        "desc": "char_awake_desc_10000071_3"
+      },
+      {
+        "name": "char_awake_name_10000071_4",
+        "desc": "char_awake_desc_10000071_4"
+      },
+      {
+        "name": "char_awake_name_10000071_5",
+        "desc": "char_awake_desc_10000071_5"
+      }
+    ],
+    "desc": "char_desc_10000071",
+    "id": 10000071,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/0/0d/09np973hig1iqxj58563egh13i72df1.png",
+    "name": "char_name_10000071",
+    "produceSkills": [
+      "10600113",
+      "10600279",
+      "10600280"
+    ],
+    "rarity": "SR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000071_1",
+        "desc": "char_reson_desc_10000071_1"
+      },
+      {
+        "name": "char_reson_name_10000071_2",
+        "desc": "char_reson_desc_10000071_2"
+      },
+      {
+        "name": "char_reson_name_10000071_3",
+        "desc": "char_reson_desc_10000071_3"
+      },
+      {
+        "name": "char_reson_name_10000071_4",
+        "desc": "char_reson_desc_10000071_4"
+      },
+      {
+        "name": "char_reson_name_10000071_5",
+        "desc": "char_reson_desc_10000071_5"
+      }
+    ],
+    "skills": {
+      "1": "10600279",
+      "2": "10600113",
+      "3": "10600280"
+    }
+  },
+  "10000072": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000072_1",
+        "desc": "char_awake_desc_10000072_1"
+      },
+      {
+        "name": "char_awake_name_10000072_2",
+        "desc": "char_awake_desc_10000072_2"
+      },
+      {
+        "name": "char_awake_name_10000072_3",
+        "desc": "char_awake_desc_10000072_3"
+      },
+      {
+        "name": "char_awake_name_10000072_4",
+        "desc": "char_awake_desc_10000072_4"
+      },
+      {
+        "name": "char_awake_name_10000072_5",
+        "desc": "char_awake_desc_10000072_5"
+      }
+    ],
+    "desc": "char_desc_10000072",
+    "id": 10000072,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/0/00/js1l3c6ehy556lhpbvpmbxwkc3sbldp.png",
+    "name": "char_name_10000072",
+    "produceSkills": [
+      "10600295",
+      "10600296",
+      "10600349",
+      "10600350",
+      "10600351",
+      "10600352",
+      "10600353"
+    ],
+    "rarity": "SSR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000072_1",
+        "desc": "char_reson_desc_10000072_1"
+      },
+      {
+        "name": "char_reson_name_10000072_2",
+        "desc": "char_reson_desc_10000072_2"
+      },
+      {
+        "name": "char_reson_name_10000072_3",
+        "desc": "char_reson_desc_10000072_3"
+      },
+      {
+        "name": "char_reson_name_10000072_4",
+        "desc": "char_reson_desc_10000072_4"
+      },
+      {
+        "name": "char_reson_name_10000072_5",
+        "desc": "char_reson_desc_10000072_5"
+      }
+    ],
+    "skills": {
+      "1": "10600295",
+      "2": "10600296",
+      "3": "10600353"
+    }
+  },
+  "10000094": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000094_1",
+        "desc": "char_awake_desc_10000094_1"
+      },
+      {
+        "name": "char_awake_name_10000094_2",
+        "desc": "char_awake_desc_10000094_2"
+      },
+      {
+        "name": "char_awake_name_10000094_3",
+        "desc": "char_awake_desc_10000094_3"
+      },
+      {
+        "name": "char_awake_name_10000094_4",
+        "desc": "char_awake_desc_10000094_4"
+      },
+      {
+        "name": "char_awake_name_10000094_5",
+        "desc": "char_awake_desc_10000094_5"
+      }
+    ],
+    "desc": "char_desc_10000094",
+    "id": 10000094,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/8/83/l2wwi95nt3abfwicfoqm26rmt494mnx.png",
+    "name": "char_name_10000094",
+    "rarity": "SSR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000094_1",
+        "desc": "char_reson_desc_10000094_1"
+      },
+      {
+        "name": "char_reson_name_10000094_2",
+        "desc": "char_reson_desc_10000094_2"
+      },
+      {
+        "name": "char_reson_name_10000094_3",
+        "desc": "char_reson_desc_10000094_3"
+      },
+      {
+        "name": "char_reson_name_10000094_4",
+        "desc": "char_reson_desc_10000094_4"
+      },
+      {
+        "name": "char_reson_name_10000094_5",
+        "desc": "char_reson_desc_10000094_5"
+      }
+    ],
+    "skills": {
+      "1": "10600070",
+      "2": "10600072",
+      "3": "10600136"
+    },
+    "produceSkills": [
+      "10600070",
+      "10600072",
+      "10600086",
+      "10600136"
+    ]
+  },
+  "10000095": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000095_1",
+        "desc": "char_awake_desc_10000095_1"
+      },
+      {
+        "name": "char_awake_name_10000095_2",
+        "desc": "char_awake_desc_10000095_2"
+      },
+      {
+        "name": "char_awake_name_10000095_3",
+        "desc": "char_awake_desc_10000095_3"
+      },
+      {
+        "name": "char_awake_name_10000095_4",
+        "desc": "char_awake_desc_10000095_4"
+      },
+      {
+        "name": "char_awake_name_10000095_5",
+        "desc": "char_awake_desc_10000095_5"
+      }
+    ],
+    "desc": "char_desc_10000095",
+    "id": 10000095,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/5/55/824lzhgqjvy0tdxuleasjmhcd43xl54.png",
+    "name": "char_name_10000095",
+    "rarity": "SSR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000095_1",
+        "desc": "char_reson_desc_10000095_1"
+      },
+      {
+        "name": "char_reson_name_10000095_2",
+        "desc": "char_reson_desc_10000095_2"
+      },
+      {
+        "name": "char_reson_name_10000095_3",
+        "desc": "char_reson_desc_10000095_3"
+      },
+      {
+        "name": "char_reson_name_10000095_4",
+        "desc": "char_reson_desc_10000095_4"
+      },
+      {
+        "name": "char_reson_name_10000095_5",
+        "desc": "char_reson_desc_10000095_5"
+      }
+    ],
+    "skills": {
+      "1": "10600017",
+      "2": "10600077",
+      "3": "10600013"
+    },
+    "produceSkills": [
+      "10600013",
+      "10600017",
+      "10600077"
+    ]
+  },
+  "10000101": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000101_1",
+        "desc": "char_awake_desc_10000101_1"
+      },
+      {
+        "name": "char_awake_name_10000101_2",
+        "desc": "char_awake_desc_10000101_2"
+      },
+      {
+        "name": "char_awake_name_10000101_3",
+        "desc": "char_awake_desc_10000101_3"
+      },
+      {
+        "name": "char_awake_name_10000101_4",
+        "desc": "char_awake_desc_10000101_4"
+      },
+      {
+        "name": "char_awake_name_10000101_5",
+        "desc": "char_awake_desc_10000101_5"
+      }
+    ],
+    "desc": "char_desc_10000101",
+    "id": 10000101,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/a/aa/t48uxwofze12qrotesoqi8ubz6ied8t.png",
+    "name": "char_name_10000101",
+    "produceSkills": [
+      "10600260",
+      "10600304",
+      "10600305"
+    ],
+    "rarity": "SR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000101_1",
+        "desc": "char_reson_desc_10000101_1"
+      },
+      {
+        "name": "char_reson_name_10000101_2",
+        "desc": "char_reson_desc_10000101_2"
+      },
+      {
+        "name": "char_reson_name_10000101_3",
+        "desc": "char_reson_desc_10000101_3"
+      },
+      {
+        "name": "char_reson_name_10000101_4",
+        "desc": "char_reson_desc_10000101_4"
+      },
+      {
+        "name": "char_reson_name_10000101_5",
+        "desc": "char_reson_desc_10000101_5"
+      }
+    ],
+    "skills": {
+      "1": "10600260",
+      "2": "10600305",
+      "3": "10600304"
+    }
+  },
+  "10000110": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000110_1",
+        "desc": "char_awake_desc_10000110_1"
+      },
+      {
+        "name": "char_awake_name_10000110_2",
+        "desc": "char_awake_desc_10000110_2"
+      },
+      {
+        "name": "char_awake_name_10000110_3",
+        "desc": "char_awake_desc_10000110_3"
+      },
+      {
+        "name": "char_awake_name_10000110_4",
+        "desc": "char_awake_desc_10000110_4"
+      },
+      {
+        "name": "char_awake_name_10000110_5",
+        "desc": "char_awake_desc_10000110_5"
+      }
+    ],
+    "desc": "char_desc_10000110",
+    "id": 10000110,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/7/74/2mc5r6uhbxbxcm4f4hgmnqvxh42nfsk.png",
+    "name": "char_name_10000110",
+    "produceSkills": [
+      "10600307",
+      "10600308",
+      "10600309"
+    ],
+    "rarity": "SR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000110_1",
+        "desc": "char_reson_desc_10000110_1"
+      },
+      {
+        "name": "char_reson_name_10000110_2",
+        "desc": "char_reson_desc_10000110_2"
+      },
+      {
+        "name": "char_reson_name_10000110_3",
+        "desc": "char_reson_desc_10000110_3"
+      },
+      {
+        "name": "char_reson_name_10000110_4",
+        "desc": "char_reson_desc_10000110_4"
+      },
+      {
+        "name": "char_reson_name_10000110_5",
+        "desc": "char_reson_desc_10000110_5"
+      }
+    ],
+    "skills": {
+      "1": "10600307",
+      "2": "10600308",
+      "3": "10600309"
+    }
+  },
+  "10000111": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000111_1",
+        "desc": "char_awake_desc_10000111_1"
+      },
+      {
+        "name": "char_awake_name_10000111_2",
+        "desc": "char_awake_desc_10000111_2"
+      },
+      {
+        "name": "char_awake_name_10000111_3",
+        "desc": "char_awake_desc_10000111_3"
+      },
+      {
+        "name": "char_awake_name_10000111_4",
+        "desc": "char_awake_desc_10000111_4"
+      },
+      {
+        "name": "char_awake_name_10000111_5",
+        "desc": "char_awake_desc_10000111_5"
+      }
+    ],
+    "desc": "char_desc_10000111",
+    "id": 10000111,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/a/a5/42w3t8fsyd3wibvzthl02js4d2ffkyi.png",
+    "name": "char_name_10000111",
+    "produceSkills": [
+      "10600018",
+      "10600019",
+      "10600020",
+      "10600140",
+      "10600271"
+    ],
+    "rarity": "R",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000111_1",
+        "desc": "char_reson_desc_10000111_1"
+      },
+      {
+        "name": "char_reson_name_10000111_2",
+        "desc": "char_reson_desc_10000111_2"
+      },
+      {
+        "name": "char_reson_name_10000111_3",
+        "desc": "char_reson_desc_10000111_3"
+      },
+      {
+        "name": "char_reson_name_10000111_4",
+        "desc": "char_reson_desc_10000111_4"
+      }
+    ],
+    "skills": {
+      "1": "10600019",
+      "2": "10600020",
+      "3": "10600271"
+    }
+  },
+  "10000112": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000112_1",
+        "desc": "char_awake_desc_10000112_1"
+      },
+      {
+        "name": "char_awake_name_10000112_2",
+        "desc": "char_awake_desc_10000112_2"
+      },
+      {
+        "name": "char_awake_name_10000112_3",
+        "desc": "char_awake_desc_10000112_3"
+      },
+      {
+        "name": "char_awake_name_10000112_4",
+        "desc": "char_awake_desc_10000112_4"
+      },
+      {
+        "name": "char_awake_name_10000112_5",
+        "desc": "char_awake_desc_10000112_5"
+      }
+    ],
+    "desc": "char_desc_10000112",
+    "id": 10000112,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/d/d4/bl7m3snvy79u85fexh07w1lxjg8wt4c.png",
+    "name": "char_name_10000112",
+    "produceSkills": [
+      "10600310",
+      "10600311",
+      "10600312"
+    ],
+    "rarity": "SR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000112_1",
+        "desc": "char_reson_desc_10000112_1"
+      },
+      {
+        "name": "char_reson_name_10000112_2",
+        "desc": "char_reson_desc_10000112_2"
+      },
+      {
+        "name": "char_reson_name_10000112_3",
+        "desc": "char_reson_desc_10000112_3"
+      },
+      {
+        "name": "char_reson_name_10000112_4",
+        "desc": "char_reson_desc_10000112_4"
+      },
+      {
+        "name": "char_reson_name_10000112_5",
+        "desc": "char_reson_desc_10000112_5"
+      }
+    ],
+    "skills": {
+      "1": "10600310",
+      "2": "10600311",
+      "3": "10600312"
+    }
+  },
+  "10000124": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000124_1",
+        "desc": "char_awake_desc_10000124_1"
+      },
+      {
+        "name": "char_awake_name_10000124_2",
+        "desc": "char_awake_desc_10000124_2"
+      },
+      {
+        "name": "char_awake_name_10000124_3",
+        "desc": "char_awake_desc_10000124_3"
+      },
+      {
+        "name": "char_awake_name_10000124_4",
+        "desc": "char_awake_desc_10000124_4"
+      },
+      {
+        "name": "char_awake_name_10000124_5",
+        "desc": "char_awake_desc_10000124_5"
+      }
+    ],
+    "desc": "char_desc_10000124",
+    "id": 10000124,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/8/8b/c0iie1cu76sys17xvagxqnt0jfez80e.png",
+    "name": "char_name_10000124",
+    "produceSkills": [
+      "10600324",
+      "10600325",
+      "10600326"
+    ],
+    "rarity": "SR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000124_1",
+        "desc": "char_reson_desc_10000124_1"
+      },
+      {
+        "name": "char_reson_name_10000124_2",
+        "desc": "char_reson_desc_10000124_2"
+      },
+      {
+        "name": "char_reson_name_10000124_3",
+        "desc": "char_reson_desc_10000124_3"
+      },
+      {
+        "name": "char_reson_name_10000124_4",
+        "desc": "char_reson_desc_10000124_4"
+      },
+      {
+        "name": "char_reson_name_10000124_5",
+        "desc": "char_reson_desc_10000124_5"
+      }
+    ],
+    "skills": {
+      "1": "10600326",
+      "2": "10600325",
+      "3": "10600324"
+    }
+  },
+  "10000134": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000134_1",
+        "desc": "char_awake_desc_10000134_1"
+      },
+      {
+        "name": "char_awake_name_10000134_2",
+        "desc": "char_awake_desc_10000134_2"
+      },
+      {
+        "name": "char_awake_name_10000134_3",
+        "desc": "char_awake_desc_10000134_3"
+      },
+      {
+        "name": "char_awake_name_10000134_4",
+        "desc": "char_awake_desc_10000134_4"
+      },
+      {
+        "name": "char_awake_name_10000134_5",
+        "desc": "char_awake_desc_10000134_5"
+      }
+    ],
+    "desc": "char_desc_10000134",
+    "id": 10000134,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/0/0a/efrmjiuy69fbklqkhm4tu9eno6hy31y.png",
+    "name": "char_name_10000134",
+    "produceSkills": [
+      "10600160",
+      "10600161",
+      "10600250"
+    ],
+    "rarity": "R",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000134_1",
+        "desc": "char_reson_desc_10000134_1"
+      },
+      {
+        "name": "char_reson_name_10000134_2",
+        "desc": "char_reson_desc_10000134_2"
+      },
+      {
+        "name": "char_reson_name_10000134_3",
+        "desc": "char_reson_desc_10000134_3"
+      },
+      {
+        "name": "char_reson_name_10000134_4",
+        "desc": "char_reson_desc_10000134_4"
+      }
+    ],
+    "skills": {
+      "1": "10600160",
+      "2": "10600161",
+      "3": "10600250"
+    }
+  },
+  "10000139": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000139_1",
+        "desc": "char_awake_desc_10000139_1"
+      },
+      {
+        "name": "char_awake_name_10000139_2",
+        "desc": "char_awake_desc_10000139_2"
+      },
+      {
+        "name": "char_awake_name_10000139_3",
+        "desc": "char_awake_desc_10000139_3"
+      },
+      {
+        "name": "char_awake_name_10000139_4",
+        "desc": "char_awake_desc_10000139_4"
+      },
+      {
+        "name": "char_awake_name_10000139_5",
+        "desc": "char_awake_desc_10000139_5"
+      }
+    ],
+    "desc": "char_desc_10000139",
+    "id": 10000139,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/4/41/o3nffkahbbrvahbx087u6t7qy8719ed.png",
+    "name": "char_name_10000139",
+    "produceSkills": [
+      "10600327",
+      "10600328",
+      "10600329"
+    ],
+    "rarity": "SSR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000139_1",
+        "desc": "char_reson_desc_10000139_1"
+      },
+      {
+        "name": "char_reson_name_10000139_2",
+        "desc": "char_reson_desc_10000139_2"
+      },
+      {
+        "name": "char_reson_name_10000139_3",
+        "desc": "char_reson_desc_10000139_3"
+      },
+      {
+        "name": "char_reson_name_10000139_4",
+        "desc": "char_reson_desc_10000139_4"
+      },
+      {
+        "name": "char_reson_name_10000139_5",
+        "desc": "char_reson_desc_10000139_5"
+      }
+    ],
+    "skills": {
+      "1": "10600327",
+      "2": "10600328",
+      "3": "10600329"
+    }
+  },
+  "10000153": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000153_1",
+        "desc": "char_awake_desc_10000153_1"
+      },
+      {
+        "name": "char_awake_name_10000153_2",
+        "desc": "char_awake_desc_10000153_2"
+      },
+      {
+        "name": "char_awake_name_10000153_3",
+        "desc": "char_awake_desc_10000153_3"
+      },
+      {
+        "name": "char_awake_name_10000153_4",
+        "desc": "char_awake_desc_10000153_4"
+      },
+      {
+        "name": "char_awake_name_10000153_5",
+        "desc": "char_awake_desc_10000153_5"
+      }
+    ],
+    "desc": "char_desc_10000153",
+    "id": 10000153,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/e/e7/1iwjagjic6zi5a0cwtj60m6sicybfmc.png",
+    "name": "char_name_10000153",
+    "produceSkills": [
+      "10600026",
+      "10600040",
+      "10600186",
+      "10600187"
+    ],
+    "rarity": "SR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000153_1",
+        "desc": "char_reson_desc_10000153_1"
+      },
+      {
+        "name": "char_reson_name_10000153_2",
+        "desc": "char_reson_desc_10000153_2"
+      },
+      {
+        "name": "char_reson_name_10000153_3",
+        "desc": "char_reson_desc_10000153_3"
+      },
+      {
+        "name": "char_reson_name_10000153_4",
+        "desc": "char_reson_desc_10000153_4"
+      },
+      {
+        "name": "char_reson_name_10000153_5",
+        "desc": "char_reson_desc_10000153_5"
+      }
+    ],
+    "skills": {
+      "1": "10600186",
+      "2": "10600040",
+      "3": "10600187"
+    }
+  },
+  "10000154": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000154_1",
+        "desc": "char_awake_desc_10000154_1"
+      },
+      {
+        "name": "char_awake_name_10000154_2",
+        "desc": "char_awake_desc_10000154_2"
+      },
+      {
+        "name": "char_awake_name_10000154_3",
+        "desc": "char_awake_desc_10000154_3"
+      },
+      {
+        "name": "char_awake_name_10000154_4",
+        "desc": "char_awake_desc_10000154_4"
+      },
+      {
+        "name": "char_awake_name_10000154_5",
+        "desc": "char_awake_desc_10000154_5"
+      }
+    ],
+    "desc": "char_desc_10000154",
+    "id": 10000154,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/1/1a/51urp8w56ytk1yu5qbcokrijok8og2i.png",
+    "name": "char_name_10000154",
+    "rarity": "SSR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000154_1",
+        "desc": "char_reson_desc_10000154_1"
+      },
+      {
+        "name": "char_reson_name_10000154_2",
+        "desc": "char_reson_desc_10000154_2"
+      },
+      {
+        "name": "char_reson_name_10000154_3",
+        "desc": "char_reson_desc_10000154_3"
+      },
+      {
+        "name": "char_reson_name_10000154_4",
+        "desc": "char_reson_desc_10000154_4"
+      },
+      {
+        "name": "char_reson_name_10000154_5",
+        "desc": "char_reson_desc_10000154_5"
+      }
+    ],
+    "skills": {
+      "1": "10600170",
+      "2": "10600041",
+      "3": "10600173"
+    },
+    "produceSkills": [
+      "10600041",
+      "10600170",
+      "10600173"
+    ]
+  },
+  "10000156": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000156_1",
+        "desc": "char_awake_desc_10000156_1"
+      },
+      {
+        "name": "char_awake_name_10000156_2",
+        "desc": "char_awake_desc_10000156_2"
+      },
+      {
+        "name": "char_awake_name_10000156_3",
+        "desc": "char_awake_desc_10000156_3"
+      },
+      {
+        "name": "char_awake_name_10000156_4",
+        "desc": "char_awake_desc_10000156_4"
+      },
+      {
+        "name": "char_awake_name_10000156_5",
+        "desc": "char_awake_desc_10000156_5"
+      }
+    ],
+    "desc": "char_desc_10000156",
+    "id": 10000156,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/c/ce/f3n1tyl4pvlkusi9s7c3nia00ji0xib.png",
+    "name": "char_name_10000156",
+    "produceSkills": [
+      "10600053",
+      "10600177",
+      "10600178"
+    ],
+    "rarity": "R",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000156_1",
+        "desc": "char_reson_desc_10000156_1"
+      },
+      {
+        "name": "char_reson_name_10000156_2",
+        "desc": "char_reson_desc_10000156_2"
+      },
+      {
+        "name": "char_reson_name_10000156_3",
+        "desc": "char_reson_desc_10000156_3"
+      },
+      {
+        "name": "char_reson_name_10000156_4",
+        "desc": "char_reson_desc_10000156_4"
+      }
+    ],
+    "skills": {
+      "1": "10600177",
+      "2": "10600053",
+      "3": "10600178"
+    }
+  },
+  "10000157": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000157_1",
+        "desc": "char_awake_desc_10000157_1"
+      },
+      {
+        "name": "char_awake_name_10000157_2",
+        "desc": "char_awake_desc_10000157_2"
+      },
+      {
+        "name": "char_awake_name_10000157_3",
+        "desc": "char_awake_desc_10000157_3"
+      },
+      {
+        "name": "char_awake_name_10000157_4",
+        "desc": "char_awake_desc_10000157_4"
+      },
+      {
+        "name": "char_awake_name_10000157_5",
+        "desc": "char_awake_desc_10000157_5"
+      }
+    ],
+    "desc": "char_desc_10000157",
+    "id": 10000157,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/6/65/hf8m7qg0qt2yk5ikbmd755r1xwura4h.png",
+    "name": "char_name_10000157",
+    "produceSkills": [
+      "10600174",
+      "10600175",
+      "10600176"
+    ],
+    "rarity": "R",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000157_1",
+        "desc": "char_reson_desc_10000157_1"
+      },
+      {
+        "name": "char_reson_name_10000157_2",
+        "desc": "char_reson_desc_10000157_2"
+      },
+      {
+        "name": "char_reson_name_10000157_3",
+        "desc": "char_reson_desc_10000157_3"
+      },
+      {
+        "name": "char_reson_name_10000157_4",
+        "desc": "char_reson_desc_10000157_4"
+      }
+    ],
+    "skills": {
+      "1": "10600174",
+      "2": "10600175",
+      "3": "10600176"
+    }
+  },
+  "10000159": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000159_1",
+        "desc": "char_awake_desc_10000159_1"
+      },
+      {
+        "name": "char_awake_name_10000159_2",
+        "desc": "char_awake_desc_10000159_2"
+      },
+      {
+        "name": "char_awake_name_10000159_3",
+        "desc": "char_awake_desc_10000159_3"
+      },
+      {
+        "name": "char_awake_name_10000159_4",
+        "desc": "char_awake_desc_10000159_4"
+      },
+      {
+        "name": "char_awake_name_10000159_5",
+        "desc": "char_awake_desc_10000159_5"
+      }
+    ],
+    "desc": "char_desc_10000159",
+    "id": 10000159,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/5/53/1eobpcmy0n3s39a099copsrze4pd8jr.png",
+    "name": "char_name_10000159",
+    "produceSkills": [
+      "10600330",
+      "10600335",
+      "10600336",
+      "10600337",
+      "10600338",
+      "10600339"
+    ],
+    "rarity": "R",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000159_1",
+        "desc": "char_reson_desc_10000159_1"
+      },
+      {
+        "name": "char_reson_name_10000159_2",
+        "desc": "char_reson_desc_10000159_2"
+      },
+      {
+        "name": "char_reson_name_10000159_3",
+        "desc": "char_reson_desc_10000159_3"
+      },
+      {
+        "name": "char_reson_name_10000159_4",
+        "desc": "char_reson_desc_10000159_4"
+      }
+    ],
+    "skills": {
+      "1": "10600330",
+      "2": "10600338",
+      "3": "10600339"
+    }
+  },
+  "10000160": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000160_1",
+        "desc": "char_awake_desc_10000160_1"
+      },
+      {
+        "name": "char_awake_name_10000160_2",
+        "desc": "char_awake_desc_10000160_2"
+      },
+      {
+        "name": "char_awake_name_10000160_3",
+        "desc": "char_awake_desc_10000160_3"
+      },
+      {
+        "name": "char_awake_name_10000160_4",
+        "desc": "char_awake_desc_10000160_4"
+      },
+      {
+        "name": "char_awake_name_10000160_5",
+        "desc": "char_awake_desc_10000160_5"
+      }
+    ],
+    "desc": "char_desc_10000160",
+    "id": 10000160,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/9/90/39hndkktsknogceq6mc9b3xek6vq04i.png",
+    "name": "char_name_10000160",
+    "produceSkills": [
+      "10600182",
+      "10600184",
+      "10600269"
+    ],
+    "rarity": "R",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000160_1",
+        "desc": "char_reson_desc_10000160_1"
+      },
+      {
+        "name": "char_reson_name_10000160_2",
+        "desc": "char_reson_desc_10000160_2"
+      },
+      {
+        "name": "char_reson_name_10000160_3",
+        "desc": "char_reson_desc_10000160_3"
+      },
+      {
+        "name": "char_reson_name_10000160_4",
+        "desc": "char_reson_desc_10000160_4"
+      }
+    ],
+    "skills": {
+      "1": "10600184",
+      "2": "10600182",
+      "3": "10600269"
+    }
+  },
+  "10000170": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000170_1",
+        "desc": "char_awake_desc_10000170_1"
+      },
+      {
+        "name": "char_awake_name_10000170_2",
+        "desc": "char_awake_desc_10000170_2"
+      },
+      {
+        "name": "char_awake_name_10000170_3",
+        "desc": "char_awake_desc_10000170_3"
+      },
+      {
+        "name": "char_awake_name_10000170_4",
+        "desc": "char_awake_desc_10000170_4"
+      },
+      {
+        "name": "char_awake_name_10000170_5",
+        "desc": "char_awake_desc_10000170_5"
+      }
+    ],
+    "desc": "char_desc_10000170",
+    "id": 10000170,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/d/df/83f2wu57hj40s6eb6qolth3q7e79gta.png",
+    "name": "char_name_10000170",
+    "produceSkills": [
+      "10600057",
+      "10600062",
+      "10600064",
+      "10600066",
+      "10600067"
+    ],
+    "rarity": "R",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000170_1",
+        "desc": "char_reson_desc_10000170_1"
+      },
+      {
+        "name": "char_reson_name_10000170_2",
+        "desc": "char_reson_desc_10000170_2"
+      },
+      {
+        "name": "char_reson_name_10000170_3",
+        "desc": "char_reson_desc_10000170_3"
+      },
+      {
+        "name": "char_reson_name_10000170_4",
+        "desc": "char_reson_desc_10000170_4"
+      }
+    ],
+    "skills": {
+      "1": "10600057",
+      "2": "10600066",
+      "3": "10600067"
+    }
+  },
+  "10000270": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000270_1",
+        "desc": "char_awake_desc_10000270_1"
+      },
+      {
+        "name": "char_awake_name_10000270_2",
+        "desc": "char_awake_desc_10000270_2"
+      },
+      {
+        "name": "char_awake_name_10000270_3",
+        "desc": "char_awake_desc_10000270_3"
+      },
+      {
+        "name": "char_awake_name_10000270_4",
+        "desc": "char_awake_desc_10000270_4"
+      },
+      {
+        "name": "char_awake_name_10000270_5",
+        "desc": "char_awake_desc_10000270_5"
+      }
+    ],
+    "desc": "char_desc_10000270",
+    "id": 10000270,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/b/bd/lrfz8vh5jhhm55iuuw71b5msk3ke159.png",
+    "name": "char_name_10000270",
+    "rarity": "SR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000270_1",
+        "desc": "char_reson_desc_10000270_1"
+      },
+      {
+        "name": "char_reson_name_10000270_2",
+        "desc": "char_reson_desc_10000270_2"
+      },
+      {
+        "name": "char_reson_name_10000270_3",
+        "desc": "char_reson_desc_10000270_3"
+      },
+      {
+        "name": "char_reson_name_10000270_4",
+        "desc": "char_reson_desc_10000270_4"
+      },
+      {
+        "name": "char_reson_name_10000270_5",
+        "desc": "char_reson_desc_10000270_5"
+      }
+    ],
+    "skills": {
+      "1": "10600362",
+      "2": "10600359",
+      "3": "10600366"
+    },
+    "produceSkills": [
+      "10600359",
+      "10600362",
+      "10600366"
+    ]
+  },
+  "10000276": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000276_1",
+        "desc": "char_awake_desc_10000276_1"
+      },
+      {
+        "name": "char_awake_name_10000276_2",
+        "desc": "char_awake_desc_10000276_2"
+      },
+      {
+        "name": "char_awake_name_10000276_3",
+        "desc": "char_awake_desc_10000276_3"
+      },
+      {
+        "name": "char_awake_name_10000276_4",
+        "desc": "char_awake_desc_10000276_4"
+      },
+      {
+        "name": "char_awake_name_10000276_5",
+        "desc": "char_awake_desc_10000276_5"
+      }
+    ],
+    "desc": "char_desc_10000276",
+    "id": 10000276,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/f/f3/02wi2sboshumw98nf7xh9sci7li57ct.png",
+    "name": "char_name_10000276",
+    "rarity": "SSR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000276_1",
+        "desc": "char_reson_desc_10000276_1"
+      },
+      {
+        "name": "char_reson_name_10000276_2",
+        "desc": "char_reson_desc_10000276_2"
+      },
+      {
+        "name": "char_reson_name_10000276_3",
+        "desc": "char_reson_desc_10000276_3"
+      },
+      {
+        "name": "char_reson_name_10000276_4",
+        "desc": "char_reson_desc_10000276_4"
+      },
+      {
+        "name": "char_reson_name_10000276_5",
+        "desc": "char_reson_desc_10000276_5"
+      }
+    ],
+    "skills": {
+      "1": "10600363",
+      "2": "10600364",
+      "3": "10600360"
+    },
+    "produceSkills": [
+      "10600360",
+      "10600363",
+      "10600364"
+    ]
+  },
+  "10000298": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000298_1",
+        "desc": "char_awake_desc_10000298_1"
+      },
+      {
+        "name": "char_awake_name_10000298_2",
+        "desc": "char_awake_desc_10000298_2"
+      },
+      {
+        "name": "char_awake_name_10000298_3",
+        "desc": "char_awake_desc_10000298_3"
+      },
+      {
+        "name": "char_awake_name_10000298_4",
+        "desc": "char_awake_desc_10000298_4"
+      },
+      {
+        "name": "char_awake_name_10000298_5",
+        "desc": "char_awake_desc_10000298_5"
+      }
+    ],
+    "desc": "char_desc_10000298",
+    "id": 10000298,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/3/39/gkf4tscz3e7u5ahmzl4frhliehe4f97.png",
+    "name": "char_name_10000298",
+    "produceSkills": [
+      "10600121",
+      "10600122",
+      "10600123",
+      "10600124",
+      "10600125",
+      "10600126",
+      "10600127",
+      "10600240"
+    ],
+    "rarity": "SSR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000298_1",
+        "desc": "char_reson_desc_10000298_1"
+      },
+      {
+        "name": "char_reson_name_10000298_2",
+        "desc": "char_reson_desc_10000298_2"
+      },
+      {
+        "name": "char_reson_name_10000298_3",
+        "desc": "char_reson_desc_10000298_3"
+      },
+      {
+        "name": "char_reson_name_10000298_4",
+        "desc": "char_reson_desc_10000298_4"
+      }
+    ],
+    "skills": {
+      "1": "10600121",
+      "2": "10600125",
+      "3": "10600127"
+    }
+  },
+  "10000299": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000299_1",
+        "desc": "char_awake_desc_10000299_1"
+      },
+      {
+        "name": "char_awake_name_10000299_2",
+        "desc": "char_awake_desc_10000299_2"
+      },
+      {
+        "name": "char_awake_name_10000299_3",
+        "desc": "char_awake_desc_10000299_3"
+      },
+      {
+        "name": "char_awake_name_10000299_4",
+        "desc": "char_awake_desc_10000299_4"
+      },
+      {
+        "name": "char_awake_name_10000299_5",
+        "desc": "char_awake_desc_10000299_5"
+      }
+    ],
+    "desc": "char_desc_10000299",
+    "id": 10000299,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/9/91/gypn91bhybtlvfagbbvik1zxgnzu21a.png",
+    "name": "char_name_10000299",
+    "produceSkills": [
+      "10600006",
+      "10600007",
+      "10600008",
+      "10600025"
+    ],
+    "rarity": "R",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000299_1",
+        "desc": "char_reson_desc_10000299_1"
+      },
+      {
+        "name": "char_reson_name_10000299_2",
+        "desc": "char_reson_desc_10000299_2"
+      },
+      {
+        "name": "char_reson_name_10000299_3",
+        "desc": "char_reson_desc_10000299_3"
+      },
+      {
+        "name": "char_reson_name_10000299_4",
+        "desc": "char_reson_desc_10000299_4"
+      }
+    ],
+    "skills": {
+      "1": "10600006",
+      "2": "10600007",
+      "3": "10600025"
+    }
+  },
+  "10000300": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000300_1",
+        "desc": "char_awake_desc_10000300_1"
+      },
+      {
+        "name": "char_awake_name_10000300_2",
+        "desc": "char_awake_desc_10000300_2"
+      },
+      {
+        "name": "char_awake_name_10000300_3",
+        "desc": "char_awake_desc_10000300_3"
+      },
+      {
+        "name": "char_awake_name_10000300_4",
+        "desc": "char_awake_desc_10000300_4"
+      },
+      {
+        "name": "char_awake_name_10000300_5",
+        "desc": "char_awake_desc_10000300_5"
+      }
+    ],
+    "desc": "char_desc_10000300",
+    "id": 10000300,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/d/db/p2d6nsdmci0vn6i9mco4w0a5pujmh2p.png",
+    "name": "char_name_10000300",
+    "produceSkills": [
+      "10600233",
+      "10600236",
+      "10600237"
+    ],
+    "rarity": "SR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000300_1",
+        "desc": "char_reson_desc_10000300_1"
+      },
+      {
+        "name": "char_reson_name_10000300_2",
+        "desc": "char_reson_desc_10000300_2"
+      },
+      {
+        "name": "char_reson_name_10000300_3",
+        "desc": "char_reson_desc_10000300_3"
+      },
+      {
+        "name": "char_reson_name_10000300_4",
+        "desc": "char_reson_desc_10000300_4"
+      },
+      {
+        "name": "char_reson_name_10000300_5",
+        "desc": "char_reson_desc_10000300_5"
+      }
+    ],
+    "skills": {
+      "1": "10600233",
+      "2": "10600236",
+      "3": "10600237"
+    }
+  },
+  "10000335": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000335_1",
+        "desc": "char_awake_desc_10000335_1"
+      },
+      {
+        "name": "char_awake_name_10000335_2",
+        "desc": "char_awake_desc_10000335_2"
+      },
+      {
+        "name": "char_awake_name_10000335_3",
+        "desc": "char_awake_desc_10000335_3"
+      },
+      {
+        "name": "char_awake_name_10000335_4",
+        "desc": "char_awake_desc_10000335_4"
+      },
+      {
+        "name": "char_awake_name_10000335_5",
+        "desc": "char_awake_desc_10000335_5"
+      }
+    ],
+    "desc": "char_desc_10000335",
+    "id": 10000335,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/6/61/4j3mu6xuhp4tvsc884rq0x6rlwmigea.png",
+    "name": "char_name_10000335",
+    "produceSkills": [
+      "10600272",
+      "10600273",
+      "10600274"
+    ],
+    "rarity": "SR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000335_1",
+        "desc": "char_reson_desc_10000335_1"
+      },
+      {
+        "name": "char_reson_name_10000335_2",
+        "desc": "char_reson_desc_10000335_2"
+      },
+      {
+        "name": "char_reson_name_10000335_3",
+        "desc": "char_reson_desc_10000335_3"
+      },
+      {
+        "name": "char_reson_name_10000335_4",
+        "desc": "char_reson_desc_10000335_4"
+      },
+      {
+        "name": "char_reson_name_10000335_5",
+        "desc": "char_reson_desc_10000335_5"
+      }
+    ],
+    "skills": {
+      "1": "10600274",
+      "2": "10600273",
+      "3": "10600272"
+    }
+  },
+  "10000352": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000352_1",
+        "desc": "char_awake_desc_10000352_1"
+      },
+      {
+        "name": "char_awake_name_10000352_2",
+        "desc": "char_awake_desc_10000352_2"
+      },
+      {
+        "name": "char_awake_name_10000352_3",
+        "desc": "char_awake_desc_10000352_3"
+      },
+      {
+        "name": "char_awake_name_10000352_4",
+        "desc": "char_awake_desc_10000352_4"
+      },
+      {
+        "name": "char_awake_name_10000352_5",
+        "desc": "char_awake_desc_10000352_5"
+      }
+    ],
+    "desc": "char_desc_10000352",
+    "id": 10000352,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/a/a3/6j4kheodb9w0wd4hfkqh1zkt72m6lih.png",
+    "name": "char_name_10000352",
+    "produceSkills": [
+      "10600223",
+      "10600224",
+      "10600226",
+      "10600262"
+    ],
+    "rarity": "SSR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000352_1",
+        "desc": "char_reson_desc_10000352_1"
+      },
+      {
+        "name": "char_reson_name_10000352_2",
+        "desc": "char_reson_desc_10000352_2"
+      },
+      {
+        "name": "char_reson_name_10000352_3",
+        "desc": "char_reson_desc_10000352_3"
+      },
+      {
+        "name": "char_reson_name_10000352_4",
+        "desc": "char_reson_desc_10000352_4"
+      },
+      {
+        "name": "char_reson_name_10000352_5",
+        "desc": "char_reson_desc_10000352_5"
+      }
+    ],
+    "skills": {
+      "1": "10600226",
+      "2": "10600224",
+      "3": "10600223"
+    }
+  },
+  "10000372": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000372_1",
+        "desc": "char_awake_desc_10000372_1"
+      },
+      {
+        "name": "char_awake_name_10000372_2",
+        "desc": "char_awake_desc_10000372_2"
+      },
+      {
+        "name": "char_awake_name_10000372_3",
+        "desc": "char_awake_desc_10000372_3"
+      },
+      {
+        "name": "char_awake_name_10000372_4",
+        "desc": "char_awake_desc_10000372_4"
+      },
+      {
+        "name": "char_awake_name_10000372_5",
+        "desc": "char_awake_desc_10000372_5"
+      }
+    ],
+    "desc": "char_desc_10000372",
+    "id": 10000372,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/0/0d/5btj9lbwex4qirctyegw5ebpfurrbyf.png",
+    "name": "char_name_10000372",
+    "rarity": "SSR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000372_1",
+        "desc": "char_reson_desc_10000372_1"
+      },
+      {
+        "name": "char_reson_name_10000372_2",
+        "desc": "char_reson_desc_10000372_2"
+      },
+      {
+        "name": "char_reson_name_10000372_3",
+        "desc": "char_reson_desc_10000372_3"
+      },
+      {
+        "name": "char_reson_name_10000372_4",
+        "desc": "char_reson_desc_10000372_4"
+      },
+      {
+        "name": "char_reson_name_10000372_5",
+        "desc": "char_reson_desc_10000372_5"
+      }
+    ],
+    "skills": {
+      "1": "10600071",
+      "2": "10600261",
+      "3": "10600306"
+    },
+    "produceSkills": [
+      "10600071",
+      "10600083",
+      "10600243",
+      "10600246",
+      "10600261",
+      "10600306"
+    ]
+  },
+  "10000387": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000387_1",
+        "desc": "char_awake_desc_10000387_1"
+      },
+      {
+        "name": "char_awake_name_10000387_2",
+        "desc": "char_awake_desc_10000387_2"
+      },
+      {
+        "name": "char_awake_name_10000387_3",
+        "desc": "char_awake_desc_10000387_3"
+      },
+      {
+        "name": "char_awake_name_10000387_4",
+        "desc": "char_awake_desc_10000387_4"
+      },
+      {
+        "name": "char_awake_name_10000387_5",
+        "desc": "char_awake_desc_10000387_5"
+      }
+    ],
+    "desc": "char_desc_10000387",
+    "id": 10000387,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/e/e4/c7d0w54nqsrsftgbnihx7zlpjrjk51u.png",
+    "name": "char_name_10000387",
+    "produceSkills": [
+      "10600044",
+      "10600075",
+      "10600144",
+      "10600145",
+      "10600155"
+    ],
+    "rarity": "SR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000387_1",
+        "desc": "char_reson_desc_10000387_1"
+      },
+      {
+        "name": "char_reson_name_10000387_2",
+        "desc": "char_reson_desc_10000387_2"
+      },
+      {
+        "name": "char_reson_name_10000387_3",
+        "desc": "char_reson_desc_10000387_3"
+      },
+      {
+        "name": "char_reson_name_10000387_4",
+        "desc": "char_reson_desc_10000387_4"
+      },
+      {
+        "name": "char_reson_name_10000387_5",
+        "desc": "char_reson_desc_10000387_5"
+      }
+    ],
+    "skills": {
+      "1": "10600155",
+      "2": "10600144",
+      "3": "10600145"
+    }
+  },
+  "10000388": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000388_1",
+        "desc": "char_awake_desc_10000388_1"
+      },
+      {
+        "name": "char_awake_name_10000388_2",
+        "desc": "char_awake_desc_10000388_2"
+      },
+      {
+        "name": "char_awake_name_10000388_3",
+        "desc": "char_awake_desc_10000388_3"
+      },
+      {
+        "name": "char_awake_name_10000388_4",
+        "desc": "char_awake_desc_10000388_4"
+      },
+      {
+        "name": "char_awake_name_10000388_5",
+        "desc": "char_awake_desc_10000388_5"
+      }
+    ],
+    "desc": "char_desc_10000388",
+    "id": 10000388,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/9/94/pmucfxwidn1kpu7ni3rp1n5trgw8c5v.png",
+    "name": "char_name_10000388",
+    "produceSkills": [
+      "10600021",
+      "10600032",
+      "10600163",
+      "10600164",
+      "10600165",
+      "10600166"
+    ],
+    "rarity": "SSR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000388_1",
+        "desc": "char_reson_desc_10000388_1"
+      },
+      {
+        "name": "char_reson_name_10000388_2",
+        "desc": "char_reson_desc_10000388_2"
+      },
+      {
+        "name": "char_reson_name_10000388_3",
+        "desc": "char_reson_desc_10000388_3"
+      },
+      {
+        "name": "char_reson_name_10000388_4",
+        "desc": "char_reson_desc_10000388_4"
+      },
+      {
+        "name": "char_reson_name_10000388_5",
+        "desc": "char_reson_desc_10000388_5"
+      }
+    ],
+    "skills": {
+      "1": "10600163",
+      "2": "10600165",
+      "3": "10600166"
+    }
+  },
+  "10000389": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000389_1",
+        "desc": "char_awake_desc_10000389_1"
+      },
+      {
+        "name": "char_awake_name_10000389_2",
+        "desc": "char_awake_desc_10000389_2"
+      },
+      {
+        "name": "char_awake_name_10000389_3",
+        "desc": "char_awake_desc_10000389_3"
+      },
+      {
+        "name": "char_awake_name_10000389_4",
+        "desc": "char_awake_desc_10000389_4"
+      },
+      {
+        "name": "char_awake_name_10000389_5",
+        "desc": "char_awake_desc_10000389_5"
+      }
+    ],
+    "desc": "char_desc_10000389",
+    "id": 10000389,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/9/94/muij3ww15m1vow5rue5sie2wbdud0n7.png",
+    "name": "char_name_10000389",
+    "produceSkills": [
+      "10600172",
+      "10600188",
+      "10600189",
+      "10600190",
+      "10600258"
+    ],
+    "rarity": "SR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000389_1",
+        "desc": "char_reson_desc_10000389_1"
+      },
+      {
+        "name": "char_reson_name_10000389_2",
+        "desc": "char_reson_desc_10000389_2"
+      },
+      {
+        "name": "char_reson_name_10000389_3",
+        "desc": "char_reson_desc_10000389_3"
+      },
+      {
+        "name": "char_reson_name_10000389_4",
+        "desc": "char_reson_desc_10000389_4"
+      },
+      {
+        "name": "char_reson_name_10000389_5",
+        "desc": "char_reson_desc_10000389_5"
+      }
+    ],
+    "skills": {
+      "1": "10600172",
+      "2": "10600190",
+      "3": "10600258"
+    }
+  },
+  "10000408": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000408_1",
+        "desc": "char_awake_desc_10000408_1"
+      },
+      {
+        "name": "char_awake_name_10000408_2",
+        "desc": "char_awake_desc_10000408_2"
+      },
+      {
+        "name": "char_awake_name_10000408_3",
+        "desc": "char_awake_desc_10000408_3"
+      },
+      {
+        "name": "char_awake_name_10000408_4",
+        "desc": "char_awake_desc_10000408_4"
+      },
+      {
+        "name": "char_awake_name_10000408_5",
+        "desc": "char_awake_desc_10000408_5"
+      }
+    ],
+    "desc": "char_desc_10000408",
+    "id": 10000408,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/7/7a/9khpjg78hv4qw60uqd8qv4s0gf2efte.png",
+    "name": "char_name_10000408",
+    "produceSkills": [
+      "10600169",
+      "10600193",
+      "10600194",
+      "10600214",
+      "10600215",
+      "10600242",
+      "10600283",
+      "10600286",
+      "10600287",
+      "10600288",
+      "10600289"
+    ],
+    "rarity": "R",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000408_1",
+        "desc": "char_reson_desc_10000408_1"
+      },
+      {
+        "name": "char_reson_name_10000408_2",
+        "desc": "char_reson_desc_10000408_2"
+      },
+      {
+        "name": "char_reson_name_10000408_3",
+        "desc": "char_reson_desc_10000408_3"
+      },
+      {
+        "name": "char_reson_name_10000408_4",
+        "desc": "char_reson_desc_10000408_4"
+      }
+    ],
+    "skills": {
+      "1": "10600169",
+      "2": "10600215",
+      "3": "10600214"
+    }
+  },
+  "10000409": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000409_1",
+        "desc": "char_awake_desc_10000409_1"
+      },
+      {
+        "name": "char_awake_name_10000409_2",
+        "desc": "char_awake_desc_10000409_2"
+      },
+      {
+        "name": "char_awake_name_10000409_3",
+        "desc": "char_awake_desc_10000409_3"
+      },
+      {
+        "name": "char_awake_name_10000409_4",
+        "desc": "char_awake_desc_10000409_4"
+      },
+      {
+        "name": "char_awake_name_10000409_5",
+        "desc": "char_awake_desc_10000409_5"
+      }
+    ],
+    "desc": "char_desc_10000409",
+    "id": 10000409,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/e/ef/dlkz344xwfkwjbryu3ar1ao8u0e0ami.png",
+    "name": "char_name_10000409",
+    "produceSkills": [
+      "10600199",
+      "10600200",
+      "10600201",
+      "10600259"
+    ],
+    "rarity": "R",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000409_1",
+        "desc": "char_reson_desc_10000409_1"
+      },
+      {
+        "name": "char_reson_name_10000409_2",
+        "desc": "char_reson_desc_10000409_2"
+      },
+      {
+        "name": "char_reson_name_10000409_3",
+        "desc": "char_reson_desc_10000409_3"
+      },
+      {
+        "name": "char_reson_name_10000409_4",
+        "desc": "char_reson_desc_10000409_4"
+      }
+    ],
+    "skills": {
+      "1": "10600201",
+      "2": "10600200",
+      "3": "10600199"
+    }
+  },
+  "10000414": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000414_1",
+        "desc": "char_awake_desc_10000414_1"
+      },
+      {
+        "name": "char_awake_name_10000414_2",
+        "desc": "char_awake_desc_10000414_2"
+      },
+      {
+        "name": "char_awake_name_10000414_3",
+        "desc": "char_awake_desc_10000414_3"
+      },
+      {
+        "name": "char_awake_name_10000414_4",
+        "desc": "char_awake_desc_10000414_4"
+      },
+      {
+        "name": "char_awake_name_10000414_5",
+        "desc": "char_awake_desc_10000414_5"
+      }
+    ],
+    "desc": "char_desc_10000414",
+    "id": 10000414,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/b/b8/83bekcym9g2xgv541zx62s1ktn2c6zu.png",
+    "name": "char_name_10000414",
+    "produceSkills": [
+      "10600207",
+      "10600208",
+      "10600209"
+    ],
+    "rarity": "R",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000414_1",
+        "desc": "char_reson_desc_10000414_1"
+      },
+      {
+        "name": "char_reson_name_10000414_2",
+        "desc": "char_reson_desc_10000414_2"
+      },
+      {
+        "name": "char_reson_name_10000414_3",
+        "desc": "char_reson_desc_10000414_3"
+      },
+      {
+        "name": "char_reson_name_10000414_4",
+        "desc": "char_reson_desc_10000414_4"
+      }
+    ],
+    "skills": {
+      "1": "10600207",
+      "2": "10600208",
+      "3": "10600209"
+    }
+  },
+  "10000739": {
+    "awakening": [
+      {
+        "name": "char_awake_name_10000739_1",
+        "desc": "char_awake_desc_10000739_1"
+      },
+      {
+        "name": "char_awake_name_10000739_2",
+        "desc": "char_awake_desc_10000739_2"
+      },
+      {
+        "name": "char_awake_name_10000739_3",
+        "desc": "char_awake_desc_10000739_3"
+      },
+      {
+        "name": "char_awake_name_10000739_4",
+        "desc": "char_awake_desc_10000739_4"
+      },
+      {
+        "name": "char_awake_name_10000739_5",
+        "desc": "char_awake_desc_10000739_5"
+      }
+    ],
+    "desc": "char_desc_10000739",
+    "id": 10000739,
+    "img_card": "https://patchwiki.biligame.com/images/resonance/9/99/lxsqzm2j1w49tk8z12vnlp092r7yqdj.png",
+    "name": "char_name_10000739",
+    "produceSkills": [
+      "10600158",
+      "10600239",
+      "10600244",
+      "10600245",
+      "10600331",
+      "10600332",
+      "10600333",
+      "10600334"
+    ],
+    "rarity": "SSR",
+    "resonance": [
+      {
+        "name": "char_reson_name_10000739_1",
+        "desc": "char_reson_desc_10000739_1"
+      },
+      {
+        "name": "char_reson_name_10000739_2",
+        "desc": "char_reson_desc_10000739_2"
+      },
+      {
+        "name": "char_reson_name_10000739_3",
+        "desc": "char_reson_desc_10000739_3"
+      },
+      {
+        "name": "char_reson_name_10000739_4",
+        "desc": "char_reson_desc_10000739_4"
+      },
+      {
+        "name": "char_reson_name_10000739_5",
+        "desc": "char_reson_desc_10000739_5"
+      }
+    ],
+    "skills": {
+      "1": "10600158",
+      "2": "10600239",
+      "3": "10600245"
+    }
+  }
+}

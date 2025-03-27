@@ -1,0 +1,2145 @@
+{
+  "10600004": {
+    "amount": "2",
+    "cost": "0",
+    "desc": "card_desc_10600004",
+    "name": "card_name_10600004",
+    "id": 10600004,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/1/1d/2l70jkogdmb8xef76zps7x13vr3a6ie.png",
+    "specialCtrl": [
+      "3"
+    ]
+  },
+  "10600005": {
+    "amount": "1",
+    "cost": "3",
+    "desc": "card_desc_10600005",
+    "name": "card_name_10600005",
+    "id": 10600005,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/2/22/hibgj18g5gr1ans1fv3fbmt6d9lplh3.png"
+  },
+  "10600006": {
+    "amount": "3",
+    "cost": "2",
+    "desc": "card_desc_10600006",
+    "id": 10600006,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/1/1a/8a9lrv51h95s63suw961zy7tjwc9vnm.png",
+    "name": "card_name_10600006",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600007": {
+    "amount": "1",
+    "cost": "0",
+    "desc": "card_desc_10600007",
+    "id": 10600007,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/9/9c/kszup1jqrw8xp6yhrny0s6n73sn0u5f.png",
+    "name": "card_name_10600007"
+  },
+  "10600008": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600008",
+    "id": 10600008,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/d/d3/roz2493gyo17abkcrxh81ppigaa0yqj.png",
+    "name": "card_name_10600008",
+    "specialCtrl": [
+      "2"
+    ]
+  },
+  "10600009": {
+    "amount": "0",
+    "cost": "4",
+    "desc": "card_desc_10600009",
+    "name": "card_name_10600009",
+    "id": 10600009,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/f/fe/s7ja05kv09gioc3kq8k0pezzy54a6qo.png"
+  },
+  "10600013": {
+    "amount": "1",
+    "cost": "5",
+    "desc": "card_desc_10600013",
+    "id": 10600013,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/b/b1/jmj81ivgrvn132nwbwuifo2i8oil5iy.png",
+    "name": "card_name_10600013",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600014": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600014",
+    "id": 10600014,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/c/c9/7cx93nievnizibuzpeqgevur2wulseq.png",
+    "name": "card_name_10600014"
+  },
+  "10600015": {
+    "amount": "1",
+    "cost": "0",
+    "desc": "card_desc_10600015",
+    "id": 10600015,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/4/45/fx9w8apf8utwb7m9dgufu5okkobpvx1.png",
+    "name": "card_name_10600015"
+  },
+  "10600016": {
+    "amount": "1",
+    "cost": "0",
+    "desc": "card_desc_10600016",
+    "id": 10600016,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/5/54/ckmlw9h20poz2vwazivhq22qa13khao.png",
+    "name": "card_name_10600016",
+    "specialCtrl": [
+      "3"
+    ]
+  },
+  "10600017": {
+    "amount": "3",
+    "cost": "3",
+    "desc": "card_desc_10600017",
+    "id": 10600017,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/7/77/86vza0ncdt67r2susqe53avuo0t7ekl.png",
+    "name": "card_name_10600017"
+  },
+  "10600018": {
+    "amount": "0",
+    "cost": "1",
+    "desc": "card_desc_10600018",
+    "id": 10600018,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/f/f8/8a1thxn9xv84ntxa2nhwsbxyw7zps0w.png",
+    "name": "card_name_10600018"
+  },
+  "10600019": {
+    "amount": "3",
+    "cost": "3",
+    "desc": "card_desc_10600019",
+    "id": 10600019,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/0/03/c6rvald60wzqzdui546x6bs5m0bkb1c.png",
+    "name": "card_name_10600019",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600020": {
+    "amount": "1",
+    "cost": "1",
+    "desc": "card_desc_10600020",
+    "id": 10600020,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/f/f7/p9i6ql9po5s1fwarzhw0xp5gtaw1cc3.png",
+    "name": "card_name_10600020",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600021": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600021",
+    "id": 10600021,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/d/dd/2unhxm5p4kdregrynewn3iu5lq4qpb7.png",
+    "name": "card_name_10600021"
+  },
+  "10600025": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600025",
+    "id": 10600025,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/5/5a/o1ior1551scnfdlu474yp2jix75iby0.png",
+    "name": "card_name_10600025",
+    "specialCtrl": [
+      "4",
+      "0"
+    ]
+  },
+  "10600026": {
+    "amount": "0",
+    "cost": "3",
+    "desc": "card_desc_10600026",
+    "id": 10600026,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/a/ac/f2ck8foh84sr0vphfhomc7fnklht0vp.png",
+    "name": "card_name_10600026",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600032": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600032",
+    "id": 10600032,
+    "img_url": "https://imgproxy.shelter.id/sig/w:150/rt:fill/Z3M6Ly9zaGVsdGVyLW1lZGlhL3UvYkI1OHJHc2Z1SU0wVEQ2SUtKNDNFTTM3Ukt4MS9pbWFnZXMvMTc0MTk3MTI1MDkzMF9jMTgxMjNjNS0xMzlkLTQ0NWYtYWEzNi01MjExY2Y3MzZiMWQucG5n",
+    "name": "card_name_10600032"
+  },
+  "10600034": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600034",
+    "name": "card_name_10600034",
+    "id": 10600034,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/f/f6/mcf5qye366k94gtt6jx4ydh1tjcv6do.png",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600035": {
+    "amount": "0",
+    "cost": "5",
+    "desc": "card_desc_10600035",
+    "name": "card_name_10600035",
+    "id": 10600035,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/0/09/h6khk6sg7gxcs988m3jza9i5c3142jj.png"
+  },
+  "10600037": {
+    "amount": "0",
+    "cost": "3",
+    "desc": "card_desc_10600037",
+    "id": 10600037,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/9/98/awgodxdof6xtfu0dg8ujwwhz8pk71xt.png",
+    "name": "card_name_10600037",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600038": {
+    "amount": "0",
+    "cost": "4",
+    "desc": "card_desc_10600038",
+    "id": 10600038,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/5/56/sxec4pwvrlctxjhwmf93qigd5tgg6ur.png",
+    "name": "card_name_10600038",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600040": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600040",
+    "id": 10600040,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/7/7a/lsl739zd958ocaeio7gne6314z6h7qz.png",
+    "name": "card_name_10600040",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600041": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600041",
+    "id": 10600041,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/6/62/db0vcwbaqqe2s2d2rxn2rcri62exyx9.png",
+    "name": "card_name_10600041"
+  },
+  "10600043": {
+    "amount": "3",
+    "cost": "2",
+    "desc": "card_desc_10600043",
+    "id": 10600043,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/7/73/i154rjgyokkrpokee75w2i47zdrx3kf.png",
+    "name": "card_name_10600043"
+  },
+  "10600044": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600044",
+    "id": 10600044,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/3/36/8lweotwckbwzd5gnuwcr4ryl4tz90jt.png",
+    "name": "card_name_10600044"
+  },
+  "10600045": {
+    "amount": "3",
+    "cost": "3",
+    "desc": "card_desc_10600045",
+    "name": "card_name_10600045",
+    "id": 10600045,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/f/fa/9x4nj24sn0yrkfj3d5mq2sw4flz02yh.png",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600046": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600046",
+    "name": "card_name_10600046",
+    "id": 10600046,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/9/94/cuwnuhmardj6vmjwo9em7dzkh5ma1n0.png",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600048": {
+    "amount": "3",
+    "cost": "1",
+    "desc": "card_desc_10600048",
+    "id": 10600048,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/5/54/mjsq7yvjeaenkyx2yrevbot2tvjc2sm.png",
+    "name": "card_name_10600048"
+  },
+  "10600050": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600050",
+    "id": 10600050,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/4/4d/drjvd3qczbjmu8p43kmvih5jqy2z3ua.png",
+    "name": "card_name_10600050"
+  },
+  "10600051": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600051",
+    "name": "card_name_10600051",
+    "id": 10600051,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/d/d9/a9yq70bftujjlit7mtedi4mjfudas54.png",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600053": {
+    "amount": "1",
+    "cost": "3",
+    "desc": "card_desc_10600053",
+    "id": 10600053,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/d/d9/kll6m9rskpic82rfqm2lygzki96jjnb.png",
+    "name": "card_name_10600053",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600055": {
+    "amount": "1",
+    "cost": "5",
+    "desc": "card_desc_10600055",
+    "name": "card_name_10600055",
+    "id": 10600055,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/e/e6/5rnhrqjnlctpmfxvhiwxflmzntld2qg.png"
+  },
+  "10600056": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600056",
+    "id": 10600056,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/f/f5/3ep9zzdizzvqki3u5vupr500amc44y5.png",
+    "name": "card_name_10600056",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600057": {
+    "amount": "2",
+    "cost": "1",
+    "desc": "card_desc_10600057",
+    "id": 10600057,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/a/a8/c5bz07a4xqu5y835jn9b6a0antdhaxb.png",
+    "name": "card_name_10600057",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600058": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600058",
+    "id": 10600058,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/b/bb/sxmrgxq6fpyhqdripgonhvrwqz9v0dm.png",
+    "name": "card_name_10600058"
+  },
+  "10600059": {
+    "amount": "0",
+    "cost": "3",
+    "desc": "card_desc_10600059",
+    "id": 10600059,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/f/f5/jdwe3l7wj64iuxmtmkx9gcaa1evwr6j.png",
+    "name": "card_name_10600059",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600060": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600060",
+    "id": 10600060,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/6/6b/demfzaualkmlf3x23syzumfxdw0wm78.png",
+    "name": "card_name_10600060"
+  },
+  "10600061": {
+    "amount": "0",
+    "cost": "3",
+    "desc": "card_desc_10600061",
+    "id": 10600061,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/a/a9/brhztwusvwxpo4crran3335barbla3f.png",
+    "name": "card_name_10600061",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600062": {
+    "amount": "0",
+    "cost": "3",
+    "desc": "card_desc_10600062",
+    "id": 10600062,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/c/c2/8ipts4mddfegd40i8i1jsujke5e6vd5.png",
+    "name": "card_name_10600062",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600063": {
+    "amount": "0",
+    "cost": "4",
+    "desc": "card_desc_10600063",
+    "id": 10600063,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/0/05/ofreo99x1j0yjjqi5o12lvnqs4ze2g6.png",
+    "name": "card_name_10600063"
+  },
+  "10600064": {
+    "amount": "0",
+    "cost": "2",
+    "desc": "card_desc_10600064",
+    "id": 10600064,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/6/6c/tfxz4r0qdmunejpi6j1tgy7zw2l4nxx.png",
+    "name": "card_name_10600064",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600065": {
+    "amount": "0",
+    "cost": "4",
+    "desc": "card_desc_10600065",
+    "id": 10600065,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/e/e4/j17om1xueh9vz1x8ar7348hi8zy7ny6.png",
+    "name": "card_name_10600065"
+  },
+  "10600066": {
+    "amount": "1",
+    "cost": "2",
+    "desc": "card_desc_10600066",
+    "id": 10600066,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/e/e0/41urphscrk33f14l876tqgsbwlc8lod.png",
+    "name": "card_name_10600066"
+  },
+  "10600067": {
+    "amount": "1",
+    "cost": "5",
+    "desc": "card_desc_10600067",
+    "id": 10600067,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/1/1a/r8z3h64lyh5457ojagjvdlhsxq4x8bu.png",
+    "name": "card_name_10600067",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600070": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600070",
+    "id": 10600070,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/d/d5/p6tn912747v7ugi6eb24ulttr71pbhi.png",
+    "name": "card_name_10600070",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600071": {
+    "amount": "3",
+    "cost": "1",
+    "desc": "card_desc_10600071",
+    "id": 10600071,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/b/b6/g8t4t87xzktu5spjt7grv6trr17ze7g.png",
+    "name": "card_name_10600071",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600072": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600072",
+    "id": 10600072,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/3/3c/fk3bctmjr1ut684id5maugujydouao7.png",
+    "name": "card_name_10600072",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600073": {
+    "amount": "1",
+    "cost": "3",
+    "desc": "card_desc_10600073",
+    "name": "card_name_10600073",
+    "id": 10600073,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/1/11/9dys9gl3z75xajckk3j42ppjiz25w2c.png",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600074": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600074",
+    "id": 10600074,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/f/f7/p6y3cqn16io1fkz8bk8drhrh3tuuqkv.png",
+    "name": "card_name_10600074",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600075": {
+    "amount": "1",
+    "cost": "2",
+    "desc": "card_desc_10600075",
+    "id": 10600075,
+    "img_url": "https://imgproxy.shelter.id/sig/w:150/rt:fill/Z3M6Ly9zaGVsdGVyLW1lZGlhL3UvYkI1OHJHc2Z1SU0wVEQ2SUtKNDNFTTM3Ukt4MS9pbWFnZXMvMTc0MTk3MTI1MDkyOV85ZTgyMGQ2Yy1iMjY5LTRiNGEtYjJhNS04NjRiZjE0NmUzY2IucG5n",
+    "name": "card_name_10600075"
+  },
+  "10600076": {
+    "amount": "0",
+    "cost": "3",
+    "desc": "card_desc_10600076",
+    "name": "card_name_10600076",
+    "id": 10600076,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/5/54/0j8n5afo12ssnkc3z551qndy3uu0ymb.png"
+  },
+  "10600077": {
+    "amount": "1",
+    "cost": "3",
+    "desc": "card_desc_10600077",
+    "id": 10600077,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/c/c4/pz6vy5yb3l4a1j0vj71gduxhcqhca9u.png",
+    "name": "card_name_10600077",
+    "specialCtrl": [
+      "1"
+    ]
+  },
+  "10600078": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600078",
+    "name": "card_name_10600078",
+    "id": 10600078,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/c/c8/myheszcofxa1svvc1sufwo9b1lqdl1k.png"
+  },
+  "10600079": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600079",
+    "name": "card_name_10600079",
+    "id": 10600079,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/e/e2/4brrx44lgk0x8q1fojc7bbztgu9o49w.png",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600080": {
+    "amount": "1",
+    "cost": "3",
+    "desc": "card_desc_10600080",
+    "name": "card_name_10600080",
+    "id": 10600080,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/1/19/iof58qutcymxzn9mrvb8gvgqseoyy1r.png"
+  },
+  "10600081": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600081",
+    "id": 10600081,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/e/ef/es8wcy3p18zy2612nfe4i9fzhgi41a1.png",
+    "name": "card_name_10600081",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600082": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600082",
+    "id": 10600082,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/2/2e/neko9w50npmw6m8n94ud3d05gn22s0o.png",
+    "name": "card_name_10600082"
+  },
+  "10600083": {
+    "amount": "0",
+    "cost": "2",
+    "desc": "card_desc_10600083",
+    "id": 10600083,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/d/d0/eeft5so7mrfc3137z0uqvg52ql4g9xu.png",
+    "name": "card_name_10600083"
+  },
+  "10600085": {
+    "amount": "2",
+    "cost": "1",
+    "desc": "card_desc_10600085",
+    "id": 10600085,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/f/f5/5iwnhp5at4jtdwqbsqc5d1kxaoeeisv.png",
+    "name": "card_name_10600085",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600086": {
+    "amount": "0",
+    "cost": "5",
+    "desc": "card_desc_10600086",
+    "id": 10600086,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/d/dd/lqz9wy2p72l1dnz4n3tz4lcygky3jtn.png",
+    "name": "card_name_10600086",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600087": {
+    "amount": "3",
+    "cost": "2",
+    "desc": "card_desc_10600087",
+    "id": 10600087,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/b/b1/6llaixawhouc6b43hcgh1iz8utkfn1l.png",
+    "name": "card_name_10600087"
+  },
+  "10600088": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600088",
+    "id": 10600088,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/4/4a/2of6sxvk5n14c25foo8jof4gtudp3f0.png",
+    "name": "card_name_10600088"
+  },
+  "10600089": {
+    "amount": "2",
+    "cost": "0",
+    "desc": "card_desc_10600089",
+    "id": 10600089,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/1/11/rnzgjgmbn95q87jegao9f5ypal6bigl.png",
+    "name": "card_name_10600089",
+    "specialCtrl": [
+      "2"
+    ]
+  },
+  "10600090": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600090",
+    "id": 10600090,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/0/00/0ylil7dc6u3lt4ytj5idkpywkdd5qgr.png",
+    "name": "card_name_10600090"
+  },
+  "10600091": {
+    "amount": "1",
+    "cost": "3",
+    "desc": "card_desc_10600091",
+    "id": 10600091,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/e/e2/tay8sfsenxesfw673m1ic2h5qh7n5mc.png",
+    "name": "card_name_10600091"
+  },
+  "10600092": {
+    "amount": "1",
+    "cost": "6",
+    "desc": "card_desc_10600092",
+    "id": 10600092,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/4/44/efe0xtpuarvnj8kvb03fz833iyb50mi.png",
+    "name": "card_name_10600092"
+  },
+  "10600093": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600093",
+    "id": 10600093,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/e/e5/hjez8zc51m2vlyav2p6x5didefgrpto.png",
+    "name": "card_name_10600093",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600094": {
+    "amount": "1",
+    "cost": "6",
+    "desc": "card_desc_10600094",
+    "id": 10600094,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/9/94/hai7ppsomic06gd1mgy1feduvt66pdy.png",
+    "name": "card_name_10600094",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600095": {
+    "amount": "3",
+    "cost": "3",
+    "desc": "card_desc_10600095",
+    "id": 10600095,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/4/47/o5gylwj7iigrst6oq9emc40llru63o8.png",
+    "name": "card_name_10600095"
+  },
+  "10600096": {
+    "amount": "3",
+    "cost": "2",
+    "desc": "card_desc_10600096",
+    "id": 10600096,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/b/b6/ktnu6rmabbvna2l4l5865c653ef37n9.png",
+    "name": "card_name_10600096"
+  },
+  "10600097": {
+    "amount": "1",
+    "cost": "1",
+    "desc": "card_desc_10600097",
+    "id": 10600097,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/1/17/dlefo7fz4hgczbf5tqjyq5n0r2et99z.png",
+    "name": "card_name_10600097"
+  },
+  "10600098": {
+    "amount": "1",
+    "cost": "5",
+    "desc": "card_desc_10600098",
+    "id": 10600098,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/7/7c/niy1bs6e8pd7gyv7d4e6eq7iew9bo38.png",
+    "name": "card_name_10600098"
+  },
+  "10600099": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600099",
+    "id": 10600099,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/5/5e/286eeamhh4nputp5jvn5xdy24yusu2i.png",
+    "name": "card_name_10600099",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600100": {
+    "amount": "1",
+    "cost": "8",
+    "desc": "card_desc_10600100",
+    "id": 10600100,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/5/5c/mkmaptfsvg2c97lzany2zzlc4udbzda.png",
+    "name": "card_name_10600100"
+  },
+  "10600101": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600101",
+    "id": 10600101,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/5/5a/dfoj5zsh3s7z00mmivlid24z8bc9qsa.png",
+    "name": "card_name_10600101"
+  },
+  "10600102": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600102",
+    "id": 10600102,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/4/4a/aaa9rgrjxk1y64oqybawbc5dxlqezjh.png",
+    "name": "card_name_10600102"
+  },
+  "10600103": {
+    "amount": "1",
+    "cost": "3",
+    "desc": "card_desc_10600103",
+    "id": 10600103,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/4/4a/11pgzsckxdjquurueasvqvdfpxa3hwa.png",
+    "name": "card_name_10600103",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600104": {
+    "amount": "1",
+    "cost": "5",
+    "desc": "card_desc_10600104",
+    "id": 10600104,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/8/85/g35mwdje1xcjhia5ghcdqabzea9w9si.png",
+    "name": "card_name_10600104",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600106": {
+    "amount": "1",
+    "cost": "6",
+    "desc": "card_desc_10600106",
+    "name": "card_name_10600106",
+    "id": 10600106,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/d/d7/9ixkjpz6zq5qn3pwhkd4ha3gh2vr8uz.png"
+  },
+  "10600107": {
+    "amount": "3",
+    "cost": "1",
+    "desc": "card_desc_10600107",
+    "name": "card_name_10600107",
+    "id": 10600107,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/a/a8/6gwc3kczwtdqqi8dtwamclij9nikf9l.png"
+  },
+  "10600113": {
+    "amount": "1",
+    "cost": "10",
+    "desc": "card_desc_10600113",
+    "id": 10600113,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/e/e3/t680z5bguufb7qn74g39v2lw11rhtlf.png",
+    "name": "card_name_10600113",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600114": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600114",
+    "name": "card_name_10600114",
+    "id": 10600114,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/4/45/nxxv4tmkl4um95dizjckop6f51gp8u8.png"
+  },
+  "10600115": {
+    "amount": "1",
+    "cost": "5",
+    "desc": "card_desc_10600115",
+    "name": "card_name_10600115",
+    "id": 10600115,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/f/f2/qbj2djecela44mlxxf9ancdut8uuyrn.png"
+  },
+  "10600119": {
+    "amount": "4",
+    "cost": "2",
+    "desc": "card_desc_10600119",
+    "name": "card_name_10600119",
+    "id": 10600119,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/9/97/0a20yd54vmvdjrln2tcge3vrxw4zlm7.png"
+  },
+  "10600121": {
+    "amount": "1",
+    "cost": "0",
+    "desc": "card_desc_10600121",
+    "id": 10600121,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/4/4d/4ge1c4gh4hx27d6b7h90lnor95x2kdo.png",
+    "name": "card_name_10600121",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600122": {
+    "amount": "0",
+    "cost": "1",
+    "desc": "card_desc_10600122",
+    "id": 10600122,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/9/9f/paojis5ua2msu6xgbx2ebj4tupcaubj.png",
+    "name": "card_name_10600122"
+  },
+  "10600123": {
+    "amount": "0",
+    "cost": "1",
+    "desc": "card_desc_10600123",
+    "id": 10600123,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/e/e1/fl6be6ixbj30s2nz54wp4n83tjxzmcv.png",
+    "name": "card_name_10600123"
+  },
+  "10600124": {
+    "amount": "0",
+    "cost": "1",
+    "desc": "card_desc_10600124",
+    "id": 10600124,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/c/cc/57fltu52aw9t1swprj96jmxrz74ueo5.png",
+    "name": "card_name_10600124"
+  },
+  "10600125": {
+    "amount": "2",
+    "cost": "0",
+    "desc": "card_desc_10600125",
+    "id": 10600125,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/d/da/q7fcxlhg0bvxby7escev5cnf9b5yxd2.png",
+    "name": "card_name_10600125",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600126": {
+    "amount": "0",
+    "cost": "2",
+    "desc": "card_desc_10600126",
+    "id": 10600126,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/8/81/nbfhf2td8izvo03812kvz5wocv9m6hf.png",
+    "name": "card_name_10600126",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600127": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600127",
+    "id": 10600127,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/8/8b/s79yutbekrgqm9ofb6sz3xmurqiv1f8.png",
+    "name": "card_name_10600127"
+  },
+  "10600131": {
+    "amount": "0",
+    "cost": "3",
+    "desc": "card_desc_10600131",
+    "id": 10600131,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/2/25/dntk40ipczqljfq32wbhvytva2k76k8.png",
+    "name": "card_name_10600131"
+  },
+  "10600134": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600134",
+    "id": 10600134,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/8/8b/r89xcgo700dd1v4zats4riboqzpszoz.png",
+    "name": "card_name_10600134",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600136": {
+    "amount": "1",
+    "cost": "5",
+    "desc": "card_desc_10600136",
+    "id": 10600136,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/7/7e/0bw7etu0wcgsnr8ts3cbg2evpj4b7uv.png",
+    "name": "card_name_10600136",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600137": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600137",
+    "id": 10600137,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/e/e1/32r3x7g1zy9i3snihbudt5qcy0nbpv2.png",
+    "name": "card_name_10600137"
+  },
+  "10600140": {
+    "amount": "0",
+    "cost": "2",
+    "desc": "card_desc_10600140",
+    "id": 10600140,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/6/60/kpymnvdrlwx1xkjznxhhsunu9yf2yrj.png",
+    "name": "card_name_10600140"
+  },
+  "10600143": {
+    "amount": "0",
+    "cost": "5",
+    "desc": "card_desc_10600143",
+    "name": "card_name_10600143",
+    "id": 10600143,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/0/08/4axcgr52mt44h81ioni7hshbfiebje1.png"
+  },
+  "10600144": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600144",
+    "id": 10600144,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/2/22/5kyxb166fea6qu2m95ri5rb2p9ifrx9.png",
+    "name": "card_name_10600144"
+  },
+  "10600145": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600145",
+    "id": 10600145,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/a/ab/0cs7vrf95zt9r7xojfoeuxyu1p7ndkh.png",
+    "name": "card_name_10600145"
+  },
+  "10600154": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600154",
+    "name": "card_name_10600154",
+    "id": 10600154,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/7/77/ah1iuzl8ce0z3fxk6rhhs58dkkaqm6n.png"
+  },
+  "10600155": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600155",
+    "id": 10600155,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/0/09/g0ix79oshbxr6u7hbb2yf4lbq5glk9u.png",
+    "name": "card_name_10600155"
+  },
+  "10600158": {
+    "amount": "3",
+    "cost": "2",
+    "desc": "card_desc_10600158",
+    "id": 10600158,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/c/c0/i6m3oeqh0prqlzjckfflanauv6jp6ox.png",
+    "name": "card_name_10600158"
+  },
+  "10600159": {
+    "amount": "1",
+    "cost": "3",
+    "desc": "card_desc_10600159",
+    "name": "card_name_10600159",
+    "id": 10600159,
+    "img_url": "https://imgproxy.shelter.id/sig/w:150/rt:fill/Z3M6Ly9zaGVsdGVyLW1lZGlhL3UvYkI1OHJHc2Z1SU0wVEQ2SUtKNDNFTTM3Ukt4MS9pbWFnZXMvMTc0MTk3MTExNzE0MV84ZTE1ZjQ5Zi1kYTQ3LTQ3YjMtOTQwMC00MDYxZDE1NmIyYjMucG5n"
+  },
+  "10600160": {
+    "amount": "3",
+    "cost": "2",
+    "desc": "card_desc_10600160",
+    "id": 10600160,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/9/96/d6uguc2fii8oh32sqe5lsfv8ns7f0zg.png",
+    "name": "card_name_10600160",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600161": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600161",
+    "id": 10600161,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/1/18/bowfw6ixy8cbvvbk1cwwyymzqvic7no.png",
+    "name": "card_name_10600161",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600163": {
+    "amount": "3",
+    "cost": "2",
+    "desc": "card_desc_10600163",
+    "id": 10600163,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/7/77/q0a3ww1s4ux1ebz44o9iubplb4kyq54.png",
+    "name": "card_name_10600163",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600164": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600164",
+    "id": 10600164,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/e/e2/ointvuus1vt69j85hthhqza4idyl1wm.png",
+    "name": "card_name_10600164"
+  },
+  "10600165": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600165",
+    "id": 10600165,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/b/b1/0k3tvx6jn3s5pcwo4i8zig0fcgr02k2.png",
+    "name": "card_name_10600165",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600166": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600166",
+    "id": 10600166,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/8/8e/pkq1k3icfcrdqelnwtq6s5uxlhvk4t4.png",
+    "name": "card_name_10600166",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600167": {
+    "amount": "4",
+    "cost": "1",
+    "desc": "card_desc_10600167",
+    "id": 10600167,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/d/dc/h9g1dhg557c0m4tr2m5n674nr6gn1z3.png",
+    "name": "card_name_10600167"
+  },
+  "10600169": {
+    "amount": "2",
+    "cost": "0",
+    "desc": "card_desc_10600169",
+    "id": 10600169,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/3/38/4tqcxtsdlez1eoi0bad49r5iqd5iivy.png",
+    "name": "card_name_10600169",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600170": {
+    "amount": "4",
+    "cost": "1",
+    "desc": "card_desc_10600170",
+    "id": 10600170,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/f/f6/83wfllilacqcaauubcxw6sjsxvaiyks.png",
+    "name": "card_name_10600170"
+  },
+  "10600171": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600171",
+    "id": 10600171,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/9/9c/aia662md64c818d8xikad2nj1vdw720.png",
+    "name": "card_name_10600171"
+  },
+  "10600172": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600172",
+    "id": 10600172,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/5/57/auk2ufurrv9n55oeo0omf896oy80v1g.png",
+    "name": "card_name_10600172",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600173": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600173",
+    "id": 10600173,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/5/58/exqrrtxm3m7ala6on470yuoyij2b5mj.png",
+    "name": "card_name_10600173"
+  },
+  "10600174": {
+    "amount": "2",
+    "cost": "0",
+    "desc": "card_desc_10600174",
+    "id": 10600174,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/2/26/afv6o4dndvy36vb8ec4wn2aoz08kaku.png",
+    "name": "card_name_10600174",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600175": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600175",
+    "id": 10600175,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/6/65/o9pbzcjqbtzdh5n51hkuunny1qj72e8.png",
+    "name": "card_name_10600175",
+    "specialCtrl": [
+      "2"
+    ]
+  },
+  "10600176": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600176",
+    "id": 10600176,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/3/3c/d5isj07w1lrf8q2hito38p8lxc90dog.png",
+    "name": "card_name_10600176",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600177": {
+    "amount": "3",
+    "cost": "2",
+    "desc": "card_desc_10600177",
+    "id": 10600177,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/b/bc/62ecqktb8jjnnzonuz7wez6n8d75dpa.png",
+    "name": "card_name_10600177"
+  },
+  "10600178": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600178",
+    "id": 10600178,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/3/39/j21dfh457iro3cj9d5ylp59m0it1lip.png",
+    "name": "card_name_10600178"
+  },
+  "10600182": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600182",
+    "id": 10600182,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/d/da/dhevxrtq9uv4dwz7e33r5wtmvz49l3j.png",
+    "name": "card_name_10600182",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600183": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600183",
+    "id": 10600183,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/0/0b/bgnk0jvncfs11jukme4j808sandib5r.png",
+    "name": "card_name_10600183",
+    "specialCtrl": [
+      "7",
+      "5"
+    ]
+  },
+  "10600184": {
+    "amount": "3",
+    "cost": "2",
+    "desc": "card_desc_10600184",
+    "id": 10600184,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/2/2f/5iowo2cpgv150vbalaoao8whksan1sj.png",
+    "name": "card_name_10600184"
+  },
+  "10600186": {
+    "amount": "2",
+    "cost": "4",
+    "desc": "card_desc_10600186",
+    "id": 10600186,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/6/65/sgkx2c7br3nc4w3noz2ina938ov6fsj.png",
+    "name": "card_name_10600186"
+  },
+  "10600187": {
+    "amount": "1",
+    "cost": "5",
+    "desc": "card_desc_10600187",
+    "id": 10600187,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/a/af/3vg9r39m0r5afs5ag3bxiul0i00lor3.png",
+    "name": "card_name_10600187"
+  },
+  "10600188": {
+    "amount": "0",
+    "cost": "2",
+    "desc": "card_desc_10600188",
+    "id": 10600188,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/c/cb/9k7jsgcej3fowq10t9cbh8xpdet2uqy.png",
+    "name": "card_name_10600188",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600189": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600189",
+    "id": 10600189,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/a/a0/a8dz340fsdytlr9dda06n8m94a32kcy.png",
+    "name": "card_name_10600189"
+  },
+  "10600190": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600190",
+    "id": 10600190,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/2/2d/ewsmiy1pfieuey3a5abx3p90iikozcv.png",
+    "name": "card_name_10600190"
+  },
+  "10600192": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600192",
+    "id": 10600192,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/d/d5/r8z6nut14zi52fnj6qve1iitlp5f5bz.png",
+    "name": "card_name_10600192",
+    "specialCtrl": [
+      "2"
+    ]
+  },
+  "10600193": {
+    "amount": "0",
+    "cost": "1",
+    "desc": "card_desc_10600193",
+    "id": 10600193,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/8/80/7r1jgu2xc83ttpw0gsjdl3cege4pa69.png",
+    "name": "card_name_10600193"
+  },
+  "10600194": {
+    "amount": "0",
+    "cost": "2",
+    "desc": "card_desc_10600194",
+    "id": 10600194,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/9/94/63713jdxuwytjurakb1tril0e3hhgbc.png",
+    "name": "card_name_10600194"
+  },
+  "10600199": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600199",
+    "id": 10600199,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/2/28/68izfdw5rrk9oj0ln6kuodpy3vwgkj0.png",
+    "name": "card_name_10600199"
+  },
+  "10600200": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600200",
+    "id": 10600200,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/f/f1/p7wkzwuck2q2khqcuyd62la9sct8fr2.png",
+    "name": "card_name_10600200"
+  },
+  "10600201": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600201",
+    "id": 10600201,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/e/e8/7m1u5o6jfqff2qssvd9xqztrffzyjf6.png",
+    "name": "card_name_10600201"
+  },
+  "10600202": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600202",
+    "id": 10600202,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/4/45/865zwudmm2orxfj6xh40gkngj05awjw.png",
+    "name": "card_name_10600202"
+  },
+  "10600207": {
+    "amount": "3",
+    "cost": "2",
+    "desc": "card_desc_10600207",
+    "id": 10600207,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/0/03/fda5g2kcr71lzgoxeryxui454ngrhxz.png",
+    "name": "card_name_10600207"
+  },
+  "10600208": {
+    "amount": "1",
+    "cost": "3",
+    "desc": "card_desc_10600208",
+    "id": 10600208,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/b/b7/p1lagdz3kry4c4ko51gmfjuz5cqaz0b.png",
+    "name": "card_name_10600208"
+  },
+  "10600209": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600209",
+    "id": 10600209,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/3/30/sz67op01rhecr6cu24eswm2dz0zentf.png",
+    "name": "card_name_10600209"
+  },
+  "10600214": {
+    "amount": "1",
+    "cost": "0",
+    "desc": "card_desc_10600214",
+    "id": 10600214,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/b/b7/m21k09il7vmphdr4dxzt3yupejv9zua.png",
+    "name": "card_name_10600214"
+  },
+  "10600215": {
+    "amount": "2",
+    "cost": "0",
+    "desc": "card_desc_10600215",
+    "id": 10600215,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/2/2d/th4b7vk6f3t8zd2gl8wydleiknnwagi.png",
+    "name": "card_name_10600215",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600223": {
+    "amount": "1",
+    "cost": "5",
+    "desc": "card_desc_10600223",
+    "id": 10600223,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/b/b4/5prwcj9vou568lbeoegtrp1np196leb.png",
+    "name": "card_name_10600223",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600224": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600224",
+    "id": 10600224,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/5/55/5w9nbda64d49lgfx9duedgl0j9e6arp.png",
+    "name": "card_name_10600224",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600226": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600226",
+    "id": 10600226,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/6/6f/r879nqtbk8guze0volssyx5itv5jutv.png",
+    "name": "card_name_10600226",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600233": {
+    "amount": "2",
+    "cost": "4",
+    "desc": "card_desc_10600233",
+    "id": 10600233,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/f/f0/it7uvep7iux92kngq9s7ktfdh02fanj.png",
+    "name": "card_name_10600233",
+    "specialCtrl": [
+      "7",
+      "5"
+    ]
+  },
+  "10600235": {
+    "amount": "2",
+    "cost": "0",
+    "desc": "card_desc_10600235",
+    "id": 10600235,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/5/5c/g30s4d22wystd4zf5dekwexn3ptlxlk.png",
+    "name": "card_name_10600235",
+    "specialCtrl": [
+      "2"
+    ]
+  },
+  "10600236": {
+    "amount": "2",
+    "cost": "0",
+    "desc": "card_desc_10600236",
+    "id": 10600236,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/8/8f/s8490wcp3hleg0q90syny9wvujks4l0.png",
+    "name": "card_name_10600236",
+    "specialCtrl": [
+      "2"
+    ]
+  },
+  "10600237": {
+    "amount": "1",
+    "cost": "5",
+    "desc": "card_desc_10600237",
+    "id": 10600237,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/0/02/0fik4q462hle6bigreymlujk03kgjv5.png",
+    "name": "card_name_10600237",
+    "specialCtrl": [
+      "1"
+    ]
+  },
+  "10600239": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600239",
+    "id": 10600239,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/6/66/0smwifhm43e15ykgpx4bpvqrwa1trhd.png",
+    "name": "card_name_10600239",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600240": {
+    "amount": "1",
+    "cost": "0",
+    "desc": "card_desc_10600240",
+    "id": 10600240,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/6/63/q5mkpwwe30s7d28znx9780ct9citc40.png",
+    "name": "card_name_10600240",
+    "specialCtrl": [
+      "2"
+    ]
+  },
+  "10600241": {
+    "amount": "1",
+    "cost": "5",
+    "desc": "card_desc_10600241",
+    "id": 10600241,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/3/38/jznj2h5csc77dyykqhyccrpvsanpea1.png",
+    "name": "card_name_10600241",
+    "specialCtrl": [
+      "7"
+    ]
+  },
+  "10600242": {
+    "amount": "0",
+    "cost": "3",
+    "desc": "card_desc_10600242",
+    "id": 10600242,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/4/43/epyktd3yp5dlxyy9i3nrdedrez61hgc.png",
+    "name": "card_name_10600242"
+  },
+  "10600243": {
+    "amount": "0",
+    "cost": "2",
+    "desc": "card_desc_10600243",
+    "id": 10600243,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/5/52/8540pxdwhtx0igba9frfsau45ym7dyy.png",
+    "name": "card_name_10600243"
+  },
+  "10600244": {
+    "amount": "0",
+    "cost": "2",
+    "desc": "card_desc_10600244",
+    "id": 10600244,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/1/16/pvswid5hw6qfynrch9iwlkc1uirhaju.png",
+    "name": "card_name_10600244",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600245": {
+    "amount": "1",
+    "cost": "5",
+    "desc": "card_desc_10600245",
+    "id": 10600245,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/4/41/cvy7vrw6l0nycp8rat79h2pqs79yks2.png",
+    "name": "card_name_10600245"
+  },
+  "10600246": {
+    "amount": "0",
+    "cost": "2",
+    "desc": "card_desc_10600246",
+    "id": 10600246,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/a/a6/123ugjsnh3yldnewoovmje4yhjf149c.png",
+    "name": "card_name_10600246"
+  },
+  "10600247": {
+    "amount": "0",
+    "cost": "4",
+    "desc": "card_desc_10600247",
+    "id": 10600247,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/7/77/2ktpj52ho8lnr4wucm9slc6gkvlzilj.png",
+    "name": "card_name_10600247",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600248": {
+    "amount": "0",
+    "cost": "3",
+    "desc": "card_desc_10600248",
+    "id": 10600248,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/0/01/4nocs7mhor5uujjvx031o0cm8gz81fb.png",
+    "name": "card_name_10600248"
+  },
+  "10600249": {
+    "amount": "0",
+    "cost": "1",
+    "desc": "card_desc_10600249",
+    "name": "card_name_10600249",
+    "id": 10600249,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/d/d0/ef66sp0kk1c0h5gbrs0csd2qsm3ntju.png"
+  },
+  "10600250": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600250",
+    "id": 10600250,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/b/b6/rx5cs6afc07kd9g71sk11mte5248w1x.png",
+    "name": "card_name_10600250",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600251": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600251",
+    "id": 10600251,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/2/23/4nzwu5gsydyyj9661e13mjr7itnn17r.png",
+    "name": "card_name_10600251",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600255": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600255",
+    "id": 10600255,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/6/69/rbogf8v4txx5zvtwt6ja8aldm2534mr.png",
+    "name": "card_name_10600255",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600256": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600256",
+    "id": 10600256,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/8/81/q5p5hs7c08r6h5gyruxascpgdw7ia6k.png",
+    "name": "card_name_10600256"
+  },
+  "10600258": {
+    "amount": "1",
+    "cost": "5",
+    "desc": "card_desc_10600258",
+    "id": 10600258,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/6/6d/7luscsslvl69nxrj9m184mnvm1uo4y0.png",
+    "name": "card_name_10600258",
+    "specialCtrl": [
+      "4",
+      "0"
+    ]
+  },
+  "10600259": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600259",
+    "id": 10600259,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/4/4d/oih5o6sxk3ftnzofgwr4d29jacamsz0.png",
+    "name": "card_name_10600259",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600260": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600260",
+    "id": 10600260,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/e/eb/rljj9smqdgzs9y89jtn1lh4jrtjh0nm.png",
+    "name": "card_name_10600260",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600261": {
+    "amount": "1",
+    "cost": "3",
+    "desc": "card_desc_10600261",
+    "id": 10600261,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/1/1f/6w8n7ufmwb07syg5yc8cakt75vfrowq.png",
+    "name": "card_name_10600261",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600262": {
+    "amount": "0",
+    "cost": "2",
+    "desc": "card_desc_10600262",
+    "id": 10600262,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/8/8d/c1bbc3pc35cnz42fctf2jnw20rhnnib.png",
+    "name": "card_name_10600262"
+  },
+  "10600269": {
+    "amount": "1",
+    "cost": "5",
+    "desc": "card_desc_10600269",
+    "id": 10600269,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/3/32/n7b1a8k6b0y0sbyswm8awkjprzaaqrs.png",
+    "name": "card_name_10600269",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600270": {
+    "amount": "0",
+    "cost": "3",
+    "desc": "card_desc_10600270",
+    "id": 10600270,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/a/a5/ruq3gf2ht3awk8s0rjgxen85ia65ccz.png",
+    "name": "card_name_10600270"
+  },
+  "10600271": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600271",
+    "id": 10600271,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/e/eb/52ig4hqvaykveyg7mfsjzq6edmhg5ur.png",
+    "name": "card_name_10600271"
+  },
+  "10600272": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600272",
+    "id": 10600272,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/b/b3/2jerypqzfsx2pmkre8cufxx1ditf5by.png",
+    "name": "card_name_10600272"
+  },
+  "10600273": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600273",
+    "id": 10600273,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/e/e7/7nompom9qd51edfcmpqr1ftrvb34ai3.png",
+    "name": "card_name_10600273"
+  },
+  "10600274": {
+    "amount": "3",
+    "cost": "3",
+    "desc": "card_desc_10600274",
+    "id": 10600274,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/e/e6/c5bcou8909hdelkzmu121ub2zxj0xzu.png",
+    "name": "card_name_10600274"
+  },
+  "10600279": {
+    "amount": "4",
+    "cost": "1",
+    "desc": "card_desc_10600279",
+    "id": 10600279,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/2/25/5wezl2aml202vh725yiuzfgflp5cibw.png",
+    "name": "card_name_10600279"
+  },
+  "10600280": {
+    "amount": "1",
+    "cost": "5",
+    "desc": "card_desc_10600280",
+    "id": 10600280,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/2/25/d91ch3vwdipmnanvgn7h6nwxzjzr7n1.png",
+    "name": "card_name_10600280"
+  },
+  "10600282": {
+    "amount": "0",
+    "cost": "2",
+    "desc": "card_desc_10600282",
+    "name": "card_name_10600282",
+    "id": 10600282,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/c/c7/pajvu76k7mxw5iaxq5rokjzyxz113ij.png"
+  },
+  "10600283": {
+    "amount": "0",
+    "cost": "4",
+    "desc": "card_desc_10600283",
+    "id": 10600283,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/4/43/6kmqcdhnbej0maq44orib5b7uyh6119.png",
+    "name": "card_name_10600283"
+  },
+  "10600284": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600284",
+    "id": 10600284,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/b/be/gl7we5bw123dsh428nni5o72zhz0gzx.png",
+    "name": "card_name_10600284",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600286": {
+    "amount": "0",
+    "cost": "1",
+    "desc": "card_desc_10600286",
+    "id": 10600286,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/5/5f/gedb65p1ggrn3d0v07c56oxllycg1qq.png",
+    "name": "card_name_10600286",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600287": {
+    "amount": "0",
+    "cost": "1",
+    "desc": "card_desc_10600287",
+    "id": 10600287,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/5/5d/px3850typ1apsyahg8i5w9zictlxi70.png",
+    "name": "card_name_10600287"
+  },
+  "10600288": {
+    "amount": "0",
+    "cost": "1",
+    "desc": "card_desc_10600288",
+    "id": 10600288,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/3/32/9667pfwidvsmozbzlhf6jcrt45etakt.png",
+    "name": "card_name_10600288"
+  },
+  "10600289": {
+    "amount": "0",
+    "cost": "3",
+    "desc": "card_desc_10600289",
+    "id": 10600289,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/6/62/mp98y7mhra0ipeo4dgwqiicqqh7j9fy.png",
+    "name": "card_name_10600289"
+  },
+  "10600290": {
+    "amount": "1",
+    "cost": "0",
+    "desc": "card_desc_10600290",
+    "id": 10600290,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/d/d6/56v1hhty8qghdg4cu45lc4oslqxn07m.png",
+    "name": "card_name_10600290",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600291": {
+    "amount": "1",
+    "cost": "5",
+    "desc": "card_desc_10600291",
+    "id": 10600291,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/7/7b/s2tu8yymzwxdwxtuwpf07pyggu19gfz.png",
+    "name": "card_name_10600291"
+  },
+  "10600292": {
+    "amount": "0",
+    "cost": "5",
+    "desc": "card_desc_10600292",
+    "id": 10600292,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/8/81/1k0fpki3qh8bccpexexmhpy6cghpbdw.png",
+    "name": "card_name_10600292"
+  },
+  "10600293": {
+    "amount": "3",
+    "cost": "2",
+    "desc": "card_desc_10600293",
+    "id": 10600293,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/b/b6/r3q8agu5135ph199yhjq5okg2dslav5.png",
+    "name": "card_name_10600293",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600294": {
+    "amount": "1",
+    "cost": "5",
+    "desc": "card_desc_10600294",
+    "id": 10600294,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/8/85/ofz8y0dpdkko17o74sa3xunnimehsdh.png",
+    "name": "card_name_10600294"
+  },
+  "10600295": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600295",
+    "id": 10600295,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/4/4c/4nl0s3objeckrlpt390mt992pkv20jg.png",
+    "name": "card_name_10600295",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600296": {
+    "amount": "1",
+    "cost": "3",
+    "desc": "card_desc_10600296",
+    "id": 10600296,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/b/b4/tawsdboaoj7g315b3373zhiy8frwawg.png",
+    "name": "card_name_10600296",
+    "specialCtrl": [
+      "1"
+    ]
+  },
+  "10600304": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600304",
+    "id": 10600304,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/9/99/1c4v4qnw6hy3spef35uac8mxhwcojul.png",
+    "name": "card_name_10600304"
+  },
+  "10600305": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600305",
+    "id": 10600305,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/5/5a/ilf86cayla3anyst1wtb5jo35pev30h.png",
+    "name": "card_name_10600305",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600306": {
+    "amount": "1",
+    "cost": "5",
+    "desc": "card_desc_10600306",
+    "id": 10600306,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/9/99/4rce1v6a3m0nvgk9a848rvrkwqs4gl3.png",
+    "name": "card_name_10600306"
+  },
+  "10600307": {
+    "amount": "3",
+    "cost": "1",
+    "desc": "card_desc_10600307",
+    "id": 10600307,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/0/0d/45mfz810phxwan1dv70qmiq8zyahj7e.png",
+    "name": "card_name_10600307"
+  },
+  "10600308": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600308",
+    "id": 10600308,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/a/a7/azzjtj0xrfnt92tr2k8qpqbeiyfpomo.png",
+    "name": "card_name_10600308"
+  },
+  "10600309": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600309",
+    "id": 10600309,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/0/08/tvy8dpqcl8x1jfwfnxehm7sfcb7iw8y.png",
+    "name": "card_name_10600309"
+  },
+  "10600310": {
+    "amount": "4",
+    "cost": "2",
+    "desc": "card_desc_10600310",
+    "id": 10600310,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/e/ea/milcd5ltqq168kt5v0pmgv9k1l61511.png",
+    "name": "card_name_10600310"
+  },
+  "10600311": {
+    "amount": "1",
+    "cost": "3",
+    "desc": "card_desc_10600311",
+    "id": 10600311,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/3/32/j3zoygii8yyfrxhvomz2tsp0gncf52q.png",
+    "name": "card_name_10600311",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600312": {
+    "amount": "1",
+    "cost": "3",
+    "desc": "card_desc_10600312",
+    "id": 10600312,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/3/35/sfsocm21fqip9xjus121u5bgae67jw9.png",
+    "name": "card_name_10600312",
+    "specialCtrl": [
+      "1"
+    ]
+  },
+  "10600314": {
+    "amount": "1",
+    "cost": "2",
+    "desc": "card_desc_10600314",
+    "name": "card_name_10600314",
+    "id": 10600314,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/9/97/15eclil695a745dawjye6p7a6nnokwb.png"
+  },
+  "10600315": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600315",
+    "name": "card_name_10600315",
+    "id": 10600315,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/b/b4/64q65t2p9wup9jrgagmwxzmws4t4fmu.png"
+  },
+  "10600324": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600324",
+    "id": 10600324,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/c/cc/qs1ylnipt4lhx3k1twhbgvyyxsqmekk.png",
+    "name": "card_name_10600324"
+  },
+  "10600325": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600325",
+    "id": 10600325,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/9/94/3dl2d29g7ljht9iijpx7346k3anif78.png",
+    "name": "card_name_10600325"
+  },
+  "10600326": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600326",
+    "id": 10600326,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/d/d8/2c85jq9oxuond30aqcr0jbiaw2fmlho.png",
+    "name": "card_name_10600326"
+  },
+  "10600327": {
+    "amount": "2",
+    "cost": "3",
+    "desc": "card_desc_10600327",
+    "id": 10600327,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/8/8a/hybau7q492h37h32t9ui4jpw8xvhin2.png",
+    "name": "card_name_10600327"
+  },
+  "10600328": {
+    "amount": "2",
+    "cost": "4",
+    "desc": "card_desc_10600328",
+    "id": 10600328,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/2/2f/kbc7rf94u6g34h1glaavbvl5r64psur.png",
+    "name": "card_name_10600328",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600329": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600329",
+    "id": 10600329,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/0/00/q34459nbh9znien31vonxqr7ryt2kyz.png",
+    "name": "card_name_10600329"
+  },
+  "10600330": {
+    "amount": "3",
+    "cost": "0",
+    "desc": "card_desc_10600330",
+    "id": 10600330,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/2/2f/2ou14k32f43vvreej32x5z4wcb5wvdm.png",
+    "name": "card_name_10600330"
+  },
+  "10600331": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600331",
+    "id": 10600331,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/6/65/p775m9fv0bakvr0hkzsmd23o08i96h2.png",
+    "name": "card_name_10600331"
+  },
+  "10600332": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600332",
+    "id": 10600332,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/c/c0/ttk4iasqbm7ua9t5grid0ntz66l6klv.png",
+    "name": "card_name_10600332",
+    "specialCtrl": [
+      "5",
+      "6"
+    ]
+  },
+  "10600333": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600333",
+    "id": 10600333,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/9/94/8lr34dmsm4u68u5im6snnkk83vj2f3g.png",
+    "name": "card_name_10600333"
+  },
+  "10600334": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600334",
+    "id": 10600334,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/d/d3/gw7f41mudessc9kwd6zee1jft6cc13p.png",
+    "name": "card_name_10600334",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600335": {
+    "amount": "0",
+    "cost": "3",
+    "desc": "card_desc_10600335",
+    "id": 10600335,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/6/67/lf8wmlcm70p66y06eknridle58bab8m.png",
+    "name": "card_name_10600335"
+  },
+  "10600336": {
+    "amount": "0",
+    "cost": "3",
+    "desc": "card_desc_10600336",
+    "id": 10600336,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/9/9e/28qkk1szp84bktvyby2ee112nf81qy6.png",
+    "name": "card_name_10600336"
+  },
+  "10600337": {
+    "amount": "0",
+    "cost": "3",
+    "desc": "card_desc_10600337",
+    "id": 10600337,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/a/af/pe4qms8833bb4tri32wj15nko4a2ru7.png",
+    "name": "card_name_10600337"
+  },
+  "10600338": {
+    "amount": "2",
+    "cost": "0",
+    "desc": "card_desc_10600338",
+    "id": 10600338,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/6/6f/e6ua88999kbajvdj4vubxtrszfsexkx.png",
+    "name": "card_name_10600338"
+  },
+  "10600339": {
+    "amount": "1",
+    "cost": "0",
+    "desc": "card_desc_10600339",
+    "id": 10600339,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/9/93/56ean3lccdptqcfdf8c14pm41xj5qxz.png",
+    "name": "card_name_10600339",
+    "specialCtrl": [
+      "3"
+    ]
+  },
+  "10600349": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600349",
+    "id": 10600349,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/a/ac/iff79b580e1ksrjppmqul2ip46qrlka.png",
+    "name": "card_name_10600349",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600350": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600350",
+    "id": 10600350,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/2/2f/b6xqle4rt07rhjjirer7llb3ajqnmxx.png",
+    "name": "card_name_10600350",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600351": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600351",
+    "id": 10600351,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/f/f3/e5a5fwxz2wrlsxy5a32c47irfe11v0u.png",
+    "name": "card_name_10600351"
+  },
+  "10600352": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600352",
+    "id": 10600352,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/7/7d/ep9qkesclitiq5qr78yul1wp8zyfhji.png",
+    "name": "card_name_10600352",
+    "specialCtrl": [
+      "4"
+    ]
+  },
+  "10600353": {
+    "amount": "1",
+    "cost": "6",
+    "desc": "card_desc_10600353",
+    "id": 10600353,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/7/7b/m72gnc79bmk2m7bop0p1n04omxuer44.png",
+    "name": "card_name_10600353",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600359": {
+    "amount": "1",
+    "cost": "3",
+    "desc": "card_desc_10600359",
+    "name": "card_name_10600359",
+    "id": 10600359,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/7/7c/7p2x095c69ecfplyp31sjs1hkrkcwk3.png",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600360": {
+    "amount": "1",
+    "cost": "5",
+    "desc": "card_desc_10600360",
+    "id": 10600360,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/c/c0/rvx3i34d88t3n483eb79dmyp17efkpi.png",
+    "name": "card_name_10600360",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600362": {
+    "amount": "3",
+    "cost": "2",
+    "desc": "card_desc_10600362",
+    "name": "card_name_10600362",
+    "id": 10600362,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/4/43/84huri99394suu7nrsfoneryy4hm7cb.png"
+  },
+  "10600363": {
+    "amount": "3",
+    "cost": "2",
+    "desc": "card_desc_10600363",
+    "id": 10600363,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/2/26/tcyh01qsbo9nn3lovkm82is4mw31ft6.png",
+    "name": "card_name_10600363",
+    "specialCtrl": [
+      "0"
+    ]
+  },
+  "10600364": {
+    "amount": "2",
+    "cost": "2",
+    "desc": "card_desc_10600364",
+    "id": 10600364,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/b/b6/non4492oz9sblnmnc8uen08sf9d34u7.png",
+    "name": "card_name_10600364"
+  },
+  "10600366": {
+    "amount": "1",
+    "cost": "4",
+    "desc": "card_desc_10600366",
+    "name": "card_name_10600366",
+    "id": 10600366,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/6/66/iapmr0mpsuqexfp4csr5ze9uzr2q7lh.png"
+  },
+  "10600367": {
+    "amount": "0",
+    "cost": "0",
+    "desc": "card_desc_10600367",
+    "id": 10600367,
+    "img_url": "https://patchwiki.biligame.com/images/resonance/8/89/k3fcnmv8xm3p19r3l1ry1xy7h9f6gpr.png",
+    "name": "card_name_10600367",
+    "specialCtrl": [
+      "3"
+    ]
+  }
+}

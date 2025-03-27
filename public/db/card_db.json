@@ -1,0 +1,2617 @@
+{
+  "10600004": {
+    "equipIdList": [],
+    "id": "10600004",
+    "ownerId": 10000004,
+    "skillId": "12300023",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": 3,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600005": {
+    "equipIdList": [],
+    "id": "10600005",
+    "ownerId": 10000004,
+    "skillId": "12300024",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600006": {
+    "equipIdList": [],
+    "id": "10600006",
+    "ownerId": 10000299,
+    "skillId": "12300104",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600007": {
+    "equipIdList": [],
+    "id": "10600007",
+    "ownerId": 10000299,
+    "skillId": "12300105",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600008": {
+    "equipIdList": [],
+    "id": "10600008",
+    "ownerId": 10000299,
+    "skillId": 12300123,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600009": {
+    "equipIdList": [],
+    "id": "10600009",
+    "ownerId": 10000059,
+    "skillId": 12300036,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600013": {
+    "equipIdList": [],
+    "id": "10600013",
+    "ownerId": 10000095,
+    "skillId": "12300025",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600014": {
+    "equipIdList": [],
+    "id": "10600014",
+    "ownerId": 10000025,
+    "skillId": "12300019",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600015": {
+    "equipIdList": [],
+    "id": "10600015",
+    "ownerId": 10000025,
+    "skillId": "12300020",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600016": {
+    "equipIdList": [],
+    "id": "10600016",
+    "ownerId": 10000025,
+    "skillId": "12300021",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600017": {
+    "equipIdList": [],
+    "id": "10600017",
+    "ownerId": 10000095,
+    "skillId": "12300026",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600018": {
+    "equipIdList": [],
+    "id": "10600018",
+    "ownerId": 10000111,
+    "skillId": 12300391,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600019": {
+    "equipIdList": [],
+    "id": "10600019",
+    "ownerId": 10000111,
+    "skillId": "12300028",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600020": {
+    "equipIdList": [],
+    "id": "10600020",
+    "ownerId": 10000111,
+    "skillId": "12300031",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600021": {
+    "equipIdList": [],
+    "id": "10600021",
+    "ownerId": 10000001,
+    "skillId": 12300758,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600025": {
+    "equipIdList": [],
+    "id": "10600025",
+    "ownerId": 10000299,
+    "skillId": "12300106",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5,
+      "4": 0
+    },
+    "useType": 1
+  },
+  "10600026": {
+    "equipIdList": [],
+    "id": "10600026",
+    "ownerId": 10000153,
+    "skillId": 12300124,
+    "targetType": 0,
+    "useParam": -1,
+    "useType": 1
+  },
+  "10600032": {
+    "equipIdList": [],
+    "id": "10600032",
+    "ownerId": 10000001,
+    "skillId": 12300751,
+    "targetType": 0,
+    "useParam": -1,
+    "useType": 1
+  },
+  "10600034": {
+    "equipIdList": [],
+    "id": "10600034",
+    "ownerId": 10000004,
+    "skillId": "12300022",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600035": {
+    "equipIdList": [],
+    "id": "10600035",
+    "ownerId": 10000059,
+    "skillId": 12300245,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600037": {
+    "equipIdList": [],
+    "id": "10600037",
+    "ownerId": 10000055,
+    "skillId": 12300039,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600038": {
+    "equipIdList": [],
+    "id": "10600038",
+    "ownerId": 10000055,
+    "skillId": 12300048,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600040": {
+    "equipIdList": [],
+    "id": "10600040",
+    "ownerId": 10000153,
+    "skillId": "12300012",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useType": 1
+  },
+  "10600041": {
+    "equipIdList": [],
+    "id": "10600041",
+    "ownerId": 10000154,
+    "skillId": "12300299",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600043": {
+    "equipIdList": [],
+    "id": "10600043",
+    "ownerId": 10000047,
+    "skillId": "12300130",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useType": 1
+  },
+  "10600044": {
+    "equipIdList": [],
+    "id": "10600044",
+    "ownerId": 10000001,
+    "skillId": 12300658,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600045": {
+    "equipIdList": [],
+    "id": "10600045",
+    "ownerId": 10000054,
+    "skillId": "12300724",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600046": {
+    "equipIdList": [],
+    "id": "10600046",
+    "ownerId": 10000054,
+    "skillId": "12300725",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600048": {
+    "equipIdList": [],
+    "id": "10600048",
+    "ownerId": 10000068,
+    "skillId": "12300107",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600050": {
+    "equipIdList": [],
+    "id": "10600050",
+    "ownerId": 10000052,
+    "skillId": "12300050",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600051": {
+    "equipIdList": [],
+    "id": "10600051",
+    "ownerId": 10000059,
+    "skillId": 12300058,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600053": {
+    "equipIdList": [],
+    "id": "10600053",
+    "ownerId": 10000156,
+    "skillId": "12300307",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600055": {
+    "equipIdList": [],
+    "id": "10600055",
+    "ownerId": 10000054,
+    "skillId": "12300053",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600056": {
+    "equipIdList": [],
+    "id": "10600056",
+    "ownerId": 10000055,
+    "skillId": "12300057",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600057": {
+    "equipIdList": [],
+    "id": "10600057",
+    "ownerId": 10000170,
+    "skillId": "12300074",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600058": {
+    "equipIdList": [],
+    "id": "10600058",
+    "ownerId": 10000055,
+    "skillId": "12300059",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600059": {
+    "equipIdList": [],
+    "id": "10600059",
+    "ownerId": 10000055,
+    "skillId": 12300126,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600060": {
+    "equipIdList": [],
+    "id": "10600060",
+    "ownerId": 10000055,
+    "skillId": "12300127",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600061": {
+    "equipIdList": [],
+    "id": "10600061",
+    "ownerId": 10000055,
+    "skillId": 12300062,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600062": {
+    "equipIdList": [],
+    "id": "10600062",
+    "ownerId": 10000170,
+    "skillId": 12300077,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600063": {
+    "equipIdList": [],
+    "id": "10600063",
+    "ownerId": 10000055,
+    "skillId": 12300129,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600064": {
+    "equipIdList": [],
+    "id": "10600064",
+    "ownerId": 10000170,
+    "skillId": 12300078,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600065": {
+    "equipIdList": [],
+    "id": "10600065",
+    "ownerId": 10000055,
+    "skillId": 12300131,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600066": {
+    "equipIdList": [],
+    "id": "10600066",
+    "ownerId": 10000170,
+    "skillId": "12300075",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600067": {
+    "equipIdList": [],
+    "id": "10600067",
+    "ownerId": 10000170,
+    "skillId": "12300076",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600070": {
+    "equipIdList": [],
+    "id": "10600070",
+    "ownerId": 10000094,
+    "skillId": "12300080",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600071": {
+    "equipIdList": [],
+    "id": "10600071",
+    "ownerId": 10000372,
+    "skillId": "12301749",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600072": {
+    "equipIdList": [],
+    "id": "10600072",
+    "ownerId": 10000094,
+    "skillId": "12300081",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600073": {
+    "equipIdList": [],
+    "id": "10600073",
+    "ownerId": 10000069,
+    "skillId": "12300111",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600074": {
+    "equipIdList": [],
+    "id": "10600074",
+    "ownerId": 10000063,
+    "skillId": "12300096",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600075": {
+    "equipIdList": [],
+    "id": "10600075",
+    "ownerId": 10000001,
+    "skillId": 12300750,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600076": {
+    "equipIdList": [],
+    "id": "10600076",
+    "ownerId": 10000001,
+    "skillId": 12300752,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600077": {
+    "equipIdList": [],
+    "id": "10600077",
+    "ownerId": 10000095,
+    "skillId": "12300018",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600078": {
+    "equipIdList": [],
+    "id": "10600078",
+    "ownerId": 10000059,
+    "skillId": "12300082",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600079": {
+    "equipIdList": [],
+    "id": "10600079",
+    "ownerId": 10000059,
+    "skillId": "12300083",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600080": {
+    "equipIdList": [],
+    "id": "10600080",
+    "ownerId": 10000059,
+    "skillId": "12300084",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600081": {
+    "equipIdList": [],
+    "id": "10600081",
+    "ownerId": 10000060,
+    "skillId": "12300085",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600082": {
+    "equipIdList": [],
+    "id": "10600082",
+    "ownerId": 10000060,
+    "skillId": "12300086",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600083": {
+    "equipIdList": [],
+    "id": "10600083",
+    "ownerId": 10000372,
+    "skillId": 12301751,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600085": {
+    "equipIdList": [],
+    "id": "10600085",
+    "ownerId": 10000060,
+    "skillId": "12300711",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600086": {
+    "equipIdList": [],
+    "id": "10600086",
+    "ownerId": 10000094,
+    "skillId": 12301685,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600087": {
+    "equipIdList": [],
+    "id": "10600087",
+    "ownerId": 10000062,
+    "skillId": "12300091",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useType": 1
+  },
+  "10600088": {
+    "equipIdList": [],
+    "id": "10600088",
+    "ownerId": 10000062,
+    "skillId": "12300092",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600089": {
+    "equipIdList": [],
+    "id": "10600089",
+    "ownerId": 10000062,
+    "skillId": "12300094",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600090": {
+    "equipIdList": [],
+    "id": "10600090",
+    "ownerId": 10000063,
+    "skillId": "12300095",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600091": {
+    "equipIdList": [],
+    "id": "10600091",
+    "ownerId": 10000047,
+    "skillId": "12300133",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useType": 1
+  },
+  "10600092": {
+    "equipIdList": [],
+    "id": "10600092",
+    "ownerId": 10000063,
+    "skillId": "12300097",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600093": {
+    "equipIdList": [],
+    "id": "10600093",
+    "ownerId": 10000064,
+    "skillId": "12300098",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useType": 1
+  },
+  "10600094": {
+    "equipIdList": [],
+    "id": "10600094",
+    "ownerId": 10000064,
+    "skillId": "12300100",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useType": 1
+  },
+  "10600095": {
+    "equipIdList": [],
+    "id": "10600095",
+    "ownerId": 10000064,
+    "skillId": "12300099",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useType": 1
+  },
+  "10600096": {
+    "equipIdList": [],
+    "id": "10600096",
+    "ownerId": 10000065,
+    "skillId": "12300101",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600097": {
+    "equipIdList": [],
+    "id": "10600097",
+    "ownerId": 10000065,
+    "skillId": "12300102",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600098": {
+    "equipIdList": [],
+    "id": "10600098",
+    "ownerId": 10000065,
+    "skillId": "12300103",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600099": {
+    "equipIdList": [],
+    "id": "10600099",
+    "ownerId": 10000047,
+    "skillId": "12300136",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useType": 1
+  },
+  "10600100": {
+    "equipIdList": [],
+    "id": "10600100",
+    "ownerId": 10000032,
+    "skillId": "12301163",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600101": {
+    "equipIdList": [],
+    "id": "10600101",
+    "ownerId": 10000032,
+    "skillId": "12300119",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600102": {
+    "equipIdList": [],
+    "id": "10600102",
+    "ownerId": 10000032,
+    "skillId": "12300113",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600103": {
+    "equipIdList": [],
+    "id": "10600103",
+    "ownerId": 10000068,
+    "skillId": "12300108",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600104": {
+    "equipIdList": [],
+    "id": "10600104",
+    "ownerId": 10000068,
+    "skillId": "12300109",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600106": {
+    "equipIdList": [],
+    "id": "10600106",
+    "ownerId": 10000069,
+    "skillId": "12300112",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600107": {
+    "equipIdList": [],
+    "id": "10600107",
+    "ownerId": 10000069,
+    "skillId": "12300110",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600113": {
+    "equipIdList": [],
+    "id": "10600113",
+    "ownerId": 10000071,
+    "skillId": "12300115",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600114": {
+    "equipIdList": [],
+    "id": "10600114",
+    "ownerId": 10000004,
+    "skillId": 12300117,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600115": {
+    "equipIdList": [],
+    "id": "10600115",
+    "ownerId": 10000004,
+    "skillId": 12300118,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600119": {
+    "equipIdList": [],
+    "id": "10600119",
+    "ownerId": 10000035,
+    "skillId": "12301609",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600121": {
+    "equipIdList": [],
+    "id": "10600121",
+    "ownerId": 10000298,
+    "skillId": "12300070",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600122": {
+    "equipIdList": [],
+    "id": "10600122",
+    "ownerId": 10000298,
+    "skillId": 12300068,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600123": {
+    "equipIdList": [],
+    "id": "10600123",
+    "ownerId": 10000298,
+    "skillId": 12300071,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600124": {
+    "equipIdList": [],
+    "id": "10600124",
+    "ownerId": 10000298,
+    "skillId": 12300120,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600125": {
+    "equipIdList": [],
+    "id": "10600125",
+    "ownerId": 10000298,
+    "skillId": "12300160",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600126": {
+    "equipIdList": [],
+    "id": "10600126",
+    "ownerId": 10000298,
+    "skillId": 12300163,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600127": {
+    "equipIdList": [],
+    "id": "10600127",
+    "ownerId": 10000298,
+    "skillId": "12300164",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600131": {
+    "equipIdList": [],
+    "id": "10600131",
+    "ownerId": 10000063,
+    "skillId": 12300397,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600134": {
+    "equipIdList": [],
+    "id": "10600134",
+    "ownerId": 10000052,
+    "skillId": "12300067",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600136": {
+    "equipIdList": [],
+    "id": "10600136",
+    "ownerId": 10000094,
+    "skillId": "12301621",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600137": {
+    "equipIdList": [],
+    "id": "10600137",
+    "ownerId": 10000052,
+    "skillId": 12300146,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600140": {
+    "equipIdList": [],
+    "id": "10600140",
+    "ownerId": 10000111,
+    "skillId": 12300568,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600143": {
+    "equipIdList": [],
+    "id": "10600143",
+    "ownerId": 10000004,
+    "skillId": 12300570,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600144": {
+    "equipIdList": [],
+    "id": "10600144",
+    "ownerId": 10000387,
+    "skillId": "12300292",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600145": {
+    "equipIdList": [],
+    "id": "10600145",
+    "ownerId": 10000387,
+    "skillId": "12300301",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600154": {
+    "equipIdList": [],
+    "id": "10600154",
+    "ownerId": 10000059,
+    "skillId": 12300282,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600155": {
+    "equipIdList": [],
+    "id": "10600155",
+    "ownerId": 10000387,
+    "skillId": "12300270",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600158": {
+    "equipIdList": [],
+    "id": "10600158",
+    "ownerId": 10000739,
+    "skillId": "12300514",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600159": {
+    "equipIdList": [],
+    "id": "10600159",
+    "ownerId": 10000001,
+    "skillId": 12300576,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600160": {
+    "equipIdList": [],
+    "id": "10600160",
+    "ownerId": 10000134,
+    "skillId": "12300286",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600161": {
+    "equipIdList": [],
+    "id": "10600161",
+    "ownerId": 10000134,
+    "skillId": "12300284",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600163": {
+    "equipIdList": [],
+    "id": "10600163",
+    "ownerId": 10000388,
+    "skillId": "12300302",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600164": {
+    "equipIdList": [],
+    "id": "10600164",
+    "ownerId": 10000388,
+    "skillId": 12300321,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600165": {
+    "equipIdList": [],
+    "id": "10600165",
+    "ownerId": 10000388,
+    "skillId": "12300309",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600166": {
+    "equipIdList": [],
+    "id": "10600166",
+    "ownerId": 10000388,
+    "skillId": "12300320",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600167": {
+    "equipIdList": [],
+    "id": "10600167",
+    "ownerId": 10000027,
+    "skillId": "12300960",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600169": {
+    "equipIdList": [],
+    "id": "10600169",
+    "ownerId": 10000408,
+    "skillId": "12300957",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600170": {
+    "equipIdList": [],
+    "id": "10600170",
+    "ownerId": 10000154,
+    "skillId": "12300298",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600171": {
+    "equipIdList": [],
+    "id": "10600171",
+    "ownerId": 10000052,
+    "skillId": "12300137",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600172": {
+    "equipIdList": [],
+    "id": "10600172",
+    "ownerId": 10000389,
+    "skillId": "12300060",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useType": 1
+  },
+  "10600173": {
+    "equipIdList": [],
+    "id": "10600173",
+    "ownerId": 10000154,
+    "skillId": "12300300",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600174": {
+    "equipIdList": [],
+    "id": "10600174",
+    "ownerId": 10000157,
+    "skillId": "12300303",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600175": {
+    "equipIdList": [],
+    "id": "10600175",
+    "ownerId": 10000157,
+    "skillId": "12300304",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600176": {
+    "equipIdList": [],
+    "id": "10600176",
+    "ownerId": 10000157,
+    "skillId": "12300305",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600177": {
+    "equipIdList": [],
+    "id": "10600177",
+    "ownerId": 10000156,
+    "skillId": "12300306",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600178": {
+    "equipIdList": [],
+    "id": "10600178",
+    "ownerId": 10000156,
+    "skillId": "12300308",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600182": {
+    "equipIdList": [],
+    "id": "10600182",
+    "ownerId": 10000160,
+    "skillId": "12300315",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600183": {
+    "equipIdList": [],
+    "id": "10600183",
+    "ownerId": 10000053,
+    "skillId": "12300396",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600184": {
+    "equipIdList": [],
+    "id": "10600184",
+    "ownerId": 10000160,
+    "skillId": "12300313",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600186": {
+    "equipIdList": [],
+    "id": "10600186",
+    "ownerId": 10000153,
+    "skillId": "12300009",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useType": 1
+  },
+  "10600187": {
+    "equipIdList": [],
+    "id": "10600187",
+    "ownerId": 10000153,
+    "skillId": "12300029",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useType": 1
+  },
+  "10600188": {
+    "equipIdList": [],
+    "id": "10600188",
+    "ownerId": 10000389,
+    "skillId": 12300330,
+    "targetType": 0,
+    "useParam": -1,
+    "useType": 1
+  },
+  "10600189": {
+    "equipIdList": [],
+    "id": "10600189",
+    "ownerId": 10000389,
+    "skillId": 12300331,
+    "targetType": 0,
+    "useParam": -1,
+    "useType": 1
+  },
+  "10600190": {
+    "equipIdList": [],
+    "id": "10600190",
+    "ownerId": 10000389,
+    "skillId": "12300297",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useType": 1
+  },
+  "10600192": {
+    "equipIdList": [],
+    "id": "10600192",
+    "ownerId": 10000031,
+    "skillId": 12300617,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600193": {
+    "equipIdList": [],
+    "id": "10600193",
+    "ownerId": 10000408,
+    "skillId": 12300924,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600194": {
+    "equipIdList": [],
+    "id": "10600194",
+    "ownerId": 10000408,
+    "skillId": 12300925,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600199": {
+    "equipIdList": [],
+    "id": "10600199",
+    "ownerId": 10000409,
+    "skillId": "12300414",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600200": {
+    "equipIdList": [],
+    "id": "10600200",
+    "ownerId": 10000409,
+    "skillId": "12300413",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600201": {
+    "equipIdList": [],
+    "id": "10600201",
+    "ownerId": 10000409,
+    "skillId": "12300412",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600202": {
+    "equipIdList": [],
+    "id": "10600202",
+    "ownerId": 10000025,
+    "skillId": 12300636,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600207": {
+    "equipIdList": [],
+    "id": "10600207",
+    "ownerId": 10000414,
+    "skillId": "12300425",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600208": {
+    "equipIdList": [],
+    "id": "10600208",
+    "ownerId": 10000414,
+    "skillId": "12300426",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600209": {
+    "equipIdList": [],
+    "id": "10600209",
+    "ownerId": 10000414,
+    "skillId": "12300427",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600214": {
+    "equipIdList": [],
+    "id": "10600214",
+    "ownerId": 10000408,
+    "skillId": "12300449",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600215": {
+    "equipIdList": [],
+    "id": "10600215",
+    "ownerId": 10000408,
+    "skillId": "12300448",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600223": {
+    "equipIdList": [],
+    "id": "10600223",
+    "ownerId": 10000352,
+    "skillId": "12300419",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600224": {
+    "equipIdList": [],
+    "id": "10600224",
+    "ownerId": 10000352,
+    "skillId": "12300667",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600226": {
+    "equipIdList": [],
+    "id": "10600226",
+    "ownerId": 10000352,
+    "skillId": "12300417",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600233": {
+    "equipIdList": [],
+    "id": "10600233",
+    "ownerId": 10000300,
+    "skillId": "12300467",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600235": {
+    "equipIdList": [],
+    "id": "10600235",
+    "ownerId": 10000053,
+    "skillId": "12300404",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600236": {
+    "equipIdList": [],
+    "id": "10600236",
+    "ownerId": 10000300,
+    "skillId": "12300468",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600237": {
+    "equipIdList": [],
+    "id": "10600237",
+    "ownerId": 10000300,
+    "skillId": "12300469",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600239": {
+    "equipIdList": [],
+    "id": "10600239",
+    "ownerId": 10000739,
+    "skillId": "12300515",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600240": {
+    "equipIdList": [],
+    "id": "10600240",
+    "ownerId": 10000298,
+    "skillId": 12300585,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600241": {
+    "equipIdList": [],
+    "id": "10600241",
+    "ownerId": 10000053,
+    "skillId": "12300407",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600242": {
+    "equipIdList": [],
+    "id": "10600242",
+    "ownerId": 10000408,
+    "skillId": 12300928,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600243": {
+    "equipIdList": [],
+    "id": "10600243",
+    "ownerId": 10000372,
+    "skillId": 12301752,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600244": {
+    "equipIdList": [],
+    "id": "10600244",
+    "ownerId": 10000739,
+    "skillId": 12300517,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600245": {
+    "equipIdList": [],
+    "id": "10600245",
+    "ownerId": 10000739,
+    "skillId": "12300516",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600246": {
+    "equipIdList": [],
+    "id": "10600246",
+    "ownerId": 10000372,
+    "skillId": 12301753,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600247": {
+    "equipIdList": [],
+    "id": "10600247",
+    "ownerId": 10000055,
+    "skillId": 12300529,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600248": {
+    "equipIdList": [],
+    "id": "10600248",
+    "ownerId": 10000055,
+    "skillId": 12300530,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600249": {
+    "equipIdList": [],
+    "id": "10600249",
+    "ownerId": 10000059,
+    "skillId": 12300280,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600250": {
+    "equipIdList": [],
+    "id": "10600250",
+    "ownerId": 10000134,
+    "skillId": "12300251",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600251": {
+    "equipIdList": [],
+    "id": "10600251",
+    "ownerId": 10000051,
+    "skillId": "12300421",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600255": {
+    "equipIdList": [],
+    "id": "10600255",
+    "ownerId": 10000051,
+    "skillId": "12300450",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600256": {
+    "equipIdList": [],
+    "id": "10600256",
+    "ownerId": 10000051,
+    "skillId": "12300433",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600258": {
+    "equipIdList": [],
+    "id": "10600258",
+    "ownerId": 10000389,
+    "skillId": "12300147",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useType": 1
+  },
+  "10600259": {
+    "equipIdList": [],
+    "id": "10600259",
+    "ownerId": 10000409,
+    "skillId": 12300511,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600260": {
+    "equipIdList": [],
+    "id": "10600260",
+    "ownerId": 10000101,
+    "skillId": "12300592",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600261": {
+    "equipIdList": [],
+    "id": "10600261",
+    "ownerId": 10000372,
+    "skillId": "12301750",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600262": {
+    "equipIdList": [],
+    "id": "10600262",
+    "ownerId": 10000001,
+    "skillId": 12300420,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600269": {
+    "equipIdList": [],
+    "id": "10600269",
+    "ownerId": 10000160,
+    "skillId": "12300682",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600270": {
+    "equipIdList": [],
+    "id": "10600270",
+    "ownerId": 10000001,
+    "skillId": 12300683,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600271": {
+    "equipIdList": [],
+    "id": "10600271",
+    "ownerId": 10000111,
+    "skillId": "12300695",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600272": {
+    "equipIdList": [],
+    "id": "10600272",
+    "ownerId": 10000335,
+    "skillId": "12300689",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600273": {
+    "equipIdList": [],
+    "id": "10600273",
+    "ownerId": 10000335,
+    "skillId": "12300688",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600274": {
+    "equipIdList": [],
+    "id": "10600274",
+    "ownerId": 10000335,
+    "skillId": "12300687",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600279": {
+    "equipIdList": [],
+    "id": "10600279",
+    "ownerId": 10000071,
+    "skillId": "12300177",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600280": {
+    "equipIdList": [],
+    "id": "10600280",
+    "ownerId": 10000071,
+    "skillId": "12300194",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600282": {
+    "equipIdList": [],
+    "id": "10600282",
+    "ownerId": 10000001,
+    "skillId": 12300726,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600283": {
+    "equipIdList": [],
+    "id": "10600283",
+    "ownerId": 10000408,
+    "skillId": 12300946,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600284": {
+    "equipIdList": [],
+    "id": "10600284",
+    "ownerId": 10000031,
+    "skillId": "12300056",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600286": {
+    "equipIdList": [],
+    "id": "10600286",
+    "ownerId": 10000408,
+    "skillId": 12300969,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600287": {
+    "equipIdList": [],
+    "id": "10600287",
+    "ownerId": 10000408,
+    "skillId": 12300970,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600288": {
+    "equipIdList": [],
+    "id": "10600288",
+    "ownerId": 10000408,
+    "skillId": 12300971,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600289": {
+    "equipIdList": [],
+    "id": "10600289",
+    "ownerId": 10000408,
+    "skillId": 12300950,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600290": {
+    "equipIdList": [],
+    "id": "10600290",
+    "ownerId": 10000027,
+    "skillId": "12300961",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600291": {
+    "equipIdList": [],
+    "id": "10600291",
+    "ownerId": 10000027,
+    "skillId": "12300962",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600292": {
+    "equipIdList": [],
+    "id": "10600292",
+    "ownerId": 10000027,
+    "skillId": 12300963,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600293": {
+    "equipIdList": [],
+    "id": "10600293",
+    "ownerId": 10000031,
+    "skillId": "12300055",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600294": {
+    "equipIdList": [],
+    "id": "10600294",
+    "ownerId": 10000031,
+    "skillId": "12300072",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600295": {
+    "equipIdList": [],
+    "id": "10600295",
+    "ownerId": 10000072,
+    "skillId": "12300033",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600296": {
+    "equipIdList": [],
+    "id": "10600296",
+    "ownerId": 10000072,
+    "skillId": "12300034",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600304": {
+    "equipIdList": [],
+    "id": "10600304",
+    "ownerId": 10000101,
+    "skillId": "12300608",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600305": {
+    "equipIdList": [],
+    "id": "10600305",
+    "ownerId": 10000101,
+    "skillId": "12300609",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600306": {
+    "equipIdList": [],
+    "id": "10600306",
+    "ownerId": 10000372,
+    "skillId": "12301716",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600307": {
+    "equipIdList": [],
+    "id": "10600307",
+    "ownerId": 10000110,
+    "skillId": "12301037",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600308": {
+    "equipIdList": [],
+    "id": "10600308",
+    "ownerId": 10000110,
+    "skillId": "12301038",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600309": {
+    "equipIdList": [],
+    "id": "10600309",
+    "ownerId": 10000110,
+    "skillId": "12301039",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600310": {
+    "equipIdList": [],
+    "id": "10600310",
+    "ownerId": 10000112,
+    "skillId": "12301094",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600311": {
+    "equipIdList": [],
+    "id": "10600311",
+    "ownerId": 10000112,
+    "skillId": "12301095",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600312": {
+    "equipIdList": [],
+    "id": "10600312",
+    "ownerId": 10000112,
+    "skillId": "12301096",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600314": {
+    "equipIdList": [],
+    "id": "10600314",
+    "ownerId": 10000035,
+    "skillId": "12301105",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600315": {
+    "equipIdList": [],
+    "id": "10600315",
+    "ownerId": 10000035,
+    "skillId": "12301106",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600324": {
+    "equipIdList": [],
+    "id": "10600324",
+    "ownerId": 10000124,
+    "skillId": "12301131",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600325": {
+    "equipIdList": [],
+    "id": "10600325",
+    "ownerId": 10000124,
+    "skillId": "12301130",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600326": {
+    "equipIdList": [],
+    "id": "10600326",
+    "ownerId": 10000124,
+    "skillId": "12301129",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600327": {
+    "equipIdList": [],
+    "id": "10600327",
+    "ownerId": 10000139,
+    "skillId": "12301122",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600328": {
+    "equipIdList": [],
+    "id": "10600328",
+    "ownerId": 10000139,
+    "skillId": "12301132",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600329": {
+    "equipIdList": [],
+    "id": "10600329",
+    "ownerId": 10000139,
+    "skillId": "12301133",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600330": {
+    "equipIdList": [],
+    "id": "10600330",
+    "ownerId": 10000159,
+    "skillId": "12300451",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600331": {
+    "equipIdList": [],
+    "id": "10600331",
+    "ownerId": 10000739,
+    "skillId": 12301137,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600332": {
+    "equipIdList": [],
+    "id": "10600332",
+    "ownerId": 10000739,
+    "skillId": 12301138,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600333": {
+    "equipIdList": [],
+    "id": "10600333",
+    "ownerId": 10000739,
+    "skillId": 12301139,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600334": {
+    "equipIdList": [],
+    "id": "10600334",
+    "ownerId": 10000739,
+    "skillId": 12301140,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600335": {
+    "equipIdList": [],
+    "id": "10600335",
+    "ownerId": 10000159,
+    "skillId": 12301150,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600336": {
+    "equipIdList": [],
+    "id": "10600336",
+    "ownerId": 10000159,
+    "skillId": 12301151,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600337": {
+    "equipIdList": [],
+    "id": "10600337",
+    "ownerId": 10000159,
+    "skillId": 12301152,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600338": {
+    "equipIdList": [],
+    "id": "10600338",
+    "ownerId": 10000159,
+    "skillId": "12301148",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600339": {
+    "equipIdList": [],
+    "id": "10600339",
+    "ownerId": 10000159,
+    "skillId": "12301149",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600349": {
+    "equipIdList": [],
+    "id": "10600349",
+    "ownerId": 10000072,
+    "skillId": 12301492,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600350": {
+    "equipIdList": [],
+    "id": "10600350",
+    "ownerId": 10000072,
+    "skillId": 12301493,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600351": {
+    "equipIdList": [],
+    "id": "10600351",
+    "ownerId": 10000072,
+    "skillId": 12301494,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600352": {
+    "equipIdList": [],
+    "id": "10600352",
+    "ownerId": 10000072,
+    "skillId": 12301488,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 5
+    },
+    "useType": 1
+  },
+  "10600353": {
+    "equipIdList": [],
+    "id": "10600353",
+    "ownerId": 10000072,
+    "skillId": "12301496",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600359": {
+    "equipIdList": [],
+    "id": "10600359",
+    "ownerId": 10000270,
+    "skillId": "12300149",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600360": {
+    "equipIdList": [],
+    "id": "10600360",
+    "ownerId": 10000276,
+    "skillId": "12300429",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600362": {
+    "equipIdList": [],
+    "id": "10600362",
+    "ownerId": 10000270,
+    "skillId": "12300148",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600363": {
+    "equipIdList": [],
+    "id": "10600363",
+    "ownerId": 10000276,
+    "skillId": "12300283",
+    "skillIndex": 1,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  },
+  "10600364": {
+    "equipIdList": [],
+    "id": "10600364",
+    "ownerId": 10000276,
+    "skillId": "12300411",
+    "skillIndex": 2,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600366": {
+    "equipIdList": [],
+    "id": "10600366",
+    "ownerId": 10000270,
+    "skillId": "12301608",
+    "skillIndex": 3,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": [],
+    "useType": 1
+  },
+  "10600367": {
+    "equipIdList": [],
+    "id": "10600367",
+    "ownerId": 10000031,
+    "skillId": 12301615,
+    "targetType": 0,
+    "useParam": -1,
+    "useParamMap": {
+      "3": 0
+    },
+    "useType": 1
+  }
+}

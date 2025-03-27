@@ -1,94 +1,140 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { DndProvider } from "react-dnd"
-import { HTML5Backend } from "react-dnd-html5-backend"
+import { useMemo } from "react"
+import { useDataLoader } from "../hooks/use-data-loader"
+import { useDeckBuilder } from "../hooks/use-deck-builder"
+import { TopBar } from "../components/top-bar"
+import { CharacterWindow } from "../components/character-window"
+import { SkillWindow } from "../components/skill-window"
+import { BattleSettings } from "../components/battle-settings"
+import { useToast } from "../components/toast-notification"
+import type { Character } from "../types"
 
-import DeckSearch from "@/components/deck-search"
-import CommunityDiscussion from "@/components/community-discussion"
-import { DeckProvider, useDeck } from "@/contexts/deck-context"
-import { LoadingSpinner } from "@/components/ui/loading-spinner"
+export default function DeckBuilder() {
+  const { data, loading, error } = useDataLoader()
 
-// Layout components
-import Header from "@/components/layout/header"
-import LanguageSelector from "@/components/layout/language-selector"
-import ActionButtons from "@/components/layout/action-buttons"
+  const deckBuilder = useDeckBuilder(data)
+  const { showToast, ToastContainer } = useToast()
 
-// Section components
-import CharacterSection from "@/components/sections/character-section"
-import SkillCardSection from "@/components/sections/skill-card-section"
-import BattleSettingsSection from "@/components/sections/battle-settings-section"
+  // Get all available characters
+  const availableCharacters = useMemo<Character[]>(() => {
+    if (!data) return []
+    return Object.values(data.characters)
+  }, [data])
 
-function DeckBuilder() {
-  const [showDeckSearch, setShowDeckSearch] = useState(false)
-  const [showCommunityDiscussion, setShowCommunityDiscussion] = useState(false)
-  const { isLoading } = useDeck()
+  // Get available languages
+  const availableLanguages = useMemo(() => {
+    if (!data) return ["en"]
+    return Object.keys(data.languages)
+  }, [data])
 
-  if (isLoading) {
+  // Get character images for skill cards
+  const availableCardsWithImages = useMemo(() => {
+    if (!deckBuilder.availableCards.length || !data) return []
+
+    return deckBuilder.availableCards.map((cardInfo) => {
+      const ownerCharacter = data.characters[cardInfo.card.ownerId.toString()]
+      return {
+        ...cardInfo,
+        characterImage: ownerCharacter?.img_card,
+      }
+    })
+  }, [deckBuilder.availableCards, data])
+
+  const handleExport = () => {
+    const result = deckBuilder.exportPreset()
+    showToast(result.message, result.success ? "success" : "error")
+  }
+
+  const handleImport = async () => {
+    const result = await deckBuilder.importPreset()
+    showToast(result.message, result.success ? "success" : "error")
+  }
+
+  const handleClear = () => {
+    deckBuilder.clearAll()
+    showToast(deckBuilder.getTranslatedString("clear_success") || "All settings cleared!", "info")
+  }
+
+  if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <LoadingSpinner size={48} className="mb-4" />
-          <p className="text-lg">Loading game data...</p>
-        </div>
+      <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
+        <div className="text-xl">Loading...</div>
+      </div>
+    )
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
+        <div className="text-xl text-red-500">Error: {error.message}</div>
+      </div>
+    )
+  }
+
+  if (!data) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
+        <div className="text-xl">No data available</div>
       </div>
     )
   }
 
   return (
-    <main className="min-h-screen bg-background text-foreground">
-      <div className="container mx-auto px-4 py-8">
-        {/* Header with theme toggle and actions */}
-        <Header
-          onOpenDeckSearch={() => setShowDeckSearch(true)}
-          onOpenCommunityDiscussion={() => setShowCommunityDiscussion(true)}
+    <div
+      className={`min-h-screen ${deckBuilder.isDarkMode ? "dark bg-gray-900 text-white" : "bg-gray-100 text-gray-900"}`}
+    >
+      <div className="container mx-auto px-2 sm:px-4 max-w-full lg:max-w-6xl">
+        <TopBar
+          onClear={handleClear}
+          onImport={handleImport}
+          onExport={handleExport}
+          isDarkMode={deckBuilder.isDarkMode}
+          onToggleDarkMode={deckBuilder.toggleDarkMode}
+          currentLanguage={deckBuilder.language}
+          availableLanguages={availableLanguages}
+          onChangeLanguage={deckBuilder.setLanguage}
+          getTranslatedString={deckBuilder.getTranslatedString}
         />
 
-        {/* Language Selection Tab and Clipboard Actions */}
-        <LanguageSelector />
+        <main>
+          <CharacterWindow
+            selectedCharacters={deckBuilder.selectedCharacters}
+            leaderCharacter={deckBuilder.leaderCharacter}
+            onAddCharacter={deckBuilder.addCharacter}
+            onRemoveCharacter={deckBuilder.removeCharacter}
+            onSetLeader={deckBuilder.setLeader}
+            getCharacter={deckBuilder.getCharacter}
+            getTranslatedString={deckBuilder.getTranslatedString}
+            availableCharacters={availableCharacters}
+            equipment={deckBuilder.equipment}
+            onEquipItem={deckBuilder.updateEquipment}
+            getEquipment={deckBuilder.getEquipment}
+            getCardInfo={deckBuilder.getCardInfo}
+            data={data}
+          />
 
-        {/* Main Content */}
-        <div className="space-y-8">
-          {/* Character Portraits and Equipment */}
-          <CharacterSection />
+          <SkillWindow
+            selectedCards={deckBuilder.selectedCards}
+            availableCards={availableCardsWithImages}
+            onAddCard={deckBuilder.addCard}
+            onRemoveCard={deckBuilder.removeCard}
+            onReorderCards={deckBuilder.reorderCards}
+            onUpdateCardSettings={deckBuilder.updateCardSettings}
+            getTranslatedString={deckBuilder.getTranslatedString}
+            specialControls={data.extraInfo.specialCtrlIcon}
+          />
 
-          {/* Skill Card Priority List */}
-          <SkillCardSection />
+          <BattleSettings
+            settings={deckBuilder.battleSettings}
+            onUpdateSettings={deckBuilder.updateBattleSettings}
+            getTranslatedString={deckBuilder.getTranslatedString}
+          />
+        </main>
 
-          {/* Battle Settings Configuration */}
-          <BattleSettingsSection />
-
-          {/* Action Buttons */}
-          <ActionButtons />
-        </div>
+        <ToastContainer />
       </div>
-
-      {/* Deck Search Modal */}
-      {showDeckSearch && <DeckSearch onClose={() => setShowDeckSearch(false)} />}
-
-      {/* Community Discussion Modal */}
-      {showCommunityDiscussion && <CommunityDiscussion onClose={() => setShowCommunityDiscussion(false)} />}
-    </main>
-  )
-}
-
-export default function Home() {
-  const [mounted, setMounted] = useState(false)
-
-  // Fix hydration issues
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  // Don't render until client-side to prevent hydration issues with theme
-  if (!mounted) return null
-
-  return (
-    <DeckProvider>
-      <DndProvider backend={HTML5Backend}>
-        <DeckBuilder />
-      </DndProvider>
-    </DeckProvider>
+    </div>
   )
 }
 
