@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { Plus, Info, X, Crown } from "lucide-react"
+import { Plus, Info, X, Crown, ChevronUp, ChevronDown } from "lucide-react"
 import { useState } from "react"
 import type { Character, Equipment, Card, CardExtraInfo } from "../types"
 import { CharacterDetails } from "./character-details"
@@ -398,10 +398,12 @@ function EquipmentSelector({
   }
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" onClick={onClose} >
+
       <div
         className="bg-gray-800 p-4 rounded-lg max-w-3xl max-h-[80vh] w-full flex flex-col"
         style={{ aspectRatio: "1/0.8" }}
+        onClick={(e) => e.stopPropagation()}
       >
         <div className="flex-grow overflow-y-auto">
           <h3 className="text-lg font-bold mb-4">
@@ -438,7 +440,7 @@ function EquipmentSelector({
                 className="h-full px-3 bg-gray-700 border border-gray-600 border-l-0 rounded-r-md flex items-center justify-center"
                 aria-label={sortDirection === "asc" ? "Sort Descending" : "Sort Ascending"}
               >
-                {sortDirection === "desc" ? "↓" : "↑"}
+                {sortDirection === "desc" ? <ChevronUp /> : <ChevronDown />}
               </button>
             </div>
           </div>

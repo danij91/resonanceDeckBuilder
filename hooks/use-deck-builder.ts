@@ -25,8 +25,8 @@ export function useDeckBuilder(data: Database | null) {
   const [battleSettings, setBattleSettings] = useState({
     isLeaderCardOn: true,
     isSpCardOn: true,
-    keepCardNum: 3,
-    discardType: 2,
+    keepCardNum: 0,
+    discardType: 0,
     otherCard: 0,
   })
 
@@ -349,8 +349,8 @@ export function useDeckBuilder(data: Database | null) {
     setBattleSettings({
       isLeaderCardOn: true,
       isSpCardOn: true,
-      keepCardNum: 3,
-      discardType: 2,
+      keepCardNum: 0,
+      discardType: 0,
       otherCard: 0,
     })
     setEquipment(Array(5).fill({ weapon: null, armor: null, accessory: null }))

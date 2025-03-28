@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Search } from "lucide-react"
+import { Search, ChevronDown, ChevronUp } from "lucide-react"
 import type { Character, Equipment, Card, CardExtraInfo } from "../types"
 import { CharacterSlot } from "./character-slot"
 
@@ -103,7 +103,7 @@ export function CharacterWindow({
   }
 
   return (
-    <div className="w-full">
+    <div className="w-full" >
       <h2 className="text-xl font-bold mb-4">{getTranslatedString("character.section.title") || "Characters"}</h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-4">
@@ -129,11 +129,18 @@ export function CharacterWindow({
 
       {/* Character Selector Modal */}
       {showSelector && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-          <div
-            className="bg-gray-800 p-4 rounded-lg max-w-3xl w-full flex flex-col max-h-[90vh]"
-            style={{ aspectRatio: "1/0.8" }}
-          >
+        <div
+        className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+        onClick={() => {
+          setShowSelector(false)
+          setSelectedSlot(-1)
+        }}
+      >
+           <div
+      className="bg-gray-800 p-4 rounded-lg max-w-3xl w-full flex flex-col max-h-[90vh]"
+      style={{ aspectRatio: "1/0.8" }}
+      onClick={(e) => e.stopPropagation()} // 내부 클릭 시 닫히지 않게
+    >
             <div className="flex-grow overflow-y-auto">
               <h3 className="text-lg font-bold mb-4">
                 {getTranslatedString("select_character") || "Select Character"}
@@ -170,7 +177,7 @@ export function CharacterWindow({
                     className="h-full px-3 bg-gray-700 border border-gray-600 border-l-0 rounded-r-md flex items-center justify-center"
                     aria-label={sortDirection === "asc" ? "Sort Descending" : "Sort Ascending"}
                   >
-                    {sortDirection === "desc" ? "↓" : "↑"}
+                    {sortDirection === "desc" ? <ChevronUp /> : <ChevronDown />}
                   </button>
                 </div>
               </div>

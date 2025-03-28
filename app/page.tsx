@@ -1,6 +1,7 @@
 "use client"
 
-import { useMemo } from "react"
+import { useEffect, useMemo } from "react"
+import { useSearchParams } from "next/navigation"
 import { useDataLoader } from "../hooks/use-data-loader"
 import { useDeckBuilder } from "../hooks/use-deck-builder"
 import { TopBar } from "../components/top-bar"
@@ -12,7 +13,7 @@ import type { Character } from "../types"
 
 export default function DeckBuilder() {
   const { data, loading, error } = useDataLoader()
-
+  const searchParams = useSearchParams()
   const deckBuilder = useDeckBuilder(data)
   const { showToast, ToastContainer } = useToast()
 
@@ -40,6 +41,43 @@ export default function DeckBuilder() {
       }
     })
   }, [deckBuilder.availableCards, data])
+
+  // Load deck from URL if deckCode parameter is present
+  useEffect(() => {
+    const loadDeckFromUrl = async () => {
+      if (!data) return
+
+      const deckCode = searchParams.get("deckCode")
+      if (deckCode) {
+        try {
+          // Create a mock clipboard with the deck code
+          const originalClipboard = navigator.clipboard.readText
+          navigator.clipboard.readText = async () => deckCode
+
+          // Import the deck
+          const result = await deckBuilder.importPreset()
+
+          // Restore original clipboard function
+          navigator.clipboard.readText = originalClipboard
+
+          // Show toast notification
+          if (result.success) {
+            showToast(
+              deckBuilder.getTranslatedString("import_success") || "Deck loaded from URL successfully!",
+              "success",
+            )
+          } else {
+            showToast(deckBuilder.getTranslatedString("import_failed") || "Failed to load deck from URL", "error")
+          }
+        } catch (error) {
+          console.error("Failed to load deck from URL:", error)
+          showToast(deckBuilder.getTranslatedString("import_failed") || "Failed to load deck from URL", "error")
+        }
+      }
+    }
+
+    loadDeckFromUrl()
+  }, [data, searchParams, deckBuilder, showToast])
 
   const handleExport = () => {
     const result = deckBuilder.exportPreset()
@@ -81,22 +119,18 @@ export default function DeckBuilder() {
   }
 
   return (
-    <div
-      className={`min-h-screen ${deckBuilder.isDarkMode ? "dark bg-gray-900 text-white" : "bg-gray-100 text-gray-900"}`}
-    >
-      <div className="container mx-auto px-2 sm:px-4 max-w-full lg:max-w-6xl">
-        <TopBar
-          onClear={handleClear}
-          onImport={handleImport}
-          onExport={handleExport}
-          isDarkMode={deckBuilder.isDarkMode}
-          onToggleDarkMode={deckBuilder.toggleDarkMode}
-          currentLanguage={deckBuilder.language}
-          availableLanguages={availableLanguages}
-          onChangeLanguage={deckBuilder.setLanguage}
-          getTranslatedString={deckBuilder.getTranslatedString}
-        />
+    <div className="min-h-screen dark bg-gray-900 text-white">
+      <TopBar
+        onClear={handleClear}
+        onImport={handleImport}
+        onExport={handleExport}
+        currentLanguage={deckBuilder.language}
+        availableLanguages={availableLanguages}
+        onChangeLanguage={deckBuilder.setLanguage}
+        getTranslatedString={deckBuilder.getTranslatedString}
+      />
 
+      <div className="container mx-auto px-2 sm:px-4 max-w-full lg:max-w-6xl pt-24">
         <main>
           <CharacterWindow
             selectedCharacters={deckBuilder.selectedCharacters}
@@ -134,6 +168,8 @@ export default function DeckBuilder() {
 
         <ToastContainer />
       </div>
+      <div className="container mx-auto px-2 sm:px-4 max-w-full lg:max-w-6xl pt-24 pb-24">
+</div>
     </div>
   )
 }

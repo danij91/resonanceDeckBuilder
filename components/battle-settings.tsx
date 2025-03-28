@@ -101,9 +101,9 @@ export function BattleSettings({ settings, onUpdateSettings, getTranslatedString
                 onChange={(e) => onUpdateSettings({ discardType: Number.parseInt(e.target.value) })}
                 className="w-full p-2 border border-gray-700 bg-gray-800 rounded text-sm"
               >
-                <option value={0}>{getTranslatedString("battle.discard.active") || "None"}</option>
-                <option value={1}>{getTranslatedString("battle.discard.auto") || "Auto"}</option>
-                <option value={2}>{getTranslatedString("battle.discard.manual") || "Manual"}</option>
+                <option value={0}>{getTranslatedString("battle.discard.off") || "Off"}</option>
+                <option value={1}>{getTranslatedString("battle.discard.active") || "Active"}</option>
+                <option value={2}>{getTranslatedString("battle.discard.empty") || "Empty"}</option>
               </select>
             </div>
           </div>
@@ -130,7 +130,6 @@ export function BattleSettings({ settings, onUpdateSettings, getTranslatedString
                 >
                   <Plus className="w-4 h-4" />
                 </button>
-                <span className="ml-2 text-sm text-gray-400">{getTranslatedString("battle.cards") || "cards"}</span>
               </div>
             </div>
 

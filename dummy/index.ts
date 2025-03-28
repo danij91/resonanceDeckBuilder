@@ -662,8 +662,8 @@ export const dummyPreset: Preset = {
   ],
   isLeaderCardOn: true,
   isSpCardOn: true,
-  keepCardNum: 3,
-  discardType: 2,
+  keepCardNum: 0,
+  discardType: 0,
   otherCard: 0,
 }
 
