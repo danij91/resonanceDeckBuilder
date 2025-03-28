@@ -423,44 +423,95 @@ export function useDeckBuilder(data: Database | null) {
   const importPreset = useCallback(async () => {
     try {
       const base64Text = await navigator.clipboard.readText()
-
-      // Use the new decodePreset function
       const preset = decodePreset(base64Text)
-
+  
       if (!preset) {
         throw new Error("Invalid preset format")
       }
-
+  
       // Validate preset structure
       if (!preset.roleList || !Array.isArray(preset.roleList) || preset.roleList.length !== 5) {
         throw new Error("Invalid roleList")
       }
-
+  
       if (!preset.cardList || !Array.isArray(preset.cardList)) {
         throw new Error("Invalid cardList")
       }
-
-      // Update state with imported preset
+  
+      // ===== 카드 교정 로직 =====
+      const correctedCardList: typeof preset.cardList = []
+      const correctedCardIdMap: typeof preset.cardIdMap = {}
+      const existingCardIds = new Set(preset.cardList.map((c) => c.id))
+  
+      const findReplacementCard = (brokenCard: any): any => {
+        const { id: brokenId, ownerId } = brokenCard
+  
+        let candidateIds: string[] = []
+  
+        if (ownerId === 10000001) {
+          // 모든 캐릭터의 produceSkills 수집 (중복 제거)
+          const allProduce = new Set<string>()
+          Object.values(data?.characters || {}).forEach((char) => {
+            char.produceSkills?.forEach((pid) => allProduce.add(pid))
+          })
+          candidateIds = [...allProduce]
+        } else {
+          const character = data?.characters?.[ownerId?.toString()]
+          candidateIds = character?.produceSkills || []
+        }
+  
+        // 프리셋 카드에 없는 카드만 후보
+        const replacementId = candidateIds.find((pid) => !existingCardIds.has(pid))
+  
+        if (!replacementId) {
+          console.warn(`No replacement found for card ${brokenId} (ownerId: ${ownerId})`)
+          return brokenCard
+        }
+  
+        const replacement = data?.cards?.[replacementId]
+        if (!replacement) {
+          console.warn(`Replacement card ${replacementId} not found in DB`)
+          return brokenCard
+        }
+  
+        return {
+          ...brokenCard,
+          id: replacement.id,
+          skillId: replacement.skillId,
+        }
+      }
+  
+      for (const card of preset.cardList) {
+        if (!data?.cards?.[card.id]) {
+          const fixed = findReplacementCard(card)
+          correctedCardList.push(fixed)
+          correctedCardIdMap[fixed.id] = 1
+        } else {
+          correctedCardList.push(card)
+          correctedCardIdMap[card.id] = 1
+        }
+      }
+  
+      // ===== 상태 반영 =====
       setSelectedCharacters(preset.roleList)
       setLeaderCharacter(preset.header)
-      setSelectedCards(preset.cardList)
+      setSelectedCards(correctedCardList)
       setBattleSettings({
         isLeaderCardOn: preset.isLeaderCardOn,
         isSpCardOn: preset.isSpCardOn,
         keepCardNum: preset.keepCardNum,
-        discardType: preset.discardType - 1, // Subtract 1 from discardType
+        discardType: preset.discardType - 1,
         otherCard: preset.otherCard,
       })
-
-      // Reset equipment
+  
+      // 장비 초기화 및 반영
       const newEquipment = Array(5).fill({ weapon: null, armor: null, accessory: null })
-
-      // Apply equipment if present
+  
       if (preset.equipment && Array.isArray(preset.equipment)) {
         preset.equipment.forEach((item) => {
           const slotIndex = preset.roleList.findIndex((id) => id === item.charId)
           if (slotIndex !== -1) {
-            const equip = data?.equipment[item.id]
+            const equip = data?.equipment?.[item.id]
             if (equip) {
               if (equip.type === "weapon") {
                 newEquipment[slotIndex].weapon = item.id
@@ -473,15 +524,16 @@ export function useDeckBuilder(data: Database | null) {
           }
         })
       }
-
+  
       setEquipment(newEquipment)
-
+  
       return { success: true, message: getTranslatedString("import_success") || "Import successful!" }
     } catch (error) {
       console.error("Import failed:", error)
       return { success: false, message: getTranslatedString("import_failed") || "Import failed!" }
     }
   }, [data, getTranslatedString])
+  
 
   return {
     selectedCharacters,
