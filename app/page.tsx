@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect, useMemo } from "react"
-import { useSearchParams } from "next/navigation"
 import { useDataLoader } from "../hooks/use-data-loader"
 import { useDeckBuilder } from "../hooks/use-deck-builder"
 import { TopBar } from "../components/top-bar"
@@ -12,8 +11,8 @@ import { useToast } from "../components/toast-notification"
 import type { Character } from "../types"
 
 export default function DeckBuilder() {
+  
   const { data, loading, error } = useDataLoader()
-  const searchParams = useSearchParams()
   const deckBuilder = useDeckBuilder(data)
   const { showToast, ToastContainer } = useToast()
 
@@ -46,38 +45,46 @@ export default function DeckBuilder() {
   useEffect(() => {
     const loadDeckFromUrl = async () => {
       if (!data) return
-
-      const deckCode = searchParams.get("deckCode")
-      if (deckCode) {
-        try {
+  
+      try {
+        const params = new URLSearchParams(window.location.search)
+        const deckCode = params.get("deckCode")
+  
+        if (deckCode) {
           // Create a mock clipboard with the deck code
           const originalClipboard = navigator.clipboard.readText
           navigator.clipboard.readText = async () => deckCode
-
+  
           // Import the deck
           const result = await deckBuilder.importPreset()
-
+  
           // Restore original clipboard function
           navigator.clipboard.readText = originalClipboard
-
+  
           // Show toast notification
           if (result.success) {
             showToast(
               deckBuilder.getTranslatedString("import_success") || "Deck loaded from URL successfully!",
-              "success",
+              "success"
             )
           } else {
-            showToast(deckBuilder.getTranslatedString("import_failed") || "Failed to load deck from URL", "error")
+            showToast(
+              deckBuilder.getTranslatedString("import_failed") || "Failed to load deck from URL",
+              "error"
+            )
           }
-        } catch (error) {
-          console.error("Failed to load deck from URL:", error)
-          showToast(deckBuilder.getTranslatedString("import_failed") || "Failed to load deck from URL", "error")
         }
+      } catch (error) {
+        console.error("Failed to load deck from URL:", error)
+        showToast(
+          deckBuilder.getTranslatedString("import_failed") || "Failed to load deck from URL",
+          "error"
+        )
       }
     }
-
+  
     loadDeckFromUrl()
-  }, [data, searchParams, deckBuilder, showToast])
+  }, [data, deckBuilder, showToast])
 
   const handleExport = () => {
     const result = deckBuilder.exportPreset()
