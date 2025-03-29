@@ -1,6 +1,7 @@
 "use client"
 
 import type { Equipment } from "../types"
+import React from "react"
 
 interface EquipmentDetailsProps {
   equipment: Equipment
@@ -9,80 +10,92 @@ interface EquipmentDetailsProps {
 }
 
 export function EquipmentDetails({ equipment, getTranslatedString, onClose }: EquipmentDetailsProps) {
-  // Function to get rarity background color
-  const getRarityBgColor = (rarity: string) => {
-    switch (rarity) {
-      case "UR":
-        return "bg-gradient-to-br from-orange-500 to-amber-500"
-      case "SSR":
-        return "bg-gradient-to-br from-yellow-500 to-amber-500"
-      case "SR":
-        return "bg-gradient-to-br from-purple-500 to-indigo-500"
-      case "R":
-        return "bg-gradient-to-br from-blue-500 to-cyan-500"
-      default:
-        return "bg-gray-700"
-    }
+  if (!equipment) {
+    return null
   }
 
-  // Function to get equipment type name
-  const getEquipmentTypeName = (type: string) => {
-    switch (type) {
-      case "weapon":
-        return getTranslatedString("equipment.type.weapon") || "Weapon"
-      case "armor":
-        return getTranslatedString("equipment.type.armor") || "Armor"
-      case "acc":
-        return getTranslatedString("equipment.type.accessory") || "Accessory"
+  // Function to format text with color tags
+  const formatColorText = (text: string) => {
+    if (!text) return ""
+
+    // Replace <color=#XXXXXX>text</color> with styled spans
+    const formattedText = text.split(/(<color=#[A-Fa-f0-9]{6}>.*?<\/color>)/).map((part, index) => {
+      const colorMatch = part.match(/<color=#([A-Fa-f0-9]{6})>(.*?)<\/color>/)
+      if (colorMatch) {
+        const [_, colorCode, content] = colorMatch
+        return (
+          <span key={index} style={{ color: `#${colorCode}` }}>
+            {content}
+          </span>
+        )
+      }
+
+      // Handle newlines by replacing \n with <br />
+      return part.split("\\n").map((line, i) =>
+        i === 0 ? (
+          line
+        ) : (
+          <React.Fragment key={`line-${index}-${i}`}>
+            <br />
+            {line}
+          </React.Fragment>
+        ),
+      )
+    })
+
+    return formattedText
+  }
+
+  // Function to get quality background color
+  const getQualityBgColor = (quality: string) => {
+    switch (quality) {
+      case "Orange":
+        return "bg-gradient-to-br from-orange-500 to-red-500"
+      case "Golden":
+        return "bg-gradient-to-br from-yellow-500 to-amber-500"
+      case "Purple":
+        return "bg-gradient-to-br from-purple-500 to-indigo-500"
+      case "Blue":
+        return "bg-gradient-to-br from-blue-500 to-cyan-500"
+      case "Green":
+        return "bg-gradient-to-br from-green-500 to-emerald-500"
       default:
-        return type
+        return "bg-gradient-to-br from-gray-400 to-gray-500"
     }
   }
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-      <div className="bg-gray-800 rounded-lg max-w-md w-full flex flex-col max-h-[90vh]">
-        <div className="p-4 border-b border-gray-700">
-          <h2 className="text-xl font-bold">{getTranslatedString("equipment.details") || "Equipment Details"}</h2>
-        </div>
+    <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" onClick={onClose}>
+      <div className="bg-gray-800 p-4 rounded-lg max-w-md w-full" onClick={(e) => e.stopPropagation()}>
+        <h3 className="text-lg font-bold mb-4">{getTranslatedString("equipment_details") || "Equipment Details"}</h3>
 
-        <div className="p-4 overflow-y-auto flex-grow">
-          <div className="flex flex-col items-center mb-6">
-            <div className={`w-32 h-32 ${getRarityBgColor(equipment.rarity)} rounded-lg overflow-hidden mb-3`}>
-              {equipment.url ? (
-                <img
-                  src={equipment.url || "/placeholder.svg"}
-                  alt={getTranslatedString(equipment.name)}
-                  className="w-full h-full object-cover"
-                />
-              ) : (
-                <div className="w-full h-full flex items-center justify-center">
-                  <span className="text-lg">{getTranslatedString(equipment.name).charAt(0)}</span>
-                </div>
-              )}
-            </div>
-
-            <h3 className="text-lg font-bold">{getTranslatedString(equipment.name)}</h3>
-
-            <div className="flex items-center mt-2 space-x-3">
-              <span
-                className={`px-2 py-1 rounded-full text-xs font-bold text-white ${getRarityBgColor(equipment.rarity)}`}
-              >
-                {equipment.rarity}
-              </span>
-              <span className="px-2 py-1 bg-gray-700 rounded-full text-xs">{getEquipmentTypeName(equipment.type)}</span>
-            </div>
+        <div className="flex mb-4">
+          {/* Equipment Image */}
+          <div className={`w-16 h-16 ${getQualityBgColor(equipment.quality)} rounded-lg mr-4 overflow-hidden`}>
+            <img
+              src={equipment.url || `/placeholder.svg?height=100&width=100`}
+              alt={getTranslatedString(equipment.name)}
+              className="w-full h-full object-cover"
+            />
           </div>
 
-          <div className="bg-gray-700 p-4 rounded-lg">
-            <h4 className="text-sm font-medium text-gray-300 mb-2">
-              {getTranslatedString("equipment.description") || "Description"}
-            </h4>
-            <p className="text-white">{getTranslatedString(equipment.desc)}</p>
+          {/* Equipment Info */}
+          <div>
+            <h4 className="text-base font-semibold">{getTranslatedString(equipment.name)}</h4>
+            <p className="text-sm text-gray-400">
+              {getTranslatedString(`equipment_type_${equipment.type}`) || equipment.type}
+            </p>
           </div>
         </div>
 
-        <div className="p-4 border-t border-gray-700 flex justify-end">
+        {/* Equipment Description - 포맷팅 적용 */}
+        <div className="mb-4">
+          <h5 className="text-sm font-medium mb-1">{getTranslatedString("equipment_description") || "Description"}</h5>
+          <p className="text-sm text-gray-300">{formatColorText(getTranslatedString(equipment.des))}</p>
+        </div>
+
+        {/* Close Button */}
+        <div className="flex justify-end">
           <button onClick={onClose} className="px-4 py-2 bg-gray-700 rounded-lg text-sm">
             {getTranslatedString("close") || "Close"}
           </button>

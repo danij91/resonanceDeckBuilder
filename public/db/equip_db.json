@@ -1,0 +1,1171 @@
+{
+  "11800028": {
+    "id": 11800028,
+    "name": "break_name_11800028",
+    "des": "break_des_11800028",
+    "equipTagId": 12600155,
+    "quality": "Blue"
+  },
+  "11800030": {
+    "id": 11800030,
+    "name": "break_name_11800030",
+    "des": "break_des_11800030",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800032": {
+    "id": 11800032,
+    "name": "break_name_11800032",
+    "des": "break_des_11800032",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800034": {
+    "id": 11800034,
+    "name": "break_name_11800034",
+    "des": "break_des_11800034",
+    "equipTagId": 12600162,
+    "quality": "Orange"
+  },
+  "11800043": {
+    "id": 11800043,
+    "name": "break_name_11800043",
+    "des": "break_des_11800043",
+    "equipTagId": 12600155,
+    "quality": "Blue"
+  },
+  "11800044": {
+    "id": 11800044,
+    "name": "break_name_11800044",
+    "des": "break_des_11800044",
+    "equipTagId": 12600162,
+    "quality": "Blue"
+  },
+  "11800045": {
+    "id": 11800045,
+    "name": "break_name_11800045",
+    "des": "break_des_11800045",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800046": {
+    "id": 11800046,
+    "name": "break_name_11800046",
+    "des": "break_des_11800046",
+    "equipTagId": 12600162,
+    "quality": "Blue"
+  },
+  "11800047": {
+    "id": 11800047,
+    "name": "break_name_11800047",
+    "des": "break_des_11800047",
+    "equipTagId": 12600162,
+    "quality": "Blue"
+  },
+  "11800048": {
+    "id": 11800048,
+    "name": "break_name_11800048",
+    "des": "break_des_11800048",
+    "equipTagId": 12600161,
+    "quality": "Orange"
+  },
+  "11800096": {
+    "id": 11800096,
+    "name": "break_name_11800096",
+    "des": "break_des_11800096",
+    "equipTagId": 12600155,
+    "quality": "Purple"
+  },
+  "11800098": {
+    "id": 11800098,
+    "name": "break_name_11800098",
+    "des": "break_des_11800098",
+    "equipTagId": 12600155,
+    "quality": "Purple"
+  },
+  "11800102": {
+    "id": 11800102,
+    "name": "break_name_11800102",
+    "des": "break_des_11800102",
+    "equipTagId": 12600161,
+    "quality": "Purple"
+  },
+  "11800103": {
+    "id": 11800103,
+    "name": "break_name_11800103",
+    "des": "break_des_11800103",
+    "equipTagId": 12600162,
+    "quality": "Purple"
+  },
+  "11800104": {
+    "id": 11800104,
+    "name": "break_name_11800104",
+    "des": "break_des_11800104",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800105": {
+    "id": 11800105,
+    "name": "break_name_11800105",
+    "des": "break_des_11800105",
+    "equipTagId": 12600161,
+    "quality": "Golden"
+  },
+  "11800106": {
+    "id": 11800106,
+    "name": "break_name_11800106",
+    "des": "break_des_11800106",
+    "equipTagId": 12600162,
+    "quality": "Golden"
+  },
+  "11800107": {
+    "id": 11800107,
+    "name": "break_name_11800107",
+    "des": "break_des_11800107",
+    "equipTagId": 12600161,
+    "quality": "Blue"
+  },
+  "11800220": {
+    "id": 11800220,
+    "name": "",
+    "des": "",
+    "equipTagId": -1,
+    "quality": "Golden"
+  },
+  "11800235": {
+    "id": 11800235,
+    "name": "",
+    "des": "",
+    "equipTagId": 12600155,
+    "quality": "White"
+  },
+  "11800035": {
+    "id": 11800035,
+    "name": "break_name_11800035",
+    "des": "break_des_11800035",
+    "equipTagId": 12600155,
+    "quality": "Blue"
+  },
+  "11800036": {
+    "id": 11800036,
+    "name": "break_name_11800036",
+    "des": "break_des_11800036",
+    "equipTagId": 12600155,
+    "quality": "Blue"
+  },
+  "11800037": {
+    "id": 11800037,
+    "name": "break_name_11800037",
+    "des": "break_des_11800037",
+    "equipTagId": 12600155,
+    "quality": "Blue"
+  },
+  "11800038": {
+    "id": 11800038,
+    "name": "break_name_11800038",
+    "des": "break_des_11800038",
+    "equipTagId": 12600155,
+    "quality": "Blue"
+  },
+  "11800039": {
+    "id": 11800039,
+    "name": "break_name_11800039",
+    "des": "break_des_11800039",
+    "equipTagId": 12600155,
+    "quality": "Blue"
+  },
+  "11800237": {
+    "id": 11800237,
+    "name": "break_name_11800237",
+    "des": "break_des_11800237",
+    "equipTagId": 12600161,
+    "quality": "Blue"
+  },
+  "11800238": {
+    "id": 11800238,
+    "name": "break_name_11800238",
+    "des": "break_des_11800238",
+    "equipTagId": 12600162,
+    "quality": "Blue"
+  },
+  "11800239": {
+    "id": 11800239,
+    "name": "break_name_11800239",
+    "des": "break_des_11800239",
+    "equipTagId": 12600155,
+    "quality": "Purple"
+  },
+  "11800240": {
+    "id": 11800240,
+    "name": "break_name_11800240",
+    "des": "break_des_11800240",
+    "equipTagId": 12600155,
+    "quality": "Purple"
+  },
+  "11800241": {
+    "id": 11800241,
+    "name": "break_name_11800241",
+    "des": "break_des_11800241",
+    "equipTagId": 12600161,
+    "quality": "Purple"
+  },
+  "11800242": {
+    "id": 11800242,
+    "name": "break_name_11800242",
+    "des": "break_des_11800242",
+    "equipTagId": 12600162,
+    "quality": "Purple"
+  },
+  "11800243": {
+    "id": 11800243,
+    "name": "break_name_11800243",
+    "des": "break_des_11800243",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800244": {
+    "id": 11800244,
+    "name": "break_name_11800244",
+    "des": "break_des_11800244",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800245": {
+    "id": 11800245,
+    "name": "break_name_11800245",
+    "des": "break_des_11800245",
+    "equipTagId": 12600161,
+    "quality": "Golden"
+  },
+  "11800246": {
+    "id": 11800246,
+    "name": "break_name_11800246",
+    "des": "break_des_11800246",
+    "equipTagId": 12600162,
+    "quality": "Golden"
+  },
+  "11800247": {
+    "id": 11800247,
+    "name": "break_name_11800247",
+    "des": "break_des_11800247",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800248": {
+    "id": 11800248,
+    "name": "break_name_11800248",
+    "des": "break_des_11800248",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800249": {
+    "id": 11800249,
+    "name": "break_name_11800249",
+    "des": "break_des_11800249",
+    "equipTagId": 12600162,
+    "quality": "Orange"
+  },
+  "11800250": {
+    "id": 11800250,
+    "name": "break_name_11800250",
+    "des": "break_des_11800250",
+    "equipTagId": 12600155,
+    "quality": "Blue"
+  },
+  "11800251": {
+    "id": 11800251,
+    "name": "break_name_11800251",
+    "des": "break_des_11800251",
+    "equipTagId": 12600161,
+    "quality": "Blue"
+  },
+  "11800252": {
+    "id": 11800252,
+    "name": "break_name_11800252",
+    "des": "break_des_11800252",
+    "equipTagId": 12600162,
+    "quality": "Blue"
+  },
+  "11800253": {
+    "id": 11800253,
+    "name": "break_name_11800253",
+    "des": "break_des_11800253",
+    "equipTagId": 12600155,
+    "quality": "Purple"
+  },
+  "11800254": {
+    "id": 11800254,
+    "name": "break_name_11800254",
+    "des": "break_des_11800254",
+    "equipTagId": 12600155,
+    "quality": "Purple"
+  },
+  "11800255": {
+    "id": 11800255,
+    "name": "break_name_11800255",
+    "des": "break_des_11800255",
+    "equipTagId": 12600161,
+    "quality": "Purple"
+  },
+  "11800256": {
+    "id": 11800256,
+    "name": "break_name_11800256",
+    "des": "break_des_11800256",
+    "equipTagId": 12600162,
+    "quality": "Purple"
+  },
+  "11800257": {
+    "id": 11800257,
+    "name": "break_name_11800257",
+    "des": "break_des_11800257",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800258": {
+    "id": 11800258,
+    "name": "break_name_11800258",
+    "des": "break_des_11800258",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800259": {
+    "id": 11800259,
+    "name": "break_name_11800259",
+    "des": "break_des_11800259",
+    "equipTagId": 12600161,
+    "quality": "Golden"
+  },
+  "11800260": {
+    "id": 11800260,
+    "name": "break_name_11800260",
+    "des": "break_des_11800260",
+    "equipTagId": 12600162,
+    "quality": "Golden"
+  },
+  "11800261": {
+    "id": 11800261,
+    "name": "break_name_11800261",
+    "des": "break_des_11800261",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800262": {
+    "id": 11800262,
+    "name": "break_name_11800262",
+    "des": "break_des_11800262",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800263": {
+    "id": 11800263,
+    "name": "break_name_11800263",
+    "des": "break_des_11800263",
+    "equipTagId": 12600161,
+    "quality": "Orange"
+  },
+  "11800264": {
+    "id": 11800264,
+    "name": "break_name_11800264",
+    "des": "break_des_11800264",
+    "equipTagId": 12600162,
+    "quality": "Orange"
+  },
+  "11800265": {
+    "id": 11800265,
+    "name": "break_name_11800265",
+    "des": "break_des_11800265",
+    "equipTagId": 12600155,
+    "quality": "Blue"
+  },
+  "11800266": {
+    "id": 11800266,
+    "name": "break_name_11800266",
+    "des": "break_des_11800266",
+    "equipTagId": 12600161,
+    "quality": "Blue"
+  },
+  "11800267": {
+    "id": 11800267,
+    "name": "break_name_11800267",
+    "des": "break_des_11800267",
+    "equipTagId": 12600162,
+    "quality": "Blue"
+  },
+  "11800268": {
+    "id": 11800268,
+    "name": "break_name_11800268",
+    "des": "break_des_11800268",
+    "equipTagId": 12600155,
+    "quality": "Purple"
+  },
+  "11800269": {
+    "id": 11800269,
+    "name": "break_name_11800269",
+    "des": "break_des_11800269",
+    "equipTagId": 12600155,
+    "quality": "Purple"
+  },
+  "11800270": {
+    "id": 11800270,
+    "name": "break_name_11800270",
+    "des": "break_des_11800270",
+    "equipTagId": 12600161,
+    "quality": "Purple"
+  },
+  "11800271": {
+    "id": 11800271,
+    "name": "break_name_11800271",
+    "des": "break_des_11800271",
+    "equipTagId": 12600162,
+    "quality": "Purple"
+  },
+  "11800272": {
+    "id": 11800272,
+    "name": "break_name_11800272",
+    "des": "break_des_11800272",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800273": {
+    "id": 11800273,
+    "name": "break_name_11800273",
+    "des": "break_des_11800273",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800274": {
+    "id": 11800274,
+    "name": "break_name_11800274",
+    "des": "break_des_11800274",
+    "equipTagId": 12600161,
+    "quality": "Golden"
+  },
+  "11800275": {
+    "id": 11800275,
+    "name": "break_name_11800275",
+    "des": "break_des_11800275",
+    "equipTagId": 12600162,
+    "quality": "Golden"
+  },
+  "11800276": {
+    "id": 11800276,
+    "name": "break_name_11800276",
+    "des": "break_des_11800276",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800277": {
+    "id": 11800277,
+    "name": "break_name_11800277",
+    "des": "break_des_11800277",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800278": {
+    "id": 11800278,
+    "name": "break_name_11800278",
+    "des": "break_des_11800278",
+    "equipTagId": 12600161,
+    "quality": "Orange"
+  },
+  "11800279": {
+    "id": 11800279,
+    "name": "break_name_11800279",
+    "des": "break_des_11800279",
+    "equipTagId": 12600162,
+    "quality": "Orange"
+  },
+  "11800280": {
+    "id": 11800280,
+    "name": "break_name_11800280",
+    "des": "break_des_11800280",
+    "equipTagId": 12600155,
+    "quality": "Blue"
+  },
+  "11800281": {
+    "id": 11800281,
+    "name": "break_name_11800281",
+    "des": "break_des_11800281",
+    "equipTagId": 12600161,
+    "quality": "Blue"
+  },
+  "11800282": {
+    "id": 11800282,
+    "name": "break_name_11800282",
+    "des": "break_des_11800282",
+    "equipTagId": 12600162,
+    "quality": "Blue"
+  },
+  "11800283": {
+    "id": 11800283,
+    "name": "break_name_11800283",
+    "des": "break_des_11800283",
+    "equipTagId": 12600155,
+    "quality": "Purple"
+  },
+  "11800284": {
+    "id": 11800284,
+    "name": "break_name_11800284",
+    "des": "break_des_11800284",
+    "equipTagId": 12600155,
+    "quality": "Purple"
+  },
+  "11800285": {
+    "id": 11800285,
+    "name": "break_name_11800285",
+    "des": "break_des_11800285",
+    "equipTagId": 12600161,
+    "quality": "Purple"
+  },
+  "11800286": {
+    "id": 11800286,
+    "name": "break_name_11800286",
+    "des": "break_des_11800286",
+    "equipTagId": 12600162,
+    "quality": "Purple"
+  },
+  "11800287": {
+    "id": 11800287,
+    "name": "break_name_11800287",
+    "des": "break_des_11800287",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800288": {
+    "id": 11800288,
+    "name": "break_name_11800288",
+    "des": "break_des_11800288",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800289": {
+    "id": 11800289,
+    "name": "break_name_11800289",
+    "des": "break_des_11800289",
+    "equipTagId": 12600161,
+    "quality": "Golden"
+  },
+  "11800290": {
+    "id": 11800290,
+    "name": "break_name_11800290",
+    "des": "break_des_11800290",
+    "equipTagId": 12600162,
+    "quality": "Golden"
+  },
+  "11800291": {
+    "id": 11800291,
+    "name": "break_name_11800291",
+    "des": "break_des_11800291",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800292": {
+    "id": 11800292,
+    "name": "break_name_11800292",
+    "des": "break_des_11800292",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800293": {
+    "id": 11800293,
+    "name": "break_name_11800293",
+    "des": "break_des_11800293",
+    "equipTagId": 12600161,
+    "quality": "Orange"
+  },
+  "11800294": {
+    "id": 11800294,
+    "name": "break_name_11800294",
+    "des": "break_des_11800294",
+    "equipTagId": 12600162,
+    "quality": "Orange"
+  },
+  "11800295": {
+    "id": 11800295,
+    "name": "break_name_11800295",
+    "des": "break_des_11800295",
+    "equipTagId": 12600161,
+    "quality": "Orange"
+  },
+  "11800296": {
+    "id": 11800296,
+    "name": "break_name_11800296",
+    "des": "break_des_11800296",
+    "equipTagId": 12600162,
+    "quality": "Orange"
+  },
+  "11800297": {
+    "id": 11800297,
+    "name": "break_name_11800297",
+    "des": "break_des_11800297",
+    "equipTagId": 12600155,
+    "quality": "Purple"
+  },
+  "11800298": {
+    "id": 11800298,
+    "name": "break_name_11800298",
+    "des": "break_des_11800298",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800299": {
+    "id": 11800299,
+    "name": "break_name_11800299",
+    "des": "break_des_11800299",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800300": {
+    "id": 11800300,
+    "name": "break_name_11800300",
+    "des": "break_des_11800300",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800301": {
+    "id": 11800301,
+    "name": "break_name_11800301",
+    "des": "break_des_11800301",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800302": {
+    "id": 11800302,
+    "name": "break_name_11800302",
+    "des": "break_des_11800302",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800303": {
+    "id": 11800303,
+    "name": "break_name_11800303",
+    "des": "break_des_11800303",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800304": {
+    "id": 11800304,
+    "name": "break_name_11800304",
+    "des": "break_des_11800304",
+    "equipTagId": 12600162,
+    "quality": "Blue"
+  },
+  "11800305": {
+    "id": 11800305,
+    "name": "break_name_11800305",
+    "des": "break_des_11800305",
+    "equipTagId": 12600162,
+    "quality": "Blue"
+  },
+  "11800306": {
+    "id": 11800306,
+    "name": "break_name_11800306",
+    "des": "break_des_11800306",
+    "equipTagId": 12600162,
+    "quality": "Blue"
+  },
+  "11800307": {
+    "id": 11800307,
+    "name": "break_name_11800307",
+    "des": "break_des_11800307",
+    "equipTagId": 12600162,
+    "quality": "Purple"
+  },
+  "11800308": {
+    "id": 11800308,
+    "name": "break_name_11800308",
+    "des": "break_des_11800308",
+    "equipTagId": 12600155,
+    "quality": "Blue"
+  },
+  "11800309": {
+    "id": 11800309,
+    "name": "break_name_11800309",
+    "des": "break_des_11800309",
+    "equipTagId": 12600162,
+    "quality": "Purple"
+  },
+  "11800310": {
+    "id": 11800310,
+    "name": "break_name_11800310",
+    "des": "break_des_11800310",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800311": {
+    "id": 11800311,
+    "name": "break_name_11800311",
+    "des": "break_des_11800311",
+    "equipTagId": 12600155,
+    "quality": "Purple"
+  },
+  "11800312": {
+    "id": 11800312,
+    "name": "break_name_11800312",
+    "des": "break_des_11800312",
+    "equipTagId": 12600161,
+    "quality": "Blue"
+  },
+  "11800313": {
+    "id": 11800313,
+    "name": "break_name_11800313",
+    "des": "break_des_11800313",
+    "equipTagId": 12600162,
+    "quality": "Golden"
+  },
+  "11800314": {
+    "id": 11800314,
+    "name": "break_name_11800314",
+    "des": "break_des_11800314",
+    "equipTagId": 12600162,
+    "quality": "Purple"
+  },
+  "11800315": {
+    "id": 11800315,
+    "name": "break_name_11800315",
+    "des": "break_des_11800315",
+    "equipTagId": 12600162,
+    "quality": "Golden"
+  },
+  "11800316": {
+    "id": 11800316,
+    "name": "break_name_11800316",
+    "des": "break_des_11800316",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800023": {
+    "id": 11800023,
+    "name": "",
+    "des": "",
+    "equipTagId": -1,
+    "quality": "Golden"
+  },
+  "11800025": {
+    "id": 11800025,
+    "name": "",
+    "des": "",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800026": {
+    "id": 11800026,
+    "name": "",
+    "des": "",
+    "equipTagId": 12600155,
+    "quality": "White"
+  },
+  "11800002": {
+    "id": 11800002,
+    "name": "break_name_11800002",
+    "des": "break_des_11800002",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800001": {
+    "id": 11800001,
+    "name": "break_name_11800001",
+    "des": "break_des_11800001",
+    "equipTagId": 12600162,
+    "quality": "Orange"
+  },
+  "11800003": {
+    "id": 11800003,
+    "name": "break_name_11800003",
+    "des": "break_des_11800003",
+    "equipTagId": 12600162,
+    "quality": "Orange"
+  },
+  "11800004": {
+    "id": 11800004,
+    "name": "",
+    "des": "",
+    "equipTagId": 12600155,
+    "quality": "White"
+  },
+  "11800006": {
+    "id": 11800006,
+    "name": "break_name_11800006",
+    "des": "break_des_11800006",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800007": {
+    "id": 11800007,
+    "name": "break_name_11800007",
+    "des": "break_des_11800007",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800008": {
+    "id": 11800008,
+    "name": "break_name_11800008",
+    "des": "break_des_11800008",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800009": {
+    "id": 11800009,
+    "name": "break_name_11800009",
+    "des": "break_des_11800009",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800010": {
+    "id": 11800010,
+    "name": "break_name_11800010",
+    "des": "break_des_11800010",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800005": {
+    "id": 11800005,
+    "name": "",
+    "des": "",
+    "equipTagId": 12600155,
+    "quality": "White"
+  },
+  "11800011": {
+    "id": 11800011,
+    "name": "break_name_11800011",
+    "des": "break_des_11800011",
+    "equipTagId": 12600161,
+    "quality": "Orange"
+  },
+  "11800013": {
+    "id": 11800013,
+    "name": "break_name_11800013",
+    "des": "break_des_11800013",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800012": {
+    "id": 11800012,
+    "name": "break_name_11800012",
+    "des": "break_des_11800012",
+    "equipTagId": 12600161,
+    "quality": "Golden"
+  },
+  "11800015": {
+    "id": 11800015,
+    "name": "break_name_11800015",
+    "des": "break_des_11800015",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800016": {
+    "id": 11800016,
+    "name": "break_name_11800016",
+    "des": "break_des_11800016",
+    "equipTagId": 12600162,
+    "quality": "Golden"
+  },
+  "11800017": {
+    "id": 11800017,
+    "name": "break_name_11800017",
+    "des": "break_des_11800017",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800018": {
+    "id": 11800018,
+    "name": "break_name_11800018",
+    "des": "break_des_11800018",
+    "equipTagId": 12600162,
+    "quality": "Orange"
+  },
+  "11800019": {
+    "id": 11800019,
+    "name": "break_name_11800019",
+    "des": "break_des_11800019",
+    "equipTagId": 12600161,
+    "quality": "Golden"
+  },
+  "11800021": {
+    "id": 11800021,
+    "name": "break_name_11800021",
+    "des": "break_des_11800021",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800022": {
+    "id": 11800022,
+    "name": "break_name_11800022",
+    "des": "break_des_11800022",
+    "equipTagId": 12600162,
+    "quality": "Orange"
+  },
+  "11800014": {
+    "id": 11800014,
+    "name": "break_name_11800014",
+    "des": "",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800024": {
+    "id": 11800024,
+    "name": "break_name_11800024",
+    "des": "",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800029": {
+    "id": 11800029,
+    "name": "break_name_11800029",
+    "des": "break_des_11800029",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800031": {
+    "id": 11800031,
+    "name": "break_name_11800031",
+    "des": "break_des_11800031",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800033": {
+    "id": 11800033,
+    "name": "break_name_11800033",
+    "des": "break_des_11800033",
+    "equipTagId": 12600161,
+    "quality": "Golden"
+  },
+  "11800040": {
+    "id": 11800040,
+    "name": "break_name_11800040",
+    "des": "break_des_11800040",
+    "equipTagId": 12600161,
+    "quality": "Orange"
+  },
+  "11800041": {
+    "id": 11800041,
+    "name": "break_name_11800041",
+    "des": "break_des_11800041",
+    "equipTagId": 12600162,
+    "quality": "Orange"
+  },
+  "11800042": {
+    "id": 11800042,
+    "name": "break_name_11800042",
+    "des": "break_des_11800042",
+    "equipTagId": 12600162,
+    "quality": "Golden"
+  },
+  "11800049": {
+    "id": 11800049,
+    "name": "break_name_11800049",
+    "des": "break_des_11800049",
+    "equipTagId": 12600161,
+    "quality": "Orange"
+  },
+  "11800050": {
+    "id": 11800050,
+    "name": "break_name_11800050",
+    "des": "break_des_11800050",
+    "equipTagId": 12600162,
+    "quality": "Orange"
+  },
+  "11800051": {
+    "id": 11800051,
+    "name": "break_name_11800051",
+    "des": "break_des_11800051",
+    "equipTagId": 12600162,
+    "quality": "Golden"
+  },
+  "11800052": {
+    "id": 11800052,
+    "name": "break_name_11800052",
+    "des": "break_des_11800052",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800053": {
+    "id": 11800053,
+    "name": "break_name_11800053",
+    "des": "break_des_11800053",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800054": {
+    "id": 11800054,
+    "name": "break_name_11800054",
+    "des": "break_des_11800054",
+    "equipTagId": 12600161,
+    "quality": "Golden"
+  },
+  "11800055": {
+    "id": 11800055,
+    "name": "break_name_11800055",
+    "des": "break_des_11800055",
+    "equipTagId": 12600161,
+    "quality": "Golden"
+  },
+  "11800056": {
+    "id": 11800056,
+    "name": "break_name_11800056",
+    "des": "break_des_11800056",
+    "equipTagId": 12600161,
+    "quality": "Golden"
+  },
+  "11800057": {
+    "id": 11800057,
+    "name": "break_name_11800057",
+    "des": "break_des_11800057",
+    "equipTagId": 12600161,
+    "quality": "Golden"
+  },
+  "11800058": {
+    "id": 11800058,
+    "name": "break_name_11800058",
+    "des": "break_des_11800058",
+    "equipTagId": 12600161,
+    "quality": "Golden"
+  },
+  "11800059": {
+    "id": 11800059,
+    "name": "break_name_11800059",
+    "des": "break_des_11800059",
+    "equipTagId": 12600161,
+    "quality": "Golden"
+  },
+  "11800060": {
+    "id": 11800060,
+    "name": "break_name_11800060",
+    "des": "break_des_11800060",
+    "equipTagId": 12600162,
+    "quality": "Orange"
+  },
+  "11800061": {
+    "id": 11800061,
+    "name": "break_name_11800061",
+    "des": "break_des_11800061",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800062": {
+    "id": 11800062,
+    "name": "break_name_11800062",
+    "des": "break_des_11800062",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800063": {
+    "id": 11800063,
+    "name": "break_name_11800063",
+    "des": "break_des_11800063",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800064": {
+    "id": 11800064,
+    "name": "break_name_11800064",
+    "des": "break_des_11800064",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800065": {
+    "id": 11800065,
+    "name": "break_name_11800065",
+    "des": "break_des_11800065",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800066": {
+    "id": 11800066,
+    "name": "break_name_11800066",
+    "des": "break_des_11800066",
+    "equipTagId": 12600155,
+    "quality": "Golden"
+  },
+  "11800020": {
+    "id": 11800020,
+    "name": "break_name_11800020",
+    "des": "break_des_11800020",
+    "equipTagId": 12600161,
+    "quality": "Golden"
+  },
+  "11800067": {
+    "id": 11800067,
+    "name": "break_name_11800067",
+    "des": "break_des_11800067",
+    "equipTagId": 12600162,
+    "quality": "Golden"
+  },
+  "11800027": {
+    "id": 11800027,
+    "name": "break_name_11800027",
+    "des": "break_des_11800027",
+    "equipTagId": 12600161,
+    "quality": "Golden"
+  },
+  "11800068": {
+    "id": 11800068,
+    "name": "break_name_11800068",
+    "des": "break_des_11800068",
+    "equipTagId": 12600161,
+    "quality": "Golden"
+  },
+  "11800069": {
+    "id": 11800069,
+    "name": "break_name_11800069",
+    "des": "break_des_11800069",
+    "equipTagId": 12600162,
+    "quality": "Orange"
+  },
+  "11800070": {
+    "id": 11800070,
+    "name": "测试1",
+    "des": "break_des_11800070",
+    "equipTagId": 12600161,
+    "quality": "Orange"
+  },
+  "11800071": {
+    "id": 11800071,
+    "name": "测试2",
+    "des": "break_des_11800071",
+    "equipTagId": 12600161,
+    "quality": "Orange"
+  },
+  "11800072": {
+    "id": 11800072,
+    "name": "测试3",
+    "des": "break_des_11800072",
+    "equipTagId": 12600161,
+    "quality": "Orange"
+  },
+  "11800073": {
+    "id": 11800073,
+    "name": "break_name_11800073",
+    "des": "break_des_11800073",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  },
+  "11800074": {
+    "id": 11800074,
+    "name": "break_name_11800074",
+    "des": "break_des_11800074",
+    "equipTagId": 12600161,
+    "quality": "Orange"
+  },
+  "11800075": {
+    "id": 11800075,
+    "name": "break_name_11800075",
+    "des": "break_des_11800075",
+    "equipTagId": 12600162,
+    "quality": "Orange"
+  },
+  "11800076": {
+    "id": 11800076,
+    "name": "break_name_11800076",
+    "des": "break_des_11800076",
+    "equipTagId": 12600162,
+    "quality": "Orange"
+  },
+  "11800077": {
+    "id": 11800077,
+    "name": "break_name_11800077",
+    "des": "break_des_11800077",
+    "equipTagId": 12600155,
+    "quality": "Orange"
+  }
+}

@@ -1,24 +1,15 @@
 "use client"
 
+import type React from "react"
+
 import { useState } from "react"
 import type { Card, CardExtraInfo, SpecialControl } from "../types"
 import { SkillCard } from "./skill-card"
 import { CardSettingsModal } from "./card-settings-modal"
 
 // dnd-kit import
-import {
-  DndContext,
-  closestCenter,
-  PointerSensor,
-  useSensor,
-  useSensors,
-} from "@dnd-kit/core"
-import {
-  SortableContext,
-  useSortable,
-  arrayMove,
-  rectSortingStrategy,
-} from "@dnd-kit/sortable"
+import { DndContext, closestCenter, PointerSensor, useSensor, useSensors } from "@dnd-kit/core"
+import { SortableContext, useSortable, rectSortingStrategy } from "@dnd-kit/sortable"
 import { CSS } from "@dnd-kit/utilities"
 
 interface SkillWindowProps {
@@ -40,7 +31,7 @@ interface SkillWindowProps {
 function SortableSkillCard({ id, children }: { id: string; children: React.ReactNode }) {
   const { attributes, listeners, setNodeRef, transform, transition } = useSortable({ id })
 
-  const style: React.CSSProperties = {
+  const style = {
     transform: CSS.Transform.toString(transform),
     transition,
   }
@@ -61,32 +52,45 @@ export function SkillWindow({
   getTranslatedString,
   specialControls,
 }: SkillWindowProps) {
+  console.log("SkillWindow - selectedCards:", selectedCards)
+  console.log("SkillWindow - availableCards:", availableCards)
+
   const [editingCard, setEditingCard] = useState<string | null>(null)
 
   const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 5 } }))
 
-  const handleEditCard = (cardId: string) => setEditingCard(cardId)
+  const handleEditCard = (cardId: string) => {
+    console.log("Edit card clicked:", cardId)
+    setEditingCard(cardId)
+  }
+
   const handleSaveCardSettings = (
     cardId: string,
     useType: number,
     useParam: number,
     useParamMap?: Record<string, number>,
-  ) => onUpdateCardSettings(cardId, useType, useParam, useParamMap)
+  ) => {
+    onUpdateCardSettings(cardId, useType, useParam, useParamMap)
+  }
 
   const handleCloseModal = () => setEditingCard(null)
 
   const handleDragEnd = (event: any) => {
     const { active, over } = event
+
     if (!over || active.id === over.id) return
 
-    const fromIndex = selectedCards.findIndex((c) => c.id === active.id)
-    const toIndex = selectedCards.findIndex((c) => c.id === over.id)
-    if (fromIndex !== -1 && toIndex !== -1) {
-      onReorderCards(fromIndex, toIndex)
+    const oldIndex = selectedCards.findIndex((card) => card.id === active.id)
+    const newIndex = selectedCards.findIndex((card) => card.id === over.id)
+
+    if (oldIndex !== -1 && newIndex !== -1) {
+      onReorderCards(oldIndex, newIndex)
     }
   }
 
-  const editingCardInfo = editingCard ? availableCards.find((c) => c.card.id === editingCard) : null
+  // 현재 편집 중인 카드 정보 찾기
+  const editingCardInfo = editingCard ? availableCards.find((c) => c.card.id.toString() === editingCard) : null
+
   const editingCardSettings = editingCard ? selectedCards.find((c) => c.id === editingCard) : null
 
   return (
@@ -102,26 +106,30 @@ export function SkillWindow({
           </div>
         ) : (
           <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
-            <SortableContext
-              items={selectedCards.map((c) => c.id)}
-              strategy={rectSortingStrategy} // 그리드 대응 전략
-            >
-              <div className="grid grid-cols-6 gap-2 sm:gap-4 auto-rows-max w-full">
+            <SortableContext items={selectedCards.map((c) => c.id)} strategy={rectSortingStrategy}>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-4 auto-rows-max w-full">
                 {selectedCards.map((selectedCard) => {
-                  const cardInfo = availableCards.find((c) => c.card.id === selectedCard.id)
-                  if (!cardInfo) return null
+                  console.log("Processing selectedCard:", selectedCard)
+
+                  const cardInfo = availableCards.find((c) => c.card.id.toString() === selectedCard.id.toString())
+                  console.log("Found cardInfo:", cardInfo)
+
+                  if (!cardInfo) {
+                    console.log("Card info not found for:", selectedCard.id)
+                    return null
+                  }
 
                   const { card, extraInfo, characterImage } = cardInfo
                   const isDisabled = selectedCard.useType === 2
 
                   return (
-                    <SortableSkillCard key={card.id} id={card.id}>
+                    <SortableSkillCard key={selectedCard.id} id={selectedCard.id}>
                       <SkillCard
                         card={card}
                         extraInfo={extraInfo}
                         getTranslatedString={getTranslatedString}
-                        onRemove={() => onRemoveCard(card.id)}
-                        onEdit={() => handleEditCard(card.id)}
+                        onRemove={() => onRemoveCard(selectedCard.id)}
+                        onEdit={() => handleEditCard(selectedCard.id)}
                         isDisabled={isDisabled}
                         characterImage={characterImage}
                       />

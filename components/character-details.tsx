@@ -1,17 +1,28 @@
 "use client"
 
 import { useState } from "react"
-import type { Character, Card, CardExtraInfo } from "../types"
+import type { Character, Card } from "../types"
+import React from "react"
 
+// data 매개변수 추가
 interface CharacterDetailsProps {
   character: Character
   getTranslatedString: (key: string) => string
   onClose: () => void
-  getCardInfo: (cardId: string) => { card: Card; cardExtraInfo: CardExtraInfo } | null
+  getCardInfo: (cardId: string) => { card: Card } | null
+  getSkill?: (skillId: number) => any
+  data?: any // 데이터 객체 추가
 }
 
-export function CharacterDetails({ character, getTranslatedString, onClose, getCardInfo }: CharacterDetailsProps) {
-  const [activeTab, setActiveTab] = useState<"info" | "awakening">("info")
+export function CharacterDetails({
+  character,
+  getTranslatedString,
+  onClose,
+  getCardInfo,
+  getSkill,
+  data, // 데이터 매개변수 추가
+}: CharacterDetailsProps) {
+  const [activeTab, setActiveTab] = useState<"info" | "talents">("info")
 
   // Function to get rarity badge color
   const getRarityColor = (rarity: string) => {
@@ -29,9 +40,44 @@ export function CharacterDetails({ character, getTranslatedString, onClose, getC
     }
   }
 
+  // Function to format text with color tags
+  const formatColorText = (text: string) => {
+    if (!text) return ""
+
+    // Replace <color=#XXXXXX>text</color> with styled spans
+    const formattedText = text.split(/(<color=#[A-Fa-f0-9]{6}>.*?<\/color>)/).map((part, index) => {
+      const colorMatch = part.match(/<color=#([A-Fa-f0-9]{6})>(.*?)<\/color>/)
+      if (colorMatch) {
+        const [_, colorCode, content] = colorMatch
+        return (
+          <span key={index} style={{ color: `#${colorCode}` }}>
+            {content}
+          </span>
+        )
+      }
+
+      // Handle newlines by replacing \n with <br />
+      return part.split("\\n").map((line, i) =>
+        i === 0 ? (
+          line
+        ) : (
+          <React.Fragment key={`line-${index}-${i}`}>
+            <br />
+            {line}
+          </React.Fragment>
+        ),
+      )
+    })
+
+    return formattedText
+  }
+
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-      <div className="bg-gray-800 rounded-lg max-w-2xl w-full flex flex-col max-h-[90vh]">
+    <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" onClick={onClose}>
+      <div
+        className="bg-gray-800 rounded-lg max-w-2xl w-full flex flex-col max-h-[90vh]"
+        onClick={(e) => e.stopPropagation()}
+      >
         {/* Tabs - Each tab takes 50% width */}
         <div className="flex border-b border-gray-700">
           <button
@@ -40,17 +86,15 @@ export function CharacterDetails({ character, getTranslatedString, onClose, getC
             }`}
             onClick={() => setActiveTab("info")}
           >
-            {getTranslatedString("character.info") || "Basic Info"}
+            {getTranslatedString("character.info") || "Character & Skills"}
           </button>
           <button
             className={`px-4 py-3 text-sm font-medium w-1/2 text-center ${
-              activeTab === "awakening"
-                ? "border-b-2 border-blue-500 text-blue-400"
-                : "text-gray-400 hover:text-gray-200"
+              activeTab === "talents" ? "border-b-2 border-blue-500 text-blue-400" : "text-gray-400 hover:text-gray-200"
             }`}
-            onClick={() => setActiveTab("awakening")}
+            onClick={() => setActiveTab("talents")}
           >
-            {getTranslatedString("character.awakening.resonance") || "Awakening & Resonance"}
+            {getTranslatedString("character.talents_break") || "Talents & Breakthroughs"}
           </button>
         </div>
 
@@ -58,7 +102,7 @@ export function CharacterDetails({ character, getTranslatedString, onClose, getC
         <div className="p-4 overflow-y-auto flex-grow min-h-[400px]">
           {activeTab === "info" ? (
             <div className="flex flex-col md:flex-row gap-4">
-              {/* Character Image */}
+              {/* Character Image and Description */}
               <div className="w-full md:w-1/3">
                 <div className="aspect-[3/4] bg-gray-700 rounded-lg overflow-hidden">
                   {character.img_card && (
@@ -79,99 +123,103 @@ export function CharacterDetails({ character, getTranslatedString, onClose, getC
                     {getTranslatedString(character.name)}
                   </div>
                 </div>
-              </div>
 
-              {/* Character Info */}
-              <div className="w-full md:w-2/3">
-                <div className="mb-4">
+                {/* Character Description moved below portrait - 포맷팅 적용 */}
+                <div className="mt-4">
                   <h3 className="text-lg font-medium mb-2">
                     {getTranslatedString("character.description") || "Description"}
                   </h3>
-                  <p className="text-gray-300">{getTranslatedString(character.desc)}</p>
+                  <p className="text-gray-300">{formatColorText(getTranslatedString(character.desc))}</p>
                 </div>
+              </div>
 
-                <div>
+              {/* Character Skills */}
+              <div className="w-full md:w-2/3">
+                <div className="mb-4">
                   <h3 className="text-lg font-medium mb-2">{getTranslatedString("character.skills") || "Skills"}</h3>
-                  <div className="space-y-4">
-                    {character.skills &&
-                      Object.entries(character.skills).map(([index, cardId]) => {
-                        const cardInfo = getCardInfo(cardId)
-                        if (!cardInfo) return null
+                  <div className="space-y-3">
+                    {/* Skill 1 */}
+                    {renderSkill(0, "skill.normal_1", "Skill 1")}
 
-                        const { card, extraInfo } = cardInfo
-                        const skillType =
-                          Number.parseInt(index) === 3
-                            ? getTranslatedString("skill.ultimate") || "Ultimate"
-                            : `${getTranslatedString("skill.normal") || "Skill"} ${index}`
+                    {/* Skill 2 */}
+                    {renderSkill(1, "skill.normal_2", "Skill 2")}
 
-                        return (
-                          <div key={cardId} className="p-3 bg-gray-700 rounded-lg">
-                            <div className="flex items-center">
-                              {/* Skill Image - 20% larger */}
-                              <div className="w-14 h-14 bg-gray-600 rounded-md mr-3 flex-shrink-0 overflow-hidden">
-                                {extraInfo.img_url && (
-                                  <img
-                                    src={extraInfo.img_url || "/placeholder.svg"}
-                                    alt={getTranslatedString(extraInfo.name)}
-                                    className="w-full h-full object-cover"
-                                  />
-                                )}
-                              </div>
-
-                              <div>
-                                <div className="flex items-center">
-                                  <span className="text-xs bg-blue-500 text-white px-1.5 py-0.5 rounded-full mr-2">
-                                    {skillType}
-                                  </span>
-                                  <span className="font-medium">{getTranslatedString(extraInfo.name)}</span>
-                                </div>
-                                <div className="text-sm text-gray-300 mt-1">{getTranslatedString(extraInfo.desc)}</div>
-                                <div className="flex text-xs mt-1 text-gray-400">
-                                  <span className="mr-2">
-                                    {getTranslatedString("cost") || "Cost"}: {extraInfo.cost}
-                                  </span>
-                                  <span>
-                                    {getTranslatedString("amount") || "Amount"}: {extraInfo.amount}
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        )
-                      })}
+                    {/* Ultimate Skill */}
+                    {renderSkill(2, "skill.ultimate", "Ultimate")}
                   </div>
                 </div>
               </div>
             </div>
           ) : (
             <div className="space-y-6">
-              {/* Awakening */}
+              {/* Talents Section */}
               <div>
-                <h3 className="text-lg font-medium mb-3">
-                  {getTranslatedString("character.awakening") || "Awakening"}
-                </h3>
+                <h3 className="text-lg font-medium mb-3">{getTranslatedString("character.talents") || "Talents"}</h3>
                 <div className="space-y-3">
-                  {character.awakening.map((awake, index) => (
-                    <div key={index} className="p-3 bg-gray-700 rounded-lg">
-                      <div className="font-medium">{getTranslatedString(awake.name)}</div>
-                      <div className="text-sm text-gray-300 mt-1">{getTranslatedString(awake.desc)}</div>
+                  {character.talentList && character.talentList.length > 0 ? (
+                    character.talentList.map((talent, index) => (
+                      <div key={`talent-${index}`} className="p-3 bg-gray-700 rounded-lg">
+                        <div className="flex">
+                          <div className="w-8 h-8 bg-blue-600 rounded-full flex-shrink-0 flex items-center justify-center mr-3">
+                            <span className="text-white font-bold">{index + 1}</span>
+                          </div>
+                          <div className="flex-grow">
+                            <div className="font-medium">
+                              {getTranslatedString(`talent_name_${talent.talentId}`) || `Talent ${talent.talentId}`}
+                            </div>
+                            <div className="text-sm text-gray-400 mt-1">
+                              {formatColorText(
+                                getTranslatedString(`talent_desc_${talent.talentId}`) || "No description available",
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))
+                  ) : (
+                    <div className="text-gray-400 text-center p-4">
+                      {getTranslatedString("no_talents") || "No talents available"}
                     </div>
-                  ))}
+                  )}
                 </div>
               </div>
 
-              {/* Resonance */}
+              {/* Breakthroughs Section */}
               <div>
                 <h3 className="text-lg font-medium mb-3">
-                  {getTranslatedString("character.resonance") || "Resonance"}
+                  {getTranslatedString("character.breakthroughs") || "Breakthroughs"}
                 </h3>
                 <div className="space-y-3">
-                  {character.resonance.map((reson, index) => (
-                    <div key={index} className="p-3 bg-gray-700 rounded-lg">
-                      <div className="font-medium">{getTranslatedString(reson.name)}</div>
-                      <div className="text-sm text-gray-300 mt-1">{getTranslatedString(reson.desc)}</div>
+                  {character.breakthroughList && character.breakthroughList.length > 0 ? (
+                    // 첫 번째 항목을 제외하고 표시
+                    character.breakthroughList
+                      .slice(1)
+                      .map((breakthrough, index) => (
+                        <div key={`breakthrough-${index}`} className="p-3 bg-gray-700 rounded-lg">
+                          <div className="flex">
+                            <div className="w-8 h-8 bg-purple-600 rounded-full flex-shrink-0 flex items-center justify-center mr-3">
+                              <span className="text-white font-bold">{index + 1}</span>
+                            </div>
+                            <div className="flex-grow">
+                              <div className="font-medium">
+                                {getTranslatedString(`break_name_${breakthrough.breakthroughId}`) ||
+                                  `Breakthrough ${breakthrough.breakthroughId}`}
+                              </div>
+                              <div className="text-sm text-gray-400 mt-1">
+                                {formatColorText(
+                                  getTranslatedString(`break_desc_${breakthrough.breakthroughId}`) ||
+                                    "No description available",
+                                )}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      ))
+                  ) : (
+                    <div className="text-gray-400 text-center p-4">
+                      {getTranslatedString("no_breakthroughs") || "No breakthroughs available"}
                     </div>
-                  ))}
+                  )}
                 </div>
               </div>
             </div>
@@ -187,5 +235,92 @@ export function CharacterDetails({ character, getTranslatedString, onClose, getC
       </div>
     </div>
   )
+
+  // Helper function to render a skill
+  function renderSkill(index: number, labelKey: string, defaultLabel: string) {
+    if (!character.skillList || character.skillList.length <= index) {
+      return (
+        <div className="p-3 bg-gray-700 rounded-lg opacity-50">
+          <div className="flex items-center">
+            <div>
+              <div className="flex items-center">
+                <span className="text-xs bg-blue-500 text-white px-1.5 py-0.5 rounded-full mr-2">
+                  {getTranslatedString(labelKey) || defaultLabel}
+                </span>
+                <span className="font-medium">{getTranslatedString("skill.not_available") || "Not Available"}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      )
+    }
+
+    const skillItem = character.skillList[index]
+    const skillId = skillItem.skillId
+
+    // 스킬 정보 직접 가져오기
+    const skill = getSkill ? getSkill(skillId) : null
+
+    if (!skill) {
+      return (
+        <div className="p-3 bg-gray-700 rounded-lg opacity-50">
+          <div className="flex items-center">
+            <div>
+              <div className="flex items-center">
+                <span className="text-xs bg-blue-500 text-white px-1.5 py-0.5 rounded-full mr-2">
+                  {getTranslatedString(labelKey) || defaultLabel}
+                </span>
+                <span className="font-medium">{getTranslatedString("skill.not_found") || `Skill ID: ${skillId}`}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      )
+    }
+
+    // 스킬 이미지 URL 찾기
+    let skillImageUrl = null
+    if (data && data.images) {
+      // 스킬 ID로 이미지 찾기
+      if (data.images[`skill_${skillId}`]) {
+        skillImageUrl = data.images[`skill_${skillId}`]
+      }
+      // 카드 ID로 이미지 찾기
+      else if (skill.cardID && data.images[`card_${skill.cardID}`]) {
+        skillImageUrl = data.images[`card_${skill.cardID}`]
+      }
+    }
+
+    return (
+      <div className="p-3 bg-gray-700 rounded-lg">
+        <div className="flex">
+          {/* Skill Image */}
+          <div className="w-12 h-12 bg-gray-600 rounded-md overflow-hidden mr-3 flex-shrink-0">
+            {skillImageUrl ? (
+              <img src={skillImageUrl || "/placeholder.svg"} alt="" className="w-full h-full object-cover" />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center text-gray-400">
+                <span className="text-xs">No Image</span>
+              </div>
+            )}
+          </div>
+
+          <div className="flex-grow">
+            <div className="flex items-center">
+              <span className="text-xs bg-blue-500 text-white px-1.5 py-0.5 rounded-full mr-2">
+                {getTranslatedString(labelKey) || defaultLabel}
+              </span>
+              <span className="font-medium">{getTranslatedString(skill.name)}</span>
+            </div>
+            {skill.description && (
+              <div className="text-sm text-gray-400 mt-1">
+                {formatColorText(getTranslatedString(skill.description))}
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    )
+  }
 }
 

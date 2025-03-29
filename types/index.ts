@@ -2,75 +2,93 @@
 export interface Character {
   id: number
   name: string
-  rarity: string
-  desc: string
+  quality: string
+  sideId?: number
+  passiveSkillList?: Array<{ skillId: number }>
+  skillList: Array<{ num: number; skillId: number }>
+  hp_SN?: number
+  def_SN?: number
+  atk_SN?: number
+  atkSpeed_SN?: number
+  luck_SN?: number
+  talentList?: Array<{ talentId: number }>
+  breakthroughList?: Array<{ breakthroughId: number }>
+  line?: number
+  subLine?: number
+  identity?: string
+  ability?: string
   img_card?: string
-  skills?: Record<string, string>
-  produceSkills?: string[] // Added produceSkills array
-  awakening: Awakening[]
-  resonance: Resonance[]
-}
-
-export interface Awakening {
-  name: string
-  desc: string
-}
-
-export interface Resonance {
-  name: string
-  desc: string
+  desc?: string
+  rarity?: string
 }
 
 // Card Types
 export interface Card {
-  id: string
-  ownerId: number
-  skillId: string | number
-  skillIndex?: number
-  targetType: number
-  useParam: number
-  useParamMap: Record<string, number>
-  useType: number
-  equipIdList: string[]
-}
-
-// Card Extra Info Types
-export interface CardExtraInfo {
   id: number
-  amount: string
-  cost: string
-  desc: string
   name: string
-  img_url: string
-  specialCtrl?: string[]
+  color?: string
+  cardType?: string
+  ownerId?: number
+  idCn?: string // Added for checking neutral cards
+  ExCondList?: Array<{
+    condId?: number
+    des?: number
+    interValNum?: number
+    isNumCond?: boolean
+    minNum?: number
+    numDuration?: number
+    typeEnum?: string
+  }>
+  ExActList?: Array<{
+    actId?: number
+    des?: number
+    typeEnum?: string
+  }>
 }
 
-// Equipment Types
-export interface Equipment {
-  id: string
+// Skill Types
+export interface Skill {
+  id: number
   name: string
-  url: string
-  rarity: string
+  description: string
+  detailDescription: string
+  ExSkillList: Array<{
+    ExSkillName: number
+    isNeturality: boolean
+  }>
+  cardID?: number | null
+  leaderCardConditionDesc?: string
+}
+
+// Breakthrough Types
+export interface Breakthrough {
+  id: number
+  name: string
   desc: string
-  type: string
+  attributeList: any[]
 }
 
-// Special Control Types
-export interface SpecialControl {
-  text: string
-  icon?: string
-  minimum?: string
-  maximum?: string
+// Talent Types
+export interface Talent {
+  id: number
+  name: string
+  desc: string
+  awakeLv: number
+  skillParamOffsetList?: Array<{
+    skillId: number
+    tag: string
+    value_SN: number
+  }> | null
 }
 
-// Extra Info Types
-export interface ExtraInfo {
-  specialCtrlIcon: Record<string, SpecialControl>
+// Image Database Type
+export interface ImageDatabase {
+  [key: string]: string
 }
 
 // Language Types
 export interface LanguageStrings {
-  [key: string]: string
+  [key: string]: string | null
 }
 
 export interface Languages {
@@ -87,28 +105,65 @@ export interface Preset {
   keepCardNum: number
   discardType: number
   otherCard: number
-  equipment?: PresetEquipment[]
-  cardIdMap?: Record<string, number> // Add cardIdMap field
 }
 
+// Update the PresetCard interface to make skillIndex optional
 export interface PresetCard {
   id: string
+  ownerId?: number
+  skillId?: number
+  skillIndex?: number // Now optional
+  targetType?: number
   useType: number
   useParam: number
+  useParamMap?: Record<string, number>
+  equipIdList?: string[]
 }
 
-export interface PresetEquipment {
-  id: string
-  charId: number
+// Equipment Types
+export interface Equipment {
+  id: number
+  name: string
+  des: string
+  equipTagId: number
+  quality: string
+  type?: string // weapon, armor, accessory
+  url?: string
+}
+
+// Equipment Type Mapping
+export interface EquipmentTypeMapping {
+  [equipTagId: string]: string
 }
 
 // Database Types
 export interface Database {
   characters: Record<string, Character>
   cards: Record<string, Card>
-  cardExtraInfo: Record<string, CardExtraInfo>
-  equipment: Record<string, Equipment>
-  extraInfo: ExtraInfo
+  skills: Record<string, Skill>
+  breakthroughs: Record<string, Breakthrough>
+  talents: Record<string, Talent>
+  images: ImageDatabase
   languages: Languages
+  excludedSkillIds?: number[]
+  specialSkillIds?: number[]
+  equipments?: Record<string, Equipment>
+  equipmentTypes?: EquipmentTypeMapping
+}
+
+export interface CardExtraInfo {
+  name: string
+  desc: string
+  cost: number
+  amount: number
+  img_url?: string
+  specialCtrl?: string[]
+}
+
+export interface SpecialControl {
+  text: string
+  icon?: string
+  minimum?: string
+  maximum?: string
 }
 
