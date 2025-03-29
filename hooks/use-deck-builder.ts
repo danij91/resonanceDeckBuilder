@@ -37,8 +37,8 @@ export function useDeckBuilder(data: Database | null) {
   const [battleSettings, setBattleSettings] = useState({
     isLeaderCardOn: true,
     isSpCardOn: true,
-    keepCardNum: 3,
-    discardType: 2,
+    keepCardNum: 0,
+    discardType: 0,
     otherCard: 0,
   })
 
@@ -465,8 +465,8 @@ export function useDeckBuilder(data: Database | null) {
     setBattleSettings({
       isLeaderCardOn: true,
       isSpCardOn: true,
-      keepCardNum: 3,
-      discardType: 2,
+      keepCardNum: 0,
+      discardType: 0,
       otherCard: 0,
     })
     setEquipment(Array(5).fill({ weapon: null, armor: null, accessory: null }))
@@ -611,16 +611,20 @@ export function useDeckBuilder(data: Database | null) {
         useType: card.useType,
         useParam: card.useParam,
         useParamMap: card.useParamMap || {},
+        ownerId: card.ownerId, // ownerId 추가
+        skillId: card.skillId, // skillId 추가
+        skillIndex: card.skillIndex, // skillIndex 추가
       }))
 
       setSelectedCards(simplifiedCardList)
 
+      // 기본값 설정
       setBattleSettings({
-        isLeaderCardOn: preset.isLeaderCardOn,
-        isSpCardOn: preset.isSpCardOn,
-        keepCardNum: preset.keepCardNum,
-        discardType: preset.discardType - 1, // Subtract 1 from discardType
-        otherCard: preset.otherCard,
+        isLeaderCardOn: preset.isLeaderCardOn !== undefined ? preset.isLeaderCardOn : true,
+        isSpCardOn: preset.isSpCardOn !== undefined ? preset.isSpCardOn : true,
+        keepCardNum: preset.keepCardNum !== undefined ? preset.keepCardNum : 0,
+        discardType: preset.discardType !== undefined ? preset.discardType - 1 : 0, // Subtract 1 from discardType
+        otherCard: preset.otherCard !== undefined ? preset.otherCard : 0,
       })
 
       // Reset equipment

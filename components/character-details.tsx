@@ -124,12 +124,12 @@ export function CharacterDetails({
                   </div>
                 </div>
 
-                {/* Character Description moved below portrait */}
+                {/* Character Description moved below portrait - 포맷팅 적용 */}
                 <div className="mt-4">
                   <h3 className="text-lg font-medium mb-2">
                     {getTranslatedString("character.description") || "Description"}
                   </h3>
-                  <p className="text-gray-300">{getTranslatedString(character.desc)}</p>
+                  <p className="text-gray-300">{formatColorText(getTranslatedString(character.desc))}</p>
                 </div>
               </div>
 

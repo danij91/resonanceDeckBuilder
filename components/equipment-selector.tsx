@@ -21,7 +21,7 @@ export function EquipmentSelector({
 }: EquipmentSelectorProps) {
   const [searchTerm, setSearchTerm] = useState("")
   const [sortBy, setSortBy] = useState<"name" | "quality">("quality")
-  const [sortDirection, setSortDirection] = useState<"desc" | "asc">("desc")
+  const [sortDirection, setSortDirection] = useState<"desc" | "asc">("asc")
   const [filteredEquipments, setFilteredEquipments] = useState<Equipment[]>([])
 
   // 디버깅 로그 추가
@@ -135,7 +135,7 @@ export function EquipmentSelector({
                 className="h-full px-3 bg-gray-700 border border-gray-600 border-l-0 rounded-r-md flex items-center justify-center"
                 aria-label={sortDirection === "asc" ? "Sort Descending" : "Sort Ascending"}
               >
-                {sortDirection === "desc" ? "↓" : "↑"}
+                {sortDirection === "desc" ? "↑" : "↓"}
               </button>
             </div>
           </div>

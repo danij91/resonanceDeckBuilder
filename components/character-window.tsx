@@ -144,15 +144,14 @@ export function CharacterWindow({
         >
           <div
             className="bg-gray-800 p-4 rounded-lg max-w-3xl w-full flex flex-col max-h-[90vh]"
-            style={{ aspectRatio: "1/0.8" }}
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex-grow overflow-y-auto">
+            <div className="mb-4">
               <h3 className="text-lg font-bold mb-4">
                 {getTranslatedString("select_character") || "Select Character"}
               </h3>
 
-              {/* Updated search and sort controls */}
+              {/* 검색 및 정렬 컨트롤 - 이 부분이 고정됩니다 */}
               <div className="mb-4 flex items-center space-x-2">
                 <div className="relative flex-grow">
                   <Search className="absolute left-2 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
@@ -183,11 +182,14 @@ export function CharacterWindow({
                     className="h-full px-3 bg-gray-700 border border-gray-600 border-l-0 rounded-r-md flex items-center justify-center"
                     aria-label={sortDirection === "asc" ? "Sort Descending" : "Sort Ascending"}
                   >
-                    {sortDirection === "desc" ? "↓" : "↑"}
+                    {sortDirection === "desc" ?"↑": "↓"}
                   </button>
                 </div>
               </div>
+            </div>
 
+            {/* 캐릭터 목록 - 이 부분만 스크롤됩니다 */}
+            <div className="flex-grow overflow-y-auto">
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
                 {sortedCharacters.length === 0 ? (
                   <div className="col-span-full text-center py-4 text-gray-400">

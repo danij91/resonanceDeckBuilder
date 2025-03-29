@@ -1,6 +1,7 @@
 "use client"
 
 import type { Equipment } from "../types"
+import React from "react"
 
 interface EquipmentDetailsProps {
   equipment: Equipment
@@ -11,6 +12,38 @@ interface EquipmentDetailsProps {
 export function EquipmentDetails({ equipment, getTranslatedString, onClose }: EquipmentDetailsProps) {
   if (!equipment) {
     return null
+  }
+
+  // Function to format text with color tags
+  const formatColorText = (text: string) => {
+    if (!text) return ""
+
+    // Replace <color=#XXXXXX>text</color> with styled spans
+    const formattedText = text.split(/(<color=#[A-Fa-f0-9]{6}>.*?<\/color>)/).map((part, index) => {
+      const colorMatch = part.match(/<color=#([A-Fa-f0-9]{6})>(.*?)<\/color>/)
+      if (colorMatch) {
+        const [_, colorCode, content] = colorMatch
+        return (
+          <span key={index} style={{ color: `#${colorCode}` }}>
+            {content}
+          </span>
+        )
+      }
+
+      // Handle newlines by replacing \n with <br />
+      return part.split("\\n").map((line, i) =>
+        i === 0 ? (
+          line
+        ) : (
+          <React.Fragment key={`line-${index}-${i}`}>
+            <br />
+            {line}
+          </React.Fragment>
+        ),
+      )
+    })
+
+    return formattedText
   }
 
   // Function to get quality background color
@@ -55,10 +88,10 @@ export function EquipmentDetails({ equipment, getTranslatedString, onClose }: Eq
           </div>
         </div>
 
-        {/* Equipment Description */}
+        {/* Equipment Description - 포맷팅 적용 */}
         <div className="mb-4">
           <h5 className="text-sm font-medium mb-1">{getTranslatedString("equipment_description") || "Description"}</h5>
-          <p className="text-sm text-gray-300">{getTranslatedString(equipment.des)}</p>
+          <p className="text-sm text-gray-300">{formatColorText(getTranslatedString(equipment.des))}</p>
         </div>
 
         {/* Close Button */}
