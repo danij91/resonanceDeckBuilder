@@ -45,8 +45,8 @@ export function SkillCard({
 
       {/* Cost badge in top right */}
       <div className="absolute top-2 right-2 z-20">
-        <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center">
-          <span className="text-white font-bold text-lg">{extraInfo.cost}</span>
+        <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center">
+          <span className="text-white font-bold text-xl">{extraInfo.cost}</span>
         </div>
       </div>
 
@@ -61,9 +61,9 @@ export function SkillCard({
             <div className="aspect-square transform rotate-45 overflow-hidden bg-black bg-opacity-30">
               {extraInfo.img_url && (
                 <img
-                  src={extraInfo.img_url || "/placeholder.jpg"}
+                  src={extraInfo.img_url || "/placeholder.svg"}
                   alt={getTranslatedString(extraInfo.name)}
-                  className="w-[100%] h-[100%] object-cover absolute top-1/2 left-1/2 transform scale-150 -translate-x-1/2 -translate-y-1/2 -rotate-45"
+                  className="object-cover absolute top-1/2 left-1/2 transform scale-150 -translate-x-1/2 -translate-y-1/2 -rotate-45"
                 />
               )}
             </div>
@@ -78,6 +78,7 @@ export function SkillCard({
           <button
             onClick={(e) => {
               e.stopPropagation()
+              console.log("Edit button clicked")
               onEdit()
             }}
             className="text-white hover:text-blue-300 z-20"

@@ -1,0 +1,5043 @@
+{
+  "12300019": {
+    "id": 12300019,
+    "name": "skill_name_12300019",
+    "mod": "主动技能",
+    "description": "skill_description_12300019",
+    "detailDescription": "skill_detailDescription_12300019",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300636,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600014,
+    "leaderCardConditionDesc": ""
+  },
+  "12300020": {
+    "id": 12300020,
+    "name": "skill_name_12300020",
+    "mod": "主动技能",
+    "description": "skill_description_12300020",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600015,
+    "leaderCardConditionDesc": ""
+  },
+  "12300021": {
+    "id": 12300021,
+    "name": "skill_name_12300021",
+    "mod": "主动技能",
+    "description": "skill_description_12300021",
+    "detailDescription": "skill_detailDescription_12300021",
+    "ExSkillList": [],
+    "cardID": 10600016,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300021"
+  },
+  "12300022": {
+    "id": 12300022,
+    "name": "skill_name_12300022",
+    "mod": "主动技能",
+    "description": "skill_description_12300022",
+    "detailDescription": "skill_detailDescription_12300022",
+    "ExSkillList": [],
+    "cardID": 10600034,
+    "leaderCardConditionDesc": ""
+  },
+  "12300023": {
+    "id": 12300023,
+    "name": "skill_name_12300023",
+    "mod": "主动技能",
+    "description": "skill_description_12300023",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600004,
+    "leaderCardConditionDesc": ""
+  },
+  "12300024": {
+    "id": 12300024,
+    "name": "skill_name_12300024",
+    "mod": "主动技能",
+    "description": "skill_description_12300024",
+    "detailDescription": "skill_detailDescription_12300024",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300117,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300118,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300570,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600005,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300024"
+  },
+  "12300051": {
+    "id": 12300051,
+    "name": "skill_name_12300051",
+    "mod": "主动技能",
+    "description": "skill_description_12300051",
+    "detailDescription": "skill_detailDescription_12300051",
+    "ExSkillList": [],
+    "cardID": 10600054,
+    "leaderCardConditionDesc": ""
+  },
+  "12300053": {
+    "id": 12300053,
+    "name": "skill_name_12300053",
+    "mod": "主动技能",
+    "description": "skill_description_12300053",
+    "detailDescription": "skill_detailDescription_12300053",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300049,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300726,
+        "isNeturality": true
+      },
+      {
+        "ExSkillName": 12300683,
+        "isNeturality": true
+      },
+      {
+        "ExSkillName": 12300420,
+        "isNeturality": true
+      },
+      {
+        "ExSkillName": 12300752,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600055,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300053"
+  },
+  "12300057": {
+    "id": 12300057,
+    "name": "skill_name_12300057",
+    "mod": "主动技能",
+    "description": "skill_description_12300057",
+    "detailDescription": "skill_detailDescription_12300057",
+    "ExSkillList": [],
+    "cardID": 10600056,
+    "leaderCardConditionDesc": ""
+  },
+  "12300059": {
+    "id": 12300059,
+    "name": "skill_name_12300059",
+    "mod": "主动技能",
+    "description": "skill_description_12300059",
+    "detailDescription": "skill_detailDescription_12300059",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300131,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300129,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300048,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300529
+      },
+      {
+        "ExSkillName": 12300683,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600058,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300059"
+  },
+  "12300062": {
+    "id": 12300062,
+    "name": "skill_name_12300062",
+    "mod": "主动技能",
+    "description": "skill_description_12300062",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600061,
+    "leaderCardConditionDesc": ""
+  },
+  "12300069": {
+    "id": 12300069,
+    "name": "skill_name_12300069",
+    "mod": "主动技能",
+    "description": "skill_description_12300069",
+    "detailDescription": "skill_detailDescription_12300069",
+    "ExSkillList": [],
+    "cardID": 10600039,
+    "leaderCardConditionDesc": ""
+  },
+  "12300082": {
+    "id": 12300082,
+    "name": "skill_name_12300082",
+    "mod": "主动技能",
+    "description": "skill_description_12300082",
+    "detailDescription": "skill_detailDescription_12300082",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300282,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600078,
+    "leaderCardConditionDesc": ""
+  },
+  "12300083": {
+    "id": 12300083,
+    "name": "skill_name_12300083",
+    "mod": "主动技能",
+    "description": "skill_description_12300083",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300058,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300280
+      },
+      {
+        "ExSkillName": 12300576,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600079,
+    "leaderCardConditionDesc": ""
+  },
+  "12300084": {
+    "id": 12300084,
+    "name": "skill_name_12300084",
+    "mod": "主动技能",
+    "description": "skill_description_12300084",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300036,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300245,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600080,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300084"
+  },
+  "12300085": {
+    "id": 12300085,
+    "name": "skill_name_12300085",
+    "mod": "主动技能",
+    "description": "skill_description_12300085",
+    "detailDescription": "skill_detailDescription_12300085",
+    "ExSkillList": [],
+    "cardID": 10600081,
+    "leaderCardConditionDesc": ""
+  },
+  "12300086": {
+    "id": 12300086,
+    "name": "skill_name_12300086",
+    "mod": "主动技能",
+    "description": "skill_description_12300086",
+    "detailDescription": "skill_detailDescription_12300086",
+    "ExSkillList": [],
+    "cardID": 10600082,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300086"
+  },
+  "12300087": {
+    "id": 12300087,
+    "name": "skill_name_12300087",
+    "mod": "主动技能",
+    "description": "skill_description_12300087",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600047,
+    "leaderCardConditionDesc": ""
+  },
+  "12300091": {
+    "id": 12300091,
+    "name": "skill_name_12300091",
+    "mod": "主动技能",
+    "description": "skill_description_12300091",
+    "detailDescription": "skill_detailDescription_12300091",
+    "ExSkillList": [],
+    "cardID": 10600087,
+    "leaderCardConditionDesc": ""
+  },
+  "12300092": {
+    "id": 12300092,
+    "name": "skill_name_12300092",
+    "mod": "主动技能",
+    "description": "skill_description_12300092",
+    "detailDescription": "skill_detailDescription_12300092",
+    "ExSkillList": [],
+    "cardID": 10600088,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300092"
+  },
+  "12300094": {
+    "id": 12300094,
+    "name": "skill_name_12300094",
+    "mod": "主动技能",
+    "description": "skill_description_12300094",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600089,
+    "leaderCardConditionDesc": ""
+  },
+  "12300095": {
+    "id": 12300095,
+    "name": "skill_name_12300095",
+    "mod": "主动技能",
+    "description": "skill_description_12300095",
+    "detailDescription": "skill_detailDescription_12300095",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300397,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600090,
+    "leaderCardConditionDesc": ""
+  },
+  "12300096": {
+    "id": 12300096,
+    "name": "skill_name_12300096",
+    "mod": "主动技能",
+    "description": "skill_description_12300096",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600074,
+    "leaderCardConditionDesc": ""
+  },
+  "12300097": {
+    "id": 12300097,
+    "name": "skill_name_12300097",
+    "mod": "主动技能",
+    "description": "skill_description_12300097",
+    "detailDescription": "skill_detailDescription_12300097",
+    "ExSkillList": [],
+    "cardID": 10600092,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300097"
+  },
+  "12300098": {
+    "id": 12300098,
+    "name": "skill_name_12300098",
+    "mod": "主动技能",
+    "description": "skill_description_12300098",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600093,
+    "leaderCardConditionDesc": ""
+  },
+  "12300099": {
+    "id": 12300099,
+    "name": "skill_name_12300099",
+    "mod": "主动技能",
+    "description": "skill_description_12300099",
+    "detailDescription": "skill_detailDescription_12300099",
+    "ExSkillList": [],
+    "cardID": 10600095,
+    "leaderCardConditionDesc": ""
+  },
+  "12300100": {
+    "id": 12300100,
+    "name": "skill_name_12300100",
+    "mod": "主动技能",
+    "description": "skill_description_12300100",
+    "detailDescription": "skill_detailDescription_12300100",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300073,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600094,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300100"
+  },
+  "12300101": {
+    "id": 12300101,
+    "name": "skill_name_12300101",
+    "mod": "主动技能",
+    "description": "skill_description_12300101",
+    "detailDescription": "skill_detailDescription_12300101",
+    "ExSkillList": [],
+    "cardID": 10600096,
+    "leaderCardConditionDesc": ""
+  },
+  "12300102": {
+    "id": 12300102,
+    "name": "skill_name_12300102",
+    "mod": "主动技能",
+    "description": "skill_description_12300102",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600097,
+    "leaderCardConditionDesc": ""
+  },
+  "12300103": {
+    "id": 12300103,
+    "name": "skill_name_12300103",
+    "mod": "主动技能",
+    "description": "skill_description_12300103",
+    "detailDescription": "skill_detailDescription_12300103",
+    "ExSkillList": [],
+    "cardID": 10600098,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300103"
+  },
+  "12300107": {
+    "id": 12300107,
+    "name": "skill_name_12300107",
+    "mod": "主动技能",
+    "description": "skill_description_12300107",
+    "detailDescription": "skill_detailDescription_12300107",
+    "ExSkillList": [],
+    "cardID": 10600048,
+    "leaderCardConditionDesc": ""
+  },
+  "12300108": {
+    "id": 12300108,
+    "name": "skill_name_12300108",
+    "mod": "主动技能",
+    "description": "skill_description_12300108",
+    "detailDescription": "skill_detailDescription_12300108",
+    "ExSkillList": [],
+    "cardID": 10600103,
+    "leaderCardConditionDesc": ""
+  },
+  "12300109": {
+    "id": 12300109,
+    "name": "skill_name_12300109",
+    "mod": "主动技能",
+    "description": "skill_description_12300109",
+    "detailDescription": "skill_detailDescription_12300109",
+    "ExSkillList": [],
+    "cardID": 10600104,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300109"
+  },
+  "12300110": {
+    "id": 12300110,
+    "name": "skill_name_12300110",
+    "mod": "主动技能",
+    "description": "skill_description_12300110",
+    "detailDescription": "skill_detailDescription_12300110",
+    "ExSkillList": [],
+    "cardID": 10600107,
+    "leaderCardConditionDesc": ""
+  },
+  "12300111": {
+    "id": 12300111,
+    "name": "skill_name_12300111",
+    "mod": "主动技能",
+    "description": "skill_description_12300111",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600073,
+    "leaderCardConditionDesc": ""
+  },
+  "12300112": {
+    "id": 12300112,
+    "name": "skill_name_12300112",
+    "mod": "主动技能",
+    "description": "skill_description_12300112",
+    "detailDescription": "skill_detailDescription_12300112",
+    "ExSkillList": [],
+    "cardID": 10600106,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300112"
+  },
+  "12300114": {
+    "id": 12300114,
+    "name": "skill_name_12300114",
+    "mod": "主动技能",
+    "description": "skill_description_12300114",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600109,
+    "leaderCardConditionDesc": ""
+  },
+  "12300115": {
+    "id": 12300115,
+    "name": "skill_name_12300115",
+    "mod": "主动技能",
+    "description": "skill_description_12300115",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600113,
+    "leaderCardConditionDesc": ""
+  },
+  "12300116": {
+    "id": 12300116,
+    "name": "skill_name_12300116",
+    "mod": "主动技能",
+    "description": "skill_description_12300116",
+    "detailDescription": "skill_detailDescription_12300116",
+    "ExSkillList": [],
+    "cardID": 10600110,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300116"
+  },
+  "12300117": {
+    "id": 12300117,
+    "name": "skill_name_12300117",
+    "mod": "主动技能",
+    "description": "skill_description_12300117",
+    "detailDescription": "skill_detailDescription_12300117",
+    "ExSkillList": [],
+    "cardID": 10600114,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300117"
+  },
+  "12300118": {
+    "id": 12300118,
+    "name": "skill_name_12300118",
+    "mod": "主动技能",
+    "description": "skill_description_12300118",
+    "detailDescription": "skill_detailDescription_12300118",
+    "ExSkillList": [],
+    "cardID": 10600115,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300118"
+  },
+  "12300126": {
+    "id": 12300126,
+    "name": "skill_name_12300126",
+    "mod": "主动技能",
+    "description": "skill_description_12300126",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600059,
+    "leaderCardConditionDesc": ""
+  },
+  "12300127": {
+    "id": 12300127,
+    "name": "skill_name_12300127",
+    "mod": "主动技能",
+    "description": "skill_description_12300127",
+    "detailDescription": "skill_detailDescription_12300127",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300062,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300126,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300039,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300530
+      }
+    ],
+    "cardID": 10600060,
+    "leaderCardConditionDesc": ""
+  },
+  "12300129": {
+    "id": 12300129,
+    "name": "skill_name_12300129",
+    "mod": "主动技能",
+    "description": "skill_description_12300129",
+    "detailDescription": "skill_detailDescription_12300129",
+    "ExSkillList": [],
+    "cardID": 10600063,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300129"
+  },
+  "12300131": {
+    "id": 12300131,
+    "name": "skill_name_12300131",
+    "mod": "主动技能",
+    "description": "skill_description_12300131",
+    "detailDescription": "skill_detailDescription_12300131",
+    "ExSkillList": [],
+    "cardID": 10600065,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300131"
+  },
+  "12300242": {
+    "id": 12300242,
+    "name": "skill_name_12300242",
+    "mod": "主动技能",
+    "description": "skill_description_12300242",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12301756,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301811,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300420,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600371,
+    "leaderCardConditionDesc": ""
+  },
+  "12300243": {
+    "id": 12300243,
+    "name": "skill_name_12300243",
+    "mod": "主动技能",
+    "description": "skill_description_12300243",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600374,
+    "leaderCardConditionDesc": ""
+  },
+  "12300244": {
+    "id": 12300244,
+    "name": "skill_name_12300244",
+    "mod": "主动技能",
+    "description": "skill_description_12300244",
+    "detailDescription": "skill_detailDescription_12300244",
+    "ExSkillList": [],
+    "cardID": 10600375,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300244"
+  },
+  "12300280": {
+    "id": 12300280,
+    "name": "skill_name_12300280",
+    "mod": "主动技能",
+    "description": "skill_description_12300280",
+    "detailDescription": "skill_detailDescription_12300280",
+    "ExSkillList": [],
+    "cardID": 10600249,
+    "leaderCardConditionDesc": ""
+  },
+  "12300282": {
+    "id": 12300282,
+    "name": "skill_name_12300282",
+    "mod": "主动技能",
+    "description": "skill_description_12300282",
+    "detailDescription": "skill_detailDescription_12300282",
+    "ExSkillList": [],
+    "cardID": 10600154,
+    "leaderCardConditionDesc": ""
+  },
+  "12300284": {
+    "id": 12300284,
+    "name": "skill_name_12300284",
+    "mod": "主动技能",
+    "description": "skill_description_12300284",
+    "detailDescription": "skill_detailDescription_12300284",
+    "ExSkillList": [],
+    "cardID": 10600161,
+    "leaderCardConditionDesc": ""
+  },
+  "12300285": {
+    "id": 12300285,
+    "name": "skill_name_12300285",
+    "mod": "主动技能",
+    "description": "skill_description_12300285",
+    "detailDescription": "skill_detailDescription_12300285",
+    "ExSkillList": [],
+    "cardID": 10600162,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300285"
+  },
+  "12300286": {
+    "id": 12300286,
+    "name": "skill_name_12300286",
+    "mod": "主动技能",
+    "description": "skill_description_12300286",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600160,
+    "leaderCardConditionDesc": ""
+  },
+  "12300298": {
+    "id": 12300298,
+    "name": "skill_name_12300298",
+    "mod": "主动技能",
+    "description": "skill_description_12300298",
+    "detailDescription": "skill_detailDescription_12300298",
+    "ExSkillList": [],
+    "cardID": 10600170,
+    "leaderCardConditionDesc": ""
+  },
+  "12300299": {
+    "id": 12300299,
+    "name": "skill_name_12300299",
+    "mod": "主动技能",
+    "description": "skill_description_12300299",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600041,
+    "leaderCardConditionDesc": ""
+  },
+  "12300300": {
+    "id": 12300300,
+    "name": "skill_name_12300300",
+    "mod": "主动技能",
+    "description": "skill_description_12300300",
+    "detailDescription": "skill_detailDescription_12300300",
+    "ExSkillList": [],
+    "cardID": 10600173,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300300"
+  },
+  "12300303": {
+    "id": 12300303,
+    "name": "skill_name_12300303",
+    "mod": "主动技能",
+    "description": "skill_description_12300303",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600174,
+    "leaderCardConditionDesc": ""
+  },
+  "12300304": {
+    "id": 12300304,
+    "name": "skill_name_12300304",
+    "mod": "主动技能",
+    "description": "skill_description_12300304",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600175,
+    "leaderCardConditionDesc": ""
+  },
+  "12300305": {
+    "id": 12300305,
+    "name": "skill_name_12300305",
+    "mod": "主动技能",
+    "description": "skill_description_12300305",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600176,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300305"
+  },
+  "12300306": {
+    "id": 12300306,
+    "name": "skill_name_12300306",
+    "mod": "主动技能",
+    "description": "skill_description_12300306",
+    "detailDescription": "skill_detailDescription_12300306",
+    "ExSkillList": [],
+    "cardID": 10600177,
+    "leaderCardConditionDesc": ""
+  },
+  "12300307": {
+    "id": 12300307,
+    "name": "skill_name_12300307",
+    "mod": "主动技能",
+    "description": "skill_description_12300307",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600053,
+    "leaderCardConditionDesc": ""
+  },
+  "12300308": {
+    "id": 12300308,
+    "name": "skill_name_12300308",
+    "mod": "主动技能",
+    "description": "skill_description_12300308",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600178,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300308"
+  },
+  "12300310": {
+    "id": 12300310,
+    "name": "skill_name_12300310",
+    "mod": "主动技能",
+    "description": "skill_description_12300310",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600180,
+    "leaderCardConditionDesc": ""
+  },
+  "12300311": {
+    "id": 12300311,
+    "name": "skill_name_12300311",
+    "mod": "主动技能",
+    "description": "skill_description_12300311",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600179,
+    "leaderCardConditionDesc": ""
+  },
+  "12300312": {
+    "id": 12300312,
+    "name": "skill_name_12300312",
+    "mod": "主动技能",
+    "description": "skill_description_12300312",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600181,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300312"
+  },
+  "12300313": {
+    "id": 12300313,
+    "name": "skill_name_12300313",
+    "mod": "主动技能",
+    "description": "skill_description_12300313",
+    "detailDescription": "skill_detailDescription_12300313",
+    "ExSkillList": [],
+    "cardID": 10600184,
+    "leaderCardConditionDesc": ""
+  },
+  "12300315": {
+    "id": 12300315,
+    "name": "skill_name_12300315",
+    "mod": "主动技能",
+    "description": "skill_description_12300315",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600182,
+    "leaderCardConditionDesc": ""
+  },
+  "12300316": {
+    "id": 12300316,
+    "name": "skill_name_12300316",
+    "mod": "主动技能",
+    "description": "skill_description_12300316",
+    "detailDescription": "skill_detailDescription_12300316",
+    "ExSkillList": [],
+    "cardID": 10600185,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300316"
+  },
+  "12300009": {
+    "id": 12300009,
+    "name": "skill_name_12300009",
+    "mod": "主动技能",
+    "description": "skill_description_12300009",
+    "detailDescription": "skill_detailDescription_12300009",
+    "ExSkillList": [],
+    "cardID": 10600186,
+    "leaderCardConditionDesc": ""
+  },
+  "12300012": {
+    "id": 12300012,
+    "name": "skill_name_12300012",
+    "mod": "主动技能",
+    "description": "skill_description_12300012",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300124,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600040,
+    "leaderCardConditionDesc": ""
+  },
+  "12300029": {
+    "id": 12300029,
+    "name": "skill_name_12300029",
+    "mod": "主动技能",
+    "description": "skill_description_12300029",
+    "detailDescription": "skill_detailDescription_12300029",
+    "ExSkillList": [],
+    "cardID": 10600187,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300029"
+  },
+  "12300018": {
+    "id": 12300018,
+    "name": "Bingo!",
+    "mod": "主动技能",
+    "description": "skill_description_12300018",
+    "detailDescription": "skill_detailDescription_12300018",
+    "ExSkillList": [],
+    "cardID": 10600077,
+    "leaderCardConditionDesc": ""
+  },
+  "12300025": {
+    "id": 12300025,
+    "name": "skill_name_12300025",
+    "mod": "主动技能",
+    "description": "skill_description_12300025",
+    "detailDescription": "skill_detailDescription_12300025",
+    "ExSkillList": [],
+    "cardID": 10600013,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300025"
+  },
+  "12300026": {
+    "id": 12300026,
+    "name": "skill_name_12300026",
+    "mod": "主动技能",
+    "description": "skill_description_12300026",
+    "detailDescription": "skill_detailDescription_12300026",
+    "ExSkillList": [],
+    "cardID": 10600017,
+    "leaderCardConditionDesc": ""
+  },
+  "12300028": {
+    "id": 12300028,
+    "name": "skill_name_12300028",
+    "mod": "主动技能",
+    "description": "skill_description_12300028",
+    "detailDescription": "skill_detailDescription_12300028",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300391,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300568,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600019,
+    "leaderCardConditionDesc": ""
+  },
+  "12300031": {
+    "id": 12300031,
+    "name": "skill_name_12300031",
+    "mod": "主动技能",
+    "description": "skill_description_12300031",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600020,
+    "leaderCardConditionDesc": ""
+  },
+  "12300032": {
+    "id": 12300032,
+    "name": "skill_name_12300032",
+    "mod": "主动技能",
+    "description": "skill_description_12300032",
+    "detailDescription": "skill_detailDescription_12300032",
+    "ExSkillList": [],
+    "cardID": 10600023,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300032"
+  },
+  "12300033": {
+    "id": 12300033,
+    "name": "skill_name_12300033",
+    "mod": "主动技能",
+    "description": "skill_description_12300033",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600295,
+    "leaderCardConditionDesc": ""
+  },
+  "12300034": {
+    "id": 12300034,
+    "name": "skill_name_12300034",
+    "mod": "主动技能",
+    "description": "skill_description_12300034",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600296,
+    "leaderCardConditionDesc": ""
+  },
+  "12300035": {
+    "id": 12300035,
+    "name": "skill_name_12300035",
+    "mod": "主动技能",
+    "description": "skill_description_12300035",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12301492,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301493,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301494,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301488,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600277,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300035"
+  },
+  "12300036": {
+    "id": 12300036,
+    "name": "skill_name_12300036",
+    "mod": "主动技能",
+    "description": "skill_description_12300036",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600009,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300036"
+  },
+  "12300039": {
+    "id": 12300039,
+    "name": "skill_name_12300039",
+    "mod": "主动技能",
+    "description": "skill_description_12300039",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600037,
+    "leaderCardConditionDesc": ""
+  },
+  "12300048": {
+    "id": 12300048,
+    "name": "skill_name_12300048",
+    "mod": "主动技能",
+    "description": "skill_description_12300048",
+    "detailDescription": "skill_detailDescription_12300048",
+    "ExSkillList": [],
+    "cardID": 10600038,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300048"
+  },
+  "12300049": {
+    "id": 12300049,
+    "name": "skill_name_12300049",
+    "mod": "主动技能",
+    "description": "skill_description_12300049",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600281,
+    "leaderCardConditionDesc": ""
+  },
+  "12300058": {
+    "id": 12300058,
+    "name": "skill_name_12300058",
+    "mod": "主动技能",
+    "description": "skill_description_12300058",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600051,
+    "leaderCardConditionDesc": ""
+  },
+  "12300073": {
+    "id": 12300073,
+    "name": "skill_name_12300073",
+    "mod": "主动技能",
+    "description": "skill_description_12300073",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600128,
+    "leaderCardConditionDesc": ""
+  },
+  "12300074": {
+    "id": 12300074,
+    "name": "skill_name_12300074",
+    "mod": "主动技能",
+    "description": "skill_description_12300074",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600057,
+    "leaderCardConditionDesc": ""
+  },
+  "12300075": {
+    "id": 12300075,
+    "name": "skill_name_12300075",
+    "mod": "主动技能",
+    "description": "skill_description_12300075",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300078,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300077,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600066,
+    "leaderCardConditionDesc": ""
+  },
+  "12300076": {
+    "id": 12300076,
+    "name": "skill_name_12300076",
+    "mod": "主动技能",
+    "description": "skill_description_12300076",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600067,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300076"
+  },
+  "12300077": {
+    "id": 12300077,
+    "name": "skill_name_12300077",
+    "mod": "主动技能",
+    "description": "skill_description_12300077",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600062,
+    "leaderCardConditionDesc": ""
+  },
+  "12300078": {
+    "id": 12300078,
+    "name": "skill_name_12300078",
+    "mod": "主动技能",
+    "description": "skill_description_12300078",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600064,
+    "leaderCardConditionDesc": ""
+  },
+  "12300080": {
+    "id": 12300080,
+    "name": "skill_name_12300080",
+    "mod": "主动技能",
+    "description": "skill_description_12300080",
+    "detailDescription": "skill_detailDescription_12300080",
+    "ExSkillList": [],
+    "cardID": 10600070,
+    "leaderCardConditionDesc": ""
+  },
+  "12300081": {
+    "id": 12300081,
+    "name": "skill_name_12300081",
+    "mod": "主动技能",
+    "description": "skill_description_12300081",
+    "detailDescription": "skill_detailDescription_12300081",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300420,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600072,
+    "leaderCardConditionDesc": ""
+  },
+  "12300104": {
+    "id": 12300104,
+    "name": "skill_name_12300104",
+    "mod": "主动技能",
+    "description": "skill_description_12300104",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600006,
+    "leaderCardConditionDesc": ""
+  },
+  "12300105": {
+    "id": 12300105,
+    "name": "skill_name_12300105",
+    "mod": "主动技能",
+    "description": "skill_description_12300105",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300123,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600007,
+    "leaderCardConditionDesc": ""
+  },
+  "12300106": {
+    "id": 12300106,
+    "name": "skill_name_12300106",
+    "mod": "主动技能",
+    "description": "skill_description_12300106",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600025,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300106"
+  },
+  "12300123": {
+    "id": 12300123,
+    "name": "skill_name_12300123",
+    "mod": "主动技能",
+    "description": "skill_description_12300123",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600008,
+    "leaderCardConditionDesc": ""
+  },
+  "12300124": {
+    "id": 12300124,
+    "name": "skill_name_12300124",
+    "mod": "主动技能",
+    "description": "skill_description_12300124",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600026,
+    "leaderCardConditionDesc": ""
+  },
+  "12300130": {
+    "id": 12300130,
+    "name": "skill_name_12300130",
+    "mod": "主动技能",
+    "description": "skill_description_12300130",
+    "detailDescription": "skill_detailDescription_12300130",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300658,
+        "isNeturality": true
+      },
+      {
+        "ExSkillName": 12300750,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600043,
+    "leaderCardConditionDesc": ""
+  },
+  "12300133": {
+    "id": 12300133,
+    "name": "skill_name_12300133",
+    "mod": "主动技能",
+    "description": "skill_description_12300133",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600091,
+    "leaderCardConditionDesc": ""
+  },
+  "12300136": {
+    "id": 12300136,
+    "name": "skill_name_12300136",
+    "mod": "主动技能",
+    "description": "skill_description_12300136",
+    "detailDescription": "skill_detailDescription_12300136",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300748,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600099,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300136"
+  },
+  "12300070": {
+    "id": 12300070,
+    "name": "TATAKAE",
+    "mod": "主动技能",
+    "description": "skill_description_12300070",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300068,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300071,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300120,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600121,
+    "leaderCardConditionDesc": ""
+  },
+  "12300068": {
+    "id": 12300068,
+    "name": "TATAKAU!",
+    "mod": "主动技能",
+    "description": "skill_description_12300068",
+    "detailDescription": "skill_detailDescription_12300068",
+    "ExSkillList": [],
+    "cardID": 10600122,
+    "leaderCardConditionDesc": ""
+  },
+  "12300071": {
+    "id": 12300071,
+    "name": "TATAKAU!!",
+    "mod": "主动技能",
+    "description": "skill_description_12300071",
+    "detailDescription": "skill_detailDescription_12300071",
+    "ExSkillList": [],
+    "cardID": 10600123,
+    "leaderCardConditionDesc": ""
+  },
+  "12300120": {
+    "id": 12300120,
+    "name": "TATAKAU!!!",
+    "mod": "主动技能",
+    "description": "skill_description_12300120",
+    "detailDescription": "skill_detailDescription_12300120",
+    "ExSkillList": [],
+    "cardID": 10600124,
+    "leaderCardConditionDesc": ""
+  },
+  "12300160": {
+    "id": 12300160,
+    "name": "skill_name_12300160",
+    "mod": "主动技能",
+    "description": "skill_description_12300160",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300163,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600125,
+    "leaderCardConditionDesc": ""
+  },
+  "12300163": {
+    "id": 12300163,
+    "name": "skill_name_12300163",
+    "mod": "主动技能",
+    "description": "skill_description_12300163",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600126,
+    "leaderCardConditionDesc": ""
+  },
+  "12300164": {
+    "id": 12300164,
+    "name": "skill_name_12300164",
+    "mod": "主动技能",
+    "description": "skill_description_12300164",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300585,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600127,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300164"
+  },
+  "12300270": {
+    "id": 12300270,
+    "name": "skill_name_12300270",
+    "mod": "主动技能",
+    "description": "skill_description_12300270",
+    "detailDescription": "skill_detailDescription_12300270",
+    "ExSkillList": [],
+    "cardID": 10600155,
+    "leaderCardConditionDesc": ""
+  },
+  "12300292": {
+    "id": 12300292,
+    "name": "skill_name_12300292",
+    "mod": "主动技能",
+    "description": "skill_description_12300292",
+    "detailDescription": "skill_detailDescription_12300292",
+    "ExSkillList": [],
+    "cardID": 10600144,
+    "leaderCardConditionDesc": ""
+  },
+  "12300301": {
+    "id": 12300301,
+    "name": "skill_name_12300301",
+    "mod": "主动技能",
+    "description": "skill_description_12300301",
+    "detailDescription": "skill_detailDescription_12300301",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300658,
+        "isNeturality": true
+      },
+      {
+        "ExSkillName": 12300750,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600145,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300301"
+  },
+  "12300302": {
+    "id": 12300302,
+    "name": "skill_name_12300302",
+    "mod": "主动技能",
+    "description": "skill_description_12300302",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300321,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300758,
+        "isNeturality": true
+      },
+      {
+        "ExSkillName": 12300751,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600163,
+    "leaderCardConditionDesc": ""
+  },
+  "12300309": {
+    "id": 12300309,
+    "name": "skill_name_12300309",
+    "mod": "主动技能",
+    "description": "skill_description_12300309",
+    "detailDescription": "skill_detailDescription_12300309",
+    "ExSkillList": [],
+    "cardID": 10600165,
+    "leaderCardConditionDesc": ""
+  },
+  "12300320": {
+    "id": 12300320,
+    "name": "skill_name_12300320",
+    "mod": "主动技能",
+    "description": "skill_description_12300320",
+    "detailDescription": "skill_detailDescription_12300320",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300758,
+        "isNeturality": true
+      },
+      {
+        "ExSkillName": 12300751,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600166,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300320"
+  },
+  "12300321": {
+    "id": 12300321,
+    "name": "skill_name_12300321",
+    "mod": "主动技能",
+    "description": "skill_description_12300321",
+    "detailDescription": "skill_detailDescription_12300321",
+    "ExSkillList": [],
+    "cardID": 10600164,
+    "leaderCardConditionDesc": ""
+  },
+  "12300060": {
+    "id": 12300060,
+    "name": "skill_name_12300060",
+    "mod": "主动技能",
+    "description": "skill_description_12300060",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300330,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300331,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300470,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600172,
+    "leaderCardConditionDesc": ""
+  },
+  "12300297": {
+    "id": 12300297,
+    "name": "skill_name_12300297",
+    "mod": "主动技能",
+    "description": "skill_description_12300297",
+    "detailDescription": "skill_detailDescription_12300297",
+    "ExSkillList": [],
+    "cardID": 10600190,
+    "leaderCardConditionDesc": ""
+  },
+  "12300329": {
+    "id": 12300329,
+    "name": "skill_name_12300329",
+    "mod": "主动技能",
+    "description": "skill_description_12300329",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600191,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300329"
+  },
+  "12300330": {
+    "id": 12300330,
+    "name": "skill_name_12300330",
+    "mod": "主动技能",
+    "description": "skill_description_12300330",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600188,
+    "leaderCardConditionDesc": ""
+  },
+  "12300331": {
+    "id": 12300331,
+    "name": "skill_name_12300331",
+    "mod": "主动技能",
+    "description": "skill_description_12300331",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600189,
+    "leaderCardConditionDesc": ""
+  },
+  "12300412": {
+    "id": 12300412,
+    "name": "skill_name_12300412",
+    "mod": "主动技能",
+    "description": "skill_description_12300412",
+    "detailDescription": "skill_detailDescription_12300412",
+    "ExSkillList": [],
+    "cardID": 10600201,
+    "leaderCardConditionDesc": ""
+  },
+  "12300413": {
+    "id": 12300413,
+    "name": "skill_name_12300413",
+    "mod": "主动技能",
+    "description": "skill_description_12300413",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300511,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600200,
+    "leaderCardConditionDesc": ""
+  },
+  "12300414": {
+    "id": 12300414,
+    "name": "skill_name_12300414",
+    "mod": "主动技能",
+    "description": "skill_description_12300414",
+    "detailDescription": "skill_detailDescription_12300414",
+    "ExSkillList": [],
+    "cardID": 10600199,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300414"
+  },
+  "12300416": {
+    "id": 12300416,
+    "name": "skill_name_12300416",
+    "mod": "主动技能",
+    "description": "skill_description_12300416",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600203,
+    "leaderCardConditionDesc": ""
+  },
+  "12300417": {
+    "id": 12300417,
+    "name": "skill_name_12300417",
+    "mod": "主动技能",
+    "description": "skill_description_12300417",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300470,
+        "isNeturality": true
+      },
+      {
+        "ExSkillName": 12300420,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600226,
+    "leaderCardConditionDesc": ""
+  },
+  "12300418": {
+    "id": 12300418,
+    "name": "skill_name_12300418",
+    "mod": "主动技能",
+    "description": "skill_description_12300418",
+    "detailDescription": "skill_detailDescription_12300418",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300420,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600225,
+    "leaderCardConditionDesc": ""
+  },
+  "12300419": {
+    "id": 12300419,
+    "name": "skill_name_12300419",
+    "mod": "主动技能",
+    "description": "skill_description_12300419",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600223,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300419"
+  },
+  "12300425": {
+    "id": 12300425,
+    "name": "skill_name_12300425",
+    "mod": "主动技能",
+    "description": "skill_description_12300425",
+    "detailDescription": "skill_detailDescription_12300425",
+    "ExSkillList": [],
+    "cardID": 10600207,
+    "leaderCardConditionDesc": ""
+  },
+  "12300426": {
+    "id": 12300426,
+    "name": "skill_name_12300426",
+    "mod": "主动技能",
+    "description": "skill_description_12300426",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600208,
+    "leaderCardConditionDesc": ""
+  },
+  "12300427": {
+    "id": 12300427,
+    "name": "skill_name_12300427",
+    "mod": "主动技能",
+    "description": "skill_description_12300427",
+    "detailDescription": "skill_detailDescription_12300427",
+    "ExSkillList": [],
+    "cardID": 10600209,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300427"
+  },
+  "12300447": {
+    "id": 12300447,
+    "name": "skill_name_12300447",
+    "mod": "主动技能",
+    "description": "skill_description_12300447",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300924,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300925,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300928,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300946,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600216,
+    "leaderCardConditionDesc": ""
+  },
+  "12300448": {
+    "id": 12300448,
+    "name": "skill_name_12300448",
+    "mod": "主动技能",
+    "description": "skill_description_12300448",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300969,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300970,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300971,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600215,
+    "leaderCardConditionDesc": ""
+  },
+  "12300449": {
+    "id": 12300449,
+    "name": "skill_name_12300449",
+    "mod": "主动技能",
+    "description": "skill_description_12300449",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300950,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600214,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300449"
+  },
+  "12300461": {
+    "id": 12300461,
+    "name": "skill_name_12300461",
+    "mod": "主动技能",
+    "description": "skill_description_12300461",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600069,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300461"
+  },
+  "12300464": {
+    "id": 12300464,
+    "name": "skill_name_12300464",
+    "mod": "主动技能",
+    "description": "skill_description_12300464",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600068,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300464"
+  },
+  "12300465": {
+    "id": 12300465,
+    "name": "skill_name_12300465",
+    "mod": "主动技能",
+    "description": "skill_description_12300465",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300466,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600024,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300465"
+  },
+  "12300466": {
+    "id": 12300466,
+    "name": "skill_name_12300466",
+    "mod": "主动技能",
+    "description": "skill_description_12300466",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600052,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300466"
+  },
+  "12300467": {
+    "id": 12300467,
+    "name": "skill_name_12300467",
+    "mod": "主动技能",
+    "description": "skill_description_12300467",
+    "detailDescription": "skill_detailDescription_12300467",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300470,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600233,
+    "leaderCardConditionDesc": ""
+  },
+  "12300468": {
+    "id": 12300468,
+    "name": "skill_name_12300468",
+    "mod": "主动技能",
+    "description": "skill_description_12300468",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600236,
+    "leaderCardConditionDesc": ""
+  },
+  "12300469": {
+    "id": 12300469,
+    "name": "skill_name_12300469",
+    "mod": "主动技能",
+    "description": "skill_description_12300469",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600237,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300469"
+  },
+  "12300470": {
+    "id": 12300470,
+    "name": "skill_name_12300470",
+    "mod": "主动技能",
+    "description": "skill_description_12300470",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600234,
+    "leaderCardConditionDesc": ""
+  },
+  "12300458": {
+    "id": 12300458,
+    "name": "skill_name_12300458",
+    "mod": "主动技能",
+    "description": "skill_description_12300458",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600222,
+    "leaderCardConditionDesc": ""
+  },
+  "12300514": {
+    "id": 12300514,
+    "name": "skill_name_12300514",
+    "mod": "主动技能",
+    "description": "skill_description_12300514",
+    "detailDescription": "skill_detailDescription_12300514",
+    "ExSkillList": [],
+    "cardID": 10600158,
+    "leaderCardConditionDesc": ""
+  },
+  "12300515": {
+    "id": 12300515,
+    "name": "skill_name_12300515",
+    "mod": "主动技能",
+    "description": "skill_description_12300515",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300517,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301137,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301138,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301139,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301140
+      }
+    ],
+    "cardID": 10600239,
+    "leaderCardConditionDesc": ""
+  },
+  "12300516": {
+    "id": 12300516,
+    "name": "skill_name_12300516",
+    "mod": "主动技能",
+    "description": "skill_description_12300516",
+    "detailDescription": "skill_detailDescription_12300516",
+    "ExSkillList": [],
+    "cardID": 10600245,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300516"
+  },
+  "12300517": {
+    "id": 12300517,
+    "name": "skill_name_12300517",
+    "mod": "主动技能",
+    "description": "skill_description_12300517",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600244,
+    "leaderCardConditionDesc": ""
+  },
+  "12300529": {
+    "id": 12300529,
+    "name": "skill_name_12300529",
+    "mod": "主动技能",
+    "description": "skill_description_12300529",
+    "detailDescription": "skill_detailDescription_12300529",
+    "ExSkillList": [],
+    "cardID": 10600247,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300529"
+  },
+  "12300530": {
+    "id": 12300530,
+    "name": "skill_name_12300530",
+    "mod": "主动技能",
+    "description": "skill_description_12300530",
+    "detailDescription": "skill_detailDescription_12300530",
+    "ExSkillList": [],
+    "cardID": 10600248,
+    "leaderCardConditionDesc": ""
+  },
+  "12300391": {
+    "id": 12300391,
+    "name": "skill_name_12300391",
+    "mod": "主动技能",
+    "description": "skill_description_12300391",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600018,
+    "leaderCardConditionDesc": ""
+  },
+  "12300568": {
+    "id": 12300568,
+    "name": "skill_name_12300568",
+    "mod": "主动技能",
+    "description": "skill_description_12300568",
+    "detailDescription": "skill_detailDescription_12300568",
+    "ExSkillList": [],
+    "cardID": 10600140,
+    "leaderCardConditionDesc": ""
+  },
+  "12300570": {
+    "id": 12300570,
+    "name": "skill_name_12300570",
+    "mod": "主动技能",
+    "description": "skill_description_12300570",
+    "detailDescription": "skill_detailDescription_12300570",
+    "ExSkillList": [],
+    "cardID": 10600143,
+    "leaderCardConditionDesc": ""
+  },
+  "12300245": {
+    "id": 12300245,
+    "name": "skill_name_12300245",
+    "mod": "主动技能",
+    "description": "skill_description_12300245",
+    "detailDescription": "skill_detailDescription_12300245",
+    "ExSkillList": [],
+    "cardID": 10600035,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300245"
+  },
+  "12300576": {
+    "id": 12300576,
+    "name": "skill_name_12300576",
+    "mod": "主动技能",
+    "description": "skill_description_12300576",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600159,
+    "leaderCardConditionDesc": ""
+  },
+  "12300585": {
+    "id": 12300585,
+    "name": "skill_name_12300585",
+    "mod": "主动技能",
+    "description": "skill_description_12300585",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600240,
+    "leaderCardConditionDesc": ""
+  },
+  "12300251": {
+    "id": 12300251,
+    "name": "skill_name_12300251",
+    "mod": "主动技能",
+    "description": "skill_description_12300251",
+    "detailDescription": "skill_detailDescription_12300251",
+    "ExSkillList": [],
+    "cardID": 10600250,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300251"
+  },
+  "12300597": {
+    "id": 12300597,
+    "name": "skill_name_12300597",
+    "mod": "主动技能",
+    "description": "skill_description_12300597",
+    "detailDescription": "skill_detailDescription_12300597",
+    "ExSkillList": [],
+    "cardID": 10600049,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300597"
+  },
+  "12300296": {
+    "id": 12300296,
+    "name": "skill_name_12300296",
+    "mod": "主动技能",
+    "description": "skill_description_12300296",
+    "detailDescription": "skill_detailDescription_12300296",
+    "ExSkillList": [],
+    "cardID": 10600252,
+    "leaderCardConditionDesc": ""
+  },
+  "12300392": {
+    "id": 12300392,
+    "name": "skill_name_12300392",
+    "mod": "主动技能",
+    "description": "skill_description_12300392",
+    "detailDescription": "skill_detailDescription_12300392",
+    "ExSkillList": [],
+    "cardID": 10600253,
+    "leaderCardConditionDesc": ""
+  },
+  "12300600": {
+    "id": 12300600,
+    "name": "skill_name_12300600",
+    "mod": "主动技能",
+    "description": "skill_description_12300600",
+    "detailDescription": "skill_detailDescription_12300600",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300470,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600254,
+    "leaderCardConditionDesc": ""
+  },
+  "12300619": {
+    "id": 12300619,
+    "name": "skill_name_12300619",
+    "mod": "主动技能",
+    "description": "skill_description_12300619",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600257,
+    "leaderCardConditionDesc": ""
+  },
+  "12300627": {
+    "id": 12300627,
+    "name": "skill_name_12300627",
+    "mod": "主动技能",
+    "description": "skill_description_12300627",
+    "detailDescription": "skill_detailDescription_12300627",
+    "ExSkillList": [],
+    "cardID": 10600138,
+    "leaderCardConditionDesc": ""
+  },
+  "12300511": {
+    "id": 12300511,
+    "name": "skill_name_12300511",
+    "mod": "主动技能",
+    "description": "skill_description_12300511",
+    "detailDescription": "skill_detailDescription_12300511",
+    "ExSkillList": [],
+    "cardID": 10600259,
+    "leaderCardConditionDesc": ""
+  },
+  "12300636": {
+    "id": 12300636,
+    "name": "skill_name_12300636",
+    "mod": "主动技能",
+    "description": "skill_description_12300636",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600202,
+    "leaderCardConditionDesc": ""
+  },
+  "12300657": {
+    "id": 12300657,
+    "name": "skill_name_12300657",
+    "mod": "主动技能",
+    "description": "skill_description_12300657",
+    "detailDescription": "skill_detailDescription_12300657",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300748,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600297,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300657"
+  },
+  "12300658": {
+    "id": 12300658,
+    "name": "skill_name_12300658",
+    "mod": "主动技能",
+    "description": "skill_description_12300658",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600044,
+    "leaderCardConditionDesc": ""
+  },
+  "12300667": {
+    "id": 12300667,
+    "name": "skill_name_12300667",
+    "mod": "主动技能",
+    "description": "skill_description_12300667",
+    "detailDescription": "skill_detailDescription_12300667",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300420,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600224,
+    "leaderCardConditionDesc": ""
+  },
+  "12300420": {
+    "id": 12300420,
+    "name": "skill_name_12300420",
+    "mod": "主动技能",
+    "description": "skill_description_12300420",
+    "detailDescription": "skill_detailDescription_12300420",
+    "ExSkillList": [],
+    "cardID": 10600262,
+    "leaderCardConditionDesc": ""
+  },
+  "12300682": {
+    "id": 12300682,
+    "name": "skill_name_12300682",
+    "mod": "主动技能",
+    "description": "skill_description_12300682",
+    "detailDescription": "skill_detailDescription_12300682",
+    "ExSkillList": [],
+    "cardID": 10600269,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300682"
+  },
+  "12300683": {
+    "id": 12300683,
+    "name": "skill_name_12300683",
+    "mod": "主动技能",
+    "description": "skill_description_12300683",
+    "detailDescription": "skill_detailDescription_12300683",
+    "ExSkillList": [],
+    "cardID": 10600270,
+    "leaderCardConditionDesc": ""
+  },
+  "12300687": {
+    "id": 12300687,
+    "name": "skill_name_12300687",
+    "mod": "主动技能",
+    "description": "skill_description_12300687",
+    "detailDescription": "skill_detailDescription_12300687",
+    "ExSkillList": [],
+    "cardID": 10600274,
+    "leaderCardConditionDesc": ""
+  },
+  "12300688": {
+    "id": 12300688,
+    "name": "skill_name_12300688",
+    "mod": "主动技能",
+    "description": "skill_description_12300688",
+    "detailDescription": "skill_detailDescription_12300688",
+    "ExSkillList": [],
+    "cardID": 10600273,
+    "leaderCardConditionDesc": ""
+  },
+  "12300689": {
+    "id": 12300689,
+    "name": "skill_name_12300689",
+    "mod": "主动技能",
+    "description": "skill_description_12300689",
+    "detailDescription": "skill_detailDescription_12300689",
+    "ExSkillList": [],
+    "cardID": 10600272,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300689"
+  },
+  "12300695": {
+    "id": 12300695,
+    "name": "skill_name_12300695",
+    "mod": "主动技能",
+    "description": "skill_description_12300695",
+    "detailDescription": "skill_detailDescription_12300695",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300391,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300568,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600271,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300695"
+  },
+  "12300705": {
+    "id": 12300705,
+    "name": "skill_name_12300705",
+    "mod": "主动技能",
+    "description": "skill_description_12300705",
+    "detailDescription": "skill_detailDescription_12300705",
+    "ExSkillList": [],
+    "cardID": 10600275,
+    "leaderCardConditionDesc": ""
+  },
+  "12300710": {
+    "id": 12300710,
+    "name": "skill_name_12300710",
+    "mod": "主动技能",
+    "description": "skill_description_12300710",
+    "detailDescription": "skill_detailDescription_12300710",
+    "ExSkillList": [],
+    "cardID": 10600084,
+    "leaderCardConditionDesc": ""
+  },
+  "12300711": {
+    "id": 12300711,
+    "name": "skill_name_12300711",
+    "mod": "主动技能",
+    "description": "skill_description_12300711",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600085,
+    "leaderCardConditionDesc": ""
+  },
+  "12300712": {
+    "id": 12300712,
+    "name": "skill_name_12300712",
+    "mod": "主动技能",
+    "description": "skill_description_12300712",
+    "detailDescription": "skill_detailDescription_12300712",
+    "ExSkillList": [],
+    "cardID": 10600278,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300712"
+  },
+  "12300177": {
+    "id": 12300177,
+    "name": "skill_name_12300177",
+    "mod": "主动技能",
+    "description": "skill_description_12300177",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600279,
+    "leaderCardConditionDesc": ""
+  },
+  "12300194": {
+    "id": 12300194,
+    "name": "skill_name_12300194",
+    "mod": "主动技能",
+    "description": "skill_description_12300194",
+    "detailDescription": "skill_detailDescription_12300194",
+    "ExSkillList": [],
+    "cardID": 10600280,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300194"
+  },
+  "12300724": {
+    "id": 12300724,
+    "name": "skill_name_12300724",
+    "mod": "主动技能",
+    "description": "skill_description_12300724",
+    "detailDescription": "skill_detailDescription_12300724",
+    "ExSkillList": [],
+    "cardID": 10600045,
+    "leaderCardConditionDesc": ""
+  },
+  "12300725": {
+    "id": 12300725,
+    "name": "skill_name_12300725",
+    "mod": "主动技能",
+    "description": "skill_description_12300725",
+    "detailDescription": "skill_detailDescription_12300725",
+    "ExSkillList": [],
+    "cardID": 10600046,
+    "leaderCardConditionDesc": ""
+  },
+  "12300726": {
+    "id": 12300726,
+    "name": "skill_name_12300726",
+    "mod": "主动技能",
+    "description": "skill_description_12300726",
+    "detailDescription": "skill_detailDescription_12300726",
+    "ExSkillList": [],
+    "cardID": 10600282,
+    "leaderCardConditionDesc": ""
+  },
+  "12300397": {
+    "id": 12300397,
+    "name": "skill_name_12300397",
+    "mod": "主动技能",
+    "description": "skill_description_12300397",
+    "detailDescription": "skill_detailDescription_12300397",
+    "ExSkillList": [],
+    "cardID": 10600131,
+    "leaderCardConditionDesc": ""
+  },
+  "12300042": {
+    "id": 12300042,
+    "name": "skill_name_12300042",
+    "mod": "主动技能",
+    "description": "skill_description_12300042",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600002,
+    "leaderCardConditionDesc": ""
+  },
+  "12300043": {
+    "id": 12300043,
+    "name": "skill_name_12300043",
+    "mod": "主动技能",
+    "description": "skill_description_12300043",
+    "detailDescription": "skill_detailDescription_12300043",
+    "ExSkillList": [],
+    "cardID": 10600003,
+    "leaderCardConditionDesc": ""
+  },
+  "12300154": {
+    "id": 12300154,
+    "name": "skill_name_12300154",
+    "mod": "主动技能",
+    "description": "skill_description_12300154",
+    "detailDescription": "",
+    "ExSkillList": null,
+    "cardID": 10600010,
+    "leaderCardConditionDesc": ""
+  },
+  "12300746": {
+    "id": 12300746,
+    "name": "skill_name_12300746",
+    "mod": "主动技能",
+    "description": "skill_description_12300746",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600116,
+    "leaderCardConditionDesc": ""
+  },
+  "12300747": {
+    "id": 12300747,
+    "name": "skill_name_12300747",
+    "mod": "主动技能",
+    "description": "skill_description_12300747",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600117,
+    "leaderCardConditionDesc": ""
+  },
+  "12300748": {
+    "id": 12300748,
+    "name": "skill_name_12300748",
+    "mod": "主动技能",
+    "description": "skill_description_12300748",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600118,
+    "leaderCardConditionDesc": ""
+  },
+  "12300749": {
+    "id": 12300749,
+    "name": "skill_name_12300749",
+    "mod": "主动技能",
+    "description": "skill_description_12300749",
+    "detailDescription": "skill_detailDescription_12300749",
+    "ExSkillList": [],
+    "cardID": 10600036,
+    "leaderCardConditionDesc": ""
+  },
+  "12300750": {
+    "id": 12300750,
+    "name": "skill_name_12300750",
+    "mod": "主动技能",
+    "description": "skill_description_12300750",
+    "detailDescription": "skill_detailDescription_12300750",
+    "ExSkillList": [],
+    "cardID": 10600075,
+    "leaderCardConditionDesc": ""
+  },
+  "12300751": {
+    "id": 12300751,
+    "name": "skill_name_12300751",
+    "mod": "主动技能",
+    "description": "skill_description_12300751",
+    "detailDescription": "skill_detailDescription_12300751",
+    "ExSkillList": [],
+    "cardID": 10600032,
+    "leaderCardConditionDesc": ""
+  },
+  "12300752": {
+    "id": 12300752,
+    "name": "skill_name_12300752",
+    "mod": "主动技能",
+    "description": "skill_description_12300752",
+    "detailDescription": "skill_detailDescription_12300752",
+    "ExSkillList": [],
+    "cardID": 10600076,
+    "leaderCardConditionDesc": ""
+  },
+  "12300753": {
+    "id": 12300753,
+    "name": "skill_name_12300753",
+    "mod": "主动技能",
+    "description": "skill_description_12300753",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600033,
+    "leaderCardConditionDesc": ""
+  },
+  "12300754": {
+    "id": 12300754,
+    "name": "skill_name_12300754",
+    "mod": "主动技能",
+    "description": "skill_description_12300754",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600029,
+    "leaderCardConditionDesc": ""
+  },
+  "12300755": {
+    "id": 12300755,
+    "name": "skill_name_12300755",
+    "mod": "主动技能",
+    "description": "skill_description_12300755",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600031,
+    "leaderCardConditionDesc": ""
+  },
+  "12300756": {
+    "id": 12300756,
+    "name": "skill_name_12300756",
+    "mod": "主动技能",
+    "description": "skill_description_12300756",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600030,
+    "leaderCardConditionDesc": ""
+  },
+  "12300757": {
+    "id": 12300757,
+    "name": "skill_name_12300757",
+    "mod": "主动技能",
+    "description": "skill_description_12300757",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600011,
+    "leaderCardConditionDesc": ""
+  },
+  "12300758": {
+    "id": 12300758,
+    "name": "skill_name_12300758",
+    "mod": "主动技能",
+    "description": "skill_description_12300758",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600021,
+    "leaderCardConditionDesc": ""
+  },
+  "12300759": {
+    "id": 12300759,
+    "name": "skill_name_12300759",
+    "mod": "主动技能",
+    "description": "skill_description_12300759",
+    "detailDescription": "",
+    "ExSkillList": null,
+    "cardID": 10600028,
+    "leaderCardConditionDesc": ""
+  },
+  "12300760": {
+    "id": 12300760,
+    "name": "skill_name_12300760",
+    "mod": "主动技能",
+    "description": "skill_description_12300760",
+    "detailDescription": "",
+    "ExSkillList": null,
+    "cardID": 10600022,
+    "leaderCardConditionDesc": ""
+  },
+  "12300761": {
+    "id": 12300761,
+    "name": "skill_name_12300761",
+    "mod": "主动技能",
+    "description": "skill_description_12300761",
+    "detailDescription": "",
+    "ExSkillList": null,
+    "cardID": 10600027,
+    "leaderCardConditionDesc": ""
+  },
+  "12300762": {
+    "id": 12300762,
+    "name": "skill_name_12300762",
+    "mod": "主动技能",
+    "description": "skill_description_12300762",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600150,
+    "leaderCardConditionDesc": ""
+  },
+  "12300763": {
+    "id": 12300763,
+    "name": "skill_name_12300763",
+    "mod": "主动技能",
+    "description": "向目标区域释放【崩星之雷】，每秒对范围内敌方xxx",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600156,
+    "leaderCardConditionDesc": ""
+  },
+  "12300764": {
+    "id": 12300764,
+    "name": "skill_name_12300764",
+    "mod": "主动技能",
+    "description": "向目标区域释放【破界之火】，每秒对范围内敌方xxx",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600152,
+    "leaderCardConditionDesc": ""
+  },
+  "12300765": {
+    "id": 12300765,
+    "name": "skill_name_12300765",
+    "mod": "主动技能",
+    "description": "向目标区域释放【碎月之凚】，每秒对范围内敌方xxx",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600139,
+    "leaderCardConditionDesc": ""
+  },
+  "12300766": {
+    "id": 12300766,
+    "name": "skill_name_12300766",
+    "mod": "主动技能",
+    "description": "黑箭进化成黑雷龙一样的特效龙，贯穿敌方全体，伤害加倍并<color=#FFB800>【轰顶】</color>",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600153,
+    "leaderCardConditionDesc": ""
+  },
+  "12300767": {
+    "id": 12300767,
+    "name": "skill_name_12300767",
+    "mod": "主动技能",
+    "description": "黑箭进化成黑火龙一样的特效龙，贯穿敌方全体，伤害加倍并<color=#FF6666>【燎原】</color>",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600151,
+    "leaderCardConditionDesc": ""
+  },
+  "12300768": {
+    "id": 12300768,
+    "name": "skill_name_12300768",
+    "mod": "主动技能",
+    "description": "黑箭进化成黑冰龙一样的特效龙，贯穿敌方全体，伤害加倍并<color=#7AB2FF>【封冻】</color>",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600149,
+    "leaderCardConditionDesc": ""
+  },
+  "12300924": {
+    "id": 12300924,
+    "name": "skill_name_12300924",
+    "mod": "主动技能",
+    "description": "skill_description_12300924",
+    "detailDescription": "skill_detailDescription_12300924",
+    "ExSkillList": [],
+    "cardID": 10600193,
+    "leaderCardConditionDesc": ""
+  },
+  "12300925": {
+    "id": 12300925,
+    "name": "skill_name_12300925",
+    "mod": "主动技能",
+    "description": "skill_description_12300925",
+    "detailDescription": "skill_detailDescription_12300925",
+    "ExSkillList": [],
+    "cardID": 10600194,
+    "leaderCardConditionDesc": ""
+  },
+  "12300928": {
+    "id": 12300928,
+    "name": "skill_name_12300928",
+    "mod": "主动技能",
+    "description": "skill_description_12300928",
+    "detailDescription": "skill_detailDescription_12300928",
+    "ExSkillList": [],
+    "cardID": 10600242,
+    "leaderCardConditionDesc": ""
+  },
+  "12300052": {
+    "id": 12300052,
+    "name": "skill_name_12300052",
+    "mod": "主动技能",
+    "description": "skill_description_12300052",
+    "detailDescription": "skill_detailDescription_12300052",
+    "ExSkillList": [],
+    "cardID": 10600298,
+    "leaderCardConditionDesc": ""
+  },
+  "12300054": {
+    "id": 12300054,
+    "name": "skill_name_12300054",
+    "mod": "主动技能",
+    "description": "skill_description_12300054",
+    "detailDescription": "skill_detailDescription_12300054",
+    "ExSkillList": [],
+    "cardID": 10600285,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300054"
+  },
+  "12300946": {
+    "id": 12300946,
+    "name": "skill_name_12300946",
+    "mod": "主动技能",
+    "description": "skill_description_12300946",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600283,
+    "leaderCardConditionDesc": ""
+  },
+  "12300950": {
+    "id": 12300950,
+    "name": "skill_name_12300950",
+    "mod": "主动技能",
+    "description": "skill_description_12300950",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600289,
+    "leaderCardConditionDesc": ""
+  },
+  "12300957": {
+    "id": 12300957,
+    "name": "skill_name_12300957",
+    "mod": "主动技能",
+    "description": "skill_description_12300957",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300924,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300925,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300928,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300946,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600169,
+    "leaderCardConditionDesc": ""
+  },
+  "12300948": {
+    "id": 12300948,
+    "name": "skill_name_12300948",
+    "mod": "主动技能",
+    "description": "skill_description_12300948",
+    "detailDescription": "skill_detailDescription_12300948",
+    "ExSkillList": [],
+    "cardID": 10600302,
+    "leaderCardConditionDesc": ""
+  },
+  "12300960": {
+    "id": 12300960,
+    "name": "skill_name_12300960",
+    "mod": "主动技能",
+    "description": "skill_description_12300960",
+    "detailDescription": "skill_detailDescription_12300960",
+    "ExSkillList": [],
+    "cardID": 10600167,
+    "leaderCardConditionDesc": ""
+  },
+  "12300961": {
+    "id": 12300961,
+    "name": "skill_name_12300961",
+    "mod": "主动技能",
+    "description": "skill_description_12300961",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600290,
+    "leaderCardConditionDesc": ""
+  },
+  "12300962": {
+    "id": 12300962,
+    "name": "skill_name_12300962",
+    "mod": "主动技能",
+    "description": "skill_description_12300962",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300963,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600291,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300962"
+  },
+  "12300963": {
+    "id": 12300963,
+    "name": "skill_name_12300963",
+    "mod": "主动技能",
+    "description": "skill_description_12300963",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600292,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300963"
+  },
+  "12300969": {
+    "id": 12300969,
+    "name": "skill_name_12300969",
+    "mod": "主动技能",
+    "description": "skill_description_12300969",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600286,
+    "leaderCardConditionDesc": ""
+  },
+  "12300970": {
+    "id": 12300970,
+    "name": "skill_name_12300970",
+    "mod": "主动技能",
+    "description": "skill_description_12300970",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600287,
+    "leaderCardConditionDesc": ""
+  },
+  "12300971": {
+    "id": 12300971,
+    "name": "skill_name_12300971",
+    "mod": "主动技能",
+    "description": "skill_description_12300971",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600288,
+    "leaderCardConditionDesc": ""
+  },
+  "12300055": {
+    "id": 12300055,
+    "name": "skill_name_12300055",
+    "mod": "主动技能",
+    "description": "skill_description_12300055",
+    "detailDescription": "skill_detailDescription_12300055",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300470,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600293,
+    "leaderCardConditionDesc": ""
+  },
+  "12300056": {
+    "id": 12300056,
+    "name": "skill_name_12300056",
+    "mod": "主动技能",
+    "description": "skill_description_12300056",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300617,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600284,
+    "leaderCardConditionDesc": ""
+  },
+  "12300072": {
+    "id": 12300072,
+    "name": "skill_name_12300072",
+    "mod": "主动技能",
+    "description": "skill_description_12300072",
+    "detailDescription": "skill_detailDescription_12300072",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12301615,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300420,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600294,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300072"
+  },
+  "12300617": {
+    "id": 12300617,
+    "name": "skill_name_12300617",
+    "mod": "主动技能",
+    "description": "skill_description_12300617",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600192,
+    "leaderCardConditionDesc": ""
+  },
+  "12301002": {
+    "id": 12301002,
+    "name": "skill_name_12301002",
+    "mod": "主动技能",
+    "description": "skill_description_12301002",
+    "detailDescription": "skill_detailDescription_12301002",
+    "ExSkillList": [],
+    "cardID": 10600299,
+    "leaderCardConditionDesc": ""
+  },
+  "12301003": {
+    "id": 12301003,
+    "name": "skill_name_12301003",
+    "mod": "主动技能",
+    "description": "skill_description_12301003",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600300,
+    "leaderCardConditionDesc": ""
+  },
+  "12301004": {
+    "id": 12301004,
+    "name": "skill_name_12301004",
+    "mod": "主动技能",
+    "description": "skill_description_12301004",
+    "detailDescription": "skill_detailDescription_12301004",
+    "ExSkillList": [],
+    "cardID": 10600301,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301004"
+  },
+  "12300050": {
+    "id": 12300050,
+    "name": "skill_name_12300050",
+    "mod": "主动技能",
+    "description": "skill_description_12300050",
+    "detailDescription": "skill_detailDescription_12300050",
+    "ExSkillList": [],
+    "cardID": 10600050,
+    "leaderCardConditionDesc": ""
+  },
+  "12300067": {
+    "id": 12300067,
+    "name": "skill_name_12300067",
+    "mod": "主动技能",
+    "description": "skill_description_12300067",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300146,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600134,
+    "leaderCardConditionDesc": ""
+  },
+  "12300137": {
+    "id": 12300137,
+    "name": "skill_name_12300137",
+    "mod": "主动技能",
+    "description": "skill_description_12300137",
+    "detailDescription": "skill_detailDescription_12300137",
+    "ExSkillList": [],
+    "cardID": 10600171,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300137"
+  },
+  "12300146": {
+    "id": 12300146,
+    "name": "skill_name_12300146",
+    "mod": "主动技能",
+    "description": "skill_description_12300146",
+    "detailDescription": "skill_detailDescription_12300146",
+    "ExSkillList": [],
+    "cardID": 10600137,
+    "leaderCardConditionDesc": ""
+  },
+  "12300396": {
+    "id": 12300396,
+    "name": "skill_name_12300396",
+    "mod": "主动技能",
+    "description": "skill_description_12300396",
+    "detailDescription": "skill_detailDescription_12300396",
+    "ExSkillList": [],
+    "cardID": 10600183,
+    "leaderCardConditionDesc": ""
+  },
+  "12300404": {
+    "id": 12300404,
+    "name": "skill_name_12300404",
+    "mod": "主动技能",
+    "description": "skill_description_12300404",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600235,
+    "leaderCardConditionDesc": ""
+  },
+  "12300407": {
+    "id": 12300407,
+    "name": "skill_name_12300407",
+    "mod": "主动技能",
+    "description": "skill_description_12300407",
+    "detailDescription": "skill_detailDescription_12300407",
+    "ExSkillList": [],
+    "cardID": 10600241,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300407"
+  },
+  "12300421": {
+    "id": 12300421,
+    "name": "skill_name_12300421",
+    "mod": "主动技能",
+    "description": "skill_description_12300421",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600251,
+    "leaderCardConditionDesc": ""
+  },
+  "12300433": {
+    "id": 12300433,
+    "name": "skill_name_12300433",
+    "mod": "主动技能",
+    "description": "skill_description_12300433",
+    "detailDescription": "skill_detailDescription_12300433",
+    "ExSkillList": [],
+    "cardID": 10600256,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300433"
+  },
+  "12300450": {
+    "id": 12300450,
+    "name": "skill_name_12300450",
+    "mod": "主动技能",
+    "description": "skill_description_12300450",
+    "detailDescription": "skill_detailDescription_12300450",
+    "ExSkillList": [],
+    "cardID": 10600255,
+    "leaderCardConditionDesc": ""
+  },
+  "12300592": {
+    "id": 12300592,
+    "name": "skill_name_12300592",
+    "mod": "主动技能",
+    "description": "skill_description_12300592",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600260,
+    "leaderCardConditionDesc": ""
+  },
+  "12300607": {
+    "id": 12300607,
+    "name": "skill_name_12300607",
+    "mod": "主动技能",
+    "description": "skill_description_12300607",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600303,
+    "leaderCardConditionDesc": ""
+  },
+  "12300608": {
+    "id": 12300608,
+    "name": "skill_name_12300608",
+    "mod": "主动技能",
+    "description": "skill_description_12300608",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600304,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300608"
+  },
+  "12300609": {
+    "id": 12300609,
+    "name": "skill_name_12300609",
+    "mod": "主动技能",
+    "description": "skill_description_12300609",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600305,
+    "leaderCardConditionDesc": ""
+  },
+  "12301037": {
+    "id": 12301037,
+    "name": "skill_name_12301037",
+    "mod": "主动技能",
+    "description": "skill_description_12301037",
+    "detailDescription": "skill_detailDescription_12301037",
+    "ExSkillList": [],
+    "cardID": 10600307,
+    "leaderCardConditionDesc": ""
+  },
+  "12301038": {
+    "id": 12301038,
+    "name": "skill_name_12301038",
+    "mod": "主动技能",
+    "description": "skill_description_12301038",
+    "detailDescription": "skill_detailDescription_12301038",
+    "ExSkillList": [],
+    "cardID": 10600308,
+    "leaderCardConditionDesc": ""
+  },
+  "12301039": {
+    "id": 12301039,
+    "name": "skill_name_12301039",
+    "mod": "主动技能",
+    "description": "skill_description_12301039",
+    "detailDescription": "skill_detailDescription_12301039",
+    "ExSkillList": [],
+    "cardID": 10600309,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301039"
+  },
+  "12301094": {
+    "id": 12301094,
+    "name": "skill_name_12301094",
+    "mod": "主动技能",
+    "description": "skill_description_12301094",
+    "detailDescription": "skill_detailDescription_12301094",
+    "ExSkillList": [],
+    "cardID": 10600310,
+    "leaderCardConditionDesc": ""
+  },
+  "12301095": {
+    "id": 12301095,
+    "name": "skill_name_12301095",
+    "mod": "主动技能",
+    "description": "skill_description_12301095",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600311,
+    "leaderCardConditionDesc": ""
+  },
+  "12301096": {
+    "id": 12301096,
+    "name": "skill_name_12301096",
+    "mod": "主动技能",
+    "description": "skill_description_12301096",
+    "detailDescription": "skill_detailDescription_12301096",
+    "ExSkillList": [],
+    "cardID": 10600312,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301096"
+  },
+  "12301104": {
+    "id": 12301104,
+    "name": "skill_name_12301104",
+    "mod": "主动技能",
+    "description": "skill_description_12301104",
+    "detailDescription": "skill_detailDescription_12301104",
+    "ExSkillList": [],
+    "cardID": 10600313,
+    "leaderCardConditionDesc": ""
+  },
+  "12301105": {
+    "id": 12301105,
+    "name": "skill_name_12301105",
+    "mod": "主动技能",
+    "description": "skill_description_12301105",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600314,
+    "leaderCardConditionDesc": ""
+  },
+  "12301106": {
+    "id": 12301106,
+    "name": "skill_name_12301106",
+    "mod": "主动技能",
+    "description": "skill_description_12301106",
+    "detailDescription": "skill_detailDescription_12301106",
+    "ExSkillList": [],
+    "cardID": 10600315,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301106"
+  },
+  "12301113": {
+    "id": 12301113,
+    "name": "skill_name_12301113",
+    "mod": "主动技能",
+    "description": "skill_description_12301113",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600316,
+    "leaderCardConditionDesc": ""
+  },
+  "12301114": {
+    "id": 12301114,
+    "name": "skill_name_12301114",
+    "mod": "主动技能",
+    "description": "skill_description_12301114",
+    "detailDescription": "skill_detailDescription_12301114",
+    "ExSkillList": [],
+    "cardID": 10600317,
+    "leaderCardConditionDesc": ""
+  },
+  "12301115": {
+    "id": 12301115,
+    "name": "skill_name_12301115",
+    "mod": "主动技能",
+    "description": "skill_description_12301115",
+    "detailDescription": "skill_detailDescription_12301115",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300748,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600318,
+    "leaderCardConditionDesc": ""
+  },
+  "12301116": {
+    "id": 12301116,
+    "name": "skill_name_12301116",
+    "mod": "主动技能",
+    "description": "skill_description_12301116",
+    "detailDescription": "skill_detailDescription_12301116",
+    "ExSkillList": [],
+    "cardID": 10600319,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301116"
+  },
+  "12300400": {
+    "id": 12300400,
+    "name": "skill_name_12300400",
+    "mod": "主动技能",
+    "description": "skill_description_12300400",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600321,
+    "leaderCardConditionDesc": ""
+  },
+  "12301125": {
+    "id": 12301125,
+    "name": "skill_name_12301125",
+    "mod": "主动技能",
+    "description": "skill_description_12301125",
+    "detailDescription": "skill_detailDescription_12301125",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300658,
+        "isNeturality": true
+      },
+      {
+        "ExSkillName": 12300750,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600168,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301125"
+  },
+  "12300545": {
+    "id": 12300545,
+    "name": "skill_name_12300545",
+    "mod": "主动技能",
+    "description": "skill_description_12300545",
+    "detailDescription": "skill_detailDescription_12300545",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300748,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600320,
+    "leaderCardConditionDesc": ""
+  },
+  "12301129": {
+    "id": 12301129,
+    "name": "skill_name_12301129",
+    "mod": "主动技能",
+    "description": "skill_description_12301129",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600326,
+    "leaderCardConditionDesc": ""
+  },
+  "12301130": {
+    "id": 12301130,
+    "name": "skill_name_12301130",
+    "mod": "主动技能",
+    "description": "skill_description_12301130",
+    "detailDescription": "skill_detailDescription_12301130",
+    "ExSkillList": [],
+    "cardID": 10600325,
+    "leaderCardConditionDesc": ""
+  },
+  "12301131": {
+    "id": 12301131,
+    "name": "skill_name_12301131",
+    "mod": "主动技能",
+    "description": "skill_description_12301131",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600324,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301131"
+  },
+  "12301122": {
+    "id": 12301122,
+    "name": "skill_name_12301122",
+    "mod": "主动技能",
+    "description": "skill_description_12301122",
+    "detailDescription": "skill_detailDescription_12301122",
+    "ExSkillList": [],
+    "cardID": 10600327,
+    "leaderCardConditionDesc": ""
+  },
+  "12301132": {
+    "id": 12301132,
+    "name": "skill_name_12301132",
+    "mod": "主动技能",
+    "description": "skill_description_12301132",
+    "detailDescription": "skill_detailDescription_12301132",
+    "ExSkillList": [],
+    "cardID": 10600328,
+    "leaderCardConditionDesc": ""
+  },
+  "12301133": {
+    "id": 12301133,
+    "name": "skill_name_12301133",
+    "mod": "主动技能",
+    "description": "skill_description_12301133",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600329,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301133"
+  },
+  "12301136": {
+    "id": 12301136,
+    "name": "skill_name_12301136",
+    "mod": "主动技能",
+    "description": "skill_description_12301136",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600289,
+    "leaderCardConditionDesc": ""
+  },
+  "12301137": {
+    "id": 12301137,
+    "name": "skill_name_12301137",
+    "mod": "主动技能",
+    "description": "skill_description_12301137",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600331,
+    "leaderCardConditionDesc": ""
+  },
+  "12301138": {
+    "id": 12301138,
+    "name": "skill_name_12301138",
+    "mod": "主动技能",
+    "description": "skill_description_12301138",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600332,
+    "leaderCardConditionDesc": ""
+  },
+  "12301139": {
+    "id": 12301139,
+    "name": "skill_name_12301139",
+    "mod": "主动技能",
+    "description": "skill_description_12301139",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600333,
+    "leaderCardConditionDesc": ""
+  },
+  "12301140": {
+    "id": 12301140,
+    "name": "skill_name_12301140",
+    "mod": "主动技能",
+    "description": "skill_description_12301140",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600334,
+    "leaderCardConditionDesc": ""
+  },
+  "12300451": {
+    "id": 12300451,
+    "name": "skill_name_12300451",
+    "mod": "主动技能",
+    "description": "skill_description_12300451",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12301150,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301151,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301152,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600330,
+    "leaderCardConditionDesc": ""
+  },
+  "12301148": {
+    "id": 12301148,
+    "name": "skill_name_12301148",
+    "mod": "主动技能",
+    "description": "skill_description_12301148",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600338,
+    "leaderCardConditionDesc": ""
+  },
+  "12301149": {
+    "id": 12301149,
+    "name": "skill_name_12301149",
+    "mod": "主动技能",
+    "description": "skill_description_12301149",
+    "detailDescription": "skill_detailDescription_12301149",
+    "ExSkillList": [],
+    "cardID": 10600339,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301149"
+  },
+  "12301150": {
+    "id": 12301150,
+    "name": "skill_name_12301150",
+    "mod": "主动技能",
+    "description": "skill_description_12301150",
+    "detailDescription": "skill_detailDescription_12301150",
+    "ExSkillList": [],
+    "cardID": 10600335,
+    "leaderCardConditionDesc": ""
+  },
+  "12301151": {
+    "id": 12301151,
+    "name": "skill_name_12301151",
+    "mod": "主动技能",
+    "description": "skill_description_12301151",
+    "detailDescription": "skill_detailDescription_12301151",
+    "ExSkillList": [],
+    "cardID": 10600336,
+    "leaderCardConditionDesc": ""
+  },
+  "12301152": {
+    "id": 12301152,
+    "name": "skill_name_12301152",
+    "mod": "主动技能",
+    "description": "skill_description_12301152",
+    "detailDescription": "skill_detailDescription_12301152",
+    "ExSkillList": [],
+    "cardID": 10600337,
+    "leaderCardConditionDesc": ""
+  },
+  "12300113": {
+    "id": 12300113,
+    "name": "skill_name_12300113",
+    "mod": "主动技能",
+    "description": "skill_description_12300113",
+    "detailDescription": "skill_detailDescription_12300113",
+    "ExSkillList": [],
+    "cardID": 10600102,
+    "leaderCardConditionDesc": ""
+  },
+  "12300119": {
+    "id": 12300119,
+    "name": "skill_name_12300119",
+    "mod": "主动技能",
+    "description": "skill_description_12300119",
+    "detailDescription": "skill_detailDescription_12300119",
+    "ExSkillList": [],
+    "cardID": 10600101,
+    "leaderCardConditionDesc": ""
+  },
+  "12301163": {
+    "id": 12301163,
+    "name": "skill_name_12301163",
+    "mod": "主动技能",
+    "description": "skill_description_12301163",
+    "detailDescription": "skill_detailDescription_12301163",
+    "ExSkillList": [],
+    "cardID": 10600100,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301163"
+  },
+  "12301194": {
+    "id": 12301194,
+    "name": "skill_name_12301194",
+    "mod": "主动技能",
+    "description": "skill_description_12301194",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600129,
+    "leaderCardConditionDesc": ""
+  },
+  "12301195": {
+    "id": 12301195,
+    "name": "skill_name_12301195",
+    "mod": "主动技能",
+    "description": "skill_description_12301195",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600112,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301195"
+  },
+  "12301201": {
+    "id": 12301201,
+    "name": "skill_name_12301201",
+    "mod": "主动技能",
+    "description": "skill_description_12301201",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600108,
+    "leaderCardConditionDesc": ""
+  },
+  "12301202": {
+    "id": 12301202,
+    "name": "skill_name_12301202",
+    "mod": "主动技能",
+    "description": "skill_description_12301202",
+    "detailDescription": "skill_detailDescription_12301202",
+    "ExSkillList": [],
+    "cardID": 10600111,
+    "leaderCardConditionDesc": ""
+  },
+  "12301203": {
+    "id": 12301203,
+    "name": "skill_name_12301203",
+    "mod": "主动技能",
+    "description": "skill_description_12301203",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600120,
+    "leaderCardConditionDesc": ""
+  },
+  "12300462": {
+    "id": 12300462,
+    "name": "skill_name_12300462",
+    "mod": "主动技能",
+    "description": "skill_description_12300462",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12301201,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301202,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301203,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600105,
+    "leaderCardConditionDesc": ""
+  },
+  "12301204": {
+    "id": 12301204,
+    "name": "skill_name_12301204",
+    "mod": "主动技能",
+    "description": "skill_description_12301204",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600146,
+    "leaderCardConditionDesc": ""
+  },
+  "12301207": {
+    "id": 12301207,
+    "name": "skill_name_12301207",
+    "mod": "主动技能",
+    "description": "skill_description_12301207",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301208": {
+    "id": 12301208,
+    "name": "skill_name_12301208",
+    "mod": "主动技能",
+    "description": "skill_description_12301208",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301209": {
+    "id": 12301209,
+    "name": "skill_name_12301209",
+    "mod": "主动技能",
+    "description": "skill_description_12301209",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301210": {
+    "id": 12301210,
+    "name": "skill_name_12301210",
+    "mod": "主动技能",
+    "description": "skill_description_12301210",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301211": {
+    "id": 12301211,
+    "name": "skill_name_12301211",
+    "mod": "主动技能",
+    "description": "skill_description_12301211",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301212": {
+    "id": 12301212,
+    "name": "skill_name_12301212",
+    "mod": "主动技能",
+    "description": "skill_description_12301212",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301213": {
+    "id": 12301213,
+    "name": "skill_name_12301213",
+    "mod": "主动技能",
+    "description": "skill_description_12301213",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301214": {
+    "id": 12301214,
+    "name": "skill_name_12301214",
+    "mod": "主动技能",
+    "description": "skill_description_12301214",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301215": {
+    "id": 12301215,
+    "name": "skill_name_12301215",
+    "mod": "主动技能",
+    "description": "skill_description_12301215",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301216": {
+    "id": 12301216,
+    "name": "skill_name_12301216",
+    "mod": "主动技能",
+    "description": "skill_description_12301216",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301217": {
+    "id": 12301217,
+    "name": "skill_name_12301217",
+    "mod": "主动技能",
+    "description": "skill_description_12301217",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301218": {
+    "id": 12301218,
+    "name": "skill_name_12301218",
+    "mod": "主动技能",
+    "description": "skill_description_12301218",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301219": {
+    "id": 12301219,
+    "name": "skill_name_12301219",
+    "mod": "主动技能",
+    "description": "skill_description_12301219",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301220": {
+    "id": 12301220,
+    "name": "skill_name_12301220",
+    "mod": "主动技能",
+    "description": "skill_description_12301220",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301221": {
+    "id": 12301221,
+    "name": "skill_name_12301221",
+    "mod": "主动技能",
+    "description": "skill_description_12301221",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301222": {
+    "id": 12301222,
+    "name": "skill_name_12301222",
+    "mod": "主动技能",
+    "description": "skill_description_12301222",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301223": {
+    "id": 12301223,
+    "name": "skill_name_12301223",
+    "mod": "主动技能",
+    "description": "skill_description_12301223",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301224": {
+    "id": 12301224,
+    "name": "skill_name_12301224",
+    "mod": "主动技能",
+    "description": "skill_description_12301224",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301225": {
+    "id": 12301225,
+    "name": "skill_name_12301225",
+    "mod": "主动技能",
+    "description": "skill_description_12301225",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301226": {
+    "id": 12301226,
+    "name": "skill_name_12301226",
+    "mod": "主动技能",
+    "description": "skill_description_12301226",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301227": {
+    "id": 12301227,
+    "name": "skill_name_12301227",
+    "mod": "主动技能",
+    "description": "skill_description_12301227",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301228": {
+    "id": 12301228,
+    "name": "skill_name_12301228",
+    "mod": "主动技能",
+    "description": "skill_description_12301228",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301229": {
+    "id": 12301229,
+    "name": "skill_name_12301229",
+    "mod": "主动技能",
+    "description": "skill_description_12301229",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301230": {
+    "id": 12301230,
+    "name": "skill_name_12301230",
+    "mod": "主动技能",
+    "description": "skill_description_12301230",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301231": {
+    "id": 12301231,
+    "name": "skill_name_12301231",
+    "mod": "主动技能",
+    "description": "skill_description_12301231",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301232": {
+    "id": 12301232,
+    "name": "skill_name_12301232",
+    "mod": "主动技能",
+    "description": "skill_description_12301232",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301233": {
+    "id": 12301233,
+    "name": "skill_name_12301233",
+    "mod": "主动技能",
+    "description": "skill_description_12301233",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301234": {
+    "id": 12301234,
+    "name": "skill_name_12301234",
+    "mod": "主动技能",
+    "description": "skill_description_12301234",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301235": {
+    "id": 12301235,
+    "name": "skill_name_12301235",
+    "mod": "主动技能",
+    "description": "skill_description_12301235",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301236": {
+    "id": 12301236,
+    "name": "skill_name_12301236",
+    "mod": "主动技能",
+    "description": "skill_description_12301236",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301237": {
+    "id": 12301237,
+    "name": "skill_name_12301237",
+    "mod": "主动技能",
+    "description": "skill_description_12301237",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301238": {
+    "id": 12301238,
+    "name": "skill_name_12301238",
+    "mod": "主动技能",
+    "description": "skill_description_12301238",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301239": {
+    "id": 12301239,
+    "name": "skill_name_12301239",
+    "mod": "主动技能",
+    "description": "skill_description_12301239",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": -1,
+    "leaderCardConditionDesc": ""
+  },
+  "12301243": {
+    "id": 12301243,
+    "name": "skill_name_12301243",
+    "mod": "主动技能",
+    "description": "skill_description_12301243",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600253,
+    "leaderCardConditionDesc": ""
+  },
+  "12301155": {
+    "id": 12301155,
+    "name": "skill_name_12301155",
+    "mod": "主动技能",
+    "description": "skill_description_12301155",
+    "detailDescription": "skill_detailDescription_12301155",
+    "ExSkillList": [],
+    "cardID": 10600148,
+    "leaderCardConditionDesc": ""
+  },
+  "12300147": {
+    "id": 12300147,
+    "name": "skill_name_12300147",
+    "mod": "主动技能",
+    "description": "skill_description_12300147",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600258,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300147"
+  },
+  "12301481": {
+    "id": 12301481,
+    "name": "skill_name_12301481",
+    "mod": "主动技能",
+    "description": "skill_description_12301481",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600276,
+    "leaderCardConditionDesc": ""
+  },
+  "12301492": {
+    "id": 12301492,
+    "name": "skill_name_12301492",
+    "mod": "主动技能",
+    "description": "skill_description_12301492",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600349,
+    "leaderCardConditionDesc": ""
+  },
+  "12301493": {
+    "id": 12301493,
+    "name": "skill_name_12301493",
+    "mod": "主动技能",
+    "description": "skill_description_12301493",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600350,
+    "leaderCardConditionDesc": ""
+  },
+  "12301494": {
+    "id": 12301494,
+    "name": "skill_name_12301494",
+    "mod": "主动技能",
+    "description": "skill_description_12301494",
+    "detailDescription": "skill_detailDescription_12301494",
+    "ExSkillList": [],
+    "cardID": 10600351,
+    "leaderCardConditionDesc": ""
+  },
+  "12301488": {
+    "id": 12301488,
+    "name": "skill_name_12301488",
+    "mod": "主动技能",
+    "description": "skill_description_12301488",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600352,
+    "leaderCardConditionDesc": ""
+  },
+  "12301496": {
+    "id": 12301496,
+    "name": "skill_name_12301496",
+    "mod": "主动技能",
+    "description": "skill_description_12301496",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12301492,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301493,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301494,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301488
+      }
+    ],
+    "cardID": 10600353,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301496"
+  },
+  "12301504": {
+    "id": 12301504,
+    "name": "skill_name_12301504",
+    "mod": "主动技能",
+    "description": "skill_description_12301504",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12301481,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301137,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301138,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301139,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301140,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600354,
+    "leaderCardConditionDesc": ""
+  },
+  "12300290": {
+    "id": 12300290,
+    "name": "skill_name_12300290",
+    "mod": "主动技能",
+    "description": "skill_description_12300290",
+    "detailDescription": "skill_detailDescription_12300290",
+    "ExSkillList": [],
+    "cardID": 10600130,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300290"
+  },
+  "12300352": {
+    "id": 12300352,
+    "name": "skill_name_12300352",
+    "mod": "主动技能",
+    "description": "skill_description_12300352",
+    "detailDescription": "skill_detailDescription_12300352",
+    "ExSkillList": [],
+    "cardID": 10600142,
+    "leaderCardConditionDesc": ""
+  },
+  "12300507": {
+    "id": 12300507,
+    "name": "skill_name_12300507",
+    "mod": "主动技能",
+    "description": "skill_description_12300507",
+    "detailDescription": "skill_detailDescription_12300507",
+    "ExSkillList": [],
+    "cardID": 10600357,
+    "leaderCardConditionDesc": ""
+  },
+  "12300818": {
+    "id": 12300818,
+    "name": "skill_name_12300818",
+    "mod": "主动技能",
+    "description": "skill_description_12300818",
+    "detailDescription": "skill_detailDescription_12300818",
+    "ExSkillList": [],
+    "cardID": 10600356,
+    "leaderCardConditionDesc": ""
+  },
+  "12300836": {
+    "id": 12300836,
+    "name": "skill_name_12300836",
+    "mod": "主动技能",
+    "description": "skill_description_12300836",
+    "detailDescription": "skill_detailDescription_12300836",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300668,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600355,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300836"
+  },
+  "12300148": {
+    "id": 12300148,
+    "name": "skill_name_12300148",
+    "mod": "主动技能",
+    "description": "skill_description_12300148",
+    "detailDescription": "skill_detailDescription_12300148",
+    "ExSkillList": [],
+    "cardID": 10600362,
+    "leaderCardConditionDesc": ""
+  },
+  "12300149": {
+    "id": 12300149,
+    "name": "skill_name_12300149",
+    "mod": "主动技能",
+    "description": "skill_description_12300149",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600359,
+    "leaderCardConditionDesc": ""
+  },
+  "12300150": {
+    "id": 12300150,
+    "name": "skill_name_12300150",
+    "mod": "主动技能",
+    "description": "skill_description_12300150",
+    "detailDescription": "skill_detailDescription_12300150",
+    "ExSkillList": [],
+    "cardID": 10600361,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300150"
+  },
+  "12300283": {
+    "id": 12300283,
+    "name": "skill_name_12300283",
+    "mod": "主动技能",
+    "description": "skill_description_12300283",
+    "detailDescription": "skill_detailDescription_12300283",
+    "ExSkillList": [],
+    "cardID": 10600363,
+    "leaderCardConditionDesc": ""
+  },
+  "12300411": {
+    "id": 12300411,
+    "name": "skill_name_12300411",
+    "mod": "主动技能",
+    "description": "skill_description_12300411",
+    "detailDescription": "skill_detailDescription_12300411",
+    "ExSkillList": [],
+    "cardID": 10600364,
+    "leaderCardConditionDesc": ""
+  },
+  "12300429": {
+    "id": 12300429,
+    "name": "skill_name_12300429",
+    "mod": "主动技能",
+    "description": "skill_description_12300429",
+    "detailDescription": "skill_detailDescription_12300429",
+    "ExSkillList": [],
+    "cardID": 10600360,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12300429"
+  },
+  "12301608": {
+    "id": 12301608,
+    "name": "skill_name_12301608",
+    "mod": "主动技能",
+    "description": "skill_description_12301608",
+    "detailDescription": "skill_detailDescription_12301608",
+    "ExSkillList": [],
+    "cardID": 10600366,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301608"
+  },
+  "12301615": {
+    "id": 12301615,
+    "name": "skill_name_12301615",
+    "mod": "主动技能",
+    "description": "skill_description_12301615",
+    "detailDescription": "skill_detailDescription_12301615",
+    "ExSkillList": [],
+    "cardID": 10600367,
+    "leaderCardConditionDesc": ""
+  },
+  "12300088": {
+    "id": 12300088,
+    "name": "skill_name_12300088",
+    "mod": "主动技能",
+    "description": "skill_description_12300088",
+    "detailDescription": "skill_detailDescription_12300088",
+    "ExSkillList": [],
+    "cardID": 10600368,
+    "leaderCardConditionDesc": ""
+  },
+  "12301609": {
+    "id": 12301609,
+    "name": "skill_name_12301609",
+    "mod": "主动技能",
+    "description": "skill_description_12301609",
+    "detailDescription": "skill_detailDescription_12301609",
+    "ExSkillList": [],
+    "cardID": 10600119,
+    "leaderCardConditionDesc": ""
+  },
+  "12301621": {
+    "id": 12301621,
+    "name": "skill_name_12301621",
+    "mod": "主动技能",
+    "description": "skill_description_12301621",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12301685,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300470,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600136,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301621"
+  },
+  "12301685": {
+    "id": 12301685,
+    "name": "skill_name_12301685",
+    "mod": "主动技能",
+    "description": "skill_description_12301685",
+    "detailDescription": "skill_detailDescription_12301685",
+    "ExSkillList": [],
+    "cardID": 10600086,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301685"
+  },
+  "12301687": {
+    "id": 12301687,
+    "name": "skill_name_12301687",
+    "mod": "主动技能",
+    "description": "skill_description_12301687",
+    "detailDescription": "skill_detailDescription_12301687",
+    "ExSkillList": [],
+    "cardID": 10600369,
+    "leaderCardConditionDesc": ""
+  },
+  "12301688": {
+    "id": 12301688,
+    "name": "skill_name_12301688",
+    "mod": "主动技能",
+    "description": "skill_description_12301688",
+    "detailDescription": "skill_detailDescription_12301688",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300420,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600365,
+    "leaderCardConditionDesc": ""
+  },
+  "12301690": {
+    "id": 12301690,
+    "name": "skill_name_12301690",
+    "mod": "主动技能",
+    "description": "skill_description_12301690",
+    "detailDescription": "skill_detailDescription_12301690",
+    "ExSkillList": [],
+    "cardID": 10600370,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301690"
+  },
+  "12300668": {
+    "id": 12300668,
+    "name": "skill_name_12300668",
+    "mod": "主动技能",
+    "description": "skill_description_12300668",
+    "detailDescription": "skill_detailDescription_12300668",
+    "ExSkillList": [],
+    "cardID": 10600358,
+    "leaderCardConditionDesc": ""
+  },
+  "12301716": {
+    "id": 12301716,
+    "name": "skill_name_12301716",
+    "mod": "主动技能",
+    "description": "skill_description_12301716",
+    "detailDescription": "skill_detailDescription_12301716",
+    "ExSkillList": [],
+    "cardID": 10600306,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301716"
+  },
+  "12301749": {
+    "id": 12301749,
+    "name": "skill_name_12301749",
+    "mod": "主动技能",
+    "description": "skill_description_12301749",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12301751,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301752,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301753
+      }
+    ],
+    "cardID": 10600071,
+    "leaderCardConditionDesc": ""
+  },
+  "12301750": {
+    "id": 12301750,
+    "name": "skill_name_12301750",
+    "mod": "主动技能",
+    "description": "skill_description_12301750",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600261,
+    "leaderCardConditionDesc": ""
+  },
+  "12301751": {
+    "id": 12301751,
+    "name": "skill_name_12301751",
+    "mod": "主动技能",
+    "description": "skill_description_12301751",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600083,
+    "leaderCardConditionDesc": ""
+  },
+  "12301752": {
+    "id": 12301752,
+    "name": "skill_name_12301752",
+    "mod": "主动技能",
+    "description": "skill_description_12301752",
+    "detailDescription": "skill_detailDescription_12301752",
+    "ExSkillList": [],
+    "cardID": 10600243,
+    "leaderCardConditionDesc": ""
+  },
+  "12301753": {
+    "id": 12301753,
+    "name": "skill_name_12301753",
+    "mod": "主动技能",
+    "description": "skill_description_12301753",
+    "detailDescription": "skill_detailDescription_12301753",
+    "ExSkillList": [],
+    "cardID": 10600246,
+    "leaderCardConditionDesc": ""
+  },
+  "12301756": {
+    "id": 12301756,
+    "name": "skill_name_12301756",
+    "mod": "主动技能",
+    "description": "skill_description_12301756",
+    "detailDescription": "skill_detailDescription_12301756",
+    "ExSkillList": [],
+    "cardID": 10600372,
+    "leaderCardConditionDesc": ""
+  },
+  "12301811": {
+    "id": 12301811,
+    "name": "skill_name_12301811",
+    "mod": "主动技能",
+    "description": "skill_description_12301811",
+    "detailDescription": "skill_detailDescription_12301811",
+    "ExSkillList": [],
+    "cardID": 10600373,
+    "leaderCardConditionDesc": ""
+  },
+  "12301834": {
+    "id": 12301834,
+    "name": "skill_name_12301834",
+    "mod": "主动技能",
+    "description": "skill_description_12301834",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600377,
+    "leaderCardConditionDesc": ""
+  },
+  "12301835": {
+    "id": 12301835,
+    "name": "skill_name_12301835",
+    "mod": "主动技能",
+    "description": "skill_description_12301835",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600380,
+    "leaderCardConditionDesc": ""
+  },
+  "12301836": {
+    "id": 12301836,
+    "name": "skill_name_12301836",
+    "mod": "主动技能",
+    "description": "skill_description_12301836",
+    "detailDescription": "skill_detailDescription_12301836",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12301837,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600381,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301836"
+  },
+  "12301837": {
+    "id": 12301837,
+    "name": "skill_name_12301837",
+    "mod": "主动技能",
+    "description": "skill_description_12301837",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600382,
+    "leaderCardConditionDesc": ""
+  },
+  "12301838": {
+    "id": 12301838,
+    "name": "skill_name_12301838",
+    "mod": "主动技能",
+    "description": "skill_description_12301838",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600378,
+    "leaderCardConditionDesc": ""
+  },
+  "12301840": {
+    "id": 12301840,
+    "name": "skill_name_12301840",
+    "mod": "主动技能",
+    "description": "skill_description_12301840",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600383,
+    "leaderCardConditionDesc": ""
+  },
+  "12301839": {
+    "id": 12301839,
+    "name": "skill_name_12301839",
+    "mod": "主动技能",
+    "description": "skill_description_12301839",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600379,
+    "leaderCardConditionDesc": ""
+  },
+  "12301841": {
+    "id": 12301841,
+    "name": "skill_name_12301841",
+    "mod": "主动技能",
+    "description": "skill_description_12301841",
+    "detailDescription": "skill_detailDescription_12301841",
+    "ExSkillList": [],
+    "cardID": 10600384,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301841"
+  },
+  "12301852": {
+    "id": 12301852,
+    "name": "skill_name_12301852",
+    "mod": "主动技能",
+    "description": "skill_description_12301852",
+    "detailDescription": "skill_detailDescription_12301852",
+    "ExSkillList": [],
+    "cardID": 10600385,
+    "leaderCardConditionDesc": ""
+  },
+  "12301853": {
+    "id": 12301853,
+    "name": "skill_name_12301853",
+    "mod": "主动技能",
+    "description": "skill_description_12301853",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600386,
+    "leaderCardConditionDesc": ""
+  },
+  "12301851": {
+    "id": 12301851,
+    "name": "skill_name_12301851",
+    "mod": "主动技能",
+    "description": "skill_description_12301851",
+    "detailDescription": "skill_detailDescription_12301851",
+    "ExSkillList": [],
+    "cardID": 10600385,
+    "leaderCardConditionDesc": ""
+  },
+  "12301850": {
+    "id": 12301850,
+    "name": "skill_name_12301850",
+    "mod": "主动技能",
+    "description": "skill_description_12301850",
+    "detailDescription": "skill_detailDescription_12301850",
+    "ExSkillList": [],
+    "cardID": 10600385,
+    "leaderCardConditionDesc": ""
+  },
+  "12301924": {
+    "id": 12301924,
+    "name": "skill_name_12301924",
+    "mod": "主动技能",
+    "description": "skill_description_12301924",
+    "detailDescription": "skill_detailDescription_12301924",
+    "ExSkillList": [],
+    "cardID": 10600387,
+    "leaderCardConditionDesc": ""
+  },
+  "12301925": {
+    "id": 12301925,
+    "name": "skill_name_12301925",
+    "mod": "主动技能",
+    "description": "skill_description_12301925",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600388,
+    "leaderCardConditionDesc": ""
+  },
+  "12301926": {
+    "id": 12301926,
+    "name": "skill_name_12301926",
+    "mod": "主动技能",
+    "description": "skill_description_12301926",
+    "detailDescription": "skill_detailDescription_12301926",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12301929,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301930,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12301931,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600376,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301926"
+  },
+  "12301929": {
+    "id": 12301929,
+    "name": "skill_name_12301929",
+    "mod": "主动技能",
+    "description": "skill_description_12301929",
+    "detailDescription": "skill_detailDescription_12301929",
+    "ExSkillList": [],
+    "cardID": 10600389,
+    "leaderCardConditionDesc": ""
+  },
+  "12301930": {
+    "id": 12301930,
+    "name": "skill_name_12301930",
+    "mod": "主动技能",
+    "description": "skill_description_12301930",
+    "detailDescription": "skill_detailDescription_12301930",
+    "ExSkillList": [],
+    "cardID": 10600390,
+    "leaderCardConditionDesc": ""
+  },
+  "12301931": {
+    "id": 12301931,
+    "name": "skill_name_12301931",
+    "mod": "主动技能",
+    "description": "skill_description_12301931",
+    "detailDescription": "skill_detailDescription_12301931",
+    "ExSkillList": [],
+    "cardID": 10600391,
+    "leaderCardConditionDesc": ""
+  },
+  "12301934": {
+    "id": 12301934,
+    "name": "skill_name_12301934",
+    "mod": "主动技能",
+    "description": "skill_description_12301934",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600394,
+    "leaderCardConditionDesc": ""
+  },
+  "12301935": {
+    "id": 12301935,
+    "name": "skill_name_12301935",
+    "mod": "主动技能",
+    "description": "skill_description_12301935",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600393,
+    "leaderCardConditionDesc": ""
+  },
+  "12301936": {
+    "id": 12301936,
+    "name": "skill_name_12301936",
+    "mod": "主动技能",
+    "description": "skill_description_12301936",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600392,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301936"
+  },
+  "12301939": {
+    "id": 12301939,
+    "name": "skill_name_12301939",
+    "mod": "主动技能",
+    "description": "skill_description_12301939",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600394,
+    "leaderCardConditionDesc": ""
+  },
+  "12301944": {
+    "id": 12301944,
+    "name": "skill_name_12301944",
+    "mod": "主动技能",
+    "description": "skill_description_12301944",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600393,
+    "leaderCardConditionDesc": ""
+  },
+  "12301955": {
+    "id": 12301955,
+    "name": "skill_name_12301955",
+    "mod": "主动技能",
+    "description": "skill_description_12301955",
+    "detailDescription": "skill_detailDescription_12301955",
+    "ExSkillList": [],
+    "cardID": 10600395,
+    "leaderCardConditionDesc": ""
+  },
+  "12301960": {
+    "id": 12301960,
+    "name": "skill_name_12301960",
+    "mod": "主动技能",
+    "description": "skill_description_12301960",
+    "detailDescription": "skill_detailDescription_12301960",
+    "ExSkillList": [],
+    "cardID": 10600402,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301960"
+  },
+  "12301862": {
+    "id": 12301862,
+    "name": "skill_name_12301862",
+    "mod": "主动技能",
+    "description": "skill_description_12301862",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600323,
+    "leaderCardConditionDesc": ""
+  },
+  "12301863": {
+    "id": 12301863,
+    "name": "skill_name_12301863",
+    "mod": "主动技能",
+    "description": "skill_description_12301863",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600322,
+    "leaderCardConditionDesc": ""
+  },
+  "12301961": {
+    "id": 12301961,
+    "name": "skill_name_12301961",
+    "mod": "主动技能",
+    "description": "skill_description_12301961",
+    "detailDescription": "skill_detailDescription_12301961",
+    "ExSkillList": [],
+    "cardID": 10600001,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12301961"
+  },
+  "12301990": {
+    "id": 12301990,
+    "name": "skill_name_12301990",
+    "mod": "主动技能",
+    "description": "skill_description_12301990",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600012,
+    "leaderCardConditionDesc": ""
+  },
+  "12302000": {
+    "id": 12302000,
+    "name": "skill_name_12302000",
+    "mod": "主动技能",
+    "description": "将【贯筒】抵住敌方射击\\n对敌方目标造成1段伤害并<color=#FF6666>【崩坏】</color>",
+    "detailDescription": "skill_detailDescription_12302000",
+    "ExSkillList": [],
+    "cardID": 10600397,
+    "leaderCardConditionDesc": ""
+  },
+  "12302001": {
+    "id": 12302001,
+    "name": "skill_name_12302001",
+    "mod": "主动技能",
+    "description": "蓄力增压，使下1张【贯筒射击】或【爆裂射击】造成的伤害提高#r，可叠加",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600398,
+    "leaderCardConditionDesc": ""
+  },
+  "12302002": {
+    "id": 12302002,
+    "name": "skill_name_12302002",
+    "mod": "主动技能",
+    "description": "将【贯筒】刺入敌方体内爆裂射击\\n对敌方目标造成5段伤害并<color=#FF6666>【斩裂】</color>",
+    "detailDescription": "伤害：每段1600%（物理）",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12302003
+      }
+    ],
+    "cardID": 10600400,
+    "leaderCardConditionDesc": "冷却时间30秒，每次使用红卡/绿卡/紫卡，冷却缩短5秒"
+  },
+  "12302003": {
+    "id": 12302003,
+    "name": "skill_name_12302003",
+    "mod": "主动技能",
+    "description": "注射【黑色药剂】，对敌方全体造成1段伤害，无视防御\\n每秒移除自身#r生命值，持续#r秒\\n持续期间，全面强化自身\\n造成的最终伤害提高#r\\n受到的最终伤害降低#r\\n使用后【销毁】",
+    "detailDescription": "伤害：16000%（混响）",
+    "ExSkillList": [],
+    "cardID": 10600399,
+    "leaderCardConditionDesc": ""
+  },
+  "12302005": {
+    "id": 12302005,
+    "name": "skill_name_12302005",
+    "mod": "主动技能",
+    "description": "制造磁力阱，持续#r秒\\n触发时使范围内敌方目标触发#r次【麻痹】\\n持续期间，使我方后排造成的<color=#FFB800>【引雷】</color>概率+#r",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600403,
+    "leaderCardConditionDesc": ""
+  },
+  "12302008": {
+    "id": 12302008,
+    "name": "skill_name_12302008",
+    "mod": "主动技能",
+    "description": "使用下#r张带有<color=#FFB800>【引雷】</color>词条的红卡/橙卡后，立刻从牌库或弃牌区将#r张带有<color=#FFB800>【引雷】</color>词条的卡牌加入手牌，\\n随后使我方带有<color=#FFB800>【引雷】</color>词条的红卡/橙卡造成的伤害提高#r，有效1次",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600404,
+    "leaderCardConditionDesc": ""
+  },
+  "12302038": {
+    "id": 12302038,
+    "name": "skill_name_12302038",
+    "mod": "主动技能",
+    "description": "制造#r个强大的蓄电磁场，持续#r秒\\n持续期间：\\n全场不论敌我每造成#r次<color=#FFB800>【引雷】</color>，蓄电磁场的【伏特值】+#r\\n每积累一万【伏特值】，释放#r次磁力巨浪，对敌方全体造成#r段伤害，同时使我方全体回复#r生命值\\n【伏特值】将被持续积累，不会衰减\\n磁力巨浪为【波】",
+    "detailDescription": "skill_detailDescription_12302038",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12302039,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12302040,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600405,
+    "leaderCardConditionDesc": "冷却时间30秒，每次获得带有<color=#FFB800>【引雷】</color>/<color=#FFB800>【落雷】</color>/<color=#FFB800>【轰雷】</color>/<color=#FFB800>【轰顶】</color>词条的卡牌，缩短5秒"
+  },
+  "12302039": {
+    "id": 12302039,
+    "name": "skill_name_12302039",
+    "mod": "主动技能",
+    "description": "释放十万伏特，对敌方全体造成#r段伤害，同时有#r概率触发<color=#FFB800>【轰雷】</color>\\n使用后，使我方所有带有<color=#FFB800>【引雷】</color>词条的卡牌造成伤害提高2%，可叠加\\n使用后【销毁】",
+    "detailDescription": "伤害：1200%（电磁）×10",
+    "ExSkillList": [],
+    "cardID": 10600406,
+    "leaderCardConditionDesc": ""
+  },
+  "12302040": {
+    "id": 12302040,
+    "name": "skill_name_12302040",
+    "mod": "主动技能",
+    "description": "释放百万伏特，对敌方全体造成#r段伤害，同时有#r概率触发<color=#FFB800>【轰顶】</color>\\n使用后，立刻从牌库或弃牌区将张#r张带有<color=#FFB800>【引雷】</color>词条的卡牌加入手牌，且能超出手牌上限\\n使用后【销毁】",
+    "detailDescription": "伤害：12000%（电磁）×10",
+    "ExSkillList": [],
+    "cardID": 10600407,
+    "leaderCardConditionDesc": ""
+  },
+  "12302070": {
+    "id": 12302070,
+    "name": "skill_name_12302070",
+    "mod": "主动技能",
+    "description": "发射#r枚金子火箭飞拳，每枚对随机敌方目标造成#r段伤害，同时触发<color=#FFB800>【引雷】</color>\\n消耗所持有的【金币】额外发射等量的手指飞弹，每枚对随机敌方目标造成#r段伤害，同时触发<color=#FFB800>【引雷】</color>\\n【手指飞弹】为【爆炸物】",
+    "detailDescription": "伤害：1500%（电磁），1000%（电磁）",
+    "ExSkillList": [],
+    "cardID": 10600409,
+    "leaderCardConditionDesc": "冷却时间25秒，每次使用带有<color=#FFB800>【引雷】</color>/<color=#FFB800>【落雷】</color>/<color=#FFB800>【轰雷】</color>/<color=#FFB800>【轰顶】</color>词条的卡牌，缩短5秒"
+  },
+  "12302050": {
+    "id": 12302050,
+    "name": "skill_name_12302050",
+    "mod": "主动技能",
+    "description": "从牌库将#r张【金币电磁炮】加入手牌\\n掏出大喇叭喊话，对敌方全体造成#r段伤害，同时触发<color=#FFB800>【引雷】</color>\\n若【掘金二号】在场时，令【掘金二号】触发<color=#FF6666>【狂暴】</color>",
+    "detailDescription": "skill_detailDescription_12302050",
+    "ExSkillList": [],
+    "cardID": 10600411,
+    "leaderCardConditionDesc": ""
+  },
+  "12302085": {
+    "id": 12302085,
+    "name": "skill_name_12302085",
+    "mod": "主动技能",
+    "description": "对敌方目标造成#r段伤害并<color=#FF6666>【穿透】</color>\\n同时触发<color=#FFB800>【引雷】</color>\\n获得#r枚【金币】",
+    "detailDescription": "skill_detailDescription_12302085",
+    "ExSkillList": [],
+    "cardID": 10600408,
+    "leaderCardConditionDesc": ""
+  },
+  "12302059": {
+    "id": 12302059,
+    "name": "skill_name_12302059",
+    "mod": "主动技能",
+    "description": "以娴熟的双枪射击，对敌方目标造成#r段伤害\\n同时每段伤害有10%概率触发<color=#FF6666>【点燃】</color>",
+    "detailDescription": "skill_detailDescription_12302059",
+    "ExSkillList": [],
+    "cardID": 10600413,
+    "leaderCardConditionDesc": ""
+  },
+  "12302083": {
+    "id": 12302083,
+    "name": "skill_name_12302083",
+    "mod": "主动技能",
+    "description": "瞬步至敌方面前，对敌方目标造成3段伤害\\n随后，对目标踢出强有力的一击造成1段伤害并使敌方目标攻击力和防御力下降#r，上限30%\\n同时触发<color=#FF6666>【击晕】</color>/<color=#FF6666>【重伤】</color>/<color=#FF6666>【斩裂】</color>",
+    "detailDescription": "伤害：700%（物理）×3；3500%（物理）×1",
+    "ExSkillList": [],
+    "cardID": 10600414,
+    "leaderCardConditionDesc": ""
+  },
+  "12302084": {
+    "id": 12302084,
+    "name": "skill_name_12302084",
+    "mod": "主动技能",
+    "description": "枪刃乱舞，对敌方全体造成12段伤害并<color=#FF6666>【撕裂】</color>\\n同时触发<color=#FF6666>【燎原】</color>",
+    "detailDescription": "伤害：700%（物理）×11；3500%（物理）×1",
+    "ExSkillList": [],
+    "cardID": 10600415,
+    "leaderCardConditionDesc": "冷却时间30秒，每次获得红卡/绿卡/紫卡，冷却缩短5秒"
+  },
+  "12302106": {
+    "id": 12302106,
+    "name": "skill_name_12302106",
+    "mod": "主动技能",
+    "description": "召唤【昴宿七】，持续#r秒，持续期间：\\n使用红卡时，释放微波脉冲，对敌方目标造成1段伤害，同时触发<color=#FF6666>【点燃】</color>\\n使用黄卡时，释放电磁脉冲，对敌方目标造成1段伤害，同时触发<color=#FFB800>【落雷】</color>\\n【昴宿七】为【机械单位】\\n微波脉冲/电磁脉冲为【波】\\n使用后，生成1张黑卡【负能】加入牌库底",
+    "detailDescription": "伤害：微波脉冲1000%（物理）；电磁脉冲1000%（电磁）",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300470,
+        "isNeturality": true
+      },
+      {
+        "ExSkillName": 12300726,
+        "isNeturality": true
+      },
+      {
+        "ExSkillName": 12300752,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600418,
+    "leaderCardConditionDesc": ""
+  },
+  "12302107": {
+    "id": 12302107,
+    "name": "skill_name_12302107",
+    "mod": "主动技能",
+    "description": "拨号，从0～9随机\\n若是2/3/4/5/6/7/8，则对应每秒回复0.2/0.3/0.4/0.5/0.6/0.7/0.8点费用，持续#r秒\\n若是0，则立刻激活【弃牌】指令\\n若是1，则将当前手牌中费用最高的1张卡牌费用变为1\\n若是9，则立刻激活【队长技】",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600417,
+    "leaderCardConditionDesc": ""
+  },
+  "12302108": {
+    "id": 12302108,
+    "name": "skill_name_12302108",
+    "mod": "主动技能",
+    "description": "冥想，形成环境【潮汐秘境】\\n【潮汐秘境】回费速度提高#r，持续#r秒",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600416,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12302108"
+  },
+  "12302124": {
+    "id": 12302124,
+    "name": "skill_name_12302124",
+    "mod": "主动技能",
+    "description": "召唤【昴宿七】，持续#r秒，持续期间：\\n使用红卡时，释放微波脉冲，对敌方目标造成1段伤害，同时触发<color=#FF6666>【点燃】</color>\\n使用黄卡时，释放电磁脉冲，对敌方目标造成1段伤害，同时触发<color=#FFB800>【落雷】</color>\\n使用紫卡时，释放中微子脉冲，对敌方目标造成1段伤害，同时触发<color=#FF6666>【蚀灭】</color>\\n【昴宿七】为【机械单位】\\n微波脉冲/电磁脉冲/中微子脉冲为【波】\\n使用后，生成1张黑卡【负能】加入牌库底",
+    "detailDescription": "伤害：微波脉冲1000%（物理）；电磁脉冲1000%（电磁）；中微子脉冲1000%（负能）",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300470,
+        "isNeturality": true
+      },
+      {
+        "ExSkillName": 12300726,
+        "isNeturality": true
+      },
+      {
+        "ExSkillName": 12300752,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600419,
+    "leaderCardConditionDesc": ""
+  },
+  "12301975": {
+    "id": 12301975,
+    "name": "skill_name_12301975",
+    "mod": "主动技能",
+    "description": "从牌库将#r张【金币电磁炮】加入手牌\\n掏出大喇叭喊话，对敌方全体造成#r段伤害，同时触发<color=#FFB800>【引雷】</color>\\n若【掘金二号】在场时，令【掘金二号】触发<color=#FF6666>【狂暴】</color>并立即释放得意技能",
+    "detailDescription": "skill_detailDescription_12301975",
+    "ExSkillList": [],
+    "cardID": 10600411,
+    "leaderCardConditionDesc": ""
+  },
+  "12302185": {
+    "id": 12302185,
+    "name": "skill_name_12302185",
+    "mod": "主动技能",
+    "description": "挥舞【裂穹】，对敌方目标造成1段伤害并<color=#FF6666>【斩裂】</color>1~3次",
+    "detailDescription": "skill_detailDescription_12302185",
+    "ExSkillList": [],
+    "cardID": 10600430,
+    "leaderCardConditionDesc": ""
+  },
+  "12302186": {
+    "id": 12302186,
+    "name": "skill_name_12302186",
+    "mod": "主动技能",
+    "description": "展开【<color=#FF6666>裂蚀</color>法界】持续#r秒，持续期间：\\n我方造成<color=#FF6666>【斩裂】</color>时，同时触发<color=#FF6666>【蚀灭】</color>\\n使用后，生成1张黑卡【负能】加入牌库底",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600396,
+    "leaderCardConditionDesc": ""
+  },
+  "12302187": {
+    "id": 12302187,
+    "name": "skill_name_12302187",
+    "mod": "主动技能",
+    "description": "同时挥动所有【裂穹】，释放8道裂穹波后全身突进终结斩击，对敌方全体造成9段伤害并<color=#FF6666>【斩裂】</color>\\n裂穹波为【波】",
+    "detailDescription": "伤害：1500%（混响）；3000%（混响）",
+    "ExSkillList": [],
+    "cardID": 10600429,
+    "leaderCardConditionDesc": "冷却时间50秒，每次获得红卡/黄卡/紫卡或使用带有<color=#FF6666>【斩裂】</color>词条的卡牌，冷却缩短5秒；每次生成黑卡，冷却缩短5秒"
+  },
+  "12302192": {
+    "id": 12302192,
+    "name": "skill_name_12302192",
+    "mod": "主动技能",
+    "description": "挥舞【裂穹】，对敌方目标造成1段伤害并<color=#FF6666>【斩裂】</color>1~3次\\n同时随机触发<color=#B383FF>【禁锢】</color>/<color=#B383FF>【枷锁】</color>",
+    "detailDescription": "skill_detailDescription_12302192",
+    "ExSkillList": [],
+    "cardID": 10600431,
+    "leaderCardConditionDesc": ""
+  },
+  "12302204": {
+    "id": 12302204,
+    "name": "skill_name_12302204",
+    "mod": "主动技能",
+    "description": "skill_description_12302204",
+    "detailDescription": "skill_detailDescription_12302204",
+    "ExSkillList": [],
+    "cardID": 10600432,
+    "leaderCardConditionDesc": ""
+  },
+  "12302209": {
+    "id": 12302209,
+    "name": "skill_name_12302209",
+    "mod": "主动技能",
+    "description": "召唤【真理之眼】，持续8秒，持续期间：\\n每次有卡牌生成时，发射1道光束，对敌方全体造成1段伤害并<color=#FF6666>【蚀灭】</color>\\n使用后，生成1张黑卡【负能】加入牌库底",
+    "detailDescription": "伤害：2000%（混响）",
+    "ExSkillList": [],
+    "cardID": 10600433,
+    "leaderCardConditionDesc": ""
+  },
+  "12302214": {
+    "id": 12302214,
+    "name": "skill_name_12302214",
+    "mod": "主动技能",
+    "description": "抽1张牌，优先黑卡\\n释放黑狱射线，对敌方全体造成7段伤害并<color=#FF6666>【蚀灭】</color>\\n手牌中每有1张黑卡/非黑卡，造成的伤害提高30%/10%\\n使用后，丢弃手牌中所有黑卡",
+    "detailDescription": "伤害：2000%（混响）",
+    "ExSkillList": [],
+    "cardID": 10600434,
+    "leaderCardConditionDesc": "冷却时间35秒，每次有卡牌生成时，冷却缩短5秒"
+  },
+  "12302215": {
+    "id": 12302215,
+    "name": "skill_name_12302215",
+    "mod": "主动技能",
+    "description": "抽打，对前方范围内敌人造成4段伤害并<color=#B383FF>【诅咒】</color>\\n使用后，生成1张【圣痕】加入手牌",
+    "detailDescription": "skill_detailDescription_12302215",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12302331,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600436,
+    "leaderCardConditionDesc": ""
+  },
+  "12302244": {
+    "id": 12302244,
+    "name": "skill_name_12302244",
+    "mod": "主动技能",
+    "description": "skill_description_12302244",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300924,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300925,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300928,
+        "isNeturality": false
+      },
+      {
+        "ExSkillName": 12300946,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600438,
+    "leaderCardConditionDesc": ""
+  },
+  "12302331": {
+    "id": 12302331,
+    "name": "skill_name_12302331",
+    "mod": "主动技能",
+    "description": "使敌方目标触发【圣痕】，持续6秒\\n持续期间，目标每次受到伤害，圣痕会叠加1层【苦痛】效果，每层【苦痛】使目标受到的伤害增加2%，叠加至12层时触发【圣痕崩解】，对敌方目标造成1段伤害，同时移除所有【苦痛】层数\\n【圣痕崩解】为【波】\\n使用后【销毁】",
+    "detailDescription": "skill_detailDescription_12302331",
+    "ExSkillList": [],
+    "cardID": 10600412,
+    "leaderCardConditionDesc": ""
+  },
+  "12302341": {
+    "id": 12302341,
+    "name": "skill_name_12302341",
+    "mod": "主动技能",
+    "description": "将所有手牌洗入牌库\\n基于记录中的费用修正当前费用\\n基于记录的手牌数量抽取等量的牌\\n基于记录的生命值回复我方生命值\\n使我方全体攻击力和防御力+3%，可叠加\\n使用后【销毁】",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600437,
+    "leaderCardConditionDesc": ""
+  },
+  "12302946": {
+    "id": 12302946,
+    "name": "skill_name_12302946",
+    "mod": "主动技能",
+    "description": "投掷#r枚【黏胶炸弹】附着随机敌方，持续#r秒\\n持续期间，每秒对敌方目标造成#r段伤害并有#r概率<color=#FF6666>【打断】</color>\\n【黏胶炸弹】为【爆炸物】",
+    "detailDescription": "伤害：800%（物理）",
+    "ExSkillList": [],
+    "cardID": 10600439,
+    "leaderCardConditionDesc": ""
+  },
+  "12302947": {
+    "id": 12302947,
+    "name": "skill_name_12302947",
+    "mod": "主动技能",
+    "description": "投掷#r枚<color=#B383FF>致幻</color>瓦斯，使范围内敌方【精力值】下降#r并<color=#B383FF>【致幻】</color>\\n【<color=#B383FF>致幻</color>瓦斯】为【爆炸物】",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600425,
+    "leaderCardConditionDesc": ""
+  },
+  "12302948": {
+    "id": 12302948,
+    "name": "skill_name_12302948",
+    "mod": "主动技能",
+    "description": "呼叫3只【机械狼】登场作战，进行【普通攻击】支援，持续10秒后回收\\n持续期间：\\n每次使用红卡或有红卡丢弃入弃牌区时，【机械狼】发射1枚【狼牙导弹】，对敌方造成1段伤害，同时触发<color=#FFB800>【引雷】</color>\\n每次使用蓝卡或有蓝卡丢弃入弃牌区时，【机械狼】发射1枚【治疗弹】，治疗生命值最低的我方，回复其6%生命值\\n【狼牙导弹】为【爆炸物】\\n【机械狼】为【机械单位】",
+    "detailDescription": "伤害：1000%（物理）",
+    "ExSkillList": [],
+    "cardID": 10600422,
+    "leaderCardConditionDesc": "冷却时间30秒，每次获得带有【爆炸物】/【机械单位】词条的卡牌，冷却缩短3秒"
+  },
+  "12302957": {
+    "id": 12302957,
+    "name": "skill_name_12302957",
+    "mod": "主动技能",
+    "description": "投掷#r枚【黏胶炸弹】附着随机敌方，持续#r秒\\n持续期间，每秒对敌方目标造成#r段伤害并有#r概率随机触发<color=#FF6666>【打断】</color>/<color=#FF6666>【击晕】</color>/<color=#FF6666>【点燃】</color>\\n【黏胶炸弹】为【爆炸物】",
+    "detailDescription": "伤害：800%（物理）",
+    "ExSkillList": [],
+    "cardID": 10600428,
+    "leaderCardConditionDesc": ""
+  },
+  "12302336": {
+    "id": 12302336,
+    "name": "茶时法则",
+    "mod": "主动技能",
+    "description": "抽1张牌，基于抽到卡牌的费用，立刻获得等量时间自然回复的费用",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600442,
+    "leaderCardConditionDesc": ""
+  },
+  "12302337": {
+    "id": 12302337,
+    "name": "拭尘契约",
+    "mod": "主动技能",
+    "description": "在目标队友身前召唤使魔【彗尾姬】，【彗尾姬】不会被敌方攻击\\n【彗尾姬】吸收目标队友受到伤害的20%，每5秒触发1次，使目标<color=#7AB2FF>【净化】</color>并反弹5秒内吸收的伤害\\n【彗尾姬】的攻击力等于奥莉薇恩的攻击力\\n【彗尾姬】为【使魔】，协同冰冻属性【普通攻击】\\n此卡只对1名我方生效，下次使用切换目标时，【彗尾姬】跟随至新目标\\n若对同1目标重复使用时：\\n【彗尾姬】获得强化，额外吸收目标队友受到伤害的20%，持续15秒",
+    "detailDescription": "伤害：【彗尾姬】200%（冰冻）；",
+    "ExSkillList": [],
+    "cardID": 10600443,
+    "leaderCardConditionDesc": ""
+  },
+  "12303020": {
+    "id": 12303020,
+    "name": "鎏晶茶仪",
+    "mod": "主动技能",
+    "description": "召唤使魔【茶晶龙】，使敌方全体<color=#B383FF>【晶化】</color>，持续10秒\\n持续期间：\\n【茶晶龙】每秒对敌方全体造成2段随机火焰/冰冻伤害\\n目标每次受到火焰/冰冻伤害时，叠加【热应力】/【冷缩力】层数\\n目标每叠加4层【热应力】和【冷缩力】时，身上生成1枚【晶簇】\\n每枚【晶簇】使目标有5%概率受到伤害加倍，上限6枚\\n持续时间结束后【晶簇爆裂】，每枚【晶簇】对范围内敌方造成1段随机火焰/冰冻伤害\\n【茶晶龙】为【使魔】\\n【茶晶龙】的攻击力等于奥莉薇恩的攻击力",
+    "detailDescription": "伤害：【茶晶龙】500%（火焰/冰冻）；",
+    "ExSkillList": [],
+    "cardID": 10600444,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12303020"
+  },
+  "12303021": {
+    "id": 12303021,
+    "name": "skill_name_12303021",
+    "mod": "主动技能",
+    "description": "skill_description_12303021",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600441,
+    "leaderCardConditionDesc": ""
+  },
+  "12303015": {
+    "id": 12303015,
+    "name": "茶时法则",
+    "mod": "主动技能",
+    "description": "抽1张牌，优先带有【使魔】词条的卡牌，基于抽到卡牌的费用，立刻获得等量时间自然回复的费用\\n同时使下1只带有持续时间限制的【使魔】持续时间延长等量时间",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600445,
+    "leaderCardConditionDesc": ""
+  },
+  "12303055": {
+    "id": 12303055,
+    "name": "skill_name_12303055",
+    "mod": "主动技能",
+    "description": "skill_description_12303055",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600338,
+    "leaderCardConditionDesc": ""
+  },
+  "12303056": {
+    "id": 12303056,
+    "name": "skill_name_12303056",
+    "mod": "主动技能",
+    "description": "skill_description_12303056",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600251,
+    "leaderCardConditionDesc": ""
+  },
+  "12303057": {
+    "id": 12303057,
+    "name": "skill_name_12303057",
+    "mod": "主动技能",
+    "description": "skill_description_12303057",
+    "detailDescription": "skill_detailDescription_12303057",
+    "ExSkillList": [],
+    "cardID": 10600255,
+    "leaderCardConditionDesc": ""
+  },
+  "12303058": {
+    "id": 12303058,
+    "name": "skill_name_12303058",
+    "mod": "主动技能",
+    "description": "skill_description_12303058",
+    "detailDescription": "skill_detailDescription_12303058",
+    "ExSkillList": [],
+    "cardID": 10600256,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12303058"
+  },
+  "12303059": {
+    "id": 12303059,
+    "name": "skill_name_12303059",
+    "mod": "主动技能",
+    "description": "skill_description_12303059",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600006,
+    "leaderCardConditionDesc": ""
+  },
+  "12303060": {
+    "id": 12303060,
+    "name": "skill_name_12303060",
+    "mod": "主动技能",
+    "description": "skill_description_12303060",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600025,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12303060"
+  },
+  "12303061": {
+    "id": 12303061,
+    "name": "skill_name_12303061",
+    "mod": "主动技能",
+    "description": "skill_description_12303061",
+    "detailDescription": "skill_detailDescription_12303061",
+    "ExSkillList": [],
+    "cardID": 10600375,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12303061"
+  },
+  "12303062": {
+    "id": 12303062,
+    "name": "skill_name_12303062",
+    "mod": "主动技能",
+    "description": "skill_description_12303062",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600260,
+    "leaderCardConditionDesc": ""
+  },
+  "12303070": {
+    "id": 12303070,
+    "name": "崩裂",
+    "mod": "主动技能",
+    "description": "挥舞流星锤对范围内敌方造成1段伤害并<color=#FF6666>【击晕】</color>/<color=#FF6666>【崩坏】</color>，同时触发<color=#7AB2FF>【冻结】</color>\\n同时目标身上每存在1个<color=#FF6666>【重伤】</color>/<color=#B383FF>【混乱】</color>/<color=#FF6666>【灼心】</color>/【注视】，额外造成1段伤害",
+    "detailDescription": "伤害：2500%（冰冻）；额外500%（冰冻）",
+    "ExSkillList": [],
+    "cardID": 10600447,
+    "leaderCardConditionDesc": ""
+  },
+  "12303071": {
+    "id": 12303071,
+    "name": "注视",
+    "mod": "主动技能",
+    "description": "召唤使魔【瞵鸦】紧盯敌方目标\\n持续期间，每6秒对目标施加1层<color=#B383FF>【注视】</color>\\n【瞵鸦】为【使魔】，协同冰冻属性【普通攻击】并为涟吸收伤害\\n【瞵鸦】的攻击力等于涟的攻击力，生命值等于涟生命值的25%",
+    "detailDescription": "伤害：【瞵鸦】200%（冰冻）；",
+    "ExSkillList": [],
+    "cardID": 10600448,
+    "leaderCardConditionDesc": ""
+  },
+  "12303072": {
+    "id": 12303072,
+    "name": "虚影视界",
+    "mod": "主动技能",
+    "description": "展开【虚影视界】，持续5秒\\n持续期间：\\n使除自身外随机1名我方<color=#7AB2FF>【隐形】</color>\\n每秒丢弃1张手牌并从牌库或弃牌区将1张【崩裂】加入手牌\\n每秒对随机目标施加1层【注视】",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600449,
+    "leaderCardConditionDesc": "冷却时间30秒，每次使用带有<color=#FF6666>【崩坏】</color>/<color=#FF6666>【重伤】</color>/<color=#B383FF>【混乱】</color>/<color=#FF6666>【灼心】</color>/【注视】词条的卡牌，冷却缩短5秒"
+  },
+  "12303050": {
+    "id": 12303050,
+    "name": "虚影视界",
+    "mod": "主动技能",
+    "description": "展开【虚影视界】，持续5秒\\n持续期间：\\n使除自身外随机2名我方<color=#7AB2FF>【隐形】</color>\\n每秒丢弃1张手牌并从牌库或弃牌区将1张【崩裂】加入手牌\\n每秒对随机目标施加1层【注视】\\n每秒每只【瞵鸦】对随机敌方有50%概率随机触发<color=#B383FF>【混乱】</color>/<color=#FF6666>【灼心】</color>",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600446,
+    "leaderCardConditionDesc": "冷却时间30秒，每次使用带有<color=#FF6666>【崩坏】</color>/<color=#FF6666>【重伤】</color>/<color=#B383FF>【混乱】</color>/<color=#FF6666>【灼心】</color>/【注视】词条的卡牌，冷却缩短5秒"
+  },
+  "12303053": {
+    "id": 12303053,
+    "name": "注视",
+    "mod": "主动技能",
+    "description": "召唤使魔【瞵鸦】紧盯目标\\n持续期间，每6秒对目标施加1层<color=#B383FF>【注视】</color>\\n【瞵鸦】为【使魔】，协同冰冻属性【普通攻击】并为涟吸收伤害\\n【瞵鸦】的攻击力等于涟的攻击力，生命值等于涟生命值的25%",
+    "detailDescription": "伤害：【瞵鸦】200%（冰冻）；",
+    "ExSkillList": [],
+    "cardID": 10600450,
+    "leaderCardConditionDesc": ""
+  },
+  "12303089": {
+    "id": 12303089,
+    "name": "塔",
+    "mod": "主动技能",
+    "description": "skill_description_12303089",
+    "detailDescription": "skill_detailDescription_12303089",
+    "ExSkillList": [],
+    "cardID": 10600452,
+    "leaderCardConditionDesc": ""
+  }
+}

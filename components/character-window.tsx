@@ -1,8 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { Search, ChevronDown, ChevronUp } from "lucide-react"
-import type { Character, Equipment, Card, CardExtraInfo } from "../types"
+import { Search } from "lucide-react"
+import type { Character, Card, Equipment } from "../types"
 import { CharacterSlot } from "./character-slot"
 
 interface CharacterWindowProps {
@@ -20,9 +20,11 @@ interface CharacterWindowProps {
     accessory: string | null
   }>
   onEquipItem: (slotIndex: number, equipType: "weapon" | "armor" | "accessory", equipId: string | null) => void
-  getEquipment: (id: string) => Equipment | null
-  getCardInfo: (cardId: string) => { card: Card; extraInfo: CardExtraInfo } | null
+  getCardInfo: (cardId: string) => { card: Card } | null
+  getEquipment: (equipId: string) => Equipment | null
+  equipments?: Equipment[]
   data: any
+  getSkill?: (skillId: number) => any // getSkill 추가
 }
 
 export function CharacterWindow({
@@ -36,9 +38,11 @@ export function CharacterWindow({
   availableCharacters,
   equipment,
   onEquipItem,
-  getEquipment,
   getCardInfo,
+  getEquipment,
+  equipments = [],
   data,
+  getSkill, // getSkill 추가
 }: CharacterWindowProps) {
   const [showSelector, setShowSelector] = useState(false)
   const [selectedSlot, setSelectedSlot] = useState<number>(-1)
@@ -103,7 +107,7 @@ export function CharacterWindow({
   }
 
   return (
-    <div className="w-full" >
+    <div className="w-full">
       <h2 className="text-xl font-bold mb-4">{getTranslatedString("character.section.title") || "Characters"}</h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-4">
@@ -118,11 +122,13 @@ export function CharacterWindow({
             getTranslatedString={getTranslatedString}
             equipment={equipment[index]}
             onEquipItem={onEquipItem}
-            getEquipment={getEquipment}
             isLeader={characterId === leaderCharacter}
             onSetLeader={() => onSetLeader(characterId)}
             getCardInfo={getCardInfo}
+            getEquipment={getEquipment}
+            equipments={equipments}
             data={data}
+            getSkill={getSkill} // getSkill 전달
           />
         ))}
       </div>
@@ -130,17 +136,17 @@ export function CharacterWindow({
       {/* Character Selector Modal */}
       {showSelector && (
         <div
-        className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
-        onClick={() => {
-          setShowSelector(false)
-          setSelectedSlot(-1)
-        }}
-      >
-           <div
-      className="bg-gray-800 p-4 rounded-lg max-w-3xl w-full flex flex-col max-h-[90vh]"
-      style={{ aspectRatio: "1/0.8" }}
-      onClick={(e) => e.stopPropagation()} // 내부 클릭 시 닫히지 않게
-    >
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+          onClick={() => {
+            setShowSelector(false)
+            setSelectedSlot(-1)
+          }}
+        >
+          <div
+            className="bg-gray-800 p-4 rounded-lg max-w-3xl w-full flex flex-col max-h-[90vh]"
+            style={{ aspectRatio: "1/0.8" }}
+            onClick={(e) => e.stopPropagation()}
+          >
             <div className="flex-grow overflow-y-auto">
               <h3 className="text-lg font-bold mb-4">
                 {getTranslatedString("select_character") || "Select Character"}
@@ -177,7 +183,7 @@ export function CharacterWindow({
                     className="h-full px-3 bg-gray-700 border border-gray-600 border-l-0 rounded-r-md flex items-center justify-center"
                     aria-label={sortDirection === "asc" ? "Sort Descending" : "Sort Ascending"}
                   >
-                    {sortDirection === "desc" ? <ChevronUp /> : <ChevronDown />}
+                    {sortDirection === "desc" ? "↓" : "↑"}
                   </button>
                 </div>
               </div>

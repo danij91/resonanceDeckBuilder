@@ -1,0 +1,6884 @@
+{
+  "12100001": {
+    "id": 12100001,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100008": {
+    "id": 12100008,
+    "name": "break_name_12100008",
+    "desc": "break_desc_12100008",
+    "attributeList": []
+  },
+  "12100009": {
+    "id": 12100009,
+    "name": "break_name_12100009",
+    "desc": "break_desc_12100009",
+    "attributeList": []
+  },
+  "12100010": {
+    "id": 12100010,
+    "name": "break_name_12100010",
+    "desc": "break_desc_12100010",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100034": {
+    "id": 12100034,
+    "name": "break_name_12100034",
+    "desc": "break_desc_12100034",
+    "attributeList": []
+  },
+  "12100035": {
+    "id": 12100035,
+    "name": "break_name_12100035",
+    "desc": "break_desc_12100035",
+    "attributeList": []
+  },
+  "12100036": {
+    "id": 12100036,
+    "name": "break_name_12100036",
+    "desc": "break_desc_12100036",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100037": {
+    "id": 12100037,
+    "name": "break_name_12100037",
+    "desc": "break_desc_12100037",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100038": {
+    "id": 12100038,
+    "name": "break_name_12100038",
+    "desc": "break_desc_12100038",
+    "attributeList": []
+  },
+  "12100055": {
+    "id": 12100055,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100056": {
+    "id": 12100056,
+    "name": "break_name_12100056",
+    "desc": "break_desc_12100056",
+    "attributeList": []
+  },
+  "12100057": {
+    "id": 12100057,
+    "name": "break_name_12100057",
+    "desc": "break_desc_12100057",
+    "attributeList": []
+  },
+  "12100058": {
+    "id": 12100058,
+    "name": "break_name_12100058",
+    "desc": "break_desc_12100058",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100059": {
+    "id": 12100059,
+    "name": "break_name_12100059",
+    "desc": "break_desc_12100059",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100060": {
+    "id": 12100060,
+    "name": "break_name_12100060",
+    "desc": "break_desc_12100060",
+    "attributeList": []
+  },
+  "12100061": {
+    "id": 12100061,
+    "name": "break_name_12100061",
+    "desc": "break_desc_12100061",
+    "attributeList": []
+  },
+  "12100062": {
+    "id": 12100062,
+    "name": "break_name_12100062",
+    "desc": "break_desc_12100062",
+    "attributeList": []
+  },
+  "12100063": {
+    "id": 12100063,
+    "name": "break_name_12100063",
+    "desc": "break_desc_12100063",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100064": {
+    "id": 12100064,
+    "name": "break_name_12100064",
+    "desc": "break_desc_12100064",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100065": {
+    "id": 12100065,
+    "name": "break_name_12100065",
+    "desc": "break_desc_12100065",
+    "attributeList": []
+  },
+  "12100066": {
+    "id": 12100066,
+    "name": "break_name_12100066",
+    "desc": "break_desc_12100066",
+    "attributeList": []
+  },
+  "12100067": {
+    "id": 12100067,
+    "name": "break_name_12100067",
+    "desc": "break_desc_12100067",
+    "attributeList": []
+  },
+  "12100068": {
+    "id": 12100068,
+    "name": "break_name_12100068",
+    "desc": "break_desc_12100068",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100069": {
+    "id": 12100069,
+    "name": "break_name_12100069",
+    "desc": "break_desc_12100069",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100070": {
+    "id": 12100070,
+    "name": "break_name_12100070",
+    "desc": "break_desc_12100070",
+    "attributeList": []
+  },
+  "12100071": {
+    "id": 12100071,
+    "name": "break_name_12100071",
+    "desc": "break_desc_12100071",
+    "attributeList": []
+  },
+  "12100072": {
+    "id": 12100072,
+    "name": "break_name_12100072",
+    "desc": "break_desc_12100072",
+    "attributeList": []
+  },
+  "12100073": {
+    "id": 12100073,
+    "name": "break_name_12100073",
+    "desc": "break_desc_12100073",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100074": {
+    "id": 12100074,
+    "name": "break_name_12100074",
+    "desc": "break_desc_12100074",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100075": {
+    "id": 12100075,
+    "name": "break_name_12100075",
+    "desc": "break_desc_12100075",
+    "attributeList": []
+  },
+  "12100076": {
+    "id": 12100076,
+    "name": "break_name_12100076",
+    "desc": "break_desc_12100076",
+    "attributeList": []
+  },
+  "12100077": {
+    "id": 12100077,
+    "name": "break_name_12100077",
+    "desc": "break_desc_12100077",
+    "attributeList": []
+  },
+  "12100078": {
+    "id": 12100078,
+    "name": "break_name_12100078",
+    "desc": "break_desc_12100078",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100079": {
+    "id": 12100079,
+    "name": "break_name_12100079",
+    "desc": "break_desc_12100079",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100080": {
+    "id": 12100080,
+    "name": "break_name_12100080",
+    "desc": "break_desc_12100080",
+    "attributeList": []
+  },
+  "12100081": {
+    "id": 12100081,
+    "name": "break_name_12100081",
+    "desc": "break_desc_12100081",
+    "attributeList": []
+  },
+  "12100082": {
+    "id": 12100082,
+    "name": "break_name_12100082",
+    "desc": "break_desc_12100082",
+    "attributeList": []
+  },
+  "12100083": {
+    "id": 12100083,
+    "name": "break_name_12100083",
+    "desc": "break_desc_12100083",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100084": {
+    "id": 12100084,
+    "name": "break_name_12100084",
+    "desc": "break_desc_12100084",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100085": {
+    "id": 12100085,
+    "name": "break_name_12100085",
+    "desc": "break_desc_12100085",
+    "attributeList": []
+  },
+  "12100091": {
+    "id": 12100091,
+    "name": "break_name_12100091",
+    "desc": "break_desc_12100091",
+    "attributeList": []
+  },
+  "12100092": {
+    "id": 12100092,
+    "name": "break_name_12100092",
+    "desc": "break_desc_12100092",
+    "attributeList": []
+  },
+  "12100093": {
+    "id": 12100093,
+    "name": "break_name_12100093",
+    "desc": "break_desc_12100093",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100094": {
+    "id": 12100094,
+    "name": "break_name_12100094",
+    "desc": "break_desc_12100094",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100095": {
+    "id": 12100095,
+    "name": "break_name_12100095",
+    "desc": "break_desc_12100095",
+    "attributeList": []
+  },
+  "12100096": {
+    "id": 12100096,
+    "name": "break_name_12100096",
+    "desc": "break_desc_12100096",
+    "attributeList": []
+  },
+  "12100097": {
+    "id": 12100097,
+    "name": "break_name_12100097",
+    "desc": "break_desc_12100097",
+    "attributeList": []
+  },
+  "12100098": {
+    "id": 12100098,
+    "name": "break_name_12100098",
+    "desc": "break_desc_12100098",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100099": {
+    "id": 12100099,
+    "name": "break_name_12100099",
+    "desc": "break_desc_12100099",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100100": {
+    "id": 12100100,
+    "name": "break_name_12100100",
+    "desc": "break_desc_12100100",
+    "attributeList": []
+  },
+  "12100101": {
+    "id": 12100101,
+    "name": "break_name_12100101",
+    "desc": "break_desc_12100101",
+    "attributeList": []
+  },
+  "12100102": {
+    "id": 12100102,
+    "name": "break_name_12100102",
+    "desc": "break_desc_12100102",
+    "attributeList": []
+  },
+  "12100103": {
+    "id": 12100103,
+    "name": "break_name_12100103",
+    "desc": "break_desc_12100103",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100104": {
+    "id": 12100104,
+    "name": "break_name_12100104",
+    "desc": "break_desc_12100104",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100105": {
+    "id": 12100105,
+    "name": "break_name_12100105",
+    "desc": "break_desc_12100105",
+    "attributeList": []
+  },
+  "12100111": {
+    "id": 12100111,
+    "name": "break_name_12100111",
+    "desc": "break_desc_12100111",
+    "attributeList": []
+  },
+  "12100112": {
+    "id": 12100112,
+    "name": "break_name_12100112",
+    "desc": "break_desc_12100112",
+    "attributeList": []
+  },
+  "12100113": {
+    "id": 12100113,
+    "name": "break_name_12100113",
+    "desc": "break_desc_12100113",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100114": {
+    "id": 12100114,
+    "name": "break_name_12100114",
+    "desc": "break_desc_12100114",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100115": {
+    "id": 12100115,
+    "name": "break_name_12100115",
+    "desc": "break_desc_12100115",
+    "attributeList": []
+  },
+  "12100116": {
+    "id": 12100116,
+    "name": "break_name_12100116",
+    "desc": "break_desc_12100116",
+    "attributeList": []
+  },
+  "12100117": {
+    "id": 12100117,
+    "name": "break_name_12100117",
+    "desc": "break_desc_12100117",
+    "attributeList": []
+  },
+  "12100118": {
+    "id": 12100118,
+    "name": "break_name_12100118",
+    "desc": "break_desc_12100118",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100119": {
+    "id": 12100119,
+    "name": "break_name_12100119",
+    "desc": "break_desc_12100119",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100120": {
+    "id": 12100120,
+    "name": "break_name_12100120",
+    "desc": "break_desc_12100120",
+    "attributeList": []
+  },
+  "12100124": {
+    "id": 12100124,
+    "name": "break_name_12100124",
+    "desc": "break_desc_12100124",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100125": {
+    "id": 12100125,
+    "name": "break_name_12100125",
+    "desc": "break_desc_12100125",
+    "attributeList": []
+  },
+  "12100143": {
+    "id": 12100143,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100144": {
+    "id": 12100144,
+    "name": "break_name_12100144",
+    "desc": "break_desc_12100144",
+    "attributeList": []
+  },
+  "12100145": {
+    "id": 12100145,
+    "name": "break_name_12100145",
+    "desc": "break_desc_12100145",
+    "attributeList": []
+  },
+  "12100146": {
+    "id": 12100146,
+    "name": "break_name_12100146",
+    "desc": "break_desc_12100146",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100147": {
+    "id": 12100147,
+    "name": "break_name_12100147",
+    "desc": "break_desc_12100147",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100148": {
+    "id": 12100148,
+    "name": "break_name_12100148",
+    "desc": "break_desc_12100148",
+    "attributeList": []
+  },
+  "12100162": {
+    "id": 12100162,
+    "name": "break_name_12100162",
+    "desc": "break_desc_12100162",
+    "attributeList": []
+  },
+  "12100163": {
+    "id": 12100163,
+    "name": "break_name_12100163",
+    "desc": "break_desc_12100163",
+    "attributeList": []
+  },
+  "12100164": {
+    "id": 12100164,
+    "name": "break_name_12100164",
+    "desc": "break_desc_12100164",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100165": {
+    "id": 12100165,
+    "name": "break_name_12100165",
+    "desc": "break_desc_12100165",
+    "attributeList": []
+  },
+  "12100166": {
+    "id": 12100166,
+    "name": "break_name_12100166",
+    "desc": "break_desc_12100166",
+    "attributeList": []
+  },
+  "12100167": {
+    "id": 12100167,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100168": {
+    "id": 12100168,
+    "name": "break_name_12100168",
+    "desc": "break_desc_12100168",
+    "attributeList": []
+  },
+  "12100169": {
+    "id": 12100169,
+    "name": "break_name_12100169",
+    "desc": "break_desc_12100169",
+    "attributeList": []
+  },
+  "12100170": {
+    "id": 12100170,
+    "name": "break_name_12100170",
+    "desc": "break_desc_12100170",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100171": {
+    "id": 12100171,
+    "name": "break_name_12100171",
+    "desc": "break_desc_12100171",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100172": {
+    "id": 12100172,
+    "name": "break_name_12100172",
+    "desc": "break_desc_12100172",
+    "attributeList": []
+  },
+  "12100173": {
+    "id": 12100173,
+    "name": "break_name_12100173",
+    "desc": "break_desc_12100173",
+    "attributeList": []
+  },
+  "12100174": {
+    "id": 12100174,
+    "name": "break_name_12100174",
+    "desc": "break_desc_12100174",
+    "attributeList": []
+  },
+  "12100175": {
+    "id": 12100175,
+    "name": "break_name_12100175",
+    "desc": "break_desc_12100175",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100176": {
+    "id": 12100176,
+    "name": "break_name_12100176",
+    "desc": "break_desc_12100176",
+    "attributeList": []
+  },
+  "12100177": {
+    "id": 12100177,
+    "name": "break_name_12100177",
+    "desc": "break_desc_12100177",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100179": {
+    "id": 12100179,
+    "name": "break_name_12100179",
+    "desc": "break_desc_12100179",
+    "attributeList": []
+  },
+  "12100180": {
+    "id": 12100180,
+    "name": "break_name_12100180",
+    "desc": "break_desc_12100180",
+    "attributeList": []
+  },
+  "12100181": {
+    "id": 12100181,
+    "name": "break_name_12100181",
+    "desc": "break_desc_12100181",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100182": {
+    "id": 12100182,
+    "name": "break_name_12100182",
+    "desc": "break_desc_12100182",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100183": {
+    "id": 12100183,
+    "name": "break_name_12100183",
+    "desc": "break_desc_12100183",
+    "attributeList": []
+  },
+  "12100186": {
+    "id": 12100186,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100187": {
+    "id": 12100187,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100188": {
+    "id": 12100188,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100189": {
+    "id": 12100189,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100190": {
+    "id": 12100190,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100191": {
+    "id": 12100191,
+    "name": "break_name_12100191",
+    "desc": "break_desc_12100191",
+    "attributeList": []
+  },
+  "12100192": {
+    "id": 12100192,
+    "name": "break_name_12100192",
+    "desc": "break_desc_12100192",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100193": {
+    "id": 12100193,
+    "name": "break_name_12100193",
+    "desc": "break_desc_12100193",
+    "attributeList": []
+  },
+  "12100194": {
+    "id": 12100194,
+    "name": "break_name_12100194",
+    "desc": "break_desc_12100194",
+    "attributeList": []
+  },
+  "12100195": {
+    "id": 12100195,
+    "name": "break_name_12100195",
+    "desc": "break_desc_12100195",
+    "attributeList": []
+  },
+  "12100011": {
+    "id": 12100011,
+    "name": "break_name_12100011",
+    "desc": "break_desc_12100011",
+    "attributeList": []
+  },
+  "12100012": {
+    "id": 12100012,
+    "name": "break_name_12100012",
+    "desc": "break_desc_12100012",
+    "attributeList": []
+  },
+  "12100015": {
+    "id": 12100015,
+    "name": "break_name_12100015",
+    "desc": "break_desc_12100015",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100016": {
+    "id": 12100016,
+    "name": "break_name_12100016",
+    "desc": "break_desc_12100016",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100017": {
+    "id": 12100017,
+    "name": "break_name_12100017",
+    "desc": "break_desc_12100017",
+    "attributeList": []
+  },
+  "12100199": {
+    "id": 12100199,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100014": {
+    "id": 12100014,
+    "name": "break_name_12100014",
+    "desc": "break_desc_12100014",
+    "attributeList": []
+  },
+  "12100025": {
+    "id": 12100025,
+    "name": "break_name_12100025",
+    "desc": "break_desc_12100025",
+    "attributeList": []
+  },
+  "12100026": {
+    "id": 12100026,
+    "name": "break_name_12100026",
+    "desc": "break_desc_12100026",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100027": {
+    "id": 12100027,
+    "name": "break_name_12100027",
+    "desc": "break_desc_12100027",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100028": {
+    "id": 12100028,
+    "name": "break_name_12100028",
+    "desc": "break_desc_12100028",
+    "attributeList": []
+  },
+  "12100029": {
+    "id": 12100029,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100030": {
+    "id": 12100030,
+    "name": "break_name_12100030",
+    "desc": "break_desc_12100030",
+    "attributeList": []
+  },
+  "12100031": {
+    "id": 12100031,
+    "name": "break_name_12100031",
+    "desc": "break_desc_12100031",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100032": {
+    "id": 12100032,
+    "name": "break_name_12100032",
+    "desc": "break_desc_12100032",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100039": {
+    "id": 12100039,
+    "name": "break_name_12100039",
+    "desc": "break_desc_12100039",
+    "attributeList": [
+      {
+        "attributeType": "Luck",
+        "numType": "Number",
+        "num_SN": 500
+      }
+    ]
+  },
+  "12100040": {
+    "id": 12100040,
+    "name": "break_name_12100040",
+    "desc": "break_desc_12100040",
+    "attributeList": []
+  },
+  "12100041": {
+    "id": 12100041,
+    "name": "break_name_12100041",
+    "desc": "break_desc_12100041",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100042": {
+    "id": 12100042,
+    "name": "break_name_12100042",
+    "desc": "break_desc_12100042",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100043": {
+    "id": 12100043,
+    "name": "break_name_12100043",
+    "desc": "break_desc_12100043",
+    "attributeList": []
+  },
+  "12100044": {
+    "id": 12100044,
+    "name": "break_name_12100044",
+    "desc": "break_desc_12100044",
+    "attributeList": []
+  },
+  "12100046": {
+    "id": 12100046,
+    "name": "break_name_12100046",
+    "desc": "break_desc_12100046",
+    "attributeList": []
+  },
+  "12100048": {
+    "id": 12100048,
+    "name": "break_name_12100048",
+    "desc": "break_desc_12100048",
+    "attributeList": []
+  },
+  "12100049": {
+    "id": 12100049,
+    "name": "break_name_12100049",
+    "desc": "break_desc_12100049",
+    "attributeList": []
+  },
+  "12100050": {
+    "id": 12100050,
+    "name": "break_name_12100050",
+    "desc": "break_desc_12100050",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100051": {
+    "id": 12100051,
+    "name": "break_name_12100051",
+    "desc": "break_desc_12100051",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100052": {
+    "id": 12100052,
+    "name": "break_name_12100052",
+    "desc": "break_desc_12100052",
+    "attributeList": []
+  },
+  "12100054": {
+    "id": 12100054,
+    "name": "break_name_12100054",
+    "desc": "break_desc_12100054",
+    "attributeList": []
+  },
+  "12100185": {
+    "id": 12100185,
+    "name": "break_name_12100185",
+    "desc": "break_desc_12100185",
+    "attributeList": []
+  },
+  "12100200": {
+    "id": 12100200,
+    "name": "break_name_12100200",
+    "desc": "break_desc_12100200",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100203": {
+    "id": 12100203,
+    "name": "break_name_12100203",
+    "desc": "break_desc_12100203",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100204": {
+    "id": 12100204,
+    "name": "break_name_12100204",
+    "desc": "break_desc_12100204",
+    "attributeList": []
+  },
+  "12100206": {
+    "id": 12100206,
+    "name": "break_name_12100206",
+    "desc": "break_desc_12100206",
+    "attributeList": []
+  },
+  "12100207": {
+    "id": 12100207,
+    "name": "break_name_12100207",
+    "desc": "break_desc_12100207",
+    "attributeList": []
+  },
+  "12100208": {
+    "id": 12100208,
+    "name": "break_name_12100208",
+    "desc": "break_desc_12100208",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100209": {
+    "id": 12100209,
+    "name": "break_name_12100209",
+    "desc": "break_desc_12100209",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100210": {
+    "id": 12100210,
+    "name": "break_name_12100210",
+    "desc": "break_desc_12100210",
+    "attributeList": []
+  },
+  "12100212": {
+    "id": 12100212,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100213": {
+    "id": 12100213,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100214": {
+    "id": 12100214,
+    "name": "",
+    "desc": "break_desc_12100214",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100215": {
+    "id": 12100215,
+    "name": "",
+    "desc": "break_desc_12100215",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100216": {
+    "id": 12100216,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100217": {
+    "id": 12100217,
+    "name": "break_name_12100217",
+    "desc": "break_desc_12100217",
+    "attributeList": []
+  },
+  "12100218": {
+    "id": 12100218,
+    "name": "break_name_12100218",
+    "desc": "break_desc_12100218",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100219": {
+    "id": 12100219,
+    "name": "break_name_12100219",
+    "desc": "break_desc_12100219",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100220": {
+    "id": 12100220,
+    "name": "break_name_12100220",
+    "desc": "break_desc_12100220",
+    "attributeList": []
+  },
+  "12100221": {
+    "id": 12100221,
+    "name": "break_name_12100221",
+    "desc": "break_desc_12100221",
+    "attributeList": []
+  },
+  "12100224": {
+    "id": 12100224,
+    "name": "break_name_12100224",
+    "desc": "break_desc_12100224",
+    "attributeList": []
+  },
+  "12100225": {
+    "id": 12100225,
+    "name": "break_name_12100225",
+    "desc": "break_desc_12100225",
+    "attributeList": []
+  },
+  "12100226": {
+    "id": 12100226,
+    "name": "break_name_12100226",
+    "desc": "break_desc_12100226",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100227": {
+    "id": 12100227,
+    "name": "break_name_12100227",
+    "desc": "break_desc_12100227",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100228": {
+    "id": 12100228,
+    "name": "break_name_12100228",
+    "desc": "break_desc_12100228",
+    "attributeList": []
+  },
+  "12100087": {
+    "id": 12100087,
+    "name": "break_name_12100087",
+    "desc": "break_desc_12100087",
+    "attributeList": []
+  },
+  "12100088": {
+    "id": 12100088,
+    "name": "break_name_12100088",
+    "desc": "break_desc_12100088",
+    "attributeList": []
+  },
+  "12100089": {
+    "id": 12100089,
+    "name": "break_name_12100089",
+    "desc": "break_desc_12100089",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100090": {
+    "id": 12100090,
+    "name": "break_name_12100090",
+    "desc": "break_desc_12100090",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100138": {
+    "id": 12100138,
+    "name": "break_name_12100138",
+    "desc": "break_desc_12100138",
+    "attributeList": []
+  },
+  "12100140": {
+    "id": 12100140,
+    "name": "break_name_12100140",
+    "desc": "break_desc_12100140",
+    "attributeList": []
+  },
+  "12100141": {
+    "id": 12100141,
+    "name": "break_name_12100141",
+    "desc": "break_desc_12100141",
+    "attributeList": []
+  },
+  "12100142": {
+    "id": 12100142,
+    "name": "break_name_12100142",
+    "desc": "break_desc_12100142",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100149": {
+    "id": 12100149,
+    "name": "break_name_12100149",
+    "desc": "break_desc_12100149",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100229": {
+    "id": 12100229,
+    "name": "break_name_12100229",
+    "desc": "break_desc_12100229",
+    "attributeList": []
+  },
+  "12100231": {
+    "id": 12100231,
+    "name": "break_name_12100231",
+    "desc": "break_desc_12100231",
+    "attributeList": []
+  },
+  "12100232": {
+    "id": 12100232,
+    "name": "break_name_12100232",
+    "desc": "break_desc_12100232",
+    "attributeList": []
+  },
+  "12100233": {
+    "id": 12100233,
+    "name": "break_name_12100233",
+    "desc": "break_desc_12100233",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100234": {
+    "id": 12100234,
+    "name": "break_name_12100234",
+    "desc": "break_desc_12100234",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100235": {
+    "id": 12100235,
+    "name": "break_name_12100235",
+    "desc": "break_desc_12100235",
+    "attributeList": []
+  },
+  "12100236": {
+    "id": 12100236,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100237": {
+    "id": 12100237,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100238": {
+    "id": 12100238,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100239": {
+    "id": 12100239,
+    "name": "",
+    "desc": "break_desc_12100239",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100240": {
+    "id": 12100240,
+    "name": "",
+    "desc": "break_desc_12100240",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100241": {
+    "id": 12100241,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100243": {
+    "id": 12100243,
+    "name": "break_name_12100243",
+    "desc": "break_desc_12100243",
+    "attributeList": []
+  },
+  "12100244": {
+    "id": 12100244,
+    "name": "break_name_12100244",
+    "desc": "break_desc_12100244",
+    "attributeList": []
+  },
+  "12100245": {
+    "id": 12100245,
+    "name": "break_name_12100245",
+    "desc": "break_desc_12100245",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100246": {
+    "id": 12100246,
+    "name": "break_name_12100246",
+    "desc": "break_desc_12100246",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100247": {
+    "id": 12100247,
+    "name": "break_name_12100247",
+    "desc": "break_desc_12100247",
+    "attributeList": []
+  },
+  "12100249": {
+    "id": 12100249,
+    "name": "break_name_12100249",
+    "desc": "break_desc_12100249",
+    "attributeList": []
+  },
+  "12100250": {
+    "id": 12100250,
+    "name": "break_name_12100250",
+    "desc": "break_desc_12100250",
+    "attributeList": []
+  },
+  "12100251": {
+    "id": 12100251,
+    "name": "break_name_12100251",
+    "desc": "break_desc_12100251",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100252": {
+    "id": 12100252,
+    "name": "break_name_12100252",
+    "desc": "break_desc_12100252",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100253": {
+    "id": 12100253,
+    "name": "break_name_12100253",
+    "desc": "break_desc_12100253",
+    "attributeList": []
+  },
+  "12100255": {
+    "id": 12100255,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100256": {
+    "id": 12100256,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100257": {
+    "id": 12100257,
+    "name": "",
+    "desc": "break_desc_12100257",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100258": {
+    "id": 12100258,
+    "name": "",
+    "desc": "break_desc_12100258",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100259": {
+    "id": 12100259,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100260": {
+    "id": 12100260,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100262": {
+    "id": 12100262,
+    "name": "break_name_12100262",
+    "desc": "break_desc_12100262",
+    "attributeList": []
+  },
+  "12100261": {
+    "id": 12100261,
+    "name": "break_name_12100261",
+    "desc": "break_desc_12100261",
+    "attributeList": []
+  },
+  "12100263": {
+    "id": 12100263,
+    "name": "break_name_12100263",
+    "desc": "break_desc_12100263",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100264": {
+    "id": 12100264,
+    "name": "break_name_12100264",
+    "desc": "break_desc_12100264",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100265": {
+    "id": 12100265,
+    "name": "break_name_12100265",
+    "desc": "break_desc_12100265",
+    "attributeList": []
+  },
+  "12100266": {
+    "id": 12100266,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100267": {
+    "id": 12100267,
+    "name": "break_name_12100267",
+    "desc": "break_desc_12100267",
+    "attributeList": []
+  },
+  "12100268": {
+    "id": 12100268,
+    "name": "break_name_12100268",
+    "desc": "break_desc_12100268",
+    "attributeList": []
+  },
+  "12100269": {
+    "id": 12100269,
+    "name": "break_name_12100269",
+    "desc": "break_desc_12100269",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 400000
+      }
+    ]
+  },
+  "12100270": {
+    "id": 12100270,
+    "name": "break_name_12100270",
+    "desc": "break_desc_12100270",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 400000
+      }
+    ]
+  },
+  "12100271": {
+    "id": 12100271,
+    "name": "break_name_12100271",
+    "desc": "break_desc_12100271",
+    "attributeList": []
+  },
+  "12100272": {
+    "id": 12100272,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100273": {
+    "id": 12100273,
+    "name": "break_name_12100273",
+    "desc": "break_desc_12100273",
+    "attributeList": []
+  },
+  "12100274": {
+    "id": 12100274,
+    "name": "break_name_12100274",
+    "desc": "break_desc_12100274",
+    "attributeList": []
+  },
+  "12100275": {
+    "id": 12100275,
+    "name": "break_name_12100275",
+    "desc": "break_desc_12100275",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100276": {
+    "id": 12100276,
+    "name": "break_name_12100276",
+    "desc": "break_desc_12100276",
+    "attributeList": []
+  },
+  "12100277": {
+    "id": 12100277,
+    "name": "break_name_12100277",
+    "desc": "break_desc_12100277",
+    "attributeList": []
+  },
+  "12100279": {
+    "id": 12100279,
+    "name": "break_name_12100279",
+    "desc": "break_desc_12100279",
+    "attributeList": []
+  },
+  "12100281": {
+    "id": 12100281,
+    "name": "break_name_12100281",
+    "desc": "break_desc_12100281",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100282": {
+    "id": 12100282,
+    "name": "break_name_12100282",
+    "desc": "break_desc_12100282",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100283": {
+    "id": 12100283,
+    "name": "break_name_12100283",
+    "desc": "break_desc_12100283",
+    "attributeList": []
+  },
+  "12100285": {
+    "id": 12100285,
+    "name": "break_name_12100285",
+    "desc": "break_desc_12100285",
+    "attributeList": []
+  },
+  "12100286": {
+    "id": 12100286,
+    "name": "break_name_12100286",
+    "desc": "break_desc_12100286",
+    "attributeList": []
+  },
+  "12100287": {
+    "id": 12100287,
+    "name": "break_name_12100287",
+    "desc": "break_desc_12100287",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100288": {
+    "id": 12100288,
+    "name": "break_name_12100288",
+    "desc": "break_desc_12100288",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100289": {
+    "id": 12100289,
+    "name": "break_name_12100289",
+    "desc": "break_desc_12100289",
+    "attributeList": []
+  },
+  "12100291": {
+    "id": 12100291,
+    "name": "break_name_12100291",
+    "desc": "break_desc_12100291",
+    "attributeList": []
+  },
+  "12100292": {
+    "id": 12100292,
+    "name": "break_name_12100292",
+    "desc": "break_desc_12100292",
+    "attributeList": []
+  },
+  "12100294": {
+    "id": 12100294,
+    "name": "break_name_12100294",
+    "desc": "break_desc_12100294",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100295": {
+    "id": 12100295,
+    "name": "break_name_12100295",
+    "desc": "break_desc_12100295",
+    "attributeList": []
+  },
+  "12100293": {
+    "id": 12100293,
+    "name": "break_name_12100293",
+    "desc": "break_desc_12100293",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100296": {
+    "id": 12100296,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100298": {
+    "id": 12100298,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100299": {
+    "id": 12100299,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100003": {
+    "id": 12100003,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100004": {
+    "id": 12100004,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100005": {
+    "id": 12100005,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100006": {
+    "id": 12100006,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100018": {
+    "id": 12100018,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100019": {
+    "id": 12100019,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100021": {
+    "id": 12100021,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100022": {
+    "id": 12100022,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100023": {
+    "id": 12100023,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100024": {
+    "id": 12100024,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100106": {
+    "id": 12100106,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100107": {
+    "id": 12100107,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100108": {
+    "id": 12100108,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100109": {
+    "id": 12100109,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100110": {
+    "id": 12100110,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100121": {
+    "id": 12100121,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100122": {
+    "id": 12100122,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100123": {
+    "id": 12100123,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100126": {
+    "id": 12100126,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100127": {
+    "id": 12100127,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100128": {
+    "id": 12100128,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100134": {
+    "id": 12100134,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100150": {
+    "id": 12100150,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100151": {
+    "id": 12100151,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100152": {
+    "id": 12100152,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100153": {
+    "id": 12100153,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100154": {
+    "id": 12100154,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100155": {
+    "id": 12100155,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100156": {
+    "id": 12100156,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100157": {
+    "id": 12100157,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100158": {
+    "id": 12100158,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100159": {
+    "id": 12100159,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100002": {
+    "id": 12100002,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100160": {
+    "id": 12100160,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100198": {
+    "id": 12100198,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100297": {
+    "id": 12100297,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100301": {
+    "id": 12100301,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100302": {
+    "id": 12100302,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100303": {
+    "id": 12100303,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100304": {
+    "id": 12100304,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100305": {
+    "id": 12100305,
+    "name": "break_name_12100305",
+    "desc": "break_desc_12100305",
+    "attributeList": []
+  },
+  "12100306": {
+    "id": 12100306,
+    "name": "break_name_12100306",
+    "desc": "break_desc_12100306",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100307": {
+    "id": 12100307,
+    "name": "break_name_12100307",
+    "desc": "break_desc_12100307",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100308": {
+    "id": 12100308,
+    "name": "break_name_12100308",
+    "desc": "break_desc_12100308",
+    "attributeList": []
+  },
+  "12100309": {
+    "id": 12100309,
+    "name": "break_name_12100309",
+    "desc": "break_desc_12100309",
+    "attributeList": []
+  },
+  "12100310": {
+    "id": 12100310,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Percent",
+        "num_SN": 300
+      }
+    ]
+  },
+  "12100311": {
+    "id": 12100311,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100312": {
+    "id": 12100312,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100313": {
+    "id": 12100313,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100314": {
+    "id": 12100314,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100315": {
+    "id": 12100315,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100317": {
+    "id": 12100317,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100318": {
+    "id": 12100318,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100319": {
+    "id": 12100319,
+    "name": "break_name_12100319",
+    "desc": "break_desc_12100319",
+    "attributeList": []
+  },
+  "12100320": {
+    "id": 12100320,
+    "name": "break_name_12100320",
+    "desc": "break_desc_12100320",
+    "attributeList": []
+  },
+  "12100321": {
+    "id": 12100321,
+    "name": "break_name_12100321",
+    "desc": "break_desc_12100321",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100322": {
+    "id": 12100322,
+    "name": "break_name_12100322",
+    "desc": "break_desc_12100322",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100323": {
+    "id": 12100323,
+    "name": "break_name_12100323",
+    "desc": "break_desc_12100323",
+    "attributeList": []
+  },
+  "12100316": {
+    "id": 12100316,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100324": {
+    "id": 12100324,
+    "name": "break_name_12100324",
+    "desc": "break_desc_12100324",
+    "attributeList": []
+  },
+  "12100325": {
+    "id": 12100325,
+    "name": "break_name_12100325",
+    "desc": "break_desc_12100325",
+    "attributeList": []
+  },
+  "12100326": {
+    "id": 12100326,
+    "name": "break_name_12100326",
+    "desc": "break_desc_12100326",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100327": {
+    "id": 12100327,
+    "name": "break_name_12100327",
+    "desc": "break_desc_12100327",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100328": {
+    "id": 12100328,
+    "name": "break_name_12100328",
+    "desc": "break_desc_12100328",
+    "attributeList": []
+  },
+  "12100329": {
+    "id": 12100329,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100330": {
+    "id": 12100330,
+    "name": "break_name_12100330",
+    "desc": "break_desc_12100330",
+    "attributeList": []
+  },
+  "12100331": {
+    "id": 12100331,
+    "name": "break_name_12100331",
+    "desc": "break_desc_12100331",
+    "attributeList": []
+  },
+  "12100332": {
+    "id": 12100332,
+    "name": "break_name_12100332",
+    "desc": "break_desc_12100332",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100333": {
+    "id": 12100333,
+    "name": "break_name_12100333",
+    "desc": "break_desc_12100333",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100334": {
+    "id": 12100334,
+    "name": "break_name_12100334",
+    "desc": "break_desc_12100334",
+    "attributeList": []
+  },
+  "12100335": {
+    "id": 12100335,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100336": {
+    "id": 12100336,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100337": {
+    "id": 12100337,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100338": {
+    "id": 12100338,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100339": {
+    "id": 12100339,
+    "name": "break_name_12100339",
+    "desc": "break_desc_12100339",
+    "attributeList": []
+  },
+  "12100340": {
+    "id": 12100340,
+    "name": "break_name_12100340",
+    "desc": "break_desc_12100340",
+    "attributeList": []
+  },
+  "12100341": {
+    "id": 12100341,
+    "name": "break_name_12100341",
+    "desc": "break_desc_12100341",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100342": {
+    "id": 12100342,
+    "name": "break_name_12100342",
+    "desc": "break_desc_12100342",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100343": {
+    "id": 12100343,
+    "name": "break_name_12100343",
+    "desc": "break_desc_12100343",
+    "attributeList": []
+  },
+  "12100344": {
+    "id": 12100344,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100345": {
+    "id": 12100345,
+    "name": "break_name_12100345",
+    "desc": "break_desc_12100345",
+    "attributeList": []
+  },
+  "12100346": {
+    "id": 12100346,
+    "name": "break_name_12100346",
+    "desc": "break_desc_12100346",
+    "attributeList": []
+  },
+  "12100347": {
+    "id": 12100347,
+    "name": "break_name_12100347",
+    "desc": "break_desc_12100347",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100348": {
+    "id": 12100348,
+    "name": "break_name_12100348",
+    "desc": "break_desc_12100348",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100349": {
+    "id": 12100349,
+    "name": "break_name_12100349",
+    "desc": "break_desc_12100349",
+    "attributeList": []
+  },
+  "12100350": {
+    "id": 12100350,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100351": {
+    "id": 12100351,
+    "name": "break_name_12100351",
+    "desc": "break_desc_12100351",
+    "attributeList": []
+  },
+  "12100352": {
+    "id": 12100352,
+    "name": "break_name_12100352",
+    "desc": "break_desc_12100352",
+    "attributeList": []
+  },
+  "12100353": {
+    "id": 12100353,
+    "name": "break_name_12100353",
+    "desc": "break_desc_12100353",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100354": {
+    "id": 12100354,
+    "name": "break_name_12100354",
+    "desc": "break_desc_12100354",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100355": {
+    "id": 12100355,
+    "name": "break_name_12100355",
+    "desc": "break_desc_12100355",
+    "attributeList": []
+  },
+  "12100356": {
+    "id": 12100356,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100357": {
+    "id": 12100357,
+    "name": "break_name_12100357",
+    "desc": "break_desc_12100357",
+    "attributeList": []
+  },
+  "12100358": {
+    "id": 12100358,
+    "name": "break_name_12100358",
+    "desc": "break_desc_12100358",
+    "attributeList": []
+  },
+  "12100359": {
+    "id": 12100359,
+    "name": "break_name_12100359",
+    "desc": "break_desc_12100359",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100360": {
+    "id": 12100360,
+    "name": "break_name_12100360",
+    "desc": "break_desc_12100360",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100361": {
+    "id": 12100361,
+    "name": "break_name_12100361",
+    "desc": "break_desc_12100361",
+    "attributeList": []
+  },
+  "12100362": {
+    "id": 12100362,
+    "name": "break_name_12100362",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100363": {
+    "id": 12100363,
+    "name": "break_name_12100363",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100364": {
+    "id": 12100364,
+    "name": "break_name_12100364",
+    "desc": "break_desc_12100364",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100365": {
+    "id": 12100365,
+    "name": "break_name_12100365",
+    "desc": "break_desc_12100365",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100366": {
+    "id": 12100366,
+    "name": "break_name_12100366",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100367": {
+    "id": 12100367,
+    "name": "break_name_12100367",
+    "desc": "break_desc_12100367",
+    "attributeList": []
+  },
+  "12100368": {
+    "id": 12100368,
+    "name": "break_name_12100368",
+    "desc": "break_desc_12100368",
+    "attributeList": []
+  },
+  "12100369": {
+    "id": 12100369,
+    "name": "break_name_12100369",
+    "desc": "break_desc_12100369",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100370": {
+    "id": 12100370,
+    "name": "break_name_12100370",
+    "desc": "break_desc_12100370",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100371": {
+    "id": 12100371,
+    "name": "break_name_12100371",
+    "desc": "break_desc_12100371",
+    "attributeList": []
+  },
+  "12100372": {
+    "id": 12100372,
+    "name": "break_name_12100372",
+    "desc": "break_desc_12100372",
+    "attributeList": []
+  },
+  "12100373": {
+    "id": 12100373,
+    "name": "break_name_12100373",
+    "desc": "break_desc_12100373",
+    "attributeList": []
+  },
+  "12100374": {
+    "id": 12100374,
+    "name": "break_name_12100374",
+    "desc": "break_desc_12100374",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100375": {
+    "id": 12100375,
+    "name": "break_name_12100375",
+    "desc": "break_desc_12100375",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100376": {
+    "id": 12100376,
+    "name": "break_name_12100376",
+    "desc": "break_desc_12100376",
+    "attributeList": []
+  },
+  "12100377": {
+    "id": 12100377,
+    "name": "break_name_12100377",
+    "desc": "break_desc_12100377",
+    "attributeList": []
+  },
+  "12100378": {
+    "id": 12100378,
+    "name": "break_name_12100378",
+    "desc": "break_desc_12100378",
+    "attributeList": []
+  },
+  "12100379": {
+    "id": 12100379,
+    "name": "break_name_12100379",
+    "desc": "break_desc_12100379",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100380": {
+    "id": 12100380,
+    "name": "break_name_12100380",
+    "desc": "break_desc_12100380",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100381": {
+    "id": 12100381,
+    "name": "break_name_12100381",
+    "desc": "break_desc_12100381",
+    "attributeList": []
+  },
+  "12100382": {
+    "id": 12100382,
+    "name": "break_name_12100382",
+    "desc": "break_desc_12100382",
+    "attributeList": []
+  },
+  "12100383": {
+    "id": 12100383,
+    "name": "break_name_12100383",
+    "desc": "break_desc_12100383",
+    "attributeList": []
+  },
+  "12100384": {
+    "id": 12100384,
+    "name": "break_name_12100384",
+    "desc": "break_desc_12100384",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100385": {
+    "id": 12100385,
+    "name": "break_name_12100385",
+    "desc": "break_desc_12100385",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100386": {
+    "id": 12100386,
+    "name": "break_name_12100386",
+    "desc": "break_desc_12100386",
+    "attributeList": []
+  },
+  "12100387": {
+    "id": 12100387,
+    "name": "break_name_12100387",
+    "desc": "break_desc_12100387",
+    "attributeList": []
+  },
+  "12100388": {
+    "id": 12100388,
+    "name": "break_name_12100388",
+    "desc": "break_desc_12100388",
+    "attributeList": []
+  },
+  "12100389": {
+    "id": 12100389,
+    "name": "break_name_12100389",
+    "desc": "break_desc_12100389",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100390": {
+    "id": 12100390,
+    "name": "break_name_12100390",
+    "desc": "break_desc_12100390",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100391": {
+    "id": 12100391,
+    "name": "break_name_12100391",
+    "desc": "break_desc_12100391",
+    "attributeList": []
+  },
+  "12100402": {
+    "id": 12100402,
+    "name": "break_name_12100402",
+    "desc": "break_desc_12100402",
+    "attributeList": []
+  },
+  "12100403": {
+    "id": 12100403,
+    "name": "break_name_12100403",
+    "desc": "break_desc_12100403",
+    "attributeList": []
+  },
+  "12100404": {
+    "id": 12100404,
+    "name": "break_name_12100404",
+    "desc": "break_desc_12100404",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100405": {
+    "id": 12100405,
+    "name": "break_name_12100405",
+    "desc": "break_desc_12100405",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100407": {
+    "id": 12100407,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100408": {
+    "id": 12100408,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100409": {
+    "id": 12100409,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100410": {
+    "id": 12100410,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100411": {
+    "id": 12100411,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100412": {
+    "id": 12100412,
+    "name": "break_name_12100412",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100413": {
+    "id": 12100413,
+    "name": "break_name_12100413",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100414": {
+    "id": 12100414,
+    "name": "break_name_12100414",
+    "desc": "break_desc_12100414",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100415": {
+    "id": 12100415,
+    "name": "break_name_12100415",
+    "desc": "break_desc_12100415",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100416": {
+    "id": 12100416,
+    "name": "break_name_12100416",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100417": {
+    "id": 12100417,
+    "name": "break_name_12100417",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100418": {
+    "id": 12100418,
+    "name": "break_name_12100418",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100419": {
+    "id": 12100419,
+    "name": "break_name_12100419",
+    "desc": "break_desc_12100419",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100420": {
+    "id": 12100420,
+    "name": "break_name_12100420",
+    "desc": "break_desc_12100420",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100421": {
+    "id": 12100421,
+    "name": "火耗",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100427": {
+    "id": 12100427,
+    "name": "break_name_12100427",
+    "desc": "break_desc_12100427",
+    "attributeList": []
+  },
+  "12100428": {
+    "id": 12100428,
+    "name": "break_name_12100428",
+    "desc": "break_desc_12100428",
+    "attributeList": []
+  },
+  "12100429": {
+    "id": 12100429,
+    "name": "break_name_12100429",
+    "desc": "break_desc_12100429",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100430": {
+    "id": 12100430,
+    "name": "break_name_12100430",
+    "desc": "break_desc_12100430",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100431": {
+    "id": 12100431,
+    "name": "break_name_12100431",
+    "desc": "break_desc_12100431",
+    "attributeList": []
+  },
+  "12100437": {
+    "id": 12100437,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100438": {
+    "id": 12100438,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100439": {
+    "id": 12100439,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100440": {
+    "id": 12100440,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100441": {
+    "id": 12100441,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100442": {
+    "id": 12100442,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100445": {
+    "id": 12100445,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100446": {
+    "id": 12100446,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100447": {
+    "id": 12100447,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100448": {
+    "id": 12100448,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100450": {
+    "id": 12100450,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100452": {
+    "id": 12100452,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100453": {
+    "id": 12100453,
+    "name": "break_name_12100453",
+    "desc": "break_desc_12100453",
+    "attributeList": [
+      {
+        "attributeType": "GetHealUp",
+        "numType": "Number",
+        "num_SN": 2000
+      }
+    ]
+  },
+  "12100454": {
+    "id": 12100454,
+    "name": "break_name_12100454",
+    "desc": "break_desc_12100454",
+    "attributeList": []
+  },
+  "12100455": {
+    "id": 12100455,
+    "name": "break_name_12100455",
+    "desc": "break_desc_12100455",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100456": {
+    "id": 12100456,
+    "name": "break_name_12100456",
+    "desc": "break_desc_12100456",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100457": {
+    "id": 12100457,
+    "name": "break_name_12100457",
+    "desc": "break_desc_12100457",
+    "attributeList": []
+  },
+  "12100300": {
+    "id": 12100300,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100397": {
+    "id": 12100397,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100398": {
+    "id": 12100398,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100399": {
+    "id": 12100399,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100400": {
+    "id": 12100400,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100401": {
+    "id": 12100401,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100449": {
+    "id": 12100449,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100458": {
+    "id": 12100458,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100459": {
+    "id": 12100459,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100460": {
+    "id": 12100460,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100461": {
+    "id": 12100461,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100462": {
+    "id": 12100462,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100422": {
+    "id": 12100422,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100423": {
+    "id": 12100423,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100424": {
+    "id": 12100424,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100425": {
+    "id": 12100425,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100426": {
+    "id": 12100426,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100444": {
+    "id": 12100444,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100463": {
+    "id": 12100463,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100464": {
+    "id": 12100464,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100465": {
+    "id": 12100465,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100466": {
+    "id": 12100466,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100467": {
+    "id": 12100467,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100468": {
+    "id": 12100468,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100469": {
+    "id": 12100469,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100470": {
+    "id": 12100470,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100471": {
+    "id": 12100471,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100472": {
+    "id": 12100472,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100473": {
+    "id": 12100473,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100474": {
+    "id": 12100474,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100475": {
+    "id": 12100475,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100476": {
+    "id": 12100476,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100477": {
+    "id": 12100477,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100478": {
+    "id": 12100478,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100479": {
+    "id": 12100479,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100480": {
+    "id": 12100480,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100481": {
+    "id": 12100481,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100482": {
+    "id": 12100482,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100483": {
+    "id": 12100483,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100484": {
+    "id": 12100484,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100485": {
+    "id": 12100485,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100486": {
+    "id": 12100486,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100487": {
+    "id": 12100487,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100488": {
+    "id": 12100488,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100489": {
+    "id": 12100489,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100490": {
+    "id": 12100490,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100491": {
+    "id": 12100491,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100492": {
+    "id": 12100492,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100493": {
+    "id": 12100493,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100494": {
+    "id": 12100494,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100495": {
+    "id": 12100495,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100496": {
+    "id": 12100496,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100497": {
+    "id": 12100497,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100498": {
+    "id": 12100498,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100499": {
+    "id": 12100499,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100500": {
+    "id": 12100500,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100501": {
+    "id": 12100501,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100502": {
+    "id": 12100502,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100503": {
+    "id": 12100503,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100504": {
+    "id": 12100504,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100505": {
+    "id": 12100505,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100506": {
+    "id": 12100506,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100507": {
+    "id": 12100507,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100508": {
+    "id": 12100508,
+    "name": "break_name_12100508",
+    "desc": "break_desc_12100508",
+    "attributeList": []
+  },
+  "12100280": {
+    "id": 12100280,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100509": {
+    "id": 12100509,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100510": {
+    "id": 12100510,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100511": {
+    "id": 12100511,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100512": {
+    "id": 12100512,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100513": {
+    "id": 12100513,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100514": {
+    "id": 12100514,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100515": {
+    "id": 12100515,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100516": {
+    "id": 12100516,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100517": {
+    "id": 12100517,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100518": {
+    "id": 12100518,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100519": {
+    "id": 12100519,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100520": {
+    "id": 12100520,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100521": {
+    "id": 12100521,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100522": {
+    "id": 12100522,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100523": {
+    "id": 12100523,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100524": {
+    "id": 12100524,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100525": {
+    "id": 12100525,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100526": {
+    "id": 12100526,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100527": {
+    "id": 12100527,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100528": {
+    "id": 12100528,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100529": {
+    "id": 12100529,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100530": {
+    "id": 12100530,
+    "name": "break_name_12100530",
+    "desc": "break_desc_12100530",
+    "attributeList": []
+  },
+  "12100531": {
+    "id": 12100531,
+    "name": "break_name_12100531",
+    "desc": "break_desc_12100531",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100532": {
+    "id": 12100532,
+    "name": "break_name_12100532",
+    "desc": "break_desc_12100532",
+    "attributeList": []
+  },
+  "12100533": {
+    "id": 12100533,
+    "name": "break_name_12100533",
+    "desc": "break_desc_12100533",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100534": {
+    "id": 12100534,
+    "name": "break_name_12100534",
+    "desc": "break_desc_12100534",
+    "attributeList": []
+  },
+  "12100535": {
+    "id": 12100535,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100536": {
+    "id": 12100536,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100537": {
+    "id": 12100537,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100538": {
+    "id": 12100538,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100539": {
+    "id": 12100539,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100542": {
+    "id": 12100542,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100543": {
+    "id": 12100543,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100544": {
+    "id": 12100544,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100545": {
+    "id": 12100545,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100549": {
+    "id": 12100549,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100547": {
+    "id": 12100547,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100546": {
+    "id": 12100546,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100541": {
+    "id": 12100541,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100551": {
+    "id": 12100551,
+    "name": "break_name_12100551",
+    "desc": "break_desc_12100551",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100552": {
+    "id": 12100552,
+    "name": "break_name_12100552",
+    "desc": "break_desc_12100552",
+    "attributeList": []
+  },
+  "12100553": {
+    "id": 12100553,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100554": {
+    "id": 12100554,
+    "name": "break_name_12100554",
+    "desc": "break_desc_12100554",
+    "attributeList": []
+  },
+  "12100555": {
+    "id": 12100555,
+    "name": "break_name_12100555",
+    "desc": "break_desc_12100555",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100556": {
+    "id": 12100556,
+    "name": "break_name_12100556",
+    "desc": "break_desc_12100556",
+    "attributeList": []
+  },
+  "12100557": {
+    "id": 12100557,
+    "name": "break_name_12100557",
+    "desc": "break_desc_12100557",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100558": {
+    "id": 12100558,
+    "name": "break_name_12100558",
+    "desc": "break_desc_12100558",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100559": {
+    "id": 12100559,
+    "name": "break_name_12100559",
+    "desc": "break_desc_12100559",
+    "attributeList": []
+  },
+  "12100560": {
+    "id": 12100560,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100561": {
+    "id": 12100561,
+    "name": "break_name_12100561",
+    "desc": "break_desc_12100561",
+    "attributeList": []
+  },
+  "12100562": {
+    "id": 12100562,
+    "name": "break_name_12100562",
+    "desc": "break_desc_12100562",
+    "attributeList": []
+  },
+  "12100540": {
+    "id": 12100540,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100548": {
+    "id": 12100548,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100563": {
+    "id": 12100563,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100564": {
+    "id": 12100564,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100565": {
+    "id": 12100565,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100566": {
+    "id": 12100566,
+    "name": "break_name_12100566",
+    "desc": "break_desc_12100566",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100567": {
+    "id": 12100567,
+    "name": "break_name_12100567",
+    "desc": "break_desc_12100567",
+    "attributeList": []
+  },
+  "12100568": {
+    "id": 12100568,
+    "name": "break_name_12100568",
+    "desc": "break_desc_12100568",
+    "attributeList": []
+  },
+  "12100569": {
+    "id": 12100569,
+    "name": "break_name_12100569",
+    "desc": "break_desc_12100569",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100570": {
+    "id": 12100570,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100571": {
+    "id": 12100571,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100572": {
+    "id": 12100572,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100573": {
+    "id": 12100573,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100574": {
+    "id": 12100574,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100575": {
+    "id": 12100575,
+    "name": "",
+    "desc": "break_desc_12100575",
+    "attributeList": []
+  },
+  "12100576": {
+    "id": 12100576,
+    "name": "",
+    "desc": "break_desc_12100576",
+    "attributeList": []
+  },
+  "12100577": {
+    "id": 12100577,
+    "name": "",
+    "desc": "break_desc_12100577",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100578": {
+    "id": 12100578,
+    "name": "",
+    "desc": "break_desc_12100578",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100579": {
+    "id": 12100579,
+    "name": "",
+    "desc": "break_desc_12100579",
+    "attributeList": []
+  },
+  "12100580": {
+    "id": 12100580,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100581": {
+    "id": 12100581,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100582": {
+    "id": 12100582,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100583": {
+    "id": 12100583,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100590": {
+    "id": 12100590,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100591": {
+    "id": 12100591,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100592": {
+    "id": 12100592,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100593": {
+    "id": 12100593,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100589": {
+    "id": 12100589,
+    "name": "break_name_12100589",
+    "desc": "break_desc_12100589",
+    "attributeList": []
+  },
+  "12100588": {
+    "id": 12100588,
+    "name": "break_name_12100588",
+    "desc": "break_desc_12100588",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100587": {
+    "id": 12100587,
+    "name": "break_name_12100587",
+    "desc": "break_desc_12100587",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100586": {
+    "id": 12100586,
+    "name": "break_name_12100586",
+    "desc": "break_desc_12100586",
+    "attributeList": []
+  },
+  "12100584": {
+    "id": 12100584,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100585": {
+    "id": 12100585,
+    "name": "break_name_12100585",
+    "desc": "break_desc_12100585",
+    "attributeList": []
+  },
+  "12100595": {
+    "id": 12100595,
+    "name": "break_name_12100595",
+    "desc": "break_desc_12100595",
+    "attributeList": []
+  },
+  "12100596": {
+    "id": 12100596,
+    "name": "break_name_12100596",
+    "desc": "break_desc_12100596",
+    "attributeList": []
+  },
+  "12100598": {
+    "id": 12100598,
+    "name": "break_name_12100598",
+    "desc": "break_desc_12100598",
+    "attributeList": []
+  },
+  "12100600": {
+    "id": 12100600,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100601": {
+    "id": 12100601,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100602": {
+    "id": 12100602,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100603": {
+    "id": 12100603,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 800000
+      }
+    ]
+  },
+  "12100604": {
+    "id": 12100604,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100392": {
+    "id": 12100392,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100394": {
+    "id": 12100394,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100395": {
+    "id": 12100395,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100396": {
+    "id": 12100396,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100393": {
+    "id": 12100393,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100443": {
+    "id": 12100443,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100605": {
+    "id": 12100605,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100606": {
+    "id": 12100606,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100607": {
+    "id": 12100607,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "GetHealUp",
+        "numType": "Number",
+        "num_SN": 2000
+      }
+    ]
+  },
+  "12100608": {
+    "id": 12100608,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100609": {
+    "id": 12100609,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100610": {
+    "id": 12100610,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100611": {
+    "id": 12100611,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100612": {
+    "id": 12100612,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100613": {
+    "id": 12100613,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100614": {
+    "id": 12100614,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100615": {
+    "id": 12100615,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100616": {
+    "id": 12100616,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100617": {
+    "id": 12100617,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100618": {
+    "id": 12100618,
+    "name": "break_name_12100618",
+    "desc": "break_desc_12100618",
+    "attributeList": []
+  },
+  "12100619": {
+    "id": 12100619,
+    "name": "break_name_12100619",
+    "desc": "break_desc_12100619",
+    "attributeList": []
+  },
+  "12100620": {
+    "id": 12100620,
+    "name": "break_name_12100620",
+    "desc": "break_desc_12100620",
+    "attributeList": []
+  },
+  "12100621": {
+    "id": 12100621,
+    "name": "break_name_12100621",
+    "desc": "break_desc_12100621",
+    "attributeList": []
+  },
+  "12100622": {
+    "id": 12100622,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100623": {
+    "id": 12100623,
+    "name": "break_name_12100623",
+    "desc": "break_desc_12100623",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100624": {
+    "id": 12100624,
+    "name": "break_name_12100624",
+    "desc": "break_desc_12100624",
+    "attributeList": []
+  },
+  "12100625": {
+    "id": 12100625,
+    "name": "break_name_12100625",
+    "desc": "break_desc_12100625",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100626": {
+    "id": 12100626,
+    "name": "break_name_12100626",
+    "desc": "break_desc_12100626",
+    "attributeList": []
+  },
+  "12100627": {
+    "id": 12100627,
+    "name": "break_name_12100627",
+    "desc": "break_desc_12100627",
+    "attributeList": [
+      {
+        "attributeType": "MakeHealUp",
+        "numType": "Percent",
+        "num_SN": 2000
+      }
+    ]
+  },
+  "12100628": {
+    "id": 12100628,
+    "name": "break_name_12100628",
+    "desc": "break_desc_12100628",
+    "attributeList": []
+  },
+  "12100629": {
+    "id": 12100629,
+    "name": "break_name_12100629",
+    "desc": "break_desc_12100629",
+    "attributeList": []
+  },
+  "12100630": {
+    "id": 12100630,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100631": {
+    "id": 12100631,
+    "name": "break_name_12100631",
+    "desc": "break_desc_12100631",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100633": {
+    "id": 12100633,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100632": {
+    "id": 12100632,
+    "name": "break_name_12100632",
+    "desc": "break_desc_12100632",
+    "attributeList": []
+  },
+  "12100634": {
+    "id": 12100634,
+    "name": "break_name_12100634",
+    "desc": "break_desc_12100634",
+    "attributeList": []
+  },
+  "12100635": {
+    "id": 12100635,
+    "name": "break_name_12100635",
+    "desc": "break_desc_12100635",
+    "attributeList": []
+  },
+  "12100636": {
+    "id": 12100636,
+    "name": "break_name_12100636",
+    "desc": "break_desc_12100636",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100637": {
+    "id": 12100637,
+    "name": "break_name_12100637",
+    "desc": "break_desc_12100637",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100406": {
+    "id": 12100406,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100638": {
+    "id": 12100638,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100639": {
+    "id": 12100639,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100640": {
+    "id": 12100640,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100641": {
+    "id": 12100641,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100642": {
+    "id": 12100642,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100643": {
+    "id": 12100643,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100644": {
+    "id": 12100644,
+    "name": "break_name_12100644",
+    "desc": "break_desc_12100644",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100645": {
+    "id": 12100645,
+    "name": "break_name_12100645",
+    "desc": "break_desc_12100645",
+    "attributeList": []
+  },
+  "12100646": {
+    "id": 12100646,
+    "name": "break_name_12100646",
+    "desc": "break_desc_12100646",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100647": {
+    "id": 12100647,
+    "name": "break_name_12100647",
+    "desc": "break_desc_12100647",
+    "attributeList": []
+  },
+  "12100648": {
+    "id": 12100648,
+    "name": "break_name_12100648",
+    "desc": "break_desc_12100648",
+    "attributeList": []
+  },
+  "12100649": {
+    "id": 12100649,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100650": {
+    "id": 12100650,
+    "name": "break_name_12100650",
+    "desc": "break_desc_12100650",
+    "attributeList": []
+  },
+  "12100651": {
+    "id": 12100651,
+    "name": "break_name_12100651",
+    "desc": "break_desc_12100651",
+    "attributeList": []
+  },
+  "12100652": {
+    "id": 12100652,
+    "name": "break_name_12100652",
+    "desc": "break_desc_12100652",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100654": {
+    "id": 12100654,
+    "name": "break_name_12100654",
+    "desc": "break_desc_12100654",
+    "attributeList": []
+  },
+  "12100655": {
+    "id": 12100655,
+    "name": "break_name_12100655",
+    "desc": "break_desc_12100655",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100653": {
+    "id": 12100653,
+    "name": "break_name_12100653",
+    "desc": "break_desc_12100653",
+    "attributeList": []
+  },
+  "12100656": {
+    "id": 12100656,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100657": {
+    "id": 12100657,
+    "name": "break_name_12100657",
+    "desc": "break_desc_12100657",
+    "attributeList": []
+  },
+  "12100658": {
+    "id": 12100658,
+    "name": "break_name_12100658",
+    "desc": "break_desc_12100658",
+    "attributeList": []
+  },
+  "12100659": {
+    "id": 12100659,
+    "name": "break_name_12100659",
+    "desc": "break_desc_12100659",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100660": {
+    "id": 12100660,
+    "name": "break_name_12100660",
+    "desc": "break_desc_12100660",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100661": {
+    "id": 12100661,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100662": {
+    "id": 12100662,
+    "name": "break_name_12100662",
+    "desc": "break_desc_12100662",
+    "attributeList": []
+  },
+  "12100663": {
+    "id": 12100663,
+    "name": "break_name_12100663",
+    "desc": "break_desc_12100663",
+    "attributeList": []
+  },
+  "12100664": {
+    "id": 12100664,
+    "name": "break_name_12100664",
+    "desc": "break_desc_12100664",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100665": {
+    "id": 12100665,
+    "name": "break_name_12100665",
+    "desc": "break_desc_12100665",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100666": {
+    "id": 12100666,
+    "name": "break_name_12100666",
+    "desc": "break_desc_12100666",
+    "attributeList": []
+  },
+  "12100432": {
+    "id": 12100432,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100433": {
+    "id": 12100433,
+    "name": "break_name_12100433",
+    "desc": "break_desc_12100433",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100434": {
+    "id": 12100434,
+    "name": "break_name_12100434",
+    "desc": "break_desc_12100434",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100435": {
+    "id": 12100435,
+    "name": "break_name_12100435",
+    "desc": "break_desc_12100435",
+    "attributeList": []
+  },
+  "12100436": {
+    "id": 12100436,
+    "name": "break_name_12100436",
+    "desc": "break_desc_12100436",
+    "attributeList": []
+  },
+  "12100451": {
+    "id": 12100451,
+    "name": "break_name_12100451",
+    "desc": "break_desc_12100451",
+    "attributeList": []
+  },
+  "12100667": {
+    "id": 12100667,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100668": {
+    "id": 12100668,
+    "name": "break_name_12100668",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100669": {
+    "id": 12100669,
+    "name": "break_name_12100669",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100670": {
+    "id": 12100670,
+    "name": "break_name_12100670",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100671": {
+    "id": 12100671,
+    "name": "break_name_12100671",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100672": {
+    "id": 12100672,
+    "name": "break_name_12100672",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100673": {
+    "id": 12100673,
+    "name": "break_name_12100673",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100674": {
+    "id": 12100674,
+    "name": "break_name_12100674",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100675": {
+    "id": 12100675,
+    "name": "break_name_12100675",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100676": {
+    "id": 12100676,
+    "name": "break_name_12100676",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100677": {
+    "id": 12100677,
+    "name": "break_name_12100677",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100679": {
+    "id": 12100679,
+    "name": "break_name_12100679",
+    "desc": "break_desc_12100679",
+    "attributeList": []
+  },
+  "12100680": {
+    "id": 12100680,
+    "name": "break_name_12100680",
+    "desc": "break_desc_12100680",
+    "attributeList": []
+  },
+  "12100681": {
+    "id": 12100681,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100682": {
+    "id": 12100682,
+    "name": "break_name_12100682",
+    "desc": "break_desc_12100682",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100683": {
+    "id": 12100683,
+    "name": "break_name_12100683",
+    "desc": "break_desc_12100683",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100684": {
+    "id": 12100684,
+    "name": "break_name_12100684",
+    "desc": "break_desc_12100684",
+    "attributeList": []
+  },
+  "12100687": {
+    "id": 12100687,
+    "name": "break_name_12100687",
+    "desc": "break_desc_12100687",
+    "attributeList": []
+  },
+  "12100689": {
+    "id": 12100689,
+    "name": "break_name_12100689",
+    "desc": "break_desc_12100689",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100686": {
+    "id": 12100686,
+    "name": "break_name_12100686",
+    "desc": "break_desc_12100686",
+    "attributeList": []
+  },
+  "12100688": {
+    "id": 12100688,
+    "name": "break_name_12100688",
+    "desc": "break_desc_12100688",
+    "attributeList": []
+  },
+  "12100685": {
+    "id": 12100685,
+    "name": "break_name_12100685",
+    "desc": "break_desc_12100685",
+    "attributeList": []
+  },
+  "12100690": {
+    "id": 12100690,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100678": {
+    "id": 12100678,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100691": {
+    "id": 12100691,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100692": {
+    "id": 12100692,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100693": {
+    "id": 12100693,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100694": {
+    "id": 12100694,
+    "name": "",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100695": {
+    "id": 12100695,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100696": {
+    "id": 12100696,
+    "name": "break_name_12100696",
+    "desc": "break_desc_12100696",
+    "attributeList": []
+  },
+  "12100697": {
+    "id": 12100697,
+    "name": "break_name_12100697",
+    "desc": "break_desc_12100697",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100698": {
+    "id": 12100698,
+    "name": "break_name_12100698",
+    "desc": "break_desc_12100698",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100699": {
+    "id": 12100699,
+    "name": "break_name_12100699",
+    "desc": "break_desc_12100699",
+    "attributeList": [
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100700": {
+    "id": 12100700,
+    "name": "break_name_12100700",
+    "desc": "break_desc_12100700",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100701": {
+    "id": 12100701,
+    "name": "break_name_12100701",
+    "desc": "break_desc_12100701",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100702": {
+    "id": 12100702,
+    "name": "break_name_12100702",
+    "desc": "break_desc_12100702",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100703": {
+    "id": 12100703,
+    "name": "break_name_12100703",
+    "desc": "break_desc_12100703",
+    "attributeList": []
+  },
+  "12100704": {
+    "id": 12100704,
+    "name": "break_name_12100704",
+    "desc": "break_desc_12100704",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100705": {
+    "id": 12100705,
+    "name": "break_name_12100705",
+    "desc": "break_desc_12100705",
+    "attributeList": []
+  },
+  "12100706": {
+    "id": 12100706,
+    "name": "break_name_12100706",
+    "desc": "break_desc_12100706",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100707": {
+    "id": 12100707,
+    "name": "break_name_12100707",
+    "desc": "break_desc_12100707",
+    "attributeList": []
+  },
+  "12100708": {
+    "id": 12100708,
+    "name": "break_name_12100708",
+    "desc": "break_desc_12100708",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100709": {
+    "id": 12100709,
+    "name": "break_name_12100709",
+    "desc": "break_desc_12100709",
+    "attributeList": []
+  },
+  "12100710": {
+    "id": 12100710,
+    "name": "break_name_12100710",
+    "desc": "break_desc_12100710",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100711": {
+    "id": 12100711,
+    "name": "break_name_12100711",
+    "desc": "break_desc_12100711",
+    "attributeList": []
+  },
+  "12100712": {
+    "id": 12100712,
+    "name": "break_name_12100712",
+    "desc": "break_desc_12100712",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100713": {
+    "id": 12100713,
+    "name": "break_name_12100713",
+    "desc": "break_desc_12100713",
+    "attributeList": []
+  },
+  "12100714": {
+    "id": 12100714,
+    "name": "break_name_12100714",
+    "desc": "break_desc_12100714",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100715": {
+    "id": 12100715,
+    "name": "break_name_12100715",
+    "desc": "break_desc_12100715",
+    "attributeList": []
+  },
+  "12100716": {
+    "id": 12100716,
+    "name": "break_name_12100716",
+    "desc": "break_desc_12100716",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100717": {
+    "id": 12100717,
+    "name": "break_name_12100717",
+    "desc": "break_desc_12100717",
+    "attributeList": []
+  },
+  "12100718": {
+    "id": 12100718,
+    "name": "break_name_12100718",
+    "desc": "break_desc_12100718",
+    "attributeList": []
+  },
+  "12100719": {
+    "id": 12100719,
+    "name": "break_name_12100719",
+    "desc": "break_desc_12100719",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100720": {
+    "id": 12100720,
+    "name": "break_name_12100720",
+    "desc": "break_desc_12100720",
+    "attributeList": []
+  },
+  "12100721": {
+    "id": 12100721,
+    "name": "break_name_12100721",
+    "desc": "break_desc_12100721",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100722": {
+    "id": 12100722,
+    "name": "break_name_12100722",
+    "desc": "break_desc_12100722",
+    "attributeList": []
+  },
+  "12100724": {
+    "id": 12100724,
+    "name": "break_name_12100724",
+    "desc": "break_desc_12100724",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100725": {
+    "id": 12100725,
+    "name": "break_name_12100725",
+    "desc": "break_desc_12100725",
+    "attributeList": []
+  },
+  "12100726": {
+    "id": 12100726,
+    "name": "break_name_12100726",
+    "desc": "break_desc_12100726",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 400000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 400000
+      }
+    ]
+  },
+  "12100727": {
+    "id": 12100727,
+    "name": "break_name_12100727",
+    "desc": "break_desc_12100727",
+    "attributeList": []
+  },
+  "12100728": {
+    "id": 12100728,
+    "name": "break_name_12100728",
+    "desc": "break_desc_12100728",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100729": {
+    "id": 12100729,
+    "name": "break_name_12100729",
+    "desc": "break_desc_12100729",
+    "attributeList": []
+  },
+  "12100723": {
+    "id": 12100723,
+    "name": "break_name_12100723",
+    "desc": "break_desc_12100723",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100730": {
+    "id": 12100730,
+    "name": "break_name_12100730",
+    "desc": "break_desc_12100730",
+    "attributeList": []
+  },
+  "12100731": {
+    "id": 12100731,
+    "name": "break_name_12100731",
+    "desc": "break_desc_12100731",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100732": {
+    "id": 12100732,
+    "name": "break_name_12100732",
+    "desc": "break_desc_12100732",
+    "attributeList": []
+  },
+  "12100733": {
+    "id": 12100733,
+    "name": "break_name_12100733",
+    "desc": "break_desc_12100733",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100734": {
+    "id": 12100734,
+    "name": "break_name_12100734",
+    "desc": "break_desc_12100734",
+    "attributeList": []
+  },
+  "12100735": {
+    "id": 12100735,
+    "name": "break_name_12100735",
+    "desc": "break_desc_12100735",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100736": {
+    "id": 12100736,
+    "name": "MIX",
+    "desc": "break_desc_12100736",
+    "attributeList": []
+  },
+  "12100737": {
+    "id": 12100737,
+    "name": "break_name_12100737",
+    "desc": "break_desc_12100737",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100738": {
+    "id": 12100738,
+    "name": "break_name_12100738",
+    "desc": "break_desc_12100738",
+    "attributeList": []
+  },
+  "12100739": {
+    "id": 12100739,
+    "name": "break_name_12100739",
+    "desc": "break_desc_12100739",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100740": {
+    "id": 12100740,
+    "name": "break_name_12100740",
+    "desc": "break_desc_12100740",
+    "attributeList": []
+  },
+  "12100741": {
+    "id": 12100741,
+    "name": "break_name_12100741",
+    "desc": "break_desc_12100741",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100742": {
+    "id": 12100742,
+    "name": "break_name_12100742",
+    "desc": "break_desc_12100742",
+    "attributeList": []
+  },
+  "12100743": {
+    "id": 12100743,
+    "name": "break_name_12100743",
+    "desc": "break_desc_12100743",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100744": {
+    "id": 12100744,
+    "name": "break_name_12100744",
+    "desc": "break_desc_12100744",
+    "attributeList": []
+  },
+  "12100764": {
+    "id": 12100764,
+    "name": "break_name_12100764",
+    "desc": "break_desc_12100764",
+    "attributeList": []
+  },
+  "12100763": {
+    "id": 12100763,
+    "name": "break_name_12100763",
+    "desc": "break_desc_12100763",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100762": {
+    "id": 12100762,
+    "name": "break_name_12100762",
+    "desc": "break_desc_12100762",
+    "attributeList": []
+  },
+  "12100761": {
+    "id": 12100761,
+    "name": "break_name_12100761",
+    "desc": "break_desc_12100761",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100760": {
+    "id": 12100760,
+    "name": "break_name_12100760",
+    "desc": "break_desc_12100760",
+    "attributeList": []
+  },
+  "12100759": {
+    "id": 12100759,
+    "name": "break_name_12100759",
+    "desc": "break_desc_12100759",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100758": {
+    "id": 12100758,
+    "name": "break_name_12100758",
+    "desc": "break_desc_12100758",
+    "attributeList": []
+  },
+  "12100757": {
+    "id": 12100757,
+    "name": "break_name_12100757",
+    "desc": "break_desc_12100757",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100756": {
+    "id": 12100756,
+    "name": "break_name_12100756",
+    "desc": "break_desc_12100756",
+    "attributeList": []
+  },
+  "12100755": {
+    "id": 12100755,
+    "name": "break_name_12100755",
+    "desc": "break_desc_12100755",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100754": {
+    "id": 12100754,
+    "name": "break_name_12100754",
+    "desc": "break_desc_12100754",
+    "attributeList": []
+  },
+  "12100753": {
+    "id": 12100753,
+    "name": "break_name_12100753",
+    "desc": "break_desc_12100753",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100752": {
+    "id": 12100752,
+    "name": "break_name_12100752",
+    "desc": "break_desc_12100752",
+    "attributeList": []
+  },
+  "12100751": {
+    "id": 12100751,
+    "name": "break_name_12100751",
+    "desc": "break_desc_12100751",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100750": {
+    "id": 12100750,
+    "name": "break_name_12100750",
+    "desc": "break_desc_12100750",
+    "attributeList": []
+  },
+  "12100749": {
+    "id": 12100749,
+    "name": "break_name_12100749",
+    "desc": "break_desc_12100749",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100748": {
+    "id": 12100748,
+    "name": "break_name_12100748",
+    "desc": "break_desc_12100748",
+    "attributeList": []
+  },
+  "12100746": {
+    "id": 12100746,
+    "name": "break_name_12100746",
+    "desc": "break_desc_12100746",
+    "attributeList": []
+  },
+  "12100745": {
+    "id": 12100745,
+    "name": "break_name_12100745",
+    "desc": "break_desc_12100745",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100747": {
+    "id": 12100747,
+    "name": "break_name_12100747",
+    "desc": "break_desc_12100747",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 600000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 600000
+      }
+    ]
+  },
+  "12100765": {
+    "id": 12100765,
+    "name": "break_name_12100765",
+    "desc": "break_desc_12100765",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100766": {
+    "id": 12100766,
+    "name": "break_name_12100766",
+    "desc": "break_desc_12100766",
+    "attributeList": []
+  },
+  "12100767": {
+    "id": 12100767,
+    "name": "break_name_12100767",
+    "desc": "break_desc_12100767",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100768": {
+    "id": 12100768,
+    "name": "break_name_12100768",
+    "desc": "break_desc_12100768",
+    "attributeList": []
+  },
+  "12100769": {
+    "id": 12100769,
+    "name": "break_name_12100769",
+    "desc": "break_desc_12100769",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100770": {
+    "id": 12100770,
+    "name": "break_name_12100770",
+    "desc": "break_desc_12100770",
+    "attributeList": []
+  },
+  "12100771": {
+    "id": 12100771,
+    "name": "break_name_12100771",
+    "desc": "break_desc_12100771",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100772": {
+    "id": 12100772,
+    "name": "break_name_12100772",
+    "desc": "break_desc_12100772",
+    "attributeList": []
+  },
+  "12100773": {
+    "id": 12100773,
+    "name": "break_name_12100773",
+    "desc": "break_desc_12100773",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100774": {
+    "id": 12100774,
+    "name": "break_name_12100774",
+    "desc": "break_desc_12100774",
+    "attributeList": []
+  },
+  "12100775": {
+    "id": 12100775,
+    "name": "break_name_12100775",
+    "desc": "break_desc_12100775",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100776": {
+    "id": 12100776,
+    "name": "break_name_12100776",
+    "desc": "break_desc_12100776",
+    "attributeList": []
+  },
+  "12100777": {
+    "id": 12100777,
+    "name": "break_name_12100777",
+    "desc": "break_desc_12100777",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100778": {
+    "id": 12100778,
+    "name": "break_name_12100778",
+    "desc": "break_desc_12100778",
+    "attributeList": []
+  },
+  "12100779": {
+    "id": 12100779,
+    "name": "break_name_12100779",
+    "desc": "break_desc_12100779",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100780": {
+    "id": 12100780,
+    "name": "break_name_12100780",
+    "desc": "break_desc_12100780",
+    "attributeList": []
+  },
+  "12100781": {
+    "id": 12100781,
+    "name": "break_name_12100781",
+    "desc": "break_desc_12100781",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
+  },
+  "12100782": {
+    "id": 12100782,
+    "name": "break_name_12100782",
+    "desc": "break_desc_12100782",
+    "attributeList": []
+  },
+  "12100783": {
+    "id": 12100783,
+    "name": "break_name_12100783",
+    "desc": "break_desc_12100783",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100784": {
+    "id": 12100784,
+    "name": "break_name_12100784",
+    "desc": "break_desc_12100784",
+    "attributeList": []
+  },
+  "12100785": {
+    "id": 12100785,
+    "name": "break_name_12100785",
+    "desc": "break_desc_12100785",
+    "attributeList": []
+  },
+  "12100786": {
+    "id": 12100786,
+    "name": "break_name_12100786",
+    "desc": "break_desc_12100786",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100787": {
+    "id": 12100787,
+    "name": "break_name_12100787",
+    "desc": "break_desc_12100787",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100788": {
+    "id": 12100788,
+    "name": "break_name_12100788",
+    "desc": "break_desc_12100788",
+    "attributeList": []
+  },
+  "12100789": {
+    "id": 12100789,
+    "name": "break_name_12100789",
+    "desc": "break_desc_12100789",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100790": {
+    "id": 12100790,
+    "name": "break_name_12100790",
+    "desc": "break_desc_12100790",
+    "attributeList": []
+  },
+  "12100791": {
+    "id": 12100791,
+    "name": "break_name_12100791",
+    "desc": "break_desc_12100791",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100792": {
+    "id": 12100792,
+    "name": "break_name_12100792",
+    "desc": "break_desc_12100792",
+    "attributeList": []
+  },
+  "12100793": {
+    "id": 12100793,
+    "name": "break_name_12100793",
+    "desc": "break_desc_12100793",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100794": {
+    "id": 12100794,
+    "name": "break_name_12100794",
+    "desc": "break_desc_12100794",
+    "attributeList": []
+  },
+  "12100795": {
+    "id": 12100795,
+    "name": "break_name_12100795",
+    "desc": "break_desc_12100795",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100796": {
+    "id": 12100796,
+    "name": "break_name_12100796",
+    "desc": "break_desc_12100796",
+    "attributeList": []
+  },
+  "12100797": {
+    "id": 12100797,
+    "name": "break_name_12100797",
+    "desc": "break_desc_12100797",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100798": {
+    "id": 12100798,
+    "name": "break_name_12100798",
+    "desc": "break_desc_12100798",
+    "attributeList": []
+  },
+  "12100799": {
+    "id": 12100799,
+    "name": "break_name_12100799",
+    "desc": "break_desc_12100799",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100800": {
+    "id": 12100800,
+    "name": "break_name_12100800",
+    "desc": "break_desc_12100800",
+    "attributeList": []
+  },
+  "12100801": {
+    "id": 12100801,
+    "name": "break_name_12100801",
+    "desc": "break_desc_12100801",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100802": {
+    "id": 12100802,
+    "name": "break_name_12100802",
+    "desc": "break_desc_12100802",
+    "attributeList": []
+  },
+  "12100803": {
+    "id": 12100803,
+    "name": "break_name_12100803",
+    "desc": "break_desc_12100803",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100804": {
+    "id": 12100804,
+    "name": "break_name_12100804",
+    "desc": "break_desc_12100804",
+    "attributeList": []
+  },
+  "12100805": {
+    "id": 12100805,
+    "name": "break_name_12100805",
+    "desc": "break_desc_12100805",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100806": {
+    "id": 12100806,
+    "name": "break_name_12100806",
+    "desc": "break_desc_12100806",
+    "attributeList": []
+  },
+  "12100807": {
+    "id": 12100807,
+    "name": "break_name_12100807",
+    "desc": "break_desc_12100807",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100808": {
+    "id": 12100808,
+    "name": "break_name_12100808",
+    "desc": "break_desc_12100808",
+    "attributeList": []
+  },
+  "12100809": {
+    "id": 12100809,
+    "name": "break_name_12100809",
+    "desc": "break_desc_12100809",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100810": {
+    "id": 12100810,
+    "name": "break_name_12100810",
+    "desc": "break_desc_12100810",
+    "attributeList": []
+  },
+  "12100811": {
+    "id": 12100811,
+    "name": "break_name_12100811",
+    "desc": "break_desc_12100811",
+    "attributeList": [
+      {
+        "attributeType": "MakeHealUp",
+        "numType": "Percent",
+        "num_SN": 2000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100812": {
+    "id": 12100812,
+    "name": "break_name_12100812",
+    "desc": "break_desc_12100812",
+    "attributeList": []
+  },
+  "12100813": {
+    "id": 12100813,
+    "name": "break_name_12100813",
+    "desc": "break_desc_12100813",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100814": {
+    "id": 12100814,
+    "name": "break_name_12100814",
+    "desc": "break_desc_12100814",
+    "attributeList": []
+  },
+  "12100815": {
+    "id": 12100815,
+    "name": "break_name_12100815",
+    "desc": "break_desc_12100815",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100816": {
+    "id": 12100816,
+    "name": "break_name_12100816",
+    "desc": "break_desc_12100816",
+    "attributeList": []
+  },
+  "12100817": {
+    "id": 12100817,
+    "name": "break_name_12100817",
+    "desc": "break_desc_12100817",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100818": {
+    "id": 12100818,
+    "name": "break_name_12100818",
+    "desc": "break_desc_12100818",
+    "attributeList": []
+  },
+  "12100820": {
+    "id": 12100820,
+    "name": "break_name_12100820",
+    "desc": "break_desc_12100820",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100821": {
+    "id": 12100821,
+    "name": "break_name_12100821",
+    "desc": "break_desc_12100821",
+    "attributeList": []
+  },
+  "12100819": {
+    "id": 12100819,
+    "name": "break_name_12100819",
+    "desc": "break_desc_12100819",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100822": {
+    "id": 12100822,
+    "name": "break_name_12100822",
+    "desc": "break_desc_12100822",
+    "attributeList": []
+  },
+  "12100823": {
+    "id": 12100823,
+    "name": "break_name_12100823",
+    "desc": "break_desc_12100823",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100824": {
+    "id": 12100824,
+    "name": "break_name_12100824",
+    "desc": "break_desc_12100824",
+    "attributeList": []
+  },
+  "12100825": {
+    "id": 12100825,
+    "name": "break_name_12100825",
+    "desc": "break_desc_12100825",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100826": {
+    "id": 12100826,
+    "name": "break_name_12100826",
+    "desc": "break_desc_12100826",
+    "attributeList": []
+  },
+  "12100827": {
+    "id": 12100827,
+    "name": "break_name_12100827",
+    "desc": "break_desc_12100827",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100828": {
+    "id": 12100828,
+    "name": "break_name_12100828",
+    "desc": "break_desc_12100828",
+    "attributeList": []
+  },
+  "12100829": {
+    "id": 12100829,
+    "name": "break_name_12100829",
+    "desc": "break_desc_12100829",
+    "attributeList": []
+  },
+  "12100830": {
+    "id": 12100830,
+    "name": "break_name_12100830",
+    "desc": "break_desc_12100830",
+    "attributeList": []
+  },
+  "12100832": {
+    "id": 12100832,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100833": {
+    "id": 12100833,
+    "name": "break_name_12100833",
+    "desc": "每只【机器狼】持续期间，为我方全体抵御12%伤害，可叠加\\n使用【队长技】或得意技能牌时，使自身<color=#7AB2FF>【隐形】</color>并额外呼叫1只【机械狼】登场作战，持续5秒",
+    "attributeList": []
+  },
+  "12100834": {
+    "id": 12100834,
+    "name": "break_name_12100834",
+    "desc": "break_desc_12100834",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100835": {
+    "id": 12100835,
+    "name": "break_name_12100835",
+    "desc": "break_desc_12100835",
+    "attributeList": []
+  },
+  "12100836": {
+    "id": 12100836,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100838": {
+    "id": 12100838,
+    "name": "青尾荡涤",
+    "desc": "【彗尾姬】跟随期间，目标队友造成的最终伤害提高20%",
+    "attributeList": []
+  },
+  "12100837": {
+    "id": 12100837,
+    "name": "琥珀茶漩",
+    "desc": "使用【茶时法则】抽到的卡牌，卡牌持有者攻击力+3%，上限60%",
+    "attributeList": []
+  },
+  "12100839": {
+    "id": 12100839,
+    "name": "break_name_12100839",
+    "desc": "break_desc_12100839",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100840": {
+    "id": 12100840,
+    "name": "晶核溯光",
+    "desc": "【晶簇】上限+4",
+    "attributeList": []
+  },
+  "12100841": {
+    "id": 12100841,
+    "name": "绀夜温沏",
+    "desc": "【热应力】/【冷缩力】层数越高，敌方受到的火焰/冰冻伤害越高，最高50%",
+    "attributeList": []
+  },
+  "12100842": {
+    "id": 12100842,
+    "name": "“黑羽凝视者”",
+    "desc": "【注视】可对我方使用",
+    "attributeList": []
+  },
+  "12100843": {
+    "id": 12100843,
+    "name": "夜啼悲歌",
+    "desc": "每次我方造成<color=#FF6666>【崩坏】</color>/<color=#FF6666>【重伤】</color>/<color=#B383FF>【混乱】</color>/<color=#FF6666>【灼心】</color>/<color=#B383FF>【注视】</color>时，自身攻击力+0.5%，上限60%",
+    "attributeList": []
+  },
+  "12100844": {
+    "id": 12100844,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100845": {
+    "id": 12100845,
+    "name": "break_name_12100845",
+    "desc": "break_desc_12100845",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100846": {
+    "id": 12100846,
+    "name": "“永夜观测者”",
+    "desc": "我方场上每存在1只【瞵鸦】，手牌补充冷却时间缩短0.33秒，可叠加\\n敌方场上每存在1只【瞵鸦】，每秒获得0.1点费用，可叠加",
+    "attributeList": []
+  },
+  "12100847": {
+    "id": 12100847,
+    "name": "PPPH",
+    "desc": "每获得3张自身技能牌，获得1点费用",
+    "attributeList": []
+  },
+  "12100848": {
+    "id": 12100848,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100849": {
+    "id": 12100849,
+    "name": "隐者",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100850": {
+    "id": 12100850,
+    "name": "恋人",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100851": {
+    "id": 12100851,
+    "name": "break_name_12100851",
+    "desc": "break_desc_12100851",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
+  },
+  "12100852": {
+    "id": 12100852,
+    "name": "节制",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100853": {
+    "id": 12100853,
+    "name": "宝剑",
+    "desc": "",
+    "attributeList": []
+  }
+}

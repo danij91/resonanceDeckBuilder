@@ -1,3243 +1,5551 @@
 {
   "10000004": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000004_1",
-        "desc": "char_awake_desc_10000004_1"
-      },
-      {
-        "name": "char_awake_name_10000004_2",
-        "desc": "char_awake_desc_10000004_2"
-      },
-      {
-        "name": "char_awake_name_10000004_3",
-        "desc": "char_awake_desc_10000004_3"
-      },
-      {
-        "name": "char_awake_name_10000004_4",
-        "desc": "char_awake_desc_10000004_4"
-      },
-      {
-        "name": "char_awake_name_10000004_5",
-        "desc": "char_awake_desc_10000004_5"
-      }
-    ],
-    "desc": "char_desc_10000004",
     "id": 10000004,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/e/ea/g7qvkhgksqc6dmeoeogo5cg6xdyb8r4.png",
     "name": "char_name_10000004",
-    "rarity": "SSR",
-    "resonance": [
+    "quality": "FiveStar",
+    "sideId": 12600031,
+    "passiveSkillList": [
       {
-        "name": "char_reson_name_10000004_1",
-        "desc": "char_reson_desc_10000004_1"
-      },
-      {
-        "name": "char_reson_name_10000004_2",
-        "desc": "char_reson_desc_10000004_2"
-      },
-      {
-        "name": "char_reson_name_10000004_3",
-        "desc": "char_reson_desc_10000004_3"
-      },
-      {
-        "name": "char_reson_name_10000004_4",
-        "desc": "char_reson_desc_10000004_4"
-      },
-      {
-        "name": "char_reson_name_10000004_5",
-        "desc": "char_reson_desc_10000004_5"
+        "skillId": 12300972
       }
     ],
-    "skills": {
-      "1": "10600034",
-      "2": "10600004",
-      "3": "10600005"
-    },
-    "produceSkills": [
-      "10600004",
-      "10600005",
-      "10600034",
-      "10600114",
-      "10600115",
-      "10600143"
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12300022
+      },
+      {
+        "num": 2,
+        "skillId": 12300023
+      },
+      {
+        "num": 1,
+        "skillId": 12300024
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 78000000,
+    "def_SN": 800000,
+    "atk_SN": 800000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800002
+      },
+      {
+        "talentId": 12800039
+      },
+      {
+        "talentId": 12800540
+      },
+      {
+        "talentId": 12800040
+      },
+      {
+        "talentId": 12800197
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100055
+      },
+      {
+        "breakthroughId": 12100056
+      },
+      {
+        "breakthroughId": 12100057
+      },
+      {
+        "breakthroughId": 12100791
+      },
+      {
+        "breakthroughId": 12100792
+      },
+      {
+        "breakthroughId": 12100060
+      }
+    ],
+    "line": 1,
+    "subLine": 930,
+    "identity": "char_identity_10000004",
+    "ability": "char_ability_10000004",
+    "controllerId": 10300004,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
     ]
   },
   "10000025": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000025_1",
-        "desc": "char_awake_desc_10000025_1"
-      },
-      {
-        "name": "char_awake_name_10000025_2",
-        "desc": "char_awake_desc_10000025_2"
-      },
-      {
-        "name": "char_awake_name_10000025_3",
-        "desc": "char_awake_desc_10000025_3"
-      },
-      {
-        "name": "char_awake_name_10000025_4",
-        "desc": "char_awake_desc_10000025_4"
-      },
-      {
-        "name": "char_awake_name_10000025_5",
-        "desc": "char_awake_desc_10000025_5"
-      }
-    ],
-    "desc": "char_desc_10000025",
     "id": 10000025,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/5/5f/fove629a7cnqli99apcr5nfpfm9uz22.png",
     "name": "char_name_10000025",
-    "produceSkills": [
-      "10600014",
-      "10600015",
-      "10600016",
-      "10600202"
-    ],
-    "rarity": "R",
-    "resonance": [
+    "quality": "threeStar",
+    "sideId": 12600027,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_reson_name_10000025_1",
-        "desc": "char_reson_desc_10000025_1"
+        "num": 2,
+        "skillId": 12300019
       },
       {
-        "name": "char_reson_name_10000025_2",
-        "desc": "char_reson_desc_10000025_2"
+        "num": 2,
+        "skillId": 12300020
       },
       {
-        "name": "char_reson_name_10000025_3",
-        "desc": "char_reson_desc_10000025_3"
-      },
-      {
-        "name": "char_reson_name_10000025_4",
-        "desc": "char_reson_desc_10000025_4"
+        "num": 1,
+        "skillId": 12300021
       }
     ],
-    "skills": {
-      "1": "10600014",
-      "2": "10600015",
-      "3": "10600016"
-    }
-  },
-  "10000027": {
-    "awakening": [
+    "tk_SN": null,
+    "hp_SN": 70000000,
+    "def_SN": 720000,
+    "atk_SN": 750000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
       {
-        "name": "char_awake_name_10000027_1",
-        "desc": "char_awake_desc_10000027_1"
+        "talentId": 12800016
       },
       {
-        "name": "char_awake_name_10000027_2",
-        "desc": "char_awake_desc_10000027_2"
+        "talentId": 12800017
       },
       {
-        "name": "char_awake_name_10000027_3",
-        "desc": "char_awake_desc_10000027_3"
+        "talentId": 12800514
       },
       {
-        "name": "char_awake_name_10000027_4",
-        "desc": "char_awake_desc_10000027_4"
-      },
-      {
-        "name": "char_awake_name_10000027_5",
-        "desc": "char_awake_desc_10000027_5"
+        "talentId": 12800019
       }
     ],
-    "desc": "char_desc_10000027",
-    "id": 10000027,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/b/b1/nxypaywi8et5ui4ogaqqepgdd3xjxzx.png",
-    "name": "char_name_10000027",
-    "produceSkills": [
-      "10600167",
-      "10600290",
-      "10600291",
-      "10600292"
-    ],
-    "rarity": "R",
-    "resonance": [
+    "breakthroughList": [
       {
-        "name": "char_reson_name_10000027_1",
-        "desc": "char_reson_desc_10000027_1"
+        "breakthroughId": 12100130
       },
       {
-        "name": "char_reson_name_10000027_2",
-        "desc": "char_reson_desc_10000027_2"
+        "breakthroughId": 12100116
       },
       {
-        "name": "char_reson_name_10000027_3",
-        "desc": "char_reson_desc_10000027_3"
+        "breakthroughId": 12100117
       },
       {
-        "name": "char_reson_name_10000027_4",
-        "desc": "char_reson_desc_10000027_4"
+        "breakthroughId": 12100745
+      },
+      {
+        "breakthroughId": 12100746
+      },
+      {
+        "breakthroughId": 12100120
       }
     ],
-    "skills": {
-      "1": "10600167",
-      "2": "10600290",
-      "3": "10600291"
-    }
-  },
-  "10000031": {
-    "awakening": [
+    "line": 2,
+    "subLine": 140,
+    "identity": "char_identity_10000025",
+    "ability": "char_ability_10000025",
+    "controllerId": 10300025,
+    "equipmentSlotList": [
       {
-        "name": "char_awake_name_10000031_1",
-        "desc": "char_awake_desc_10000031_1"
+        "tagID": 12600155
       },
       {
-        "name": "char_awake_name_10000031_2",
-        "desc": "char_awake_desc_10000031_2"
+        "tagID": 12600161
       },
       {
-        "name": "char_awake_name_10000031_3",
-        "desc": "char_awake_desc_10000031_3"
-      },
-      {
-        "name": "char_awake_name_10000031_4",
-        "desc": "char_awake_desc_10000031_4"
-      },
-      {
-        "name": "char_awake_name_10000031_5",
-        "desc": "char_awake_desc_10000031_5"
+        "tagID": 12600162
       }
-    ],
-    "desc": "char_desc_10000031",
-    "id": 10000031,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/9/9e/jn2p7d9fuxa2b4kijg6vljnsyctac2x.png",
-    "name": "char_name_10000031",
-    "produceSkills": [
-      "10600192",
-      "10600262",
-      "10600284",
-      "10600293",
-      "10600294",
-      "10600367"
-    ],
-    "rarity": "SSR",
-    "resonance": [
-      {
-        "name": "char_reson_name_10000031_1",
-        "desc": "char_reson_desc_10000031_1"
-      },
-      {
-        "name": "char_reson_name_10000031_2",
-        "desc": "char_reson_desc_10000031_2"
-      },
-      {
-        "name": "char_reson_name_10000031_3",
-        "desc": "char_reson_desc_10000031_3"
-      },
-      {
-        "name": "char_reson_name_10000031_4",
-        "desc": "char_reson_desc_10000031_4"
-      },
-      {
-        "name": "char_reson_name_10000031_5",
-        "desc": "char_reson_desc_10000031_5"
-      }
-    ],
-    "skills": {
-      "1": "10600293",
-      "2": "10600284",
-      "3": "10600294"
-    }
-  },
-  "10000032": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000032_1",
-        "desc": "char_awake_desc_10000032_1"
-      },
-      {
-        "name": "char_awake_name_10000032_2",
-        "desc": "char_awake_desc_10000032_2"
-      },
-      {
-        "name": "char_awake_name_10000032_3",
-        "desc": "char_awake_desc_10000032_3"
-      },
-      {
-        "name": "char_awake_name_10000032_4",
-        "desc": "char_awake_desc_10000032_4"
-      },
-      {
-        "name": "char_awake_name_10000032_5",
-        "desc": "char_awake_desc_10000032_5"
-      }
-    ],
-    "desc": "char_desc_10000032",
-    "id": 10000032,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/0/01/23b1it2iy06w1ijt2ncayvr3i768ehk.png",
-    "name": "char_name_10000032",
-    "produceSkills": [
-      "10600100",
-      "10600101",
-      "10600102"
-    ],
-    "rarity": "SSR",
-    "resonance": [
-      {
-        "name": "char_reson_name_10000032_1",
-        "desc": "char_reson_desc_10000032_1"
-      },
-      {
-        "name": "char_reson_name_10000032_2",
-        "desc": "char_reson_desc_10000032_2"
-      },
-      {
-        "name": "char_reson_name_10000032_3",
-        "desc": "char_reson_desc_10000032_3"
-      },
-      {
-        "name": "char_reson_name_10000032_4",
-        "desc": "char_reson_desc_10000032_4"
-      },
-      {
-        "name": "char_reson_name_10000032_5",
-        "desc": "char_reson_desc_10000032_5"
-      }
-    ],
-    "skills": {
-      "1": "10600102",
-      "2": "10600101",
-      "3": "10600100"
-    }
-  },
-  "10000035": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000035_1",
-        "desc": "char_awake_desc_10000035_1"
-      },
-      {
-        "name": "char_awake_name_10000035_2",
-        "desc": "char_awake_desc_10000035_2"
-      },
-      {
-        "name": "char_awake_name_10000035_3",
-        "desc": "char_awake_desc_10000035_3"
-      },
-      {
-        "name": "char_awake_name_10000035_4",
-        "desc": "char_awake_desc_10000035_4"
-      },
-      {
-        "name": "char_awake_name_10000035_5",
-        "desc": "char_awake_desc_10000035_5"
-      }
-    ],
-    "desc": "char_desc_10000035",
-    "id": 10000035,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/7/76/lpcgzcy77vj8pba9o4zavicup2cdtod.png",
-    "name": "char_name_10000035",
-    "rarity": "SSR",
-    "resonance": [
-      {
-        "name": "char_reson_name_10000035_1",
-        "desc": "char_reson_desc_10000035_1"
-      },
-      {
-        "name": "char_reson_name_10000035_2",
-        "desc": "char_reson_desc_10000035_2"
-      },
-      {
-        "name": "char_reson_name_10000035_3",
-        "desc": "char_reson_desc_10000035_3"
-      },
-      {
-        "name": "char_reson_name_10000035_4",
-        "desc": "char_reson_desc_10000035_4"
-      },
-      {
-        "name": "char_reson_name_10000035_5",
-        "desc": "char_reson_desc_10000035_5"
-      }
-    ],
-    "skills": {
-      "1": "10600119",
-      "2": "10600314",
-      "3": "10600315"
-    },
-    "produceSkills": [
-      "10600119",
-      "10600314",
-      "10600315"
     ]
   },
-  "10000047": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000047_1",
-        "desc": "char_awake_desc_10000047_1"
-      },
-      {
-        "name": "char_awake_name_10000047_2",
-        "desc": "char_awake_desc_10000047_2"
-      },
-      {
-        "name": "char_awake_name_10000047_3",
-        "desc": "char_awake_desc_10000047_3"
-      },
-      {
-        "name": "char_awake_name_10000047_4",
-        "desc": "char_awake_desc_10000047_4"
-      },
-      {
-        "name": "char_awake_name_10000047_5",
-        "desc": "char_awake_desc_10000047_5"
-      }
-    ],
-    "desc": "char_desc_10000047",
-    "id": 10000047,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/c/c3/roqtb4sm1phw9jx2521gtzfg49k7ogz.png",
-    "name": "char_name_10000047",
-    "produceSkills": [
-      "10600043",
-      "10600044",
-      "10600075",
-      "10600091",
-      "10600099"
-    ],
-    "rarity": "SR",
-    "resonance": [
-      {
-        "name": "char_reson_name_10000047_1",
-        "desc": "char_reson_desc_10000047_1"
-      },
-      {
-        "name": "char_reson_name_10000047_2",
-        "desc": "char_reson_desc_10000047_2"
-      },
-      {
-        "name": "char_reson_name_10000047_3",
-        "desc": "char_reson_desc_10000047_3"
-      },
-      {
-        "name": "char_reson_name_10000047_4",
-        "desc": "char_reson_desc_10000047_4"
-      },
-      {
-        "name": "char_reson_name_10000047_5",
-        "desc": "char_reson_desc_10000047_5"
-      }
-    ],
-    "skills": {
-      "1": "10600043",
-      "2": "10600091",
-      "3": "10600099"
-    }
-  },
-  "10000051": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000051_1",
-        "desc": "char_awake_desc_10000051_1"
-      },
-      {
-        "name": "char_awake_name_10000051_2",
-        "desc": "char_awake_desc_10000051_2"
-      },
-      {
-        "name": "char_awake_name_10000051_3",
-        "desc": "char_awake_desc_10000051_3"
-      },
-      {
-        "name": "char_awake_name_10000051_4",
-        "desc": "char_awake_desc_10000051_4"
-      },
-      {
-        "name": "char_awake_name_10000051_5",
-        "desc": "char_awake_desc_10000051_5"
-      }
-    ],
-    "desc": "char_desc_10000051",
-    "id": 10000051,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/9/9d/pxkxvbdqdbtdh35t8o2rjzigmkw5pqu.png",
-    "name": "char_name_10000051",
-    "produceSkills": [
-      "10600251",
-      "10600255",
-      "10600256"
-    ],
-    "rarity": "SSR",
-    "resonance": [
-      {
-        "name": "char_reson_name_10000051_1",
-        "desc": "char_reson_desc_10000051_1"
-      },
-      {
-        "name": "char_reson_name_10000051_2",
-        "desc": "char_reson_desc_10000051_2"
-      },
-      {
-        "name": "char_reson_name_10000051_3",
-        "desc": "char_reson_desc_10000051_3"
-      },
-      {
-        "name": "char_reson_name_10000051_4",
-        "desc": "char_reson_desc_10000051_4"
-      },
-      {
-        "name": "char_reson_name_10000051_5",
-        "desc": "char_reson_desc_10000051_5"
-      }
-    ],
-    "skills": {
-      "1": "10600251",
-      "2": "10600255",
-      "3": "10600256"
-    }
-  },
-  "10000052": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000052_1",
-        "desc": "char_awake_desc_10000052_1"
-      },
-      {
-        "name": "char_awake_name_10000052_2",
-        "desc": "char_awake_desc_10000052_2"
-      },
-      {
-        "name": "char_awake_name_10000052_3",
-        "desc": "char_awake_desc_10000052_3"
-      },
-      {
-        "name": "char_awake_name_10000052_4",
-        "desc": "char_awake_desc_10000052_4"
-      },
-      {
-        "name": "char_awake_name_10000052_5",
-        "desc": "char_awake_desc_10000052_5"
-      }
-    ],
-    "desc": "char_desc_10000052",
-    "id": 10000052,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/9/99/qjewxjjz056p4j7pjtrlv0v76tog4ij.png",
-    "name": "char_name_10000052",
-    "produceSkills": [
-      "10600050",
-      "10600134",
-      "10600137",
-      "10600171"
-    ],
-    "rarity": "SR",
-    "resonance": [
-      {
-        "name": "char_reson_name_10000052_1",
-        "desc": "char_reson_desc_10000052_1"
-      },
-      {
-        "name": "char_reson_name_10000052_2",
-        "desc": "char_reson_desc_10000052_2"
-      },
-      {
-        "name": "char_reson_name_10000052_3",
-        "desc": "char_reson_desc_10000052_3"
-      },
-      {
-        "name": "char_reson_name_10000052_4",
-        "desc": "char_reson_desc_10000052_4"
-      },
-      {
-        "name": "char_reson_name_10000052_5",
-        "desc": "char_reson_desc_10000052_5"
-      }
-    ],
-    "skills": {
-      "1": "10600050",
-      "2": "10600134",
-      "3": "10600171"
-    }
-  },
-  "10000053": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000053_1",
-        "desc": "char_awake_desc_10000053_1"
-      },
-      {
-        "name": "char_awake_name_10000053_2",
-        "desc": "char_awake_desc_10000053_2"
-      },
-      {
-        "name": "char_awake_name_10000053_3",
-        "desc": "char_awake_desc_10000053_3"
-      },
-      {
-        "name": "char_awake_name_10000053_4",
-        "desc": "char_awake_desc_10000053_4"
-      },
-      {
-        "name": "char_awake_name_10000053_5",
-        "desc": "char_awake_desc_10000053_5"
-      }
-    ],
-    "desc": "char_desc_10000053",
-    "id": 10000053,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/7/78/ks7xx4q5rjap3tai1pyu7bftgnvgwsx.png",
-    "name": "char_name_10000053",
-    "produceSkills": [
-      "10600183",
-      "10600235",
-      "10600241"
-    ],
-    "rarity": "SR",
-    "resonance": [
-      {
-        "name": "char_reson_name_10000053_1",
-        "desc": "char_reson_desc_10000053_1"
-      },
-      {
-        "name": "char_reson_name_10000053_2",
-        "desc": "char_reson_desc_10000053_2"
-      },
-      {
-        "name": "char_reson_name_10000053_3",
-        "desc": "char_reson_desc_10000053_3"
-      },
-      {
-        "name": "char_reson_name_10000053_4",
-        "desc": "char_reson_desc_10000053_4"
-      },
-      {
-        "name": "char_reson_name_10000053_5",
-        "desc": "char_reson_desc_10000053_5"
-      }
-    ],
-    "skills": {
-      "1": "10600183",
-      "2": "10600235",
-      "3": "10600241"
-    }
-  },
   "10000054": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000054_1",
-        "desc": "char_awake_desc_10000054_1"
-      },
-      {
-        "name": "char_awake_name_10000054_2",
-        "desc": "char_awake_desc_10000054_2"
-      },
-      {
-        "name": "char_awake_name_10000054_3",
-        "desc": "char_awake_desc_10000054_3"
-      },
-      {
-        "name": "char_awake_name_10000054_4",
-        "desc": "char_awake_desc_10000054_4"
-      },
-      {
-        "name": "char_awake_name_10000054_5",
-        "desc": "char_awake_desc_10000054_5"
-      }
-    ],
-    "desc": "char_desc_10000054",
     "id": 10000054,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/a/a0/djgvzxvmqbiky8n0pze1ybsksxqus3w.png",
     "name": "char_name_10000054",
-    "rarity": "SSR",
-    "resonance": [
+    "quality": "FiveStar",
+    "sideId": 12600023,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_reson_name_10000054_1",
-        "desc": "char_reson_desc_10000054_1"
+        "num": 3,
+        "skillId": 12300051
       },
       {
-        "name": "char_reson_name_10000054_2",
-        "desc": "char_reson_desc_10000054_2"
+        "num": 2,
+        "skillId": 12300069
       },
       {
-        "name": "char_reson_name_10000054_3",
-        "desc": "char_reson_desc_10000054_3"
-      },
-      {
-        "name": "char_reson_name_10000054_4",
-        "desc": "char_reson_desc_10000054_4"
-      },
-      {
-        "name": "char_reson_name_10000054_5",
-        "desc": "char_reson_desc_10000054_5"
+        "num": 1,
+        "skillId": 12300053
       }
     ],
-    "skills": {
-      "1": "10600045",
-      "2": "10600046",
-      "3": "10600055"
-    },
-    "produceSkills": [
-      "10600045",
-      "10600046",
-      "10600055",
-      "10600076",
-      "10600262",
-      "10600270",
-      "10600282"
+    "tk_SN": null,
+    "hp_SN": 70000000,
+    "def_SN": 720000,
+    "atk_SN": 890000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800027
+      },
+      {
+        "talentId": 12800024
+      },
+      {
+        "talentId": 12800546
+      },
+      {
+        "talentId": 12800028
+      },
+      {
+        "talentId": 12800270
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100132
+      },
+      {
+        "breakthroughId": 12100008
+      },
+      {
+        "breakthroughId": 12100009
+      },
+      {
+        "breakthroughId": 12100789
+      },
+      {
+        "breakthroughId": 12100790
+      },
+      {
+        "breakthroughId": 12100125
+      }
+    ],
+    "line": 3,
+    "subLine": 290,
+    "identity": "char_identity_10000054",
+    "ability": "char_ability_10000054",
+    "controllerId": 10300050,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
     ]
   },
   "10000055": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000055_1",
-        "desc": "char_awake_desc_10000055_1"
-      },
-      {
-        "name": "char_awake_name_10000055_2",
-        "desc": "char_awake_desc_10000055_2"
-      },
-      {
-        "name": "char_awake_name_10000055_3",
-        "desc": "char_awake_desc_10000055_3"
-      },
-      {
-        "name": "char_awake_name_10000055_4",
-        "desc": "char_awake_desc_10000055_4"
-      },
-      {
-        "name": "char_awake_name_10000055_5",
-        "desc": "char_awake_desc_10000055_5"
-      }
-    ],
-    "desc": "char_desc_10000055",
     "id": 10000055,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/3/37/n97nt1jynha8vkehmpx39z7nyqjvxzl.png",
     "name": "char_name_10000055",
-    "produceSkills": [
-      "10600037",
-      "10600038",
-      "10600056",
-      "10600058",
-      "10600059",
-      "10600060",
-      "10600061",
-      "10600063",
-      "10600065",
-      "10600247",
-      "10600248",
-      "10600270"
-    ],
-    "rarity": "SR",
-    "resonance": [
+    "quality": "fourStar",
+    "sideId": 12600025,
+    "passiveSkillList": [
       {
-        "name": "char_reson_name_10000055_1",
-        "desc": "char_reson_desc_10000055_1"
-      },
-      {
-        "name": "char_reson_name_10000055_2",
-        "desc": "char_reson_desc_10000055_2"
-      },
-      {
-        "name": "char_reson_name_10000055_3",
-        "desc": "char_reson_desc_10000055_3"
-      },
-      {
-        "name": "char_reson_name_10000055_4",
-        "desc": "char_reson_desc_10000055_4"
-      },
-      {
-        "name": "char_reson_name_10000055_5",
-        "desc": "char_reson_desc_10000055_5"
+        "skillId": 12300121
       }
     ],
-    "skills": {
-      "1": "10600056",
-      "2": "10600060",
-      "3": "10600058"
-    }
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12300057
+      },
+      {
+        "num": 3,
+        "skillId": 12300127
+      },
+      {
+        "num": 1,
+        "skillId": 12300059
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 70000000,
+    "def_SN": 700000,
+    "atk_SN": 770000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800021
+      },
+      {
+        "talentId": 12800041
+      },
+      {
+        "talentId": 12800525
+      },
+      {
+        "talentId": 12800023
+      },
+      {
+        "talentId": 12800196
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100033
+      },
+      {
+        "breakthroughId": 12100034
+      },
+      {
+        "breakthroughId": 12100035
+      },
+      {
+        "breakthroughId": 12100701
+      },
+      {
+        "breakthroughId": 12100696
+      },
+      {
+        "breakthroughId": 12100038
+      }
+    ],
+    "line": 2,
+    "subLine": 1,
+    "identity": "char_identity_10000055",
+    "ability": "char_ability_10000055",
+    "controllerId": 10300051,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
   },
   "10000059": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000059_1",
-        "desc": "char_awake_desc_10000059_1"
-      },
-      {
-        "name": "char_awake_name_10000059_2",
-        "desc": "char_awake_desc_10000059_2"
-      },
-      {
-        "name": "char_awake_name_10000059_3",
-        "desc": "char_awake_desc_10000059_3"
-      },
-      {
-        "name": "char_awake_name_10000059_4",
-        "desc": "char_awake_desc_10000059_4"
-      },
-      {
-        "name": "char_awake_name_10000059_5",
-        "desc": "char_awake_desc_10000059_5"
-      }
-    ],
-    "desc": "char_desc_10000059",
     "id": 10000059,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/d/da/693zk462exf86w0saftvznuqupwmuej.png",
     "name": "char_name_10000059",
-    "rarity": "SSR",
-    "resonance": [
+    "quality": "FiveStar",
+    "sideId": 12600026,
+    "passiveSkillList": [
       {
-        "name": "char_reson_name_10000059_1",
-        "desc": "char_reson_desc_10000059_1"
-      },
-      {
-        "name": "char_reson_name_10000059_2",
-        "desc": "char_reson_desc_10000059_2"
-      },
-      {
-        "name": "char_reson_name_10000059_3",
-        "desc": "char_reson_desc_10000059_3"
-      },
-      {
-        "name": "char_reson_name_10000059_4",
-        "desc": "char_reson_desc_10000059_4"
-      },
-      {
-        "name": "char_reson_name_10000059_5",
-        "desc": "char_reson_desc_10000059_5"
+        "skillId": 12300176
       }
     ],
-    "skills": {
-      "1": "10600078",
-      "2": "10600079",
-      "3": "10600080"
-    },
-    "produceSkills": [
-      "10600009",
-      "10600035",
-      "10600051",
-      "10600078",
-      "10600079",
-      "10600080",
-      "10600154",
-      "10600159",
-      "10600249"
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12300082
+      },
+      {
+        "num": 2,
+        "skillId": 12300083
+      },
+      {
+        "num": 1,
+        "skillId": 12300084
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 90000000,
+    "def_SN": 880000,
+    "atk_SN": 760000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800012
+      },
+      {
+        "talentId": 12800013
+      },
+      {
+        "talentId": 12800541
+      },
+      {
+        "talentId": 12800015
+      },
+      {
+        "talentId": 12800198
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100129
+      },
+      {
+        "breakthroughId": 12100112
+      },
+      {
+        "breakthroughId": 12100111
+      },
+      {
+        "breakthroughId": 12100795
+      },
+      {
+        "breakthroughId": 12100796
+      },
+      {
+        "breakthroughId": 12100115
+      }
+    ],
+    "line": 1,
+    "subLine": 240,
+    "identity": "char_identity_10000059",
+    "ability": "char_ability_10000059",
+    "controllerId": 10300055,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
     ]
   },
   "10000060": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000060_1",
-        "desc": "char_awake_desc_10000060_1"
-      },
-      {
-        "name": "char_awake_name_10000060_2",
-        "desc": "char_awake_desc_10000060_2"
-      },
-      {
-        "name": "char_awake_name_10000060_3",
-        "desc": "char_awake_desc_10000060_3"
-      },
-      {
-        "name": "char_awake_name_10000060_4",
-        "desc": "char_awake_desc_10000060_4"
-      },
-      {
-        "name": "char_awake_name_10000060_5",
-        "desc": "char_awake_desc_10000060_5"
-      }
-    ],
-    "desc": "char_desc_10000060",
     "id": 10000060,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/1/10/9jnvutq72ulmhglhqf05tx8be60y060.png",
     "name": "char_name_10000060",
-    "produceSkills": [
-      "10600081",
-      "10600082",
-      "10600085"
-    ],
-    "rarity": "R",
-    "resonance": [
+    "quality": "threeStar",
+    "sideId": 12600026,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_reson_name_10000060_1",
-        "desc": "char_reson_desc_10000060_1"
+        "num": 2,
+        "skillId": 12300085
       },
       {
-        "name": "char_reson_name_10000060_2",
-        "desc": "char_reson_desc_10000060_2"
+        "num": 2,
+        "skillId": 12300087
       },
       {
-        "name": "char_reson_name_10000060_3",
-        "desc": "char_reson_desc_10000060_3"
-      },
-      {
-        "name": "char_reson_name_10000060_4",
-        "desc": "char_reson_desc_10000060_4"
+        "num": 1,
+        "skillId": 12300086
       }
     ],
-    "skills": {
-      "1": "10600081",
-      "2": "10600085",
-      "3": "10600082"
-    }
+    "tk_SN": null,
+    "hp_SN": 65000000,
+    "def_SN": 700000,
+    "atk_SN": 700000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800030
+      },
+      {
+        "talentId": 12800032
+      },
+      {
+        "talentId": 12800429
+      },
+      {
+        "talentId": 12800034
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100135
+      },
+      {
+        "breakthroughId": 12100061
+      },
+      {
+        "breakthroughId": 12100062
+      },
+      {
+        "breakthroughId": 12100747
+      },
+      {
+        "breakthroughId": 12100748
+      },
+      {
+        "breakthroughId": 12100065
+      }
+    ],
+    "line": 2,
+    "subLine": 240,
+    "identity": "char_identity_10000060",
+    "ability": "char_ability_10000060",
+    "controllerId": 10300056,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
   },
   "10000062": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000062_1",
-        "desc": "char_awake_desc_10000062_1"
-      },
-      {
-        "name": "char_awake_name_10000062_2",
-        "desc": "char_awake_desc_10000062_2"
-      },
-      {
-        "name": "char_awake_name_10000062_3",
-        "desc": "char_awake_desc_10000062_3"
-      },
-      {
-        "name": "char_awake_name_10000062_4",
-        "desc": "char_awake_desc_10000062_4"
-      },
-      {
-        "name": "char_awake_name_10000062_5",
-        "desc": "char_awake_desc_10000062_5"
-      }
-    ],
-    "desc": "char_desc_10000062",
     "id": 10000062,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/0/01/gyndf2dte9v73p4vnip0jdfud7hc4wc.png",
     "name": "char_name_10000062",
-    "produceSkills": [
-      "10600087",
-      "10600088",
-      "10600089"
-    ],
-    "rarity": "R",
-    "resonance": [
+    "quality": "threeStar",
+    "sideId": 12600023,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_reson_name_10000062_1",
-        "desc": "char_reson_desc_10000062_1"
+        "num": 3,
+        "skillId": 12300091
       },
       {
-        "name": "char_reson_name_10000062_2",
-        "desc": "char_reson_desc_10000062_2"
+        "num": 2,
+        "skillId": 12300094
       },
       {
-        "name": "char_reson_name_10000062_3",
-        "desc": "char_reson_desc_10000062_3"
-      },
-      {
-        "name": "char_reson_name_10000062_4",
-        "desc": "char_reson_desc_10000062_4"
+        "num": 1,
+        "skillId": 12300092
       }
     ],
-    "skills": {
-      "1": "10600087",
-      "2": "10600089",
-      "3": "10600088"
-    }
+    "tk_SN": null,
+    "hp_SN": 70000000,
+    "def_SN": 700000,
+    "atk_SN": 720000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800044
+      },
+      {
+        "talentId": 12800035
+      },
+      {
+        "talentId": 12800424
+      },
+      {
+        "talentId": 12800046
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100133
+      },
+      {
+        "breakthroughId": 12100066
+      },
+      {
+        "breakthroughId": 12100067
+      },
+      {
+        "breakthroughId": 12100735
+      },
+      {
+        "breakthroughId": 12100736
+      },
+      {
+        "breakthroughId": 12100070
+      }
+    ],
+    "line": 1,
+    "subLine": 450,
+    "identity": "char_identity_10000062",
+    "ability": "char_ability_10000062",
+    "controllerId": 10300058,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
   },
   "10000063": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000063_1",
-        "desc": "char_awake_desc_10000063_1"
-      },
-      {
-        "name": "char_awake_name_10000063_2",
-        "desc": "char_awake_desc_10000063_2"
-      },
-      {
-        "name": "char_awake_name_10000063_3",
-        "desc": "char_awake_desc_10000063_3"
-      },
-      {
-        "name": "char_awake_name_10000063_4",
-        "desc": "char_awake_desc_10000063_4"
-      },
-      {
-        "name": "char_awake_name_10000063_5",
-        "desc": "char_awake_desc_10000063_5"
-      }
-    ],
-    "desc": "char_desc_10000063",
     "id": 10000063,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/2/23/02x7kk8z0mhlutgr1hthb57lllztzli.png",
     "name": "char_name_10000063",
-    "produceSkills": [
-      "10600074",
-      "10600090",
-      "10600092",
-      "10600131"
-    ],
-    "rarity": "SR",
-    "resonance": [
+    "quality": "fourStar",
+    "sideId": 12600023,
+    "passiveSkillList": [
       {
-        "name": "char_reson_name_10000063_1",
-        "desc": "char_reson_desc_10000063_1"
-      },
-      {
-        "name": "char_reson_name_10000063_2",
-        "desc": "char_reson_desc_10000063_2"
-      },
-      {
-        "name": "char_reson_name_10000063_3",
-        "desc": "char_reson_desc_10000063_3"
-      },
-      {
-        "name": "char_reson_name_10000063_4",
-        "desc": "char_reson_desc_10000063_4"
-      },
-      {
-        "name": "char_reson_name_10000063_5",
-        "desc": "char_reson_desc_10000063_5"
+        "skillId": 12300737
       }
     ],
-    "skills": {
-      "1": "10600090",
-      "2": "10600074",
-      "3": "10600092"
-    }
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12300095
+      },
+      {
+        "num": 2,
+        "skillId": 12300096
+      },
+      {
+        "num": 1,
+        "skillId": 12300097
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 76000000,
+    "def_SN": 740000,
+    "atk_SN": 800000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800037
+      },
+      {
+        "talentId": 12800036
+      },
+      {
+        "talentId": 12800531
+      },
+      {
+        "talentId": 12800043
+      },
+      {
+        "talentId": 12800272
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100131
+      },
+      {
+        "breakthroughId": 12100071
+      },
+      {
+        "breakthroughId": 12100072
+      },
+      {
+        "breakthroughId": 12100773
+      },
+      {
+        "breakthroughId": 12100774
+      },
+      {
+        "breakthroughId": 12100075
+      }
+    ],
+    "line": 1,
+    "subLine": 440,
+    "identity": "char_identity_10000063",
+    "ability": "char_ability_10000063",
+    "controllerId": 10300059,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
   },
   "10000064": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000064_1",
-        "desc": "char_awake_desc_10000064_1"
-      },
-      {
-        "name": "char_awake_name_10000064_2",
-        "desc": "char_awake_desc_10000064_2"
-      },
-      {
-        "name": "char_awake_name_10000064_3",
-        "desc": "char_awake_desc_10000064_3"
-      },
-      {
-        "name": "char_awake_name_10000064_4",
-        "desc": "char_awake_desc_10000064_4"
-      },
-      {
-        "name": "char_awake_name_10000064_5",
-        "desc": "char_awake_desc_10000064_5"
-      }
-    ],
-    "desc": "char_desc_10000064",
     "id": 10000064,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/8/85/6kryyqwf1welefa9294dbt006rx35i6.png",
     "name": "char_name_10000064",
-    "produceSkills": [
-      "10600093",
-      "10600094",
-      "10600095"
-    ],
-    "rarity": "SR",
-    "resonance": [
+    "quality": "fourStar",
+    "sideId": 12600023,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_reson_name_10000064_1",
-        "desc": "char_reson_desc_10000064_1"
+        "num": 2,
+        "skillId": 12300098
       },
       {
-        "name": "char_reson_name_10000064_2",
-        "desc": "char_reson_desc_10000064_2"
+        "num": 3,
+        "skillId": 12300099
       },
       {
-        "name": "char_reson_name_10000064_3",
-        "desc": "char_reson_desc_10000064_3"
-      },
-      {
-        "name": "char_reson_name_10000064_4",
-        "desc": "char_reson_desc_10000064_4"
-      },
-      {
-        "name": "char_reson_name_10000064_5",
-        "desc": "char_reson_desc_10000064_5"
+        "num": 1,
+        "skillId": 12300100
       }
     ],
-    "skills": {
-      "1": "10600093",
-      "2": "10600095",
-      "3": "10600094"
-    }
+    "tk_SN": null,
+    "hp_SN": 72000000,
+    "def_SN": 680000,
+    "atk_SN": 770000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800076
+      },
+      {
+        "talentId": 12800077
+      },
+      {
+        "talentId": 12800528
+      },
+      {
+        "talentId": 12800079
+      },
+      {
+        "talentId": 12800008
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100199
+      },
+      {
+        "breakthroughId": 12100076
+      },
+      {
+        "breakthroughId": 12100077
+      },
+      {
+        "breakthroughId": 12100771
+      },
+      {
+        "breakthroughId": 12100772
+      },
+      {
+        "breakthroughId": 12100080
+      }
+    ],
+    "line": 3,
+    "subLine": 415,
+    "identity": "char_identity_10000064",
+    "ability": "char_ability_10000064",
+    "controllerId": 10300060,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
   },
   "10000065": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000065_1",
-        "desc": "char_awake_desc_10000065_1"
-      },
-      {
-        "name": "char_awake_name_10000065_2",
-        "desc": "char_awake_desc_10000065_2"
-      },
-      {
-        "name": "char_awake_name_10000065_3",
-        "desc": "char_awake_desc_10000065_3"
-      },
-      {
-        "name": "char_awake_name_10000065_4",
-        "desc": "char_awake_desc_10000065_4"
-      },
-      {
-        "name": "char_awake_name_10000065_5",
-        "desc": "char_awake_desc_10000065_5"
-      }
-    ],
-    "desc": "char_desc_10000065",
     "id": 10000065,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/7/7d/13feh8v5q8fybzjsubge8qtqqdvkmyz.png",
     "name": "char_name_10000065",
-    "produceSkills": [
-      "10600096",
-      "10600097",
-      "10600098"
-    ],
-    "rarity": "R",
-    "resonance": [
+    "quality": "threeStar",
+    "sideId": 12600027,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_reson_name_10000065_1",
-        "desc": "char_reson_desc_10000065_1"
+        "num": 3,
+        "skillId": 12300101
       },
       {
-        "name": "char_reson_name_10000065_2",
-        "desc": "char_reson_desc_10000065_2"
+        "num": 1,
+        "skillId": 12300102
       },
       {
-        "name": "char_reson_name_10000065_3",
-        "desc": "char_reson_desc_10000065_3"
-      },
-      {
-        "name": "char_reson_name_10000065_4",
-        "desc": "char_reson_desc_10000065_4"
+        "num": 1,
+        "skillId": 12300103
       }
     ],
-    "skills": {
-      "1": "10600096",
-      "2": "10600097",
-      "3": "10600098"
-    }
+    "tk_SN": null,
+    "hp_SN": 72000000,
+    "def_SN": 810000,
+    "atk_SN": 600000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800088
+      },
+      {
+        "talentId": 12800089
+      },
+      {
+        "talentId": 12800408
+      },
+      {
+        "talentId": 12800091
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100202
+      },
+      {
+        "breakthroughId": 12100081
+      },
+      {
+        "breakthroughId": 12100082
+      },
+      {
+        "breakthroughId": 12100737
+      },
+      {
+        "breakthroughId": 12100738
+      },
+      {
+        "breakthroughId": 12100085
+      }
+    ],
+    "line": 1,
+    "subLine": 120,
+    "identity": "char_identity_10000065",
+    "ability": "char_ability_10000065",
+    "controllerId": 10300061,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
   },
   "10000068": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000068_1",
-        "desc": "char_awake_desc_10000068_1"
-      },
-      {
-        "name": "char_awake_name_10000068_2",
-        "desc": "char_awake_desc_10000068_2"
-      },
-      {
-        "name": "char_awake_name_10000068_3",
-        "desc": "char_awake_desc_10000068_3"
-      },
-      {
-        "name": "char_awake_name_10000068_4",
-        "desc": "char_awake_desc_10000068_4"
-      },
-      {
-        "name": "char_awake_name_10000068_5",
-        "desc": "char_awake_desc_10000068_5"
-      }
-    ],
-    "desc": "char_desc_10000068",
     "id": 10000068,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/f/fc/74hn5lon3upuc416a3eekpcpqe3ch3q.png",
     "name": "char_name_10000068",
-    "produceSkills": [
-      "10600048",
-      "10600103",
-      "10600104"
-    ],
-    "rarity": "SR",
-    "resonance": [
+    "quality": "fourStar",
+    "sideId": 12600025,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_reson_name_10000068_1",
-        "desc": "char_reson_desc_10000068_1"
+        "num": 3,
+        "skillId": 12300107
       },
       {
-        "name": "char_reson_name_10000068_2",
-        "desc": "char_reson_desc_10000068_2"
+        "num": 1,
+        "skillId": 12300108
       },
       {
-        "name": "char_reson_name_10000068_3",
-        "desc": "char_reson_desc_10000068_3"
-      },
-      {
-        "name": "char_reson_name_10000068_4",
-        "desc": "char_reson_desc_10000068_4"
-      },
-      {
-        "name": "char_reson_name_10000068_5",
-        "desc": "char_reson_desc_10000068_5"
+        "num": 1,
+        "skillId": 12300109
       }
     ],
-    "skills": {
-      "1": "10600048",
-      "2": "10600103",
-      "3": "10600104"
-    }
+    "tk_SN": null,
+    "hp_SN": 67000000,
+    "def_SN": 570000,
+    "atk_SN": 790000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800080
+      },
+      {
+        "talentId": 12800081
+      },
+      {
+        "talentId": 12800517
+      },
+      {
+        "talentId": 12800082
+      },
+      {
+        "talentId": 12800199
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100137
+      },
+      {
+        "breakthroughId": 12100091
+      },
+      {
+        "breakthroughId": 12100092
+      },
+      {
+        "breakthroughId": 12100763
+      },
+      {
+        "breakthroughId": 12100764
+      },
+      {
+        "breakthroughId": 12100095
+      }
+    ],
+    "line": 3,
+    "subLine": 10,
+    "identity": "char_identity_10000068",
+    "ability": "char_ability_10000068",
+    "controllerId": 10300064,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
   },
   "10000069": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000069_1",
-        "desc": "char_awake_desc_10000069_1"
-      },
-      {
-        "name": "char_awake_name_10000069_2",
-        "desc": "char_awake_desc_10000069_2"
-      },
-      {
-        "name": "char_awake_name_10000069_3",
-        "desc": "char_awake_desc_10000069_3"
-      },
-      {
-        "name": "char_awake_name_10000069_4",
-        "desc": "char_awake_desc_10000069_4"
-      },
-      {
-        "name": "char_awake_name_10000069_5",
-        "desc": "char_awake_desc_10000069_5"
-      }
-    ],
-    "desc": "char_desc_10000069",
     "id": 10000069,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/2/28/bqsrujv5775aocb9p7op05xrx852q7a.png",
     "name": "char_name_10000069",
-    "rarity": "SSR",
-    "resonance": [
+    "quality": "FiveStar",
+    "sideId": 12600026,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_reson_name_10000069_1",
-        "desc": "char_reson_desc_10000069_1"
+        "num": 3,
+        "skillId": 12300110
       },
       {
-        "name": "char_reson_name_10000069_2",
-        "desc": "char_reson_desc_10000069_2"
+        "num": 1,
+        "skillId": 12300111
       },
       {
-        "name": "char_reson_name_10000069_3",
-        "desc": "char_reson_desc_10000069_3"
-      },
-      {
-        "name": "char_reson_name_10000069_4",
-        "desc": "char_reson_desc_10000069_4"
-      },
-      {
-        "name": "char_reson_name_10000069_5",
-        "desc": "char_reson_desc_10000069_5"
+        "num": 1,
+        "skillId": 12300112
       }
     ],
-    "skills": {
-      "1": "10600107",
-      "2": "10600073",
-      "3": "10600106"
-    },
-    "produceSkills": [
-      "10600073",
-      "10600106",
-      "10600107"
+    "tk_SN": null,
+    "hp_SN": 83000000,
+    "def_SN": 790000,
+    "atk_SN": 810000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800058
+      },
+      {
+        "talentId": 12800271
+      },
+      {
+        "talentId": 12800563
+      },
+      {
+        "talentId": 12800060
+      },
+      {
+        "talentId": 12800059
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100136
+      },
+      {
+        "breakthroughId": 12100097
+      },
+      {
+        "breakthroughId": 12100100
+      },
+      {
+        "breakthroughId": 12100787
+      },
+      {
+        "breakthroughId": 12100788
+      },
+      {
+        "breakthroughId": 12100096
+      }
+    ],
+    "line": 1,
+    "subLine": 220,
+    "identity": "char_identity_10000069",
+    "ability": "char_ability_10000069",
+    "controllerId": 10300065,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
     ]
   },
   "10000071": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000071_1",
-        "desc": "char_awake_desc_10000071_1"
-      },
-      {
-        "name": "char_awake_name_10000071_2",
-        "desc": "char_awake_desc_10000071_2"
-      },
-      {
-        "name": "char_awake_name_10000071_3",
-        "desc": "char_awake_desc_10000071_3"
-      },
-      {
-        "name": "char_awake_name_10000071_4",
-        "desc": "char_awake_desc_10000071_4"
-      },
-      {
-        "name": "char_awake_name_10000071_5",
-        "desc": "char_awake_desc_10000071_5"
-      }
-    ],
-    "desc": "char_desc_10000071",
     "id": 10000071,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/0/0d/09np973hig1iqxj58563egh13i72df1.png",
     "name": "char_name_10000071",
-    "produceSkills": [
-      "10600113",
-      "10600279",
-      "10600280"
-    ],
-    "rarity": "SR",
-    "resonance": [
+    "quality": "fourStar",
+    "sideId": 12600023,
+    "passiveSkillList": [
       {
-        "name": "char_reson_name_10000071_1",
-        "desc": "char_reson_desc_10000071_1"
-      },
-      {
-        "name": "char_reson_name_10000071_2",
-        "desc": "char_reson_desc_10000071_2"
-      },
-      {
-        "name": "char_reson_name_10000071_3",
-        "desc": "char_reson_desc_10000071_3"
-      },
-      {
-        "name": "char_reson_name_10000071_4",
-        "desc": "char_reson_desc_10000071_4"
-      },
-      {
-        "name": "char_reson_name_10000071_5",
-        "desc": "char_reson_desc_10000071_5"
+        "skillId": 12300157
       }
     ],
-    "skills": {
-      "1": "10600279",
-      "2": "10600113",
-      "3": "10600280"
-    }
-  },
-  "10000072": {
-    "awakening": [
+    "skillList": [
       {
-        "name": "char_awake_name_10000072_1",
-        "desc": "char_awake_desc_10000072_1"
+        "num": 4,
+        "skillId": 12300114
       },
       {
-        "name": "char_awake_name_10000072_2",
-        "desc": "char_awake_desc_10000072_2"
+        "num": 1,
+        "skillId": 12300115
       },
       {
-        "name": "char_awake_name_10000072_3",
-        "desc": "char_awake_desc_10000072_3"
-      },
-      {
-        "name": "char_awake_name_10000072_4",
-        "desc": "char_awake_desc_10000072_4"
-      },
-      {
-        "name": "char_awake_name_10000072_5",
-        "desc": "char_awake_desc_10000072_5"
+        "num": 1,
+        "skillId": 12300116
       }
     ],
-    "desc": "char_desc_10000072",
-    "id": 10000072,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/0/00/js1l3c6ehy556lhpbvpmbxwkc3sbldp.png",
-    "name": "char_name_10000072",
-    "produceSkills": [
-      "10600295",
-      "10600296",
-      "10600349",
-      "10600350",
-      "10600351",
-      "10600352",
-      "10600353"
-    ],
-    "rarity": "SSR",
-    "resonance": [
+    "tk_SN": null,
+    "hp_SN": 74000000,
+    "def_SN": 720000,
+    "atk_SN": 760000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
       {
-        "name": "char_reson_name_10000072_1",
-        "desc": "char_reson_desc_10000072_1"
+        "talentId": 12800092
       },
       {
-        "name": "char_reson_name_10000072_2",
-        "desc": "char_reson_desc_10000072_2"
+        "talentId": 12800093
       },
       {
-        "name": "char_reson_name_10000072_3",
-        "desc": "char_reson_desc_10000072_3"
+        "talentId": 12800516
       },
       {
-        "name": "char_reson_name_10000072_4",
-        "desc": "char_reson_desc_10000072_4"
+        "talentId": 12800094
       },
       {
-        "name": "char_reson_name_10000072_5",
-        "desc": "char_reson_desc_10000072_5"
+        "talentId": 12800233
       }
     ],
-    "skills": {
-      "1": "10600295",
-      "2": "10600296",
-      "3": "10600353"
-    }
-  },
-  "10000094": {
-    "awakening": [
+    "breakthroughList": [
       {
-        "name": "char_awake_name_10000094_1",
-        "desc": "char_awake_desc_10000094_1"
+        "breakthroughId": 12100196
       },
       {
-        "name": "char_awake_name_10000094_2",
-        "desc": "char_awake_desc_10000094_2"
+        "breakthroughId": 12100101
       },
       {
-        "name": "char_awake_name_10000094_3",
-        "desc": "char_awake_desc_10000094_3"
+        "breakthroughId": 12100102
       },
       {
-        "name": "char_awake_name_10000094_4",
-        "desc": "char_awake_desc_10000094_4"
+        "breakthroughId": 12100777
       },
       {
-        "name": "char_awake_name_10000094_5",
-        "desc": "char_awake_desc_10000094_5"
+        "breakthroughId": 12100778
+      },
+      {
+        "breakthroughId": 12100105
       }
     ],
-    "desc": "char_desc_10000094",
-    "id": 10000094,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/8/83/l2wwi95nt3abfwicfoqm26rmt494mnx.png",
-    "name": "char_name_10000094",
-    "rarity": "SSR",
-    "resonance": [
+    "line": 2,
+    "subLine": 440,
+    "identity": "char_identity_10000071",
+    "ability": "char_ability_10000071",
+    "controllerId": 10300067,
+    "equipmentSlotList": [
       {
-        "name": "char_reson_name_10000094_1",
-        "desc": "char_reson_desc_10000094_1"
+        "tagID": 12600155
       },
       {
-        "name": "char_reson_name_10000094_2",
-        "desc": "char_reson_desc_10000094_2"
+        "tagID": 12600161
       },
       {
-        "name": "char_reson_name_10000094_3",
-        "desc": "char_reson_desc_10000094_3"
-      },
-      {
-        "name": "char_reson_name_10000094_4",
-        "desc": "char_reson_desc_10000094_4"
-      },
-      {
-        "name": "char_reson_name_10000094_5",
-        "desc": "char_reson_desc_10000094_5"
+        "tagID": 12600162
       }
-    ],
-    "skills": {
-      "1": "10600070",
-      "2": "10600072",
-      "3": "10600136"
-    },
-    "produceSkills": [
-      "10600070",
-      "10600072",
-      "10600086",
-      "10600136",
-      "10600262"
     ]
-  },
-  "10000095": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000095_1",
-        "desc": "char_awake_desc_10000095_1"
-      },
-      {
-        "name": "char_awake_name_10000095_2",
-        "desc": "char_awake_desc_10000095_2"
-      },
-      {
-        "name": "char_awake_name_10000095_3",
-        "desc": "char_awake_desc_10000095_3"
-      },
-      {
-        "name": "char_awake_name_10000095_4",
-        "desc": "char_awake_desc_10000095_4"
-      },
-      {
-        "name": "char_awake_name_10000095_5",
-        "desc": "char_awake_desc_10000095_5"
-      }
-    ],
-    "desc": "char_desc_10000095",
-    "id": 10000095,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/5/55/824lzhgqjvy0tdxuleasjmhcd43xl54.png",
-    "name": "char_name_10000095",
-    "rarity": "SSR",
-    "resonance": [
-      {
-        "name": "char_reson_name_10000095_1",
-        "desc": "char_reson_desc_10000095_1"
-      },
-      {
-        "name": "char_reson_name_10000095_2",
-        "desc": "char_reson_desc_10000095_2"
-      },
-      {
-        "name": "char_reson_name_10000095_3",
-        "desc": "char_reson_desc_10000095_3"
-      },
-      {
-        "name": "char_reson_name_10000095_4",
-        "desc": "char_reson_desc_10000095_4"
-      },
-      {
-        "name": "char_reson_name_10000095_5",
-        "desc": "char_reson_desc_10000095_5"
-      }
-    ],
-    "skills": {
-      "1": "10600017",
-      "2": "10600077",
-      "3": "10600013"
-    },
-    "produceSkills": [
-      "10600013",
-      "10600017",
-      "10600077"
-    ]
-  },
-  "10000101": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000101_1",
-        "desc": "char_awake_desc_10000101_1"
-      },
-      {
-        "name": "char_awake_name_10000101_2",
-        "desc": "char_awake_desc_10000101_2"
-      },
-      {
-        "name": "char_awake_name_10000101_3",
-        "desc": "char_awake_desc_10000101_3"
-      },
-      {
-        "name": "char_awake_name_10000101_4",
-        "desc": "char_awake_desc_10000101_4"
-      },
-      {
-        "name": "char_awake_name_10000101_5",
-        "desc": "char_awake_desc_10000101_5"
-      }
-    ],
-    "desc": "char_desc_10000101",
-    "id": 10000101,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/a/aa/t48uxwofze12qrotesoqi8ubz6ied8t.png",
-    "name": "char_name_10000101",
-    "produceSkills": [
-      "10600260",
-      "10600304",
-      "10600305"
-    ],
-    "rarity": "SR",
-    "resonance": [
-      {
-        "name": "char_reson_name_10000101_1",
-        "desc": "char_reson_desc_10000101_1"
-      },
-      {
-        "name": "char_reson_name_10000101_2",
-        "desc": "char_reson_desc_10000101_2"
-      },
-      {
-        "name": "char_reson_name_10000101_3",
-        "desc": "char_reson_desc_10000101_3"
-      },
-      {
-        "name": "char_reson_name_10000101_4",
-        "desc": "char_reson_desc_10000101_4"
-      },
-      {
-        "name": "char_reson_name_10000101_5",
-        "desc": "char_reson_desc_10000101_5"
-      }
-    ],
-    "skills": {
-      "1": "10600260",
-      "2": "10600305",
-      "3": "10600304"
-    }
-  },
-  "10000110": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000110_1",
-        "desc": "char_awake_desc_10000110_1"
-      },
-      {
-        "name": "char_awake_name_10000110_2",
-        "desc": "char_awake_desc_10000110_2"
-      },
-      {
-        "name": "char_awake_name_10000110_3",
-        "desc": "char_awake_desc_10000110_3"
-      },
-      {
-        "name": "char_awake_name_10000110_4",
-        "desc": "char_awake_desc_10000110_4"
-      },
-      {
-        "name": "char_awake_name_10000110_5",
-        "desc": "char_awake_desc_10000110_5"
-      }
-    ],
-    "desc": "char_desc_10000110",
-    "id": 10000110,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/7/74/2mc5r6uhbxbxcm4f4hgmnqvxh42nfsk.png",
-    "name": "char_name_10000110",
-    "produceSkills": [
-      "10600307",
-      "10600308",
-      "10600309"
-    ],
-    "rarity": "SR",
-    "resonance": [
-      {
-        "name": "char_reson_name_10000110_1",
-        "desc": "char_reson_desc_10000110_1"
-      },
-      {
-        "name": "char_reson_name_10000110_2",
-        "desc": "char_reson_desc_10000110_2"
-      },
-      {
-        "name": "char_reson_name_10000110_3",
-        "desc": "char_reson_desc_10000110_3"
-      },
-      {
-        "name": "char_reson_name_10000110_4",
-        "desc": "char_reson_desc_10000110_4"
-      },
-      {
-        "name": "char_reson_name_10000110_5",
-        "desc": "char_reson_desc_10000110_5"
-      }
-    ],
-    "skills": {
-      "1": "10600307",
-      "2": "10600308",
-      "3": "10600309"
-    }
-  },
-  "10000111": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000111_1",
-        "desc": "char_awake_desc_10000111_1"
-      },
-      {
-        "name": "char_awake_name_10000111_2",
-        "desc": "char_awake_desc_10000111_2"
-      },
-      {
-        "name": "char_awake_name_10000111_3",
-        "desc": "char_awake_desc_10000111_3"
-      },
-      {
-        "name": "char_awake_name_10000111_4",
-        "desc": "char_awake_desc_10000111_4"
-      },
-      {
-        "name": "char_awake_name_10000111_5",
-        "desc": "char_awake_desc_10000111_5"
-      }
-    ],
-    "desc": "char_desc_10000111",
-    "id": 10000111,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/a/a5/42w3t8fsyd3wibvzthl02js4d2ffkyi.png",
-    "name": "char_name_10000111",
-    "produceSkills": [
-      "10600018",
-      "10600019",
-      "10600020",
-      "10600140",
-      "10600271"
-    ],
-    "rarity": "R",
-    "resonance": [
-      {
-        "name": "char_reson_name_10000111_1",
-        "desc": "char_reson_desc_10000111_1"
-      },
-      {
-        "name": "char_reson_name_10000111_2",
-        "desc": "char_reson_desc_10000111_2"
-      },
-      {
-        "name": "char_reson_name_10000111_3",
-        "desc": "char_reson_desc_10000111_3"
-      },
-      {
-        "name": "char_reson_name_10000111_4",
-        "desc": "char_reson_desc_10000111_4"
-      }
-    ],
-    "skills": {
-      "1": "10600019",
-      "2": "10600020",
-      "3": "10600271"
-    }
-  },
-  "10000112": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000112_1",
-        "desc": "char_awake_desc_10000112_1"
-      },
-      {
-        "name": "char_awake_name_10000112_2",
-        "desc": "char_awake_desc_10000112_2"
-      },
-      {
-        "name": "char_awake_name_10000112_3",
-        "desc": "char_awake_desc_10000112_3"
-      },
-      {
-        "name": "char_awake_name_10000112_4",
-        "desc": "char_awake_desc_10000112_4"
-      },
-      {
-        "name": "char_awake_name_10000112_5",
-        "desc": "char_awake_desc_10000112_5"
-      }
-    ],
-    "desc": "char_desc_10000112",
-    "id": 10000112,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/d/d4/bl7m3snvy79u85fexh07w1lxjg8wt4c.png",
-    "name": "char_name_10000112",
-    "produceSkills": [
-      "10600310",
-      "10600311",
-      "10600312"
-    ],
-    "rarity": "SR",
-    "resonance": [
-      {
-        "name": "char_reson_name_10000112_1",
-        "desc": "char_reson_desc_10000112_1"
-      },
-      {
-        "name": "char_reson_name_10000112_2",
-        "desc": "char_reson_desc_10000112_2"
-      },
-      {
-        "name": "char_reson_name_10000112_3",
-        "desc": "char_reson_desc_10000112_3"
-      },
-      {
-        "name": "char_reson_name_10000112_4",
-        "desc": "char_reson_desc_10000112_4"
-      },
-      {
-        "name": "char_reson_name_10000112_5",
-        "desc": "char_reson_desc_10000112_5"
-      }
-    ],
-    "skills": {
-      "1": "10600310",
-      "2": "10600311",
-      "3": "10600312"
-    }
-  },
-  "10000124": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000124_1",
-        "desc": "char_awake_desc_10000124_1"
-      },
-      {
-        "name": "char_awake_name_10000124_2",
-        "desc": "char_awake_desc_10000124_2"
-      },
-      {
-        "name": "char_awake_name_10000124_3",
-        "desc": "char_awake_desc_10000124_3"
-      },
-      {
-        "name": "char_awake_name_10000124_4",
-        "desc": "char_awake_desc_10000124_4"
-      },
-      {
-        "name": "char_awake_name_10000124_5",
-        "desc": "char_awake_desc_10000124_5"
-      }
-    ],
-    "desc": "char_desc_10000124",
-    "id": 10000124,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/8/8b/c0iie1cu76sys17xvagxqnt0jfez80e.png",
-    "name": "char_name_10000124",
-    "produceSkills": [
-      "10600324",
-      "10600325",
-      "10600326"
-    ],
-    "rarity": "SR",
-    "resonance": [
-      {
-        "name": "char_reson_name_10000124_1",
-        "desc": "char_reson_desc_10000124_1"
-      },
-      {
-        "name": "char_reson_name_10000124_2",
-        "desc": "char_reson_desc_10000124_2"
-      },
-      {
-        "name": "char_reson_name_10000124_3",
-        "desc": "char_reson_desc_10000124_3"
-      },
-      {
-        "name": "char_reson_name_10000124_4",
-        "desc": "char_reson_desc_10000124_4"
-      },
-      {
-        "name": "char_reson_name_10000124_5",
-        "desc": "char_reson_desc_10000124_5"
-      }
-    ],
-    "skills": {
-      "1": "10600326",
-      "2": "10600325",
-      "3": "10600324"
-    }
   },
   "10000134": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000134_1",
-        "desc": "char_awake_desc_10000134_1"
-      },
-      {
-        "name": "char_awake_name_10000134_2",
-        "desc": "char_awake_desc_10000134_2"
-      },
-      {
-        "name": "char_awake_name_10000134_3",
-        "desc": "char_awake_desc_10000134_3"
-      },
-      {
-        "name": "char_awake_name_10000134_4",
-        "desc": "char_awake_desc_10000134_4"
-      },
-      {
-        "name": "char_awake_name_10000134_5",
-        "desc": "char_awake_desc_10000134_5"
-      }
-    ],
-    "desc": "char_desc_10000134",
     "id": 10000134,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/0/0a/efrmjiuy69fbklqkhm4tu9eno6hy31y.png",
     "name": "char_name_10000134",
-    "produceSkills": [
-      "10600160",
-      "10600161",
-      "10600250"
-    ],
-    "rarity": "R",
-    "resonance": [
+    "quality": "threeStar",
+    "sideId": 12600025,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_reson_name_10000134_1",
-        "desc": "char_reson_desc_10000134_1"
+        "num": 3,
+        "skillId": 12300286
       },
       {
-        "name": "char_reson_name_10000134_2",
-        "desc": "char_reson_desc_10000134_2"
+        "num": 2,
+        "skillId": 12300284
       },
       {
-        "name": "char_reson_name_10000134_3",
-        "desc": "char_reson_desc_10000134_3"
-      },
-      {
-        "name": "char_reson_name_10000134_4",
-        "desc": "char_reson_desc_10000134_4"
+        "num": 1,
+        "skillId": 12300285
       }
     ],
-    "skills": {
-      "1": "10600160",
-      "2": "10600161",
-      "3": "10600250"
-    }
+    "tk_SN": null,
+    "hp_SN": 64000000,
+    "def_SN": 650000,
+    "atk_SN": 750000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800096
+      },
+      {
+        "talentId": 12800097
+      },
+      {
+        "talentId": 12800372
+      },
+      {
+        "talentId": 12800099
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100161
+      },
+      {
+        "breakthroughId": 12100162
+      },
+      {
+        "breakthroughId": 12100163
+      },
+      {
+        "breakthroughId": 12100164
+      },
+      {
+        "breakthroughId": 12100165
+      },
+      {
+        "breakthroughId": 12100166
+      }
+    ],
+    "line": 3,
+    "subLine": 5,
+    "identity": "char_identity_10000134",
+    "ability": "char_ability_10000134",
+    "controllerId": 10300111,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
   },
-  "10000139": {
-    "awakening": [
+  "10000145": {
+    "id": 10000145,
+    "name": "char_name_10000145",
+    "quality": "FiveStar",
+    "sideId": 12600031,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_awake_name_10000139_1",
-        "desc": "char_awake_desc_10000139_1"
+        "num": 2,
+        "skillId": 12300242
       },
       {
-        "name": "char_awake_name_10000139_2",
-        "desc": "char_awake_desc_10000139_2"
+        "num": 1,
+        "skillId": 12300243
       },
       {
-        "name": "char_awake_name_10000139_3",
-        "desc": "char_awake_desc_10000139_3"
-      },
-      {
-        "name": "char_awake_name_10000139_4",
-        "desc": "char_awake_desc_10000139_4"
-      },
-      {
-        "name": "char_awake_name_10000139_5",
-        "desc": "char_awake_desc_10000139_5"
+        "num": 1,
+        "skillId": 12300244
       }
     ],
-    "desc": "char_desc_10000139",
-    "id": 10000139,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/4/41/o3nffkahbbrvahbx087u6t7qy8719ed.png",
-    "name": "char_name_10000139",
-    "produceSkills": [
-      "10600327",
-      "10600328",
-      "10600329"
-    ],
-    "rarity": "SSR",
-    "resonance": [
+    "tk_SN": null,
+    "hp_SN": 85000000,
+    "def_SN": 830000,
+    "atk_SN": 910000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
       {
-        "name": "char_reson_name_10000139_1",
-        "desc": "char_reson_desc_10000139_1"
+        "talentId": 12800054
       },
       {
-        "name": "char_reson_name_10000139_2",
-        "desc": "char_reson_desc_10000139_2"
+        "talentId": 12800063
       },
       {
-        "name": "char_reson_name_10000139_3",
-        "desc": "char_reson_desc_10000139_3"
+        "talentId": 12800543
       },
       {
-        "name": "char_reson_name_10000139_4",
-        "desc": "char_reson_desc_10000139_4"
+        "talentId": 12800057
       },
       {
-        "name": "char_reson_name_10000139_5",
-        "desc": "char_reson_desc_10000139_5"
+        "talentId": 12800321
       }
     ],
-    "skills": {
-      "1": "10600327",
-      "2": "10600328",
-      "3": "10600329"
-    }
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100143
+      },
+      {
+        "breakthroughId": 12100144
+      },
+      {
+        "breakthroughId": 12100145
+      },
+      {
+        "breakthroughId": 12100719
+      },
+      {
+        "breakthroughId": 12100720
+      },
+      {
+        "breakthroughId": 12100148
+      }
+    ],
+    "line": 1,
+    "subLine": 905,
+    "identity": "char_identity_10000145",
+    "ability": "char_ability_10000145",
+    "controllerId": 10300108,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
   },
   "10000153": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000153_1",
-        "desc": "char_awake_desc_10000153_1"
-      },
-      {
-        "name": "char_awake_name_10000153_2",
-        "desc": "char_awake_desc_10000153_2"
-      },
-      {
-        "name": "char_awake_name_10000153_3",
-        "desc": "char_awake_desc_10000153_3"
-      },
-      {
-        "name": "char_awake_name_10000153_4",
-        "desc": "char_awake_desc_10000153_4"
-      },
-      {
-        "name": "char_awake_name_10000153_5",
-        "desc": "char_awake_desc_10000153_5"
-      }
-    ],
-    "desc": "char_desc_10000153",
     "id": 10000153,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/e/e7/1iwjagjic6zi5a0cwtj60m6sicybfmc.png",
     "name": "char_name_10000153",
-    "produceSkills": [
-      "10600026",
-      "10600040",
-      "10600186",
-      "10600187"
-    ],
-    "rarity": "SR",
-    "resonance": [
+    "quality": "fourStar",
+    "sideId": 12600023,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_reson_name_10000153_1",
-        "desc": "char_reson_desc_10000153_1"
+        "num": 2,
+        "skillId": 12300009
       },
       {
-        "name": "char_reson_name_10000153_2",
-        "desc": "char_reson_desc_10000153_2"
+        "num": 2,
+        "skillId": 12300012
       },
       {
-        "name": "char_reson_name_10000153_3",
-        "desc": "char_reson_desc_10000153_3"
-      },
-      {
-        "name": "char_reson_name_10000153_4",
-        "desc": "char_reson_desc_10000153_4"
-      },
-      {
-        "name": "char_reson_name_10000153_5",
-        "desc": "char_reson_desc_10000153_5"
+        "num": 1,
+        "skillId": 12300029
       }
     ],
-    "skills": {
-      "1": "10600186",
-      "2": "10600040",
-      "3": "10600187"
-    }
+    "tk_SN": null,
+    "hp_SN": 71000000,
+    "def_SN": 670000,
+    "atk_SN": 790000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800003
+      },
+      {
+        "talentId": 12800005
+      },
+      {
+        "talentId": 12800530
+      },
+      {
+        "talentId": 12800007
+      },
+      {
+        "talentId": 12800009
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100007
+      },
+      {
+        "breakthroughId": 12100011
+      },
+      {
+        "breakthroughId": 12100012
+      },
+      {
+        "breakthroughId": 12100779
+      },
+      {
+        "breakthroughId": 12100780
+      },
+      {
+        "breakthroughId": 12100017
+      }
+    ],
+    "line": 3,
+    "subLine": 440,
+    "identity": "char_identity_10000153",
+    "ability": "char_ability_10000153",
+    "controllerId": 10300003,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
   },
   "10000154": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000154_1",
-        "desc": "char_awake_desc_10000154_1"
-      },
-      {
-        "name": "char_awake_name_10000154_2",
-        "desc": "char_awake_desc_10000154_2"
-      },
-      {
-        "name": "char_awake_name_10000154_3",
-        "desc": "char_awake_desc_10000154_3"
-      },
-      {
-        "name": "char_awake_name_10000154_4",
-        "desc": "char_awake_desc_10000154_4"
-      },
-      {
-        "name": "char_awake_name_10000154_5",
-        "desc": "char_awake_desc_10000154_5"
-      }
-    ],
-    "desc": "char_desc_10000154",
     "id": 10000154,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/1/1a/51urp8w56ytk1yu5qbcokrijok8og2i.png",
     "name": "char_name_10000154",
-    "rarity": "SSR",
-    "resonance": [
+    "quality": "FiveStar",
+    "sideId": 12600027,
+    "passiveSkillList": [
       {
-        "name": "char_reson_name_10000154_1",
-        "desc": "char_reson_desc_10000154_1"
-      },
-      {
-        "name": "char_reson_name_10000154_2",
-        "desc": "char_reson_desc_10000154_2"
-      },
-      {
-        "name": "char_reson_name_10000154_3",
-        "desc": "char_reson_desc_10000154_3"
-      },
-      {
-        "name": "char_reson_name_10000154_4",
-        "desc": "char_reson_desc_10000154_4"
-      },
-      {
-        "name": "char_reson_name_10000154_5",
-        "desc": "char_reson_desc_10000154_5"
+        "skillId": 12302943
       }
     ],
-    "skills": {
-      "1": "10600170",
-      "2": "10600041",
-      "3": "10600173"
-    },
-    "produceSkills": [
-      "10600041",
-      "10600170",
-      "10600173"
+    "skillList": [
+      {
+        "num": 4,
+        "skillId": 12300298
+      },
+      {
+        "num": 2,
+        "skillId": 12300299
+      },
+      {
+        "num": 1,
+        "skillId": 12300300
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 68000000,
+    "def_SN": 600000,
+    "atk_SN": 880000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800100
+      },
+      {
+        "talentId": 12800102
+      },
+      {
+        "talentId": 12800567
+      },
+      {
+        "talentId": 12800103
+      },
+      {
+        "talentId": 12800273
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100167
+      },
+      {
+        "breakthroughId": 12100168
+      },
+      {
+        "breakthroughId": 12100169
+      },
+      {
+        "breakthroughId": 12100799
+      },
+      {
+        "breakthroughId": 12100800
+      },
+      {
+        "breakthroughId": 12100172
+      }
+    ],
+    "line": 3,
+    "subLine": 110,
+    "identity": "char_identity_10000154",
+    "ability": "char_ability_10000154",
+    "controllerId": 10300112,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
     ]
   },
   "10000156": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000156_1",
-        "desc": "char_awake_desc_10000156_1"
-      },
-      {
-        "name": "char_awake_name_10000156_2",
-        "desc": "char_awake_desc_10000156_2"
-      },
-      {
-        "name": "char_awake_name_10000156_3",
-        "desc": "char_awake_desc_10000156_3"
-      },
-      {
-        "name": "char_awake_name_10000156_4",
-        "desc": "char_awake_desc_10000156_4"
-      },
-      {
-        "name": "char_awake_name_10000156_5",
-        "desc": "char_awake_desc_10000156_5"
-      }
-    ],
-    "desc": "char_desc_10000156",
     "id": 10000156,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/c/ce/f3n1tyl4pvlkusi9s7c3nia00ji0xib.png",
     "name": "char_name_10000156",
-    "produceSkills": [
-      "10600053",
-      "10600177",
-      "10600178"
-    ],
-    "rarity": "R",
-    "resonance": [
+    "quality": "threeStar",
+    "sideId": 12600027,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_reson_name_10000156_1",
-        "desc": "char_reson_desc_10000156_1"
+        "num": 3,
+        "skillId": 12300306
       },
       {
-        "name": "char_reson_name_10000156_2",
-        "desc": "char_reson_desc_10000156_2"
+        "num": 1,
+        "skillId": 12300307
       },
       {
-        "name": "char_reson_name_10000156_3",
-        "desc": "char_reson_desc_10000156_3"
-      },
-      {
-        "name": "char_reson_name_10000156_4",
-        "desc": "char_reson_desc_10000156_4"
+        "num": 1,
+        "skillId": 12300308
       }
     ],
-    "skills": {
-      "1": "10600177",
-      "2": "10600053",
-      "3": "10600178"
-    }
-  },
-  "10000157": {
-    "awakening": [
+    "tk_SN": null,
+    "hp_SN": 66000000,
+    "def_SN": 700000,
+    "atk_SN": 720000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
       {
-        "name": "char_awake_name_10000157_1",
-        "desc": "char_awake_desc_10000157_1"
+        "talentId": 12800108
       },
       {
-        "name": "char_awake_name_10000157_2",
-        "desc": "char_awake_desc_10000157_2"
+        "talentId": 12800109
       },
       {
-        "name": "char_awake_name_10000157_3",
-        "desc": "char_awake_desc_10000157_3"
+        "talentId": 12800391
       },
       {
-        "name": "char_awake_name_10000157_4",
-        "desc": "char_awake_desc_10000157_4"
-      },
-      {
-        "name": "char_awake_name_10000157_5",
-        "desc": "char_awake_desc_10000157_5"
+        "talentId": 12800110
       }
     ],
-    "desc": "char_desc_10000157",
-    "id": 10000157,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/6/65/hf8m7qg0qt2yk5ikbmd755r1xwura4h.png",
-    "name": "char_name_10000157",
-    "produceSkills": [
-      "10600174",
-      "10600175",
-      "10600176"
-    ],
-    "rarity": "R",
-    "resonance": [
+    "breakthroughList": [
       {
-        "name": "char_reson_name_10000157_1",
-        "desc": "char_reson_desc_10000157_1"
+        "breakthroughId": 12100178
       },
       {
-        "name": "char_reson_name_10000157_2",
-        "desc": "char_reson_desc_10000157_2"
+        "breakthroughId": 12100179
       },
       {
-        "name": "char_reson_name_10000157_3",
-        "desc": "char_reson_desc_10000157_3"
+        "breakthroughId": 12100180
       },
       {
-        "name": "char_reson_name_10000157_4",
-        "desc": "char_reson_desc_10000157_4"
+        "breakthroughId": 12100743
+      },
+      {
+        "breakthroughId": 12100744
+      },
+      {
+        "breakthroughId": 12100183
       }
     ],
-    "skills": {
-      "1": "10600174",
-      "2": "10600175",
-      "3": "10600176"
-    }
-  },
-  "10000159": {
-    "awakening": [
+    "line": 2,
+    "subLine": 141,
+    "identity": "char_identity_10000156",
+    "ability": "char_ability_10000156",
+    "controllerId": 10300114,
+    "equipmentSlotList": [
       {
-        "name": "char_awake_name_10000159_1",
-        "desc": "char_awake_desc_10000159_1"
+        "tagID": 12600155
       },
       {
-        "name": "char_awake_name_10000159_2",
-        "desc": "char_awake_desc_10000159_2"
+        "tagID": 12600161
       },
       {
-        "name": "char_awake_name_10000159_3",
-        "desc": "char_awake_desc_10000159_3"
-      },
-      {
-        "name": "char_awake_name_10000159_4",
-        "desc": "char_awake_desc_10000159_4"
-      },
-      {
-        "name": "char_awake_name_10000159_5",
-        "desc": "char_awake_desc_10000159_5"
+        "tagID": 12600162
       }
-    ],
-    "desc": "char_desc_10000159",
-    "id": 10000159,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/5/53/1eobpcmy0n3s39a099copsrze4pd8jr.png",
-    "name": "char_name_10000159",
-    "produceSkills": [
-      "10600330",
-      "10600335",
-      "10600336",
-      "10600337",
-      "10600338",
-      "10600339"
-    ],
-    "rarity": "R",
-    "resonance": [
-      {
-        "name": "char_reson_name_10000159_1",
-        "desc": "char_reson_desc_10000159_1"
-      },
-      {
-        "name": "char_reson_name_10000159_2",
-        "desc": "char_reson_desc_10000159_2"
-      },
-      {
-        "name": "char_reson_name_10000159_3",
-        "desc": "char_reson_desc_10000159_3"
-      },
-      {
-        "name": "char_reson_name_10000159_4",
-        "desc": "char_reson_desc_10000159_4"
-      }
-    ],
-    "skills": {
-      "1": "10600330",
-      "2": "10600338",
-      "3": "10600339"
-    }
-  },
-  "10000160": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000160_1",
-        "desc": "char_awake_desc_10000160_1"
-      },
-      {
-        "name": "char_awake_name_10000160_2",
-        "desc": "char_awake_desc_10000160_2"
-      },
-      {
-        "name": "char_awake_name_10000160_3",
-        "desc": "char_awake_desc_10000160_3"
-      },
-      {
-        "name": "char_awake_name_10000160_4",
-        "desc": "char_awake_desc_10000160_4"
-      },
-      {
-        "name": "char_awake_name_10000160_5",
-        "desc": "char_awake_desc_10000160_5"
-      }
-    ],
-    "desc": "char_desc_10000160",
-    "id": 10000160,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/9/90/39hndkktsknogceq6mc9b3xek6vq04i.png",
-    "name": "char_name_10000160",
-    "produceSkills": [
-      "10600182",
-      "10600184",
-      "10600269"
-    ],
-    "rarity": "R",
-    "resonance": [
-      {
-        "name": "char_reson_name_10000160_1",
-        "desc": "char_reson_desc_10000160_1"
-      },
-      {
-        "name": "char_reson_name_10000160_2",
-        "desc": "char_reson_desc_10000160_2"
-      },
-      {
-        "name": "char_reson_name_10000160_3",
-        "desc": "char_reson_desc_10000160_3"
-      },
-      {
-        "name": "char_reson_name_10000160_4",
-        "desc": "char_reson_desc_10000160_4"
-      }
-    ],
-    "skills": {
-      "1": "10600184",
-      "2": "10600182",
-      "3": "10600269"
-    }
-  },
-  "10000170": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000170_1",
-        "desc": "char_awake_desc_10000170_1"
-      },
-      {
-        "name": "char_awake_name_10000170_2",
-        "desc": "char_awake_desc_10000170_2"
-      },
-      {
-        "name": "char_awake_name_10000170_3",
-        "desc": "char_awake_desc_10000170_3"
-      },
-      {
-        "name": "char_awake_name_10000170_4",
-        "desc": "char_awake_desc_10000170_4"
-      },
-      {
-        "name": "char_awake_name_10000170_5",
-        "desc": "char_awake_desc_10000170_5"
-      }
-    ],
-    "desc": "char_desc_10000170",
-    "id": 10000170,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/d/df/83f2wu57hj40s6eb6qolth3q7e79gta.png",
-    "name": "char_name_10000170",
-    "produceSkills": [
-      "10600057",
-      "10600062",
-      "10600064",
-      "10600066",
-      "10600067"
-    ],
-    "rarity": "R",
-    "resonance": [
-      {
-        "name": "char_reson_name_10000170_1",
-        "desc": "char_reson_desc_10000170_1"
-      },
-      {
-        "name": "char_reson_name_10000170_2",
-        "desc": "char_reson_desc_10000170_2"
-      },
-      {
-        "name": "char_reson_name_10000170_3",
-        "desc": "char_reson_desc_10000170_3"
-      },
-      {
-        "name": "char_reson_name_10000170_4",
-        "desc": "char_reson_desc_10000170_4"
-      }
-    ],
-    "skills": {
-      "1": "10600057",
-      "2": "10600066",
-      "3": "10600067"
-    }
-  },
-  "10000270": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000270_1",
-        "desc": "char_awake_desc_10000270_1"
-      },
-      {
-        "name": "char_awake_name_10000270_2",
-        "desc": "char_awake_desc_10000270_2"
-      },
-      {
-        "name": "char_awake_name_10000270_3",
-        "desc": "char_awake_desc_10000270_3"
-      },
-      {
-        "name": "char_awake_name_10000270_4",
-        "desc": "char_awake_desc_10000270_4"
-      },
-      {
-        "name": "char_awake_name_10000270_5",
-        "desc": "char_awake_desc_10000270_5"
-      }
-    ],
-    "desc": "char_desc_10000270",
-    "id": 10000270,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/b/bd/lrfz8vh5jhhm55iuuw71b5msk3ke159.png",
-    "name": "char_name_10000270",
-    "rarity": "SR",
-    "resonance": [
-      {
-        "name": "char_reson_name_10000270_1",
-        "desc": "char_reson_desc_10000270_1"
-      },
-      {
-        "name": "char_reson_name_10000270_2",
-        "desc": "char_reson_desc_10000270_2"
-      },
-      {
-        "name": "char_reson_name_10000270_3",
-        "desc": "char_reson_desc_10000270_3"
-      },
-      {
-        "name": "char_reson_name_10000270_4",
-        "desc": "char_reson_desc_10000270_4"
-      },
-      {
-        "name": "char_reson_name_10000270_5",
-        "desc": "char_reson_desc_10000270_5"
-      }
-    ],
-    "skills": {
-      "1": "10600362",
-      "2": "10600359",
-      "3": "10600366"
-    },
-    "produceSkills": [
-      "10600359",
-      "10600362",
-      "10600366"
     ]
   },
-  "10000276": {
-    "awakening": [
+  "10000157": {
+    "id": 10000157,
+    "name": "char_name_10000157",
+    "quality": "threeStar",
+    "sideId": 12600026,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_awake_name_10000276_1",
-        "desc": "char_awake_desc_10000276_1"
+        "num": 2,
+        "skillId": 12300303
       },
       {
-        "name": "char_awake_name_10000276_2",
-        "desc": "char_awake_desc_10000276_2"
+        "num": 2,
+        "skillId": 12300304
       },
       {
-        "name": "char_awake_name_10000276_3",
-        "desc": "char_awake_desc_10000276_3"
-      },
-      {
-        "name": "char_awake_name_10000276_4",
-        "desc": "char_awake_desc_10000276_4"
-      },
-      {
-        "name": "char_awake_name_10000276_5",
-        "desc": "char_awake_desc_10000276_5"
+        "num": 1,
+        "skillId": 12300305
       }
     ],
-    "desc": "char_desc_10000276",
-    "id": 10000276,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/f/f3/02wi2sboshumw98nf7xh9sci7li57ct.png",
-    "name": "char_name_10000276",
-    "rarity": "SSR",
-    "resonance": [
+    "tk_SN": null,
+    "hp_SN": 52000000,
+    "def_SN": 830000,
+    "atk_SN": 610000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
       {
-        "name": "char_reson_name_10000276_1",
-        "desc": "char_reson_desc_10000276_1"
+        "talentId": 12800104
       },
       {
-        "name": "char_reson_name_10000276_2",
-        "desc": "char_reson_desc_10000276_2"
+        "talentId": 12800105
       },
       {
-        "name": "char_reson_name_10000276_3",
-        "desc": "char_reson_desc_10000276_3"
+        "talentId": 12800366
       },
       {
-        "name": "char_reson_name_10000276_4",
-        "desc": "char_reson_desc_10000276_4"
-      },
-      {
-        "name": "char_reson_name_10000276_5",
-        "desc": "char_reson_desc_10000276_5"
+        "talentId": 12800107
       }
     ],
-    "skills": {
-      "1": "10600363",
-      "2": "10600364",
-      "3": "10600360"
-    },
-    "produceSkills": [
-      "10600360",
-      "10600363",
-      "10600364"
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100197
+      },
+      {
+        "breakthroughId": 12100174
+      },
+      {
+        "breakthroughId": 12100173
+      },
+      {
+        "breakthroughId": 12100749
+      },
+      {
+        "breakthroughId": 12100750
+      },
+      {
+        "breakthroughId": 12100176
+      }
+    ],
+    "line": 3,
+    "subLine": 5,
+    "identity": "char_identity_10000157",
+    "ability": "char_ability_10000157",
+    "controllerId": 10300113,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000160": {
+    "id": 10000160,
+    "name": "char_name_10000160",
+    "quality": "threeStar",
+    "sideId": 12600025,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12300313
+      },
+      {
+        "num": 2,
+        "skillId": 12300315
+      },
+      {
+        "num": 1,
+        "skillId": 12300316
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 80000000,
+    "def_SN": 800000,
+    "atk_SN": 700000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800116
+      },
+      {
+        "talentId": 12800117
+      },
+      {
+        "talentId": 12800382
+      },
+      {
+        "talentId": 12800118
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100201
+      },
+      {
+        "breakthroughId": 12100194
+      },
+      {
+        "breakthroughId": 12100191
+      },
+      {
+        "breakthroughId": 12100192
+      },
+      {
+        "breakthroughId": 12100195
+      },
+      {
+        "breakthroughId": 12100193
+      }
+    ],
+    "line": 1,
+    "subLine": 5,
+    "identity": "char_identity_10000160",
+    "ability": "char_ability_10000160",
+    "controllerId": 10300116,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000072": {
+    "id": 10000072,
+    "name": "char_name_10000072",
+    "quality": "FiveStar",
+    "sideId": 12600031,
+    "passiveSkillList": [
+      {
+        "skillId": 12300209
+      }
+    ],
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12300033
+      },
+      {
+        "num": 1,
+        "skillId": 12300034
+      },
+      {
+        "num": 1,
+        "skillId": 12300035
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 76000000,
+    "def_SN": 730000,
+    "atk_SN": 790000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800087
+      },
+      {
+        "talentId": 12800120
+      },
+      {
+        "talentId": 12800548
+      },
+      {
+        "talentId": 12800122
+      },
+      {
+        "talentId": 12800323
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100045
+      },
+      {
+        "breakthroughId": 12100044
+      },
+      {
+        "breakthroughId": 12100043
+      },
+      {
+        "breakthroughId": 12100809
+      },
+      {
+        "breakthroughId": 12100810
+      },
+      {
+        "breakthroughId": 12100040
+      }
+    ],
+    "line": 2,
+    "subLine": 911,
+    "identity": "char_identity_10000072",
+    "ability": "char_ability_10000072",
+    "controllerId": 10300161,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000094": {
+    "id": 10000094,
+    "name": "char_name_10000094",
+    "quality": "FiveStar",
+    "sideId": 12600031,
+    "passiveSkillList": [
+      {
+        "skillId": 12300361
+      }
+    ],
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12300080
+      },
+      {
+        "num": 2,
+        "skillId": 12300081
+      },
+      {
+        "num": 1,
+        "skillId": 12301621
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 78000000,
+    "def_SN": 780000,
+    "atk_SN": 870000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800126
+      },
+      {
+        "talentId": 12800127
+      },
+      {
+        "talentId": 12800556
+      },
+      {
+        "talentId": 12800129
+      },
+      {
+        "talentId": 12800318
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100053
+      },
+      {
+        "breakthroughId": 12100054
+      },
+      {
+        "breakthroughId": 12100204
+      },
+      {
+        "breakthroughId": 12100721
+      },
+      {
+        "breakthroughId": 12100722
+      },
+      {
+        "breakthroughId": 12100185
+      }
+    ],
+    "line": 1,
+    "subLine": 911,
+    "identity": "char_identity_10000094",
+    "ability": "char_ability_10000094",
+    "controllerId": 10300162,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000095": {
+    "id": 10000095,
+    "name": "char_name_10000095",
+    "quality": "FiveStar",
+    "sideId": 12600027,
+    "passiveSkillList": [
+      {
+        "skillId": 12300881
+      }
+    ],
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12300026
+      },
+      {
+        "num": 1,
+        "skillId": 12300018
+      },
+      {
+        "num": 1,
+        "skillId": 12300025
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 66000000,
+    "def_SN": 630000,
+    "atk_SN": 870000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800051
+      },
+      {
+        "talentId": 12800052
+      },
+      {
+        "talentId": 12800538
+      },
+      {
+        "talentId": 12800055
+      },
+      {
+        "talentId": 12800320
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100013
+      },
+      {
+        "breakthroughId": 12100014
+      },
+      {
+        "breakthroughId": 12100025
+      },
+      {
+        "breakthroughId": 12100817
+      },
+      {
+        "breakthroughId": 12100818
+      },
+      {
+        "breakthroughId": 12100028
+      }
+    ],
+    "line": 3,
+    "subLine": 130,
+    "identity": "char_identity_10000095",
+    "ability": "char_ability_10000095",
+    "controllerId": 10300163,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000111": {
+    "id": 10000111,
+    "name": "char_name_10000111",
+    "quality": "threeStar",
+    "sideId": 12600026,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12300028
+      },
+      {
+        "num": 1,
+        "skillId": 12300031
+      },
+      {
+        "num": 1,
+        "skillId": 12300032
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 73000000,
+    "def_SN": 690000,
+    "atk_SN": 750000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800086
+      },
+      {
+        "talentId": 12800085
+      },
+      {
+        "talentId": 12800383
+      },
+      {
+        "talentId": 12800062
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100029
+      },
+      {
+        "breakthroughId": 12100030
+      },
+      {
+        "breakthroughId": 12100046
+      },
+      {
+        "breakthroughId": 12100702
+      },
+      {
+        "breakthroughId": 12100703
+      },
+      {
+        "breakthroughId": 12100039
+      }
+    ],
+    "line": 2,
+    "subLine": 220,
+    "identity": "char_identity_10000111",
+    "ability": "char_ability_10000111",
+    "controllerId": 10300093,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000170": {
+    "id": 10000170,
+    "name": "char_name_10000170",
+    "quality": "threeStar",
+    "sideId": 12600027,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12300074
+      },
+      {
+        "num": 1,
+        "skillId": 12300075
+      },
+      {
+        "num": 1,
+        "skillId": 12300076
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 68000000,
+    "def_SN": 650000,
+    "atk_SN": 700000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800050
+      },
+      {
+        "talentId": 12800123
+      },
+      {
+        "talentId": 12800402
+      },
+      {
+        "talentId": 12800125
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100047
+      },
+      {
+        "breakthroughId": 12100048
+      },
+      {
+        "breakthroughId": 12100049
+      },
+      {
+        "breakthroughId": 12100741
+      },
+      {
+        "breakthroughId": 12100742
+      },
+      {
+        "breakthroughId": 12100052
+      }
+    ],
+    "line": 2,
+    "subLine": 142,
+    "identity": "char_identity_10000170",
+    "ability": "char_ability_10000170",
+    "controllerId": 10300195,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
     ]
   },
   "10000298": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000298_1",
-        "desc": "char_awake_desc_10000298_1"
-      },
-      {
-        "name": "char_awake_name_10000298_2",
-        "desc": "char_awake_desc_10000298_2"
-      },
-      {
-        "name": "char_awake_name_10000298_3",
-        "desc": "char_awake_desc_10000298_3"
-      },
-      {
-        "name": "char_awake_name_10000298_4",
-        "desc": "char_awake_desc_10000298_4"
-      },
-      {
-        "name": "char_awake_name_10000298_5",
-        "desc": "char_awake_desc_10000298_5"
-      }
-    ],
-    "desc": "char_desc_10000298",
     "id": 10000298,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/3/39/gkf4tscz3e7u5ahmzl4frhliehe4f97.png",
     "name": "char_name_10000298",
-    "produceSkills": [
-      "10600121",
-      "10600122",
-      "10600123",
-      "10600124",
-      "10600125",
-      "10600126",
-      "10600127",
-      "10600240"
-    ],
-    "rarity": "SSR",
-    "resonance": [
+    "quality": "FiveStar",
+    "sideId": 12600035,
+    "passiveSkillList": [
       {
-        "name": "char_reson_name_10000298_1",
-        "desc": "char_reson_desc_10000298_1"
-      },
-      {
-        "name": "char_reson_name_10000298_2",
-        "desc": "char_reson_desc_10000298_2"
-      },
-      {
-        "name": "char_reson_name_10000298_3",
-        "desc": "char_reson_desc_10000298_3"
-      },
-      {
-        "name": "char_reson_name_10000298_4",
-        "desc": "char_reson_desc_10000298_4"
+        "skillId": 12300647
       }
     ],
-    "skills": {
-      "1": "10600121",
-      "2": "10600125",
-      "3": "10600127"
-    }
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12300070
+      },
+      {
+        "num": 2,
+        "skillId": 12300160
+      },
+      {
+        "num": 1,
+        "skillId": 12300164
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 77000000,
+    "def_SN": 770000,
+    "atk_SN": 770000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800141
+      },
+      {
+        "talentId": 12800139
+      },
+      {
+        "talentId": 12800564
+      },
+      {
+        "talentId": 12800138
+      },
+      {
+        "talentId": 12800194
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100222
+      },
+      {
+        "breakthroughId": 12100221
+      },
+      {
+        "breakthroughId": 12100220
+      },
+      {
+        "breakthroughId": 12100801
+      },
+      {
+        "breakthroughId": 12100802
+      },
+      {
+        "breakthroughId": 12100217
+      }
+    ],
+    "line": 1,
+    "subLine": 800,
+    "identity": "char_identity_10000298",
+    "ability": "char_ability_10000298",
+    "controllerId": 10300199,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
   },
   "10000299": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000299_1",
-        "desc": "char_awake_desc_10000299_1"
-      },
-      {
-        "name": "char_awake_name_10000299_2",
-        "desc": "char_awake_desc_10000299_2"
-      },
-      {
-        "name": "char_awake_name_10000299_3",
-        "desc": "char_awake_desc_10000299_3"
-      },
-      {
-        "name": "char_awake_name_10000299_4",
-        "desc": "char_awake_desc_10000299_4"
-      },
-      {
-        "name": "char_awake_name_10000299_5",
-        "desc": "char_awake_desc_10000299_5"
-      }
-    ],
-    "desc": "char_desc_10000299",
     "id": 10000299,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/9/91/gypn91bhybtlvfagbbvik1zxgnzu21a.png",
     "name": "char_name_10000299",
-    "produceSkills": [
-      "10600006",
-      "10600007",
-      "10600008",
-      "10600025"
-    ],
-    "rarity": "R",
-    "resonance": [
+    "quality": "threeStar",
+    "sideId": 12600027,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_reson_name_10000299_1",
-        "desc": "char_reson_desc_10000299_1"
+        "num": 3,
+        "skillId": 12300104
       },
       {
-        "name": "char_reson_name_10000299_2",
-        "desc": "char_reson_desc_10000299_2"
+        "num": 1,
+        "skillId": 12300105
       },
       {
-        "name": "char_reson_name_10000299_3",
-        "desc": "char_reson_desc_10000299_3"
-      },
-      {
-        "name": "char_reson_name_10000299_4",
-        "desc": "char_reson_desc_10000299_4"
+        "num": 1,
+        "skillId": 12300106
       }
     ],
-    "skills": {
-      "1": "10600006",
-      "2": "10600007",
-      "3": "10600025"
-    }
+    "tk_SN": null,
+    "hp_SN": 55000000,
+    "def_SN": 600000,
+    "atk_SN": 570000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800142
+      },
+      {
+        "talentId": 12800143
+      },
+      {
+        "talentId": 12800413
+      },
+      {
+        "talentId": 12800145
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100223
+      },
+      {
+        "breakthroughId": 12100224
+      },
+      {
+        "breakthroughId": 12100225
+      },
+      {
+        "breakthroughId": 12100739
+      },
+      {
+        "breakthroughId": 12100740
+      },
+      {
+        "breakthroughId": 12100228
+      }
+    ],
+    "line": 3,
+    "subLine": 141,
+    "identity": "char_identity_10000299",
+    "ability": "char_ability_10000299",
+    "controllerId": 10300200,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
   },
   "10000300": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000300_1",
-        "desc": "char_awake_desc_10000300_1"
-      },
-      {
-        "name": "char_awake_name_10000300_2",
-        "desc": "char_awake_desc_10000300_2"
-      },
-      {
-        "name": "char_awake_name_10000300_3",
-        "desc": "char_awake_desc_10000300_3"
-      },
-      {
-        "name": "char_awake_name_10000300_4",
-        "desc": "char_awake_desc_10000300_4"
-      },
-      {
-        "name": "char_awake_name_10000300_5",
-        "desc": "char_awake_desc_10000300_5"
-      }
-    ],
-    "desc": "char_desc_10000300",
     "id": 10000300,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/d/db/p2d6nsdmci0vn6i9mco4w0a5pujmh2p.png",
     "name": "char_name_10000300",
-    "produceSkills": [
-      "10600233",
-      "10600236",
-      "10600237"
-    ],
-    "rarity": "SR",
-    "resonance": [
+    "quality": "fourStar",
+    "sideId": 12600031,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_reson_name_10000300_1",
-        "desc": "char_reson_desc_10000300_1"
+        "num": 2,
+        "skillId": 12300467
       },
       {
-        "name": "char_reson_name_10000300_2",
-        "desc": "char_reson_desc_10000300_2"
+        "num": 2,
+        "skillId": 12300468
       },
       {
-        "name": "char_reson_name_10000300_3",
-        "desc": "char_reson_desc_10000300_3"
-      },
-      {
-        "name": "char_reson_name_10000300_4",
-        "desc": "char_reson_desc_10000300_4"
-      },
-      {
-        "name": "char_reson_name_10000300_5",
-        "desc": "char_reson_desc_10000300_5"
+        "num": 1,
+        "skillId": 12300469
       }
     ],
-    "skills": {
-      "1": "10600233",
-      "2": "10600236",
-      "3": "10600237"
-    }
+    "tk_SN": null,
+    "hp_SN": 68000000,
+    "def_SN": 640000,
+    "atk_SN": 720000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800186
+      },
+      {
+        "talentId": 12800187
+      },
+      {
+        "talentId": 12800518
+      },
+      {
+        "talentId": 12800189
+      },
+      {
+        "talentId": 12800200
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100278
+      },
+      {
+        "breakthroughId": 12100279
+      },
+      {
+        "breakthroughId": 12100508
+      },
+      {
+        "breakthroughId": 12100712
+      },
+      {
+        "breakthroughId": 12100713
+      },
+      {
+        "breakthroughId": 12100283
+      }
+    ],
+    "line": 2,
+    "subLine": 980,
+    "identity": "char_identity_10000300",
+    "ability": "char_ability_10000300",
+    "controllerId": 10300278,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
   },
-  "10000335": {
-    "awakening": [
+  "10000047": {
+    "id": 10000047,
+    "name": "char_name_10000047",
+    "quality": "fourStar",
+    "sideId": 12600031,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_awake_name_10000335_1",
-        "desc": "char_awake_desc_10000335_1"
+        "num": 3,
+        "skillId": 12300130
       },
       {
-        "name": "char_awake_name_10000335_2",
-        "desc": "char_awake_desc_10000335_2"
+        "num": 1,
+        "skillId": 12300133
       },
       {
-        "name": "char_awake_name_10000335_3",
-        "desc": "char_awake_desc_10000335_3"
-      },
-      {
-        "name": "char_awake_name_10000335_4",
-        "desc": "char_awake_desc_10000335_4"
-      },
-      {
-        "name": "char_awake_name_10000335_5",
-        "desc": "char_awake_desc_10000335_5"
+        "num": 1,
+        "skillId": 12300136
       }
     ],
-    "desc": "char_desc_10000335",
-    "id": 10000335,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/6/61/4j3mu6xuhp4tvsc884rq0x6rlwmigea.png",
-    "name": "char_name_10000335",
-    "produceSkills": [
-      "10600272",
-      "10600273",
-      "10600274"
-    ],
-    "rarity": "SR",
-    "resonance": [
+    "tk_SN": null,
+    "hp_SN": 66000000,
+    "def_SN": 670000,
+    "atk_SN": 760000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
       {
-        "name": "char_reson_name_10000335_1",
-        "desc": "char_reson_desc_10000335_1"
+        "talentId": 12800130
       },
       {
-        "name": "char_reson_name_10000335_2",
-        "desc": "char_reson_desc_10000335_2"
+        "talentId": 12800131
       },
       {
-        "name": "char_reson_name_10000335_3",
-        "desc": "char_reson_desc_10000335_3"
+        "talentId": 12800529
       },
       {
-        "name": "char_reson_name_10000335_4",
-        "desc": "char_reson_desc_10000335_4"
+        "talentId": 12800133
       },
       {
-        "name": "char_reson_name_10000335_5",
-        "desc": "char_reson_desc_10000335_5"
+        "talentId": 12800195
       }
     ],
-    "skills": {
-      "1": "10600274",
-      "2": "10600273",
-      "3": "10600272"
-    }
-  },
-  "10000352": {
-    "awakening": [
+    "breakthroughList": [
       {
-        "name": "char_awake_name_10000352_1",
-        "desc": "char_awake_desc_10000352_1"
+        "breakthroughId": 12100205
       },
       {
-        "name": "char_awake_name_10000352_2",
-        "desc": "char_awake_desc_10000352_2"
+        "breakthroughId": 12100206
       },
       {
-        "name": "char_awake_name_10000352_3",
-        "desc": "char_awake_desc_10000352_3"
+        "breakthroughId": 12100207
       },
       {
-        "name": "char_awake_name_10000352_4",
-        "desc": "char_awake_desc_10000352_4"
+        "breakthroughId": 12100757
       },
       {
-        "name": "char_awake_name_10000352_5",
-        "desc": "char_awake_desc_10000352_5"
+        "breakthroughId": 12100758
+      },
+      {
+        "breakthroughId": 12100210
       }
     ],
-    "desc": "char_desc_10000352",
-    "id": 10000352,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/a/a3/6j4kheodb9w0wd4hfkqh1zkt72m6lih.png",
-    "name": "char_name_10000352",
-    "produceSkills": [
-      "10600223",
-      "10600224",
-      "10600226",
-      "10600262"
-    ],
-    "rarity": "SSR",
-    "resonance": [
+    "line": 3,
+    "subLine": 910,
+    "identity": "char_identity_10000047",
+    "ability": "char_ability_10000047",
+    "controllerId": 10300197,
+    "equipmentSlotList": [
       {
-        "name": "char_reson_name_10000352_1",
-        "desc": "char_reson_desc_10000352_1"
+        "tagID": 12600155
       },
       {
-        "name": "char_reson_name_10000352_2",
-        "desc": "char_reson_desc_10000352_2"
+        "tagID": 12600161
       },
       {
-        "name": "char_reson_name_10000352_3",
-        "desc": "char_reson_desc_10000352_3"
-      },
-      {
-        "name": "char_reson_name_10000352_4",
-        "desc": "char_reson_desc_10000352_4"
-      },
-      {
-        "name": "char_reson_name_10000352_5",
-        "desc": "char_reson_desc_10000352_5"
+        "tagID": 12600162
       }
-    ],
-    "skills": {
-      "1": "10600226",
-      "2": "10600224",
-      "3": "10600223"
-    }
-  },
-  "10000372": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000372_1",
-        "desc": "char_awake_desc_10000372_1"
-      },
-      {
-        "name": "char_awake_name_10000372_2",
-        "desc": "char_awake_desc_10000372_2"
-      },
-      {
-        "name": "char_awake_name_10000372_3",
-        "desc": "char_awake_desc_10000372_3"
-      },
-      {
-        "name": "char_awake_name_10000372_4",
-        "desc": "char_awake_desc_10000372_4"
-      },
-      {
-        "name": "char_awake_name_10000372_5",
-        "desc": "char_awake_desc_10000372_5"
-      }
-    ],
-    "desc": "char_desc_10000372",
-    "id": 10000372,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/0/0d/5btj9lbwex4qirctyegw5ebpfurrbyf.png",
-    "name": "char_name_10000372",
-    "rarity": "SSR",
-    "resonance": [
-      {
-        "name": "char_reson_name_10000372_1",
-        "desc": "char_reson_desc_10000372_1"
-      },
-      {
-        "name": "char_reson_name_10000372_2",
-        "desc": "char_reson_desc_10000372_2"
-      },
-      {
-        "name": "char_reson_name_10000372_3",
-        "desc": "char_reson_desc_10000372_3"
-      },
-      {
-        "name": "char_reson_name_10000372_4",
-        "desc": "char_reson_desc_10000372_4"
-      },
-      {
-        "name": "char_reson_name_10000372_5",
-        "desc": "char_reson_desc_10000372_5"
-      }
-    ],
-    "skills": {
-      "1": "10600071",
-      "2": "10600261",
-      "3": "10600306"
-    },
-    "produceSkills": [
-      "10600071",
-      "10600083",
-      "10600243",
-      "10600246",
-      "10600261",
-      "10600306"
     ]
   },
   "10000387": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000387_1",
-        "desc": "char_awake_desc_10000387_1"
-      },
-      {
-        "name": "char_awake_name_10000387_2",
-        "desc": "char_awake_desc_10000387_2"
-      },
-      {
-        "name": "char_awake_name_10000387_3",
-        "desc": "char_awake_desc_10000387_3"
-      },
-      {
-        "name": "char_awake_name_10000387_4",
-        "desc": "char_awake_desc_10000387_4"
-      },
-      {
-        "name": "char_awake_name_10000387_5",
-        "desc": "char_awake_desc_10000387_5"
-      }
-    ],
-    "desc": "char_desc_10000387",
     "id": 10000387,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/e/e4/c7d0w54nqsrsftgbnihx7zlpjrjk51u.png",
     "name": "char_name_10000387",
-    "produceSkills": [
-      "10600044",
-      "10600075",
-      "10600144",
-      "10600145",
-      "10600155"
-    ],
-    "rarity": "SR",
-    "resonance": [
+    "quality": "fourStar",
+    "sideId": 12600035,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_reson_name_10000387_1",
-        "desc": "char_reson_desc_10000387_1"
+        "num": 2,
+        "skillId": 12300270
       },
       {
-        "name": "char_reson_name_10000387_2",
-        "desc": "char_reson_desc_10000387_2"
+        "num": 2,
+        "skillId": 12300292
       },
       {
-        "name": "char_reson_name_10000387_3",
-        "desc": "char_reson_desc_10000387_3"
-      },
-      {
-        "name": "char_reson_name_10000387_4",
-        "desc": "char_reson_desc_10000387_4"
-      },
-      {
-        "name": "char_reson_name_10000387_5",
-        "desc": "char_reson_desc_10000387_5"
+        "num": 1,
+        "skillId": 12300301
       }
     ],
-    "skills": {
-      "1": "10600155",
-      "2": "10600144",
-      "3": "10600145"
-    }
+    "tk_SN": null,
+    "hp_SN": 77000000,
+    "def_SN": 750000,
+    "atk_SN": 790000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800146
+      },
+      {
+        "talentId": 12800147
+      },
+      {
+        "talentId": 12800515
+      },
+      {
+        "talentId": 12800149
+      },
+      {
+        "talentId": 12800315
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100086
+      },
+      {
+        "breakthroughId": 12100087
+      },
+      {
+        "breakthroughId": 12100088
+      },
+      {
+        "breakthroughId": 12100755
+      },
+      {
+        "breakthroughId": 12100756
+      },
+      {
+        "breakthroughId": 12100138
+      }
+    ],
+    "line": 1,
+    "subLine": 820,
+    "identity": "char_identity_10000387",
+    "ability": "char_ability_10000387",
+    "controllerId": 10300252,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
   },
   "10000388": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000388_1",
-        "desc": "char_awake_desc_10000388_1"
-      },
-      {
-        "name": "char_awake_name_10000388_2",
-        "desc": "char_awake_desc_10000388_2"
-      },
-      {
-        "name": "char_awake_name_10000388_3",
-        "desc": "char_awake_desc_10000388_3"
-      },
-      {
-        "name": "char_awake_name_10000388_4",
-        "desc": "char_awake_desc_10000388_4"
-      },
-      {
-        "name": "char_awake_name_10000388_5",
-        "desc": "char_awake_desc_10000388_5"
-      }
-    ],
-    "desc": "char_desc_10000388",
     "id": 10000388,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/9/94/pmucfxwidn1kpu7ni3rp1n5trgw8c5v.png",
     "name": "char_name_10000388",
-    "produceSkills": [
-      "10600021",
-      "10600032",
-      "10600163",
-      "10600164",
-      "10600165",
-      "10600166"
-    ],
-    "rarity": "SSR",
-    "resonance": [
+    "quality": "FiveStar",
+    "sideId": 12600023,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_reson_name_10000388_1",
-        "desc": "char_reson_desc_10000388_1"
+        "num": 3,
+        "skillId": 12300302
       },
       {
-        "name": "char_reson_name_10000388_2",
-        "desc": "char_reson_desc_10000388_2"
+        "num": 1,
+        "skillId": 12300309
       },
       {
-        "name": "char_reson_name_10000388_3",
-        "desc": "char_reson_desc_10000388_3"
-      },
-      {
-        "name": "char_reson_name_10000388_4",
-        "desc": "char_reson_desc_10000388_4"
-      },
-      {
-        "name": "char_reson_name_10000388_5",
-        "desc": "char_reson_desc_10000388_5"
+        "num": 1,
+        "skillId": 12300320
       }
     ],
-    "skills": {
-      "1": "10600163",
-      "2": "10600165",
-      "3": "10600166"
-    }
+    "tk_SN": null,
+    "hp_SN": 87000000,
+    "def_SN": 830000,
+    "atk_SN": 790000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800150
+      },
+      {
+        "talentId": 12800151
+      },
+      {
+        "talentId": 12800559
+      },
+      {
+        "talentId": 12800153
+      },
+      {
+        "talentId": 12800326
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100139
+      },
+      {
+        "breakthroughId": 12100140
+      },
+      {
+        "breakthroughId": 12100141
+      },
+      {
+        "breakthroughId": 12100797
+      },
+      {
+        "breakthroughId": 12100798
+      },
+      {
+        "breakthroughId": 12100229
+      }
+    ],
+    "line": 1,
+    "subLine": 420,
+    "identity": "char_identity_10000388",
+    "ability": "char_ability_10000388",
+    "controllerId": 10300201,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
   },
   "10000389": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000389_1",
-        "desc": "char_awake_desc_10000389_1"
-      },
-      {
-        "name": "char_awake_name_10000389_2",
-        "desc": "char_awake_desc_10000389_2"
-      },
-      {
-        "name": "char_awake_name_10000389_3",
-        "desc": "char_awake_desc_10000389_3"
-      },
-      {
-        "name": "char_awake_name_10000389_4",
-        "desc": "char_awake_desc_10000389_4"
-      },
-      {
-        "name": "char_awake_name_10000389_5",
-        "desc": "char_awake_desc_10000389_5"
-      }
-    ],
-    "desc": "char_desc_10000389",
     "id": 10000389,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/9/94/muij3ww15m1vow5rue5sie2wbdud0n7.png",
     "name": "char_name_10000389",
-    "produceSkills": [
-      "10600172",
-      "10600188",
-      "10600189",
-      "10600190",
-      "10600258"
-    ],
-    "rarity": "SR",
-    "resonance": [
+    "quality": "fourStar",
+    "sideId": 12600031,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_reson_name_10000389_1",
-        "desc": "char_reson_desc_10000389_1"
+        "num": 2,
+        "skillId": 12300060
       },
       {
-        "name": "char_reson_name_10000389_2",
-        "desc": "char_reson_desc_10000389_2"
+        "num": 2,
+        "skillId": 12300297
       },
       {
-        "name": "char_reson_name_10000389_3",
-        "desc": "char_reson_desc_10000389_3"
-      },
-      {
-        "name": "char_reson_name_10000389_4",
-        "desc": "char_reson_desc_10000389_4"
-      },
-      {
-        "name": "char_reson_name_10000389_5",
-        "desc": "char_reson_desc_10000389_5"
+        "num": 1,
+        "skillId": 12300329
       }
     ],
-    "skills": {
-      "1": "10600172",
-      "2": "10600190",
-      "3": "10600258"
-    }
-  },
-  "10000408": {
-    "awakening": [
+    "tk_SN": null,
+    "hp_SN": 80000000,
+    "def_SN": 810000,
+    "atk_SN": 720000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
       {
-        "name": "char_awake_name_10000408_1",
-        "desc": "char_awake_desc_10000408_1"
+        "talentId": 12800154
       },
       {
-        "name": "char_awake_name_10000408_2",
-        "desc": "char_awake_desc_10000408_2"
+        "talentId": 12800155
       },
       {
-        "name": "char_awake_name_10000408_3",
-        "desc": "char_awake_desc_10000408_3"
+        "talentId": 12800519
       },
       {
-        "name": "char_awake_name_10000408_4",
-        "desc": "char_awake_desc_10000408_4"
+        "talentId": 12800157
       },
       {
-        "name": "char_awake_name_10000408_5",
-        "desc": "char_awake_desc_10000408_5"
+        "talentId": 12800316
       }
     ],
-    "desc": "char_desc_10000408",
-    "id": 10000408,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/7/7a/9khpjg78hv4qw60uqd8qv4s0gf2efte.png",
-    "name": "char_name_10000408",
-    "produceSkills": [
-      "10600169",
-      "10600193",
-      "10600194",
-      "10600214",
-      "10600215",
-      "10600242",
-      "10600283",
-      "10600286",
-      "10600287",
-      "10600288",
-      "10600289"
-    ],
-    "rarity": "R",
-    "resonance": [
+    "breakthroughList": [
       {
-        "name": "char_reson_name_10000408_1",
-        "desc": "char_reson_desc_10000408_1"
+        "breakthroughId": 12100230
       },
       {
-        "name": "char_reson_name_10000408_2",
-        "desc": "char_reson_desc_10000408_2"
+        "breakthroughId": 12100231
       },
       {
-        "name": "char_reson_name_10000408_3",
-        "desc": "char_reson_desc_10000408_3"
+        "breakthroughId": 12100232
       },
       {
-        "name": "char_reson_name_10000408_4",
-        "desc": "char_reson_desc_10000408_4"
+        "breakthroughId": 12100759
+      },
+      {
+        "breakthroughId": 12100760
+      },
+      {
+        "breakthroughId": 12100235
       }
     ],
-    "skills": {
-      "1": "10600169",
-      "2": "10600215",
-      "3": "10600214"
-    }
+    "line": 1,
+    "subLine": 980,
+    "identity": "char_identity_10000389",
+    "ability": "char_ability_10000389",
+    "controllerId": 10300261,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
   },
   "10000409": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000409_1",
-        "desc": "char_awake_desc_10000409_1"
-      },
-      {
-        "name": "char_awake_name_10000409_2",
-        "desc": "char_awake_desc_10000409_2"
-      },
-      {
-        "name": "char_awake_name_10000409_3",
-        "desc": "char_awake_desc_10000409_3"
-      },
-      {
-        "name": "char_awake_name_10000409_4",
-        "desc": "char_awake_desc_10000409_4"
-      },
-      {
-        "name": "char_awake_name_10000409_5",
-        "desc": "char_awake_desc_10000409_5"
-      }
-    ],
-    "desc": "char_desc_10000409",
     "id": 10000409,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/e/ef/dlkz344xwfkwjbryu3ar1ao8u0e0ami.png",
     "name": "char_name_10000409",
-    "produceSkills": [
-      "10600199",
-      "10600200",
-      "10600201",
-      "10600259"
-    ],
-    "rarity": "R",
-    "resonance": [
+    "quality": "threeStar",
+    "sideId": 12600023,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_reson_name_10000409_1",
-        "desc": "char_reson_desc_10000409_1"
+        "num": 2,
+        "skillId": 12300412
       },
       {
-        "name": "char_reson_name_10000409_2",
-        "desc": "char_reson_desc_10000409_2"
+        "num": 2,
+        "skillId": 12300413
       },
       {
-        "name": "char_reson_name_10000409_3",
-        "desc": "char_reson_desc_10000409_3"
-      },
-      {
-        "name": "char_reson_name_10000409_4",
-        "desc": "char_reson_desc_10000409_4"
+        "num": 1,
+        "skillId": 12300414
       }
     ],
-    "skills": {
-      "1": "10600201",
-      "2": "10600200",
-      "3": "10600199"
-    }
+    "tk_SN": null,
+    "hp_SN": 67000000,
+    "def_SN": 710000,
+    "atk_SN": 690000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800162
+      },
+      {
+        "talentId": 12800163
+      },
+      {
+        "talentId": 12800432
+      },
+      {
+        "talentId": 12800165
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100242
+      },
+      {
+        "breakthroughId": 12100243
+      },
+      {
+        "breakthroughId": 12100244
+      },
+      {
+        "breakthroughId": 12100731
+      },
+      {
+        "breakthroughId": 12100732
+      },
+      {
+        "breakthroughId": 12100247
+      }
+    ],
+    "line": 1,
+    "subLine": 430,
+    "identity": "char_identity_10000409",
+    "ability": "char_ability_10000409",
+    "controllerId": 10300268,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000352": {
+    "id": 10000352,
+    "name": "char_name_10000352",
+    "quality": "FiveStar",
+    "sideId": 12600031,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12300417
+      },
+      {
+        "num": 2,
+        "skillId": 12300418
+      },
+      {
+        "num": 1,
+        "skillId": 12300419
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 75000000,
+    "def_SN": 850000,
+    "atk_SN": 750000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800166
+      },
+      {
+        "talentId": 12800482
+      },
+      {
+        "talentId": 12800554
+      },
+      {
+        "talentId": 12800169
+      },
+      {
+        "talentId": 12800201
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100248
+      },
+      {
+        "breakthroughId": 12100250
+      },
+      {
+        "breakthroughId": 12100249
+      },
+      {
+        "breakthroughId": 12100807
+      },
+      {
+        "breakthroughId": 12100808
+      },
+      {
+        "breakthroughId": 12100253
+      }
+    ],
+    "line": 1,
+    "subLine": 920,
+    "identity": "char_identity_10000352",
+    "ability": "char_ability_10000352",
+    "controllerId": 10300269,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
   },
   "10000414": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000414_1",
-        "desc": "char_awake_desc_10000414_1"
-      },
-      {
-        "name": "char_awake_name_10000414_2",
-        "desc": "char_awake_desc_10000414_2"
-      },
-      {
-        "name": "char_awake_name_10000414_3",
-        "desc": "char_awake_desc_10000414_3"
-      },
-      {
-        "name": "char_awake_name_10000414_4",
-        "desc": "char_awake_desc_10000414_4"
-      },
-      {
-        "name": "char_awake_name_10000414_5",
-        "desc": "char_awake_desc_10000414_5"
-      }
-    ],
-    "desc": "char_desc_10000414",
     "id": 10000414,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/b/b8/83bekcym9g2xgv541zx62s1ktn2c6zu.png",
     "name": "char_name_10000414",
-    "produceSkills": [
-      "10600207",
-      "10600208",
-      "10600209"
-    ],
-    "rarity": "R",
-    "resonance": [
+    "quality": "threeStar",
+    "sideId": 12600023,
+    "passiveSkillList": [],
+    "skillList": [
       {
-        "name": "char_reson_name_10000414_1",
-        "desc": "char_reson_desc_10000414_1"
+        "num": 3,
+        "skillId": 12300425
       },
       {
-        "name": "char_reson_name_10000414_2",
-        "desc": "char_reson_desc_10000414_2"
+        "num": 1,
+        "skillId": 12300426
       },
       {
-        "name": "char_reson_name_10000414_3",
-        "desc": "char_reson_desc_10000414_3"
-      },
-      {
-        "name": "char_reson_name_10000414_4",
-        "desc": "char_reson_desc_10000414_4"
+        "num": 1,
+        "skillId": 12300427
       }
     ],
-    "skills": {
-      "1": "10600207",
-      "2": "10600208",
-      "3": "10600209"
-    }
+    "tk_SN": null,
+    "hp_SN": 62000000,
+    "def_SN": 580000,
+    "atk_SN": 700000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800174
+      },
+      {
+        "talentId": 12800175
+      },
+      {
+        "talentId": 12800417
+      },
+      {
+        "talentId": 12800177
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100260
+      },
+      {
+        "breakthroughId": 12100261
+      },
+      {
+        "breakthroughId": 12100262
+      },
+      {
+        "breakthroughId": 12100733
+      },
+      {
+        "breakthroughId": 12100734
+      },
+      {
+        "breakthroughId": 12100265
+      }
+    ],
+    "line": 2,
+    "subLine": 430,
+    "identity": "char_identity_10000414",
+    "ability": "char_ability_10000414",
+    "controllerId": 10300272,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000408": {
+    "id": 10000408,
+    "name": "char_name_10000408",
+    "quality": "twoStar",
+    "sideId": 12600025,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12300447
+      },
+      {
+        "num": 2,
+        "skillId": 12300448
+      },
+      {
+        "num": 1,
+        "skillId": 12300449
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 40000000,
+    "def_SN": 400000,
+    "atk_SN": 400000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800178
+      },
+      {
+        "talentId": 12800179
+      },
+      {
+        "talentId": 12800362
+      },
+      {
+        "talentId": 12800181
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100266
+      },
+      {
+        "breakthroughId": 12100267
+      },
+      {
+        "breakthroughId": 12100268
+      },
+      {
+        "breakthroughId": 12100726
+      },
+      {
+        "breakthroughId": 12100727
+      },
+      {
+        "breakthroughId": 12100271
+      }
+    ],
+    "line": 2,
+    "subLine": 0,
+    "identity": "char_identity_10000408",
+    "ability": "char_ability_10000408",
+    "controllerId": 10300231,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
   },
   "10000739": {
-    "awakening": [
-      {
-        "name": "char_awake_name_10000739_1",
-        "desc": "char_awake_desc_10000739_1"
-      },
-      {
-        "name": "char_awake_name_10000739_2",
-        "desc": "char_awake_desc_10000739_2"
-      },
-      {
-        "name": "char_awake_name_10000739_3",
-        "desc": "char_awake_desc_10000739_3"
-      },
-      {
-        "name": "char_awake_name_10000739_4",
-        "desc": "char_awake_desc_10000739_4"
-      },
-      {
-        "name": "char_awake_name_10000739_5",
-        "desc": "char_awake_desc_10000739_5"
-      }
-    ],
-    "desc": "char_desc_10000739",
     "id": 10000739,
-    "img_card": "https://patchwiki.biligame.com/images/resonance/9/99/lxsqzm2j1w49tk8z12vnlp092r7yqdj.png",
     "name": "char_name_10000739",
-    "produceSkills": [
-      "10600158",
-      "10600239",
-      "10600244",
-      "10600245",
-      "10600331",
-      "10600332",
-      "10600333",
-      "10600334"
-    ],
-    "rarity": "SSR",
-    "resonance": [
+    "quality": "FiveStar",
+    "sideId": 12600026,
+    "passiveSkillList": [
       {
-        "name": "char_reson_name_10000739_1",
-        "desc": "char_reson_desc_10000739_1"
-      },
-      {
-        "name": "char_reson_name_10000739_2",
-        "desc": "char_reson_desc_10000739_2"
-      },
-      {
-        "name": "char_reson_name_10000739_3",
-        "desc": "char_reson_desc_10000739_3"
-      },
-      {
-        "name": "char_reson_name_10000739_4",
-        "desc": "char_reson_desc_10000739_4"
-      },
-      {
-        "name": "char_reson_name_10000739_5",
-        "desc": "char_reson_desc_10000739_5"
+        "skillId": 12301825
       }
     ],
-    "skills": {
-      "1": "10600158",
-      "2": "10600239",
-      "3": "10600245"
-    }
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12300514
+      },
+      {
+        "num": 2,
+        "skillId": 12300515
+      },
+      {
+        "num": 1,
+        "skillId": 12300516
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 75000000,
+    "def_SN": 780000,
+    "atk_SN": 820000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800190
+      },
+      {
+        "talentId": 12800191
+      },
+      {
+        "talentId": 12800558
+      },
+      {
+        "talentId": 12800193
+      },
+      {
+        "talentId": 12800325
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100284
+      },
+      {
+        "breakthroughId": 12100285
+      },
+      {
+        "breakthroughId": 12100286
+      },
+      {
+        "breakthroughId": 12100793
+      },
+      {
+        "breakthroughId": 12100794
+      },
+      {
+        "breakthroughId": 12100289
+      }
+    ],
+    "line": 3,
+    "subLine": 210,
+    "identity": "char_identity_10000739",
+    "ability": "char_ability_10000739",
+    "controllerId": 10300331,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000335": {
+    "id": 10000335,
+    "name": "char_name_10000335",
+    "quality": "fourStar",
+    "sideId": 12600035,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12300687
+      },
+      {
+        "num": 2,
+        "skillId": 12300688
+      },
+      {
+        "num": 1,
+        "skillId": 12300689
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 69000000,
+    "def_SN": 670000,
+    "atk_SN": 790000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800234
+      },
+      {
+        "talentId": 12800235
+      },
+      {
+        "talentId": 12800532
+      },
+      {
+        "talentId": 12800237
+      },
+      {
+        "talentId": 12800258
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100290
+      },
+      {
+        "breakthroughId": 12100291
+      },
+      {
+        "breakthroughId": 12100292
+      },
+      {
+        "breakthroughId": 12100704
+      },
+      {
+        "breakthroughId": 12100705
+      },
+      {
+        "breakthroughId": 12100295
+      }
+    ],
+    "line": 3,
+    "subLine": 810,
+    "identity": "char_identity_10000335",
+    "ability": "char_ability_10000335",
+    "controllerId": 10300101,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000027": {
+    "id": 10000027,
+    "name": "char_name_10000027",
+    "quality": "threeStar",
+    "sideId": 12600025,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 4,
+        "skillId": 12300960
+      },
+      {
+        "num": 1,
+        "skillId": 12300961
+      },
+      {
+        "num": 1,
+        "skillId": 12300962
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 66000000,
+    "def_SN": 660000,
+    "atk_SN": 660000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800327
+      },
+      {
+        "talentId": 12800328
+      },
+      {
+        "talentId": 12800513
+      },
+      {
+        "talentId": 12800330
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100304
+      },
+      {
+        "breakthroughId": 12100305
+      },
+      {
+        "breakthroughId": 12100309
+      },
+      {
+        "breakthroughId": 12100706
+      },
+      {
+        "breakthroughId": 12100707
+      },
+      {
+        "breakthroughId": 12100308
+      }
+    ],
+    "line": 1,
+    "subLine": 1,
+    "identity": "char_identity_10000027",
+    "ability": "char_ability_10000027",
+    "controllerId": 10300052,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000031": {
+    "id": 10000031,
+    "name": "char_name_10000031",
+    "quality": "FiveStar",
+    "sideId": 12600031,
+    "passiveSkillList": [
+      {
+        "skillId": 12301616
+      }
+    ],
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12300055
+      },
+      {
+        "num": 2,
+        "skillId": 12300056
+      },
+      {
+        "num": 1,
+        "skillId": 12300072
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 84000000,
+    "def_SN": 840000,
+    "atk_SN": 840000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800304
+      },
+      {
+        "talentId": 12800305
+      },
+      {
+        "talentId": 12800570
+      },
+      {
+        "talentId": 12800483
+      },
+      {
+        "talentId": 12800308
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100318
+      },
+      {
+        "breakthroughId": 12100319
+      },
+      {
+        "breakthroughId": 12100320
+      },
+      {
+        "breakthroughId": 12100714
+      },
+      {
+        "breakthroughId": 12100715
+      },
+      {
+        "breakthroughId": 12100323
+      }
+    ],
+    "line": 2,
+    "subLine": 900,
+    "identity": "char_identity_10000031",
+    "ability": "char_ability_10000031",
+    "controllerId": 10300075,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000034": {
+    "id": 10000034,
+    "name": "char_name_10000034",
+    "quality": "FiveStar",
+    "sideId": 12600023,
+    "passiveSkillList": [
+      {
+        "skillId": 12301959
+      }
+    ],
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12301002
+      },
+      {
+        "num": 2,
+        "skillId": 12301003
+      },
+      {
+        "num": 1,
+        "skillId": 12301004
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 77000000,
+    "def_SN": 730000,
+    "atk_SN": 880000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800309
+      },
+      {
+        "talentId": 12800310
+      },
+      {
+        "talentId": 12800555
+      },
+      {
+        "talentId": 12800312
+      },
+      {
+        "talentId": 12800313
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100316
+      },
+      {
+        "breakthroughId": 12100324
+      },
+      {
+        "breakthroughId": 12100325
+      },
+      {
+        "breakthroughId": 12100819
+      },
+      {
+        "breakthroughId": 12100822
+      },
+      {
+        "breakthroughId": 12100328
+      }
+    ],
+    "line": 2,
+    "subLine": 415,
+    "identity": "char_identity_10000034",
+    "ability": "char_ability_10000034",
+    "controllerId": 10300102,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000051": {
+    "id": 10000051,
+    "name": "char_name_10000051",
+    "quality": "FiveStar",
+    "sideId": 12600023,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12300421
+      },
+      {
+        "num": 2,
+        "skillId": 12300450
+      },
+      {
+        "num": 1,
+        "skillId": 12300433
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 88000000,
+    "def_SN": 800000,
+    "atk_SN": 800000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800346
+      },
+      {
+        "talentId": 12800350
+      },
+      {
+        "talentId": 12800566
+      },
+      {
+        "talentId": 12800347
+      },
+      {
+        "talentId": 12800349
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100344
+      },
+      {
+        "breakthroughId": 12100345
+      },
+      {
+        "breakthroughId": 12100349
+      },
+      {
+        "breakthroughId": 12100761
+      },
+      {
+        "breakthroughId": 12100762
+      },
+      {
+        "breakthroughId": 12100346
+      }
+    ],
+    "line": 1,
+    "subLine": 400,
+    "identity": "char_identity_10000051",
+    "ability": "char_ability_10000051",
+    "controllerId": 10300130,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000052": {
+    "id": 10000052,
+    "name": "char_name_10000052",
+    "quality": "fourStar",
+    "sideId": 12600023,
+    "passiveSkillList": [
+      {
+        "skillId": 12301097
+      }
+    ],
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12300050
+      },
+      {
+        "num": 2,
+        "skillId": 12300067
+      },
+      {
+        "num": 1,
+        "skillId": 12300137
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 76000000,
+    "def_SN": 700000,
+    "atk_SN": 800000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800314
+      },
+      {
+        "talentId": 12800336
+      },
+      {
+        "talentId": 12800527
+      },
+      {
+        "talentId": 12800338
+      },
+      {
+        "talentId": 12800339
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100329
+      },
+      {
+        "breakthroughId": 12100330
+      },
+      {
+        "breakthroughId": 12100331
+      },
+      {
+        "breakthroughId": 12100753
+      },
+      {
+        "breakthroughId": 12100754
+      },
+      {
+        "breakthroughId": 12100334
+      }
+    ],
+    "line": 1,
+    "subLine": 415,
+    "identity": "",
+    "ability": "char_ability_10000052",
+    "controllerId": 10300121,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000053": {
+    "id": 10000053,
+    "name": "char_name_10000053",
+    "quality": "fourStar",
+    "sideId": 12600035,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12300396
+      },
+      {
+        "num": 2,
+        "skillId": 12300404
+      },
+      {
+        "num": 1,
+        "skillId": 12300407
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 68000000,
+    "def_SN": 700000,
+    "atk_SN": 760000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800341
+      },
+      {
+        "talentId": 12800342
+      },
+      {
+        "talentId": 12800533
+      },
+      {
+        "talentId": 12800344
+      },
+      {
+        "talentId": 12800345
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100338
+      },
+      {
+        "breakthroughId": 12100339
+      },
+      {
+        "breakthroughId": 12100340
+      },
+      {
+        "breakthroughId": 12100769
+      },
+      {
+        "breakthroughId": 12100770
+      },
+      {
+        "breakthroughId": 12100343
+      }
+    ],
+    "line": 3,
+    "subLine": 820,
+    "identity": "char_identity_10000053",
+    "ability": "char_ability_10000053",
+    "controllerId": 10300128,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000101": {
+    "id": 10000101,
+    "name": "char_name_10000101",
+    "quality": "fourStar",
+    "sideId": 12600035,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12300592
+      },
+      {
+        "num": 2,
+        "skillId": 12300607
+      },
+      {
+        "num": 1,
+        "skillId": 12300608
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 82000000,
+    "def_SN": 680000,
+    "atk_SN": 720000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800355
+      },
+      {
+        "talentId": 12800354
+      },
+      {
+        "talentId": 12800524
+      },
+      {
+        "talentId": 12800352
+      },
+      {
+        "talentId": 12800351
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100350
+      },
+      {
+        "breakthroughId": 12100351
+      },
+      {
+        "breakthroughId": 12100352
+      },
+      {
+        "breakthroughId": 12100767
+      },
+      {
+        "breakthroughId": 12100768
+      },
+      {
+        "breakthroughId": 12100355
+      }
+    ],
+    "line": 2,
+    "subLine": 810,
+    "identity": "char_identity_10000101",
+    "ability": "char_ability_10000101",
+    "controllerId": 10300131,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000110": {
+    "id": 10000110,
+    "name": "char_name_10000110",
+    "quality": "fourStar",
+    "sideId": 12600023,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12301037
+      },
+      {
+        "num": 2,
+        "skillId": 12301038
+      },
+      {
+        "num": 1,
+        "skillId": 12301039
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 72000000,
+    "def_SN": 700000,
+    "atk_SN": 740000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800356
+      },
+      {
+        "talentId": 12800357
+      },
+      {
+        "talentId": 12800526
+      },
+      {
+        "talentId": 12800359
+      },
+      {
+        "talentId": 12800390
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100356
+      },
+      {
+        "breakthroughId": 12100357
+      },
+      {
+        "breakthroughId": 12100358
+      },
+      {
+        "breakthroughId": 12100775
+      },
+      {
+        "breakthroughId": 12100776
+      },
+      {
+        "breakthroughId": 12100361
+      }
+    ],
+    "line": 1,
+    "subLine": 421,
+    "identity": "char_identity_10000110",
+    "ability": "char_ability_10000110",
+    "controllerId": 10300136,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000112": {
+    "id": 10000112,
+    "name": "char_name_10000112",
+    "quality": "fourStar",
+    "sideId": 12600027,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 4,
+        "skillId": 12301094
+      },
+      {
+        "num": 1,
+        "skillId": 12301095
+      },
+      {
+        "num": 1,
+        "skillId": 12301096
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 78000000,
+    "def_SN": 750000,
+    "atk_SN": 770000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800365
+      },
+      {
+        "talentId": 12800384
+      },
+      {
+        "talentId": 12800520
+      },
+      {
+        "talentId": 12800378
+      },
+      {
+        "talentId": 12800421
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100440
+      },
+      {
+        "breakthroughId": 12100377
+      },
+      {
+        "breakthroughId": 12100378
+      },
+      {
+        "breakthroughId": 12100751
+      },
+      {
+        "breakthroughId": 12100752
+      },
+      {
+        "breakthroughId": 12100381
+      }
+    ],
+    "line": 1,
+    "subLine": 110,
+    "identity": "char_identity_10000112",
+    "ability": "char_ability_10000112",
+    "controllerId": 10300138,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000035": {
+    "id": 10000035,
+    "name": "char_name_10000035",
+    "quality": "FiveStar",
+    "sideId": 12600031,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 4,
+        "skillId": 12301104
+      },
+      {
+        "num": 1,
+        "skillId": 12301105
+      },
+      {
+        "num": 1,
+        "skillId": 12301106
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 90000000,
+    "def_SN": 810000,
+    "atk_SN": 810000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800364
+      },
+      {
+        "talentId": 12800375
+      },
+      {
+        "talentId": 12800537
+      },
+      {
+        "talentId": 12800369
+      },
+      {
+        "talentId": 12800420
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100439
+      },
+      {
+        "breakthroughId": 12100372
+      },
+      {
+        "breakthroughId": 12100373
+      },
+      {
+        "breakthroughId": 12100724
+      },
+      {
+        "breakthroughId": 12100725
+      },
+      {
+        "breakthroughId": 12100376
+      }
+    ],
+    "line": 1,
+    "subLine": 910,
+    "identity": "char_identity_10000035",
+    "ability": "char_ability_10000035",
+    "controllerId": 10300142,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000032": {
+    "id": 10000032,
+    "name": "char_name_10000032",
+    "quality": "FiveStar",
+    "sideId": 12600035,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12300113
+      },
+      {
+        "num": 2,
+        "skillId": 12300119
+      },
+      {
+        "num": 1,
+        "skillId": 12301163
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 72000000,
+    "def_SN": 700000,
+    "atk_SN": 900000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800381
+      },
+      {
+        "talentId": 12800401
+      },
+      {
+        "talentId": 12800549
+      },
+      {
+        "talentId": 12800404
+      },
+      {
+        "talentId": 12800426
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100445
+      },
+      {
+        "breakthroughId": 12100402
+      },
+      {
+        "breakthroughId": 12100403
+      },
+      {
+        "breakthroughId": 12100815
+      },
+      {
+        "breakthroughId": 12100816
+      },
+      {
+        "breakthroughId": 12100618
+      }
+    ],
+    "line": 3,
+    "subLine": 890,
+    "identity": "char_identity_10000032",
+    "ability": "char_ability_10000032",
+    "controllerId": 10300176,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000124": {
+    "id": 10000124,
+    "name": "char_name_10000124",
+    "quality": "fourStar",
+    "sideId": 12600035,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12301129
+      },
+      {
+        "num": 2,
+        "skillId": 12301130
+      },
+      {
+        "num": 1,
+        "skillId": 12301131
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 84000000,
+    "def_SN": 820000,
+    "atk_SN": 760000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800370
+      },
+      {
+        "talentId": 12800380
+      },
+      {
+        "talentId": 12800522
+      },
+      {
+        "talentId": 12800373
+      },
+      {
+        "talentId": 12800422
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100441
+      },
+      {
+        "breakthroughId": 12100382
+      },
+      {
+        "breakthroughId": 12100383
+      },
+      {
+        "breakthroughId": 12100765
+      },
+      {
+        "breakthroughId": 12100766
+      },
+      {
+        "breakthroughId": 12100386
+      }
+    ],
+    "line": 1,
+    "subLine": 810,
+    "identity": "char_identity_10000124",
+    "ability": "char_ability_10000124",
+    "controllerId": 10300177,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000139": {
+    "id": 10000139,
+    "name": "char_name_10000139",
+    "quality": "FiveStar",
+    "sideId": 12600035,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12301122
+      },
+      {
+        "num": 2,
+        "skillId": 12301132
+      },
+      {
+        "num": 1,
+        "skillId": 12301133
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 74000000,
+    "def_SN": 760000,
+    "atk_SN": 800000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800392
+      },
+      {
+        "talentId": 12800374
+      },
+      {
+        "talentId": 12800539
+      },
+      {
+        "talentId": 12800386
+      },
+      {
+        "talentId": 12800423
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100442
+      },
+      {
+        "breakthroughId": 12100387
+      },
+      {
+        "breakthroughId": 12100388
+      },
+      {
+        "breakthroughId": 12100803
+      },
+      {
+        "breakthroughId": 12100804
+      },
+      {
+        "breakthroughId": 12100391
+      }
+    ],
+    "line": 2,
+    "subLine": 800,
+    "identity": "char_identity_10000139",
+    "ability": "char_ability_10000139",
+    "controllerId": 10300179,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000159": {
+    "id": 10000159,
+    "name": "char_name_10000159",
+    "quality": "threeStar",
+    "sideId": 12600025,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12300451
+      },
+      {
+        "num": 2,
+        "skillId": 12301148
+      },
+      {
+        "num": 1,
+        "skillId": 12301149
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 60000000,
+    "def_SN": 400000,
+    "atk_SN": 800000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800368
+      },
+      {
+        "talentId": 12800361
+      },
+      {
+        "talentId": 12800419
+      },
+      {
+        "talentId": 12800371
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100438
+      },
+      {
+        "breakthroughId": 12100367
+      },
+      {
+        "breakthroughId": 12100368
+      },
+      {
+        "breakthroughId": 12100728
+      },
+      {
+        "breakthroughId": 12100729
+      },
+      {
+        "breakthroughId": 12100371
+      }
+    ],
+    "line": 1,
+    "subLine": 10,
+    "identity": "char_identity_10000159",
+    "ability": "char_ability_10000159",
+    "controllerId": 10300185,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000254": {
+    "id": 10000254,
+    "name": "char_name_10000254",
+    "quality": "FiveStar",
+    "sideId": 12601172,
+    "passiveSkillList": [
+      {
+        "skillId": 12301715
+      }
+    ],
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12300507
+      },
+      {
+        "num": 2,
+        "skillId": 12300818
+      },
+      {
+        "num": 1,
+        "skillId": 12300836
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 70000000,
+    "def_SN": 720000,
+    "atk_SN": 860000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800224
+      },
+      {
+        "talentId": 12800225
+      },
+      {
+        "talentId": 12800562
+      },
+      {
+        "talentId": 12800222
+      },
+      {
+        "talentId": 12800223
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100535
+      },
+      {
+        "breakthroughId": 12100532
+      },
+      {
+        "breakthroughId": 12100530
+      },
+      {
+        "breakthroughId": 12100825
+      },
+      {
+        "breakthroughId": 12100826
+      },
+      {
+        "breakthroughId": 12100534
+      }
+    ],
+    "line": 3,
+    "subLine": 300,
+    "identity": "char_identity_10000254",
+    "ability": "char_ability_10000254",
+    "controllerId": 10300312,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000270": {
+    "id": 10000270,
+    "name": "char_name_10000270",
+    "quality": "fourStar",
+    "sideId": 12600027,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12300148
+      },
+      {
+        "num": 1,
+        "skillId": 12300149
+      },
+      {
+        "num": 1,
+        "skillId": 12300150
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 80000000,
+    "def_SN": 820000,
+    "atk_SN": 780000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800242
+      },
+      {
+        "talentId": 12800243
+      },
+      {
+        "talentId": 12800521
+      },
+      {
+        "talentId": 12800245
+      },
+      {
+        "talentId": 12800241
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100553
+      },
+      {
+        "breakthroughId": 12100554
+      },
+      {
+        "breakthroughId": 12100556
+      },
+      {
+        "breakthroughId": 12100781
+      },
+      {
+        "breakthroughId": 12100782
+      },
+      {
+        "breakthroughId": 12100552
+      }
+    ],
+    "line": 1,
+    "subLine": 130,
+    "identity": "char_identity_10000270",
+    "ability": "char_ability_10000270",
+    "controllerId": 10300342,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000276": {
+    "id": 10000276,
+    "name": "char_name_10000276",
+    "quality": "FiveStar",
+    "sideId": 12600035,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12300283
+      },
+      {
+        "num": 2,
+        "skillId": 12300411
+      },
+      {
+        "num": 1,
+        "skillId": 12300429
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 83000000,
+    "def_SN": 860000,
+    "atk_SN": 800000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800246
+      },
+      {
+        "talentId": 12800247
+      },
+      {
+        "talentId": 12800557
+      },
+      {
+        "talentId": 12800249
+      },
+      {
+        "talentId": 12800250
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100560
+      },
+      {
+        "breakthroughId": 12100561
+      },
+      {
+        "breakthroughId": 12100562
+      },
+      {
+        "breakthroughId": 12100805
+      },
+      {
+        "breakthroughId": 12100806
+      },
+      {
+        "breakthroughId": 12100559
+      }
+    ],
+    "line": 1,
+    "subLine": 200,
+    "identity": "char_identity_10000276",
+    "ability": "char_ability_10000276",
+    "controllerId": 10300365,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000372": {
+    "id": 10000372,
+    "name": "char_name_10000372",
+    "quality": "FiveStar",
+    "sideId": 12600035,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12301749
+      },
+      {
+        "num": 1,
+        "skillId": 12301750
+      },
+      {
+        "num": 1,
+        "skillId": 12301716
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 80000000,
+    "def_SN": 780000,
+    "atk_SN": 830000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800255
+      },
+      {
+        "talentId": 12800266
+      },
+      {
+        "talentId": 12800535
+      },
+      {
+        "talentId": 12800257
+      },
+      {
+        "talentId": 12800261
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100565
+      },
+      {
+        "breakthroughId": 12100567
+      },
+      {
+        "breakthroughId": 12100568
+      },
+      {
+        "breakthroughId": 12100827
+      },
+      {
+        "breakthroughId": 12100828
+      },
+      {
+        "breakthroughId": 12100619
+      }
+    ],
+    "line": 2,
+    "subLine": 330,
+    "identity": "char_identity_10000372",
+    "ability": "char_ability_10000372",
+    "controllerId": 10300425,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000468": {
+    "id": 10000468,
+    "name": "char_name_10000468",
+    "quality": "FiveStar",
+    "sideId": 12600027,
+    "passiveSkillList": [
+      {
+        "skillId": 12301869
+      }
+    ],
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12301834
+      },
+      {
+        "num": 2,
+        "skillId": 12301835
+      },
+      {
+        "num": 1,
+        "skillId": 12301836
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 70000000,
+    "def_SN": 760000,
+    "atk_SN": 820000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800167
+      },
+      {
+        "talentId": 12800286
+      },
+      {
+        "talentId": 12800569
+      },
+      {
+        "talentId": 12800284
+      },
+      {
+        "talentId": 12800285
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100584
+      },
+      {
+        "breakthroughId": 12100585
+      },
+      {
+        "breakthroughId": 12100586
+      },
+      {
+        "breakthroughId": 12100820
+      },
+      {
+        "breakthroughId": 12100821
+      },
+      {
+        "breakthroughId": 12100589
+      }
+    ],
+    "line": 3,
+    "subLine": 143,
+    "identity": "char_identity_10000468",
+    "ability": "char_ability_10000468",
+    "controllerId": 10300440,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000499": {
+    "id": 10000499,
+    "name": "char_name_10000499",
+    "quality": "FiveStar",
+    "sideId": 12600031,
+    "passiveSkillList": [
+      {
+        "skillId": 12301948
+      }
+    ],
+    "skillList": [
+      {
+        "num": 1,
+        "skillId": 12301924
+      },
+      {
+        "num": 1,
+        "skillId": 12301925
+      },
+      {
+        "num": 1,
+        "skillId": 12301926
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 77000000,
+    "def_SN": 770000,
+    "atk_SN": 880000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800508
+      },
+      {
+        "talentId": 12800509
+      },
+      {
+        "talentId": 12800565
+      },
+      {
+        "talentId": 12800512
+      },
+      {
+        "talentId": 12800511
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100622
+      },
+      {
+        "breakthroughId": 12100621
+      },
+      {
+        "breakthroughId": 12100624
+      },
+      {
+        "breakthroughId": 12100716
+      },
+      {
+        "breakthroughId": 12100717
+      },
+      {
+        "breakthroughId": 12100718
+      }
+    ],
+    "line": 3,
+    "subLine": 200,
+    "identity": "char_identity_10000499",
+    "ability": "char_ability_10000499",
+    "controllerId": 10300452,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000503": {
+    "id": 10000503,
+    "name": "char_name_10000503",
+    "quality": "FiveStar",
+    "sideId": 12600031,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12301934
+      },
+      {
+        "num": 3,
+        "skillId": 12301935
+      },
+      {
+        "num": 1,
+        "skillId": 12301936
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 88000000,
+    "def_SN": 880000,
+    "atk_SN": 800000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800510
+      },
+      {
+        "talentId": 12800004
+      },
+      {
+        "talentId": 12800568
+      },
+      {
+        "talentId": 12800014
+      },
+      {
+        "talentId": 12800006
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100630
+      },
+      {
+        "breakthroughId": 12100629
+      },
+      {
+        "breakthroughId": 12100628
+      },
+      {
+        "breakthroughId": 12100811
+      },
+      {
+        "breakthroughId": 12100812
+      },
+      {
+        "breakthroughId": 12100626
+      }
+    ],
+    "line": 3,
+    "subLine": 400,
+    "identity": "char_identity_10000503",
+    "ability": "char_ability_10000503",
+    "controllerId": 10300454,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000607": {
+    "id": 10000607,
+    "name": "char_name_10000607",
+    "quality": "FiveStar",
+    "sideId": 12600027,
+    "passiveSkillList": [
+      {
+        "skillId": 12301974
+      }
+    ],
+    "skillList": [
+      {
+        "num": 1,
+        "skillId": 12301862
+      },
+      {
+        "num": 2,
+        "skillId": 12301863
+      },
+      {
+        "num": 1,
+        "skillId": 12301961
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 84000000,
+    "def_SN": 820000,
+    "atk_SN": 800000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800018
+      },
+      {
+        "talentId": 12800022
+      },
+      {
+        "talentId": 12800550
+      },
+      {
+        "talentId": 12800026
+      },
+      {
+        "talentId": 12800033
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100633
+      },
+      {
+        "breakthroughId": 12100635
+      },
+      {
+        "breakthroughId": 12100634
+      },
+      {
+        "breakthroughId": 12100823
+      },
+      {
+        "breakthroughId": 12100824
+      },
+      {
+        "breakthroughId": 12100632
+      }
+    ],
+    "line": 2,
+    "subLine": 88,
+    "identity": "char_identity_10000607",
+    "ability": "char_ability_10000607",
+    "controllerId": 10300468,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000546": {
+    "id": 10000546,
+    "name": "char_name_10000546",
+    "quality": "FiveStar",
+    "sideId": 12601524,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12302000
+      },
+      {
+        "num": 2,
+        "skillId": 12302001
+      },
+      {
+        "num": 1,
+        "skillId": 12302002
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 85000000,
+    "def_SN": 870000,
+    "atk_SN": 850000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800078
+      },
+      {
+        "talentId": 12800083
+      },
+      {
+        "talentId": 12800553
+      },
+      {
+        "talentId": 12800090
+      },
+      {
+        "talentId": 12800084
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100643
+      },
+      {
+        "breakthroughId": 12100645
+      },
+      {
+        "breakthroughId": 12100648
+      },
+      {
+        "breakthroughId": 12100786
+      },
+      {
+        "breakthroughId": 12100785
+      },
+      {
+        "breakthroughId": 12100647
+      }
+    ],
+    "line": 1,
+    "subLine": 139,
+    "identity": "无垠号临时乘员",
+    "ability": "待研究",
+    "controllerId": 10300466,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000615": {
+    "id": 10000615,
+    "name": "char_name_10000615",
+    "quality": "FiveStar",
+    "sideId": 12600035,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12302005
+      },
+      {
+        "num": 1,
+        "skillId": 12302008
+      },
+      {
+        "num": 1,
+        "skillId": 12302038
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 68000000,
+    "def_SN": 780000,
+    "atk_SN": 820000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800106
+      },
+      {
+        "talentId": 12800095
+      },
+      {
+        "talentId": 12800551
+      },
+      {
+        "talentId": 12800098
+      },
+      {
+        "talentId": 12800101
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100649
+      },
+      {
+        "breakthroughId": 12100651
+      },
+      {
+        "breakthroughId": 12100650
+      },
+      {
+        "breakthroughId": 12100813
+      },
+      {
+        "breakthroughId": 12100814
+      },
+      {
+        "breakthroughId": 12100654
+      }
+    ],
+    "line": 3,
+    "subLine": 450,
+    "identity": "“园丁”·特别派遣专员",
+    "ability": "“球球力场”",
+    "controllerId": 10300493,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000623": {
+    "id": 10000623,
+    "name": "char_name_10000623",
+    "quality": "threeStar",
+    "sideId": 12600025,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 4,
+        "skillId": 12302085
+      },
+      {
+        "num": 1,
+        "skillId": 12302050
+      },
+      {
+        "num": 1,
+        "skillId": 12302070
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 64000000,
+    "def_SN": 640000,
+    "atk_SN": 800000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800140
+      },
+      {
+        "talentId": 12800132
+      },
+      {
+        "talentId": 12800387
+      },
+      {
+        "talentId": 12800136
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100432
+      },
+      {
+        "breakthroughId": 12100435
+      },
+      {
+        "breakthroughId": 12100436
+      },
+      {
+        "breakthroughId": 12100723
+      },
+      {
+        "breakthroughId": 12100730
+      },
+      {
+        "breakthroughId": 12100451
+      }
+    ],
+    "line": 3,
+    "subLine": 4,
+    "identity": "char_identity_10000623",
+    "ability": "char_ability_10000623",
+    "controllerId": 10300502,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000624": {
+    "id": 10000624,
+    "name": "char_name_10000624",
+    "quality": "FiveStar",
+    "sideId": 12601524,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12302059
+      },
+      {
+        "num": 2,
+        "skillId": 12302083
+      },
+      {
+        "num": 1,
+        "skillId": 12302084
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 81000000,
+    "def_SN": 850000,
+    "atk_SN": 870000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800124
+      },
+      {
+        "talentId": 12800111
+      },
+      {
+        "talentId": 12800561
+      },
+      {
+        "talentId": 12800119
+      },
+      {
+        "talentId": 12800121
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100656
+      },
+      {
+        "breakthroughId": 12100657
+      },
+      {
+        "breakthroughId": 12100658
+      },
+      {
+        "breakthroughId": 12100783
+      },
+      {
+        "breakthroughId": 12100784
+      },
+      {
+        "breakthroughId": 12100653
+      }
+    ],
+    "line": 1,
+    "subLine": 140,
+    "identity": "无垠号临时乘员",
+    "ability": "待研究",
+    "controllerId": 10300501,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000632": {
+    "id": 10000632,
+    "name": "char_name_10000632",
+    "quality": "FiveStar",
+    "sideId": 12600031,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12302106
+      },
+      {
+        "num": 3,
+        "skillId": 12302107
+      },
+      {
+        "num": 1,
+        "skillId": 12302108
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 68000000,
+    "def_SN": 800000,
+    "atk_SN": 800000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800144
+      },
+      {
+        "talentId": 12800148
+      },
+      {
+        "talentId": 12800544
+      },
+      {
+        "talentId": 12800152
+      },
+      {
+        "talentId": 12800156
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100661
+      },
+      {
+        "breakthroughId": 12100662
+      },
+      {
+        "breakthroughId": 12100663
+      },
+      {
+        "breakthroughId": 12100708
+      },
+      {
+        "breakthroughId": 12100709
+      },
+      {
+        "breakthroughId": 12100666
+      }
+    ],
+    "line": 3,
+    "subLine": 160,
+    "identity": "索思学会·导师",
+    "ability": "心智漫步",
+    "controllerId": 10300507,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000749": {
+    "id": 10000749,
+    "name": "char_name_10000749",
+    "quality": "FiveStar",
+    "sideId": 12600031,
+    "passiveSkillList": [
+      {
+        "skillId": 12302205
+      }
+    ],
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12302185
+      },
+      {
+        "num": 1,
+        "skillId": 12302186
+      },
+      {
+        "num": 1,
+        "skillId": 12302187
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 81000000,
+    "def_SN": 900000,
+    "atk_SN": 900000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800128
+      },
+      {
+        "talentId": 12800244
+      },
+      {
+        "talentId": 12800560
+      },
+      {
+        "talentId": 12800248
+      },
+      {
+        "talentId": 12800256
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100681
+      },
+      {
+        "breakthroughId": 12100679
+      },
+      {
+        "breakthroughId": 12100680
+      },
+      {
+        "breakthroughId": 12100710
+      },
+      {
+        "breakthroughId": 12100711
+      },
+      {
+        "breakthroughId": 12100684
+      }
+    ],
+    "line": 1,
+    "subLine": 390,
+    "identity": "索思学会·“天使”（失败个体）",
+    "ability": "“裂穹”",
+    "controllerId": 10300537,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000748": {
+    "id": 10000748,
+    "name": "char_name_10000748",
+    "quality": "FiveStar",
+    "sideId": 12600031,
+    "passiveSkillList": [
+      {
+        "skillId": 12302346
+      }
+    ],
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12302215
+      },
+      {
+        "num": 1,
+        "skillId": 12302209
+      },
+      {
+        "num": 1,
+        "skillId": 12302214
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 88000000,
+    "def_SN": 880000,
+    "atk_SN": 880000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800329
+      },
+      {
+        "talentId": 12800311
+      },
+      {
+        "talentId": 12800545
+      },
+      {
+        "talentId": 12800283
+      },
+      {
+        "talentId": 12800306
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100690
+      },
+      {
+        "breakthroughId": 12100685
+      },
+      {
+        "breakthroughId": 12100686
+      },
+      {
+        "breakthroughId": 12100689
+      },
+      {
+        "breakthroughId": 12100688
+      },
+      {
+        "breakthroughId": 12100687
+      }
+    ],
+    "line": 1,
+    "subLine": 160,
+    "identity": "索思学会·“天使”（失败个体）",
+    "ability": "心智漫步（待研究）",
+    "controllerId": 10300539,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000969": {
+    "id": 10000969,
+    "name": "char_name_10000969",
+    "quality": "FiveStar",
+    "sideId": 12600027,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12302946
+      },
+      {
+        "num": 2,
+        "skillId": 12302947
+      },
+      {
+        "num": 1,
+        "skillId": 12302948
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 78000000,
+    "def_SN": 740000,
+    "atk_SN": 820000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800572
+      },
+      {
+        "talentId": 12800573
+      },
+      {
+        "talentId": 12800577
+      },
+      {
+        "talentId": 12800574
+      },
+      {
+        "talentId": 12800576
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100832
+      },
+      {
+        "breakthroughId": 12100835
+      },
+      {
+        "breakthroughId": 12100829
+      },
+      {
+        "breakthroughId": 12100834
+      },
+      {
+        "breakthroughId": 12100833
+      },
+      {
+        "breakthroughId": 12100830
+      }
+    ],
+    "line": 2,
+    "subLine": 143,
+    "identity": "铁盟·澄明数据中心铁安局负责人",
+    "ability": "强韧（亚人型）",
+    "controllerId": 10300551,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
+  },
+  "10000979": {
+    "id": 10000979,
+    "name": "char_name_10000979",
+    "quality": "FiveStar",
+    "sideId": 12600026,
+    "passiveSkillList": [],
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12302336
+      },
+      {
+        "num": 1,
+        "skillId": 12302337
+      },
+      {
+        "num": 1,
+        "skillId": 12303020
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 71000000,
+    "def_SN": 730000,
+    "atk_SN": 790000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800571
+      },
+      {
+        "talentId": 12800578
+      },
+      {
+        "talentId": 12800579
+      },
+      {
+        "talentId": 12800580
+      },
+      {
+        "talentId": 12800581
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100836
+      },
+      {
+        "breakthroughId": 12100837
+      },
+      {
+        "breakthroughId": 12100838
+      },
+      {
+        "breakthroughId": 12100839
+      },
+      {
+        "breakthroughId": 12100840
+      },
+      {
+        "breakthroughId": 12100841
+      }
+    ],
+    "line": 3,
+    "subLine": 160,
+    "identity": "无垠号·特殊合同护卫乘员",
+    "ability": "“专业女仆的秘密能力”",
+    "controllerId": 10300557,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ]
   }
 }
