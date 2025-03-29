@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Globe, Download, Upload, ChevronDown, RefreshCw } from "lucide-react"
+import { useRouter } from "next/navigation"
 
 interface TopBarProps {
   onClear: () => void
@@ -22,6 +23,7 @@ export function TopBar({
   onChangeLanguage,
   getTranslatedString,
 }: TopBarProps) {
+  const router = useRouter()
   const [showLanguageMenu, setShowLanguageMenu] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -33,6 +35,43 @@ export function TopBar({
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  // 언어 변경 핸들러
+  const handleLanguageChange = (lang: string) => {
+    console.log("Changing language to:", lang)
+
+    // 현재 언어와 같은 언어 선택 시 드롭다운만 닫기
+    if (currentLanguage === lang) {
+      setShowLanguageMenu(false)
+      return
+    }
+
+    // 언어 상태 업데이트
+    onChangeLanguage(lang)
+
+    // URL 변경 (페이지 이동)
+    router.push(`/${lang}`)
+
+    // 메뉴 닫기
+    setShowLanguageMenu(false)
+  }
+
+  // 드롭다운 외부 클릭 시 드롭다운 닫기
+  useEffect(() => {
+    if (!showLanguageMenu) return
+
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement
+      if (!target.closest(".language-dropdown")) {
+        setShowLanguageMenu(false)
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [showLanguageMenu])
 
   return (
     <div
@@ -53,7 +92,7 @@ export function TopBar({
         {/* Actions */}
         <div className="flex items-center space-x-3">
           {/* Language Selector */}
-          <div className="relative">
+          <div className="relative language-dropdown">
             <button
               onClick={() => setShowLanguageMenu(!showLanguageMenu)}
               className="flex items-center px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors duration-200"
@@ -69,10 +108,7 @@ export function TopBar({
                 {availableLanguages.map((lang) => (
                   <button
                     key={lang}
-                    onClick={() => {
-                      onChangeLanguage(lang)
-                      setShowLanguageMenu(false)
-                    }}
+                    onClick={() => handleLanguageChange(lang)}
                     className={`block w-full text-left px-4 py-3 text-sm hover:bg-gray-700 transition-colors duration-150 ${
                       currentLanguage === lang ? "bg-blue-600" : ""
                     }`}

@@ -6,7 +6,8 @@ export function decodePreset(base64: string): any {
     const cleaned = base64.replace(/\s+/g, "").trim() // ← 공백/줄바꿈 제거
     const compressed = Uint8Array.from(atob(cleaned), (c) => c.charCodeAt(0))
     const jsonStr = new TextDecoder().decode(pako.inflateRaw(compressed))
-    return JSON.parse(jsonStr)
+    const result = JSON.parse(jsonStr)
+    return result
   } catch (e) {
     console.error("디코딩 실패:", e)
     return null

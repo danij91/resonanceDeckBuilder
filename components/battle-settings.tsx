@@ -102,8 +102,8 @@ export function BattleSettings({ settings, onUpdateSettings, getTranslatedString
                 className="w-full p-2 border border-gray-700 bg-gray-800 rounded text-sm"
               >
                 <option value={0}>{getTranslatedString("battle.discard.off") || "Off"}</option>
-                <option value={1}>{getTranslatedString("battle.discard.active") || "Active"}</option>
-                <option value={2}>{getTranslatedString("battle.discard.empty") || "Empty"}</option>
+                <option value={1}>{getTranslatedString("battle.discard.auto") || "Auto"}</option>
+                <option value={2}>{getTranslatedString("battle.discard.manual") || "Manual"}</option>
               </select>
             </div>
           </div>
@@ -130,10 +130,11 @@ export function BattleSettings({ settings, onUpdateSettings, getTranslatedString
                 >
                   <Plus className="w-4 h-4" />
                 </button>
+                <span className="ml-2 text-sm text-gray-400">{getTranslatedString("battle.cards") || "cards"}</span>
               </div>
             </div>
 
-            {/* Enemy Priority - mt-8 제거하고 space-y-6 클래스가 적용되도록 함 */}
+            {/* Enemy Priority */}
             <div>
               <label htmlFor="otherCard" className="block text-sm mb-2">
                 {getTranslatedString("battle.enemy.priority") || "Enemy Priority"}

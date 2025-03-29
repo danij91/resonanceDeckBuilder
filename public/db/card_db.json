@@ -1,2617 +1,6132 @@
 {
   "10600004": {
-    "equipIdList": [],
-    "id": "10600004",
-    "ownerId": 10000004,
-    "skillId": "12300023",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": 3,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600004,
+    "idCN": "00原版/05五星/卡塔斯/B",
+    "name": "card_name_10600004",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200029,
+        "des": 80608007,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600005": {
-    "equipIdList": [],
-    "id": "10600005",
-    "ownerId": 10000004,
-    "skillId": "12300024",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600006": {
-    "equipIdList": [],
-    "id": "10600006",
-    "ownerId": 10000299,
-    "skillId": "12300104",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
-  },
-  "10600007": {
-    "equipIdList": [],
-    "id": "10600007",
-    "ownerId": 10000299,
-    "skillId": "12300105",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600008": {
-    "equipIdList": [],
-    "id": "10600008",
-    "ownerId": 10000299,
-    "skillId": 12300123,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600009": {
-    "equipIdList": [],
-    "id": "10600009",
-    "ownerId": 10000059,
-    "skillId": 12300036,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600013": {
-    "equipIdList": [],
-    "id": "10600013",
-    "ownerId": 10000095,
-    "skillId": "12300025",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600005,
+    "idCN": "00原版/05五星/卡塔斯/S-0",
+    "name": "card_name_10600005",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600014": {
-    "equipIdList": [],
-    "id": "10600014",
-    "ownerId": 10000025,
-    "skillId": "12300019",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600014,
+    "idCN": "00原版/03三星/朱利安/A-0",
+    "name": "card_name_10600014",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600015": {
-    "equipIdList": [],
-    "id": "10600015",
-    "ownerId": 10000025,
-    "skillId": "12300020",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600015,
+    "idCN": "00原版/03三星/朱利安/B",
+    "name": "card_name_10600015",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600016": {
-    "equipIdList": [],
-    "id": "10600016",
-    "ownerId": 10000025,
-    "skillId": "12300021",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600017": {
-    "equipIdList": [],
-    "id": "10600017",
-    "ownerId": 10000095,
-    "skillId": "12300026",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600018": {
-    "equipIdList": [],
-    "id": "10600018",
-    "ownerId": 10000111,
-    "skillId": 12300391,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600019": {
-    "equipIdList": [],
-    "id": "10600019",
-    "ownerId": 10000111,
-    "skillId": "12300028",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600020": {
-    "equipIdList": [],
-    "id": "10600020",
-    "ownerId": 10000111,
-    "skillId": "12300031",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600021": {
-    "equipIdList": [],
-    "id": "10600021",
-    "ownerId": 10000001,
-    "skillId": 12300758,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600025": {
-    "equipIdList": [],
-    "id": "10600025",
-    "ownerId": 10000299,
-    "skillId": "12300106",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5,
-      "4": 0
-    },
-    "useType": 1
-  },
-  "10600026": {
-    "equipIdList": [],
-    "id": "10600026",
-    "ownerId": 10000153,
-    "skillId": 12300124,
-    "targetType": 0,
-    "useParam": -1,
-    "useType": 1
-  },
-  "10600032": {
-    "equipIdList": [],
-    "id": "10600032",
-    "ownerId": 10000001,
-    "skillId": 12300751,
-    "targetType": 0,
-    "useParam": -1,
-    "useType": 1
+    "id": 10600016,
+    "idCN": "00原版/03三星/朱利安/S",
+    "name": "card_name_10600016",
+    "color": "Red",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200030,
+        "des": 80608006,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600034": {
-    "equipIdList": [],
-    "id": "10600034",
-    "ownerId": 10000004,
-    "skillId": "12300022",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600034,
+    "idCN": "00原版/05五星/卡塔斯/A",
+    "name": "card_name_10600034",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
-  "10600035": {
-    "equipIdList": [],
-    "id": "10600035",
-    "ownerId": 10000059,
-    "skillId": 12300245,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600037": {
-    "equipIdList": [],
-    "id": "10600037",
-    "ownerId": 10000055,
-    "skillId": 12300039,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
-  },
-  "10600038": {
-    "equipIdList": [],
-    "id": "10600038",
-    "ownerId": 10000055,
-    "skillId": 12300048,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
-  },
-  "10600040": {
-    "equipIdList": [],
-    "id": "10600040",
-    "ownerId": 10000153,
-    "skillId": "12300012",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useType": 1
-  },
-  "10600041": {
-    "equipIdList": [],
-    "id": "10600041",
-    "ownerId": 10000154,
-    "skillId": "12300299",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600043": {
-    "equipIdList": [],
-    "id": "10600043",
-    "ownerId": 10000047,
-    "skillId": "12300130",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useType": 1
-  },
-  "10600044": {
-    "equipIdList": [],
-    "id": "10600044",
-    "ownerId": 10000001,
-    "skillId": 12300658,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600045": {
-    "equipIdList": [],
-    "id": "10600045",
-    "ownerId": 10000054,
-    "skillId": "12300724",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
-  },
-  "10600046": {
-    "equipIdList": [],
-    "id": "10600046",
-    "ownerId": 10000054,
-    "skillId": "12300725",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600048": {
-    "equipIdList": [],
-    "id": "10600048",
-    "ownerId": 10000068,
-    "skillId": "12300107",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600050": {
-    "equipIdList": [],
-    "id": "10600050",
-    "ownerId": 10000052,
-    "skillId": "12300050",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600051": {
-    "equipIdList": [],
-    "id": "10600051",
-    "ownerId": 10000059,
-    "skillId": 12300058,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
-  },
-  "10600053": {
-    "equipIdList": [],
-    "id": "10600053",
-    "ownerId": 10000156,
-    "skillId": "12300307",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+  "10600054": {
+    "id": 10600054,
+    "idCN": "00原版/05五星/马吉拉/A",
+    "name": "card_name_10600054",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
   },
   "10600055": {
-    "equipIdList": [],
-    "id": "10600055",
-    "ownerId": 10000054,
-    "skillId": "12300053",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600055,
+    "idCN": "00原版/05五星/马吉拉/S",
+    "name": "card_name_10600055",
+    "color": "Purple",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600056": {
-    "equipIdList": [],
-    "id": "10600056",
-    "ownerId": 10000055,
-    "skillId": "12300057",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600057": {
-    "equipIdList": [],
-    "id": "10600057",
-    "ownerId": 10000170,
-    "skillId": "12300074",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
+    "id": 10600056,
+    "idCN": "00原版/04四星/莉薇娅/A",
+    "name": "card_name_10600056",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600058": {
-    "equipIdList": [],
-    "id": "10600058",
-    "ownerId": 10000055,
-    "skillId": "12300059",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600058,
+    "idCN": "00原版/04四星/莉薇娅/S-0",
+    "name": "card_name_10600058",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600059": {
-    "equipIdList": [],
-    "id": "10600059",
-    "ownerId": 10000055,
-    "skillId": 12300126,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600059,
+    "idCN": "00原版/04四星/莉薇娅/B-2",
+    "name": "card_name_10600059",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600060": {
-    "equipIdList": [],
-    "id": "10600060",
-    "ownerId": 10000055,
-    "skillId": "12300127",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600060,
+    "idCN": "00原版/04四星/莉薇娅/B-0",
+    "name": "card_name_10600060",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600061": {
-    "equipIdList": [],
-    "id": "10600061",
-    "ownerId": 10000055,
-    "skillId": 12300062,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
-  },
-  "10600062": {
-    "equipIdList": [],
-    "id": "10600062",
-    "ownerId": 10000170,
-    "skillId": 12300077,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
+    "id": 10600061,
+    "idCN": "00原版/04四星/莉薇娅/B-1",
+    "name": "card_name_10600061",
+    "color": "Blue",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
   },
   "10600063": {
-    "equipIdList": [],
-    "id": "10600063",
-    "ownerId": 10000055,
-    "skillId": 12300129,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600064": {
-    "equipIdList": [],
-    "id": "10600064",
-    "ownerId": 10000170,
-    "skillId": 12300078,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600063,
+    "idCN": "00原版/04四星/莉薇娅/S-2",
+    "name": "card_name_10600063",
+    "color": "Yellow",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600065": {
-    "equipIdList": [],
-    "id": "10600065",
-    "ownerId": 10000055,
-    "skillId": 12300131,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600066": {
-    "equipIdList": [],
-    "id": "10600066",
-    "ownerId": 10000170,
-    "skillId": "12300075",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600067": {
-    "equipIdList": [],
-    "id": "10600067",
-    "ownerId": 10000170,
-    "skillId": "12300076",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
-  },
-  "10600070": {
-    "equipIdList": [],
-    "id": "10600070",
-    "ownerId": 10000094,
-    "skillId": "12300080",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600071": {
-    "equipIdList": [],
-    "id": "10600071",
-    "ownerId": 10000372,
-    "skillId": "12301749",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600072": {
-    "equipIdList": [],
-    "id": "10600072",
-    "ownerId": 10000094,
-    "skillId": "12300081",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600073": {
-    "equipIdList": [],
-    "id": "10600073",
-    "ownerId": 10000069,
-    "skillId": "12300111",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600074": {
-    "equipIdList": [],
-    "id": "10600074",
-    "ownerId": 10000063,
-    "skillId": "12300096",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600075": {
-    "equipIdList": [],
-    "id": "10600075",
-    "ownerId": 10000001,
-    "skillId": 12300750,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600076": {
-    "equipIdList": [],
-    "id": "10600076",
-    "ownerId": 10000001,
-    "skillId": 12300752,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600077": {
-    "equipIdList": [],
-    "id": "10600077",
-    "ownerId": 10000095,
-    "skillId": "12300018",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600065,
+    "idCN": "00原版/04四星/莉薇娅/S-1",
+    "name": "card_name_10600065",
+    "color": "Blue",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600078": {
-    "equipIdList": [],
-    "id": "10600078",
-    "ownerId": 10000059,
-    "skillId": "12300082",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600078,
+    "idCN": "00原版/05五星/柯娜/A-0",
+    "name": "card_name_10600078",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600079": {
-    "equipIdList": [],
-    "id": "10600079",
-    "ownerId": 10000059,
-    "skillId": "12300083",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
+    "id": 10600079,
+    "idCN": "00原版/05五星/柯娜/B-0",
+    "name": "card_name_10600079",
+    "color": "Blue",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
   },
   "10600080": {
-    "equipIdList": [],
-    "id": "10600080",
-    "ownerId": 10000059,
-    "skillId": "12300084",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600080,
+    "idCN": "00原版/05五星/柯娜/S-0",
+    "name": "card_name_10600080",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600081": {
-    "equipIdList": [],
-    "id": "10600081",
-    "ownerId": 10000060,
-    "skillId": "12300085",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600081,
+    "idCN": "00原版/03三星/塔拉/A",
+    "name": "card_name_10600081",
+    "color": "Yellow",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600082": {
-    "equipIdList": [],
-    "id": "10600082",
-    "ownerId": 10000060,
-    "skillId": "12300086",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600083": {
-    "equipIdList": [],
-    "id": "10600083",
-    "ownerId": 10000372,
-    "skillId": 12301751,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600085": {
-    "equipIdList": [],
-    "id": "10600085",
-    "ownerId": 10000060,
-    "skillId": "12300711",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600086": {
-    "equipIdList": [],
-    "id": "10600086",
-    "ownerId": 10000094,
-    "skillId": 12301685,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600082,
+    "idCN": "00原版/03三星/塔拉/S",
+    "name": "card_name_10600082",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600087": {
-    "equipIdList": [],
-    "id": "10600087",
-    "ownerId": 10000062,
-    "skillId": "12300091",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useType": 1
+    "id": 10600087,
+    "idCN": "00原版/03三星/狮鬃/A",
+    "name": "card_name_10600087",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600088": {
-    "equipIdList": [],
-    "id": "10600088",
-    "ownerId": 10000062,
-    "skillId": "12300092",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600088,
+    "idCN": "00原版/03三星/狮鬃/S",
+    "name": "card_name_10600088",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600089": {
-    "equipIdList": [],
-    "id": "10600089",
-    "ownerId": 10000062,
-    "skillId": "12300094",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600089,
+    "idCN": "00原版/03三星/狮鬃/B",
+    "name": "card_name_10600089",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200029,
+        "des": 80608007,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600090": {
-    "equipIdList": [],
-    "id": "10600090",
-    "ownerId": 10000063,
-    "skillId": "12300095",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600091": {
-    "equipIdList": [],
-    "id": "10600091",
-    "ownerId": 10000047,
-    "skillId": "12300133",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useType": 1
+    "id": 10600090,
+    "idCN": "00原版/04四星/魇/A-0",
+    "name": "card_name_10600090",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600092": {
-    "equipIdList": [],
-    "id": "10600092",
-    "ownerId": 10000063,
-    "skillId": "12300097",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600092,
+    "idCN": "00原版/04四星/魇/S",
+    "name": "card_name_10600092",
+    "color": "Red",
+    "cost_SN": 60000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600093": {
-    "equipIdList": [],
-    "id": "10600093",
-    "ownerId": 10000064,
-    "skillId": "12300098",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useType": 1
+    "id": 10600093,
+    "idCN": "00原版/04四星/塞西尔/A",
+    "name": "card_name_10600093",
+    "color": "Green",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
   },
   "10600094": {
-    "equipIdList": [],
-    "id": "10600094",
-    "ownerId": 10000064,
-    "skillId": "12300100",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useType": 1
+    "id": 10600094,
+    "idCN": "00原版/04四星/塞西尔/S",
+    "name": "card_name_10600094",
+    "color": "Purple",
+    "cost_SN": 60000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600095": {
-    "equipIdList": [],
-    "id": "10600095",
-    "ownerId": 10000064,
-    "skillId": "12300099",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useType": 1
+    "id": 10600095,
+    "idCN": "00原版/04四星/塞西尔/B",
+    "name": "card_name_10600095",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600096": {
-    "equipIdList": [],
-    "id": "10600096",
-    "ownerId": 10000065,
-    "skillId": "12300101",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600096,
+    "idCN": "00原版/03三星/雷火/A",
+    "name": "card_name_10600096",
+    "color": "Yellow",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600097": {
-    "equipIdList": [],
-    "id": "10600097",
-    "ownerId": 10000065,
-    "skillId": "12300102",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600097,
+    "idCN": "00原版/03三星/雷火/B",
+    "name": "card_name_10600097",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600098": {
-    "equipIdList": [],
-    "id": "10600098",
-    "ownerId": 10000065,
-    "skillId": "12300103",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600099": {
-    "equipIdList": [],
-    "id": "10600099",
-    "ownerId": 10000047,
-    "skillId": "12300136",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useType": 1
-  },
-  "10600100": {
-    "equipIdList": [],
-    "id": "10600100",
-    "ownerId": 10000032,
-    "skillId": "12301163",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600101": {
-    "equipIdList": [],
-    "id": "10600101",
-    "ownerId": 10000032,
-    "skillId": "12300119",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600102": {
-    "equipIdList": [],
-    "id": "10600102",
-    "ownerId": 10000032,
-    "skillId": "12300113",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600098,
+    "idCN": "00原版/03三星/雷火/S",
+    "name": "card_name_10600098",
+    "color": "Yellow",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600103": {
-    "equipIdList": [],
-    "id": "10600103",
-    "ownerId": 10000068,
-    "skillId": "12300108",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600103,
+    "idCN": "00原版/04四星/黛丝莉/B",
+    "name": "card_name_10600103",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600104": {
-    "equipIdList": [],
-    "id": "10600104",
-    "ownerId": 10000068,
-    "skillId": "12300109",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600104,
+    "idCN": "00原版/04四星/黛丝莉/S",
+    "name": "card_name_10600104",
+    "color": "Yellow",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600106": {
-    "equipIdList": [],
-    "id": "10600106",
-    "ownerId": 10000069,
-    "skillId": "12300112",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600106,
+    "idCN": "00原版/05五星/夏洛蒂/S",
+    "name": "card_name_10600106",
+    "color": "Red",
+    "cost_SN": 60000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600107": {
-    "equipIdList": [],
-    "id": "10600107",
-    "ownerId": 10000069,
-    "skillId": "12300110",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600107,
+    "idCN": "00原版/05五星/夏洛蒂/A",
+    "name": "card_name_10600107",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600109": {
+    "id": 10600109,
+    "idCN": "00原版/04四星/苍叶/A",
+    "name": "card_name_10600109",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": [
+      {
+        "condId": 96300002,
+        "des": 80608010
+      }
+    ]
+  },
+  "10600110": {
+    "id": 10600110,
+    "idCN": "00原版/04四星/苍叶/S",
+    "name": "card_name_10600110",
+    "color": "Red",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600113": {
-    "equipIdList": [],
-    "id": "10600113",
-    "ownerId": 10000071,
-    "skillId": "12300115",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600113,
+    "idCN": "00原版/04四星/苍叶/B",
+    "name": "card_name_10600113",
+    "color": "Yellow",
+    "cost_SN": 100000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600114": {
-    "equipIdList": [],
-    "id": "10600114",
-    "ownerId": 10000004,
-    "skillId": 12300117,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600114,
+    "idCN": "00原版/05五星/卡塔斯/S-1",
+    "name": "card_name_10600114",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600115": {
-    "equipIdList": [],
-    "id": "10600115",
-    "ownerId": 10000004,
-    "skillId": 12300118,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600119": {
-    "equipIdList": [],
-    "id": "10600119",
-    "ownerId": 10000035,
-    "skillId": "12301609",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600121": {
-    "equipIdList": [],
-    "id": "10600121",
-    "ownerId": 10000298,
-    "skillId": "12300070",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600122": {
-    "equipIdList": [],
-    "id": "10600122",
-    "ownerId": 10000298,
-    "skillId": 12300068,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600123": {
-    "equipIdList": [],
-    "id": "10600123",
-    "ownerId": 10000298,
-    "skillId": 12300071,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600124": {
-    "equipIdList": [],
-    "id": "10600124",
-    "ownerId": 10000298,
-    "skillId": 12300120,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600125": {
-    "equipIdList": [],
-    "id": "10600125",
-    "ownerId": 10000298,
-    "skillId": "12300160",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600126": {
-    "equipIdList": [],
-    "id": "10600126",
-    "ownerId": 10000298,
-    "skillId": 12300163,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600127": {
-    "equipIdList": [],
-    "id": "10600127",
-    "ownerId": 10000298,
-    "skillId": "12300164",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600131": {
-    "equipIdList": [],
-    "id": "10600131",
-    "ownerId": 10000063,
-    "skillId": 12300397,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600134": {
-    "equipIdList": [],
-    "id": "10600134",
-    "ownerId": 10000052,
-    "skillId": "12300067",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600136": {
-    "equipIdList": [],
-    "id": "10600136",
-    "ownerId": 10000094,
-    "skillId": "12301621",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600137": {
-    "equipIdList": [],
-    "id": "10600137",
-    "ownerId": 10000052,
-    "skillId": 12300146,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600140": {
-    "equipIdList": [],
-    "id": "10600140",
-    "ownerId": 10000111,
-    "skillId": 12300568,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600143": {
-    "equipIdList": [],
-    "id": "10600143",
-    "ownerId": 10000004,
-    "skillId": 12300570,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600144": {
-    "equipIdList": [],
-    "id": "10600144",
-    "ownerId": 10000387,
-    "skillId": "12300292",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600145": {
-    "equipIdList": [],
-    "id": "10600145",
-    "ownerId": 10000387,
-    "skillId": "12300301",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600115,
+    "idCN": "00原版/05五星/卡塔斯/S-2",
+    "name": "card_name_10600115",
+    "color": "Red",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600154": {
-    "equipIdList": [],
-    "id": "10600154",
-    "ownerId": 10000059,
-    "skillId": 12300282,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600155": {
-    "equipIdList": [],
-    "id": "10600155",
-    "ownerId": 10000387,
-    "skillId": "12300270",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600158": {
-    "equipIdList": [],
-    "id": "10600158",
-    "ownerId": 10000739,
-    "skillId": "12300514",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600154,
+    "idCN": "00原版/05五星/柯娜/A-1",
+    "name": "card_name_10600154",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600159": {
-    "equipIdList": [],
-    "id": "10600159",
-    "ownerId": 10000001,
-    "skillId": 12300576,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600159,
+    "idCN": "03中立卡/通用系/震波",
+    "name": "card_name_10600159",
+    "color": "Red",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600160": {
-    "equipIdList": [],
-    "id": "10600160",
-    "ownerId": 10000134,
-    "skillId": "12300286",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
+    "id": 10600160,
+    "idCN": "00原版/03三星/艾略特/A",
+    "name": "card_name_10600160",
+    "color": "Green",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
   },
   "10600161": {
-    "equipIdList": [],
-    "id": "10600161",
-    "ownerId": 10000134,
-    "skillId": "12300284",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600161,
+    "idCN": "00原版/03三星/艾略特/B",
+    "name": "card_name_10600161",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
-  "10600163": {
-    "equipIdList": [],
-    "id": "10600163",
-    "ownerId": 10000388,
-    "skillId": "12300302",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600164": {
-    "equipIdList": [],
-    "id": "10600164",
-    "ownerId": 10000388,
-    "skillId": 12300321,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600165": {
-    "equipIdList": [],
-    "id": "10600165",
-    "ownerId": 10000388,
-    "skillId": "12300309",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600166": {
-    "equipIdList": [],
-    "id": "10600166",
-    "ownerId": 10000388,
-    "skillId": "12300320",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600167": {
-    "equipIdList": [],
-    "id": "10600167",
-    "ownerId": 10000027,
-    "skillId": "12300960",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600169": {
-    "equipIdList": [],
-    "id": "10600169",
-    "ownerId": 10000408,
-    "skillId": "12300957",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+  "10600162": {
+    "id": 10600162,
+    "idCN": "00原版/03三星/艾略特/S",
+    "name": "card_name_10600162",
+    "color": "Yellow",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600170": {
-    "equipIdList": [],
-    "id": "10600170",
-    "ownerId": 10000154,
-    "skillId": "12300298",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600171": {
-    "equipIdList": [],
-    "id": "10600171",
-    "ownerId": 10000052,
-    "skillId": "12300137",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600172": {
-    "equipIdList": [],
-    "id": "10600172",
-    "ownerId": 10000389,
-    "skillId": "12300060",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useType": 1
+    "id": 10600170,
+    "idCN": "00原版/05五星/伊洛娜/A",
+    "name": "card_name_10600170",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600173": {
-    "equipIdList": [],
-    "id": "10600173",
-    "ownerId": 10000154,
-    "skillId": "12300300",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600173,
+    "idCN": "00原版/05五星/伊洛娜/S",
+    "name": "card_name_10600173",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600174": {
-    "equipIdList": [],
-    "id": "10600174",
-    "ownerId": 10000157,
-    "skillId": "12300303",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
+    "id": 10600174,
+    "idCN": "00原版/03三星/阿尔喀娜/A",
+    "name": "card_name_10600174",
+    "color": "Green",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
   },
   "10600175": {
-    "equipIdList": [],
-    "id": "10600175",
-    "ownerId": 10000157,
-    "skillId": "12300304",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600175,
+    "idCN": "00原版/03三星/阿尔喀娜/B",
+    "name": "card_name_10600175",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200029,
+        "des": 80608007,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600176": {
-    "equipIdList": [],
-    "id": "10600176",
-    "ownerId": 10000157,
-    "skillId": "12300305",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600176,
+    "idCN": "00原版/03三星/阿尔喀娜/S",
+    "name": "card_name_10600176",
+    "color": "Yellow",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600177": {
-    "equipIdList": [],
-    "id": "10600177",
-    "ownerId": 10000156,
-    "skillId": "12300306",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600177,
+    "idCN": "00原版/03三星/静流/A",
+    "name": "card_name_10600177",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600178": {
-    "equipIdList": [],
-    "id": "10600178",
-    "ownerId": 10000156,
-    "skillId": "12300308",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600178,
+    "idCN": "00原版/03三星/静流/S",
+    "name": "card_name_10600178",
+    "color": "Purple",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600182": {
-    "equipIdList": [],
-    "id": "10600182",
-    "ownerId": 10000160,
-    "skillId": "12300315",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
-  },
-  "10600183": {
-    "equipIdList": [],
-    "id": "10600183",
-    "ownerId": 10000053,
-    "skillId": "12300396",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600182,
+    "idCN": "00原版/03三星/弗兰/B",
+    "name": "card_name_10600182",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
   },
   "10600184": {
-    "equipIdList": [],
-    "id": "10600184",
-    "ownerId": 10000160,
-    "skillId": "12300313",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600184,
+    "idCN": "00原版/03三星/弗兰/A",
+    "name": "card_name_10600184",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600185": {
+    "id": 10600185,
+    "idCN": "00原版/03三星/弗兰/S",
+    "name": "card_name_10600185",
+    "color": "Blue",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
   },
   "10600186": {
-    "equipIdList": [],
-    "id": "10600186",
-    "ownerId": 10000153,
-    "skillId": "12300009",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useType": 1
+    "id": 10600186,
+    "idCN": "00原版/04四星/宵月/A",
+    "name": "card_name_10600186",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600187": {
-    "equipIdList": [],
-    "id": "10600187",
-    "ownerId": 10000153,
-    "skillId": "12300029",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useType": 1
+    "id": 10600187,
+    "idCN": "00原版/04四星/宵月/S",
+    "name": "card_name_10600187",
+    "color": "Red",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600013": {
+    "id": 10600013,
+    "idCN": "00原版/05五星/多萝西/S",
+    "name": "card_name_10600013",
+    "color": "Yellow",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600017": {
+    "id": 10600017,
+    "idCN": "00原版/05五星/多萝西/A",
+    "name": "card_name_10600017",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600019": {
+    "id": 10600019,
+    "idCN": "00原版/03三星/伽罗尔/A-0",
+    "name": "card_name_10600019",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600020": {
+    "id": 10600020,
+    "idCN": "00原版/03三星/伽罗尔/B",
+    "name": "card_name_10600020",
+    "color": "Yellow",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600023": {
+    "id": 10600023,
+    "idCN": "00原版/03三星/伽罗尔/S",
+    "name": "card_name_10600023",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600009": {
+    "id": 10600009,
+    "idCN": "00原版/05五星/柯娜/S-1",
+    "name": "card_name_10600009",
+    "color": "Purple",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600037": {
+    "id": 10600037,
+    "idCN": "00原版/04四星/莉薇娅/B-3",
+    "name": "card_name_10600037",
+    "color": "Green",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600038": {
+    "id": 10600038,
+    "idCN": "00原版/04四星/莉薇娅/S-3",
+    "name": "card_name_10600038",
+    "color": "Green",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600039": {
+    "id": 10600039,
+    "idCN": "00原版/05五星/马吉拉/B",
+    "name": "card_name_10600039",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600047": {
+    "id": 10600047,
+    "idCN": "00原版/03三星/塔拉/B",
+    "name": "card_name_10600047",
+    "color": "Yellow",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600048": {
+    "id": 10600048,
+    "idCN": "00原版/04四星/黛丝莉/A",
+    "name": "card_name_10600048",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600051": {
+    "id": 10600051,
+    "idCN": "00原版/05五星/柯娜/B-1",
+    "name": "card_name_10600051",
+    "color": "Blue",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600053": {
+    "id": 10600053,
+    "idCN": "00原版/03三星/静流/B",
+    "name": "card_name_10600053",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600057": {
+    "id": 10600057,
+    "idCN": "00原版/03三星/卡莲/A",
+    "name": "card_name_10600057",
+    "color": "Green",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600062": {
+    "id": 10600062,
+    "idCN": "00原版/03三星/卡莲/B-2",
+    "name": "card_name_10600062",
+    "color": "Green",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600064": {
+    "id": 10600064,
+    "idCN": "00原版/03三星/卡莲/B-1",
+    "name": "card_name_10600064",
+    "color": "Yellow",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600066": {
+    "id": 10600066,
+    "idCN": "00原版/03三星/卡莲/B-0",
+    "name": "card_name_10600066",
+    "color": "Purple",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600067": {
+    "id": 10600067,
+    "idCN": "00原版/03三星/卡莲/S",
+    "name": "card_name_10600067",
+    "color": "Green",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600073": {
+    "id": 10600073,
+    "idCN": "00原版/05五星/夏洛蒂/B",
+    "name": "card_name_10600073",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600074": {
+    "id": 10600074,
+    "idCN": "00原版/04四星/魇/B",
+    "name": "card_name_10600074",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600006": {
+    "id": 10600006,
+    "idCN": "00原版/03三星/瑞秋/A",
+    "name": "card_name_10600006",
+    "color": "Green",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600007": {
+    "id": 10600007,
+    "idCN": "00原版/03三星/瑞秋/B-0",
+    "name": "card_name_10600007",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600008": {
+    "id": 10600008,
+    "idCN": "00原版/03三星/瑞秋/B-1",
+    "name": "card_name_10600008",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "UseOnce",
+    "ExCondList": [
+      {
+        "condId": 96200029,
+        "des": 80608007,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600025": {
+    "id": 10600025,
+    "idCN": "00原版/03三星/瑞秋/S",
+    "name": "card_name_10600025",
+    "color": "Green",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      },
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600026": {
+    "id": 10600026,
+    "idCN": "00原版/04四星/宵月/B-1",
+    "name": "card_name_10600026",
+    "color": "Blue",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600040": {
+    "id": 10600040,
+    "idCN": "00原版/04四星/宵月/B-0",
+    "name": "card_name_10600040",
+    "color": "Green",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600041": {
+    "id": 10600041,
+    "idCN": "00原版/05五星/伊洛娜/B",
+    "name": "card_name_10600041",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600043": {
+    "id": 10600043,
+    "idCN": "00原版/04四星/瓦伦汀/A",
+    "name": "card_name_10600043",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600091": {
+    "id": 10600091,
+    "idCN": "00原版/04四星/瓦伦汀/B",
+    "name": "card_name_10600091",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600099": {
+    "id": 10600099,
+    "idCN": "00原版/04四星/瓦伦汀/S",
+    "name": "card_name_10600099",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600121": {
+    "id": 10600121,
+    "idCN": "00原版/05五星/星花/A-0",
+    "name": "TATAKAE",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600122": {
+    "id": 10600122,
+    "idCN": "00原版/05五星/星花/A-1",
+    "name": "TATAKAU!",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600123": {
+    "id": 10600123,
+    "idCN": "00原版/05五星/星花/A-2",
+    "name": "TATAKAU!!",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600124": {
+    "id": 10600124,
+    "idCN": "00原版/05五星/星花/A-3",
+    "name": "TATAKAU!!!",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600125": {
+    "id": 10600125,
+    "idCN": "00原版/05五星/星花/B-0",
+    "name": "card_name_10600125",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600126": {
+    "id": 10600126,
+    "idCN": "00原版/05五星/星花/B-1",
+    "name": "card_name_10600126",
+    "color": "Yellow",
+    "cost_SN": 20000,
+    "cardType": "Derive",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600127": {
+    "id": 10600127,
+    "idCN": "00原版/05五星/星花/S",
+    "name": "card_name_10600127",
+    "color": "Purple",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600077": {
+    "id": 10600077,
+    "idCN": "00原版/05五星/多萝西/B",
+    "name": "Bingo!",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200026,
+        "des": 80608004,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600128": {
+    "id": 10600128,
+    "idCN": "00原版/04四星/塞西尔/C",
+    "name": "card_name_10600128",
+    "color": "Black",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600132": {
+    "id": 10600132,
+    "idCN": "06敌方/通用/火掌花",
+    "name": "card_name_10600132",
+    "color": "Yellow",
+    "cost_SN": 60000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600133": {
+    "id": 10600133,
+    "idCN": "06敌方/通用/形态重塑",
+    "name": "card_name_10600133",
+    "color": "Black",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600135": {
+    "id": 10600135,
+    "idCN": "06敌方/通用/形态侵蚀",
+    "name": "card_name_10600135",
+    "color": "Black",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600144": {
+    "id": 10600144,
+    "idCN": "00原版/04四星/阿知波/B",
+    "name": "card_name_10600144",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600145": {
+    "id": 10600145,
+    "idCN": "00原版/04四星/阿知波/S",
+    "name": "card_name_10600145",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600155": {
+    "id": 10600155,
+    "idCN": "00原版/04四星/阿知波/A",
+    "name": "card_name_10600155",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600163": {
+    "id": 10600163,
+    "idCN": "00原版/05五星/闻笙/A-0",
+    "name": "card_name_10600163",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600164": {
+    "id": 10600164,
+    "idCN": "00原版/05五星/闻笙/A-1",
+    "name": "card_name_10600164",
+    "color": "Red",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600165": {
+    "id": 10600165,
+    "idCN": "00原版/05五星/闻笙/B",
+    "name": "card_name_10600165",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600166": {
+    "id": 10600166,
+    "idCN": "00原版/05五星/闻笙/S",
+    "name": "card_name_10600166",
+    "color": "Purple",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600172": {
+    "id": 10600172,
+    "idCN": "00原版/04四星/冯里奈/A-0",
+    "name": "card_name_10600172",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600188": {
-    "equipIdList": [],
-    "id": "10600188",
-    "ownerId": 10000389,
-    "skillId": 12300330,
-    "targetType": 0,
-    "useParam": -1,
-    "useType": 1
+    "id": 10600188,
+    "idCN": "00原版/04四星/冯里奈/A-1",
+    "name": "card_name_10600188",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600189": {
-    "equipIdList": [],
-    "id": "10600189",
-    "ownerId": 10000389,
-    "skillId": 12300331,
-    "targetType": 0,
-    "useParam": -1,
-    "useType": 1
+    "id": 10600189,
+    "idCN": "00原版/04四星/冯里奈/A-2",
+    "name": "card_name_10600189",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600190": {
-    "equipIdList": [],
-    "id": "10600190",
-    "ownerId": 10000389,
-    "skillId": "12300297",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useType": 1
+    "id": 10600190,
+    "idCN": "00原版/04四星/冯里奈/B",
+    "name": "card_name_10600190",
+    "color": "Purple",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
-  "10600192": {
-    "equipIdList": [],
-    "id": "10600192",
-    "ownerId": 10000031,
-    "skillId": 12300617,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600193": {
-    "equipIdList": [],
-    "id": "10600193",
-    "ownerId": 10000408,
-    "skillId": 12300924,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600194": {
-    "equipIdList": [],
-    "id": "10600194",
-    "ownerId": 10000408,
-    "skillId": 12300925,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+  "10600191": {
+    "id": 10600191,
+    "idCN": "00原版/04四星/冯里奈/S",
+    "name": "card_name_10600191",
+    "color": "Yellow",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      },
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600199": {
-    "equipIdList": [],
-    "id": "10600199",
-    "ownerId": 10000409,
-    "skillId": "12300414",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600199,
+    "idCN": "00原版/03三星/跳鼠/S",
+    "name": "card_name_10600199",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600200": {
-    "equipIdList": [],
-    "id": "10600200",
-    "ownerId": 10000409,
-    "skillId": "12300413",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600200,
+    "idCN": "00原版/03三星/跳鼠/B-0",
+    "name": "card_name_10600200",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600201": {
-    "equipIdList": [],
-    "id": "10600201",
-    "ownerId": 10000409,
-    "skillId": "12300412",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600201,
+    "idCN": "00原版/03三星/跳鼠/A",
+    "name": "card_name_10600201",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
-  "10600202": {
-    "equipIdList": [],
-    "id": "10600202",
-    "ownerId": 10000025,
-    "skillId": 12300636,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+  "10600203": {
+    "id": 10600203,
+    "idCN": "06敌方/通用/耳鸣",
+    "name": "card_name_10600203",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600207": {
-    "equipIdList": [],
-    "id": "10600207",
-    "ownerId": 10000414,
-    "skillId": "12300425",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600207,
+    "idCN": "00原版/03三星/山岚/A",
+    "name": "card_name_10600207",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600208": {
-    "equipIdList": [],
-    "id": "10600208",
-    "ownerId": 10000414,
-    "skillId": "12300426",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600208,
+    "idCN": "00原版/03三星/山岚/B",
+    "name": "card_name_10600208",
+    "color": "Blue",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600209": {
-    "equipIdList": [],
-    "id": "10600209",
-    "ownerId": 10000414,
-    "skillId": "12300427",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600209,
+    "idCN": "00原版/03三星/山岚/S",
+    "name": "card_name_10600209",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600210": {
+    "id": 10600210,
+    "idCN": "06敌方/通用/形态瓦解",
+    "name": "card_name_10600210",
+    "color": "Green",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600211": {
+    "id": 10600211,
+    "idCN": "06敌方/通用/锁定解除",
+    "name": "card_name_10600211",
+    "color": "Purple",
+    "cost_SN": 20000,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600212": {
+    "id": 10600212,
+    "idCN": "06敌方/柯娜/谐振装置II",
+    "name": "card_name_10600212",
+    "color": "Red",
+    "cost_SN": 80000,
+    "cardType": "SelfDestruction",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600213": {
+    "id": 10600213,
+    "idCN": "06敌方/柯娜/谐振装置I",
+    "name": "card_name_10600213",
+    "color": "Red",
+    "cost_SN": 100000,
+    "cardType": "SelfDestruction",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600214": {
-    "equipIdList": [],
-    "id": "10600214",
-    "ownerId": 10000408,
-    "skillId": "12300449",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600214,
+    "idCN": "00原版/02二星/波克士/S-0",
+    "name": "card_name_10600214",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600215": {
-    "equipIdList": [],
-    "id": "10600215",
-    "ownerId": 10000408,
-    "skillId": "12300448",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600215,
+    "idCN": "00原版/02二星/波克士/B-0",
+    "name": "card_name_10600215",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600216": {
+    "id": 10600216,
+    "idCN": "00原版/02二星/波克士/A-0",
+    "name": "card_name_10600216",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600222": {
+    "id": 10600222,
+    "idCN": "06敌方/通用/心魔",
+    "name": "card_name_10600222",
+    "color": "Purple",
+    "cost_SN": 10000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600223": {
-    "equipIdList": [],
-    "id": "10600223",
-    "ownerId": 10000352,
-    "skillId": "12300419",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
+    "id": 10600223,
+    "idCN": "00原版/05五星/苏恩/S",
+    "name": "card_name_10600223",
+    "color": "Green",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
   },
-  "10600224": {
-    "equipIdList": [],
-    "id": "10600224",
-    "ownerId": 10000352,
-    "skillId": "12300667",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+  "10600225": {
+    "id": 10600225,
+    "idCN": "00原版/05五星/苏恩/B",
+    "name": "card_name_10600225",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600226": {
-    "equipIdList": [],
-    "id": "10600226",
-    "ownerId": 10000352,
-    "skillId": "12300417",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
+    "id": 10600226,
+    "idCN": "00原版/05五星/苏恩/A",
+    "name": "card_name_10600226",
+    "color": "Green",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
   },
   "10600233": {
-    "equipIdList": [],
-    "id": "10600233",
-    "ownerId": 10000300,
-    "skillId": "12300467",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600233,
+    "idCN": "00原版/04四星/菲妮娅/A",
+    "name": "card_name_10600233",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
-  "10600235": {
-    "equipIdList": [],
-    "id": "10600235",
-    "ownerId": 10000053,
-    "skillId": "12300404",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+  "10600234": {
+    "id": 10600234,
+    "idCN": "03中立卡/通用系/负能",
+    "name": "card_name_10600234",
+    "color": "Black",
+    "cost_SN": 0,
+    "cardType": "SelfDestruction",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600236": {
-    "equipIdList": [],
-    "id": "10600236",
-    "ownerId": 10000300,
-    "skillId": "12300468",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600236,
+    "idCN": "00原版/04四星/菲妮娅/B",
+    "name": "card_name_10600236",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200029,
+        "des": 80608007,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600237": {
-    "equipIdList": [],
-    "id": "10600237",
-    "ownerId": 10000300,
-    "skillId": "12300469",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600237,
+    "idCN": "00原版/04四星/菲妮娅/S",
+    "name": "card_name_10600237",
+    "color": "Red",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200026,
+        "des": 80608004,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600158": {
+    "id": 10600158,
+    "idCN": "00原版/05五星/薇尔岚/A",
+    "name": "card_name_10600158",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600239": {
-    "equipIdList": [],
-    "id": "10600239",
-    "ownerId": 10000739,
-    "skillId": "12300515",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600240": {
-    "equipIdList": [],
-    "id": "10600240",
-    "ownerId": 10000298,
-    "skillId": 12300585,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600241": {
-    "equipIdList": [],
-    "id": "10600241",
-    "ownerId": 10000053,
-    "skillId": "12300407",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600242": {
-    "equipIdList": [],
-    "id": "10600242",
-    "ownerId": 10000408,
-    "skillId": 12300928,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600243": {
-    "equipIdList": [],
-    "id": "10600243",
-    "ownerId": 10000372,
-    "skillId": 12301752,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600239,
+    "idCN": "00原版/05五星/薇尔岚/B-0",
+    "name": "card_name_10600239",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600244": {
-    "equipIdList": [],
-    "id": "10600244",
-    "ownerId": 10000739,
-    "skillId": 12300517,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600244,
+    "idCN": "00原版/05五星/薇尔岚/B-1",
+    "name": "card_name_10600244",
+    "color": "Purple",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600245": {
-    "equipIdList": [],
-    "id": "10600245",
-    "ownerId": 10000739,
-    "skillId": "12300516",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600246": {
-    "equipIdList": [],
-    "id": "10600246",
-    "ownerId": 10000372,
-    "skillId": 12301753,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600245,
+    "idCN": "00原版/05五星/薇尔岚/S",
+    "name": "card_name_10600245",
+    "color": "Purple",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600247": {
-    "equipIdList": [],
-    "id": "10600247",
-    "ownerId": 10000055,
-    "skillId": 12300529,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600247,
+    "idCN": "00原版/04四星/莉薇娅/S-4",
+    "name": "card_name_10600247",
+    "color": "Purple",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600248": {
-    "equipIdList": [],
-    "id": "10600248",
-    "ownerId": 10000055,
-    "skillId": 12300530,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600248,
+    "idCN": "00原版/04四星/莉薇娅/B-4",
+    "name": "card_name_10600248",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600018": {
+    "id": 10600018,
+    "idCN": "00原版/03三星/伽罗尔/A-1",
+    "name": "card_name_10600018",
+    "color": "Purple",
+    "cost_SN": 10000,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600140": {
+    "id": 10600140,
+    "idCN": "00原版/03三星/伽罗尔/A-2",
+    "name": "card_name_10600140",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600143": {
+    "id": 10600143,
+    "idCN": "00原版/05五星/卡塔斯/S-3",
+    "name": "card_name_10600143",
+    "color": "Red",
+    "cost_SN": 50000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600141": {
+    "id": 10600141,
+    "idCN": "06敌方/通用/形态污染",
+    "name": "card_name_10600141",
+    "color": "Black",
+    "cost_SN": 0,
+    "cardType": "SelfDestruction",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600035": {
+    "id": 10600035,
+    "idCN": "00原版/05五星/柯娜/S-2",
+    "name": "card_name_10600035",
+    "color": "Red",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600249": {
-    "equipIdList": [],
-    "id": "10600249",
-    "ownerId": 10000059,
-    "skillId": 12300280,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600249,
+    "idCN": "00原版/05五星/柯娜/B-2",
+    "name": "card_name_10600249",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600250": {
-    "equipIdList": [],
-    "id": "10600250",
-    "ownerId": 10000134,
-    "skillId": "12300251",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600250,
+    "idCN": "00原版/03三星/艾略特/S_觉2",
+    "name": "card_name_10600250",
+    "color": "Yellow",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
-  "10600251": {
-    "equipIdList": [],
-    "id": "10600251",
-    "ownerId": 10000051,
-    "skillId": "12300421",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
+  "10600049": {
+    "id": 10600049,
+    "idCN": "00原版/04四星/黛丝莉/S_振5",
+    "name": "card_name_10600049",
+    "color": "Yellow",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
-  "10600255": {
-    "equipIdList": [],
-    "id": "10600255",
-    "ownerId": 10000051,
-    "skillId": "12300450",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
+  "10600252": {
+    "id": 10600252,
+    "idCN": "00原版/03三星/弗兰/A_振2",
+    "name": "card_name_10600252",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
-  "10600256": {
-    "equipIdList": [],
-    "id": "10600256",
-    "ownerId": 10000051,
-    "skillId": "12300433",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+  "10600253": {
+    "id": 10600253,
+    "idCN": "03中立卡/通用系/黑8",
+    "name": "card_name_10600253",
+    "color": "Black",
+    "cost_SN": 0,
+    "cardType": "SelfDestruction",
+    "ExCondList": [],
+    "ExActList": []
   },
-  "10600258": {
-    "equipIdList": [],
-    "id": "10600258",
-    "ownerId": 10000389,
-    "skillId": "12300147",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useType": 1
+  "10600257": {
+    "id": 10600257,
+    "idCN": "00原版/03三星/卡莲/B-2_觉5",
+    "name": "card_name_10600257",
+    "color": "Green",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
   },
   "10600259": {
-    "equipIdList": [],
-    "id": "10600259",
-    "ownerId": 10000409,
-    "skillId": 12300511,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600259,
+    "idCN": "00原版/03三星/跳鼠/B-1",
+    "name": "card_name_10600259",
+    "color": "Red",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
-  "10600260": {
-    "equipIdList": [],
-    "id": "10600260",
-    "ownerId": 10000101,
-    "skillId": "12300592",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
+  "10600202": {
+    "id": 10600202,
+    "idCN": "00原版/03三星/朱利安/A-1",
+    "name": "card_name_10600202",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
-  "10600261": {
-    "equipIdList": [],
-    "id": "10600261",
-    "ownerId": 10000372,
-    "skillId": "12301750",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+  "10600240": {
+    "id": 10600240,
+    "idCN": "00原版/05五星/星花/C",
+    "name": "card_name_10600240",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "UseOnce",
+    "ExCondList": [
+      {
+        "condId": 96200029,
+        "des": 80608007,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600044": {
+    "id": 10600044,
+    "idCN": "03中立卡/元素系/元素核火",
+    "name": "card_name_10600044",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600224": {
+    "id": 10600224,
+    "idCN": "00原版/05五星/苏恩/B_振4",
+    "name": "card_name_10600224",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600262": {
-    "equipIdList": [],
-    "id": "10600262",
-    "ownerId": 10000001,
-    "skillId": 12300420,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600262,
+    "idCN": "03中立卡/通用系/暗艺",
+    "name": "card_name_10600262",
+    "color": "Purple",
+    "cost_SN": 20000,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600263": {
+    "id": 10600263,
+    "idCN": "04测试/绿卡",
+    "name": "",
+    "color": "Green",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600264": {
+    "id": 10600264,
+    "idCN": "04测试/红卡",
+    "name": "",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600265": {
+    "id": 10600265,
+    "idCN": "04测试/黑卡",
+    "name": "",
+    "color": "Black",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600266": {
+    "id": 10600266,
+    "idCN": "04测试/蓝卡",
+    "name": "",
+    "color": "Blue",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600267": {
+    "id": 10600267,
+    "idCN": "04测试/黄卡",
+    "name": "",
+    "color": "Yellow",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600268": {
+    "id": 10600268,
+    "idCN": "04测试/全体敌方变萌",
+    "name": "",
+    "color": "Purple",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600269": {
-    "equipIdList": [],
-    "id": "10600269",
-    "ownerId": 10000160,
-    "skillId": "12300682",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
+    "id": 10600269,
+    "idCN": "00原版/03三星/弗兰/S_觉2",
+    "name": "card_name_10600269",
+    "color": "Blue",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
   },
   "10600270": {
-    "equipIdList": [],
-    "id": "10600270",
-    "ownerId": 10000001,
-    "skillId": 12300683,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600270,
+    "idCN": "03中立卡/通用系/奇异火花",
+    "name": "card_name_10600270",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600271": {
-    "equipIdList": [],
-    "id": "10600271",
-    "ownerId": 10000111,
-    "skillId": "12300695",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600271,
+    "idCN": "00原版/03三星/伽罗尔/S_觉2",
+    "name": "card_name_10600271",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600272": {
-    "equipIdList": [],
-    "id": "10600272",
-    "ownerId": 10000335,
-    "skillId": "12300689",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600272,
+    "idCN": "00原版/04四星/叶珏/S",
+    "name": "card_name_10600272",
+    "color": "Purple",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600273": {
-    "equipIdList": [],
-    "id": "10600273",
-    "ownerId": 10000335,
-    "skillId": "12300688",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600273,
+    "idCN": "00原版/04四星/叶珏/B",
+    "name": "card_name_10600273",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600274": {
-    "equipIdList": [],
-    "id": "10600274",
-    "ownerId": 10000335,
-    "skillId": "12300687",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600274,
+    "idCN": "00原版/04四星/叶珏/A",
+    "name": "card_name_10600274",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600275": {
+    "id": 10600275,
+    "idCN": "00原版/04四星/叶珏/B_振4",
+    "name": "card_name_10600275",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600278": {
+    "id": 10600278,
+    "idCN": "00原版/03三星/塔拉/S_振4",
+    "name": "card_name_10600278",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600279": {
-    "equipIdList": [],
-    "id": "10600279",
-    "ownerId": 10000071,
-    "skillId": "12300177",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600279,
+    "idCN": "00原版/04四星/苍叶/A_振1",
+    "name": "card_name_10600279",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600280": {
-    "equipIdList": [],
-    "id": "10600280",
-    "ownerId": 10000071,
-    "skillId": "12300194",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600280,
+    "idCN": "00原版/04四星/苍叶/S_振5",
+    "name": "card_name_10600280",
+    "color": "Red",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600281": {
+    "id": 10600281,
+    "idCN": "00原版/05五星/马吉拉/C",
+    "name": "card_name_10600281",
+    "color": "Black",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600045": {
+    "id": 10600045,
+    "idCN": "00原版/05五星/马吉拉/A_振2",
+    "name": "card_name_10600045",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600046": {
+    "id": 10600046,
+    "idCN": "00原版/05五星/马吉拉/B_振4",
+    "name": "card_name_10600046",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600282": {
-    "equipIdList": [],
-    "id": "10600282",
-    "ownerId": 10000001,
-    "skillId": 12300726,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600282,
+    "idCN": "03中立卡/新星系/新星",
+    "name": "card_name_10600282",
+    "color": "Purple",
+    "cost_SN": 20000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600131": {
+    "id": 10600131,
+    "idCN": "00原版/04四星/魇/A-1",
+    "name": "card_name_10600131",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600138": {
+    "id": 10600138,
+    "idCN": "00原版/03三星/山岚/A_振4",
+    "name": "card_name_10600138",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600002": {
+    "id": 10600002,
+    "idCN": "00原版/04四星/塞西尔/A_振1",
+    "name": "card_name_10600002",
+    "color": "Green",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600003": {
+    "id": 10600003,
+    "idCN": "00原版/04四星/塞西尔/B_振2",
+    "name": "card_name_10600003",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600010": {
+    "id": 10600010,
+    "idCN": "00原版/03三星/伽罗尔/B_振4",
+    "name": "card_name_10600010",
+    "color": "Yellow",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600011": {
+    "id": 10600011,
+    "idCN": "03中立卡/元素系/元素核电",
+    "name": "card_name_10600011",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600021": {
+    "id": 10600021,
+    "idCN": "03中立卡/元素系/元素核冰",
+    "name": "card_name_10600021",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600022": {
+    "id": 10600022,
+    "idCN": "03中立卡/元素系/以太方尖碑",
+    "name": "card_name_10600022",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600027": {
+    "id": 10600027,
+    "idCN": "03中立卡/元素系/贤者之石",
+    "name": "card_name_10600027",
+    "color": "Blue",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600028": {
+    "id": 10600028,
+    "idCN": "03中立卡/元素系/聚能晶核",
+    "name": "card_name_10600028",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600029": {
+    "id": 10600029,
+    "idCN": "03中立卡/新星系/中微子线爆",
+    "name": "card_name_10600029",
+    "color": "Blue",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600030": {
+    "id": 10600030,
+    "idCN": "03中立卡/新星系/无界之渊",
+    "name": "card_name_10600030",
+    "color": "Blue",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600031": {
+    "id": 10600031,
+    "idCN": "03中立卡/新星系/太初之光",
+    "name": "card_name_10600031",
+    "color": "Blue",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600032": {
+    "id": 10600032,
+    "idCN": "03中立卡/新星系/霜冻新星",
+    "name": "card_name_10600032",
+    "color": "Purple",
+    "cost_SN": 20000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600033": {
+    "id": 10600033,
+    "idCN": "03中立卡/新星系/视界时间",
+    "name": "card_name_10600033",
+    "color": "Blue",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600036": {
+    "id": 10600036,
+    "idCN": "03中立卡/新星系/闪电新星",
+    "name": "card_name_10600036",
+    "color": "Purple",
+    "cost_SN": 20000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600075": {
+    "id": 10600075,
+    "idCN": "03中立卡/新星系/火焰新星",
+    "name": "card_name_10600075",
+    "color": "Purple",
+    "cost_SN": 20000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600076": {
+    "id": 10600076,
+    "idCN": "03中立卡/新星系/超新星",
+    "name": "card_name_10600076",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600116": {
+    "id": 10600116,
+    "idCN": "03中立卡/通用系/狱灵弹",
+    "name": "card_name_10600116",
+    "color": "Black",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600117": {
+    "id": 10600117,
+    "idCN": "03中立卡/通用系/金9",
+    "name": "card_name_10600117",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600118": {
+    "id": 10600118,
+    "idCN": "03中立卡/通用系/灰烬",
+    "name": "card_name_10600118",
+    "color": "Black",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600139": {
+    "id": 10600139,
+    "idCN": "03中立卡/黑箭系/碎月之凚",
+    "name": "card_name_10600139",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600149": {
+    "id": 10600149,
+    "idCN": "03中立卡/黑箭系/碎月之龙矢",
+    "name": "card_name_10600149",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600150": {
+    "id": 10600150,
+    "idCN": "03中立卡/黑箭系/漆黑之矢",
+    "name": "card_name_10600150",
+    "color": "Black",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600151": {
+    "id": 10600151,
+    "idCN": "03中立卡/黑箭系/破界之龙矢",
+    "name": "card_name_10600151",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600152": {
+    "id": 10600152,
+    "idCN": "03中立卡/黑箭系/破界之火",
+    "name": "card_name_10600152",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600153": {
+    "id": 10600153,
+    "idCN": "03中立卡/黑箭系/崩星之龙矢",
+    "name": "card_name_10600153",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600156": {
+    "id": 10600156,
+    "idCN": "03中立卡/黑箭系/崩星之雷",
+    "name": "card_name_10600156",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600193": {
+    "id": 10600193,
+    "idCN": "00原版/02二星/波克士/A-1",
+    "name": "card_name_10600193",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600194": {
+    "id": 10600194,
+    "idCN": "00原版/02二星/波克士/A-2",
+    "name": "card_name_10600194",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600242": {
+    "id": 10600242,
+    "idCN": "00原版/02二星/波克士/A-3",
+    "name": "card_name_10600242",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600283": {
-    "equipIdList": [],
-    "id": "10600283",
-    "ownerId": 10000408,
-    "skillId": 12300946,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600283,
+    "idCN": "00原版/02二星/波克士/A-4",
+    "name": "card_name_10600283",
+    "color": "Purple",
+    "cost_SN": 40000,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
   },
-  "10600284": {
-    "equipIdList": [],
-    "id": "10600284",
-    "ownerId": 10000031,
-    "skillId": "12300056",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+  "10600285": {
+    "id": 10600285,
+    "idCN": "00原版/04四星/宵月/S_振5",
+    "name": "card_name_10600285",
+    "color": "Red",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600286": {
-    "equipIdList": [],
-    "id": "10600286",
-    "ownerId": 10000408,
-    "skillId": 12300969,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
+    "id": 10600286,
+    "idCN": "00原版/02二星/波克士/B-1",
+    "name": "card_name_10600286",
+    "color": "Green",
+    "cost_SN": 10000,
+    "cardType": "Derive",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
   },
   "10600287": {
-    "equipIdList": [],
-    "id": "10600287",
-    "ownerId": 10000408,
-    "skillId": 12300970,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600287,
+    "idCN": "00原版/02二星/波克士/B-2",
+    "name": "card_name_10600287",
+    "color": "Blue",
+    "cost_SN": 10000,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600288": {
-    "equipIdList": [],
-    "id": "10600288",
-    "ownerId": 10000408,
-    "skillId": 12300971,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600288,
+    "idCN": "00原版/02二星/波克士/B-3",
+    "name": "card_name_10600288",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600289": {
-    "equipIdList": [],
-    "id": "10600289",
-    "ownerId": 10000408,
-    "skillId": 12300950,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600289,
+    "idCN": "00原版/02二星/波克士/S-1",
+    "name": "card_name_10600289",
+    "color": "Green",
+    "cost_SN": 30000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600167": {
+    "id": 10600167,
+    "idCN": "00原版/03三星/遥/A",
+    "name": "card_name_10600167",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600290": {
-    "equipIdList": [],
-    "id": "10600290",
-    "ownerId": 10000027,
-    "skillId": "12300961",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600290,
+    "idCN": "00原版/03三星/遥/B",
+    "name": "card_name_10600290",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600291": {
-    "equipIdList": [],
-    "id": "10600291",
-    "ownerId": 10000027,
-    "skillId": "12300962",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600291,
+    "idCN": "00原版/03三星/遥/S-0",
+    "name": "card_name_10600291",
+    "color": "Purple",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600292": {
-    "equipIdList": [],
-    "id": "10600292",
-    "ownerId": 10000027,
-    "skillId": 12300963,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600292,
+    "idCN": "00原版/03三星/遥/S-1",
+    "name": "card_name_10600292",
+    "color": "Blue",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600169": {
+    "id": 10600169,
+    "idCN": "00原版/02二星/波克士/A-0_觉2",
+    "name": "card_name_10600169",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600192": {
+    "id": 10600192,
+    "idCN": "00原版/05五星/约书亚/B-1",
+    "name": "card_name_10600192",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "UseOnce",
+    "ExCondList": [
+      {
+        "condId": 96200029,
+        "des": 80608007,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600284": {
+    "id": 10600284,
+    "idCN": "00原版/05五星/约书亚/B-0",
+    "name": "card_name_10600284",
+    "color": "Yellow",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600293": {
-    "equipIdList": [],
-    "id": "10600293",
-    "ownerId": 10000031,
-    "skillId": "12300055",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600293,
+    "idCN": "00原版/05五星/约书亚/A",
+    "name": "card_name_10600293",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600294": {
-    "equipIdList": [],
-    "id": "10600294",
-    "ownerId": 10000031,
-    "skillId": "12300072",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600294,
+    "idCN": "00原版/05五星/约书亚/S-0",
+    "name": "card_name_10600294",
+    "color": "Red",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
-  "10600295": {
-    "equipIdList": [],
-    "id": "10600295",
-    "ownerId": 10000072,
-    "skillId": "12300033",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+  "10600297": {
+    "id": 10600297,
+    "idCN": "00原版/04四星/瓦伦汀/S_振5",
+    "name": "card_name_10600297",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
-  "10600296": {
-    "equipIdList": [],
-    "id": "10600296",
-    "ownerId": 10000072,
-    "skillId": "12300034",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+  "10600298": {
+    "id": 10600298,
+    "idCN": "00原版/04四星/宵月/A_振1",
+    "name": "card_name_10600298",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600299": {
+    "id": 10600299,
+    "idCN": "00原版/05五星/隼/A",
+    "name": "card_name_10600299",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600300": {
+    "id": 10600300,
+    "idCN": "00原版/05五星/隼/B",
+    "name": "card_name_10600300",
+    "color": "Yellow",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600301": {
+    "id": 10600301,
+    "idCN": "00原版/05五星/隼/S",
+    "name": "card_name_10600301",
+    "color": "Red",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600302": {
+    "id": 10600302,
+    "idCN": "00原版/05五星/闻笙/B_振5",
+    "name": "card_name_10600302",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600050": {
+    "id": 10600050,
+    "idCN": "00原版/04四星/奈弥/A",
+    "name": "card_name_10600050",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600134": {
+    "id": 10600134,
+    "idCN": "00原版/04四星/奈弥/B-0",
+    "name": "card_name_10600134",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600137": {
+    "id": 10600137,
+    "idCN": "00原版/04四星/奈弥/B-1",
+    "name": "card_name_10600137",
+    "color": "Red",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600171": {
+    "id": 10600171,
+    "idCN": "00原版/04四星/奈弥/S",
+    "name": "card_name_10600171",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600183": {
+    "id": 10600183,
+    "idCN": "00原版/04四星/伊尔/A",
+    "name": "card_name_10600183",
+    "color": "Purple",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": [
+      {
+        "condId": 96300002,
+        "des": 80608010
+      },
+      {
+        "condId": 96300003,
+        "des": 80608013
+      }
+    ]
+  },
+  "10600235": {
+    "id": 10600235,
+    "idCN": "00原版/04四星/伊尔/B",
+    "name": "card_name_10600235",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200029,
+        "des": 80608007,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600241": {
+    "id": 10600241,
+    "idCN": "00原版/04四星/伊尔/S",
+    "name": "card_name_10600241",
+    "color": "Purple",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": [
+      {
+        "condId": 96300002,
+        "des": 80608010
+      },
+      {
+        "condId": 96300003,
+        "des": 80608013
+      }
+    ]
+  },
+  "10600251": {
+    "id": 10600251,
+    "idCN": "00原版/05五星/亚莉奈/A",
+    "name": "card_name_10600251",
+    "color": "Green",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600255": {
+    "id": 10600255,
+    "idCN": "00原版/05五星/亚莉奈/B",
+    "name": "card_name_10600255",
+    "color": "Purple",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600256": {
+    "id": 10600256,
+    "idCN": "00原版/05五星/亚莉奈/S",
+    "name": "card_name_10600256",
+    "color": "Purple",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600260": {
+    "id": 10600260,
+    "idCN": "00原版/04四星/卡莱雅/A",
+    "name": "card_name_10600260",
+    "color": "Green",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600303": {
+    "id": 10600303,
+    "idCN": "00原版/04四星/卡莱雅/B",
+    "name": "card_name_10600303",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600304": {
-    "equipIdList": [],
-    "id": "10600304",
-    "ownerId": 10000101,
-    "skillId": "12300608",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600304,
+    "idCN": "00原版/04四星/卡莱雅/S",
+    "name": "card_name_10600304",
+    "color": "Purple",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600305": {
-    "equipIdList": [],
-    "id": "10600305",
-    "ownerId": 10000101,
-    "skillId": "12300609",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
-  },
-  "10600306": {
-    "equipIdList": [],
-    "id": "10600306",
-    "ownerId": 10000372,
-    "skillId": "12301716",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600305,
+    "idCN": "00原版/04四星/卡莱雅/B_振2",
+    "name": "card_name_10600305",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600307": {
-    "equipIdList": [],
-    "id": "10600307",
-    "ownerId": 10000110,
-    "skillId": "12301037",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600307,
+    "idCN": "00原版/04四星/霖/A",
+    "name": "card_name_10600307",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600308": {
-    "equipIdList": [],
-    "id": "10600308",
-    "ownerId": 10000110,
-    "skillId": "12301038",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600308,
+    "idCN": "00原版/04四星/霖/B",
+    "name": "card_name_10600308",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600309": {
-    "equipIdList": [],
-    "id": "10600309",
-    "ownerId": 10000110,
-    "skillId": "12301039",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600309,
+    "idCN": "00原版/04四星/霖/S",
+    "name": "card_name_10600309",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600310": {
-    "equipIdList": [],
-    "id": "10600310",
-    "ownerId": 10000112,
-    "skillId": "12301094",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600310,
+    "idCN": "00原版/04四星/甘雅/A",
+    "name": "card_name_10600310",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600311": {
-    "equipIdList": [],
-    "id": "10600311",
-    "ownerId": 10000112,
-    "skillId": "12301095",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600311,
+    "idCN": "00原版/04四星/甘雅/B",
+    "name": "card_name_10600311",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600312": {
-    "equipIdList": [],
-    "id": "10600312",
-    "ownerId": 10000112,
-    "skillId": "12301096",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600312,
+    "idCN": "00原版/04四星/甘雅/S",
+    "name": "card_name_10600312",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200026,
+        "des": 80608004,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600313": {
+    "id": 10600313,
+    "idCN": "00原版/05五星/达斯廷/A",
+    "name": "card_name_10600313",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600314": {
-    "equipIdList": [],
-    "id": "10600314",
-    "ownerId": 10000035,
-    "skillId": "12301105",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600314,
+    "idCN": "00原版/05五星/达斯廷/B",
+    "name": "card_name_10600314",
+    "color": "Yellow",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600315": {
-    "equipIdList": [],
-    "id": "10600315",
-    "ownerId": 10000035,
-    "skillId": "12301106",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600315,
+    "idCN": "00原版/05五星/达斯廷/S",
+    "name": "card_name_10600315",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600316": {
+    "id": 10600316,
+    "idCN": "00原版/04四星/伊尔/B_觉5",
+    "name": "card_name_10600316",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200029,
+        "des": 80608007,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600317": {
+    "id": 10600317,
+    "idCN": "00原版/03三星/参宿一/A",
+    "name": "card_name_10600317",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600318": {
+    "id": 10600318,
+    "idCN": "00原版/03三星/参宿一/B",
+    "name": "card_name_10600318",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600319": {
+    "id": 10600319,
+    "idCN": "00原版/03三星/参宿一/S",
+    "name": "card_name_10600319",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600168": {
+    "id": 10600168,
+    "idCN": "00原版/04四星/阿知波/S_觉2",
+    "name": "card_name_10600168",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600320": {
+    "id": 10600320,
+    "idCN": "00原版/03三星/参宿一/B_振1",
+    "name": "card_name_10600320",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600321": {
+    "id": 10600321,
+    "idCN": "03中立卡/通用系/黑盒",
+    "name": "card_name_10600321",
+    "color": "Black",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600324": {
-    "equipIdList": [],
-    "id": "10600324",
-    "ownerId": 10000124,
-    "skillId": "12301131",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600324,
+    "idCN": "00原版/04四星/晃/S",
+    "name": "card_name_10600324",
+    "color": "Purple",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600325": {
-    "equipIdList": [],
-    "id": "10600325",
-    "ownerId": 10000124,
-    "skillId": "12301130",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600325,
+    "idCN": "00原版/04四星/晃/B",
+    "name": "card_name_10600325",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600326": {
-    "equipIdList": [],
-    "id": "10600326",
-    "ownerId": 10000124,
-    "skillId": "12301129",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600326,
+    "idCN": "00原版/04四星/晃/A",
+    "name": "card_name_10600326",
+    "color": "Blue",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600327": {
-    "equipIdList": [],
-    "id": "10600327",
-    "ownerId": 10000139,
-    "skillId": "12301122",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600327,
+    "idCN": "00原版/05五星/卡洛琳/A",
+    "name": "card_name_10600327",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600328": {
-    "equipIdList": [],
-    "id": "10600328",
-    "ownerId": 10000139,
-    "skillId": "12301132",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600328,
+    "idCN": "00原版/05五星/卡洛琳/B",
+    "name": "card_name_10600328",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600329": {
-    "equipIdList": [],
-    "id": "10600329",
-    "ownerId": 10000139,
-    "skillId": "12301133",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
-  },
-  "10600330": {
-    "equipIdList": [],
-    "id": "10600330",
-    "ownerId": 10000159,
-    "skillId": "12300451",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600329,
+    "idCN": "00原版/05五星/卡洛琳/S",
+    "name": "card_name_10600329",
+    "color": "Purple",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600331": {
-    "equipIdList": [],
-    "id": "10600331",
-    "ownerId": 10000739,
-    "skillId": 12301137,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600331,
+    "idCN": "00原版/05五星/薇尔岚/B-2",
+    "name": "card_name_10600331",
+    "color": "Red",
+    "cost_SN": 0,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600332": {
-    "equipIdList": [],
-    "id": "10600332",
-    "ownerId": 10000739,
-    "skillId": 12301138,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600332,
+    "idCN": "00原版/05五星/薇尔岚/B-3",
+    "name": "card_name_10600332",
+    "color": "Blue",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": [
+      {
+        "condId": 96300003,
+        "des": 80608013
+      },
+      {
+        "condId": 96300007,
+        "des": 80608012
+      }
+    ]
   },
   "10600333": {
-    "equipIdList": [],
-    "id": "10600333",
-    "ownerId": 10000739,
-    "skillId": 12301139,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600333,
+    "idCN": "00原版/05五星/薇尔岚/B-4",
+    "name": "card_name_10600333",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600334": {
-    "equipIdList": [],
-    "id": "10600334",
-    "ownerId": 10000739,
-    "skillId": 12301140,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
+    "id": 10600334,
+    "idCN": "00原版/05五星/薇尔岚/B-5",
+    "name": "card_name_10600334",
+    "color": "Green",
+    "cost_SN": 0,
+    "cardType": "UseOnce",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600330": {
+    "id": 10600330,
+    "idCN": "00原版/03三星/圣剑波克士/A-0",
+    "name": "card_name_10600330",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600335": {
-    "equipIdList": [],
-    "id": "10600335",
-    "ownerId": 10000159,
-    "skillId": 12301150,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600335,
+    "idCN": "00原版/03三星/圣剑波克士/A-1",
+    "name": "card_name_10600335",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600336": {
-    "equipIdList": [],
-    "id": "10600336",
-    "ownerId": 10000159,
-    "skillId": 12301151,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600336,
+    "idCN": "00原版/03三星/圣剑波克士/A-2",
+    "name": "card_name_10600336",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600337": {
-    "equipIdList": [],
-    "id": "10600337",
-    "ownerId": 10000159,
-    "skillId": 12301152,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600337,
+    "idCN": "00原版/03三星/圣剑波克士/A-3",
+    "name": "card_name_10600337",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600338": {
-    "equipIdList": [],
-    "id": "10600338",
-    "ownerId": 10000159,
-    "skillId": "12301148",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600338,
+    "idCN": "00原版/03三星/圣剑波克士/B",
+    "name": "card_name_10600338",
+    "color": "Red",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600339": {
-    "equipIdList": [],
-    "id": "10600339",
-    "ownerId": 10000159,
-    "skillId": "12301149",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600339,
+    "idCN": "00原版/03三星/圣剑波克士/S",
+    "name": "card_name_10600339",
+    "color": "Red",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200030,
+        "des": 80608006,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600024": {
+    "id": 10600024,
+    "idCN": "00原版/03三星/神盾波克士/A-0",
+    "name": "card_name_10600024",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600052": {
+    "id": 10600052,
+    "idCN": "00原版/03三星/神盾波克士/A-1",
+    "name": "card_name_10600052",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600068": {
+    "id": 10600068,
+    "idCN": "00原版/03三星/神盾波克士/B",
+    "name": "card_name_10600068",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600069": {
+    "id": 10600069,
+    "idCN": "00原版/03三星/神盾波克士/S",
+    "name": "card_name_10600069",
+    "color": "Green",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600070": {
+    "id": 10600070,
+    "idCN": "00原版/05五星/索玛/A",
+    "name": "card_name_10600070",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600072": {
+    "id": 10600072,
+    "idCN": "00原版/05五星/索玛/B",
+    "name": "card_name_10600072",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600100": {
+    "id": 10600100,
+    "idCN": "00原版/05五星/妮蔻拉/S",
+    "name": "card_name_10600100",
+    "color": "Red",
+    "cost_SN": 80000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600101": {
+    "id": 10600101,
+    "idCN": "00原版/05五星/妮蔻拉/B",
+    "name": "card_name_10600101",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600102": {
+    "id": 10600102,
+    "idCN": "00原版/05五星/妮蔻拉/A",
+    "name": "card_name_10600102",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600105": {
+    "id": 10600105,
+    "idCN": "00原版/05五星/雷比斯/A-0",
+    "name": "card_name_10600105",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600108": {
+    "id": 10600108,
+    "idCN": "00原版/05五星/雷比斯/A-1",
+    "name": "card_name_10600108",
+    "color": "Yellow",
+    "cost_SN": 50000,
+    "cardType": "Derive",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600111": {
+    "id": 10600111,
+    "idCN": "00原版/05五星/雷比斯/A-2",
+    "name": "card_name_10600111",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600120": {
+    "id": 10600120,
+    "idCN": "00原版/05五星/雷比斯/A-3",
+    "name": "card_name_10600120",
+    "color": "Blue",
+    "cost_SN": 30000,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600129": {
+    "id": 10600129,
+    "idCN": "00原版/05五星/雷比斯/B",
+    "name": "card_name_10600129",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600112": {
+    "id": 10600112,
+    "idCN": "00原版/05五星/雷比斯/S",
+    "name": "card_name_10600112",
+    "color": "Purple",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600146": {
+    "id": 10600146,
+    "idCN": "00原版/04四星/甘雅/B_振4",
+    "name": "card_name_10600146",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600147": {
+    "id": 10600147,
+    "idCN": "03中立卡/道具卡/引牌·壹",
+    "name": "card_name_10600147",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600157": {
+    "id": 10600157,
+    "idCN": "03中立卡/道具卡/引牌·贰",
+    "name": "card_name_10600157",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600179": {
+    "id": 10600179,
+    "idCN": "03中立卡/道具卡/引牌·叁",
+    "name": "card_name_10600179",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600180": {
+    "id": 10600180,
+    "idCN": "03中立卡/道具卡/接闪·壹",
+    "name": "card_name_10600180",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600181": {
+    "id": 10600181,
+    "idCN": "03中立卡/道具卡/接闪·贰",
+    "name": "card_name_10600181",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600195": {
+    "id": 10600195,
+    "idCN": "03中立卡/道具卡/接闪·叁",
+    "name": "card_name_10600195",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600196": {
+    "id": 10600196,
+    "idCN": "03中立卡/道具卡/凝冰·壹",
+    "name": "card_name_10600196",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600197": {
+    "id": 10600197,
+    "idCN": "03中立卡/道具卡/凝冰·贰",
+    "name": "card_name_10600197",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600198": {
+    "id": 10600198,
+    "idCN": "03中立卡/道具卡/凝冰·叁",
+    "name": "card_name_10600198",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600204": {
+    "id": 10600204,
+    "idCN": "03中立卡/道具卡/引火·壹",
+    "name": "card_name_10600204",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600205": {
+    "id": 10600205,
+    "idCN": "03中立卡/道具卡/引火·贰",
+    "name": "card_name_10600205",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600206": {
+    "id": 10600206,
+    "idCN": "03中立卡/道具卡/引火·叁",
+    "name": "card_name_10600206",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600217": {
+    "id": 10600217,
+    "idCN": "03中立卡/道具卡/巧击",
+    "name": "card_name_10600217",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600218": {
+    "id": 10600218,
+    "idCN": "03中立卡/道具卡/强打",
+    "name": "card_name_10600218",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600219": {
+    "id": 10600219,
+    "idCN": "03中立卡/道具卡/攻坚",
+    "name": "card_name_10600219",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600220": {
+    "id": 10600220,
+    "idCN": "03中立卡/道具卡/利锋百裂",
+    "name": "card_name_10600220",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600221": {
+    "id": 10600221,
+    "idCN": "03中立卡/道具卡/坚毅",
+    "name": "card_name_10600221",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600227": {
+    "id": 10600227,
+    "idCN": "03中立卡/道具卡/敛影",
+    "name": "card_name_10600227",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600228": {
+    "id": 10600228,
+    "idCN": "03中立卡/道具卡/神圣庇佑",
+    "name": "card_name_10600228",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600229": {
+    "id": 10600229,
+    "idCN": "03中立卡/道具卡/拘束",
+    "name": "card_name_10600229",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600230": {
+    "id": 10600230,
+    "idCN": "03中立卡/道具卡/昏聩咒言",
+    "name": "card_name_10600230",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600231": {
+    "id": 10600231,
+    "idCN": "03中立卡/道具卡/酣梦",
+    "name": "card_name_10600231",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600232": {
+    "id": 10600232,
+    "idCN": "03中立卡/道具卡/先攻",
+    "name": "card_name_10600232",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600238": {
+    "id": 10600238,
+    "idCN": "03中立卡/道具卡/抵抗",
+    "name": "card_name_10600238",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600340": {
+    "id": 10600340,
+    "idCN": "03中立卡/道具卡/疗愈",
+    "name": "card_name_10600340",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600341": {
+    "id": 10600341,
+    "idCN": "03中立卡/道具卡/整备",
+    "name": "card_name_10600341",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600342": {
+    "id": 10600342,
+    "idCN": "03中立卡/道具卡/秘术法则",
+    "name": "card_name_10600342",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600343": {
+    "id": 10600343,
+    "idCN": "03中立卡/道具卡/负能转换",
+    "name": "card_name_10600343",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600344": {
+    "id": 10600344,
+    "idCN": "03中立卡/道具卡/战术补给壹型",
+    "name": "card_name_10600344",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600345": {
+    "id": 10600345,
+    "idCN": "03中立卡/道具卡/战术补给贰型",
+    "name": "card_name_10600345",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600346": {
+    "id": 10600346,
+    "idCN": "03中立卡/道具卡/战术补给叁型",
+    "name": "card_name_10600346",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600347": {
+    "id": 10600347,
+    "idCN": "03中立卡/道具卡/战术补给肆型",
+    "name": "card_name_10600347",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600348": {
+    "id": 10600348,
+    "idCN": "03中立卡/道具卡/战术补给伍型",
+    "name": "card_name_10600348",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600148": {
+    "id": 10600148,
+    "idCN": "00原版/03三星/静流/A_振4",
+    "name": "card_name_10600148",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600254": {
+    "id": 10600254,
+    "idCN": "00原版/04四星/菲妮娅/A_振5",
+    "name": "card_name_10600254",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600258": {
+    "id": 10600258,
+    "idCN": "00原版/04四星/冯里奈/S_振5",
+    "name": "card_name_10600258",
+    "color": "Yellow",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      },
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600276": {
+    "id": 10600276,
+    "idCN": "00原版/05五星/薇尔岚/B-1_振4",
+    "name": "card_name_10600276",
+    "color": "Purple",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600295": {
+    "id": 10600295,
+    "idCN": "00原版/05五星/那由他/A",
+    "name": "card_name_10600295",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600296": {
+    "id": 10600296,
+    "idCN": "00原版/05五星/那由他/B",
+    "name": "card_name_10600296",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200026,
+        "des": 80608004,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600277": {
+    "id": 10600277,
+    "idCN": "00原版/05五星/那由他/S-0",
+    "name": "card_name_10600277",
+    "color": "Purple",
+    "cost_SN": 60000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600349": {
-    "equipIdList": [],
-    "id": "10600349",
-    "ownerId": 10000072,
-    "skillId": 12301492,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600349,
+    "idCN": "00原版/05五星/那由他/S-1",
+    "name": "card_name_10600349",
+    "color": "Yellow",
+    "cost_SN": 0,
+    "cardType": "UseOnce",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600350": {
-    "equipIdList": [],
-    "id": "10600350",
-    "ownerId": 10000072,
-    "skillId": 12301493,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
+    "id": 10600350,
+    "idCN": "00原版/05五星/那由他/S-2",
+    "name": "card_name_10600350",
+    "color": "Blue",
+    "cost_SN": 0,
+    "cardType": "UseOnce",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
   },
   "10600351": {
-    "equipIdList": [],
-    "id": "10600351",
-    "ownerId": 10000072,
-    "skillId": 12301494,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600351,
+    "idCN": "00原版/05五星/那由他/S-3",
+    "name": "card_name_10600351",
+    "color": "Red",
+    "cost_SN": 0,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600352": {
-    "equipIdList": [],
-    "id": "10600352",
-    "ownerId": 10000072,
-    "skillId": 12301488,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 5
-    },
-    "useType": 1
+    "id": 10600352,
+    "idCN": "00原版/05五星/那由他/S-4",
+    "name": "card_name_10600352",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
   },
   "10600353": {
-    "equipIdList": [],
-    "id": "10600353",
-    "ownerId": 10000072,
-    "skillId": "12301496",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600353,
+    "idCN": "00原版/05五星/那由他/S-0_振5",
+    "name": "card_name_10600353",
+    "color": "Purple",
+    "cost_SN": 60000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600354": {
+    "id": 10600354,
+    "idCN": "00原版/05五星/薇尔岚/B-0_振4",
+    "name": "card_name_10600354",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600130": {
+    "id": 10600130,
+    "idCN": "00原版/04四星/甘雅/S_振5",
+    "name": "card_name_10600130",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200026,
+        "des": 80608004,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600084": {
+    "id": 10600084,
+    "idCN": "00原版/03三星/塔拉/A_振1",
+    "name": "card_name_10600084",
+    "color": "Yellow",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600085": {
+    "id": 10600085,
+    "idCN": "00原版/03三星/塔拉/B_觉2",
+    "name": "card_name_10600085",
+    "color": "Yellow",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600142": {
+    "id": 10600142,
+    "idCN": "03中立卡/通用系/暗艺_非衍生",
+    "name": "card_name_10600142",
+    "color": "Purple",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600355": {
+    "id": 10600355,
+    "idCN": "00原版/05五星/夏尔/S",
+    "name": "card_name_10600355",
+    "color": "Purple",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600356": {
+    "id": 10600356,
+    "idCN": "00原版/05五星/夏尔/B",
+    "name": "card_name_10600356",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": [
+      {
+        "condId": 96300002,
+        "des": 80608010
+      },
+      {
+        "condId": 96300008,
+        "des": 80608011
+      },
+      {
+        "condId": 96300007,
+        "des": 80608012
+      }
+    ]
+  },
+  "10600357": {
+    "id": 10600357,
+    "idCN": "00原版/05五星/夏尔/A",
+    "name": "card_name_10600357",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600358": {
+    "id": 10600358,
+    "idCN": "00原版/05五星/夏尔/C",
+    "name": "card_name_10600358",
+    "color": "Red",
+    "cost_SN": 0,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600359": {
-    "equipIdList": [],
-    "id": "10600359",
-    "ownerId": 10000270,
-    "skillId": "12300149",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600359,
+    "idCN": "00原版/04四星/海因里希/B",
+    "name": "card_name_10600359",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
-  "10600360": {
-    "equipIdList": [],
-    "id": "10600360",
-    "ownerId": 10000276,
-    "skillId": "12300429",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+  "10600361": {
+    "id": 10600361,
+    "idCN": "00原版/04四星/海因里希/S",
+    "name": "card_name_10600361",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600362": {
-    "equipIdList": [],
-    "id": "10600362",
-    "ownerId": 10000270,
-    "skillId": "12300148",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600362,
+    "idCN": "00原版/04四星/海因里希/A",
+    "name": "card_name_10600362",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600360": {
+    "id": 10600360,
+    "idCN": "00原版/05五星/苔妮/S",
+    "name": "card_name_10600360",
+    "color": "Yellow",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600363": {
-    "equipIdList": [],
-    "id": "10600363",
-    "ownerId": 10000276,
-    "skillId": "12300283",
-    "skillIndex": 1,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600363,
+    "idCN": "00原版/05五星/苔妮/A",
+    "name": "card_name_10600363",
+    "color": "Yellow",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
   },
   "10600364": {
-    "equipIdList": [],
-    "id": "10600364",
-    "ownerId": 10000276,
-    "skillId": "12300411",
-    "skillIndex": 2,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600364,
+    "idCN": "00原版/05五星/苔妮/B",
+    "name": "card_name_10600364",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600366": {
-    "equipIdList": [],
-    "id": "10600366",
-    "ownerId": 10000270,
-    "skillId": "12301608",
-    "skillIndex": 3,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": [],
-    "useType": 1
+    "id": 10600366,
+    "idCN": "00原版/04四星/海因里希/S_振5",
+    "name": "card_name_10600366",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   },
   "10600367": {
-    "equipIdList": [],
-    "id": "10600367",
-    "ownerId": 10000031,
-    "skillId": 12301615,
-    "targetType": 0,
-    "useParam": -1,
-    "useParamMap": {
-      "3": 0
-    },
-    "useType": 1
+    "id": 10600367,
+    "idCN": "00原版/05五星/约书亚/S-1",
+    "name": "card_name_10600367",
+    "color": "Red",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [
+      {
+        "condId": 96200030,
+        "des": 80608006,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600368": {
+    "id": 10600368,
+    "idCN": "00原版/05五星/夏洛蒂/A_觉5",
+    "name": "card_name_10600368",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600119": {
+    "id": 10600119,
+    "idCN": "00原版/05五星/达斯廷/A_振1",
+    "name": "card_name_10600119",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600136": {
+    "id": 10600136,
+    "idCN": "00原版/05五星/索玛/S-0",
+    "name": "card_name_10600136",
+    "color": "Purple",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600086": {
+    "id": 10600086,
+    "idCN": "00原版/05五星/索玛/S-1",
+    "name": "card_name_10600086",
+    "color": "Red",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600365": {
+    "id": 10600365,
+    "idCN": "00原版/05五星/索玛/B_大范围",
+    "name": "card_name_10600365",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600369": {
+    "id": 10600369,
+    "idCN": "00原版/05五星/索玛/A_大范围",
+    "name": "card_name_10600369",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600370": {
+    "id": 10600370,
+    "idCN": "00原版/05五星/索玛/S-1_大范围",
+    "name": "card_name_10600370",
+    "color": "Red",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600306": {
+    "id": 10600306,
+    "idCN": "00原版/05五星/安菲娅/S",
+    "name": "card_name_10600306",
+    "color": "Purple",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600071": {
+    "id": 10600071,
+    "idCN": "00原版/05五星/安菲娅/A-0",
+    "name": "card_name_10600071",
+    "color": "Purple",
+    "cost_SN": 10000,
+    "cardType": "UseOnce",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600083": {
+    "id": 10600083,
+    "idCN": "00原版/05五星/安菲娅/A-1",
+    "name": "card_name_10600083",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600243": {
+    "id": 10600243,
+    "idCN": "00原版/05五星/安菲娅/A-2",
+    "name": "card_name_10600243",
+    "color": "Purple",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600246": {
+    "id": 10600246,
+    "idCN": "00原版/05五星/安菲娅/A-3",
+    "name": "card_name_10600246",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600261": {
+    "id": 10600261,
+    "idCN": "00原版/05五星/安菲娅/B",
+    "name": "card_name_10600261",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600371": {
+    "id": 10600371,
+    "idCN": "00原版/05五星/丽桑德拉/A-0",
+    "name": "card_name_10600371",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600372": {
+    "id": 10600372,
+    "idCN": "00原版/05五星/丽桑德拉/A-1",
+    "name": "card_name_10600372",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "Derive",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600373": {
+    "id": 10600373,
+    "idCN": "00原版/05五星/丽桑德拉/A-2",
+    "name": "card_name_10600373",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "UseOnce",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600374": {
+    "id": 10600374,
+    "idCN": "00原版/05五星/丽桑德拉/B",
+    "name": "card_name_10600374",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      },
+      {
+        "condId": 96200029,
+        "des": 80608007,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600375": {
+    "id": 10600375,
+    "idCN": "00原版/05五星/丽桑德拉/S",
+    "name": "card_name_10600375",
+    "color": "Red",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200026,
+        "des": 80608004,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600377": {
+    "id": 10600377,
+    "idCN": "00原版/05五星/泳装静流/A",
+    "name": "card_name_10600377",
+    "color": "Yellow",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": [
+      {
+        "condId": 96300002,
+        "des": 80608010
+      },
+      {
+        "condId": 96300003,
+        "des": 80608013
+      }
+    ]
+  },
+  "10600378": {
+    "id": 10600378,
+    "idCN": "00原版/05五星/泳装静流/A_共振1",
+    "name": "card_name_10600378",
+    "color": "Yellow",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": [
+      {
+        "condId": 96300002,
+        "des": 80608010
+      },
+      {
+        "condId": 96300003,
+        "des": 80608013
+      }
+    ]
+  },
+  "10600379": {
+    "id": 10600379,
+    "idCN": "00原版/05五星/泳装静流/A_共振4",
+    "name": "card_name_10600379",
+    "color": "Yellow",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": [
+      {
+        "condId": 96300002,
+        "des": 80608010
+      },
+      {
+        "condId": 96300003,
+        "des": 80608013
+      }
+    ]
+  },
+  "10600380": {
+    "id": 10600380,
+    "idCN": "00原版/05五星/泳装静流/B",
+    "name": "card_name_10600380",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600381": {
+    "id": 10600381,
+    "idCN": "00原版/05五星/泳装静流/S",
+    "name": "card_name_10600381",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600382": {
+    "id": 10600382,
+    "idCN": "00原版/05五星/泳装静流/C",
+    "name": "card_name_10600382",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "UseOnce",
+    "ExCondList": [
+      {
+        "condId": 96200029,
+        "des": 80608007,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      },
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600383": {
+    "id": 10600383,
+    "idCN": "00原版/05五星/泳装静流/B_觉醒1",
+    "name": "card_name_10600383",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600384": {
+    "id": 10600384,
+    "idCN": "00原版/50测试/测试单位/S",
+    "name": "card_name_10600384",
+    "color": "Blue",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600385": {
+    "id": 10600385,
+    "idCN": "00原版/50测试/测试单位/A",
+    "name": "card_name_10600385",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600386": {
+    "id": 10600386,
+    "idCN": "00原版/50测试/测试单位/B",
+    "name": "card_name_10600386",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600387": {
+    "id": 10600387,
+    "idCN": "00原版/05五星/雅莱/A",
+    "name": "card_name_10600387",
+    "color": "Purple",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600388": {
+    "id": 10600388,
+    "idCN": "00原版/05五星/雅莱/B",
+    "name": "card_name_10600388",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600376": {
+    "id": 10600376,
+    "idCN": "00原版/05五星/雅莱/S",
+    "name": "card_name_10600376",
+    "color": "Purple",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600389": {
+    "id": 10600389,
+    "idCN": "00原版/05五星/雅莱/C-1",
+    "name": "card_name_10600389",
+    "color": "Blue",
+    "cost_SN": 10000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600390": {
+    "id": 10600390,
+    "idCN": "00原版/05五星/雅莱/C-2",
+    "name": "card_name_10600390",
+    "color": "Yellow",
+    "cost_SN": 10000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600391": {
+    "id": 10600391,
+    "idCN": "00原版/05五星/雅莱/C-3",
+    "name": "card_name_10600391",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600392": {
+    "id": 10600392,
+    "idCN": "00原版/05五星/伊索斯/S",
+    "name": "card_name_10600392",
+    "color": "Green",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600393": {
+    "id": 10600393,
+    "idCN": "00原版/05五星/伊索斯/B",
+    "name": "card_name_10600393",
+    "color": "Green",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      },
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600394": {
+    "id": 10600394,
+    "idCN": "00原版/05五星/伊索斯/A",
+    "name": "card_name_10600394",
+    "color": "Green",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600395": {
+    "id": 10600395,
+    "idCN": "00原版/05五星/雅莱/A共振4",
+    "name": "card_name_10600395",
+    "color": "Purple",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600001": {
+    "id": 10600001,
+    "idCN": "00原版/05五星/帕拉笛/S",
+    "name": "card_name_10600001",
+    "color": "Red",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600322": {
+    "id": 10600322,
+    "idCN": "00原版/05五星/帕拉笛/B",
+    "name": "card_name_10600322",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600323": {
+    "id": 10600323,
+    "idCN": "00原版/05五星/帕拉笛/A",
+    "name": "card_name_10600323",
+    "color": "Blue",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600397": {
+    "id": 10600397,
+    "idCN": "00原版/05五星/生驹/A",
+    "name": "card_name_10600397",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600398": {
+    "id": 10600398,
+    "idCN": "00原版/05五星/生驹/B",
+    "name": "card_name_10600398",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600399": {
+    "id": 10600399,
+    "idCN": "00原版/05五星/生驹/C",
+    "name": "card_name_10600399",
+    "color": "Purple",
+    "cost_SN": 40000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600400": {
+    "id": 10600400,
+    "idCN": "00原版/05五星/生驹/S",
+    "name": "card_name_10600400",
+    "color": "Red",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600042": {
+    "id": 10600042,
+    "idCN": "06敌方/14学会/魂钉",
+    "name": "card_name_10600042",
+    "color": "Red",
+    "cost_SN": 90000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600401": {
+    "id": 10600401,
+    "idCN": "06敌方/14学会/斩击",
+    "name": "card_name_10600401",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600402": {
+    "id": 10600402,
+    "idCN": "00原版/05五星/夏洛蒂/S觉醒5",
+    "name": "card_name_10600402",
+    "color": "Red",
+    "cost_SN": 60000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600403": {
+    "id": 10600403,
+    "idCN": "00原版/05五星/佩罗塔/A",
+    "name": "card_name_10600403",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600404": {
+    "id": 10600404,
+    "idCN": "00原版/05五星/佩罗塔/B",
+    "name": "card_name_10600404",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600405": {
+    "id": 10600405,
+    "idCN": "00原版/05五星/佩罗塔/S-0",
+    "name": "card_name_10600405",
+    "color": "Purple",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600406": {
+    "id": 10600406,
+    "idCN": "00原版/05五星/佩罗塔/S-1十万伏特",
+    "name": "card_name_10600406",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600407": {
+    "id": 10600407,
+    "idCN": "00原版/05五星/佩罗塔/S-2百万伏特",
+    "name": "card_name_10600407",
+    "color": "Orange",
+    "cost_SN": 50000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600408": {
+    "id": 10600408,
+    "idCN": "00原版/03三星/金子小姐/A",
+    "name": "card_name_10600408",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600409": {
+    "id": 10600409,
+    "idCN": "00原版/03三星/金子小姐/S",
+    "name": "card_name_10600409",
+    "color": "Red",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600411": {
+    "id": 10600411,
+    "idCN": "00原版/03三星/金子小姐/B",
+    "name": "card_name_10600411",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600413": {
+    "id": 10600413,
+    "idCN": "00原版/05五星/无名/A",
+    "name": "card_name_10600413",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600414": {
+    "id": 10600414,
+    "idCN": "00原版/05五星/无名/B",
+    "name": "card_name_10600414",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600415": {
+    "id": 10600415,
+    "idCN": "00原版/05五星/无名/S",
+    "name": "card_name_10600415",
+    "color": "Red",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600416": {
+    "id": 10600416,
+    "idCN": "00原版/05五星/罗洁尔_人/S",
+    "name": "card_name_10600416",
+    "color": "Yellow",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600417": {
+    "id": 10600417,
+    "idCN": "00原版/05五星/罗洁尔_人/B",
+    "name": "card_name_10600417",
+    "color": "Yellow",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600418": {
+    "id": 10600418,
+    "idCN": "00原版/05五星/罗洁尔_人/A",
+    "name": "card_name_10600418",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600419": {
+    "id": 10600419,
+    "idCN": "00原版/05五星/罗洁尔_人/A共振4",
+    "name": "card_name_10600419",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600410": {
+    "id": 10600410,
+    "idCN": "06敌方/联动_甲铁城/侵蚀",
+    "name": "card_name_10600410",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600012": {
+    "id": 10600012,
+    "idCN": "00原版/05五星/帕拉笛/B共振2",
+    "name": "card_name_10600012",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600396": {
+    "id": 10600396,
+    "idCN": "00原版/05五星/乌刹娜/B",
+    "name": "card_name_10600396",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600429": {
+    "id": 10600429,
+    "idCN": "00原版/05五星/乌刹娜/S",
+    "name": "card_name_10600429",
+    "color": "Red",
+    "cost_SN": 90000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600430": {
+    "id": 10600430,
+    "idCN": "00原版/05五星/乌刹娜/A",
+    "name": "card_name_10600430",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600431": {
+    "id": 10600431,
+    "idCN": "00原版/05五星/乌刹娜/A共振2",
+    "name": "card_name_10600431",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600432": {
+    "id": 10600432,
+    "idCN": "00原版/05五星/伊洛娜/A_爆炸物",
+    "name": "card_name_10600432",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600433": {
+    "id": 10600433,
+    "idCN": "00原版/05五星/罗洁尔_天使/B",
+    "name": "card_name_10600433",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600434": {
+    "id": 10600434,
+    "idCN": "00原版/05五星/罗洁尔_天使/S",
+    "name": "card_name_10600434",
+    "color": "Red",
+    "cost_SN": 60000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600436": {
+    "id": 10600436,
+    "idCN": "00原版/05五星/罗洁尔_天使/A",
+    "name": "card_name_10600436",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600438": {
+    "id": 10600438,
+    "idCN": "00原版/02二星/波克士/A-0_觉4",
+    "name": "card_name_10600438",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600412": {
+    "id": 10600412,
+    "idCN": "00原版/05五星/罗洁尔_天使/C",
+    "name": "card_name_10600412",
+    "color": "Purple",
+    "cost_SN": 20000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600437": {
+    "id": 10600437,
+    "idCN": "00原版/05五星/泳装静流/C_觉醒4",
+    "name": "card_name_10600437",
+    "color": "Purple",
+    "cost_SN": 0,
+    "cardType": "UseOnce",
+    "ExCondList": [
+      {
+        "condId": 96200029,
+        "des": 80608007,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      },
+      {
+        "condId": 96200031,
+        "des": 80608005,
+        "interValNum": 12,
+        "isNumCond": true,
+        "minNum": 0,
+        "numDuration": 1,
+        "typeEnum": "number"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600439": {
+    "id": 10600439,
+    "idCN": "00原版/05五星/莱卡吉亚/A",
+    "name": "card_name_10600439",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600425": {
+    "id": 10600425,
+    "idCN": "00原版/05五星/莱卡吉亚/B",
+    "name": "card_name_10600425",
+    "color": "Blue",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600422": {
+    "id": 10600422,
+    "idCN": "00原版/05五星/莱卡吉亚/S",
+    "name": "card_name_10600422",
+    "color": "Red",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600428": {
+    "id": 10600428,
+    "idCN": "00原版/05五星/莱卡吉亚/A_共振2",
+    "name": "card_name_10600428",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600435": {
+    "id": 10600435,
+    "idCN": "08敌方角色/商会/小铃/C清算",
+    "name": "card_name_10600435",
+    "color": "Red",
+    "cost_SN": 0,
+    "cardType": "Derive",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600441": {
+    "id": 10600441,
+    "idCN": "06敌方/14学会/厮杀",
+    "name": "card_name_10600441",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600440": {
+    "id": 10600440,
+    "idCN": "06敌方/14学会/桎梏",
+    "name": "card_name_10600440",
+    "color": "Purple",
+    "cost_SN": 200000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600442": {
+    "id": 10600442,
+    "idCN": "00原版/05五星/奥莉薇恩/A",
+    "name": "茶时法则",
+    "color": "Yellow",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600443": {
+    "id": 10600443,
+    "idCN": "00原版/05五星/奥莉薇恩/B",
+    "name": "拭尘契约",
+    "color": "Blue",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": [
+      {
+        "condId": 96300003,
+        "des": 80608013
+      },
+      {
+        "condId": 96300009,
+        "des": 80610277
+      },
+      {
+        "condId": 96300010,
+        "des": 80610278
+      }
+    ]
+  },
+  "10600444": {
+    "id": 10600444,
+    "idCN": "00原版/05五星/奥莉薇恩/S",
+    "name": "鎏晶茶仪",
+    "color": "Purple",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600445": {
+    "id": 10600445,
+    "idCN": "00原版/05五星/奥莉薇恩/A共振一",
+    "name": "茶时法则",
+    "color": "Yellow",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600447": {
+    "id": 10600447,
+    "idCN": "00原版/05五星/涟/A",
+    "name": "崩裂",
+    "color": "Red",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600448": {
+    "id": 10600448,
+    "idCN": "00原版/05五星/涟/B",
+    "name": "注视",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": [
+      {
+        "condId": 96300002,
+        "des": 80608010
+      }
+    ]
+  },
+  "10600449": {
+    "id": 10600449,
+    "idCN": "00原版/05五星/涟/S",
+    "name": "虚影视界",
+    "color": "Purple",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600446": {
+    "id": 10600446,
+    "idCN": "00原版/05五星/涟/S_共振5",
+    "name": "虚影视界",
+    "color": "Purple",
+    "cost_SN": 40000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600450": {
+    "id": 10600450,
+    "idCN": "00原版/05五星/涟/B_觉醒2",
+    "name": "注视",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": [
+      {
+        "condId": 96300009,
+        "des": 80610277
+      },
+      {
+        "condId": 96300010,
+        "des": 80610278
+      },
+      {
+        "condId": 96300002,
+        "des": 80608010
+      },
+      {
+        "condId": 96300004,
+        "des": 80610289
+      }
+    ]
+  },
+  "10600451": {
+    "id": 10600451,
+    "idCN": "00原版/05五星/马吉拉·星仪/S",
+    "name": "命运之轮",
+    "color": "Purple",
+    "cost_SN": 50000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600452": {
+    "id": 10600452,
+    "idCN": "00原版/05五星/马吉拉·星仪/B",
+    "name": "塔",
+    "color": "Purple",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600453": {
+    "id": 10600453,
+    "idCN": "00原版/05五星/马吉拉·星仪/A-3",
+    "name": "太阳",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600454": {
+    "id": 10600454,
+    "idCN": "00原版/05五星/马吉拉·星仪/A-2",
+    "name": "月亮",
+    "color": "Blue",
+    "cost_SN": 10000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600455": {
+    "id": 10600455,
+    "idCN": "00原版/05五星/马吉拉·星仪/A-1",
+    "name": "星星",
+    "color": "Yellow",
+    "cost_SN": 10000,
+    "cardType": "UseOnce",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600456": {
+    "id": 10600456,
+    "idCN": "00原版/05五星/马吉拉·星仪/A-0",
+    "name": "女祭司",
+    "color": "Purple",
+    "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
   }
 }
