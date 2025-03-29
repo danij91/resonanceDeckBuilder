@@ -2,6 +2,7 @@
 import { useState } from "react"
 import type { Card, CardExtraInfo } from "../types"
 import { ChevronLeft, ChevronRight, PlusIcon as MoreThan, MinusIcon as LessThan, Equal } from "lucide-react"
+import React from "react"
 
 interface CardSettingsModalProps {
   card: Card
@@ -29,6 +30,38 @@ export function CardSettingsModal({
   const [useType, setUseType] = useState(initialUseType)
   const [useParam, setUseParam] = useState(initialUseParam)
   const [useParamMap, setUseParamMap] = useState<Record<string, number>>(initialUseParamMap)
+
+  // Function to format text with color tags
+  const formatColorText = (text: string) => {
+    if (!text) return ""
+
+    // Replace <color=#XXXXXX>text</color> with styled spans
+    const formattedText = text.split(/(<color=#[A-Fa-f0-9]{6}>.*?<\/color>)/).map((part, index) => {
+      const colorMatch = part.match(/<color=#([A-Fa-f0-9]{6})>(.*?)<\/color>/)
+      if (colorMatch) {
+        const [_, colorCode, content] = colorMatch
+        return (
+          <span key={index} style={{ color: `#${colorCode}` }}>
+            {content}
+          </span>
+        )
+      }
+
+      // Handle newlines by replacing \n with <br />
+      return part.split("\\n").map((line, i) =>
+        i === 0 ? (
+          line
+        ) : (
+          <React.Fragment key={`line-${index}-${i}`}>
+            <br />
+            {line}
+          </React.Fragment>
+        ),
+      )
+    })
+
+    return formattedText
+  }
 
   // 숫자 입력값 변경 핸들러
   const handleParamChange = (optionIndex: number, value: number, minNum: number, maxNum: number) => {
@@ -158,8 +191,8 @@ export function CardSettingsModal({
               </div>
             </div>
 
-            {/* 카드 설명 */}
-            <div className="text-gray-300 mb-4">{getTranslatedString(extraInfo.desc)}</div>
+            {/* 카드 설명 - 포맷팅 적용 */}
+            <div className="text-gray-300 mb-4">{formatColorText(getTranslatedString(extraInfo.desc))}</div>
           </div>
 
           {/* 오른쪽 - 사용 설정 */}
@@ -264,7 +297,7 @@ export function CardSettingsModal({
                               >
                                 <ChevronLeft className="w-4 h-4" />
                               </button>
-                              <span className="px-2 font-bold">{currentValue}%</span>
+                              <span className="px-2 font-bold">{currentValue}</span>
                               <button
                                 className="w-6 h-6 bg-black bg-opacity-20 rounded-r flex items-center justify-center"
                                 onClick={() => handleParamChange(optionIndex, currentValue + step, minNum, maxNum)}

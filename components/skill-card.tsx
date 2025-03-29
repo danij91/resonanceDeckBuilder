@@ -14,7 +14,6 @@ interface SkillCardProps {
 }
 
 export function SkillCard({
-  card,
   extraInfo,
   getTranslatedString,
   onRemove,

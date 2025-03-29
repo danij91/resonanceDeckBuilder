@@ -154,47 +154,67 @@ export default function DeckBuilder({ lang }: DeckBuilderProps) {
 
           <SkillWindow
             selectedCards={deckBuilder.selectedCards}
-            availableCards={deckBuilder.availableCards.map(({ card }) => {
-              // 카드 정보 가져오기
-              const extraInfo = {
-                name: card.name,
-                desc: card.name, // 실제로는 카드 설명이 필요합니다
-                cost: card.cost_SN ? Math.floor(card.cost_SN / 10000) : 0, // cost_SN을 10000으로 나눈 정수값
-                amount: 1, // 기본값
-                img_url: null, // 기본값은 null로 설정
-                specialCtrl: card.ExCondList?.map((cond) => cond.condId?.toString()) || [],
-              }
+            availableCards={deckBuilder.selectedCards
+              .map((selectedCard) => {
+                // 카드 정보 가져오기
+                const card = data.cards[selectedCard.id]
+                if (!card) return null
 
-              // 카드 이미지 URL 찾기
-              // 1. 먼저 card_id로 찾기
-              if (data.images[`card_${card.id}`]) {
-                extraInfo.img_url = data.images[`card_${card.id}`]
-              } else {
-                // 2. 스킬 ID로 찾기
-                // 카드에 해당하는 스킬 찾기
-                for (const skillId in data.skills) {
-                  const skill = data.skills[skillId]
-                  if (skill.cardID && skill.cardID.toString() === card.id.toString()) {
-                    // skill_id 형식으로 이미지 찾기
-                    if (data.images[`skill_${skillId}`]) {
-                      extraInfo.img_url = data.images[`skill_${skillId}`]
+                const extraInfo = {
+                  name: card.name,
+                  desc: "", // 기본값은 빈 문자열
+                  cost: card.cost_SN ? Math.floor(card.cost_SN / 10000) : 1, // cost_SN을 10000으로 나눈 정수값
+                  amount: 1, // 기본값
+                  img_url: null, // 기본값은 null로 설정
+                  specialCtrl: card.ExCondList?.map((cond) => cond.condId?.toString()) || [],
+                }
+
+                // 카드 이미지 URL 찾기
+                // 1. 먼저 card_id로 찾기
+                if (data.images[`card_${card.id}`]) {
+                  extraInfo.img_url = data.images[`card_${card.id}`]
+                } else {
+                  // 2. 스킬 ID로 찾기
+                  // 카드에 해당하는 스킬 찾기
+                  for (const skillId in data.skills) {
+                    const skill = data.skills[skillId]
+                    if (skill.cardID && skill.cardID.toString() === card.id.toString()) {
+                      // skill_id 형식으로 이미지 찾기
+                      if (data.images[`skill_${skillId}`]) {
+                        extraInfo.img_url = data.images[`skill_${skillId}`]
+                      }
+
+                      // 스킬 설명 키 설정
+                      extraInfo.desc = `skill_description_${skillId}`
                       break
                     }
                   }
                 }
-              }
 
-              // 이미지가 없으면 캐릭터 이미지 사용
-              let characterImage
-              if (card.ownerId) {
-                const character = data.characters[card.ownerId.toString()]
-                if (character && character.img_card) {
-                  characterImage = character.img_card
+                // 캐릭터 이미지 찾기
+                let characterImage = null
+
+                // 1. 카드의 ownerId 확인
+                let ownerId = card.ownerId
+
+                // 2. 임포트된 데이터에서 ownerId 확인 (임포트된 카드에 ownerId가 있는 경우)
+                // 임포트된 카드 정보에서 ownerId 찾기
+                const importedCardInfo = deckBuilder.selectedCards.find((c) => c.id === card.id.toString())
+                if (importedCardInfo && importedCardInfo.ownerId) {
+                  ownerId = importedCardInfo.ownerId
                 }
-              }
 
-              return { card, extraInfo, characterImage }
-            })}
+                // 3. ownerId로 캐릭터 이미지 찾기
+                if (ownerId) {
+                  const character = data.characters[ownerId.toString()]
+                  if (character && character.img_card) {
+                    characterImage = character.img_card
+                  }
+                }
+
+                return { card, extraInfo, characterImage }
+              })
+              .filter(Boolean)}
             onAddCard={deckBuilder.addCard}
             onRemoveCard={deckBuilder.removeCard}
             onReorderCards={deckBuilder.reorderCards}
