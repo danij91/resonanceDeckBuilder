@@ -25,7 +25,7 @@
   "close": "닫기",
   "none": "없음",
   "edit": "편집",
-  "export_success": "내보내기에 성공했습니다!",
+  "export_success": "성공적으로 클립보드에 복사했습니다!",
   "export_failed": "내보내기에 실패했습니다!",
   "import_success": "가져오기에 성공했습니다!",
   "import_failed": "가져오기에 실패했습니다!",

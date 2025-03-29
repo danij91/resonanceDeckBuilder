@@ -102,8 +102,8 @@ export function BattleSettings({ settings, onUpdateSettings, getTranslatedString
                 className="w-full p-2 border border-gray-700 bg-gray-800 rounded text-sm"
               >
                 <option value={0}>{getTranslatedString("battle.discard.off") || "Off"}</option>
-                <option value={1}>{getTranslatedString("battle.discard.auto") || "Auto"}</option>
-                <option value={2}>{getTranslatedString("battle.discard.manual") || "Manual"}</option>
+                <option value={1}>{getTranslatedString("battle.discard.active") || "Active"}</option>
+                <option value={2}>{getTranslatedString("battle.discard.empty") || "Empty"}</option>
               </select>
             </div>
           </div>
