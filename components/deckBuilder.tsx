@@ -178,7 +178,7 @@ export default function DeckBuilder({ lang, urlDeckCode }: DeckBuilderProps) {
                 const extraInfo = {
                   name: card.name,
                   desc: "", // 기본값은 빈 문자열
-                  cost: card.cost_SN ? Math.floor(card.cost_SN / 10000) : 1, // cost_SN을 10000으로 나눈 정수값
+                  cost: card.cost_SN ? Math.floor(card.cost_SN / 10000) : 0, // cost_SN을 10000으로 나눈 정수값
                   amount: 1, // 기본값
                   img_url: null, // 기본값은 null로 설정
                   specialCtrl: card.ExCondList?.map((cond) => cond.condId?.toString()) || [],
