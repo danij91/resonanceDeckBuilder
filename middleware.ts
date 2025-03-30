@@ -1,50 +1,48 @@
 import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
 
-// ISO 국가 코드 → 언어 코드 매핑
-const countryToLanguage: Record<string, string> = {
-  KR: "ko",
-  US: "en",
-  JP: "jp",
-  CN: "cn",
-  TW: "cn", // 필요시 추가
-}
-
+// Supported languages
 const supportedLanguages = ["en", "ko", "jp", "cn"]
 const defaultLanguage = "en"
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
+  const searchParams = request.nextUrl.searchParams.toString()
+  const queryString = searchParams ? `?${searchParams}` : ""
 
-  // 이미 언어가 포함된 경로는 그대로 진행
+  // Check if the pathname already includes a language
   const pathnameHasLanguage = supportedLanguages.some(
     (lang) => pathname.startsWith(`/${lang}/`) || pathname === `/${lang}`,
   )
+
   if (pathnameHasLanguage) return NextResponse.next()
 
-  // 루트 접근 시 국가 기반 리디렉션 우선
-  if (pathname === "/") {
-    const countryCode = request.geo?.country || ""
-    const countryLang = countryToLanguage[countryCode] || defaultLanguage
-    return NextResponse.redirect(new URL(`/${countryLang}`, request.url))
-  }
-
-  // 그 외에는 accept-language 기반
+  // 브라우저의 언어 코드 감지
   const acceptLanguage = request.headers.get("accept-language")
   let detectedLanguage = defaultLanguage
 
   if (acceptLanguage) {
+    // Extract language code (e.g., 'en-US' -> 'en')
     const preferredLanguage = acceptLanguage.split(",")[0].split("-")[0]
+
     if (supportedLanguages.includes(preferredLanguage)) {
       detectedLanguage = preferredLanguage
     }
   }
 
-  return NextResponse.redirect(new URL(`/${detectedLanguage}${pathname}`, request.url))
+  // Redirect to default language if accessing root
+  if (pathname === "/") {
+    return NextResponse.redirect(new URL(`/${detectedLanguage}${queryString}`, request.url))
+  }
+
+  // 다른 경로에 접근할 때도 쿼리 파라미터 유지
+  return NextResponse.redirect(new URL(`/${detectedLanguage}${pathname}${queryString}`, request.url))
 }
 
 export const config = {
   matcher: [
+    // Skip all internal paths (_next, api, etc)
     "/((?!api|_next/static|_next/image|favicon.ico).*)",
   ],
 }
+

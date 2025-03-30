@@ -52,15 +52,11 @@ export function SkillWindow({
   getTranslatedString,
   specialControls,
 }: SkillWindowProps) {
-  console.log("SkillWindow - selectedCards:", selectedCards)
-  console.log("SkillWindow - availableCards:", availableCards)
-
   const [editingCard, setEditingCard] = useState<string | null>(null)
 
   const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 5 } }))
 
   const handleEditCard = (cardId: string) => {
-    console.log("Edit card clicked:", cardId)
     setEditingCard(cardId)
   }
 
@@ -109,13 +105,9 @@ export function SkillWindow({
             <SortableContext items={selectedCards.map((c) => c.id)} strategy={rectSortingStrategy}>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-4 auto-rows-max w-full">
                 {selectedCards.map((selectedCard) => {
-                  console.log("Processing selectedCard:", selectedCard)
-
                   const cardInfo = availableCards.find((c) => c.card.id.toString() === selectedCard.id.toString())
-                  console.log("Found cardInfo:", cardInfo)
 
                   if (!cardInfo) {
-                    console.log("Card info not found for:", selectedCard.id)
                     return null
                   }
 

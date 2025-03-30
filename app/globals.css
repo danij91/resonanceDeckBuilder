@@ -29,6 +29,17 @@ body {
   .animate-fadeIn {
     animation: fadeIn 0.2s ease-in-out;
   }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
 @keyframes fadeIn {
@@ -121,5 +132,67 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.animate-glitch {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+
+.animate-glitch-delay {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  animation-delay: 0.15s;
+}
+
+/* Add these classes at the end of your globals.css file */
+
+/* Hidden classes for width measurement */
+.temp-measure-full {
+  position: absolute !important;
+  visibility: hidden !important;
+  display: flex !important;
+  white-space: nowrap !important;
+}
+
+.temp-measure-full span {
+  display: inline-block !important;
+}
+
+.temp-measure-icon {
+  position: absolute !important;
+  visibility: hidden !important;
+  display: flex !important;
+}
+
+.temp-measure-icon span {
+  display: none !important;
+}
+
+/* Ensure the container doesn't exceed the content width */
+.container {
+  width: 100%;
+  max-width: 1280px; /* or whatever your max content width is */
+  margin-left: auto;
+  margin-right: auto;
 }
 
