@@ -1,10 +1,11 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import type React from "react"
+import type { Metadata } from "next"
+import "./globals.css"
 
 export const metadata: Metadata = {
-  title: 'Resonance Deck Builder',
-  description: 'Created with lots of AI',
-  generator: 'ralf',
+  title: "Resonance Deck Builder",
+  description: "Created with lots of AI",
+  generator: "ralf",
 }
 
 export default function RootLayout({
@@ -18,3 +19,7 @@ export default function RootLayout({
     </html>
   )
 }
+
+
+
+import './globals.css'

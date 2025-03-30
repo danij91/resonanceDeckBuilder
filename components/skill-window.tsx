@@ -5,7 +5,10 @@ import type React from "react"
 import { useState } from "react"
 import type { Card, CardExtraInfo, SpecialControl } from "../types"
 import { SkillCard } from "./skill-card"
+// 기존 import 문에서 변경
 import { CardSettingsModal } from "./card-settings-modal"
+// 기존 import에서 제거
+// import { SkillInfoModal } from "./ui/modal/SkillInfoModal"
 
 // dnd-kit import
 import { DndContext, closestCenter, PointerSensor, useSensor, useSensors } from "@dnd-kit/core"
@@ -52,15 +55,11 @@ export function SkillWindow({
   getTranslatedString,
   specialControls,
 }: SkillWindowProps) {
-  console.log("SkillWindow - selectedCards:", selectedCards)
-  console.log("SkillWindow - availableCards:", availableCards)
-
   const [editingCard, setEditingCard] = useState<string | null>(null)
 
   const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 5 } }))
 
   const handleEditCard = (cardId: string) => {
-    console.log("Edit card clicked:", cardId)
     setEditingCard(cardId)
   }
 
@@ -96,10 +95,10 @@ export function SkillWindow({
   return (
     <div className="w-full mt-8">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-bold">{getTranslatedString("skill.section.title") || "Skills"}</h2>
+        <h2 className="neon-section-title">{getTranslatedString("skill.section.title") || "Skills"}</h2>
       </div>
 
-      <div className="bg-gray-900 border border-gray-700 rounded-lg min-h-[300px] p-4 overflow-auto">
+      <div className="neon-container p-4 min-h-[300px] overflow-auto">
         {selectedCards.length === 0 ? (
           <div className="flex items-center justify-center h-[300px] text-gray-400">
             {getTranslatedString("no.skill.cards") || "No skill cards"}
@@ -109,13 +108,9 @@ export function SkillWindow({
             <SortableContext items={selectedCards.map((c) => c.id)} strategy={rectSortingStrategy}>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-4 auto-rows-max w-full">
                 {selectedCards.map((selectedCard) => {
-                  console.log("Processing selectedCard:", selectedCard)
-
                   const cardInfo = availableCards.find((c) => c.card.id.toString() === selectedCard.id.toString())
-                  console.log("Found cardInfo:", cardInfo)
 
                   if (!cardInfo) {
-                    console.log("Card info not found for:", selectedCard.id)
                     return null
                   }
 
@@ -144,15 +139,15 @@ export function SkillWindow({
 
       {editingCard && editingCardInfo && editingCardSettings && (
         <CardSettingsModal
+          isOpen={true}
+          onClose={handleCloseModal}
           card={editingCardInfo.card}
           extraInfo={editingCardInfo.extraInfo}
           initialUseType={editingCardSettings.useType}
           initialUseParam={editingCardSettings.useParam}
           initialUseParamMap={editingCardSettings.useParamMap}
           onSave={handleSaveCardSettings}
-          onClose={handleCloseModal}
           getTranslatedString={getTranslatedString}
-          specialControls={specialControls}
           characterImage={editingCardInfo.characterImage}
         />
       )}

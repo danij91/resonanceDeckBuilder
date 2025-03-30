@@ -29,9 +29,9 @@ export function BattleSettings({ settings, onUpdateSettings, getTranslatedString
 
   return (
     <div className="w-full mt-8">
-      <h2 className="text-xl font-bold mb-4">{getTranslatedString("battle.section.title") || "Battle Settings"}</h2>
+      <h2 className="neon-section-title">{getTranslatedString("battle.section.title") || "Battle Settings"}</h2>
 
-      <div className="bg-gray-900 border border-gray-700 rounded-lg p-6">
+      <div className="neon-container p-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-6">
             {/* Leader Skill Toggle */}
@@ -45,19 +45,22 @@ export function BattleSettings({ settings, onUpdateSettings, getTranslatedString
                   id="isLeaderCardOn"
                   checked={settings.isLeaderCardOn}
                   onChange={(e) => onUpdateSettings({ isLeaderCardOn: e.target.checked })}
-                  className="opacity-0 w-0 h-0 absolute"
+                  className="opacity-0 w-0 h-0"
                 />
                 <label
                   htmlFor="isLeaderCardOn"
-                  className={`absolute cursor-pointer top-0 left-0 right-0 bottom-0 rounded-full transition-colors duration-200 ${
+                  className={`absolute cursor-pointer top-0 left-0 right-0 bottom-0 rounded-full transition-all duration-300 ${
                     settings.isLeaderCardOn ? "bg-blue-600" : "bg-gray-700"
                   }`}
+                  style={{
+                    boxShadow: settings.isLeaderCardOn ? "0 0 8px rgba(59, 130, 246, 0.8)" : "none",
+                  }}
                 >
                   <span
-                    className={`absolute left-1 bottom-1 w-4 h-4 bg-white rounded-full transition-transform duration-200 ${
+                    className={`absolute left-1 bottom-1 bg-white w-4 h-4 rounded-full transition-all duration-300 ${
                       settings.isLeaderCardOn ? "transform translate-x-6" : ""
                     }`}
-                  />
+                  ></span>
                 </label>
               </div>
             </div>
@@ -73,19 +76,22 @@ export function BattleSettings({ settings, onUpdateSettings, getTranslatedString
                   id="isSpCardOn"
                   checked={settings.isSpCardOn}
                   onChange={(e) => onUpdateSettings({ isSpCardOn: e.target.checked })}
-                  className="opacity-0 w-0 h-0 absolute"
+                  className="opacity-0 w-0 h-0"
                 />
                 <label
                   htmlFor="isSpCardOn"
-                  className={`absolute cursor-pointer top-0 left-0 right-0 bottom-0 rounded-full transition-colors duration-200 ${
+                  className={`absolute cursor-pointer top-0 left-0 right-0 bottom-0 rounded-full transition-all duration-300 ${
                     settings.isSpCardOn ? "bg-blue-600" : "bg-gray-700"
                   }`}
+                  style={{
+                    boxShadow: settings.isSpCardOn ? "0 0 8px rgba(59, 130, 246, 0.8)" : "none",
+                  }}
                 >
                   <span
-                    className={`absolute left-1 bottom-1 w-4 h-4 bg-white rounded-full transition-transform duration-200 ${
+                    className={`absolute left-1 bottom-1 bg-white w-4 h-4 rounded-full transition-all duration-300 ${
                       settings.isSpCardOn ? "transform translate-x-6" : ""
                     }`}
-                  />
+                  ></span>
                 </label>
               </div>
             </div>
@@ -99,7 +105,7 @@ export function BattleSettings({ settings, onUpdateSettings, getTranslatedString
                 id="discardType"
                 value={settings.discardType}
                 onChange={(e) => onUpdateSettings({ discardType: Number.parseInt(e.target.value) })}
-                className="w-full p-2 border border-gray-700 bg-gray-800 rounded text-sm"
+                className="battle-dropdown"
               >
                 <option value={0}>{getTranslatedString("battle.discard.off") || "Off"}</option>
                 <option value={1}>{getTranslatedString("battle.discard.active") || "Active"}</option>
@@ -114,23 +120,14 @@ export function BattleSettings({ settings, onUpdateSettings, getTranslatedString
               <label className="block text-sm mb-2">
                 {getTranslatedString("battle.hand.retention") || "Hand Retention"}
               </label>
-              <div className="flex items-center">
-                <button
-                  onClick={handleDecrement}
-                  className="w-8 h-8 bg-gray-800 border border-gray-700 rounded-l flex items-center justify-center"
-                >
+              <div className="hand-retention-control">
+                <button onClick={handleDecrement} className="hand-retention-button">
                   <Minus className="w-4 h-4" />
                 </button>
-                <div className="w-12 h-8 bg-gray-800 border-t border-b border-gray-700 flex items-center justify-center">
-                  {settings.keepCardNum}
-                </div>
-                <button
-                  onClick={handleIncrement}
-                  className="w-8 h-8 bg-gray-800 border border-gray-700 rounded-r flex items-center justify-center"
-                >
+                <div className="hand-retention-display">{settings.keepCardNum}</div>
+                <button onClick={handleIncrement} className="hand-retention-button">
                   <Plus className="w-4 h-4" />
                 </button>
-                <span className="ml-2 text-sm text-gray-400">{getTranslatedString("battle.cards") || "cards"}</span>
               </div>
             </div>
 
@@ -143,7 +140,7 @@ export function BattleSettings({ settings, onUpdateSettings, getTranslatedString
                 id="otherCard"
                 value={settings.otherCard}
                 onChange={(e) => onUpdateSettings({ otherCard: Number.parseInt(e.target.value) })}
-                className="w-full p-2 border border-gray-700 bg-gray-800 rounded text-sm"
+                className="battle-dropdown"
               >
                 <option value={0}>{getTranslatedString("battle.enemy.use.now") || "Use Now"}</option>
                 <option value={1}>{getTranslatedString("battle.enemy.use.later") || "Use Later"}</option>
