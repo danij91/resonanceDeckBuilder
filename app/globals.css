@@ -4,13 +4,17 @@
 
 :root {
   --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
+  --background-rgb: 0, 0, 0;
+
+  /* 모달 영역별 검은색 계열 색상 */
+  --modal-header-bg: #000000;
+  --modal-content-bg: #0a0a0a;
+  --modal-footer-bg: #050505;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  background: rgb(var(--background-rgb));
 }
 
 .dark {
@@ -90,7 +94,7 @@ body {
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
   .dark {
-    --background: 0 0% 3.9%;
+    --background: 0 0% 0%;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -122,15 +126,24 @@ body {
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* 네온 색상 - 하얀색 기반으로 변경 */
+    --neon-white: 0 0% 100%;
+    --neon-blue: 210 100% 85%;
+    --neon-purple: 270 100% 85%;
+    --neon-pink: 330 100% 85%;
+    --neon-cyan: 180 100% 85%;
+    --neon-green: 140 100% 85%;
   }
 }
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
 }
 
@@ -164,35 +177,534 @@ body {
   animation-delay: 0.15s;
 }
 
-/* Add these classes at the end of your globals.css file */
-
-/* Hidden classes for width measurement */
-.temp-measure-full {
-  position: absolute !important;
-  visibility: hidden !important;
-  display: flex !important;
-  white-space: nowrap !important;
+/* 버튼 호버 효과 */
+.language-button:hover::before,
+.share-button:hover::before,
+.clear-button:hover::before,
+.import-button:hover::before,
+.export-button:hover::before,
+.help-button:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1;
 }
 
-.temp-measure-full span {
-  display: inline-block !important;
+/* 공통 네온 효과 클래스 - 재사용 가능한 컴포넌트 */
+@layer components {
+  /* 네온 텍스트 효과 */
+  .neon-text {
+    color: hsl(var(--neon-white));
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8), 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+
+  /* 네온 테두리 효과 */
+  .neon-border {
+    border: 1px solid hsla(var(--neon-white), 0.5);
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.8), 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+
+  /* 네온 배경 효과 */
+  .neon-bg {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+
+  /* 네온 버튼 */
+  .neon-button {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid hsl(var(--neon-white));
+    color: hsl(var(--neon-white));
+    transition: all 0.2s;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.8), 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+
+  .neon-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+
+  /* 네온 컨테이너 */
+  .neon-container {
+    background-color: black;
+    border: 1px solid hsla(var(--neon-white), 0.5);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+
+  /* 네온 모달 배경 - 모든 모달의 배경으로 사용 */
+  .neon-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(2px);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* 스크롤 방지 */
+  }
+
+  /* 네온 모달 */
+  .neon-modal {
+    background-color: var(--modal-content-bg);
+    border: 1px solid hsla(var(--neon-white), 0.5);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 8px rgba(255, 255, 255, 0.3);
+    max-width: 90%;
+    width: auto;
+    max-height: 90vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 네온 모달 헤더 */
+  .neon-modal-header {
+    background-color: var(--modal-header-bg);
+    border-bottom: 1px solid hsla(var(--neon-white), 0.3);
+    padding: 1rem;
+  }
+
+  /* 모달 내용 부분 */
+  .neon-modal p-4,
+  .neon-modal > div:not(.neon-modal-header):not(.neon-modal-footer) {
+    background-color: var(--modal-content-bg);
+  }
+
+  /* 네온 모달 푸터 */
+  .neon-modal-footer {
+    background-color: var(--modal-footer-bg);
+    border-top: 1px solid hsla(var(--neon-white), 0.3);
+    padding: 1rem;
+  }
+
+  /* 네온 섹션 제목 */
+  .neon-section-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: hsl(var(--neon-white));
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8), 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+
+  /* 네온 토글 스위치 */
+  .neon-toggle {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 1.5rem;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .neon-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+
+  .neon-toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 9999px;
+    transition: background-color 0.2s;
+    background-color: #374151; /* bg-gray-700 */
+  }
+
+  .neon-toggle input:checked + .neon-toggle-slider {
+    background-color: hsl(var(--neon-white));
+  }
+
+  .neon-toggle-slider:before {
+    position: absolute;
+    content: "";
+    left: 0.25rem;
+    bottom: 0.25rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: black;
+    border-radius: 9999px;
+    transition: transform 0.2s;
+  }
+
+  .neon-toggle input:checked + .neon-toggle-slider:before {
+    transform: translateX(1.5rem);
+  }
+
+  /* 네온 입력 필드 */
+  .neon-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid hsla(var(--neon-white), 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+  }
+
+  /* 네온 선택 필드 */
+  .neon-select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid hsla(var(--neon-white), 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+  }
+
+  /* 네온 카드 */
+  .neon-card {
+    transition: all 0.2s;
+    border: 1px solid hsla(var(--neon-white), 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+  }
+
+  .neon-card:hover {
+    border-color: hsl(var(--neon-white));
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 8px rgba(255, 255, 255, 0.5);
+  }
+
+  /* 네온 드롭다운 */
+  .neon-dropdown {
+    background-color: var(--modal-header-bg);
+    border: 1px solid hsla(var(--neon-white), 0.5);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    z-index: 50;
+  }
+
+  /* 스킬 카드 */
+  .skill-card {
+    border: 1px solid hsla(var(--neon-white), 0.5);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    transition: all 0.2s;
+  }
+
+  .skill-card:hover {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5), 0 0 12px rgba(255, 255, 255, 0.3);
+  }
+
+  /* 스킬 카드 코스트 배지 */
+  .skill-cost-badge {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(30, 30, 50, 0.9));
+    border: 1px solid hsla(var(--neon-white), 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(var(--neon-white));
+    font-weight: bold;
+    font-size: 1.25rem;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    z-index: 20;
+  }
+
+  /* 캐릭터 슬롯 */
+  .character-slot-empty {
+    border: 1px solid hsla(var(--neon-white), 0.5);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5), 0 0 12px rgba(255, 255, 255, 0.3);
+  }
+
+  .character-slot-filled {
+    border: 1px solid hsla(var(--neon-white), 0.5);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    opacity: 1;
+  }
+
+  .character-slot-filled:hover {
+    border: 1px solid hsla(var(--neon-white), 0.7);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5), 0 0 12px rgba(255, 255, 255, 0.3);
+    opacity: 1;
+  }
+
+  /* 모달 공통 스타일 */
+  .modal-common {
+    background-color: var(--modal-content-bg);
+    border: 1px solid hsla(var(--neon-white), 0.5);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 8px rgba(255, 255, 255, 0.3);
+  }
+
+  .modal-header {
+    background-color: var(--modal-header-bg);
+    border-bottom: 1px solid hsla(var(--neon-white), 0.3);
+    padding: 1rem;
+  }
+
+  .modal-footer {
+    background-color: var(--modal-footer-bg);
+    border-top: 1px solid hsla(var(--neon-white), 0.3);
+    padding: 1rem;
+  }
+
+  /* 스킬 설정 옵션 스타일 - 선택됐을 때와 선택 안됐을 때 차이 강화 */
+  .skill-option {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s;
+    margin-bottom: 0.5rem;
+  }
+
+  .skill-option-selected {
+    background-color: #050505;
+    border: 1px solid hsla(var(--neon-white), 0.5);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+
+  .skill-option-unselected {
+    background-color: #030303;
+    border: 1px solid hsla(var(--neon-white), 0.15);
+  }
+
+  .skill-option-unselected:hover {
+    background-color: #040404;
+    border: 1px solid hsla(var(--neon-white), 0.3);
+  }
+
+  /* 검색 컨트롤 스타일 */
+  .search-control {
+    display: flex;
+    align-items: center;
+    border: 1px solid hsla(var(--neon-white), 0.3);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
+  }
+
+  .search-input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    background-color: #030303;
+    border: none;
+    color: white;
+    font-size: 0.875rem;
+  }
+
+  .search-input:focus {
+    outline: none;
+  }
+
+  .sort-select {
+    background-color: #030303;
+    border: none;
+    border-left: 1px solid hsla(var(--neon-white), 0.3);
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    appearance: none;
+  }
+
+  .sort-select:focus {
+    outline: none;
+  }
+
+  .sort-direction {
+    background-color: #030303;
+    border: none;
+    border-left: 1px solid hsla(var(--neon-white), 0.3);
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+
+  /* 배틀 설정 드롭다운 */
+  .battle-dropdown {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid hsla(var(--neon-white), 0.5);
+    background-color: #030303;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    padding-right: 2rem;
+    color: white;
+  }
+
+  /* 드롭다운 옵션 스타일 - 브라우저 기본 스타일 오버라이드 시도 */
+  .battle-dropdown option {
+    background-color: #000000;
+    color: white;
+  }
+
+  /* 모달 닫기 버튼 */
+  .modal-close-button {
+    color: rgba(255, 255, 255, 0.3);
+    transition: color 0.2s;
+  }
+
+  .modal-close-button:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  /* 캐릭터 슬롯 버튼 */
+  .character-action-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .character-action-button button {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid hsla(var(--neon-white), 0.3);
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    color: hsla(var(--neon-white), 0.7);
+    transition: all 0.2s;
+  }
+
+  .character-action-button button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: hsla(var(--neon-white), 0.5);
+    color: hsla(var(--neon-white), 1);
+  }
+
+  /* 손패 유지 컨트롤 */
+  .hand-retention-control {
+    display: flex;
+    align-items: center;
+  }
+
+  .hand-retention-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid hsla(var(--neon-white), 0.5);
+    background-color: #030303;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+  }
+
+  .hand-retention-button:first-child {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .hand-retention-button:last-child {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+
+  .hand-retention-display {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid hsla(var(--neon-white), 0.5);
+    border-bottom: 1px solid hsla(var(--neon-white), 0.5);
+    background-color: #030303;
+    color: hsl(var(--neon-white));
+    font-weight: bold;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+  }
+
+  /* 장비 카드 */
+  .equipment-card {
+    border: 1px solid hsla(var(--neon-white), 0.5);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    transition: all 0.2s;
+    background-color: #030303;
+  }
+
+  .equipment-card:hover {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5), 0 0 12px rgba(255, 255, 255, 0.3);
+  }
+
+  /* 캐릭터 정보창 스타일 */
+  .character-detail-tab {
+    padding: 0.75rem 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-bottom: 2px solid transparent;
+    background-color: var(--modal-header-bg);
+    margin: 0;
+  }
+
+  .character-detail-tab.active {
+    border-bottom: 2px solid hsl(var(--neon-white));
+    color: hsl(var(--neon-white));
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8), 0 0 5px rgba(255, 255, 255, 0.5);
+    background-color: #050505;
+    padding: 0.75rem 0;
+    margin: 0;
+  }
+
+  .character-detail-tab:hover:not(.active) {
+    background-color: #030303;
+  }
+
+  .character-detail-section {
+    background-color: #030303;
+    border: 1px solid hsla(var(--neon-white), 0.3);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .character-detail-section-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: hsl(var(--neon-white));
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8), 0 0 5px rgba(255, 255, 255, 0.5);
+  }
 }
 
-.temp-measure-icon {
-  position: absolute !important;
-  visibility: hidden !important;
-  display: flex !important;
+/* 이전 스타일 제거 (이미 컴포넌트로 정의됨) */
+.neon-text-purple,
+.neon-text-pink,
+.neon-text-cyan,
+.neon-border-purple,
+.neon-border-pink,
+.neon-border-cyan,
+.neon-glow,
+.neon-glow-purple,
+.neon-glow-pink,
+.neon-glow-cyan,
+.section-title {
+  /* 이전 스타일 제거 - 이미 컴포넌트로 정의됨 */
 }
 
-.temp-measure-icon span {
-  display: none !important;
-}
-
-/* Ensure the container doesn't exceed the content width */
-.container {
-  width: 100%;
-  max-width: 1280px; /* or whatever your max content width is */
-  margin-left: auto;
-  margin-right: auto;
+/* 모달이 열려있을 때 body 스크롤 방지를 위한 클래스 추가 */
+.modal-open {
+  overflow: hidden;
 }
 

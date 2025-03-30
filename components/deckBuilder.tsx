@@ -132,20 +132,23 @@ export default function DeckBuilder({ lang, urlDeckCode }: DeckBuilderProps) {
   }
 
   return (
-    <div className="min-h-screen dark bg-gray-900 text-white">
+    <div className="min-h-screen dark bg-black text-white">
       <TopBar
         onClear={handleClear}
         onImport={handleImport}
         onExport={handleExport}
-        onShare={handleShare} // 공유 기능 추가
+        onShare={handleShare}
         currentLanguage={deckBuilder.language}
         availableLanguages={availableLanguages}
         onChangeLanguage={deckBuilder.setLanguage}
         getTranslatedString={deckBuilder.getTranslatedString}
       />
 
-      <div className="container mx-auto px-4 max-w-6xl pt-24">
+      <div className="container mx-auto px-2 sm:px-4 max-w-full lg:max-w-6xl pt-24">
         <main>
+          <h2 className="neon-section-title">
+            {deckBuilder.getTranslatedString("character.section.title") || "Characters"}
+          </h2>
           <CharacterWindow
             selectedCharacters={deckBuilder.selectedCharacters}
             leaderCharacter={deckBuilder.leaderCharacter}
@@ -260,7 +263,7 @@ export default function DeckBuilder({ lang, urlDeckCode }: DeckBuilderProps) {
 
         <ToastContainer />
       </div>
-      <div className="container mx-auto px-4 max-w-6xl pt-24 pb-24"></div>
+      <div className="container mx-auto px-2 sm:px-4 max-w-full lg:max-w-6xl pt-24 pb-24"></div>
     </div>
   )
 }

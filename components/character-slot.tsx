@@ -3,9 +3,9 @@
 import { Plus, Info, X, Crown } from "lucide-react"
 import { useState } from "react"
 import type { Character, Card, Equipment } from "../types"
-import { CharacterDetails } from "./character-details"
-import { EquipmentSelector } from "./equipment-selector"
-import { EquipmentDetails } from "./equipment-details"
+import { EquipmentSearchModal } from "./ui/modal/EquipmentSearchModal"
+import { CharacterDetailsModal } from "./character-details-modal"
+import { EquipmentDetailsModal } from "./equipment-details-modal"
 
 interface CharacterSlotProps {
   index: number
@@ -27,6 +27,7 @@ interface CharacterSlotProps {
   getEquipment: (equipId: string) => Equipment | null
   equipments?: Equipment[]
   data: any
+  hasAnyCharacter: boolean
 }
 
 export function CharacterSlot({
@@ -45,6 +46,7 @@ export function CharacterSlot({
   getEquipment,
   equipments = [], // Provide default empty array
   data,
+  hasAnyCharacter,
 }: CharacterSlotProps) {
   const isEmpty = characterId === -1
   const [showEquipmentSelector, setShowEquipmentSelector] = useState<"weapon" | "armor" | "accessory" | null>(null)
@@ -102,19 +104,31 @@ export function CharacterSlot({
   const armorEquipment = equipment.armor ? getEquipment(equipment.armor) : null
   const accessoryEquipment = equipment.accessory ? getEquipment(equipment.accessory) : null
 
+  // Leader style class - only apply if the character is a leader and not empty
+  const leaderStyleClass =
+    !isEmpty && isLeader
+      ? "ring-2 ring-[#ff0000] scale-105 shadow-[0_0_10px_2px_rgba(255,0,0,0.7)] z-10 transform transition-transform duration-200"
+      : ""
+
   return (
     <div className="flex flex-col">
       {/* Character Card */}
       <div
         className={`
-          relative w-full aspect-[3/4] rounded-lg border border-gray-700 overflow-hidden
-          ${isEmpty ? "flex items-center justify-center cursor-pointer hover:bg-gray-700" : ""}
-          ${isLeader ? "ring-2 ring-yellow-400" : ""}
+          relative w-full aspect-[3/4] rounded-lg overflow-hidden
+          ${
+            isEmpty
+              ? hasAnyCharacter
+                ? "flex items-center justify-center cursor-pointer border border-[hsla(var(--neon-white),0.3)] bg-black bg-opacity-70"
+                : "flex items-center justify-center cursor-pointer character-slot-empty"
+              : "cursor-pointer character-slot-filled"
+          }
+          ${leaderStyleClass}
         `}
-        onClick={isEmpty ? onAddCharacter : undefined}
+        onClick={onAddCharacter}
       >
         {isEmpty ? (
-          <Plus className="w-8 h-8 text-gray-400" />
+          <Plus className="w-8 h-8 text-[hsl(var(--neon-white))]" />
         ) : character ? (
           <div className="w-full h-full relative">
             {/* Character background image - now fully opaque */}
@@ -129,7 +143,7 @@ export function CharacterSlot({
             </div>
 
             {/* Overlay - reduced opacity for better visibility */}
-            <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+            <div className="absolute inset-0 bg-black bg-opacity-20"></div>
 
             {/* Content */}
             <div className="relative z-10 p-3 flex flex-col h-full">
@@ -140,32 +154,29 @@ export function CharacterSlot({
                 >
                   {character.rarity}
                 </span>
-                <h3 className="text-base font-semibold text-white">{getTranslatedString(character.name)}</h3>
+                <h3 className="text-base font-semibold text-white neon-text">{getTranslatedString(character.name)}</h3>
               </div>
 
-              {/* Bottom section - Buttons */}
-              <div className="mt-auto flex justify-center space-x-4">
+              {/* Character action buttons */}
+              <div className="character-action-button" style={{ bottom: "0.5rem", right: "0.5rem", top: "auto" }}>
                 <button
                   onClick={(e) => {
                     e.stopPropagation()
                     setShowCharacterDetails(true)
                   }}
-                  className="text-white hover:text-blue-300"
                   aria-label={getTranslatedString("character.details") || "Character details"}
                 >
-                  <Info className="w-5 h-5" />
+                  <Info className="w-4 h-4" />
                 </button>
-
                 {!isLeader && (
                   <button
                     onClick={(e) => {
                       e.stopPropagation()
                       onSetLeader()
                     }}
-                    className="text-white hover:text-yellow-300"
                     aria-label={getTranslatedString("set_as_leader") || "Set as leader"}
                   >
-                    <Crown className="w-5 h-5" />
+                    <Crown className="w-4 h-4" />
                   </button>
                 )}
                 <button
@@ -173,10 +184,10 @@ export function CharacterSlot({
                     e.stopPropagation()
                     onRemoveCharacter()
                   }}
-                  className="text-white hover:text-red-300"
+                  className="text-red-400"
                   aria-label={getTranslatedString("remove_character") || "Remove character"}
                 >
-                  <X className="w-5 h-5" />
+                  <X className="w-4 h-4" />
                 </button>
               </div>
             </div>
@@ -191,12 +202,12 @@ export function CharacterSlot({
           className={`
             w-full aspect-square rounded-lg overflow-hidden cursor-pointer
             ${isEmpty ? "opacity-50 pointer-events-none" : ""}
-            ${!weaponEquipment ? "bg-gray-800 border border-dashed border-gray-700 flex items-center justify-center" : getEquipmentQualityBgColor(weaponEquipment.quality)}
+            ${!weaponEquipment ? "bg-black border border-[hsl(var(--neon-white),0.5)] flex items-center justify-center neon-border" : getEquipmentQualityBgColor(weaponEquipment.quality)}
           `}
           onClick={() => handleEquipmentClick("weapon")}
         >
           {!weaponEquipment ? (
-            <span className="text-xs text-gray-500">1</span>
+            <span className="text-xs text-[hsl(var(--neon-white))]">1</span>
           ) : (
             <div className="w-full h-full relative">
               <img
@@ -205,13 +216,13 @@ export function CharacterSlot({
                 className="w-full h-full object-cover"
               />
               <button
-                className="absolute bottom-1 right-1 bg-gray-800 bg-opacity-70 rounded-full p-1"
+                className="absolute bottom-1 right-1 bg-black bg-opacity-70 rounded-full p-1"
                 onClick={(e) => {
                   e.stopPropagation()
                   setShowEquipmentDetails(equipment.weapon)
                 }}
               >
-                <Info className="w-3 h-3 text-white" />
+                <Info className="w-3 h-3 text-[hsl(var(--neon-white))]" />
               </button>
             </div>
           )}
@@ -222,12 +233,12 @@ export function CharacterSlot({
           className={`
             w-full aspect-square rounded-lg overflow-hidden cursor-pointer
             ${isEmpty ? "opacity-50 pointer-events-none" : ""}
-            ${!armorEquipment ? "bg-gray-800 border border-dashed border-gray-700 flex items-center justify-center" : getEquipmentQualityBgColor(armorEquipment.quality)}
+            ${!armorEquipment ? "bg-black border border-[hsl(var(--neon-white),0.5)] flex items-center justify-center neon-border" : getEquipmentQualityBgColor(armorEquipment.quality)}
           `}
           onClick={() => handleEquipmentClick("armor")}
         >
           {!armorEquipment ? (
-            <span className="text-xs text-gray-500">2</span>
+            <span className="text-xs text-[hsl(var(--neon-white))]">2</span>
           ) : (
             <div className="w-full h-full relative">
               <img
@@ -236,13 +247,13 @@ export function CharacterSlot({
                 className="w-full h-full object-cover"
               />
               <button
-                className="absolute bottom-1 right-1 bg-gray-800 bg-opacity-70 rounded-full p-1"
+                className="absolute bottom-1 right-1 bg-black bg-opacity-70 rounded-full p-1"
                 onClick={(e) => {
                   e.stopPropagation()
                   setShowEquipmentDetails(equipment.armor)
                 }}
               >
-                <Info className="w-3 h-3 text-white" />
+                <Info className="w-3 h-3 text-[hsl(var(--neon-white))]" />
               </button>
             </div>
           )}
@@ -253,12 +264,12 @@ export function CharacterSlot({
           className={`
             w-full aspect-square rounded-lg overflow-hidden cursor-pointer
             ${isEmpty ? "opacity-50 pointer-events-none" : ""}
-            ${!accessoryEquipment ? "bg-gray-800 border border-dashed border-gray-700 flex items-center justify-center" : getEquipmentQualityBgColor(accessoryEquipment.quality)}
+            ${!accessoryEquipment ? "bg-black border border-[hsl(var(--neon-white),0.5)] flex items-center justify-center neon-border" : getEquipmentQualityBgColor(accessoryEquipment.quality)}
           `}
           onClick={() => handleEquipmentClick("accessory")}
         >
           {!accessoryEquipment ? (
-            <span className="text-xs text-gray-500">3</span>
+            <span className="text-xs text-[hsl(var(--neon-white))]">3</span>
           ) : (
             <div className="w-full h-full relative">
               <img
@@ -267,48 +278,84 @@ export function CharacterSlot({
                 className="w-full h-full object-cover"
               />
               <button
-                className="absolute bottom-1 right-1 bg-gray-800 bg-opacity-70 rounded-full p-1"
+                className="absolute bottom-1 right-1 bg-black bg-opacity-70 rounded-full p-1"
                 onClick={(e) => {
                   e.stopPropagation()
                   setShowEquipmentDetails(equipment.accessory)
                 }}
               >
-                <Info className="w-3 h-3 text-white" />
+                <Info className="w-3 h-3 text-[hsl(var(--neon-white))]" />
               </button>
             </div>
           )}
         </div>
       </div>
 
-      {/* Equipment Selector Modal */}
       {showEquipmentSelector && (
-        <EquipmentSelector
-          type={showEquipmentSelector}
-          onSelect={handleEquipItem}
+        <EquipmentSearchModal
+          isOpen={true}
           onClose={() => setShowEquipmentSelector(null)}
+          title={
+            <h3 className="text-lg font-bold neon-text">
+              {getTranslatedString(`select_${showEquipmentSelector}`) ||
+                `Select ${showEquipmentSelector.charAt(0).toUpperCase() + showEquipmentSelector.slice(1)}`}
+            </h3>
+          }
+          searchControl={{
+            searchTerm: "",
+            onSearchChange: () => {},
+            sortBy: "quality",
+            onSortByChange: () => {},
+            sortDirection: "desc",
+            onSortDirectionChange: () => {},
+            sortOptions: [
+              { value: "quality", label: getTranslatedString("sort_by_quality") || "Sort by Quality" },
+              { value: "name", label: getTranslatedString("sort_by_name") || "Sort by Name" },
+            ],
+            searchPlaceholder: getTranslatedString("search_equipment") || "Search equipment",
+          }}
+          equipments={
+            data.equipments
+              ? Object.values(data.equipments).filter((equip: Equipment) => equip.type === showEquipmentSelector)
+              : []
+          }
+          onSelectEquipment={handleEquipItem}
           getTranslatedString={getTranslatedString}
-          equipments={Object.values(data.equipments)}
+          type={showEquipmentSelector}
+          maxWidth="max-w-3xl"
+          footer={
+            <div className="flex justify-end">
+              <button
+                onClick={() => setShowEquipmentSelector(null)}
+                className="neon-button px-4 py-2 rounded-lg text-sm"
+              >
+                {getTranslatedString("close")}
+              </button>
+            </div>
+          }
         />
       )}
 
-      {/* Character Details Modal */}
+      {/* 캐릭터 상세 정보 모달 */}
       {showCharacterDetails && character && (
-        <CharacterDetails
+        <CharacterDetailsModal
+          isOpen={showCharacterDetails}
+          onClose={() => setShowCharacterDetails(false)}
           character={character}
           getTranslatedString={getTranslatedString}
-          onClose={() => setShowCharacterDetails(false)}
           getCardInfo={getCardInfo}
           getSkill={getSkill}
-          data={data} // data 전달
+          data={data}
         />
       )}
 
-      {/* Equipment Details Modal */}
+      {/* 장비 상세 정보 모달 */}
       {showEquipmentDetails && (
-        <EquipmentDetails
+        <EquipmentDetailsModal
+          isOpen={!!showEquipmentDetails}
+          onClose={() => setShowEquipmentDetails(null)}
           equipment={getEquipment(showEquipmentDetails)!}
           getTranslatedString={getTranslatedString}
-          onClose={() => setShowEquipmentDetails(null)}
         />
       )}
     </div>
