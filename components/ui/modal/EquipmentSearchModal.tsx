@@ -36,7 +36,7 @@ export function EquipmentSearchModal({
 
   return (
     <SearchModal {...searchModalProps}>
-      <div className="flex-grow overflow-y-auto p-4" style={{ backgroundColor: "var(--modal-content-bg)" }}>
+      <div className="p-4">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
           {/* None option */}
           <div onClick={() => onSelectEquipment(null)} className="flex flex-col items-center">

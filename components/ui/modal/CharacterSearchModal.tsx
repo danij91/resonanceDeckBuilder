@@ -29,10 +29,9 @@ export function CharacterSearchModal({
         return "border-gray-700"
     }
   }
-
   return (
     <SearchModal {...searchModalProps}>
-      <div className="flex-grow overflow-y-auto p-4" style={{ backgroundColor: "var(--modal-content-bg)" }}>
+      <div className="p-4">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
           {characters.length === 0 ? (
             <div className="col-span-full text-center py-4 text-gray-400">
@@ -42,7 +41,17 @@ export function CharacterSearchModal({
             characters.map((character) => (
               <div key={character.id} onClick={() => onSelectCharacter(character.id)} className="cursor-pointer">
                 <div
-                  className={`relative w-full aspect-[3/4] rounded-lg border-2 ${getRarityBorderColor(character.rarity)} overflow-hidden hover:opacity-80 neon-border`}
+                  className={`relative w-full aspect-[3/4] rounded-lg border-2 ${getRarityBorderColor(character.rarity)} overflow-hidden transition-all duration-200 hover:scale-105 hover:shadow-lg`}
+                  style={{
+                    boxShadow:
+                      character.rarity === "UR"
+                        ? "0 0 10px rgba(255, 165, 0, 0.7)"
+                        : character.rarity === "SSR"
+                          ? "0 0 10px rgba(255, 215, 0, 0.7)"
+                          : character.rarity === "SR"
+                            ? "0 0 10px rgba(147, 112, 219, 0.7)"
+                            : "0 0 10px rgba(100, 149, 237, 0.7)",
+                  }}
                 >
                   {/* Character background image */}
                   <div className="absolute inset-0 w-full h-full">
@@ -64,6 +73,23 @@ export function CharacterSearchModal({
                     <h3 className="text-base font-semibold text-white neon-text">
                       {getTranslatedString(character.name)}
                     </h3>
+
+                    {/* Rarity badge */}
+                    <div
+                      className="absolute bottom-2 right-2 bg-black bg-opacity-70 px-2 py-1 rounded text-xs font-bold"
+                      style={{
+                        color:
+                          character.rarity === "UR"
+                            ? "#FFA500"
+                            : character.rarity === "SSR"
+                              ? "#FFD700"
+                              : character.rarity === "SR"
+                                ? "#9370DB"
+                                : "#6495ED",
+                      }}
+                    >
+                      {character.rarity}
+                    </div>
                   </div>
                 </div>
               </div>
