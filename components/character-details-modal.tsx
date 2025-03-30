@@ -40,41 +40,52 @@ export function CharacterDetailsModal({
     }
   }
 
-  // Format text with color tags
+  // Format text with color tags and other HTML tags
   const formatColorText = (text: string) => {
     if (!text) return ""
 
-    // Replace <color=#XXXXXX>text</color> with styled spans
-    const parts = text.split(/(<color=#[A-Fa-f0-9]{6}>.*?<\/color>)/)
+    // Remove newlines or replace with spaces
+    const textWithoutNewlines = text.replace(/\n/g, " ")
 
-    return parts.map((part, index) => {
-      const colorMatch = part.match(/<color=#([A-Fa-f0-9]{6})>(.*?)<\/color>/)
-      if (colorMatch) {
-        const [_, colorCode, content] = colorMatch
-        return (
-          <span key={index} style={{ color: `#${colorCode}` }}>
-            {content}
-          </span>
-        )
+    // Create a temporary DOM element to parse HTML
+    const tempDiv = document.createElement("div")
+    tempDiv.innerHTML = textWithoutNewlines
+      .replace(/<color=#([A-Fa-f0-9]{6})>/g, '<span style="color: #$1">')
+      .replace(/<\/color>/g, "</span>")
+
+    // Convert the DOM structure back to React elements
+    const convertNodeToReact = (node: Node, index: number): React.ReactNode => {
+      if (node.nodeType === Node.TEXT_NODE) {
+        return node.textContent
       }
 
-      // Handle newlines
-      if (part.includes("\n")) {
-        const lines = part.split("\n")
-        return (
-          <React.Fragment key={index}>
-            {lines.map((line, i) => (
-              <React.Fragment key={`line-${index}-${i}`}>
-                {i > 0 && <br />}
-                {line}
-              </React.Fragment>
-            ))}
-          </React.Fragment>
-        )
+      if (node.nodeType === Node.ELEMENT_NODE) {
+        const element = node as HTMLElement
+        const childElements = Array.from(element.childNodes).map((child, i) => convertNodeToReact(child, i))
+
+        if (element.tagName === "SPAN") {
+          return (
+            <span key={index} style={{ color: element.style.color }}>
+              {childElements}
+            </span>
+          )
+        }
+
+        if (element.tagName === "I") {
+          return <i key={index}>{childElements}</i>
+        }
+
+        if (element.tagName === "B") {
+          return <b key={index}>{childElements}</b>
+        }
+
+        return <React.Fragment key={index}>{childElements}</React.Fragment>
       }
 
-      return part
-    })
+      return null
+    }
+
+    return Array.from(tempDiv.childNodes).map((node, i) => convertNodeToReact(node, i))
   }
 
   return (
@@ -215,7 +226,7 @@ export function CharacterDetailsModal({
       footer={
         <div className="flex justify-end">
           <button onClick={onClose} className="neon-button px-4 py-2 rounded-lg text-sm">
-          {getTranslatedString("close")}
+            Close
           </button>
         </div>
       }

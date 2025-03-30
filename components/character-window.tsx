@@ -99,7 +99,6 @@ export function CharacterWindow({
         (rarityOrder[b.rarity as keyof typeof rarityOrder] || 0) -
         (rarityOrder[a.rarity as keyof typeof rarityOrder] || 0)
     }
-
     // Apply sort direction
     return sortDirection === "asc" ? result : -result
   })

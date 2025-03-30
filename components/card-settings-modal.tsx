@@ -38,32 +38,48 @@ export function CardSettingsModal({
   const formatColorText = (text: string) => {
     if (!text) return ""
 
-    // Replace <color=#XXXXXX>text</color> with styled spans
-    const formattedText = text.split(/(<color=#[A-Fa-f0-9]{6}>.*?<\/color>)/).map((part, index) => {
-      const colorMatch = part.match(/<color=#([A-Fa-f0-9]{6})>(.*?)<\/color>/)
-      if (colorMatch) {
-        const [_, colorCode, content] = colorMatch
+// Remove newlines or replace with spaces
+const textWithoutNewlines = text.replace(/\n/g, " ")
+
+// Create a temporary DOM element to parse HTML
+const tempDiv = document.createElement("div")
+tempDiv.innerHTML = textWithoutNewlines
+  .replace(/<color=#([A-Fa-f0-9]{6})>/g, '<span style="color: #$1">')
+  .replace(/<\/color>/g, "</span>")
+
+// Convert the DOM structure back to React elements
+const convertNodeToReact = (node: Node, index: number): React.ReactNode => {
+  if (node.nodeType === Node.TEXT_NODE) {
+    return node.textContent
+  }
+
+  if (node.nodeType === Node.ELEMENT_NODE) {
+    const element = node as HTMLElement
+    const childElements = Array.from(element.childNodes).map((child, i) => convertNodeToReact(child, i))
+
+    if (element.tagName === "SPAN") {
         return (
-          <span key={index} style={{ color: `#${colorCode}` }}>
-            {content}
+          <span key={index} style={{ color: element.style.color }}>
+              {childElements}
           </span>
         )
       }
 
-      // Handle newlines by replacing \n with <br />
-      return part.split("\n").map((line, i) =>
-        i === 0 ? (
-          line
-        ) : (
-          <React.Fragment key={`line-${index}-${i}`}>
-            <br />
-            {line}
-          </React.Fragment>
-        ),
-      )
-    })
+      if (element.tagName === "I") {
+        return <i key={index}>{childElements}</i>
+      }
 
-    return formattedText
+      if (element.tagName === "B") {
+        return <b key={index}>{childElements}</b>
+      }
+
+      return <React.Fragment key={index}>{childElements}</React.Fragment>
+    }
+
+    return null
+  }
+
+  return Array.from(tempDiv.childNodes).map((node, i) => convertNodeToReact(node, i))
   }
 
   // 숫자 입력값 변경 핸들러

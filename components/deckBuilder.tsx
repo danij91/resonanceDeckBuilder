@@ -195,8 +195,11 @@ export default function DeckBuilder({ lang, urlDeckCode }: DeckBuilderProps) {
                     // skillId로 직접 이미지 찾기
                     if (data.images[`skill_${importedCardInfo.skillId}`]) {
                       extraInfo.img_url = data.images[`skill_${importedCardInfo.skillId}`]
-                      // 스킬 설명 키 설정
-                      extraInfo.desc = `skill_description_${importedCardInfo.skillId}`
+                      // 스킬 설명을 skill_db에서 직접 가져오기
+                      const skill = data.skills[importedCardInfo.skillId.toString()]
+                      if (skill) {
+                        extraInfo.desc = skill.description
+                      }
                     }
                   }
 
@@ -212,7 +215,7 @@ export default function DeckBuilder({ lang, urlDeckCode }: DeckBuilderProps) {
                         }
 
                         // 스킬 설명 키 설정
-                        extraInfo.desc = `skill_description_${skillId}`
+                        extraInfo.desc = skill.description
                         break
                       }
                     }

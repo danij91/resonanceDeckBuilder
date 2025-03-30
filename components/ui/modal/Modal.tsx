@@ -78,23 +78,26 @@ export function Modal({
     <div className="neon-modal-backdrop fixed inset-0 flex items-center justify-center z-[100]">
       <div
         ref={modalRef}
-        className={`neon-modal ${maxWidth} w-full flex flex-col max-h-[90vh]`}
+        className={`neon-modal ${maxWidth} w-full flex flex-col max-h-[90vh] overflow-y-auto`}
         onClick={(e) => e.stopPropagation()}
       >
         {title && (
-          <div className="neon-modal-header flex justify-between items-center">
-            <div className="flex-1">{title}</div>
-            <button onClick={onClose} className="modal-close-button">
-              <X className="w-5 h-5" />
-            </button>
+          <div
+            className="neon-modal-header sticky top-0 z-20 flex flex-col justify-between items-center shadow-md"
+            style={{ backgroundColor: "var(--modal-header-bg)" }}
+          >
+            <div className="w-full flex justify-between items-center">
+              <div className="flex-1">{title}</div>
+
+            </div>
           </div>
         )}
 
-        <div className="flex-grow overflow-auto" style={{ backgroundColor: "var(--modal-content-bg)" }}>
+        <div className="flex-grow" style={{ backgroundColor: "var(--modal-content-bg)" }}>
           {children}
         </div>
 
-        {footer && <div className="neon-modal-footer">{footer}</div>}
+        {footer && <div className="neon-modal-footer sticky bottom-0 z-20">{footer}</div>}
       </div>
     </div>
   )

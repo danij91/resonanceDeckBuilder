@@ -32,10 +32,11 @@ export function SearchModal({ searchControl, ...modalProps }: SearchModalProps) 
     searchPlaceholder = "Search...",
   } = searchControl
 
-  return (
-    <Modal {...modalProps}>
-      <div className="p-4" style={{ backgroundColor: "var(--modal-footer-bg)" }}>
-        {/* 검색 및 정렬 컨트롤 */}
+  // 검색 컨트롤을 모달 타이틀로 이동
+  const enhancedTitle = (
+    <>
+      {modalProps.title}
+      <div className="w-full mt-4 border-t border-[hsla(var(--neon-white),0.2)] pt-4">
         <div className="search-control">
           <div className="relative flex-grow">
             <Search className="absolute left-2 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
@@ -65,7 +66,12 @@ export function SearchModal({ searchControl, ...modalProps }: SearchModalProps) 
           </button>
         </div>
       </div>
+    </>
+  )
 
+  return (
+    <Modal {...modalProps} title={enhancedTitle}>
+      {/* 내용 영역 */}
       {modalProps.children}
     </Modal>
   )
