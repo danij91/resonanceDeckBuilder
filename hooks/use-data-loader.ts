@@ -16,7 +16,6 @@ export function useDataLoader() {
     async function loadData() {
       try {
         if (USE_DUMMY) {
-          // 더미 데이터 사용 시 로그 추가
           setData(dummyData)
         } else {
           // 절대 경로 사용하여 데이터 파일 로드

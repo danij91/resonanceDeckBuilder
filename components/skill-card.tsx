@@ -77,7 +77,6 @@ export function SkillCard({
           <button
             onClick={(e) => {
               e.stopPropagation()
-              console.log("Edit button clicked")
               onEdit()
             }}
             className="text-white hover:text-blue-300 z-20"

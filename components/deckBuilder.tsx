@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useMemo } from "react"
+import { useEffect, useMemo, useRef } from "react"
 import { useDataLoader } from "../hooks/use-data-loader"
 import { useDeckBuilder } from "../hooks/use-deck-builder"
 import { TopBar } from "./top-bar"
@@ -11,15 +11,20 @@ import type { Character } from "../types"
 import { SkillWindow } from "./skill-window"
 import type { Equipment } from "../types"
 import { LoadingScreen } from "./loading-screen"
+import { decodePresetFromUrlParam } from "../utils/presetCodec"
 
 interface DeckBuilderProps {
   lang: string
+  urlDeckCode?: string | null
 }
 
-export default function DeckBuilder({ lang }: DeckBuilderProps) {
+export default function DeckBuilder({ lang, urlDeckCode }: DeckBuilderProps) {
   const { data, loading, error } = useDataLoader()
   const deckBuilder = useDeckBuilder(data)
   const { showToast, ToastContainer } = useToast()
+
+  // useRef를 컴포넌트 최상위 레벨로 이동
+  const hasLoadedRef = useRef(false)
 
   // 초기 언어 설정
   useEffect(() => {
@@ -40,40 +45,35 @@ export default function DeckBuilder({ lang }: DeckBuilderProps) {
     return Object.keys(data.languages)
   }, [data])
 
-  // Load deck from URL if deckCode parameter is present
+  // URL에서 덱 코드 로드
   useEffect(() => {
     const loadDeckFromUrl = async () => {
-      if (!data) return
+      if (!data || !urlDeckCode || hasLoadedRef.current) return
 
       try {
-        const params = new URLSearchParams(window.location.search)
-        const deckCode = params.get("deckCode")
+        // 로드 상태 표시
+        hasLoadedRef.current = true
 
-        if (deckCode) {
-          const originalClipboard = navigator.clipboard.readText
-          navigator.clipboard.readText = async () => deckCode
+        // URL에서 가져온 덱 코드 디코딩
+        const preset = decodePresetFromUrlParam(urlDeckCode)
 
-          const result = await deckBuilder.importPreset()
-
-          navigator.clipboard.readText = originalClipboard
-
-          if (result.success) {
-            showToast(
-              deckBuilder.getTranslatedString("import_success") || "Deck loaded from URL successfully!",
-              "success",
-            )
-          } else {
-            showToast(deckBuilder.getTranslatedString("import_failed") || "Failed to load deck from URL", "error")
-          }
+        if (preset) {
+          // 디코딩된 프리셋 적용
+          deckBuilder.importPresetObject(preset)
+          showToast(
+            deckBuilder.getTranslatedString("import_success") || "Deck loaded from URL successfully!",
+            "success",
+          )
+        } else {
+          showToast(deckBuilder.getTranslatedString("import_failed") || "Failed to load deck from URL", "error")
         }
       } catch (error) {
-        console.error("Failed to load deck from URL:", error)
         showToast(deckBuilder.getTranslatedString("import_failed") || "Failed to load deck from URL", "error")
       }
     }
 
     loadDeckFromUrl()
-  }, [data, deckBuilder, showToast])
+  }, [data, urlDeckCode, showToast, deckBuilder])
 
   const handleExport = () => {
     const result = deckBuilder.exportPreset()
@@ -88,6 +88,17 @@ export default function DeckBuilder({ lang }: DeckBuilderProps) {
   const handleClear = () => {
     deckBuilder.clearAll()
     showToast(deckBuilder.getTranslatedString("clear_success") || "All settings cleared!", "info")
+  }
+
+  // 공유 기능 추가
+  const handleShare = () => {
+    const result = deckBuilder.createRootShareableUrl()
+    if (result.success) {
+      navigator.clipboard.writeText(result.url)
+      showToast(deckBuilder.getTranslatedString("share_success") || "Share link copied to clipboard!", "success")
+    } else {
+      showToast(deckBuilder.getTranslatedString("share_failed") || "Failed to create share link", "error")
+    }
   }
 
   // 장비 목록 가져오기
@@ -126,13 +137,14 @@ export default function DeckBuilder({ lang }: DeckBuilderProps) {
         onClear={handleClear}
         onImport={handleImport}
         onExport={handleExport}
+        onShare={handleShare} // 공유 기능 추가
         currentLanguage={deckBuilder.language}
         availableLanguages={availableLanguages}
         onChangeLanguage={deckBuilder.setLanguage}
         getTranslatedString={deckBuilder.getTranslatedString}
       />
 
-      <div className="container mx-auto px-2 sm:px-4 max-w-full lg:max-w-6xl pt-24">
+      <div className="container mx-auto px-4 max-w-6xl pt-24">
         <main>
           <CharacterWindow
             selectedCharacters={deckBuilder.selectedCharacters}
@@ -174,19 +186,32 @@ export default function DeckBuilder({ lang }: DeckBuilderProps) {
                 if (data.images[`card_${card.id}`]) {
                   extraInfo.img_url = data.images[`card_${card.id}`]
                 } else {
-                  // 2. 스킬 ID로 찾기
-                  // 카드에 해당하는 스킬 찾기
-                  for (const skillId in data.skills) {
-                    const skill = data.skills[skillId]
-                    if (skill.cardID && skill.cardID.toString() === card.id.toString()) {
-                      // skill_id 형식으로 이미지 찾기
-                      if (data.images[`skill_${skillId}`]) {
-                        extraInfo.img_url = data.images[`skill_${skillId}`]
-                      }
-
+                  // 2. 임포트된 카드 정보에서 skillId 확인 (새로운 방식)
+                  const importedCardInfo = deckBuilder.selectedCards.find((c) => c.id === card.id.toString())
+                  if (importedCardInfo && importedCardInfo.skillId) {
+                    // skillId로 직접 이미지 찾기
+                    if (data.images[`skill_${importedCardInfo.skillId}`]) {
+                      extraInfo.img_url = data.images[`skill_${importedCardInfo.skillId}`]
                       // 스킬 설명 키 설정
-                      extraInfo.desc = `skill_description_${skillId}`
-                      break
+                      extraInfo.desc = `skill_description_${importedCardInfo.skillId}`
+                    }
+                  }
+
+                  // 3. 위 방법으로 찾지 못한 경우 기존 방식으로 시도 (fallback)
+                  if (!extraInfo.img_url) {
+                    // 카드에 해당하는 스킬 찾기
+                    for (const skillId in data.skills) {
+                      const skill = data.skills[skillId]
+                      if (skill.cardID && skill.cardID.toString() === card.id.toString()) {
+                        // skill_id 형식으로 이미지 찾기
+                        if (data.images[`skill_${skillId}`]) {
+                          extraInfo.img_url = data.images[`skill_${skillId}`]
+                        }
+
+                        // 스킬 설명 키 설정
+                        extraInfo.desc = `skill_description_${skillId}`
+                        break
+                      }
                     }
                   }
                 }
@@ -235,7 +260,7 @@ export default function DeckBuilder({ lang }: DeckBuilderProps) {
 
         <ToastContainer />
       </div>
-      <div className="container mx-auto px-2 sm:px-4 max-w-full lg:max-w-6xl pt-24 pb-24"></div>
+      <div className="container mx-auto px-4 max-w-6xl pt-24 pb-24"></div>
     </div>
   )
 }

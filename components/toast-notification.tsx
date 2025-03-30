@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 
 interface ToastProps {
   message: string
@@ -43,10 +43,11 @@ interface ToastManagerProps {
 
 export function useToast() {
   const [toasts, setToasts] = useState<Array<{ id: number; message: string; type: "success" | "error" | "info" }>>([])
-  let nextId = 0
+  const nextIdRef = useRef(0) // useRef를 사용하여 컴포넌트 렌더링 간에 값이 유지되도록 함
 
   const showToast = (message: string, type: "success" | "error" | "info" = "info") => {
-    const id = nextId++
+    const id = nextIdRef.current
+    nextIdRef.current += 1 // ID 증가
     setToasts((prev) => [...prev, { id, message, type }])
     return id
   }

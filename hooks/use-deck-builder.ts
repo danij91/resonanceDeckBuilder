@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useMemo, useEffect } from "react"
 import type { Database, Skill } from "../types"
-import { encodePreset, decodePreset } from "../utils/presetCodec"
+import { encodePreset, decodePreset, encodePresetForUrl } from "../utils/presetCodec"
 
 export interface PresetCard {
   id: string
@@ -120,17 +120,13 @@ export function useDeckBuilder(data: Database | null) {
 
   // Add card to selection - MOVED UP to fix circular dependency
   const addCard = useCallback((cardId: string) => {
-    console.log(`Attempting to add card ${cardId} to selectedCards`)
-
     setSelectedCards((prev) => {
       // Check if card is already selected
       if (prev.some((card) => card.id === cardId)) {
-        console.log(`Card ${cardId} already in selectedCards, not adding`)
         return prev
       }
 
       // Add card with default settings
-      console.log(`Adding card ${cardId} to selectedCards`)
       return [...prev, { id: cardId, useType: 1, useParam: -1 }]
     })
   }, [])
@@ -142,15 +138,11 @@ export function useDeckBuilder(data: Database | null) {
     const cardSet = new Set<string>()
     const validCharacters = selectedCharacters.filter((id) => id !== -1)
 
-    // 디버깅 로그 추가
-    console.log("Valid characters:", validCharacters)
-
     // 모든 카드 순회
     Object.values(data.cards).forEach((card) => {
       // 카드 소유자 확인
       if (card.ownerId && validCharacters.includes(card.ownerId)) {
         cardSet.add(card.id.toString())
-        console.log(`Added card ${card.id} from owner ${card.ownerId}`)
       }
     })
 
@@ -162,7 +154,6 @@ export function useDeckBuilder(data: Database | null) {
           const skill = data.skills[skillItem.skillId.toString()]
           if (skill && skill.cardID) {
             cardSet.add(skill.cardID.toString())
-            console.log(`Added card ${skill.cardID} from skill ${skillItem.skillId} of character ${charId}`)
           }
 
           // ExSkillList에서 카드 ID 찾기
@@ -171,18 +162,12 @@ export function useDeckBuilder(data: Database | null) {
               const exSkillData = data.skills[exSkill.ExSkillName.toString()]
               if (exSkillData && exSkillData.cardID) {
                 cardSet.add(exSkillData.cardID.toString())
-                console.log(
-                  `Added card ${exSkillData.cardID} from ExSkill ${exSkill.ExSkillName} of skill ${skillItem.skillId}`,
-                )
               }
             })
           }
         })
       }
     })
-
-    // 디버깅 로그 추가
-    console.log("Available cards:", Array.from(cardSet))
 
     // Convert to array
     return Array.from(cardSet)
@@ -198,19 +183,13 @@ export function useDeckBuilder(data: Database | null) {
   const generateCardsFromSkills = useCallback(
     (characterId: number) => {
       if (!data) {
-        console.log("No data available, cannot generate cards")
         return
       }
-
-      console.log(`Generating cards for character ${characterId}`)
 
       const character = data.characters[characterId.toString()]
       if (!character || !character.skillList) {
-        console.log(`Character ${characterId} not found or has no skills`)
         return
       }
-
-      console.log(`Character ${characterId} skills:`, character.skillList)
 
       // 처리된 스킬 ID를 추적하기 위한 Set
       const processedSkills = new Set<number>()
@@ -223,7 +202,6 @@ export function useDeckBuilder(data: Database | null) {
 
         // 제외된 스킬 ID 목록에 있는지 확인
         if (data.excludedSkillIds && data.excludedSkillIds.includes(skillId)) {
-          console.log(`Skill ${skillId} is in the excluded list, skipping`)
           return
         }
 
@@ -262,8 +240,6 @@ export function useDeckBuilder(data: Database | null) {
       character.skillList.forEach((skillItem) => {
         processSkill(skillItem.skillId)
       })
-
-      console.log(`Finished generating cards for character ${characterId}`)
     },
     [data, getSkill, addCard],
   )
@@ -272,8 +248,6 @@ export function useDeckBuilder(data: Database | null) {
   const addCharacter = useCallback(
     (characterId: number, slot: number) => {
       if (slot < 0 || slot >= 5) return
-
-      console.log(`Adding character ${characterId} to slot ${slot}`)
 
       setSelectedCharacters((prev) => {
         const newSelection = [...prev]
@@ -364,6 +338,14 @@ export function useDeckBuilder(data: Database | null) {
 
       // 제거된 캐릭터의 카드 ID 목록
       const removedCardIds = new Set<string>()
+      removedSkillIds.forEach((skillId) => {
+        const skill = getSkill(skillId)
+        if (skill && skill.cardID) {
+          removedCardIds.add(skill.cardID.toString())
+        }
+      })
+
+      // 남아있는 캐릭터
       removedSkillIds.forEach((skillId) => {
         const skill = getSkill(skillId)
         if (skill && skill.cardID) {
@@ -476,11 +458,12 @@ export function useDeckBuilder(data: Database | null) {
   const createPresetObject = useCallback(() => {
     // Transform selected cards to match the required format
     const formattedCardList = selectedCards.map((card) => {
+      // 기본 카드 객체 생성
       const cardObj: PresetCard = {
         id: card.id,
-        ownerId: -1, // Will be updated below
-        skillId: -1, // Will be updated below
-        skillIndex: -1, // Will be updated below
+        ownerId: card.ownerId || -1, // 이미 존재하는 ownerId 사용
+        skillId: card.skillId || -1, // 이미 존재하는 skillId 사용
+        skillIndex: card.skillIndex || -1, // 이미 존재하는 skillIndex 사용
         targetType: 0, // Always 0 as specified
         useType: card.useType,
         useParam: card.useParam,
@@ -488,40 +471,47 @@ export function useDeckBuilder(data: Database | null) {
         equipIdList: [],
       }
 
-      if (data) {
+      // 만약 ownerId나 skillId가 없는 경우에만 데이터에서 찾아서 설정
+      if ((cardObj.ownerId === -1 || cardObj.skillId === -1) && data) {
         const cardData = data.cards[card.id]
 
         if (cardData) {
-          // Find the corresponding skill
-          let foundSkillId = -1
-          for (const skillId in data.skills) {
-            const skill = data.skills[skillId]
-            if (skill.cardID && skill.cardID.toString() === card.id) {
-              foundSkillId = Number.parseInt(skillId)
-              cardObj.skillId = foundSkillId
-              break
-            }
-          }
-
-          // Check if this is a special skill (in specialSkillIds)
-          const isSpecialSkill = data.specialSkillIds && foundSkillId > 0 && data.specialSkillIds.includes(foundSkillId)
-
-          if (isSpecialSkill) {
-            // For special skills, set ownerId to 10000001
-            cardObj.ownerId = 10000001
-          } else {
-            // For regular cards, set ownerId to the character that owns this card
+          // ownerId가 없는 경우에만 설정
+          if (cardObj.ownerId === -1) {
             cardObj.ownerId = cardData.ownerId || -1
           }
 
-          // Only set skillIndex if this skill is directly in the character's skillList
-          if (cardObj.ownerId > 0 && foundSkillId > 0) {
-            const character = data.characters[cardObj.ownerId.toString()]
-            if (character && character.skillList) {
-              const skillIndex = character.skillList.findIndex((s) => s.skillId === foundSkillId)
-              if (skillIndex !== -1) {
-                // skillIndex starts from 1, not 0
-                cardObj.skillIndex = skillIndex + 1
+          // skillId가 없는 경우에만 찾기
+          if (cardObj.skillId === -1) {
+            // Find the corresponding skill
+            let foundSkillId = -1
+            for (const skillId in data.skills) {
+              const skill = data.skills[skillId]
+              if (skill.cardID && skill.cardID.toString() === card.id) {
+                foundSkillId = Number.parseInt(skillId)
+                cardObj.skillId = foundSkillId
+                break
+              }
+            }
+
+            // Check if this is a special skill (in specialSkillIds)
+            const isSpecialSkill =
+              data.specialSkillIds && foundSkillId > 0 && data.specialSkillIds.includes(foundSkillId)
+
+            if (isSpecialSkill) {
+              // For special skills, set ownerId to 10000001
+              cardObj.ownerId = 10000001
+            }
+
+            // Only set skillIndex if this skill is directly in the character's skillList and it's not already set
+            if (cardObj.skillIndex === -1 && cardObj.ownerId > 0 && foundSkillId > 0) {
+              const character = data.characters[cardObj.ownerId.toString()]
+              if (character && character.skillList) {
+                const skillIndex = character.skillList.findIndex((s) => s.skillId === foundSkillId)
+                if (skillIndex !== -1) {
+                  // skillIndex starts from 1, not 0
+                  cardObj.skillIndex = skillIndex + 1
+                }
               }
             }
           }
@@ -562,7 +552,6 @@ export function useDeckBuilder(data: Database | null) {
       const base64String = encodePreset(preset)
       return base64String
     } catch (error) {
-      console.error("Export to string failed:", error)
       return ""
     }
   }, [createPresetObject])
@@ -575,7 +564,6 @@ export function useDeckBuilder(data: Database | null) {
       navigator.clipboard.writeText(base64String)
       return { success: true, message: getTranslatedString("export_success") || "Export successful!" }
     } catch (error) {
-      console.error("Export failed:", error)
       return { success: false, message: getTranslatedString("export_failed") || "Export failed!" }
     }
   }, [createPresetObject, getTranslatedString])
@@ -632,7 +620,6 @@ export function useDeckBuilder(data: Database | null) {
 
       return { success: true, message: getTranslatedString("import_success") || "Import successful!" }
     } catch (error) {
-      console.error("Import failed:", error)
       return { success: false, message: getTranslatedString("import_failed") || "Import failed!" }
     }
   }, [getTranslatedString])
@@ -652,7 +639,7 @@ export function useDeckBuilder(data: Database | null) {
             data.languages[newLanguage] = langData
           }
         } catch (error) {
-          console.error(`Failed to load language: ${newLanguage}`, error)
+          // 에러 처리
         }
       }
 
@@ -677,6 +664,91 @@ export function useDeckBuilder(data: Database | null) {
     return Object.values(data.equipments)
   }, [data])
 
+  // 프리셋 객체를 직접 가져와서 적용
+  const importPresetObject = useCallback(
+    (preset: any) => {
+      try {
+        // Validate preset structure
+        if (!preset.roleList || !Array.isArray(preset.roleList) || preset.roleList.length !== 5) {
+          throw new Error("Invalid roleList")
+        }
+
+        if (!preset.cardList || !Array.isArray(preset.cardList)) {
+          throw new Error("Invalid cardList")
+        }
+
+        // Update state with imported preset
+        setSelectedCharacters(preset.roleList)
+        setLeaderCharacter(preset.header)
+
+        // Transform the cardList to our internal format
+        const simplifiedCardList = preset.cardList.map((card) => ({
+          id: card.id,
+          useType: card.useType,
+          useParam: card.useParam,
+          useParamMap: card.useParamMap || {},
+          ownerId: card.ownerId,
+          skillId: card.skillId,
+          skillIndex: card.skillIndex,
+        }))
+
+        setSelectedCards(simplifiedCardList)
+
+        // 기본값 설정
+        setBattleSettings({
+          isLeaderCardOn: preset.isLeaderCardOn !== undefined ? preset.isLeaderCardOn : true,
+          isSpCardOn: preset.isSpCardOn !== undefined ? preset.isSpCardOn : true,
+          keepCardNum: preset.keepCardNum !== undefined ? preset.keepCardNum : 0,
+          discardType: preset.discardType !== undefined ? preset.discardType - 1 : 0, // Subtract 1 from discardType
+          otherCard: preset.otherCard !== undefined ? preset.otherCard : 0,
+        })
+
+        // Reset equipment
+        setEquipment(Array(5).fill({ weapon: null, armor: null, accessory: null }))
+
+        return { success: true, message: getTranslatedString("import_success") || "Import successful!" }
+      } catch (error) {
+        return { success: false, message: getTranslatedString("import_failed") || "Import failed!" }
+      }
+    },
+    [getTranslatedString],
+  )
+
+  // 공유 가능한 URL 생성
+  const createShareableUrl = useCallback(() => {
+    try {
+      const preset = createPresetObject()
+      const encodedPreset = encodePresetForUrl(preset)
+
+      // 현재 URL에서 기본 경로 가져오기
+      const baseUrl = window.location.origin
+      const langPath = window.location.pathname.split("/")[1] || "ko"
+
+      // 공유 URL 생성
+      const shareableUrl = `${baseUrl}/${langPath}?code=${encodedPreset}`
+      return { success: true, url: shareableUrl }
+    } catch (error) {
+      return { success: false, url: "" }
+    }
+  }, [createPresetObject])
+
+  // 루트 URL에 덱 코드를 포함한 공유 URL 생성
+  const createRootShareableUrl = useCallback(() => {
+    try {
+      const preset = createPresetObject()
+      const encodedPreset = encodePresetForUrl(preset)
+
+      // 루트 URL 가져오기
+      const rootUrl = window.location.origin
+
+      // 공유 URL 생성
+      const shareableUrl = `${rootUrl}?code=${encodedPreset}`
+      return { success: true, url: shareableUrl }
+    } catch (error) {
+      return { success: false, url: "" }
+    }
+  }, [createPresetObject])
+
   // 반환 객체에 getEquipment 추가
   return {
     selectedCharacters,
@@ -692,7 +764,7 @@ export function useDeckBuilder(data: Database | null) {
     getCard,
     getCardInfo,
     getEquipment,
-    getSkill, // 추가: 스킬 정보를 가져오는 함수
+    getSkill,
     allEquipments,
     addCharacter,
     removeCharacter,
@@ -709,6 +781,9 @@ export function useDeckBuilder(data: Database | null) {
     exportPreset,
     exportPresetToString,
     importPreset,
+    importPresetObject,
+    createShareableUrl,
+    createRootShareableUrl, // 새 함수 추가
   }
 }
 
