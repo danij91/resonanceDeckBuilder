@@ -1,6 +1,5 @@
 "use client"
 
-import { Edit } from "lucide-react"
 import type { Card, CardExtraInfo } from "../types"
 
 interface SkillCardProps {
@@ -14,6 +13,7 @@ interface SkillCardProps {
 }
 
 export function SkillCard({
+  card,
   extraInfo,
   getTranslatedString,
   onRemove,
@@ -22,7 +22,11 @@ export function SkillCard({
   characterImage,
 }: SkillCardProps) {
   return (
-    <div className="relative rounded-lg overflow-hidden h-full" style={{ aspectRatio: "1/1.5" }}>
+    <div
+      className="skill-card relative overflow-hidden h-full cursor-pointer"
+      style={{ aspectRatio: "1/1.5" }}
+      onClick={onEdit}
+    >
       {/* Card background */}
       <div className="absolute inset-0 w-full h-full">
         {characterImage ? (
@@ -37,27 +41,25 @@ export function SkillCard({
 
       {/* Disabled overlay */}
       {isDisabled && (
-        <div className="absolute inset-0 flex items-center justify-center z-10 bg-black bg-opacity-40">
-          <div className="text-3xl text-red-500 transform rotate-45">🚫</div>
+        <div className="absolute inset-0 flex items-center justify-center z-10 bg-red-900 bg-opacity-30">
+          <div className="text-3xl text-red-500 transform rotate-60">🚫</div>
         </div>
       )}
 
-      {/* Cost badge in top right */}
-      <div className="absolute top-2 right-2 z-20">
-        <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center">
-          <span className="text-white font-bold text-xl">{extraInfo.cost}</span>
-        </div>
+      {/* Cost badge in top right - 새로운 디자인 */}
+      <div className="skill-cost-badge">
+        <span>{extraInfo.cost}</span>
       </div>
 
       {/* Card content */}
       <div className="relative z-1 p-3 flex flex-col h-full">
-        {/* Empty space where header was */}
+        {/* Empty space in the middle */}
         <div className="flex-grow"></div>
 
-        {/* Diamond-shaped skill image at bottom center */}
-        <div className="flex justify-center mb-2">
+        {/* Diamond-shaped skill image at center */}
+        <div className="flex justify-center mb-4">
           <div className="w-2/5 relative">
-            <div className="aspect-square transform rotate-45 overflow-hidden bg-black bg-opacity-30">
+            <div className="aspect-square transform rotate-45 overflow-hidden bg-black bg-opacity-30 border border-[hsla(var(--neon-white),0.5)] shadow-[0_0_5px_rgba(255,255,255,0.3)]">
               {extraInfo.img_url && (
                 <img
                   src={extraInfo.img_url || "/placeholder.svg"}
@@ -70,20 +72,8 @@ export function SkillCard({
         </div>
 
         {/* Card name at bottom left */}
-        <div className="flex justify-between items-center mt-2">
-          <div className="text-white font-bold text-sm truncate max-w-[80%]">{getTranslatedString(extraInfo.name)}</div>
-
-          {/* Edit button */}
-          <button
-            onClick={(e) => {
-              e.stopPropagation()
-              onEdit()
-            }}
-            className="text-white hover:text-blue-300 z-20"
-            aria-label={getTranslatedString("edit") || "Edit"}
-          >
-            <Edit className="w-5 h-5" />
-          </button>
+        <div className="text-white font-bold text-sm truncate mt-auto neon-text">
+          {getTranslatedString(extraInfo.name)}
         </div>
       </div>
     </div>

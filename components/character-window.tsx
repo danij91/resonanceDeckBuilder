@@ -1,9 +1,9 @@
 "use client"
 
-import { useState } from "react"
-import { Search } from "lucide-react"
+import { useState, useRef } from "react"
 import type { Character, Card, Equipment } from "../types"
 import { CharacterSlot } from "./character-slot"
+import { CharacterSearchModal } from "./ui/modal/CharacterSearchModal"
 
 interface CharacterWindowProps {
   selectedCharacters: number[]
@@ -49,8 +49,15 @@ export function CharacterWindow({
   const [searchTerm, setSearchTerm] = useState("")
   const [sortBy, setSortBy] = useState<"name" | "rarity">("rarity")
   const [sortDirection, setSortDirection] = useState<"desc" | "asc">("asc")
+  const modalRef = useRef<HTMLDivElement>(null)
+  const [slotHasExistingCharacter, setSlotHasExistingCharacter] = useState(false)
 
   const handleOpenSelector = (slot: number) => {
+    // 슬롯에 이미 캐릭터가 있는지 확인
+    const hasExistingCharacter = selectedCharacters[slot] !== -1
+    setSlotHasExistingCharacter(hasExistingCharacter)
+
+    // 슬롯 정보 저장 및 검색 모달 열기
     setSelectedSlot(slot)
     setSearchTerm("")
     setShowSelector(true)
@@ -58,9 +65,16 @@ export function CharacterWindow({
 
   const handleCharacterSelect = (characterId: number) => {
     if (selectedSlot !== -1) {
+      // 슬롯에 이미 캐릭터가 있었다면 먼저 제거
+      if (slotHasExistingCharacter) {
+        onRemoveCharacter(selectedSlot)
+      }
+
+      // 새 캐릭터 추가
       onAddCharacter(characterId, selectedSlot)
       setShowSelector(false)
       setSelectedSlot(-1)
+      setSlotHasExistingCharacter(false)
     }
   }
 
@@ -106,10 +120,11 @@ export function CharacterWindow({
     }
   }
 
+  // Check if any character slot is filled
+  const hasAnyCharacter = selectedCharacters.some((id) => id !== -1)
+
   return (
     <div className="w-full">
-      <h2 className="text-xl font-bold mb-4">{getTranslatedString("character.section.title") || "Characters"}</h2>
-
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-4">
         {selectedCharacters.map((characterId, index) => (
           <CharacterSlot
@@ -129,122 +144,56 @@ export function CharacterWindow({
             equipments={equipments}
             data={data}
             getSkill={getSkill} // getSkill 전달
+            hasAnyCharacter={hasAnyCharacter}
           />
         ))}
       </div>
 
-      {/* Character Selector Modal */}
-      {showSelector && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
-          onClick={() => {
-            setShowSelector(false)
-            setSelectedSlot(-1)
-          }}
-        >
-          <div
-            className="bg-gray-800 p-4 rounded-lg max-w-3xl w-full flex flex-col max-h-[90vh]"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="mb-4">
-              <h3 className="text-lg font-bold mb-4">
-                {getTranslatedString("select_character") || "Select Character"}
-              </h3>
-
-              {/* 검색 및 정렬 컨트롤 - 이 부분이 고정됩니다 */}
-              <div className="mb-4 flex items-center space-x-2">
-                <div className="relative flex-grow">
-                  <Search className="absolute left-2 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
-                  <input
-                    type="text"
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    placeholder={getTranslatedString("search_characters") || "Search characters"}
-                    className="w-full pl-8 pr-4 py-2 h-10 bg-gray-700 border border-gray-600 rounded-md text-sm"
-                  />
-                </div>
-
-                <div className="flex h-10">
-                  <select
-                    value={sortBy}
-                    onChange={(e) => setSortBy(e.target.value as "name" | "rarity")}
-                    className="p-2 h-full bg-gray-700 border border-gray-600 border-r-0 rounded-l-md text-sm appearance-none pl-3 pr-8"
-                    style={{ WebkitAppearance: "none" }}
-                  >
-                    <option value="rarity">{getTranslatedString("sort_by_rarity") || "Sort by Rarity"}</option>
-                    <option value="name">{getTranslatedString("sort_by_name") || "Sort by Name"}</option>
-                  </select>
-
-                  <div className="h-full w-px bg-gray-600"></div>
-
-                  <button
-                    onClick={() => setSortDirection((prev) => (prev === "asc" ? "desc" : "asc"))}
-                    className="h-full px-3 bg-gray-700 border border-gray-600 border-l-0 rounded-r-md flex items-center justify-center"
-                    aria-label={sortDirection === "asc" ? "Sort Descending" : "Sort Ascending"}
-                  >
-                    {sortDirection === "desc" ?"↑": "↓"}
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* 캐릭터 목록 - 이 부분만 스크롤됩니다 */}
-            <div className="flex-grow overflow-y-auto">
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-                {sortedCharacters.length === 0 ? (
-                  <div className="col-span-full text-center py-4 text-gray-400">
-                    {getTranslatedString("no_characters_found") || "No characters found"}
-                  </div>
-                ) : (
-                  sortedCharacters.map((character) => (
-                    <div
-                      key={character.id}
-                      onClick={() => handleCharacterSelect(character.id)}
-                      className="cursor-pointer"
-                    >
-                      <div
-                        className={`relative w-full aspect-[3/4] rounded-lg border-2 ${getRarityBorderColor(character.rarity)} overflow-hidden hover:opacity-80`}
-                      >
-                        {/* Character background image */}
-                        <div className="absolute inset-0 w-full h-full">
-                          {character.img_card && (
-                            <img
-                              src={character.img_card || "/placeholder.svg"}
-                              alt={getTranslatedString(character.name)}
-                              className="w-full h-full object-cover"
-                            />
-                          )}
-                        </div>
-
-                        {/* Overlay */}
-                        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-
-                        {/* Content */}
-                        <div className="relative z-10 p-3 flex flex-col h-full">
-                          {/* Name */}
-                          <h3 className="text-base font-semibold text-white">{getTranslatedString(character.name)}</h3>
-                        </div>
-                      </div>
-                    </div>
-                  ))
-                )}
-              </div>
-            </div>
-
-            <div className="border-t border-gray-700 pt-4 mt-4 flex justify-end">
-              <button
-                onClick={() => {
-                  setShowSelector(false)
-                  setSelectedSlot(-1)
-                }}
-                className="px-4 py-2 bg-gray-700 rounded-lg text-sm"
-              >
-                {getTranslatedString("close") || "Close"}
-              </button>
-            </div>
+      {/* 새로운 캐릭터 검색 모달 컴포넌트 사용 */}
+      <CharacterSearchModal
+        isOpen={showSelector}
+        onClose={() => {
+          setShowSelector(false)
+          setSelectedSlot(-1)
+          setSlotHasExistingCharacter(false)
+        }}
+        title={
+          <h3 className="text-lg font-bold neon-text">
+            {getTranslatedString("select_character") || "Select Character"}
+          </h3>
+        }
+        searchControl={{
+          searchTerm,
+          onSearchChange: setSearchTerm,
+          sortBy,
+          onSortByChange: setSortBy,
+          sortDirection,
+          onSortDirectionChange: () => setSortDirection((prev) => (prev === "asc" ? "desc" : "asc")),
+          sortOptions: [
+            { value: "rarity", label: getTranslatedString("sort_by_rarity") || "Sort by Rarity" },
+            { value: "name", label: getTranslatedString("sort_by_name") || "Sort by Name" },
+          ],
+          searchPlaceholder: getTranslatedString("search_characters") || "Search characters",
+        }}
+        characters={sortedCharacters}
+        onSelectCharacter={handleCharacterSelect}
+        getTranslatedString={getTranslatedString}
+        maxWidth="max-w-3xl"
+        footer={
+          <div className="flex justify-end">
+            <button
+              onClick={() => {
+                setShowSelector(false)
+                setSelectedSlot(-1)
+                setSlotHasExistingCharacter(false)
+              }}
+              className="neon-button px-4 py-2 rounded-lg text-sm"
+            >
+              {getTranslatedString("close") || "Close"}
+            </button>
           </div>
-        </div>
-      )}
+        }
+      />
     </div>
   )
 }
