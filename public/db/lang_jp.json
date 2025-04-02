@@ -1,4 +1,13 @@
 {
+  "comments.title": "コメント",
+  "comments.placeholder": "コメントを入力...",
+  "comments.submit": "投稿する",
+  "comments.no_comments": "まだコメントはありません。最初のコメントをどうぞ！",
+  "comment.anonymous": "匿名",
+  "comments.cooldown": "しばらくすると再度コメントできます。",
+  "comments.editing": "コメントを編集中です。",
+  "comments.cancel": "キャンセル",
+  "comments.save": "保存する",
   "character.talents_break": "共鳴/覚醒",
   "character.talents": "共鳴",
   "character.breakthroughs": "覚醒",

@@ -1,21 +1,16 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { Globe, Download, Upload, RefreshCw, Share2, HelpCircle } from "lucide-react"
-import { useRouter } from "next/navigation"
+import { Globe, Download, Upload, RefreshCw, Share2, HelpCircle } from 'lucide-react'
 import { StylizedTitle } from "./stylized-title"
-// HelpModal import 추가
 import { HelpModal } from "./ui/modal/HelpModal"
+import { useLanguage } from "../contexts/language-context"
 
 interface TopBarProps {
   onClear: () => void
   onImport: () => Promise<void>
   onExport: () => void
   onShare: () => void
-  currentLanguage: string
-  availableLanguages: string[]
-  onChangeLanguage: (language: string) => void
-  getTranslatedString: (key: string) => string
 }
 
 export function TopBar({
@@ -23,12 +18,9 @@ export function TopBar({
   onImport,
   onExport,
   onShare,
-  currentLanguage,
-  availableLanguages,
-  onChangeLanguage,
-  getTranslatedString,
 }: TopBarProps) {
-  const router = useRouter()
+  const { currentLanguage, supportedLanguages, getTranslatedString, changeLanguage, isChangingLanguage } = useLanguage()
+  
   const [showLanguageMenu, setShowLanguageMenu] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [showHelpPopup, setShowHelpPopup] = useState(false)
@@ -52,11 +44,8 @@ export function TopBar({
       return
     }
 
-    // 언어 상태 업데이트
-    onChangeLanguage(lang)
-
-    // URL 변경 (페이지 이동)
-    router.push(`/${lang}`)
+    // 언어 변경
+    changeLanguage(lang)
 
     // 메뉴 닫기
     setShowLanguageMenu(false)
@@ -105,6 +94,7 @@ export function TopBar({
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? "bg-black/80 backdrop-blur-md shadow-lg py-2" : "bg-black py-4"
       }`}
+      style={{ width: "100%" }}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo/Title */}
@@ -121,8 +111,9 @@ export function TopBar({
           <div className="relative language-dropdown">
             <button
               onClick={() => setShowLanguageMenu(!showLanguageMenu)}
-              className={`${buttonBaseClass} language-button`}
+              className={`${buttonBaseClass} language-button ${isChangingLanguage ? 'opacity-50' : ''}`}
               aria-label={getTranslatedString("language") || "Language"}
+              disabled={isChangingLanguage}
             >
               <Globe className={iconClass} />
             </button>
@@ -132,7 +123,7 @@ export function TopBar({
                 ref={languageMenuRef}
                 className="absolute right-0 mt-2 w-40 neon-dropdown animate-fadeIn bg-black bg-opacity-95"
               >
-                {availableLanguages.map((lang) => (
+                {supportedLanguages.map((lang) => (
                   <button
                     key={lang}
                     onClick={() => handleLanguageChange(lang)}
@@ -206,4 +197,3 @@ export function TopBar({
     </div>
   )
 }
-
