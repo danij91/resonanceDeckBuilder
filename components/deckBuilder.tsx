@@ -1,272 +1,221 @@
 "use client"
 
-import { useEffect, useMemo, useRef } from "react"
-import { useDataLoader } from "../hooks/use-data-loader"
-import { useDeckBuilder } from "../hooks/use-deck-builder"
+import { useState, useEffect } from "react"
 import { TopBar } from "./top-bar"
 import { CharacterWindow } from "./character-window"
-import { BattleSettings } from "./battle-settings"
-import { useToast } from "./toast-notification"
-import type { Character } from "../types"
 import { SkillWindow } from "./skill-window"
-import type { Equipment } from "../types"
+import { BattleSettings } from "./battle-settings"
+import { useDeckBuilder } from "../hooks/use-deck-builder"
+import { useDataLoader } from "../hooks/use-data-loader"
 import { LoadingScreen } from "./loading-screen"
-import { decodePresetFromUrlParam } from "../utils/presetCodec"
+import { Toast } from "./toast-notification"
+import { copyToClipboard } from "../utils/clipboard"
+import { CommentsSection } from "./comments-section"
+import { useLanguage } from "../contexts/language-context"
 
 interface DeckBuilderProps {
-  lang: string
   urlDeckCode?: string | null
 }
 
-export default function DeckBuilder({ lang, urlDeckCode }: DeckBuilderProps) {
+export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
   const { data, loading, error } = useDataLoader()
-  const deckBuilder = useDeckBuilder(data)
-  const { showToast, ToastContainer } = useToast()
+  const { currentLanguage, getTranslatedString } = useLanguage()
 
-  // useRef를 컴포넌트 최상위 레벨로 이동
-  const hasLoadedRef = useRef(false)
+  const {
+    selectedCharacters,
+    leaderCharacter,
+    selectedCards,
+    battleSettings,
+    equipment,
+    isDarkMode,
+    availableCards,
+    getCharacter,
+    getCardInfo,
+    getEquipment,
+    getSkill,
+    allEquipments,
+    addCharacter,
+    removeCharacter,
+    setLeader,
+    addCard,
+    removeCard,
+    reorderCards,
+    updateCardSettings,
+    updateBattleSettings,
+    updateEquipment,
+    toggleDarkMode,
+    clearAll,
+    exportPreset,
+    exportPresetToString,
+    importPreset,
+    importPresetObject,
+    createShareableUrl,
+    createRootShareableUrl,
+    decodePresetString,
+  } = useDeckBuilder(data)
 
-  // 초기 언어 설정
+  const [toast, setToast] = useState<{ message: string; type: "success" | "error" | "info" } | null>(null)
+
+  // Load deck from URL on mount
   useEffect(() => {
-    if (lang) {
-      deckBuilder.setLanguage(lang)
-    }
-  }, [lang, deckBuilder])
-
-  // Get all available characters
-  const availableCharacters = useMemo<Character[]>(() => {
-    if (!data) return []
-    return Object.values(data.characters)
-  }, [data])
-
-  // Get available languages
-  const availableLanguages = useMemo(() => {
-    if (!data) return ["en"]
-    return Object.keys(data.languages)
-  }, [data])
-
-  // URL에서 덱 코드 로드
-  useEffect(() => {
-    const loadDeckFromUrl = async () => {
-      if (!data || !urlDeckCode || hasLoadedRef.current) return
-
-      try {
-        // 로드 상태 표시
-        hasLoadedRef.current = true
-
-        // URL에서 가져온 덱 코드 디코딩
-        const preset = decodePresetFromUrlParam(urlDeckCode)
-
-        if (preset) {
-          // 디코딩된 프리셋 적용
-          deckBuilder.importPresetObject(preset)
-          showToast(
-            deckBuilder.getTranslatedString("import_success") || "Deck loaded from URL successfully!",
-            "success",
-          )
+    if (urlDeckCode && data) {
+      const preset = decodePresetString(urlDeckCode)
+      if (preset) {
+        const importResult = importPresetObject(preset)
+        if (importResult.success) {
+          showToast(importResult.message, "success")
         } else {
-          showToast(deckBuilder.getTranslatedString("import_failed") || "Failed to load deck from URL", "error")
+          showToast(importResult.message, "error")
         }
-      } catch (error) {
-        showToast(deckBuilder.getTranslatedString("import_failed") || "Failed to load deck from URL", "error")
+      } else {
+        showToast(getTranslatedString("import_failed") || "Import failed!", "error")
       }
     }
+  }, [urlDeckCode, data, decodePresetString, importPresetObject, getTranslatedString])
 
-    loadDeckFromUrl()
-  }, [data, urlDeckCode, showToast, deckBuilder])
-
-  const handleExport = () => {
-    const result = deckBuilder.exportPreset()
-    showToast(result.message, result.success ? "success" : "error")
+  // Show toast message
+  const showToast = (message: string, type: "success" | "error" | "info" = "info") => {
+    setToast({ message, type })
+    setTimeout(() => {
+      setToast(null)
+    }, 3000)
   }
 
-  const handleImport = async () => {
-    const result = await deckBuilder.importPreset()
-    showToast(result.message, result.success ? "success" : "error")
-  }
-
+  // Clear all settings
   const handleClear = () => {
-    deckBuilder.clearAll()
-    showToast(deckBuilder.getTranslatedString("clear_success") || "All settings cleared!", "info")
+    clearAll()
+    showToast(getTranslatedString("deck_cleared") || "Deck cleared!", "info")
   }
 
-  // 공유 기능 추가
-  const handleShare = () => {
-    const result = deckBuilder.createRootShareableUrl()
-    if (result.success) {
-      navigator.clipboard.writeText(result.url)
-      showToast(deckBuilder.getTranslatedString("share_success") || "Share link copied to clipboard!", "success")
-    } else {
-      showToast(deckBuilder.getTranslatedString("share_failed") || "Failed to create share link", "error")
+  // Import from clipboard
+  const handleImport = async () => {
+    try {
+      const importResult = await importPreset()
+      showToast(importResult.message, importResult.success ? "success" : "error")
+    } catch (e) {
+      showToast(getTranslatedString("import_failed") || "Import failed!", "error")
     }
   }
 
-  // 장비 목록 가져오기
-  const availableEquipments = useMemo<Equipment[]>(() => {
-    if (!data || !data.equipments) return []
-    return Object.values(data.equipments)
-  }, [data])
+  // Export to clipboard
+  const handleExport = async () => {
+    try {
+      const exportResult = exportPreset()
+      showToast(exportResult.message, exportResult.success ? "success" : "error")
+    } catch (e) {
+      showToast(getTranslatedString("export_failed") || "Export failed!", "error")
+    }
+  }
+
+  // Share deck
+  const handleShare = async () => {
+    try {
+      const shareableUrlResult = createShareableUrl()
+      if (shareableUrlResult.success) {
+        await copyToClipboard(shareableUrlResult.url)
+        showToast(getTranslatedString("share_link_copied") || "Share link copied!", "success")
+      } else {
+        showToast(getTranslatedString("share_link_failed") || "Failed to create share link!", "error")
+      }
+    } catch (e) {
+      showToast(getTranslatedString("share_link_failed") || "Failed to create share link!", "error")
+    }
+  }
 
   if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
-        <LoadingScreen message={deckBuilder.getTranslatedString("loading") || "Loading..."} />
-      </div>
-    )
+    return <LoadingScreen message="Loading data..." />
   }
 
   if (error) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
-        <div className="text-xl text-red-500">Error: {error.message}</div>
-      </div>
-    )
-  }
-
-  if (!data) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
-        <div className="text-xl">No data available</div>
+      <div className="text-red-500">
+        Error: {error.message}
+        <br />
+        Please check console for more details.
       </div>
     )
   }
 
   return (
-    <div className="min-h-screen dark bg-black text-white">
-      <TopBar
-        onClear={handleClear}
-        onImport={handleImport}
-        onExport={handleExport}
-        onShare={handleShare}
-        currentLanguage={deckBuilder.language}
-        availableLanguages={availableLanguages}
-        onChangeLanguage={deckBuilder.setLanguage}
-        getTranslatedString={deckBuilder.getTranslatedString}
-      />
+    <div className="min-h-screen bg-black text-white">
+      {toast && <Toast message={toast.message} type={toast.type} onClose={() => setToast(null)} />}
 
-      <div className="container mx-auto px-2 sm:px-4 max-w-full lg:max-w-6xl pt-24">
-        <main>
-          <h2 className="neon-section-title">
-            {deckBuilder.getTranslatedString("character.section.title") || "Characters"}
-          </h2>
-          <CharacterWindow
-            selectedCharacters={deckBuilder.selectedCharacters}
-            leaderCharacter={deckBuilder.leaderCharacter}
-            onAddCharacter={deckBuilder.addCharacter}
-            onRemoveCharacter={deckBuilder.removeCharacter}
-            onSetLeader={deckBuilder.setLeader}
-            getCharacter={deckBuilder.getCharacter}
-            getTranslatedString={deckBuilder.getTranslatedString}
-            availableCharacters={availableCharacters}
-            equipment={deckBuilder.equipment}
-            onEquipItem={deckBuilder.updateEquipment}
-            getCardInfo={deckBuilder.getCardInfo}
-            getEquipment={deckBuilder.getEquipment}
-            equipments={availableEquipments}
-            data={data}
-            getSkill={deckBuilder.getSkill}
-          />
+      <TopBar onClear={handleClear} onImport={handleImport} onExport={handleExport} onShare={handleShare} />
 
-          <SkillWindow
-            selectedCards={deckBuilder.selectedCards}
-            availableCards={deckBuilder.selectedCards
-              .map((selectedCard) => {
-                // 카드 정보 가져오기
-                const card = data.cards[selectedCard.id]
-                if (!card) return null
+      <div className="container mx-auto px-4 pt-28 pb-8">
+        <CharacterWindow
+          selectedCharacters={selectedCharacters}
+          leaderCharacter={leaderCharacter}
+          onAddCharacter={addCharacter}
+          onRemoveCharacter={removeCharacter}
+          onSetLeader={setLeader}
+          getCharacter={getCharacter}
+          getTranslatedString={getTranslatedString}
+          availableCharacters={Object.values(data.characters)}
+          equipment={equipment}
+          onEquipItem={updateEquipment}
+          getCardInfo={getCardInfo}
+          getEquipment={getEquipment}
+          equipments={allEquipments}
+          data={data}
+          getSkill={getSkill}
+        />
 
-                const extraInfo = {
-                  name: card.name,
-                  desc: "", // 기본값은 빈 문자열
-                  cost: card.cost_SN ? Math.floor(card.cost_SN / 10000) : 0, // cost_SN을 10000으로 나눈 정수값
-                  amount: 1, // 기본값
-                  img_url: null, // 기본값은 null로 설정
-                  specialCtrl: card.ExCondList?.map((cond) => cond.condId?.toString()) || [],
-                }
+        <SkillWindow
+          selectedCards={selectedCards}
+          availableCards={availableCards.map((item) => {
+            const card = item.card
+            const cardId = card.id.toString()
 
-                // 카드 이미지 URL 찾기
-                // 1. 먼저 card_id로 찾기
-                if (data.images[`card_${card.id}`]) {
-                  extraInfo.img_url = data.images[`card_${card.id}`]
-                } else {
-                  // 2. 임포트된 카드 정보에서 skillId 확인 (새로운 방식)
-                  const importedCardInfo = deckBuilder.selectedCards.find((c) => c.id === card.id.toString())
-                  if (importedCardInfo && importedCardInfo.skillId) {
-                    // skillId로 직접 이미지 찾기
-                    if (data.images[`skill_${importedCardInfo.skillId}`]) {
-                      extraInfo.img_url = data.images[`skill_${importedCardInfo.skillId}`]
-                      // 스킬 설명을 skill_db에서 직접 가져오기
-                      const skill = data.skills[importedCardInfo.skillId.toString()]
-                      if (skill) {
-                        extraInfo.desc = skill.description
-                      }
-                    }
-                  }
+            // 카드 추가 정보 가져오기
+            const extraInfo = {
+              name: card.name,
+              desc: card.name,
+              cost: 1,
+              amount: 1,
+              img_url: null as string | null,
+            }
 
-                  // 3. 위 방법으로 찾지 못한 경우 기존 방식으로 시도 (fallback)
-                  if (!extraInfo.img_url) {
-                    // 카드에 해당하는 스킬 찾기
-                    for (const skillId in data.skills) {
-                      const skill = data.skills[skillId]
-                      if (skill.cardID && skill.cardID.toString() === card.id.toString()) {
-                        // skill_id 형식으로 이미지 찾기
-                        if (data.images[`skill_${skillId}`]) {
-                          extraInfo.img_url = data.images[`skill_${skillId}`]
-                        }
+            // 이미지 URL 찾기
+            if (data && data.images) {
+              // 카드 ID로 이미지 찾기
+              if (data.images[`card_${cardId}`]) {
+                extraInfo.img_url = data.images[`card_${cardId}`]
+              }
 
-                        // 스킬 설명 키 설정
-                        extraInfo.desc = skill.description
-                        break
-                      }
-                    }
-                  }
-                }
-
-                // 캐릭터 이미지 찾기
-                let characterImage = null
-
-                // 1. 카드의 ownerId 확인
-                let ownerId = card.ownerId
-
-                // 2. 임포트된 데이터에서 ownerId 확인 (임포트된 카드에 ownerId가 있는 경우)
-                // 임포트된 카드 정보에서 ownerId 찾기
-                const importedCardInfo = deckBuilder.selectedCards.find((c) => c.id === card.id.toString())
-                if (importedCardInfo && importedCardInfo.ownerId) {
-                  ownerId = importedCardInfo.ownerId
-                }
-
-                // 3. ownerId로 캐릭터 이미지 찾기
-                if (ownerId) {
-                  const character = data.characters[ownerId.toString()]
-                  if (character && character.img_card) {
-                    characterImage = character.img_card
-                  }
-                }
-
-                return { card, extraInfo, characterImage }
+              // 스킬 ID로 이미지 찾기
+              const skillId = Object.keys(data.skills).find((skillId) => {
+                const skill = data.skills[skillId]
+                return skill.cardID && skill.cardID.toString() === cardId
               })
-              .filter(Boolean)}
-            onAddCard={deckBuilder.addCard}
-            onRemoveCard={deckBuilder.removeCard}
-            onReorderCards={deckBuilder.reorderCards}
-            onUpdateCardSettings={deckBuilder.updateCardSettings}
-            getTranslatedString={deckBuilder.getTranslatedString}
-            specialControls={{
-              "0": { text: "HP 50% 이하", icon: "<=", minimum: "0", maximum: "100" },
-              "1": { text: "HP 70% 이상", icon: ">=", minimum: "0", maximum: "100" },
-            }}
-          />
 
-          <BattleSettings
-            settings={deckBuilder.battleSettings}
-            onUpdateSettings={deckBuilder.updateBattleSettings}
-            getTranslatedString={deckBuilder.getTranslatedString}
-          />
-        </main>
+              if (skillId && data.images[`skill_${skillId}`]) {
+                extraInfo.img_url = data.images[`skill_${skillId}`]
+              }
+            }
 
-        <ToastContainer />
+            const owner = getCharacter(card.ownerId || -1)
+            return {
+              card: card,
+              extraInfo: extraInfo,
+              characterImage: owner?.img_card,
+            }
+          })}
+          onAddCard={addCard}
+          onRemoveCard={removeCard}
+          onReorderCards={reorderCards}
+          onUpdateCardSettings={updateCardSettings}
+          getTranslatedString={getTranslatedString}
+          specialControls={{}}
+        />
+
+        <BattleSettings
+          settings={battleSettings}
+          onUpdateSettings={updateBattleSettings}
+          getTranslatedString={getTranslatedString}
+        />
       </div>
-      <div className="container mx-auto px-2 sm:px-4 max-w-full lg:max-w-6xl pt-24 pb-24"></div>
+      <CommentsSection currentLanguage={currentLanguage} />
     </div>
   )
 }

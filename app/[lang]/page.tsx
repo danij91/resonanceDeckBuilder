@@ -1,10 +1,14 @@
 "use client"
 
-import { useEffect, useState } from "react"
-import { useSearchParams } from "next/navigation"
+import { useEffect, useState, use } from "react"
+import { useSearchParams, usePathname } from "next/navigation"
 import DeckBuilder from "../../components/deckBuilder"
 import { LoadingScreen } from "../../components/loading-screen"
-import { use } from 'react';
+import { useDataLoader } from "../../hooks/use-data-loader"
+import { LanguageProvider } from "../../contexts/language-context"
+
+// Firebase Analytics 관련 import
+import { analytics, logEvent } from "../../lib/firebase-config"
 
 interface PageProps {
   params: {
@@ -12,28 +16,49 @@ interface PageProps {
   }
 }
 
-export default function Page({ params }: { params: Promise<{ lang: string }> }) {
-  // 직접 params.lang 사용 (use() 함수 제거)
-  const {lang} = use(params) || "ko";
+export default function Page({ params }: PageProps) {
+  const { lang } = use(params)
   const searchParams = useSearchParams()
+  const pathname = usePathname()
   const [isLoading, setIsLoading] = useState(true)
   const [deckCode, setDeckCode] = useState<string | null>(null)
+  const { data, loading, error } = useDataLoader()
 
   useEffect(() => {
     // URL에서 code 파라미터 추출
     const codeParam = searchParams.get("code")
-
     if (codeParam) {
-      // URL에서 가져온 코드 저장
       setDeckCode(codeParam)
     }
 
     setIsLoading(false)
-  }, [searchParams])
 
-  if (isLoading) {
+    // Firebase Analytics 이벤트 전송
+    if (analytics && typeof window !== "undefined") {
+      logEvent(analytics, "page_view", {
+        page_path: pathname,
+        language: lang,
+      })
+    }
+  }, [searchParams, pathname, lang])
+
+  if (loading || isLoading) {
     return <LoadingScreen message="Loading..." />
   }
 
-  return <DeckBuilder lang={lang} urlDeckCode={deckCode} />
+  if (error) {
+    return (
+      <div className="text-red-500">
+        Error: {error.message}
+        <br />
+        Please check console for more details.
+      </div>
+    )
+  }
+
+  return (
+    <LanguageProvider initialLanguage={lang} data={data}>
+      <DeckBuilder urlDeckCode={deckCode} />
+    </LanguageProvider>
+  )
 }
