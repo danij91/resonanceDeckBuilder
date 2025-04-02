@@ -119,7 +119,7 @@ export function CharacterSlot({
           ${
             isEmpty
               ? hasAnyCharacter
-                ? "flex items-center justify-center cursor-pointer border border-[hsla(var(--neon-white),0.3)] bg-black bg-opacity-70"
+                ? "flex items-center justify-center cursor-pointer border border-[hsla(var(--neon-white),0.3)] bg-black bg-opacity-70 hover:bg-opacity-60"
                 : "flex items-center justify-center cursor-pointer character-slot-empty"
               : "cursor-pointer character-slot-filled"
           }
@@ -202,7 +202,11 @@ export function CharacterSlot({
           className={`
             w-full aspect-square rounded-lg overflow-hidden cursor-pointer
             ${isEmpty ? "opacity-50 pointer-events-none" : ""}
-            ${!weaponEquipment ? "bg-black border border-[hsl(var(--neon-white),0.5)] flex items-center justify-center neon-border" : getEquipmentQualityBgColor(weaponEquipment.quality)}
+            ${
+              !weaponEquipment
+                ? "equipment-slot-empty neon-border"
+                : getEquipmentQualityBgColor(weaponEquipment.quality)
+            }
           `}
           onClick={() => handleEquipmentClick("weapon")}
         >
@@ -233,7 +237,7 @@ export function CharacterSlot({
           className={`
             w-full aspect-square rounded-lg overflow-hidden cursor-pointer
             ${isEmpty ? "opacity-50 pointer-events-none" : ""}
-            ${!armorEquipment ? "bg-black border border-[hsl(var(--neon-white),0.5)] flex items-center justify-center neon-border" : getEquipmentQualityBgColor(armorEquipment.quality)}
+            ${!armorEquipment ? "equipment-slot-empty neon-border" : getEquipmentQualityBgColor(armorEquipment.quality)}
           `}
           onClick={() => handleEquipmentClick("armor")}
         >
@@ -264,7 +268,11 @@ export function CharacterSlot({
           className={`
             w-full aspect-square rounded-lg overflow-hidden cursor-pointer
             ${isEmpty ? "opacity-50 pointer-events-none" : ""}
-            ${!accessoryEquipment ? "bg-black border border-[hsl(var(--neon-white),0.5)] flex items-center justify-center neon-border" : getEquipmentQualityBgColor(accessoryEquipment.quality)}
+            ${
+              !accessoryEquipment
+                ? "equipment-slot-empty neon-border"
+                : getEquipmentQualityBgColor(accessoryEquipment.quality)
+            }
           `}
           onClick={() => handleEquipmentClick("accessory")}
         >
