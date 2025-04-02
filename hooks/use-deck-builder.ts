@@ -749,6 +749,31 @@ export function useDeckBuilder(data: Database | null) {
     }
   }, [createPresetObject])
 
+  // 프리셋 문자열을 디코딩하는 함수
+  const decodePresetString = useCallback((base64Text: string) => {
+    try {
+      // Use the decodePreset function
+      const preset = decodePreset(base64Text)
+
+      if (!preset) {
+        return null
+      }
+
+      // Validate preset structure
+      if (!preset.roleList || !Array.isArray(preset.roleList) || preset.roleList.length !== 5) {
+        return null
+      }
+
+      if (!preset.cardList || !Array.isArray(preset.cardList)) {
+        return null
+      }
+
+      return preset
+    } catch (error) {
+      return null
+    }
+  }, [])
+
   // 반환 객체에 getEquipment 추가
   return {
     selectedCharacters,
@@ -784,6 +809,7 @@ export function useDeckBuilder(data: Database | null) {
     importPresetObject,
     createShareableUrl,
     createRootShareableUrl, // 새 함수 추가
+    decodePresetString,
   }
 }
 

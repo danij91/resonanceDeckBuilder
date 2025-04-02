@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useMemo, useRef } from "react"
+import { useEffect, useMemo, useRef, useState } from "react"
 import { useDataLoader } from "../hooks/use-data-loader"
 import { useDeckBuilder } from "../hooks/use-deck-builder"
 import { TopBar } from "./top-bar"
@@ -12,6 +12,7 @@ import { SkillWindow } from "./skill-window"
 import type { Equipment } from "../types"
 import { LoadingScreen } from "./loading-screen"
 import { decodePresetFromUrlParam } from "../utils/presetCodec"
+import { analytics, logEvent } from "../lib/firebase-config" // 경로는 맞게 수정
 
 interface DeckBuilderProps {
   lang: string
@@ -25,6 +26,10 @@ export default function DeckBuilder({ lang, urlDeckCode }: DeckBuilderProps) {
 
   // useRef를 컴포넌트 최상위 레벨로 이동
   const hasLoadedRef = useRef(false)
+
+  // Import 이벤트 추적을 위한 상태
+  const [lastImportSuccess, setLastImportSuccess] = useState(false)
+  const [importedPreset, setImportedPreset] = useState<any>(null)
 
   // 초기 언어 설정
   useEffect(() => {
@@ -64,6 +69,17 @@ export default function DeckBuilder({ lang, urlDeckCode }: DeckBuilderProps) {
             deckBuilder.getTranslatedString("import_success") || "Deck loaded from URL successfully!",
             "success",
           )
+
+          // URL에서 로드한 경우 Firebase Analytics 이벤트 전송
+          if (analytics && typeof window !== "undefined") {
+            logEvent(analytics, "deck_imported", {
+              success: true,
+              source: "url",
+              selected_characters: preset.roleList.filter((id: number) => id !== -1),
+              character_count: preset.roleList.filter((id: number) => id !== -1).length,
+            })
+          }
+          
         } else {
           showToast(deckBuilder.getTranslatedString("import_failed") || "Failed to load deck from URL", "error")
         }
@@ -78,12 +94,65 @@ export default function DeckBuilder({ lang, urlDeckCode }: DeckBuilderProps) {
   const handleExport = () => {
     const result = deckBuilder.exportPreset()
     showToast(result.message, result.success ? "success" : "error")
+
+    // Firebase Analytics 이벤트 전송
+    if (analytics && typeof window !== "undefined") {
+      logEvent(analytics, "deck_exported", {
+        success: result.success,
+        method: "clipboard", // 나중에 확장 가능
+        selected_characters: deckBuilder.selectedCharacters.map((c) => c ?? -1),
+      })
+    }
   }
 
   const handleImport = async () => {
-    const result = await deckBuilder.importPreset()
-    showToast(result.message, result.success ? "success" : "error")
+    try {
+      // 클립보드에서 텍스트 읽기
+      const clipboardText = await navigator.clipboard.readText()
+
+      // 프리셋 디코딩 시도
+      const decodedPreset = deckBuilder.decodePresetString(clipboardText)
+
+      if (decodedPreset) {
+        // 디코딩된 프리셋 저장 (로깅용)
+        setImportedPreset(decodedPreset)
+
+        // 프리셋 적용
+        const result = await deckBuilder.importPreset()
+        showToast(result.message, result.success ? "success" : "error")
+
+        // 성공 여부 저장
+        setLastImportSuccess(result.success)
+      } else {
+        showToast(deckBuilder.getTranslatedString("import_failed") || "Import failed!", "error")
+        setLastImportSuccess(false)
+        setImportedPreset(null)
+      }
+    } catch (error) {
+      showToast(deckBuilder.getTranslatedString("import_failed") || "Import failed!", "error")
+      setLastImportSuccess(false)
+      setImportedPreset(null)
+    }
   }
+
+  // Import 성공 후 캐릭터 목록이 업데이트되면 로그 이벤트 전송
+  useEffect(() => {
+    if (lastImportSuccess && importedPreset && analytics && typeof window !== "undefined") {
+      // 실제 import된 캐릭터 목록 사용
+      const importedCharacters = importedPreset.roleList.filter((id: number) => id !== -1)
+
+      logEvent(analytics, "deck_imported", {
+        success: true,
+        source: "clipboard",
+        selected_characters: importedCharacters,
+        character_count: importedCharacters.length,
+      })
+
+      // 이벤트 전송 후 상태 초기화
+      setLastImportSuccess(false)
+      setImportedPreset(null)
+    }
+  }, [deckBuilder.selectedCharacters, lastImportSuccess, importedPreset])
 
   const handleClear = () => {
     deckBuilder.clearAll()
