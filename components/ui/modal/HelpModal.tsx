@@ -1,12 +1,18 @@
 "use client"
 import { Modal, type ModalProps } from "./Modal"
 import { Globe, Download, Upload, RefreshCw, Share2 } from "lucide-react"
+import { useLanguage } from "../../../contexts/language-context"
 
 export interface HelpModalProps extends Omit<ModalProps, "children" | "title"> {
-  getTranslatedString: (key: string) => string
+  getTranslatedString?: (key: string) => string
 }
 
-export function HelpModal({ getTranslatedString, ...modalProps }: HelpModalProps) {
+export function HelpModal({ getTranslatedString: propGetTranslatedString, ...modalProps }: HelpModalProps) {
+  const { getTranslatedString: contextGetTranslatedString } = useLanguage()
+
+  // Use the provided getTranslatedString or the one from context
+  const getTranslatedString = propGetTranslatedString || contextGetTranslatedString
+
   // 상단 바 컴포넌트의 버튼 색상 일관성 있게 변경
   const buttonBaseClass =
     "neon-button flex items-center justify-center w-10 h-10 rounded-lg transition-colors duration-200 shadow-md relative overflow-hidden"
@@ -21,7 +27,7 @@ export function HelpModal({ getTranslatedString, ...modalProps }: HelpModalProps
       footer={
         <div className="flex justify-end">
           <button onClick={modalProps.onClose} className="neon-button px-4 py-2 rounded-lg text-sm">
-            {getTranslatedString("close")}
+            Close
           </button>
         </div>
       }

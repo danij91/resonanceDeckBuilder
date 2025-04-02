@@ -54,9 +54,6 @@ export function useDeckBuilder(data: Database | null) {
   // Dark mode
   const [isDarkMode, setIsDarkMode] = useState(true)
 
-  // Language selection
-  const [language, setLanguageState] = useState<string>("en")
-
   // Apply dark mode class to document
   useEffect(() => {
     if (isDarkMode) {
@@ -70,15 +67,6 @@ export function useDeckBuilder(data: Database | null) {
   const toggleDarkMode = useCallback(() => {
     setIsDarkMode((prev) => !prev)
   }, [])
-
-  // Get translated string
-  const getTranslatedString = useCallback(
-    (key: string) => {
-      if (!data || !data.languages[language]) return key
-      return data.languages[language][key] || key
-    },
-    [data, language],
-  )
 
   // Get character by ID
   const getCharacter = useCallback(
@@ -562,11 +550,11 @@ export function useDeckBuilder(data: Database | null) {
       const preset = createPresetObject()
       const base64String = encodePreset(preset)
       navigator.clipboard.writeText(base64String)
-      return { success: true, message: getTranslatedString("export_success") || "Export successful!" }
+      return { success: true, message: "Export successful!" }
     } catch (error) {
-      return { success: false, message: getTranslatedString("export_failed") || "Export failed!" }
+      return { success: false, message: "Export failed!" }
     }
-  }, [createPresetObject, getTranslatedString])
+  }, [createPresetObject])
 
   // Import preset from clipboard
   const importPreset = useCallback(async () => {
@@ -618,36 +606,11 @@ export function useDeckBuilder(data: Database | null) {
       // Reset equipment
       setEquipment(Array(5).fill({ weapon: null, armor: null, accessory: null }))
 
-      return { success: true, message: getTranslatedString("import_success") || "Import successful!" }
+      return { success: true, message: "Import successful!" }
     } catch (error) {
-      return { success: false, message: getTranslatedString("import_failed") || "Import failed!" }
+      return { success: false, message: "Import failed!" }
     }
-  }, [getTranslatedString])
-
-  // 언어 변경 함수 - 동적 로딩 추가
-  const changeLanguage = useCallback(
-    async (newLanguage: string) => {
-      // 이미 로드된 언어인지 확인
-      if (data && !data.languages[newLanguage]) {
-        try {
-          // 새 언어 파일 동적 로드 (절대 경로 사용)
-          const langResponse = await fetch(`/api/db/lang/${newLanguage}.json`)
-          const langData = await langResponse.json()
-
-          // 데이터 업데이트
-          if (data && data.languages) {
-            data.languages[newLanguage] = langData
-          }
-        } catch (error) {
-          // 에러 처리
-        }
-      }
-
-      // 언어 상태 업데이트
-      setLanguageState(newLanguage)
-    },
-    [data],
-  )
+  }, [])
 
   // getEquipment 함수 추가
   const getEquipment = useCallback(
@@ -665,54 +628,51 @@ export function useDeckBuilder(data: Database | null) {
   }, [data])
 
   // 프리셋 객체를 직접 가져와서 적용
-  const importPresetObject = useCallback(
-    (preset: any) => {
-      try {
-        // Validate preset structure
-        if (!preset.roleList || !Array.isArray(preset.roleList) || preset.roleList.length !== 5) {
-          throw new Error("Invalid roleList")
-        }
-
-        if (!preset.cardList || !Array.isArray(preset.cardList)) {
-          throw new Error("Invalid cardList")
-        }
-
-        // Update state with imported preset
-        setSelectedCharacters(preset.roleList)
-        setLeaderCharacter(preset.header)
-
-        // Transform the cardList to our internal format
-        const simplifiedCardList = preset.cardList.map((card) => ({
-          id: card.id,
-          useType: card.useType,
-          useParam: card.useParam,
-          useParamMap: card.useParamMap || {},
-          ownerId: card.ownerId,
-          skillId: card.skillId,
-          skillIndex: card.skillIndex,
-        }))
-
-        setSelectedCards(simplifiedCardList)
-
-        // 기본값 설정
-        setBattleSettings({
-          isLeaderCardOn: preset.isLeaderCardOn !== undefined ? preset.isLeaderCardOn : true,
-          isSpCardOn: preset.isSpCardOn !== undefined ? preset.isSpCardOn : true,
-          keepCardNum: preset.keepCardNum !== undefined ? preset.keepCardNum : 0,
-          discardType: preset.discardType !== undefined ? preset.discardType - 1 : 0, // Subtract 1 from discardType
-          otherCard: preset.otherCard !== undefined ? preset.otherCard : 0,
-        })
-
-        // Reset equipment
-        setEquipment(Array(5).fill({ weapon: null, armor: null, accessory: null }))
-
-        return { success: true, message: getTranslatedString("import_success") || "Import successful!" }
-      } catch (error) {
-        return { success: false, message: getTranslatedString("import_failed") || "Import failed!" }
+  const importPresetObject = useCallback((preset: any) => {
+    try {
+      // Validate preset structure
+      if (!preset.roleList || !Array.isArray(preset.roleList) || preset.roleList.length !== 5) {
+        throw new Error("Invalid roleList")
       }
-    },
-    [getTranslatedString],
-  )
+
+      if (!preset.cardList || !Array.isArray(preset.cardList)) {
+        throw new Error("Invalid cardList")
+      }
+
+      // Update state with imported preset
+      setSelectedCharacters(preset.roleList)
+      setLeaderCharacter(preset.header)
+
+      // Transform the cardList to our internal format
+      const simplifiedCardList = preset.cardList.map((card) => ({
+        id: card.id,
+        useType: card.useType,
+        useParam: card.useParam,
+        useParamMap: card.useParamMap || {},
+        ownerId: card.ownerId,
+        skillId: card.skillId,
+        skillIndex: card.skillIndex,
+      }))
+
+      setSelectedCards(simplifiedCardList)
+
+      // 기본값 설정
+      setBattleSettings({
+        isLeaderCardOn: preset.isLeaderCardOn !== undefined ? preset.isLeaderCardOn : true,
+        isSpCardOn: preset.isSpCardOn !== undefined ? preset.isSpCardOn : true,
+        keepCardNum: preset.keepCardNum !== undefined ? preset.keepCardNum : 0,
+        discardType: preset.discardType !== undefined ? preset.discardType - 1 : 0, // Subtract 1 from discardType
+        otherCard: preset.otherCard !== undefined ? preset.otherCard : 0,
+      })
+
+      // Reset equipment
+      setEquipment(Array(5).fill({ weapon: null, armor: null, accessory: null }))
+
+      return { success: true, message: "Import successful!" }
+    } catch (error) {
+      return { success: false, message: "Import failed!" }
+    }
+  }, [])
 
   // 공유 가능한 URL 생성
   const createShareableUrl = useCallback(() => {
@@ -749,6 +709,31 @@ export function useDeckBuilder(data: Database | null) {
     }
   }, [createPresetObject])
 
+  // 프리셋 문자열을 디코딩하는 함수
+  const decodePresetString = useCallback((base64Text: string) => {
+    try {
+      // Use the decodePreset function
+      const preset = decodePreset(base64Text)
+
+      if (!preset) {
+        return null
+      }
+
+      // Validate preset structure
+      if (!preset.roleList || !Array.isArray(preset.roleList) || preset.roleList.length !== 5) {
+        return null
+      }
+
+      if (!preset.cardList || !Array.isArray(preset.cardList)) {
+        return null
+      }
+
+      return preset
+    } catch (error) {
+      return null
+    }
+  }, [])
+
   // 반환 객체에 getEquipment 추가
   return {
     selectedCharacters,
@@ -756,10 +741,8 @@ export function useDeckBuilder(data: Database | null) {
     selectedCards,
     battleSettings,
     equipment,
-    language,
     isDarkMode,
     availableCards,
-    getTranslatedString,
     getCharacter,
     getCard,
     getCardInfo,
@@ -775,7 +758,6 @@ export function useDeckBuilder(data: Database | null) {
     updateCardSettings,
     updateBattleSettings,
     updateEquipment,
-    setLanguage: changeLanguage,
     toggleDarkMode,
     clearAll,
     exportPreset,
@@ -783,7 +765,8 @@ export function useDeckBuilder(data: Database | null) {
     importPreset,
     importPresetObject,
     createShareableUrl,
-    createRootShareableUrl, // 새 함수 추가
+    createRootShareableUrl,
+    decodePresetString,
   }
 }
 
