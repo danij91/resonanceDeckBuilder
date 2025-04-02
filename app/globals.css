@@ -425,12 +425,20 @@ body {
   .character-slot-empty {
     border: 1px solid hsla(var(--neon-white), 0.5);
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.5), 0 0 12px rgba(255, 255, 255, 0.3);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .character-slot-empty:hover {
+    border: 1px solid hsla(var(--neon-white), 0.8);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.7), 0 0 16px rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
   }
 
   .character-slot-filled {
     border: 1px solid hsla(var(--neon-white), 0.5);
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
     opacity: 1;
+    transition: all 0.2s ease-in-out;
   }
 
   .character-slot-filled:hover {
@@ -644,6 +652,22 @@ body {
 
   .equipment-card:hover {
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.5), 0 0 12px rgba(255, 255, 255, 0.3);
+  }
+
+  /* 장비 슬롯 호버 효과 추가 */
+  .equipment-slot-empty {
+    background-color: black;
+    border: 1px solid hsla(var(--neon-white), 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .equipment-slot-empty:hover {
+    border-color: hsla(var(--neon-white), 0.8);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.1);
   }
 
   /* 캐릭터 정보창 스타일 */
