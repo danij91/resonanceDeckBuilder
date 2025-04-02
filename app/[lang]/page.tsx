@@ -1,13 +1,14 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, use } from "react"
 import { useSearchParams, usePathname } from "next/navigation"
 import DeckBuilder from "../../components/deckBuilder"
 import { LoadingScreen } from "../../components/loading-screen"
-import { use } from 'react'
+import { useDataLoader } from "../../hooks/use-data-loader"
+import { LanguageProvider } from "../../contexts/language-context"
 
 // Firebase Analytics 관련 import
-import { analytics, logEvent } from "../../lib/firebase-config" // 경로는 프로젝트 구조에 맞게 조정
+import { analytics, logEvent } from "../../lib/firebase-config"
 
 interface PageProps {
   params: {
@@ -15,12 +16,13 @@ interface PageProps {
   }
 }
 
-export default function Page({ params }: { params: Promise<{ lang: string }> }) {
-  const { lang } = use(params) || "ko"
+export default function Page({ params }: PageProps) {
+  const { lang } = use(params)
   const searchParams = useSearchParams()
   const pathname = usePathname()
   const [isLoading, setIsLoading] = useState(true)
   const [deckCode, setDeckCode] = useState<string | null>(null)
+  const { data, loading, error } = useDataLoader()
 
   useEffect(() => {
     // URL에서 code 파라미터 추출
@@ -40,9 +42,23 @@ export default function Page({ params }: { params: Promise<{ lang: string }> }) 
     }
   }, [searchParams, pathname, lang])
 
-  if (isLoading) {
+  if (loading || isLoading) {
     return <LoadingScreen message="Loading..." />
   }
 
-  return <DeckBuilder lang={lang} urlDeckCode={deckCode} />
+  if (error) {
+    return (
+      <div className="text-red-500">
+        Error: {error.message}
+        <br />
+        Please check console for more details.
+      </div>
+    )
+  }
+
+  return (
+    <LanguageProvider initialLanguage={lang} data={data}>
+      <DeckBuilder urlDeckCode={deckCode} />
+    </LanguageProvider>
+  )
 }
