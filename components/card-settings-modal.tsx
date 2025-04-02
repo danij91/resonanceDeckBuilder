@@ -38,48 +38,48 @@ export function CardSettingsModal({
   const formatColorText = (text: string) => {
     if (!text) return ""
 
-// Remove newlines or replace with spaces
-const textWithoutNewlines = text.replace(/\n/g, " ")
+    // Remove newlines or replace with spaces
+    const textWithoutNewlines = text.replace(/\n/g, " ")
 
-// Create a temporary DOM element to parse HTML
-const tempDiv = document.createElement("div")
-tempDiv.innerHTML = textWithoutNewlines
-  .replace(/<color=#([A-Fa-f0-9]{6})>/g, '<span style="color: #$1">')
-  .replace(/<\/color>/g, "</span>")
+    // Create a temporary DOM element to parse HTML
+    const tempDiv = document.createElement("div")
+    tempDiv.innerHTML = textWithoutNewlines
+      .replace(/<color=#([A-Fa-f0-9]{6})>/g, '<span style="color: #$1">')
+      .replace(/<\/color>/g, "</span>")
 
-// Convert the DOM structure back to React elements
-const convertNodeToReact = (node: Node, index: number): React.ReactNode => {
-  if (node.nodeType === Node.TEXT_NODE) {
-    return node.textContent
-  }
+    // Convert the DOM structure back to React elements
+    const convertNodeToReact = (node: Node, index: number): React.ReactNode => {
+      if (node.nodeType === Node.TEXT_NODE) {
+        return node.textContent
+      }
 
-  if (node.nodeType === Node.ELEMENT_NODE) {
-    const element = node as HTMLElement
-    const childElements = Array.from(element.childNodes).map((child, i) => convertNodeToReact(child, i))
+      if (node.nodeType === Node.ELEMENT_NODE) {
+        const element = node as HTMLElement
+        const childElements = Array.from(element.childNodes).map((child, i) => convertNodeToReact(child, i))
 
-    if (element.tagName === "SPAN") {
-        return (
-          <span key={index} style={{ color: element.style.color }}>
+        if (element.tagName === "SPAN") {
+          return (
+            <span key={index} style={{ color: element.style.color }}>
               {childElements}
-          </span>
-        )
+            </span>
+          )
+        }
+
+        if (element.tagName === "I") {
+          return <i key={index}>{childElements}</i>
+        }
+
+        if (element.tagName === "B") {
+          return <b key={index}>{childElements}</b>
+        }
+
+        return <React.Fragment key={index}>{childElements}</React.Fragment>
       }
 
-      if (element.tagName === "I") {
-        return <i key={index}>{childElements}</i>
-      }
-
-      if (element.tagName === "B") {
-        return <b key={index}>{childElements}</b>
-      }
-
-      return <React.Fragment key={index}>{childElements}</React.Fragment>
+      return null
     }
 
-    return null
-  }
-
-  return Array.from(tempDiv.childNodes).map((node, i) => convertNodeToReact(node, i))
+    return Array.from(tempDiv.childNodes).map((node, i) => convertNodeToReact(node, i))
   }
 
   // 숫자 입력값 변경 핸들러
@@ -97,11 +97,12 @@ const convertNodeToReact = (node: Node, index: number): React.ReactNode => {
 
     setUseParamMap(newParamMap)
 
-    // 현재 선택된 옵션이 이 파라미터를 사용하는 경우 즉시 저장
-    if (useType === optionIndex) {
-      setUseParam(adjustedValue)
-      onSave(card.id.toString(), useType, adjustedValue, newParamMap)
-    }
+    // 숫자를 편집하면 자동으로 해당 옵션 선택
+    setUseType(optionIndex)
+    setUseParam(adjustedValue)
+
+    // 변경사항 즉시 저장
+    onSave(card.id.toString(), optionIndex, adjustedValue, newParamMap)
   }
 
   // 아이콘 렌더링 함수
@@ -179,7 +180,7 @@ const convertNodeToReact = (node: Node, index: number): React.ReactNode => {
       footer={
         <div className="flex justify-end">
           <button onClick={onClose} className="neon-button px-4 py-2 rounded-lg text-sm">
-          {getTranslatedString("close")}
+            {getTranslatedString("close")}
           </button>
         </div>
       }
