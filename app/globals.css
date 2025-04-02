@@ -471,13 +471,13 @@ body {
   }
 
   .skill-option-selected {
-    background-color: #050505;
+    background-color: #868686;
     border: 1px solid hsla(var(--neon-white), 0.5);
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
   }
 
   .skill-option-unselected {
-    background-color: #030303;
+    background-color: #040404;
     border: 1px solid hsla(var(--neon-white), 0.15);
   }
 
