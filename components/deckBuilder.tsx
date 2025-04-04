@@ -1,38 +1,54 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useMemo, useCallback } from "react"
+import { useSearchParams } from "next/navigation"
 import { TopBar } from "./top-bar"
 import { CharacterWindow } from "./character-window"
 import { SkillWindow } from "./skill-window"
 import { BattleSettings } from "./battle-settings"
+import { CommentsSection } from "./comments-section"
+import { useToast } from "./toast-notification"
 import { useDeckBuilder } from "../hooks/use-deck-builder"
+import { useLanguage } from "../contexts/language-context"
+import { decodePresetFromUrlParam } from "../utils/presetCodec"
+import { analytics, logEvent } from "../lib/firebase-config"
 import { useDataLoader } from "../hooks/use-data-loader"
 import { LoadingScreen } from "./loading-screen"
-import { Toast } from "./toast-notification"
-import { copyToClipboard } from "../utils/clipboard"
-import { CommentsSection } from "./comments-section"
-import { useLanguage } from "../contexts/language-context"
-
-// Firebase Analytics 관련 import 추가
-import { analytics, logEvent } from "../lib/firebase-config"
 
 interface DeckBuilderProps {
-  urlDeckCode?: string | null
+  urlDeckCode: string | null
+}
+
+interface CardExtraInfo {
+  name: string
+  desc: string
+  cost: number
+  amount: number
+  img_url: string | undefined
 }
 
 export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
-  const { data, loading, error } = useDataLoader()
-  const { currentLanguage, getTranslatedString } = useLanguage()
+  const { getTranslatedString, currentLanguage } = useLanguage()
+  const searchParams = useSearchParams()
+  const { showToast, ToastContainer } = useToast()
 
+  // useDataLoader 훅을 사용하여 실제 데이터 로드
+  const { data, loading, error } = useDataLoader()
+
+  // 로컬 로딩 상태 추가
+  const [isLocalLoading, setIsLocalLoading] = useState(true)
+  const [initialLoadComplete, setInitialLoadComplete] = useState(false)
+
+  // useDeckBuilder 훅 사용 - 실제 data 객체 전달
   const {
     selectedCharacters,
     leaderCharacter,
     selectedCards,
     battleSettings,
     equipment,
-    isDarkMode,
-    availableCards,
+    availableCards: availableCardsFromHook,
     getCharacter,
+    getCard,
     getCardInfo,
     getEquipment,
     getSkill,
@@ -46,276 +62,347 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
     updateCardSettings,
     updateBattleSettings,
     updateEquipment,
-    toggleDarkMode,
     clearAll,
     exportPreset,
-    exportPresetToString,
     importPreset,
     importPresetObject,
     createShareableUrl,
-    createRootShareableUrl,
     decodePresetString,
   } = useDeckBuilder(data)
 
-  const [toast, setToast] = useState<{ message: string; type: "success" | "error" | "info" } | null>(null)
+  // URL을 통해 덱 프리셋을 받아올 때 ownerId를 char_db에서 검색하여 카드에 캐릭터 초상화 표시 로직 개선
 
-  // 캐릭터 ID를 개별 파라미터로 변환하는 함수
-  const createCharacterParams = (characterIds: number[]) => {
-    // 유효한 캐릭터만 필터링 (빈 슬롯 제외)
-    const validCharacters = characterIds.filter((id) => id !== -1)
+  // findCharacterImageForCard 함수를 수정하여 더 강력하게 만들기
+  const findCharacterImageForCard = useCallback(
+    (card: any) => {
+      if (!data || !card) {
+        return "images/placeHolder Card.jpg" // 기본 이미지 경로 설정
+      }
 
-    return {
-      character_ids: JSON.stringify(validCharacters),
-      character_count: validCharacters.length,
-    }
-  }
+      const cardId = card.id?.toString()
 
-  // Load deck from URL on mount
-  useEffect(() => {
-    if (urlDeckCode && data) {
-      const preset = decodePresetString(urlDeckCode)
-      if (preset) {
-        const importResult = importPresetObject(preset)
-        if (importResult.success) {
-          showToast(getTranslatedString(importResult.message) || "Import successful!", "success")
+      // 1. 가장 중요: 카드 자체의 ownerId를 우선적으로 사용
+      if (card.ownerId && card.ownerId !== -1) {
+        // 이미지 데이터베이스에서 char_{ownerId} 키로 직접 찾기
+        if (data.images && data.images[`char_${card.ownerId}`]) {
+          return data.images[`char_${card.ownerId}`]
+        }
 
-          // URL 임포트 성공 시 이벤트 로깅
-          if (analytics && typeof window !== "undefined") {
-            // 유효한 캐릭터 ID 리스트 추출 (빈 슬롯 제외)
-            const validCharacters = preset.roleList.filter((id) => id !== -1)
+        // 캐릭터 객체에서 img_card 속성 찾기
+        const character = data.characters[card.ownerId.toString()]
+        if (character && character.img_card) {
+          return character.img_card
+        }
+      }
 
-            // 이벤트 파라미터 생성
-            const eventParams = {
-              language: currentLanguage,
-              leader_id: preset.header,
-              ...createCharacterParams(validCharacters),
-            }
-
-            logEvent(analytics, "url_import_success", eventParams)
+      // 2. selectedCards 배열에서 동일한 카드 ID를 가진 카드를 찾아 ownerId 확인
+      if (cardId && selectedCards) {
+        const selectedCard = selectedCards.find((c) => c.id === cardId)
+        if (selectedCard && selectedCard.ownerId && selectedCard.ownerId !== -1) {
+          // 이미지 데이터베이스에서 char_{ownerId} 키로 직접 찾기
+          if (data.images && data.images[`char_${selectedCard.ownerId}`]) {
+            return data.images[`char_${selectedCard.ownerId}`]
           }
-        } else {
-          showToast(getTranslatedString(importResult.message) || "Import failed!", "error")
 
-          // URL 임포트 실패 시 이벤트 로깅
-          if (analytics && typeof window !== "undefined") {
-            logEvent(analytics, "url_import_failed", {
-              language: currentLanguage,
-              error_message: importResult.message,
+          // 캐릭터 객체에서 img_card 속성 찾기
+          const character = data.characters[selectedCard.ownerId.toString()]
+          if (character && character.img_card) {
+            return character.img_card
+          }
+        }
+      }
+
+      // 3. 카드 데이터베이스에서 ownerId 확인
+      if (cardId) {
+        const cardData = data.cards[cardId]
+        if (cardData && cardData.ownerId && cardData.ownerId !== -1) {
+          // 이미지 데이터베이스에서 char_{ownerId} 키로 직접 찾기
+          if (data.images && data.images[`char_${cardData.ownerId}`]) {
+            return data.images[`char_${cardData.ownerId}`]
+          }
+
+          // 캐릭터 객체에서 img_card 속성 찾기
+          const character = data.characters[cardData.ownerId.toString()]
+          if (character && character.img_card) {
+            return character.img_card
+          }
+        }
+      }
+
+      // 4. 카드 ID로 스킬을 찾고, 스킬에서 캐릭터 찾기
+      if (cardId) {
+        for (const skillId in data.skills) {
+          const skill = data.skills[skillId]
+          if (skill && skill.cardID && skill.cardID.toString() === cardId) {
+            // 이 스킬을 가진 캐릭터 찾기
+            for (const charId in data.characters) {
+              const character = data.characters[charId]
+              if (character && character.skillList) {
+                const hasSkill = character.skillList.some((skillItem) => skillItem.skillId.toString() === skillId)
+
+                if (hasSkill) {
+                  // 이미지 데이터베이스에서 char_{charId} 키로 직접 찾기
+                  if (data.images && data.images[`char_${charId}`]) {
+                    return data.images[`char_${charId}`]
+                  }
+
+                  // 캐릭터 객체에서 img_card 속성 찾기
+                  if (character.img_card) {
+                    return character.img_card
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // 5. 카드 이미지 직접 찾기
+      if (cardId && data.images && data.images[`card_${cardId}`]) {
+        return data.images[`card_${cardId}`]
+      }
+
+      // 6. 기본 이미지 반환
+      return "images/placeHolder Card.jpg"
+    },
+    [data, selectedCards],
+  )
+
+  // URL에서 코드 파라미터 처리 - 비동기 함수 사용 문제 해결
+  useEffect(() => {
+    // 이미 로드 완료된 경우 다시 실행하지 않음
+    if (initialLoadComplete || !data) return
+
+    const loadFromUrl = () => {
+      if (urlDeckCode) {
+        try {
+          const preset = decodePresetFromUrlParam(urlDeckCode)
+          if (preset) {
+            const result = importPresetObject(preset)
+            if (result.success) {
+              showToast(getTranslatedString(result.message), "success")
+
+              // Firebase Analytics 이벤트 전송
+              if (analytics && typeof window !== "undefined") {
+                logEvent(analytics, "deck_shared_visit", {
+                  deck_code: urlDeckCode,
+                  language: currentLanguage,
+                })
+              }
+            }
+          }
+        } catch (error) {
+          console.error("Error decoding URL preset:", error)
+        }
+      }
+
+      // 로컬 로딩 상태 업데이트
+      setIsLocalLoading(false)
+      setInitialLoadComplete(true)
+    }
+
+    loadFromUrl()
+  }, [data, urlDeckCode, importPresetObject, showToast, getTranslatedString, currentLanguage, initialLoadComplete])
+
+  // 스킬 카드 정보 생성 부분 수정
+  // availableCards 부분에서 extraInfo 객체 생성 시 cost 값을 제대로 설정하도록 수정
+  const availableCards = useMemo(() => {
+    if (!data) return []
+
+    const cardSet = new Set<string>()
+    const validCharacters = selectedCharacters.filter((id) => id !== -1)
+
+    // 모든 카드 순회
+    Object.values(data.cards).forEach((card) => {
+      // 카드 소유자 확인
+      if (card.ownerId && validCharacters.includes(card.ownerId)) {
+        cardSet.add(card.id.toString())
+      }
+    })
+
+    // 스킬에서 카드 ID 찾기
+    validCharacters.forEach((charId) => {
+      const character = data.characters[charId.toString()]
+      if (character && character.skillList) {
+        character.skillList.forEach((skillItem) => {
+          const skill = data.skills[skillItem.skillId.toString()]
+          if (skill && skill.cardID) {
+            cardSet.add(skill.cardID.toString())
+          }
+
+          // ExSkillList에서 카드 ID 찾기
+          if (skill && skill.ExSkillList && skill.ExSkillList.length > 0) {
+            skill.ExSkillList.forEach((exSkill) => {
+              const exSkillData = data.skills[exSkill.ExSkillName.toString()]
+              if (exSkillData && exSkillData.cardID) {
+                cardSet.add(exSkillData.cardID.toString())
+              }
             })
           }
-        }
-      } else {
-        showToast(getTranslatedString("import_failed") || "Import failed!", "error")
-
-        // URL 임포트 실패 시 이벤트 로깅
-        if (analytics && typeof window !== "undefined") {
-          logEvent(analytics, "url_import_failed", {
-            language: currentLanguage,
-            error_message: "invalid_preset_format",
-          })
-        }
+        })
       }
-    }
-  }, [urlDeckCode, data, decodePresetString, importPresetObject, getTranslatedString, currentLanguage])
+    })
 
-  // Show toast message
-  const showToast = (message: string, type: "success" | "error" | "info" = "info") => {
-    setToast({ message, type })
-    setTimeout(() => {
-      setToast(null)
-    }, 3000)
-  }
+    // Convert to array
+    return Array.from(cardSet)
+      .map((id) => {
+        const card = data.cards[id]
+        if (!card) return null
 
-  // Show alert popup
-  const showAlert = (message: string) => {
-    alert(message)
-  }
+        // 기본 extraInfo 객체 생성
+        const extraInfo: CardExtraInfo = {
+          name: card.name || `card_name_${id}`,
+          desc: "",
+          cost: 0, // 기본값 설정
+          amount: 1,
+          img_url: undefined,
+        }
 
-  // Clear all settings
-  const handleClear = () => {
-    clearAll()
-    showToast(getTranslatedString("deck_cleared") || "Deck cleared!", "info")
+        // 카드 ID에 해당하는 이미지 URL 찾기
+        if (data.images && data.images[`card_${id}`]) {
+          extraInfo.img_url = data.images[`card_${id}`]
+        }
 
-    // 덱 초기화 이벤트 로깅
-    if (analytics && typeof window !== "undefined") {
-      logEvent(analytics, "deck_cleared", {
-        language: currentLanguage,
+        // 스킬 ID를 통해 추가 정보 찾기
+        for (const skillId in data.skills) {
+          const skill = data.skills[skillId]
+          if (skill && skill.cardID && skill.cardID.toString() === id) {
+            // 스킬 이미지 URL 찾기
+            if (data.images && data.images[`skill_${skillId}`]) {
+              extraInfo.img_url = data.images[`skill_${skillId}`]
+            }
+            break
+          }
+        }
+
+        // 카드 비용 정보 찾기 - cost_SN을 10000으로 나눈 값 사용
+        if (card.cost_SN !== undefined) {
+          // cost_SN을 10000으로 나누고 내림 처리
+          const costValue = card.cost_SN > 0 ? Math.floor(card.cost_SN / 10000) : 0
+          extraInfo.cost = costValue
+        }
+
+        // 캐릭터 이미지 연결 - 더 강력한 로직 사용
+        const characterImage = findCharacterImageForCard(card)
+        return { card, extraInfo, characterImage }
       })
-    }
-  }
+      .filter(Boolean)
+  }, [data, selectedCharacters, findCharacterImageForCard])
 
-  // Import from clipboard
+  // 클립보드에서 가져오기
   const handleImport = async () => {
     try {
-      const importResult = await importPreset()
-      if (importResult.success) {
-        showToast(getTranslatedString(importResult.message) || "Deck imported successfully!", "success")
+      const result = await importPreset()
+      showToast(getTranslatedString(result.message), result.success ? "success" : "error")
 
-        // 클립보드 임포트 성공 시 이벤트 로깅
-        if (analytics && typeof window !== "undefined") {
-          // 유효한 캐릭터 ID 리스트 추출 (빈 슬롯 제외)
-          const validCharacters = selectedCharacters.filter((id) => id !== -1)
-
-          // 이벤트 파라미터 생성
-          const eventParams = {
-            language: currentLanguage,
-            leader_id: leaderCharacter,
-            ...createCharacterParams(validCharacters),
-          }
-
-          logEvent(analytics, "clipboard_import_success", eventParams)
-        }
-      } else {
-        showToast(getTranslatedString(importResult.message) || "Import failed!", "error")
-
-        // 클립보드 임포트 실패 시 이벤트 로깅
-        if (analytics && typeof window !== "undefined") {
-          logEvent(analytics, "clipboard_import_failed", {
-            language: currentLanguage,
-            error_message: importResult.message,
-          })
-        }
-      }
-    } catch (e) {
-      showToast(getTranslatedString("import_failed") || "Import failed!", "error")
-
-      // 클립보드 임포트 실패 시 이벤트 로깅
-      if (analytics && typeof window !== "undefined") {
-        logEvent(analytics, "clipboard_import_failed", {
+      // Firebase Analytics 이벤트 전송
+      if (analytics && result.success) {
+        const characterIds = selectedCharacters.filter((id) => id !== -1)
+        logEvent(analytics, "deck_imported", {
+          character_ids: JSON.stringify(characterIds),
           language: currentLanguage,
-          error_message: e instanceof Error ? e.message : "unknown_error",
         })
       }
+    } catch (error) {
+      console.error("Import error:", error)
+      showToast(getTranslatedString("import_failed"), "error")
     }
   }
 
-  // Export to clipboard
-  const handleExport = async () => {
+  // 클립보드로 내보내기
+  const handleExport = () => {
     try {
-      const exportResult = exportPreset()
-      if (exportResult.success) {
-        // 성공 시 알림 팝업 표시
-        showAlert(getTranslatedString(exportResult.message) || "Deck exported to clipboard successfully!")
+      const result = exportPreset()
+      showToast(getTranslatedString(result.message), result.success ? "success" : "error")
 
-        // 익스포트 성공 시 이벤트 로깅
-        if (analytics && typeof window !== "undefined") {
-          // 유효한 캐릭터 ID 리스트 추출 (빈 슬롯 제외)
-          const validCharacters = selectedCharacters.filter((id) => id !== -1)
-
-          // 이벤트 파라미터 생성
-          const eventParams = {
-            language: currentLanguage,
-            leader_id: leaderCharacter,
-            ...createCharacterParams(validCharacters),
-          }
-
-          logEvent(analytics, "export_success", eventParams)
-        }
-      } else {
-        showToast(getTranslatedString(exportResult.message) || "Export failed!", "error")
-
-        // 익스포트 실패 시 이벤트 로깅
-        if (analytics && typeof window !== "undefined") {
-          logEvent(analytics, "export_failed", {
-            language: currentLanguage,
-            error_message: exportResult.message,
-          })
-        }
-      }
-    } catch (e) {
-      showToast(getTranslatedString("export_failed") || "Export failed!", "error")
-
-      // 익스포트 실패 시 이벤트 로깅
-      if (analytics && typeof window !== "undefined") {
-        logEvent(analytics, "export_failed", {
+      // Firebase Analytics 이벤트 전송
+      if (analytics && result.success) {
+        const characterIds = selectedCharacters.filter((id) => id !== -1)
+        logEvent(analytics, "deck_exported", {
+          character_ids: JSON.stringify(characterIds),
           language: currentLanguage,
-          error_message: e instanceof Error ? e.message : "unknown_error",
         })
       }
+    } catch (error) {
+      console.error("Export error:", error)
+      showToast(getTranslatedString("export_failed"), "error")
     }
   }
 
-  // Share deck
-  const handleShare = async () => {
+  // 공유 링크 생성
+  const handleShare = () => {
     try {
-      const shareableUrlResult = createShareableUrl()
-      if (shareableUrlResult.success) {
-        await copyToClipboard(shareableUrlResult.url)
-        // 성공 시 알림 팝업 표시
-        showAlert(
-          getTranslatedString("share_link_copied_alert") ||
-            "Share link copied to clipboard!\n\nYou can now paste and share it.",
-        )
+      const result = createShareableUrl()
+      if (result.success && result.url) {
+        navigator.clipboard.writeText(result.url)
+        showToast(getTranslatedString("share_link_copied_alert"), "success")
 
-        // 공유 성공 시 이벤트 로깅
-        if (analytics && typeof window !== "undefined") {
-          // 유효한 캐릭터 ID 리스트 추출 (빈 슬롯 제외)
-          const validCharacters = selectedCharacters.filter((id) => id !== -1)
-
-          // 이벤트 파라미터 생성
-          const eventParams = {
+        // Firebase Analytics 이벤트 전송
+        if (analytics) {
+          const characterIds = selectedCharacters.filter((id) => id !== -1)
+          logEvent(analytics, "deck_shared", {
+            character_ids: JSON.stringify(characterIds),
             language: currentLanguage,
-            leader_id: leaderCharacter,
-            ...createCharacterParams(validCharacters),
-          }
-
-          logEvent(analytics, "share_success", eventParams)
-        }
-      } else {
-        showToast(getTranslatedString("share_link_failed") || "Failed to create share link!", "error")
-
-        // 공유 실패 시 이벤트 로깅
-        if (analytics && typeof window !== "undefined") {
-          logEvent(analytics, "share_failed", {
-            language: currentLanguage,
-            error_message: "failed_to_create_url",
           })
         }
+      } else {
+        showToast(getTranslatedString("share_link_failed"), "error")
       }
-    } catch (e) {
-      showToast(getTranslatedString("share_link_failed") || "Failed to create share link!", "error")
-
-      // 공유 실패 시 이벤트 로깅
-      if (analytics && typeof window !== "undefined") {
-        logEvent(analytics, "share_failed", {
-          language: currentLanguage,
-          error_message: e instanceof Error ? e.message : "unknown_error",
-        })
-      }
+    } catch (error) {
+      console.error("Share error:", error)
+      showToast(getTranslatedString("share_link_failed"), "error")
     }
   }
 
-  // 페이지 로드 시 이벤트 로깅
-  useEffect(() => {
-    if (analytics && typeof window !== "undefined") {
-      logEvent(analytics, "deck_builder_page_view", {
-        language: currentLanguage,
-        url_has_code: urlDeckCode ? "yes" : "no",
-      })
-    }
-  }, [currentLanguage, urlDeckCode])
-
-  if (loading) {
-    return <LoadingScreen message="Loading data..." />
+  // 초기화
+  const handleClear = () => {
+    clearAll()
+    showToast(getTranslatedString("deck_cleared"), "success")
   }
 
+  // 로딩 중 표시
+  if (loading || isLocalLoading) {
+    return <LoadingScreen message={getTranslatedString("loading") || "Loading..."} />
+  }
+
+  // 에러 처리
   if (error) {
     return (
-      <div className="text-red-500">
-        Error: {error.message}
-        <br />
-        Please check console for more details.
+      <div className="min-h-screen bg-black text-white flex items-center justify-center">
+        <div className="text-red-500 p-4 max-w-md text-center">
+          <h2 className="text-xl font-bold mb-2">
+            {getTranslatedString("error_loading_data") || "Error Loading Data"}
+          </h2>
+          <p>{error.message}</p>
+          <p className="mt-2 text-sm">
+            {getTranslatedString("check_console") || "Please check console for more details."}
+          </p>
+        </div>
+      </div>
+    )
+  }
+
+  // 데이터가 없는 경우
+  if (!data) {
+    return (
+      <div className="min-h-screen bg-black text-white flex items-center justify-center">
+        <div className="text-yellow-500 p-4 max-w-md text-center">
+          <h2 className="text-xl font-bold mb-2">{getTranslatedString("no_data") || "No Data Available"}</h2>
+          <p>{getTranslatedString("data_not_loaded") || "Data could not be loaded. Please try again later."}</p>
+        </div>
       </div>
     )
   }
 
   return (
     <div className="min-h-screen bg-black text-white">
-      {toast && <Toast message={toast.message} type={toast.type} onClose={() => setToast(null)} />}
+      <ToastContainer />
 
       <TopBar onClear={handleClear} onImport={handleImport} onExport={handleExport} onShare={handleShare} />
 
-      <div className="container mx-auto px-4 pt-28 pb-8">
+      {/* 컨테이너의 패딩을 조정하여 모바일에서 더 많은 공간을 확보합니다. */}
+      <div className="container mx-auto px-0 sm:px-3 md:px-4 pt-40 md:pt-28 pb-8">
+        {/* 캐릭터 창 */}
         <CharacterWindow
           selectedCharacters={selectedCharacters}
           leaderCharacter={leaderCharacter}
@@ -324,7 +411,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
           onSetLeader={setLeader}
           getCharacter={getCharacter}
           getTranslatedString={getTranslatedString}
-          availableCharacters={Object.values(data.characters)}
+          availableCharacters={data && data.characters ? Object.values(data.characters) : []}
           equipment={equipment}
           onEquipItem={updateEquipment}
           getCardInfo={getCardInfo}
@@ -334,111 +421,10 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
           getSkill={getSkill}
         />
 
+        {/* 스킬 창 */}
         <SkillWindow
           selectedCards={selectedCards}
-          availableCards={availableCards.map((item) => {
-            const card = item.card
-            const cardId = card.id.toString()
-
-            // 카드 추가 정보 가져오기
-            const extraInfo = {
-              name: card.name,
-              desc: card.name,
-              cost: 0, // 기본값 0으로 설정
-              amount: 1,
-              img_url: null as string | null,
-            }
-
-            // 스킬 ID 찾기 - 카드 ID로 스킬 찾기
-            let skillId = null
-            for (const sId in data.skills) {
-              const skill = data.skills[sId]
-              if (skill.cardID && skill.cardID.toString() === cardId) {
-                skillId = sId
-                break
-              }
-            }
-
-            // 선택된 카드 목록에서 추가 정보 찾기
-            const selectedCardInfo = selectedCards.find((c) => c.id === cardId)
-            if (selectedCardInfo && selectedCardInfo.skillId) {
-              // 이미 선택된 카드에 skillId가 있으면 사용
-              skillId = selectedCardInfo.skillId.toString()
-            }
-
-            // card_db.json에서 cost_SN 값 가져오기
-            if (card.cost_SN !== undefined) {
-              // cost_SN을 10000으로 나누기
-              const costValue = card.cost_SN > 0 ? Math.floor(card.cost_SN / 10000) : 0
-              extraInfo.cost = costValue
-            }
-
-            // 이미지 URL 찾기
-            if (data && data.images) {
-              // 카드 ID로 이미지 찾기
-              if (data.images[`card_${cardId}`]) {
-                extraInfo.img_url = data.images[`card_${cardId}`]
-              }
-
-              // 스킬 ID로 이미지 찾기
-              if (skillId && data.images[`skill_${skillId}`]) {
-                extraInfo.img_url = data.images[`skill_${skillId}`]
-              }
-            }
-
-            // 캐릭터 이미지 연결 개선
-            let characterImage = null
-            let ownerId = null
-
-            // 1. 선택된 카드 정보에서 ownerId 확인 (URL에서 불러온 경우 이 정보가 중요)
-            if (selectedCardInfo && selectedCardInfo.ownerId && selectedCardInfo.ownerId !== -1) {
-              ownerId = selectedCardInfo.ownerId
-            }
-            // 2. 카드 자체의 ownerId 확인
-            else if (card.ownerId) {
-              ownerId = card.ownerId
-            }
-
-            // ownerId가 있으면 해당 캐릭터 이미지 찾기
-            if (ownerId) {
-              const owner = getCharacter(ownerId)
-              if (owner && owner.img_card) {
-                characterImage = owner.img_card
-              }
-            }
-
-            // 3. 스킬을 통해 캐릭터 찾기 (ownerId가 없거나 이미지를 찾지 못한 경우)
-            if (!characterImage && skillId) {
-              // 이 스킬을 가진 캐릭터 찾기
-              for (const charId in data.characters) {
-                const character = data.characters[charId]
-                if (character && character.skillList) {
-                  const hasSkill = character.skillList.some((s) => s.skillId.toString() === skillId)
-                  if (hasSkill && character.img_card) {
-                    characterImage = character.img_card
-                    break
-                  }
-                }
-              }
-            }
-
-            // 4. 여전히 이미지가 없으면 실제 placeholder 이미지 사용
-            if (!characterImage) {
-              // 주인이 없는 카드는 기본 placeholder 이미지 사용
-              characterImage = "images/placeHolder Card.jpg/?height=200&width=200"
-
-              // 카드 이미지도 placeholder로 설정
-              if (!extraInfo.img_url) {
-                extraInfo.img_url = "images/placeHolder Card.jpg/?height=100&width=100"
-              }
-            }
-
-            return {
-              card: card,
-              extraInfo: extraInfo,
-              characterImage: characterImage,
-            }
-          })}
+          availableCards={availableCards}
           onAddCard={addCard}
           onRemoveCard={removeCard}
           onReorderCards={reorderCards}
@@ -447,12 +433,15 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
           specialControls={{}}
         />
 
+        {/* 전투 설정 */}
         <BattleSettings
           settings={battleSettings}
           onUpdateSettings={updateBattleSettings}
           getTranslatedString={getTranslatedString}
         />
       </div>
+
+      {/* 댓글 섹션 */}
       <CommentsSection currentLanguage={currentLanguage} />
     </div>
   )

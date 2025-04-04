@@ -100,7 +100,7 @@ export function CharacterDetailsModal({
             <div className="flex flex-col md:flex-row gap-4 p-4">
               {/* Character Image and Description */}
               <div className="w-full md:w-1/3">
-                <div className="aspect-[3/4] bg-black rounded-lg overflow-hidden neon-border">
+                <div className="aspect-[3/4] max-w-[200px] mx-auto md:max-w-none bg-black rounded-lg overflow-hidden neon-border">
                   {character.img_card && (
                     <img
                       src={character.img_card || "/placeholder.svg"}
