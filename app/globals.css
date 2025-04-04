@@ -30,11 +30,7 @@
     }
 
     .skill-cost-badge {
-      width: 1.5rem;
-      height: 1.5rem;
-      font-size: 0.875rem;
-      top: 0.25rem;
-      right: 0.25rem;
+      display: none;
     }
   }
 }
@@ -722,7 +718,7 @@ body {
   }
 
   .character-action-btn:hover {
-    background-color: rgba(0, 0, 0, 0 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     transition: all 0.2s;
   }
 
@@ -733,7 +729,6 @@ body {
   }
 
   /* 장비 정보 버튼 - 모바일에서도 잘 보이도록 수정 */
-  /* 장비 정보 버튼 스타일 수정 */
   .equipment-info-btn {
     position: absolute;
     top: 0.25rem;
@@ -755,7 +750,8 @@ body {
   .equipment-info-btn:hover {
     background-color: rgba(0, 0, 0, 0.8);
     border-color: hsla(var(--neon-white), 0.5);
-  } /* 손패 유지 컨트롤 */
+  }
+  /* 손패 유지 컨트롤 */
   .hand-retention-control {
     display: flex;
     align-items: center;
@@ -959,5 +955,34 @@ input:checked + .toggle-slider {
 
 input:checked + .toggle-slider:before {
   transform: translateX(28px);
+}
+
+/* 스킬 카드 이름 스타일 추가 */
+.skill-card-name {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: keep-all;
+  font-size: 0.875rem;
+  line-height: 1.25;
+}
+
+@media (max-width: 768px) {
+  .skill-card-name {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .skill-card-name {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-card-name {
+    font-size: 0.65rem;
+  }
 }
 
