@@ -63,9 +63,9 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
       if (preset) {
         const importResult = importPresetObject(preset)
         if (importResult.success) {
-          showToast(getTranslatedString(importResult.message) || "Import successful!", "success")
+          showToast(getTranslatedString("import_success") || "Import successful!", "success")
         } else {
-          showToast(getTranslatedString(importResult.message) || "Import failed!", "error")
+          showToast(getTranslatedString("import_failed") || "Import failed!", "error")
         }
       } else {
         showToast(getTranslatedString("import_failed") || "Import failed!", "error")
