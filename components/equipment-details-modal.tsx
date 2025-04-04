@@ -93,7 +93,7 @@ export function EquipmentDetailsModal({ isOpen, onClose, equipment, getTranslate
       footer={
         <div className="flex justify-end">
           <button onClick={onClose} className="neon-button px-4 py-2 rounded-lg text-sm">
-          {getTranslatedString("close")}
+            Close
           </button>
         </div>
       }
@@ -103,13 +103,24 @@ export function EquipmentDetailsModal({ isOpen, onClose, equipment, getTranslate
         <div className="flex mb-4">
           {/* Equipment Image */}
           <div
-            className={`w-16 h-16 ${getQualityBgColor(equipment.quality)} rounded-lg mr-4 overflow-hidden neon-border`}
+            className={`w-16 h-16 ${getQualityBgColor(equipment.quality)} rounded-lg mr-4 overflow-hidden neon-border flex items-center justify-center`}
           >
-            <img
-              src={equipment.url || `/placeholder.svg?height=100&width=100`}
-              alt={getTranslatedString(equipment.name)}
-              className="w-full h-full object-cover"
-            />
+            {equipment.url ? (
+              <img
+                src={equipment.url || "/placeholder.svg"}
+                alt={getTranslatedString(equipment.name)}
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  e.currentTarget.style.display = "none"
+                  const textElement = document.createElement("span")
+                  textElement.className = "text-xs text-center"
+                  textElement.textContent = getTranslatedString(equipment.name).substring(0, 2)
+                  e.currentTarget.parentElement?.appendChild(textElement)
+                }}
+              />
+            ) : (
+              <span className="text-xs text-center">{getTranslatedString(equipment.name).substring(0, 2)}</span>
+            )}
           </div>
 
           {/* Equipment Info */}
