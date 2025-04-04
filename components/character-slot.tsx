@@ -111,7 +111,15 @@ export function CharacterSlot({
       : ""
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col relative">
+      {/* Leader Crown - 카드 바깥에 표시 */}
+      {!isEmpty && isLeader && (
+        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-30">
+          <div className="bg-red-600 rounded-full p-1 shadow-lg">
+            <Crown className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-300" />
+          </div>
+        </div>
+      )}
       {/* Character Card - 모바일에서도 적절한 크기로 표시되도록 수정 */}
       <div
         className={`
