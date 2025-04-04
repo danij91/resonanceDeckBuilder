@@ -196,7 +196,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
               img_url: null as string | null,
             }
 
-            // 스킬 ID 찾기
+            // 스킬 ID 찾기 - 카드 ID로 스킬 찾기
             let skillId = null
             for (const sId in data.skills) {
               const skill = data.skills[sId]
@@ -204,6 +204,13 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
                 skillId = sId
                 break
               }
+            }
+
+            // 선택된 카드 목록에서 추가 정보 찾기
+            const selectedCardInfo = selectedCards.find((c) => c.id === cardId)
+            if (selectedCardInfo && selectedCardInfo.skillId) {
+              // 이미 선택된 카드에 skillId가 있으면 사용
+              skillId = selectedCardInfo.skillId.toString()
             }
 
             // card_db.json에서 cost_SN 값 가져오기
@@ -228,21 +235,31 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
 
             // 캐릭터 이미지 연결 개선
             let characterImage = null
+            let ownerId = null
 
-            // 1. 카드의 ownerId로 캐릭터 찾기
-            if (card.ownerId) {
-              const owner = getCharacter(card.ownerId)
+            // 1. 선택된 카드 정보에서 ownerId 확인 (URL에서 불러온 경우 이 정보가 중요)
+            if (selectedCardInfo && selectedCardInfo.ownerId && selectedCardInfo.ownerId !== -1) {
+              ownerId = selectedCardInfo.ownerId
+            }
+            // 2. 카드 자체의 ownerId 확인
+            else if (card.ownerId) {
+              ownerId = card.ownerId
+            }
+
+            // ownerId가 있으면 해당 캐릭터 이미지 찾기
+            if (ownerId) {
+              const owner = getCharacter(ownerId)
               if (owner && owner.img_card) {
                 characterImage = owner.img_card
               }
             }
 
-            // 2. 스킬을 통해 캐릭터 찾기 (ownerId가 없거나 이미지를 찾지 못한 경우)
+            // 3. 스킬을 통해 캐릭터 찾기 (ownerId가 없거나 이미지를 찾지 못한 경우)
             if (!characterImage && skillId) {
               // 이 스킬을 가진 캐릭터 찾기
               for (const charId in data.characters) {
                 const character = data.characters[charId]
-                if (character.skillList) {
+                if (character && character.skillList) {
                   const hasSkill = character.skillList.some((s) => s.skillId.toString() === skillId)
                   if (hasSkill && character.img_card) {
                     characterImage = character.img_card
@@ -252,7 +269,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
               }
             }
 
-            // 3. 여전히 이미지가 없으면 실제 placeholder 이미지 사용
+            // 4. 여전히 이미지가 없으면 실제 placeholder 이미지 사용
             if (!characterImage) {
               // 주인이 없는 카드는 기본 placeholder 이미지 사용
               characterImage = "images/placeHolder Card.jpg/?height=200&width=200"
