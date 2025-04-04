@@ -105,13 +105,15 @@ export function EquipmentSearchModal({
       }}
     >
       <div className="p-4">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+        <div className="grid grid-cols-4 gap-2">
           {/* None option */}
           <div onClick={() => onSelectEquipment(null)} className="flex flex-col items-center">
-            <div className="w-full aspect-square bg-gray-700 rounded-lg mb-2 flex items-center justify-center cursor-pointer hover:bg-gray-600 neon-border">
+            <div className="w-full aspect-square bg-gray-700 rounded-lg mb-1 flex items-center justify-center cursor-pointer hover:bg-gray-600 neon-border">
               <span className="text-lg neon-text">✕</span>
             </div>
-            <div className="text-xs font-medium text-center neon-text">{getTranslatedString("none") || "None"}</div>
+            <div className="text-xs font-medium text-center truncate neon-text max-w-full">
+              {getTranslatedString("none") || "None"}
+            </div>
           </div>
 
           {/* Equipment items */}
@@ -144,7 +146,7 @@ export function EquipmentSearchModal({
                     </div>
                   )}
                 </div>
-                <div className="text-xs font-medium text-center truncate w-full neon-text">
+                <div className="text-xs font-medium text-center truncate w-full neon-text max-w-full">
                   {getTranslatedString(equipment.name)}
                 </div>
               </div>

@@ -29,10 +29,11 @@ export function CharacterSearchModal({
         return "border-gray-700"
     }
   }
+
   return (
     <SearchModal {...searchModalProps}>
       <div className="p-4">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+        <div className="grid grid-cols-4 gap-2">
           {characters.length === 0 ? (
             <div className="col-span-full text-center py-4 text-gray-400">
               {getTranslatedString("no_characters_found") || "No characters found"}
@@ -68,15 +69,15 @@ export function CharacterSearchModal({
                   <div className="absolute inset-0 bg-black bg-opacity-20"></div>
 
                   {/* Content */}
-                  <div className="relative z-10 p-3 flex flex-col h-full">
+                  <div className="relative z-10 p-1 sm:p-3 flex flex-col h-full">
                     {/* Name */}
-                    <h3 className="text-base font-semibold text-white neon-text">
+                    <h3 className="text-xs sm:text-base font-semibold text-white neon-text truncate">
                       {getTranslatedString(character.name)}
                     </h3>
 
                     {/* Rarity badge */}
                     <div
-                      className="absolute bottom-2 right-2 bg-black bg-opacity-70 px-2 py-1 rounded text-xs font-bold"
+                      className="absolute bottom-1 right-1 bg-black bg-opacity-70 px-1 py-0.5 rounded text-xs font-bold"
                       style={{
                         color:
                           character.rarity === "UR"

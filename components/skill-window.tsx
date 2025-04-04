@@ -106,7 +106,7 @@ export function SkillWindow({
         ) : (
           <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
             <SortableContext items={selectedCards.map((c) => c.id)} strategy={rectSortingStrategy}>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-4 auto-rows-max w-full">
+              <div className="grid grid-cols-6 gap-2 sm:gap-4 auto-rows-max w-full overflow-x-auto">
                 {selectedCards.map((selectedCard) => {
                   const cardInfo = availableCards.find((c) => c.card.id.toString() === selectedCard.id.toString())
 
