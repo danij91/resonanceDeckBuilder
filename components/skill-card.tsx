@@ -30,7 +30,14 @@ export function SkillCard({
       {/* Card background */}
       <div className="absolute inset-0 w-full h-full">
         {characterImage ? (
-          <img src={characterImage || "/placeholder.svg"} alt="" className="w-full h-full object-cover" />
+          <img
+            src={characterImage || "/placeholder.svg"}
+            alt=""
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              e.currentTarget.src = "images/placeHolder Card.jpg"
+            }}
+          />
         ) : (
           <div className="w-full h-full bg-gradient-to-b from-gray-700 to-gray-900"></div>
         )}

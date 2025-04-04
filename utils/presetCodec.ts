@@ -57,6 +57,7 @@ export function decodePresetFromUrlParam(urlParam: string | null): any {
     const decoded = decodeURIComponent(urlParam)
     return decodePreset(decoded)
   } catch (e) {
+    console.error("Error decoding URL param:", e)
     return null
   }
 }

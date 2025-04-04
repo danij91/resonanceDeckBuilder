@@ -112,7 +112,7 @@ export function CharacterSlot({
 
   return (
     <div className="flex flex-col">
-      {/* Character Card */}
+      {/* Character Card - 모바일에서도 적절한 크기로 표시되도록 수정 */}
       <div
         className={`
           relative w-full aspect-[3/4] rounded-lg overflow-hidden
@@ -128,7 +128,7 @@ export function CharacterSlot({
         onClick={onAddCharacter}
       >
         {isEmpty ? (
-          <Plus className="w-8 h-8 text-[hsl(var(--neon-white))]" />
+          <Plus className="w-6 h-6 sm:w-8 sm:h-8 text-[hsl(var(--neon-white))]" />
         ) : character ? (
           <div className="w-full h-full relative">
             {/* Character background image - now fully opaque */}
@@ -146,27 +146,32 @@ export function CharacterSlot({
             <div className="absolute inset-0 bg-black bg-opacity-20"></div>
 
             {/* Content */}
-            <div className="relative z-10 p-3 flex flex-col h-full">
+            <div className="relative z-10 p-1 sm:p-3 flex flex-col h-full">
               {/* Top section - Name and Rarity */}
-              <div className="flex items-center mb-2">
+              <div className="flex items-center mb-1 sm:mb-2">
                 <span
-                  className={`text-xs font-bold px-2 py-0.5 rounded-full text-white mr-2 ${getRarityColor(character.rarity)}`}
+                  className={`text-[0.6rem] sm:text-xs font-bold px-1 sm:px-2 py-0.5 rounded-full text-white mr-1 sm:mr-2 ${getRarityColor(
+                    character.rarity,
+                  )}`}
                 >
                   {character.rarity}
                 </span>
-                <h3 className="text-base font-semibold text-white neon-text">{getTranslatedString(character.name)}</h3>
+                <h3 className="text-xs sm:text-base font-semibold text-white neon-text truncate">
+                  {getTranslatedString(character.name)}
+                </h3>
               </div>
 
-              {/* Character action buttons */}
-              <div className="character-action-button" style={{ bottom: "0.5rem", right: "0.5rem", top: "auto" }}>
+              {/* Character action buttons - 모바일에서도 잘 보이도록 수정 */}
+              <div className="character-action-buttons absolute bottom-1 sm:right-1 w-full sm:w-auto flex justify-center sm:justify-end gap-1 z-10">
                 <button
                   onClick={(e) => {
                     e.stopPropagation()
                     setShowCharacterDetails(true)
                   }}
                   aria-label={getTranslatedString("character.details") || "Character details"}
+                  className="character-action-btn w-[calc(33%-2px)] sm:w-auto"
                 >
-                  <Info className="w-4 h-4" />
+                  <Info className="w-3 h-3" />
                 </button>
                 {!isLeader && (
                   <button
@@ -175,8 +180,9 @@ export function CharacterSlot({
                       onSetLeader()
                     }}
                     aria-label={getTranslatedString("set_as_leader") || "Set as leader"}
+                    className="character-action-btn w-[calc(33%-2px)] sm:w-auto"
                   >
-                    <Crown className="w-4 h-4" />
+                    <Crown className="w-3 h-3" />
                   </button>
                 )}
                 <button
@@ -184,10 +190,10 @@ export function CharacterSlot({
                     e.stopPropagation()
                     onRemoveCharacter()
                   }}
-                  className="text-red-400"
+                  className="character-action-btn text-red-400 w-[calc(33%-2px)] sm:w-auto"
                   aria-label={getTranslatedString("remove_character") || "Remove character"}
                 >
-                  <X className="w-4 h-4" />
+                  <X className="w-3 h-3" />
                 </button>
               </div>
             </div>
@@ -195,8 +201,8 @@ export function CharacterSlot({
         ) : null}
       </div>
 
-      {/* Equipment Slots */}
-      <div className="mt-2 grid grid-cols-3 gap-1">
+      {/* Equipment Slots - 모바일에서도 적절한 크기로 표시되도록 수정 */}
+      <div className="mt-1 sm:mt-2 grid grid-cols-3 gap-0.5 sm:gap-1">
         {/* Weapon Slot */}
         <div
           className={`
@@ -211,7 +217,7 @@ export function CharacterSlot({
           onClick={() => handleEquipmentClick("weapon")}
         >
           {!weaponEquipment ? (
-            <span className="text-xs text-[hsl(var(--neon-white))]">1</span>
+            <span className="text-[0.6rem] sm:text-xs text-[hsl(var(--neon-white))]">1</span>
           ) : (
             <div className="w-full h-full relative">
               {weaponEquipment.url ? (
@@ -223,33 +229,33 @@ export function CharacterSlot({
                     e.currentTarget.style.display = "none"
                     e.currentTarget.parentElement?.classList.add("flex", "items-center", "justify-center")
                     const textElement = document.createElement("span")
-                    textElement.className = "text-xs text-center"
+                    textElement.className = "text-[0.6rem] sm:text-xs text-center"
                     textElement.textContent = getTranslatedString(weaponEquipment.name).substring(0, 2)
                     e.currentTarget.parentElement?.appendChild(textElement)
                   }}
                 />
               ) : (
                 <div className="flex items-center justify-center h-full w-full">
-                  <span className="text-xs text-center">
+                  <span className="text-[0.6rem] sm:text-xs text-center">
                     {getTranslatedString(weaponEquipment.name).substring(0, 2)}
                   </span>
                 </div>
               )}
 
-              {/* 장비 이름 - 슬롯 내부 하단에 표시 */}
-              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-xs text-center truncate neon-text">
+              {/* 장비 이름 - 슬롯 내부 하단에 표시 (모바일에서는 숨김) */}
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-[0.5rem] sm:text-xs text-center truncate neon-text hidden sm:block">
                 {getTranslatedString(weaponEquipment.name)}
               </div>
 
-              {/* 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 */}
+              {/* 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 - 모바일에서도 잘 보이도록 수정 */}
               <button
-                className="absolute top-1 right-1 bg-black bg-opacity-70 rounded-full p-1 z-10"
+                className="equipment-info-btn hidden sm:flex"
                 onClick={(e) => {
                   e.stopPropagation()
                   setShowEquipmentDetails(equipment.weapon)
                 }}
               >
-                <Info className="w-3 h-3 text-[hsl(var(--neon-white))]" />
+                <Info className="w-2 h-2" />
               </button>
             </div>
           )}
@@ -265,7 +271,7 @@ export function CharacterSlot({
           onClick={() => handleEquipmentClick("armor")}
         >
           {!armorEquipment ? (
-            <span className="text-xs text-[hsl(var(--neon-white))]">2</span>
+            <span className="text-[0.6rem] sm:text-xs text-[hsl(var(--neon-white))]">2</span>
           ) : (
             <div className="w-full h-full relative">
               {armorEquipment.url ? (
@@ -277,33 +283,33 @@ export function CharacterSlot({
                     e.currentTarget.style.display = "none"
                     e.currentTarget.parentElement?.classList.add("flex", "items-center", "justify-center")
                     const textElement = document.createElement("span")
-                    textElement.className = "text-xs text-center"
+                    textElement.className = "text-[0.6rem] sm:text-xs text-center"
                     textElement.textContent = getTranslatedString(armorEquipment.name).substring(0, 2)
                     e.currentTarget.parentElement?.appendChild(textElement)
                   }}
                 />
               ) : (
                 <div className="flex items-center justify-center h-full w-full">
-                  <span className="text-xs text-center">
+                  <span className="text-[0.6rem] sm:text-xs text-center">
                     {getTranslatedString(armorEquipment.name).substring(0, 2)}
                   </span>
                 </div>
               )}
 
-              {/* 장비 이름 - 슬롯 내부 하단에 표시 */}
-              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-xs text-center truncate neon-text">
+              {/* 장비 이름 - 슬롯 내부 하단에 표시 (모바일에서는 숨김) */}
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-[0.5rem] sm:text-xs text-center truncate neon-text hidden sm:block">
                 {getTranslatedString(armorEquipment.name)}
               </div>
 
-              {/* 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 */}
+              {/* 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 - 모바일에서도 잘 보이도록 수정 */}
               <button
-                className="absolute top-1 right-1 bg-black bg-opacity-70 rounded-full p-1 z-10"
+                className="equipment-info-btn hidden sm:flex"
                 onClick={(e) => {
                   e.stopPropagation()
                   setShowEquipmentDetails(equipment.armor)
                 }}
               >
-                <Info className="w-3 h-3 text-[hsl(var(--neon-white))]" />
+                <Info className="w-2 h-2" />
               </button>
             </div>
           )}
@@ -323,7 +329,7 @@ export function CharacterSlot({
           onClick={() => handleEquipmentClick("accessory")}
         >
           {!accessoryEquipment ? (
-            <span className="text-xs text-[hsl(var(--neon-white))]">3</span>
+            <span className="text-[0.6rem] sm:text-xs text-[hsl(var(--neon-white))]">3</span>
           ) : (
             <div className="w-full h-full relative">
               {accessoryEquipment.url ? (
@@ -335,33 +341,33 @@ export function CharacterSlot({
                     e.currentTarget.style.display = "none"
                     e.currentTarget.parentElement?.classList.add("flex", "items-center", "justify-center")
                     const textElement = document.createElement("span")
-                    textElement.className = "text-xs text-center"
+                    textElement.className = "text-[0.6rem] sm:text-xs text-center"
                     textElement.textContent = getTranslatedString(accessoryEquipment.name).substring(0, 2)
                     e.currentTarget.parentElement?.appendChild(textElement)
                   }}
                 />
               ) : (
                 <div className="flex items-center justify-center h-full w-full">
-                  <span className="text-xs text-center">
+                  <span className="text-[0.6rem] sm:text-xs text-center">
                     {getTranslatedString(accessoryEquipment.name).substring(0, 2)}
                   </span>
                 </div>
               )}
 
-              {/* 장비 이름 - 슬롯 내부 하단에 표시 */}
-              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-xs text-center truncate neon-text">
+              {/* 장비 이름 - 슬롯 내부 하단에 표시 (모바일에서는 숨김) */}
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-[0.5rem] sm:text-xs text-center truncate neon-text hidden sm:block">
                 {getTranslatedString(accessoryEquipment.name)}
               </div>
 
-              {/* 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 */}
+              {/* 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 - 모바일에서도 잘 보이도록 수정 */}
               <button
-                className="absolute top-1 right-1 bg-black bg-opacity-70 rounded-full p-1 z-10"
+                className="equipment-info-btn hidden sm:flex"
                 onClick={(e) => {
                   e.stopPropagation()
                   setShowEquipmentDetails(equipment.accessory)
                 }}
               >
-                <Info className="w-3 h-3 text-[hsl(var(--neon-white))]" />
+                <Info className="w-2 h-2" />
               </button>
             </div>
           )}

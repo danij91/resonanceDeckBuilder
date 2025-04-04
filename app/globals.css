@@ -2,6 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 모바일 최적화를 위한 추가 스타일 */
+@layer utilities {
+  /* 모바일에서도 한 줄에 4장 이상 보이도록 그리드 설정 */
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xs\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xs\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* 스킬 카드 그리드를 위한 스타일 */
+  .grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  /* 모바일에서 스킬 카드 스타일 */
+  @media (max-width: 640px) {
+    .skill-card {
+      min-width: 60px;
+      max-width: 80px;
+    }
+
+    .skill-cost-badge {
+      width: 1.5rem;
+      height: 1.5rem;
+      font-size: 0.875rem;
+      top: 0.25rem;
+      right: 0.25rem;
+    }
+  }
+}
+
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-rgb: 0, 0, 0;
@@ -12,10 +49,87 @@
   --modal-footer-bg: #050505;
 }
 
+/* 모바일 터치 영역 최적화 */
+@media (max-width: 640px) {
+  button:not(.character-action-btn):not(.equipment-info-btn),
+  [role="button"]:not(.character-action-btn):not(.equipment-info-btn),
+  select,
+  input[type="checkbox"] + label {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .hand-retention-button {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f2937;
+    border: 1px solid #4b5563;
+    transition: all 0.2s;
+  }
+
+  .hand-retention-button:hover {
+    background-color: #374151;
+  }
+
+  .hand-retention-button:first-child {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .hand-retention-button:last-child {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .hand-retention-display {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111827;
+    border-top: 1px solid #4b5563;
+    border-bottom: 1px solid #4b5563;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+
+  .skill-option {
+    padding: 0.875rem;
+  }
+
+  .battle-dropdown {
+    height: 44px;
+    font-size: 14px;
+    padding-left: 12px;
+  }
+
+  /* 토글 버튼 터치 영역 확대 */
+  input[type="checkbox"] + label {
+    min-height: 28px;
+    min-width: 56px;
+  }
+
+  /* 토글 버튼 내부 원형 버튼 크기 조정 */
+  input[type="checkbox"] + label span {
+    min-height: 20px;
+    min-width: 20px;
+  }
+
+  /* 캐릭터 검색 모달과 장비 검색 모달에서 그리드 조정 */
+  .SearchModal .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
   overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .dark {
@@ -576,68 +690,114 @@ body {
   }
 
   /* 캐릭터 슬롯 버튼 */
-  .character-action-button {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
+  .character-action-buttons {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.25rem;
+    z-index: 10;
   }
 
-  .character-action-button button {
+  /* 캐릭터 액션 버튼 스타일 수정 */
+  .character-action-btn {
     background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid hsla(var(--neon-white), 0.3);
     border-radius: 0.25rem;
-    padding: 0.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: hsla(var(--neon-white), 0.7);
+    transition: all 0.2s;
+    padding: 0;
+  }
+
+  /* 모바일에서 캐릭터 액션 버튼 크기 조정 */
+  @media (max-width: 640px) {
+    .character-action-btn {
+      height: 1.5rem;
+      min-height: 1.5rem;
+    }
+  }
+
+  .character-action-btn:hover {
+    background-color: rgba(0, 0, 0, 0 0.7);
     transition: all 0.2s;
   }
 
-  .character-action-button button:hover {
+  .character-action-btn:hover {
     background-color: rgba(0, 0, 0, 0.8);
     border-color: hsla(var(--neon-white), 0.5);
     color: hsla(var(--neon-white), 1);
   }
 
-  /* 손패 유지 컨트롤 */
+  /* 장비 정보 버튼 - 모바일에서도 잘 보이도록 수정 */
+  /* 장비 정보 버튼 스타일 수정 */
+  .equipment-info-btn {
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid hsla(var(--neon-white), 0.3);
+    border-radius: 9999px;
+    width: 1rem;
+    height: 1rem;
+    min-width: 1rem;
+    min-height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    padding: 0;
+  }
+
+  .equipment-info-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: hsla(var(--neon-white), 0.5);
+  } /* 손패 유지 컨트롤 */
   .hand-retention-control {
     display: flex;
     align-items: center;
+    max-width: 200px;
   }
 
   .hand-retention-button {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 48px;
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid hsla(var(--neon-white), 0.5);
-    background-color: #030303;
-    box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+    background-color: #1f2937;
+    border: 1px solid #4b5563;
+    transition: all 0.2s;
+  }
+
+  .hand-retention-button:hover {
+    background-color: #374151;
   }
 
   .hand-retention-button:first-child {
-    border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
   }
 
   .hand-retention-button:last-child {
-    border-top-right-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
   }
 
   .hand-retention-display {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 48px;
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid hsla(var(--neon-white), 0.5);
-    border-bottom: 1px solid hsla(var(--neon-white), 0.5);
-    background-color: #030303;
-    color: hsl(var(--neon-white));
-    font-weight: bold;
-    box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+    background-color: #111827;
+    border-top: 1px solid #4b5563;
+    border-bottom: 1px solid #4b5563;
+    font-size: 1.125rem;
+    font-weight: 500;
   }
 
   /* 장비 카드 */
@@ -752,5 +912,52 @@ body {
 .modal-open {
   overflow-y: hidden;
   padding-right: 15px; /* 스크롤바 너비만큼 패딩 추가 */
+}
+
+/* 토글 버튼 스타일 개선 */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 56px;
+  height: 28px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #374151;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .toggle-slider {
+  background-color: #3b82f6;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.8);
+}
+
+input:checked + .toggle-slider:before {
+  transform: translateX(28px);
 }
 
