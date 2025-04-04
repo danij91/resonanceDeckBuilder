@@ -171,9 +171,26 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
             const extraInfo = {
               name: card.name,
               desc: card.name,
-              cost: 1,
+              cost: 0, // 기본값 0으로 설정
               amount: 1,
               img_url: null as string | null,
+            }
+
+            // 스킬 ID 찾기
+            let skillId = null
+            for (const sId in data.skills) {
+              const skill = data.skills[sId]
+              if (skill.cardID && skill.cardID.toString() === cardId) {
+                skillId = sId
+                break
+              }
+            }
+
+            // card_db.json에서 cost_SN 값 가져오기
+            if (card.cost_SN !== undefined) {
+              // cost_SN을 10000으로 나누기
+              const costValue = card.cost_SN > 0 ? Math.floor(card.cost_SN / 10000) : 0
+              extraInfo.cost = costValue
             }
 
             // 이미지 URL 찾기
@@ -184,21 +201,50 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
               }
 
               // 스킬 ID로 이미지 찾기
-              const skillId = Object.keys(data.skills).find((skillId) => {
-                const skill = data.skills[skillId]
-                return skill.cardID && skill.cardID.toString() === cardId
-              })
-
               if (skillId && data.images[`skill_${skillId}`]) {
                 extraInfo.img_url = data.images[`skill_${skillId}`]
               }
             }
 
-            const owner = getCharacter(card.ownerId || -1)
+            // 캐릭터 이미지 연결 개선
+            let characterImage = null
+
+            // 1. 카드의 ownerId로 캐릭터 찾기
+            if (card.ownerId) {
+              const owner = getCharacter(card.ownerId)
+              if (owner && owner.img_card) {
+                characterImage = owner.img_card
+              }
+            }
+
+            // 2. 스킬을 통해 캐릭터 찾기 (ownerId가 없거나 이미지를 찾지 못한 경우)
+            if (!characterImage && skillId) {
+              // 이 스킬을 가진 캐릭터 찾기
+              for (const charId in data.characters) {
+                const character = data.characters[charId]
+                if (character.skillList) {
+                  const hasSkill = character.skillList.some((s) => s.skillId.toString() === skillId)
+                  if (hasSkill && character.img_card) {
+                    characterImage = character.img_card
+                    break
+                  }
+                }
+              }
+            }
+
+            // 3. 여전히 이미지가 없으면 기본 이미지 사용
+            if (!characterImage && data.images && Object.values(data.images).length > 0) {
+              // 첫 번째 사용 가능한 이미지를 기본값으로 사용
+              const firstImage = Object.values(data.images)[0]
+              if (typeof firstImage === "string") {
+                characterImage = firstImage
+              }
+            }
+
             return {
               card: card,
               extraInfo: extraInfo,
-              characterImage: owner?.img_card,
+              characterImage: characterImage,
             }
           })}
           onAddCard={addCard}
