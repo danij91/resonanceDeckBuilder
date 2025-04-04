@@ -63,9 +63,9 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
       if (preset) {
         const importResult = importPresetObject(preset)
         if (importResult.success) {
-          showToast(getTranslatedString("import_success") || "Import successful!", "success")
+          showToast(getTranslatedString(importResult.message) || "Import successful!", "success")
         } else {
-          showToast(getTranslatedString("import_failed") || "Import failed!", "error")
+          showToast(getTranslatedString(importResult.message) || "Import failed!", "error")
         }
       } else {
         showToast(getTranslatedString("import_failed") || "Import failed!", "error")
@@ -252,12 +252,14 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
               }
             }
 
-            // 3. 여전히 이미지가 없으면 기본 이미지 사용
-            if (!characterImage && data.images && Object.values(data.images).length > 0) {
-              // 첫 번째 사용 가능한 이미지를 기본값으로 사용
-              const firstImage = Object.values(data.images)[0]
-              if (typeof firstImage === "string") {
-                characterImage = firstImage
+            // 3. 여전히 이미지가 없으면 실제 placeholder 이미지 사용
+            if (!characterImage) {
+              // 주인이 없는 카드는 기본 placeholder 이미지 사용
+              characterImage = "images/placeHolder Card.jpg/?height=200&width=200"
+
+              // 카드 이미지도 placeholder로 설정
+              if (!extraInfo.img_url) {
+                extraInfo.img_url = "/placeholder.svg?height=100&width=100"
               }
             }
 
