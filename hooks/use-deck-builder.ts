@@ -246,10 +246,31 @@ export function useDeckBuilder(data: Database | null) {
         return newSelection
       })
 
-      // If this is the first character, set as leader
-      if (leaderCharacter === -1) {
-        setLeaderCharacter(characterId)
-      }
+      // 리더 설정 로직 수정:
+      // 1. 리더가 없는 경우(-1) 또는
+      // 2. 현재 선택된 캐릭터가 리더이고, 다른 캐릭터가 없는 경우
+      // 새로 추가된 캐릭터를 리더로 설정
+      setSelectedCharacters((prev) => {
+        // 리더가 없는 경우
+        if (leaderCharacter === -1) {
+          setLeaderCharacter(characterId)
+        }
+        // 현재 리더가 교체되는 경우 (슬롯의 캐릭터가 리더이고, 다른 캐릭터가 없는 경우)
+        else if (prev[slot] === leaderCharacter) {
+          const otherCharacters = prev.filter((id, i) => id !== -1 && i !== slot)
+          if (otherCharacters.length === 0) {
+            setLeaderCharacter(characterId)
+          }
+        }
+        // 현재 선택된 캐릭터가 유일한 캐릭터인 경우
+        else {
+          const selectedCharCount = prev.filter((id) => id !== -1).length
+          if (selectedCharCount <= 1) {
+            setLeaderCharacter(characterId)
+          }
+        }
+        return prev
+      })
 
       // 캐릭터의 스킬 목록을 기반으로 카드 생성
       generateCardsFromSkills(characterId)
