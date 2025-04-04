@@ -40,7 +40,7 @@ export function CharacterWindow({
   onEquipItem,
   getCardInfo,
   getEquipment,
-  equipments = [],
+  equipments = [], // Provide default empty array
   data,
   getSkill, // getSkill 추가
 }: CharacterWindowProps) {
@@ -99,32 +99,18 @@ export function CharacterWindow({
         (rarityOrder[b.rarity as keyof typeof rarityOrder] || 0) -
         (rarityOrder[a.rarity as keyof typeof rarityOrder] || 0)
     }
+
     // Apply sort direction
     return sortDirection === "asc" ? result : -result
   })
-
-  // Function to get rarity border color
-  const getRarityBorderColor = (rarity: string) => {
-    switch (rarity) {
-      case "UR":
-        return "border-orange-500"
-      case "SSR":
-        return "border-yellow-500"
-      case "SR":
-        return "border-purple-500"
-      case "R":
-        return "border-blue-500"
-      default:
-        return "border-gray-700"
-    }
-  }
 
   // Check if any character slot is filled
   const hasAnyCharacter = selectedCharacters.some((id) => id !== -1)
 
   return (
     <div className="w-full">
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-4">
+      {/* 항상 5개의 캐릭터 슬롯이 한 줄에 표시되도록 수정 */}
+      <div className="grid grid-cols-5 gap-1 sm:gap-2 md:gap-4">
         {selectedCharacters.map((characterId, index) => (
           <CharacterSlot
             key={index}
