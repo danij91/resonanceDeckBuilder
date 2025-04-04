@@ -1,4 +1,6 @@
 {
+  "share_link_copied_alert": "Share link copied to clipboard!",
+  "deck_cleared": "Preset has been cleared.",
   "comments.title": "Comments",
   "comments.placeholder": "Add a comment...",
   "comments.submit": "Submit",

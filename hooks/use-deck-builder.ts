@@ -576,9 +576,9 @@ export function useDeckBuilder(data: Database | null) {
       const preset = createPresetObject(false) // 장비 정보 제외
       const base64String = encodePreset(preset)
       navigator.clipboard.writeText(base64String)
-      return { success: true, message: "Export successful!" }
+      return { success: true, message: "export_success" }
     } catch (error) {
-      return { success: false, message: "Export failed!" }
+      return { success: false, message: "export_failed" }
     }
   }, [createPresetObject])
 
@@ -602,16 +602,16 @@ export function useDeckBuilder(data: Database | null) {
       const preset = decodePreset(base64Text)
 
       if (!preset) {
-        throw new Error("Invalid preset format")
+        throw new Error("invalid_preset_format")
       }
 
       // Validate preset structure
       if (!preset.roleList || !Array.isArray(preset.roleList) || preset.roleList.length !== 5) {
-        throw new Error("Invalid roleList")
+        throw new Error("invalid_rolelist")
       }
 
       if (!preset.cardList || !Array.isArray(preset.cardList)) {
-        throw new Error("Invalid cardList")
+        throw new Error("invalid_cardlist")
       }
 
       // Update state with imported preset
@@ -643,9 +643,9 @@ export function useDeckBuilder(data: Database | null) {
       // Reset equipment
       setEquipment(Array(5).fill({ weapon: null, armor: null, accessory: null }))
 
-      return { success: true, message: "Import successful!" }
+      return { success: true, message: "import_success" }
     } catch (error) {
-      return { success: false, message: "Import failed!" }
+      return { success: false, message: "import_failed" }
     }
   }, [])
 
@@ -721,9 +721,11 @@ export function useDeckBuilder(data: Database | null) {
 
       setEquipment(newEquipment)
 
-      return { success: true, message: "Import successful!" }
+      // 하드코딩된 메시지 대신 언어팩 키 사용
+      return { success: true, message: "import_success" }
     } catch (error) {
-      return { success: false, message: "Import failed!" }
+      // 하드코딩된 메시지 대신 언어팩 키 사용
+      return { success: false, message: "import_failed" }
     }
   }, [])
 
