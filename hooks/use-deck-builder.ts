@@ -593,77 +593,6 @@ export function useDeckBuilder(data: Database | null) {
     }
   }, [createPresetObject])
 
-  // Import preset from clipboard
-  const importPreset = useCallback(async () => {
-    try {
-      const base64Text = await navigator.clipboard.readText()
-
-      // Use the new decodePreset function
-      const preset = decodePreset(base64Text)
-
-      if (!preset) {
-        throw new Error("invalid_preset_format")
-      }
-
-      // Validate preset structure
-      if (!preset.roleList || !Array.isArray(preset.roleList) || preset.roleList.length !== 5) {
-        throw new Error("invalid_rolelist")
-      }
-
-      if (!preset.cardList || !Array.isArray(preset.cardList)) {
-        throw new Error("invalid_cardlist")
-      }
-
-      // Update state with imported preset
-      setSelectedCharacters(preset.roleList)
-      setLeaderCharacter(preset.header)
-
-      // Transform the cardList to our internal format
-      const simplifiedCardList = preset.cardList.map((card) => ({
-        id: card.id,
-        useType: card.useType,
-        useParam: card.useParam,
-        useParamMap: card.useParamMap || {},
-        ownerId: card.ownerId, // ownerId 추가
-        skillId: card.skillId, // skillId 추가
-        skillIndex: card.skillIndex, // skillIndex 추가
-      }))
-
-      setSelectedCards(simplifiedCardList)
-
-      // 기본값 설정
-      setBattleSettings({
-        isLeaderCardOn: preset.isLeaderCardOn !== undefined ? preset.isLeaderCardOn : true,
-        isSpCardOn: preset.isSpCardOn !== undefined ? preset.isSpCardOn : true,
-        keepCardNum: preset.keepCardNum !== undefined ? preset.keepCardNum : 0,
-        discardType: preset.discardType !== undefined ? preset.discardType - 1 : 0, // Subtract 1 from discardType
-        otherCard: preset.otherCard !== undefined ? preset.otherCard : 0,
-      })
-
-      // Reset equipment
-      setEquipment(Array(5).fill({ weapon: null, armor: null, accessory: null }))
-
-      return { success: true, message: "import_success" }
-    } catch (error) {
-      return { success: false, message: "import_failed" }
-    }
-  }, [])
-
-  // getEquipment 함수 추가
-  const getEquipment = useCallback(
-    (equipId: string) => {
-      if (!data || !data.equipments) return null
-      return data.equipments[equipId] || null
-    },
-    [data],
-  )
-
-  // Add this to the return object of useDeckBuilder
-  const allEquipments = useMemo(() => {
-    if (!data || !data.equipments) return []
-    return Object.values(data.equipments)
-  }, [data])
-
   // 프리셋 객체를 직접 가져와서 적용
   const importPresetObject = useCallback((preset: any) => {
     try {
@@ -729,6 +658,74 @@ export function useDeckBuilder(data: Database | null) {
     }
   }, [])
 
+  // Import preset from clipboard
+  const importPreset = useCallback(async () => {
+    try {
+      const base64Text = await navigator.clipboard.readText()
+
+      // Use the new decodePreset function
+      const preset = decodePreset(base64Text)
+
+      if (!preset) {
+        throw new Error("invalid_preset_format")
+      }
+
+      // Validate preset structure
+      if (!preset.roleList || !Array.isArray(preset.roleList) || preset.roleList.length !== 5) {
+        throw new Error("invalid_rolelist")
+      }
+
+      if (!preset.cardList || !Array.isArray(preset.cardList)) {
+        throw new Error("invalid_cardlist")
+      }
+
+      // 기존 코드 대신 importPresetObject 함수 호출
+      return importPresetObject(preset)
+    } catch (error) {
+      return { success: false, message: "import_failed" }
+    }
+  }, [importPresetObject])
+
+  // getEquipment 함수 추가
+  const getEquipment = useCallback(
+    (equipId: string) => {
+      if (!data || !data.equipments) return null
+      return data.equipments[equipId] || null
+    },
+    [data],
+  )
+
+  // Add this to the return object of useDeckBuilder
+  const allEquipments = useMemo(() => {
+    if (!data || !data.equipments) return []
+    return Object.values(data.equipments)
+  }, [data])
+
+  // 프리셋 문자열을 디코딩하는 함수
+  const decodePresetString = useCallback((base64Text: string) => {
+    try {
+      // Use the decodePreset function
+      const preset = decodePreset(base64Text)
+
+      if (!preset) {
+        return null
+      }
+
+      // Validate preset structure
+      if (!preset.roleList || !Array.isArray(preset.roleList) || preset.roleList.length !== 5) {
+        return null
+      }
+
+      if (!preset.cardList || !Array.isArray(preset.cardList)) {
+        return null
+      }
+
+      return preset
+    } catch (error) {
+      return null
+    }
+  }, [])
+
   // createShareableUrl 함수를 수정하여 장비 정보를 포함하도록 변경
   const createShareableUrl = useCallback(() => {
     try {
@@ -763,31 +760,6 @@ export function useDeckBuilder(data: Database | null) {
       return { success: false, url: "" }
     }
   }, [createPresetObject])
-
-  // 프리셋 문자열을 디코딩하는 함수
-  const decodePresetString = useCallback((base64Text: string) => {
-    try {
-      // Use the decodePreset function
-      const preset = decodePreset(base64Text)
-
-      if (!preset) {
-        return null
-      }
-
-      // Validate preset structure
-      if (!preset.roleList || !Array.isArray(preset.roleList) || preset.roleList.length !== 5) {
-        return null
-      }
-
-      if (!preset.cardList || !Array.isArray(preset.cardList)) {
-        return null
-      }
-
-      return preset
-    } catch (error) {
-      return null
-    }
-  }, [])
 
   // 반환 객체에 getEquipment 추가
   return {
