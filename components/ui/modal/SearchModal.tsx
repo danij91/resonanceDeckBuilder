@@ -62,7 +62,7 @@ export function SearchModal({ searchControl, ...modalProps }: SearchModalProps) 
             className="sort-direction"
             aria-label={sortDirection === "asc" ? "Sort Descending" : "Sort Ascending"}
           >
-            {sortDirection === "desc" ? "↓" : "↑"}
+            {sortDirection === "asc" ? "↑" : "↓"}
           </button>
         </div>
       </div>

@@ -200,7 +200,7 @@ export function CharacterSlot({
         {/* Weapon Slot */}
         <div
           className={`
-            w-full aspect-square rounded-lg overflow-hidden cursor-pointer
+            w-full aspect-square rounded-lg overflow-hidden cursor-pointer relative
             ${isEmpty ? "opacity-50 pointer-events-none" : ""}
             ${
               !weaponEquipment
@@ -214,13 +214,36 @@ export function CharacterSlot({
             <span className="text-xs text-[hsl(var(--neon-white))]">1</span>
           ) : (
             <div className="w-full h-full relative">
-              <img
-                src={weaponEquipment.url || `/placeholder.svg?height=100&width=100`}
-                alt={getTranslatedString(weaponEquipment.name)}
-                className="w-full h-full object-cover"
-              />
+              {weaponEquipment.url ? (
+                <img
+                  src={weaponEquipment.url || "/placeholder.svg"}
+                  alt={getTranslatedString(weaponEquipment.name)}
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.currentTarget.style.display = "none"
+                    e.currentTarget.parentElement?.classList.add("flex", "items-center", "justify-center")
+                    const textElement = document.createElement("span")
+                    textElement.className = "text-xs text-center"
+                    textElement.textContent = getTranslatedString(weaponEquipment.name).substring(0, 2)
+                    e.currentTarget.parentElement?.appendChild(textElement)
+                  }}
+                />
+              ) : (
+                <div className="flex items-center justify-center h-full w-full">
+                  <span className="text-xs text-center">
+                    {getTranslatedString(weaponEquipment.name).substring(0, 2)}
+                  </span>
+                </div>
+              )}
+
+              {/* 장비 이름 - 슬롯 내부 하단에 표시 */}
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-xs text-center truncate neon-text">
+                {getTranslatedString(weaponEquipment.name)}
+              </div>
+
+              {/* 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 */}
               <button
-                className="absolute bottom-1 right-1 bg-black bg-opacity-70 rounded-full p-1"
+                className="absolute top-1 right-1 bg-black bg-opacity-70 rounded-full p-1 z-10"
                 onClick={(e) => {
                   e.stopPropagation()
                   setShowEquipmentDetails(equipment.weapon)
@@ -235,7 +258,7 @@ export function CharacterSlot({
         {/* Armor Slot */}
         <div
           className={`
-            w-full aspect-square rounded-lg overflow-hidden cursor-pointer
+            w-full aspect-square rounded-lg overflow-hidden cursor-pointer relative
             ${isEmpty ? "opacity-50 pointer-events-none" : ""}
             ${!armorEquipment ? "equipment-slot-empty neon-border" : getEquipmentQualityBgColor(armorEquipment.quality)}
           `}
@@ -245,13 +268,36 @@ export function CharacterSlot({
             <span className="text-xs text-[hsl(var(--neon-white))]">2</span>
           ) : (
             <div className="w-full h-full relative">
-              <img
-                src={armorEquipment.url || `/placeholder.svg?height=100&width=100`}
-                alt={getTranslatedString(armorEquipment.name)}
-                className="w-full h-full object-cover"
-              />
+              {armorEquipment.url ? (
+                <img
+                  src={armorEquipment.url || "/placeholder.svg"}
+                  alt={getTranslatedString(armorEquipment.name)}
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.currentTarget.style.display = "none"
+                    e.currentTarget.parentElement?.classList.add("flex", "items-center", "justify-center")
+                    const textElement = document.createElement("span")
+                    textElement.className = "text-xs text-center"
+                    textElement.textContent = getTranslatedString(armorEquipment.name).substring(0, 2)
+                    e.currentTarget.parentElement?.appendChild(textElement)
+                  }}
+                />
+              ) : (
+                <div className="flex items-center justify-center h-full w-full">
+                  <span className="text-xs text-center">
+                    {getTranslatedString(armorEquipment.name).substring(0, 2)}
+                  </span>
+                </div>
+              )}
+
+              {/* 장비 이름 - 슬롯 내부 하단에 표시 */}
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-xs text-center truncate neon-text">
+                {getTranslatedString(armorEquipment.name)}
+              </div>
+
+              {/* 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 */}
               <button
-                className="absolute bottom-1 right-1 bg-black bg-opacity-70 rounded-full p-1"
+                className="absolute top-1 right-1 bg-black bg-opacity-70 rounded-full p-1 z-10"
                 onClick={(e) => {
                   e.stopPropagation()
                   setShowEquipmentDetails(equipment.armor)
@@ -266,7 +312,7 @@ export function CharacterSlot({
         {/* Accessory Slot */}
         <div
           className={`
-            w-full aspect-square rounded-lg overflow-hidden cursor-pointer
+            w-full aspect-square rounded-lg overflow-hidden cursor-pointer relative
             ${isEmpty ? "opacity-50 pointer-events-none" : ""}
             ${
               !accessoryEquipment
@@ -280,13 +326,36 @@ export function CharacterSlot({
             <span className="text-xs text-[hsl(var(--neon-white))]">3</span>
           ) : (
             <div className="w-full h-full relative">
-              <img
-                src={accessoryEquipment.url || `/placeholder.svg?height=100&width=100`}
-                alt={getTranslatedString(accessoryEquipment.name)}
-                className="w-full h-full object-cover"
-              />
+              {accessoryEquipment.url ? (
+                <img
+                  src={accessoryEquipment.url || "/placeholder.svg"}
+                  alt={getTranslatedString(accessoryEquipment.name)}
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.currentTarget.style.display = "none"
+                    e.currentTarget.parentElement?.classList.add("flex", "items-center", "justify-center")
+                    const textElement = document.createElement("span")
+                    textElement.className = "text-xs text-center"
+                    textElement.textContent = getTranslatedString(accessoryEquipment.name).substring(0, 2)
+                    e.currentTarget.parentElement?.appendChild(textElement)
+                  }}
+                />
+              ) : (
+                <div className="flex items-center justify-center h-full w-full">
+                  <span className="text-xs text-center">
+                    {getTranslatedString(accessoryEquipment.name).substring(0, 2)}
+                  </span>
+                </div>
+              )}
+
+              {/* 장비 이름 - 슬롯 내부 하단에 표시 */}
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-xs text-center truncate neon-text">
+                {getTranslatedString(accessoryEquipment.name)}
+              </div>
+
+              {/* 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 */}
               <button
-                className="absolute bottom-1 right-1 bg-black bg-opacity-70 rounded-full p-1"
+                className="absolute top-1 right-1 bg-black bg-opacity-70 rounded-full p-1 z-10"
                 onClick={(e) => {
                   e.stopPropagation()
                   setShowEquipmentDetails(equipment.accessory)
@@ -309,19 +378,6 @@ export function CharacterSlot({
                 `Select ${showEquipmentSelector.charAt(0).toUpperCase() + showEquipmentSelector.slice(1)}`}
             </h3>
           }
-          searchControl={{
-            searchTerm: "",
-            onSearchChange: () => {},
-            sortBy: "quality",
-            onSortByChange: () => {},
-            sortDirection: "desc",
-            onSortDirectionChange: () => {},
-            sortOptions: [
-              { value: "quality", label: getTranslatedString("sort_by_quality") || "Sort by Quality" },
-              { value: "name", label: getTranslatedString("sort_by_name") || "Sort by Name" },
-            ],
-            searchPlaceholder: getTranslatedString("search_equipment") || "Search equipment",
-          }}
           equipments={
             data.equipments
               ? Object.values(data.equipments).filter((equip: Equipment) => equip.type === showEquipmentSelector)

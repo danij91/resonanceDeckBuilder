@@ -1,4 +1,6 @@
 {
+  "share_link_copied_alert": "已将分享链接复制到剪贴板！",
+  "deck_cleared": "预设已清除。",
   "comments.title": "评论",
   "comments.placeholder": "添加评论...",
   "comments.submit": "发送",

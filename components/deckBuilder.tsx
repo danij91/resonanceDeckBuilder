@@ -63,9 +63,9 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
       if (preset) {
         const importResult = importPresetObject(preset)
         if (importResult.success) {
-          showToast(importResult.message, "success")
+          showToast(getTranslatedString(importResult.message) || "Import successful!", "success")
         } else {
-          showToast(importResult.message, "error")
+          showToast(getTranslatedString(importResult.message) || "Import failed!", "error")
         }
       } else {
         showToast(getTranslatedString("import_failed") || "Import failed!", "error")
@@ -81,9 +81,15 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
     }, 3000)
   }
 
+  // Show alert popup
+  const showAlert = (message: string) => {
+    alert(message)
+  }
+
   // Clear all settings
   const handleClear = () => {
     clearAll()
+    // alert 대신 toast 메시지 사용
     showToast(getTranslatedString("deck_cleared") || "Deck cleared!", "info")
   }
 
@@ -91,7 +97,12 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
   const handleImport = async () => {
     try {
       const importResult = await importPreset()
-      showToast(importResult.message, importResult.success ? "success" : "error")
+      if (importResult.success) {
+        // alert 대신 toast 메시지 사용
+        showToast(getTranslatedString(importResult.message) || "Deck imported successfully!", "success")
+      } else {
+        showToast(getTranslatedString(importResult.message) || "Import failed!", "error")
+      }
     } catch (e) {
       showToast(getTranslatedString("import_failed") || "Import failed!", "error")
     }
@@ -101,7 +112,12 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
   const handleExport = async () => {
     try {
       const exportResult = exportPreset()
-      showToast(exportResult.message, exportResult.success ? "success" : "error")
+      if (exportResult.success) {
+        // 성공 시 알림 팝업 표시
+        showAlert(getTranslatedString(exportResult.message) || "Deck exported to clipboard successfully!")
+      } else {
+        showToast(getTranslatedString(exportResult.message) || "Export failed!", "error")
+      }
     } catch (e) {
       showToast(getTranslatedString("export_failed") || "Export failed!", "error")
     }
@@ -113,7 +129,11 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
       const shareableUrlResult = createShareableUrl()
       if (shareableUrlResult.success) {
         await copyToClipboard(shareableUrlResult.url)
-        showToast(getTranslatedString("share_link_copied") || "Share link copied!", "success")
+        // 성공 시 알림 팝업 표시
+        showAlert(
+          getTranslatedString("share_link_copied_alert") ||
+            "Share link copied to clipboard!\n\nYou can now paste and share it.",
+        )
       } else {
         showToast(getTranslatedString("share_link_failed") || "Failed to create share link!", "error")
       }

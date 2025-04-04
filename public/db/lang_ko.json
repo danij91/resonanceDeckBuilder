@@ -1,4 +1,6 @@
 {
+  "share_link_copied_alert":"공유 URL이 클립보드에 복사되었습니다!",
+  "deck_cleared":"프리셋이 초기화되었습니다.",
   "comments.title": "댓글",
   "comments.placeholder": "댓글을 입력하세요...",
   "comments.submit": "등록",
