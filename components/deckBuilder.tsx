@@ -13,6 +13,9 @@ import { copyToClipboard } from "../utils/clipboard"
 import { CommentsSection } from "./comments-section"
 import { useLanguage } from "../contexts/language-context"
 
+// Firebase Analytics 관련 import 추가
+import { analytics, logEvent } from "../lib/firebase-config"
+
 interface DeckBuilderProps {
   urlDeckCode?: string | null
 }
@@ -56,6 +59,17 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
 
   const [toast, setToast] = useState<{ message: string; type: "success" | "error" | "info" } | null>(null)
 
+  // 캐릭터 ID를 개별 파라미터로 변환하는 함수
+  const createCharacterParams = (characterIds: number[]) => {
+    // 유효한 캐릭터만 필터링 (빈 슬롯 제외)
+    const validCharacters = characterIds.filter((id) => id !== -1)
+
+    return {
+      character_ids: JSON.stringify(validCharacters),
+      character_count: validCharacters.length,
+    }
+  }
+
   // Load deck from URL on mount
   useEffect(() => {
     if (urlDeckCode && data) {
@@ -64,14 +78,45 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         const importResult = importPresetObject(preset)
         if (importResult.success) {
           showToast(getTranslatedString(importResult.message) || "Import successful!", "success")
+
+          // URL 임포트 성공 시 이벤트 로깅
+          if (analytics && typeof window !== "undefined") {
+            // 유효한 캐릭터 ID 리스트 추출 (빈 슬롯 제외)
+            const validCharacters = preset.roleList.filter((id) => id !== -1)
+
+            // 이벤트 파라미터 생성
+            const eventParams = {
+              language: currentLanguage,
+              leader_id: preset.header,
+              ...createCharacterParams(validCharacters),
+            }
+
+            logEvent(analytics, "url_import_success", eventParams)
+          }
         } else {
           showToast(getTranslatedString(importResult.message) || "Import failed!", "error")
+
+          // URL 임포트 실패 시 이벤트 로깅
+          if (analytics && typeof window !== "undefined") {
+            logEvent(analytics, "url_import_failed", {
+              language: currentLanguage,
+              error_message: importResult.message,
+            })
+          }
         }
       } else {
         showToast(getTranslatedString("import_failed") || "Import failed!", "error")
+
+        // URL 임포트 실패 시 이벤트 로깅
+        if (analytics && typeof window !== "undefined") {
+          logEvent(analytics, "url_import_failed", {
+            language: currentLanguage,
+            error_message: "invalid_preset_format",
+          })
+        }
       }
     }
-  }, [urlDeckCode, data, decodePresetString, importPresetObject, getTranslatedString])
+  }, [urlDeckCode, data, decodePresetString, importPresetObject, getTranslatedString, currentLanguage])
 
   // Show toast message
   const showToast = (message: string, type: "success" | "error" | "info" = "info") => {
@@ -89,8 +134,14 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
   // Clear all settings
   const handleClear = () => {
     clearAll()
-    // alert 대신 toast 메시지 사용
     showToast(getTranslatedString("deck_cleared") || "Deck cleared!", "info")
+
+    // 덱 초기화 이벤트 로깅
+    if (analytics && typeof window !== "undefined") {
+      logEvent(analytics, "deck_cleared", {
+        language: currentLanguage,
+      })
+    }
   }
 
   // Import from clipboard
@@ -98,13 +149,43 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
     try {
       const importResult = await importPreset()
       if (importResult.success) {
-        // alert 대신 toast 메시지 사용
         showToast(getTranslatedString(importResult.message) || "Deck imported successfully!", "success")
+
+        // 클립보드 임포트 성공 시 이벤트 로깅
+        if (analytics && typeof window !== "undefined") {
+          // 유효한 캐릭터 ID 리스트 추출 (빈 슬롯 제외)
+          const validCharacters = selectedCharacters.filter((id) => id !== -1)
+
+          // 이벤트 파라미터 생성
+          const eventParams = {
+            language: currentLanguage,
+            leader_id: leaderCharacter,
+            ...createCharacterParams(validCharacters),
+          }
+
+          logEvent(analytics, "clipboard_import_success", eventParams)
+        }
       } else {
         showToast(getTranslatedString(importResult.message) || "Import failed!", "error")
+
+        // 클립보드 임포트 실패 시 이벤트 로깅
+        if (analytics && typeof window !== "undefined") {
+          logEvent(analytics, "clipboard_import_failed", {
+            language: currentLanguage,
+            error_message: importResult.message,
+          })
+        }
       }
     } catch (e) {
       showToast(getTranslatedString("import_failed") || "Import failed!", "error")
+
+      // 클립보드 임포트 실패 시 이벤트 로깅
+      if (analytics && typeof window !== "undefined") {
+        logEvent(analytics, "clipboard_import_failed", {
+          language: currentLanguage,
+          error_message: e instanceof Error ? e.message : "unknown_error",
+        })
+      }
     }
   }
 
@@ -115,11 +196,42 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
       if (exportResult.success) {
         // 성공 시 알림 팝업 표시
         showAlert(getTranslatedString(exportResult.message) || "Deck exported to clipboard successfully!")
+
+        // 익스포트 성공 시 이벤트 로깅
+        if (analytics && typeof window !== "undefined") {
+          // 유효한 캐릭터 ID 리스트 추출 (빈 슬롯 제외)
+          const validCharacters = selectedCharacters.filter((id) => id !== -1)
+
+          // 이벤트 파라미터 생성
+          const eventParams = {
+            language: currentLanguage,
+            leader_id: leaderCharacter,
+            ...createCharacterParams(validCharacters),
+          }
+
+          logEvent(analytics, "export_success", eventParams)
+        }
       } else {
         showToast(getTranslatedString(exportResult.message) || "Export failed!", "error")
+
+        // 익스포트 실패 시 이벤트 로깅
+        if (analytics && typeof window !== "undefined") {
+          logEvent(analytics, "export_failed", {
+            language: currentLanguage,
+            error_message: exportResult.message,
+          })
+        }
       }
     } catch (e) {
       showToast(getTranslatedString("export_failed") || "Export failed!", "error")
+
+      // 익스포트 실패 시 이벤트 로깅
+      if (analytics && typeof window !== "undefined") {
+        logEvent(analytics, "export_failed", {
+          language: currentLanguage,
+          error_message: e instanceof Error ? e.message : "unknown_error",
+        })
+      }
     }
   }
 
@@ -134,13 +246,54 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
           getTranslatedString("share_link_copied_alert") ||
             "Share link copied to clipboard!\n\nYou can now paste and share it.",
         )
+
+        // 공유 성공 시 이벤트 로깅
+        if (analytics && typeof window !== "undefined") {
+          // 유효한 캐릭터 ID 리스트 추출 (빈 슬롯 제외)
+          const validCharacters = selectedCharacters.filter((id) => id !== -1)
+
+          // 이벤트 파라미터 생성
+          const eventParams = {
+            language: currentLanguage,
+            leader_id: leaderCharacter,
+            ...createCharacterParams(validCharacters),
+          }
+
+          logEvent(analytics, "share_success", eventParams)
+        }
       } else {
         showToast(getTranslatedString("share_link_failed") || "Failed to create share link!", "error")
+
+        // 공유 실패 시 이벤트 로깅
+        if (analytics && typeof window !== "undefined") {
+          logEvent(analytics, "share_failed", {
+            language: currentLanguage,
+            error_message: "failed_to_create_url",
+          })
+        }
       }
     } catch (e) {
       showToast(getTranslatedString("share_link_failed") || "Failed to create share link!", "error")
+
+      // 공유 실패 시 이벤트 로깅
+      if (analytics && typeof window !== "undefined") {
+        logEvent(analytics, "share_failed", {
+          language: currentLanguage,
+          error_message: e instanceof Error ? e.message : "unknown_error",
+        })
+      }
     }
   }
+
+  // 페이지 로드 시 이벤트 로깅
+  useEffect(() => {
+    if (analytics && typeof window !== "undefined") {
+      logEvent(analytics, "deck_builder_page_view", {
+        language: currentLanguage,
+        url_has_code: urlDeckCode ? "yes" : "no",
+      })
+    }
+  }, [currentLanguage, urlDeckCode])
 
   if (loading) {
     return <LoadingScreen message="Loading data..." />
@@ -276,7 +429,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
 
               // 카드 이미지도 placeholder로 설정
               if (!extraInfo.img_url) {
-                extraInfo.img_url = "/placeholder.svg?height=100&width=100"
+                extraInfo.img_url = "images/placeHolder Card.jpg/?height=100&width=100"
               }
             }
 
