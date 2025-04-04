@@ -186,10 +186,13 @@ export function CardSettingsModal({
       }
       maxWidth="max-w-3xl"
     >
-      <div className="flex flex-grow overflow-hidden" style={{ backgroundColor: "var(--modal-content-bg)" }}>
+      <div
+        className="flex flex-col md:flex-row flex-grow overflow-hidden"
+        style={{ backgroundColor: "var(--modal-content-bg)" }}
+      >
         {/* 왼쪽 - 카드 정보 */}
         <div
-          className="w-3/5 p-4 border-r border-[hsl(var(--neon-white),0.3)] overflow-y-auto"
+          className="w-full md:w-3/5 p-4 md:border-r border-b md:border-b-0 border-[hsl(var(--neon-white),0.3)] overflow-y-auto"
           style={{ backgroundColor: "var(--modal-content-bg)" }}
         >
           <div className="flex mb-4">
@@ -224,7 +227,7 @@ export function CardSettingsModal({
         </div>
 
         {/* 오른쪽 - 사용 설정 */}
-        <div className="w-2/5 p-4 overflow-y-auto" style={{ backgroundColor: "var(--modal-content-bg)" }}>
+        <div className="w-full md:w-2/5 p-4 overflow-y-auto" style={{ backgroundColor: "var(--modal-content-bg)" }}>
           <h3 className="text-lg font-medium mb-4 neon-text">
             {getTranslatedString("usage_settings") || "Usage Settings"}
           </h3>
