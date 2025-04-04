@@ -1,4 +1,5 @@
 "use client"
+import { useState, useMemo } from "react"
 import { SearchModal, type SearchModalProps } from "./SearchModal"
 import type { Equipment } from "../../../types"
 
@@ -16,6 +17,58 @@ export function EquipmentSearchModal({
   type,
   ...searchModalProps
 }: EquipmentSearchModalProps) {
+  // 검색 및 정렬 상태 관리
+  const [searchTerm, setSearchTerm] = useState("")
+  const [sortBy, setSortBy] = useState<"quality" | "name">("quality")
+  const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc")
+
+  // 검색어 변경 핸들러
+  const handleSearchChange = (value: string) => {
+    setSearchTerm(value)
+  }
+
+  // 정렬 기준 변경 핸들러
+  const handleSortByChange = (value: string) => {
+    setSortBy(value as "quality" | "name")
+  }
+
+  // 정렬 방향 변경 핸들러
+  const handleSortDirectionChange = () => {
+    setSortDirection((prev) => (prev === "asc" ? "desc" : "asc"))
+  }
+
+  // 필터링 및 정렬된 장비 목록
+  const filteredEquipments = useMemo(() => {
+    // 검색어로 필터링
+    const filtered = equipments.filter((equipment) =>
+      getTranslatedString(equipment.name).toLowerCase().includes(searchTerm.toLowerCase()),
+    )
+
+    // 정렬
+    return [...filtered].sort((a, b) => {
+      let result = 0
+
+      if (sortBy === "name") {
+        // 이름으로 정렬
+        result = getTranslatedString(a.name).localeCompare(getTranslatedString(b.name))
+      } else {
+        // 품질로 정렬 (Orange > Golden > Purple > Blue > Green)
+        const qualityOrder: Record<string, number> = {
+          Orange: 5,
+          Golden: 4,
+          Purple: 3,
+          Blue: 2,
+          Green: 1,
+        }
+
+        result = (qualityOrder[b.quality] || 0) - (qualityOrder[a.quality] || 0)
+      }
+
+      // 정렬 방향 적용
+      return sortDirection === "asc" ? -result : result
+    })
+  }, [equipments, searchTerm, sortBy, sortDirection, getTranslatedString])
+
   // Function to get quality background color
   const getQualityBgColor = (quality: string) => {
     switch (quality) {
@@ -35,7 +88,22 @@ export function EquipmentSearchModal({
   }
 
   return (
-    <SearchModal {...searchModalProps}>
+    <SearchModal
+      {...searchModalProps}
+      searchControl={{
+        searchTerm,
+        onSearchChange: handleSearchChange,
+        sortBy,
+        onSortByChange: handleSortByChange,
+        sortDirection,
+        onSortDirectionChange: handleSortDirectionChange,
+        sortOptions: [
+          { value: "quality", label: getTranslatedString("sort_by_quality") || "Sort by Quality" },
+          { value: "name", label: getTranslatedString("sort_by_name") || "Sort by Name" },
+        ],
+        searchPlaceholder: getTranslatedString("search_equipment") || "Search equipment",
+      }}
+    >
       <div className="p-4">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
           {/* None option */}
@@ -47,23 +115,34 @@ export function EquipmentSearchModal({
           </div>
 
           {/* Equipment items */}
-          {equipments.length === 0 ? (
+          {filteredEquipments.length === 0 ? (
             <div className="col-span-full text-center py-4 text-gray-400">
               {getTranslatedString("no_equipment_found") || "No equipment found"}
             </div>
           ) : (
-            equipments.map((equipment) => (
+            filteredEquipments.map((equipment) => (
               <div
                 key={equipment.id}
                 onClick={() => onSelectEquipment(equipment.id.toString())}
                 className="flex flex-col items-center cursor-pointer"
               >
                 <div className={`w-full aspect-square equipment-card ${getQualityBgColor(equipment.quality)}`}>
-                  <img
-                    src={equipment.url || `/placeholder.svg?height=100&width=100`}
-                    alt={getTranslatedString(equipment.name)}
-                    className="w-full h-full object-cover"
-                  />
+                  {equipment.url ? (
+                    <img
+                      src={equipment.url || "/placeholder.svg"}
+                      alt={getTranslatedString(equipment.name)}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        // 이미지 로드 실패 시 기본 텍스트 표시
+                        e.currentTarget.style.display = "none"
+                        e.currentTarget.parentElement?.classList.add("flex", "items-center", "justify-center")
+                      }}
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <span className="text-xs text-center">{getTranslatedString(equipment.name).substring(0, 2)}</span>
+                    </div>
+                  )}
                 </div>
                 <div className="text-xs font-medium text-center truncate w-full neon-text">
                   {getTranslatedString(equipment.name)}
