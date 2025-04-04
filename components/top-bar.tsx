@@ -53,9 +53,28 @@ export function TopBar({ onClear, onImport, onExport, onShare }: TopBarProps) {
     if (!showLanguageMenu && languageButtonRef.current) {
       // 버튼 위치 계산
       const rect = languageButtonRef.current.getBoundingClientRect()
+
+      // 화면 너비 확인
+      const screenWidth = window.innerWidth
+
+      // 드롭다운 메뉴의 예상 너비 (160px)
+      const dropdownWidth = 160
+
+      // 드롭다운이 오른쪽으로 펼쳐질 경우 화면 바깥으로 나가는지 확인
+      const wouldOverflowRight = rect.right + dropdownWidth > screenWidth
+
       // CSS 변수로 위치 설정
       document.documentElement.style.setProperty("--language-dropdown-top", `${rect.bottom}px`)
-      document.documentElement.style.setProperty("--language-dropdown-right", `${window.innerWidth - rect.right}px`)
+
+      if (wouldOverflowRight) {
+        // 화면 바깥으로 나갈 경우 왼쪽 정렬
+        document.documentElement.style.setProperty("--language-dropdown-left", `${rect.left}px`)
+        document.documentElement.style.setProperty("--language-dropdown-right", "auto")
+      } else {
+        // 기본적으로는 오른쪽 정렬 유지
+        document.documentElement.style.setProperty("--language-dropdown-right", `${window.innerWidth - rect.right}px`)
+        document.documentElement.style.setProperty("--language-dropdown-left", "auto")
+      }
     }
     setShowLanguageMenu(!showLanguageMenu)
   }
@@ -137,6 +156,7 @@ export function TopBar({ onClear, onImport, onExport, onShare }: TopBarProps) {
                   style={{
                     top: "var(--language-dropdown-top, 4rem)",
                     right: "var(--language-dropdown-right, 1rem)",
+                    left: "var(--language-dropdown-left, auto)",
                   }}
                 >
                   {supportedLanguages.map((lang) => (
