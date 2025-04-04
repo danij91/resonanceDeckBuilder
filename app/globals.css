@@ -33,6 +33,24 @@
       display: none;
     }
   }
+
+  /* 텍스트 선택 방지 */
+  .user-select-none {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* 포인터 이벤트 방지 */
+  .pointer-events-none {
+    pointer-events: none;
+  }
+
+  /* 터치 동작 최적화 */
+  .touch-manipulation {
+    touch-action: manipulation;
+  }
 }
 
 :root {
@@ -132,6 +150,83 @@ body {
   overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
 }
+
+/* 모바일에서 롱프레스 최적화 */
+body {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-tap-highlight-color: transparent; /* 탭 하이라이트 제거 */
+}
+
+/* 드래그 중인 카드와 관련된 스타일 */
+.dragging-card {
+  opacity: 0.5 !important;
+  z-index: 100 !important;
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7) !important;
+  pointer-events: none !important;
+  touch-action: none !important;
+}
+
+.dragging-overlay {
+  transform: scale(1.05);
+  opacity: 0.8;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+  z-index: 9999;
+  touch-action: none;
+}
+
+/* 드래그 중에는 스크롤 방지 */
+body.dragging {
+  overflow: hidden !important;
+  touch-action: none !important;
+  -webkit-overflow-scrolling: none !important;
+}
+
+/* 드래그 중인 요소의 부모 컨테이너 */
+.dnd-container {
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* 드래그 중인 요소 스타일 */
+.sortable-drag {
+  opacity: 0.8;
+  z-index: 100;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* 드래그 중인 카드 스타일 */
+/*
+.dragging-card {
+  opacity: 0.5;
+  z-index: 100;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+}
+*/
+
+/*
+.dragging-overlay {
+  transform: scale(1.05);
+  opacity: 0.8;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+  z-index: 9999;
+  touch-action: none;
+}
+*/
+
+/* 드래그 중에는 스크롤 방지 */
+/*
+body.dragging {
+  overflow: hidden;
+  touch-action: none;
+}
+*/
 
 .dark {
   color-scheme: dark;
@@ -510,6 +605,9 @@ body {
     overflow: hidden;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
     transition: all 0.2s;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
   }
 
   .skill-card:hover {
@@ -992,5 +1090,97 @@ input:checked + .toggle-slider:before {
   .skill-card-name {
     font-size: 0.65rem;
   }
+}
+
+/* 스킬 그리드 레이아웃 */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+  width: 100%;
+}
+
+/* 드래그 중인 컨테이너 스타일 */
+.dragging-container {
+  touch-action: none !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  overflow: hidden !important;
+}
+
+/* 스킬 카드 컨테이너 */
+.skill-container {
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+}
+
+/* 반응형 스타일 - 화면 크기에 따라 카드 크기와 간격 조절 */
+@media (max-width: 1200px) {
+  .skill-grid {
+    gap: 6px;
+  }
+}
+
+@media (max-width: 992px) {
+  .skill-grid {
+    gap: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-grid {
+    gap: 3px;
+  }
+
+  .skill-card {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .skill-grid {
+    gap: 2px;
+  }
+
+  .skill-card {
+    font-size: 0.7rem;
+  }
+
+  .skill-card .absolute.top-0.right-0 {
+    font-size: 0.9rem;
+    padding: 2px 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-grid {
+    gap: 1px;
+  }
+
+  .skill-card {
+    font-size: 0.65rem;
+  }
+
+  .skill-card .w-3\/5 {
+    width: 50%;
+  }
+}
+
+/* 드래그 중인 카드 스타일 */
+.dragging-card {
+  opacity: 0.5 !important;
+  z-index: 100 !important;
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7) !important;
+  pointer-events: none !important;
+  touch-action: none !important;
+}
+
+/* 드래그 중인 본문 스타일 */
+body.dragging {
+  overflow: hidden !important;
+  touch-action: none !important;
+  -webkit-overflow-scrolling: none !important;
 }
 

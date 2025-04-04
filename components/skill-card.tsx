@@ -23,9 +23,16 @@ export function SkillCard({
 }: SkillCardProps) {
   return (
     <div
-      className="skill-card relative overflow-hidden h-full cursor-pointer"
+      className="skill-card relative overflow-hidden h-full cursor-pointer user-select-none"
       style={{ aspectRatio: "1/1.5" }}
-      onClick={onEdit}
+      onClick={(e) => {
+        e.stopPropagation()
+        onEdit()
+      }}
+      onContextMenu={(e) => {
+        e.preventDefault()
+        e.stopPropagation()
+      }}
     >
       {/* Card background */}
       <div className="absolute inset-0 w-full h-full">
@@ -33,7 +40,7 @@ export function SkillCard({
           <img
             src={characterImage || "/placeholder.svg"}
             alt=""
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover pointer-events-none"
             onError={(e) => {
               e.currentTarget.src = "images/placeHolder Card.jpg"
             }}
@@ -69,7 +76,7 @@ export function SkillCard({
                 <img
                   src={extraInfo.img_url || "/placeholder.svg"}
                   alt={getTranslatedString(extraInfo.name)}
-                  className="object-cover absolute top-1/2 left-1/2 transform scale-150 -translate-x-1/2 -translate-y-1/2 -rotate-45"
+                  className="object-cover absolute top-1/2 left-1/2 transform scale-150 -translate-x-1/2 -translate-y-1/2 -rotate-45 pointer-events-none"
                 />
               )}
             </div>
@@ -77,11 +84,10 @@ export function SkillCard({
         </div>
 
         {/* Card name - 두 줄까지 표시하고 패딩 제거 */}
-        <div className="text-white font-bold skill-card-name mt-auto neon-text">
+        <div className="text-white font-bold skill-card-name mt-auto neon-text user-select-none">
           {getTranslatedString(extraInfo.name)}
         </div>
       </div>
     </div>
   )
 }
-
