@@ -62,19 +62,10 @@ export function TopBar({ onClear, onImport, onExport, onShare }: TopBarProps) {
 
       // 드롭다운이 오른쪽으로 펼쳐질 경우 화면 바깥으로 나가는지 확인
       const wouldOverflowRight = rect.right + dropdownWidth > screenWidth
-
+      document.documentElement.style.setProperty("--language-dropdown-left", `${rect.left}px`)
+      document.documentElement.style.setProperty("--language-dropdown-right", "auto")
       // CSS 변수로 위치 설정
       document.documentElement.style.setProperty("--language-dropdown-top", `${rect.bottom}px`)
-
-      if (wouldOverflowRight) {
-        // 화면 바깥으로 나갈 경우 왼쪽 정렬
-        document.documentElement.style.setProperty("--language-dropdown-left", `${rect.left}px`)
-        document.documentElement.style.setProperty("--language-dropdown-right", "auto")
-      } else {
-        // 기본적으로는 오른쪽 정렬 유지
-        document.documentElement.style.setProperty("--language-dropdown-right", `${window.innerWidth - rect.right}px`)
-        document.documentElement.style.setProperty("--language-dropdown-left", "auto")
-      }
     }
     setShowLanguageMenu(!showLanguageMenu)
   }
