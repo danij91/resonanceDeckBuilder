@@ -53,19 +53,17 @@ export function SkillCard({
         </div>
       )}
 
-      {/* Cost badge in top right - 새로운 디자인 */}
-      <div className="skill-cost-badge">
-        <span>{extraInfo.cost}</span>
-      </div>
+      {/* Cost badge - 원형 배경 제거하고 오른쪽 위에 바짝 붙이기 */}
+      <div className="absolute top-0 right-0 px-2 py-1 text-white font-bold text-lg z-10">{extraInfo.cost}</div>
 
       {/* Card content */}
-      <div className="relative z-1 p-3 flex flex-col h-full">
+      <div className="relative z-1 p-2 flex flex-col h-full">
         {/* Empty space in the middle */}
         <div className="flex-grow"></div>
 
-        {/* Diamond-shaped skill image at center */}
-        <div className="flex justify-center mb-4">
-          <div className="w-2/5 relative">
+        {/* 스킬 이미지 - 크기 조정 */}
+        <div className="flex justify-center mb-2">
+          <div className="w-3/5 relative">
             <div className="aspect-square transform rotate-45 overflow-hidden bg-black bg-opacity-30 border border-[hsla(var(--neon-white),0.5)] shadow-[0_0_5px_rgba(255,255,255,0.3)]">
               {extraInfo.img_url && (
                 <img
@@ -78,8 +76,8 @@ export function SkillCard({
           </div>
         </div>
 
-        {/* Card name at bottom left */}
-        <div className="text-white font-bold text-sm truncate mt-auto neon-text">
+        {/* Card name - 두 줄까지 표시하고 패딩 제거 */}
+        <div className="text-white font-bold skill-card-name mt-auto neon-text">
           {getTranslatedString(extraInfo.name)}
         </div>
       </div>
