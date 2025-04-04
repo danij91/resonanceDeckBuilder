@@ -249,7 +249,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         const card = data.cards[id]
         if (!card) return null
 
-        // 기본 extraInfo 객체 생성
+        // 기본 extraInfo 객체 생성 - 일단 카드 이름으로 초기화
         const extraInfo: CardExtraInfo = {
           name: card.name || `card_name_${id}`,
           desc: "",
@@ -267,6 +267,9 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         for (const skillId in data.skills) {
           const skill = data.skills[skillId]
           if (skill && skill.cardID && skill.cardID.toString() === id) {
+            // 스킬 이름을 extraInfo.name에 할당
+            extraInfo.name = skill.name
+
             // 스킬 이미지 URL 찾기
             if (data.images && data.images[`skill_${skillId}`]) {
               extraInfo.img_url = data.images[`skill_${skillId}`]
