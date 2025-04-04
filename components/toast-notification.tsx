@@ -18,13 +18,15 @@ export function Toast({ message, type, duration = 3000, onClose }: ToastProps) {
     return () => clearTimeout(timer)
   }, [duration, onClose])
 
+  // 기존 Toast 컴포넌트의 bgColor 부분을 다음과 같이 변경합니다.
   const bgColor =
     type === "success"
-      ? "bg-green-100 border-green-500 text-green-700"
+      ? "bg-white border-green-500 text-black"
       : type === "error"
-        ? "bg-red-100 border-red-500 text-red-700"
-        : "bg-blue-100 border-blue-500 text-blue-700"
+        ? "bg-white border-red-500 text-black"
+        : "bg-white border-blue-500 text-black"
 
+  // 또한 Toast 컴포넌트의 return 부분에서 클래스를 다음과 같이 변경합니다.
   return (
     <div className={`fixed bottom-4 right-4 p-4 rounded-lg border-l-4 shadow-md ${bgColor} z-50`}>
       <div className="flex items-center justify-between">
