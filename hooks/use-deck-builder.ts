@@ -722,6 +722,7 @@ export function useDeckBuilder(data: Database | null) {
 
       return preset
     } catch (error) {
+      console.error("Error decoding preset:", error)
       return null
     }
   }, [])

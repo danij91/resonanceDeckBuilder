@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { Globe, Download, Upload, RefreshCw, Share2, HelpCircle } from 'lucide-react'
+import { Globe, Download, Upload, RefreshCw, Share2, HelpCircle } from "lucide-react"
 import { StylizedTitle } from "./stylized-title"
 import { HelpModal } from "./ui/modal/HelpModal"
 import { useLanguage } from "../contexts/language-context"
@@ -13,19 +13,16 @@ interface TopBarProps {
   onShare: () => void
 }
 
-export function TopBar({
-  onClear,
-  onImport,
-  onExport,
-  onShare,
-}: TopBarProps) {
+export function TopBar({ onClear, onImport, onExport, onShare }: TopBarProps) {
   const { currentLanguage, supportedLanguages, getTranslatedString, changeLanguage, isChangingLanguage } = useLanguage()
-  
+
   const [showLanguageMenu, setShowLanguageMenu] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [showHelpPopup, setShowHelpPopup] = useState(false)
   const languageMenuRef = useRef<HTMLDivElement>(null)
   const helpPopupRef = useRef<HTMLDivElement>(null)
+  // 언어 버튼 참조 추가
+  const languageButtonRef = useRef<HTMLButtonElement>(null)
 
   // Add scroll effect
   useEffect(() => {
@@ -49,6 +46,18 @@ export function TopBar({
 
     // 메뉴 닫기
     setShowLanguageMenu(false)
+  }
+
+  // 언어 메뉴 토글 핸들러 추가
+  const toggleLanguageMenu = () => {
+    if (!showLanguageMenu && languageButtonRef.current) {
+      // 버튼 위치 계산
+      const rect = languageButtonRef.current.getBoundingClientRect()
+      // CSS 변수로 위치 설정
+      document.documentElement.style.setProperty("--language-dropdown-top", `${rect.bottom}px`)
+      document.documentElement.style.setProperty("--language-dropdown-right", `${window.innerWidth - rect.right}px`)
+    }
+    setShowLanguageMenu(!showLanguageMenu)
   }
 
   // 도움말 버튼 클릭 핸들러
@@ -96,94 +105,102 @@ export function TopBar({
       }`}
       style={{ width: "100%" }}
     >
-      <div className="container mx-auto px-4 flex items-center justify-between">
-        {/* Logo/Title */}
-        <div className="flex items-center">
-          <StylizedTitle
-            mainText={getTranslatedString("app.title.main") || "레조넌스"}
-            subText={getTranslatedString("app.title.sub") || "SOLSTICE"}
-          />
-        </div>
-
-        {/* Actions - now with only icons */}
-        <div className="flex items-center space-x-3">
-          {/* Language Selector */}
-          <div className="relative language-dropdown">
-            <button
-              onClick={() => setShowLanguageMenu(!showLanguageMenu)}
-              className={`${buttonBaseClass} language-button ${isChangingLanguage ? 'opacity-50' : ''}`}
-              aria-label={getTranslatedString("language") || "Language"}
-              disabled={isChangingLanguage}
-            >
-              <Globe className={iconClass} />
-            </button>
-
-            {showLanguageMenu && (
-              <div
-                ref={languageMenuRef}
-                className="absolute right-0 mt-2 w-40 neon-dropdown animate-fadeIn bg-black bg-opacity-95"
-              >
-                {supportedLanguages.map((lang) => (
-                  <button
-                    key={lang}
-                    onClick={() => handleLanguageChange(lang)}
-                    className={`block w-full text-left px-4 py-3 text-sm hover:bg-[rgba(255,255,255,0.1)] transition-colors duration-150 ${
-                      currentLanguage === lang
-                        ? "bg-[rgba(255,255,255,0.1)] text-[hsl(var(--neon-white))] neon-text"
-                        : ""
-                    }`}
-                  >
-                    {lang.toUpperCase()}
-                  </button>
-                ))}
-              </div>
-            )}
+      <div className="container mx-auto px-4">
+        {/* 큰 화면에서는 타이틀과 버튼이 같은 행에 표시되고, 작은 화면에서는 버튼이 아래로 내려감 */}
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+          {/* Logo/Title - 스크롤 시 숨김 */}
+          <div className={`flex items-center ${scrolled ? "hidden" : ""}`}>
+            <StylizedTitle
+              mainText={getTranslatedString("app.title.main") || "레조넌스"}
+              subText={getTranslatedString("app.title.sub") || "SOLSTICE"}
+            />
           </div>
 
-          {/* Share Button */}
-          <button
-            onClick={onShare}
-            className={`${buttonBaseClass} share-button`}
-            aria-label={getTranslatedString("share") || "Share"}
-          >
-            <Share2 className={iconClass} />
-          </button>
+          {/* 버튼들 - 작은 화면에서는 가로 스크롤, 큰 화면에서는 오른쪽 정렬 */}
+          <div className="flex items-center space-x-3 mt-2 md:mt-0 overflow-x-auto py-1 justify-end">
+            {/* Language Selector */}
+            <div className="relative language-dropdown">
+              <button
+                ref={languageButtonRef}
+                onClick={toggleLanguageMenu}
+                className={`${buttonBaseClass} language-button ${isChangingLanguage ? "opacity-50" : ""}`}
+                aria-label={getTranslatedString("language") || "Language"}
+                disabled={isChangingLanguage}
+              >
+                <Globe className={iconClass} />
+              </button>
 
-          {/* Clear Button */}
-          <button
-            onClick={onClear}
-            className={`${buttonBaseClass} clear-button`}
-            aria-label={getTranslatedString("button.clear") || "Clear"}
-          >
-            <RefreshCw className={iconClass} />
-          </button>
+              {showLanguageMenu && (
+                <div
+                  ref={languageMenuRef}
+                  className="fixed mt-2 w-40 neon-dropdown animate-fadeIn bg-black bg-opacity-95 z-[100]"
+                  style={{
+                    top: "var(--language-dropdown-top, 4rem)",
+                    right: "var(--language-dropdown-right, 1rem)",
+                  }}
+                >
+                  {supportedLanguages.map((lang) => (
+                    <button
+                      key={lang}
+                      onClick={() => handleLanguageChange(lang)}
+                      className={`block w-full text-left px-4 py-3 text-sm hover:bg-[rgba(255,255,255,0.1)] transition-colors duration-150 ${
+                        currentLanguage === lang
+                          ? "bg-[rgba(255,255,255,0.1)] text-[hsl(var(--neon-white))] neon-text"
+                          : ""
+                      }`}
+                    >
+                      {lang.toUpperCase()}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
 
-          {/* Import Button */}
-          <button
-            onClick={onImport}
-            className={`${buttonBaseClass} import-button`}
-            aria-label={getTranslatedString("import_from_clipboard") || "Import"}
-          >
-            <Download className={iconClass} />
-          </button>
+            {/* Share Button */}
+            <button
+              onClick={onShare}
+              className={`${buttonBaseClass} share-button`}
+              aria-label={getTranslatedString("share") || "Share"}
+            >
+              <Share2 className={iconClass} />
+            </button>
 
-          {/* Export Button */}
-          <button
-            onClick={onExport}
-            className={`${buttonBaseClass} export-button`}
-            aria-label={getTranslatedString("export_to_clipboard") || "Export"}
-          >
-            <Upload className={iconClass} />
-          </button>
+            {/* Clear Button */}
+            <button
+              onClick={onClear}
+              className={`${buttonBaseClass} clear-button`}
+              aria-label={getTranslatedString("button.clear") || "Clear"}
+            >
+              <RefreshCw className={iconClass} />
+            </button>
 
-          {/* Help Button */}
-          <button
-            onClick={toggleHelpPopup}
-            className={`${buttonBaseClass} help-button`}
-            aria-label={getTranslatedString("help") || "Help"}
-          >
-            <HelpCircle className={iconClass} />
-          </button>
+            {/* Import Button */}
+            <button
+              onClick={onImport}
+              className={`${buttonBaseClass} import-button`}
+              aria-label={getTranslatedString("import_from_clipboard") || "Import"}
+            >
+              <Download className={iconClass} />
+            </button>
+
+            {/* Export Button */}
+            <button
+              onClick={onExport}
+              className={`${buttonBaseClass} export-button`}
+              aria-label={getTranslatedString("export_to_clipboard") || "Export"}
+            >
+              <Upload className={iconClass} />
+            </button>
+
+            {/* Help Button */}
+            <button
+              onClick={toggleHelpPopup}
+              className={`${buttonBaseClass} help-button`}
+              aria-label={getTranslatedString("help") || "Help"}
+            >
+              <HelpCircle className={iconClass} />
+            </button>
+          </div>
         </div>
       </div>
 
@@ -197,3 +214,4 @@ export function TopBar({
     </div>
   )
 }
+
