@@ -43,6 +43,11 @@
   --modal-header-bg: #000000;
   --modal-content-bg: #0a0a0a;
   --modal-footer-bg: #050505;
+
+  /* 언어 드롭다운 위치 변수 */
+  --language-dropdown-top: 4rem;
+  --language-dropdown-right: 1rem;
+  --language-dropdown-left: auto;
 }
 
 /* 모바일 터치 영역 최적화 */
@@ -968,6 +973,9 @@ input:checked + .toggle-slider:before {
   line-height: 1.25;
 }
 
+/*
+화면 크기에 따른 폰트 사이즈 조정
+*/
 @media (max-width: 768px) {
   .skill-card-name {
     font-size: 0.75rem;
