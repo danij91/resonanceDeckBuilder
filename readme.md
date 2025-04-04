@@ -1,6 +1,7 @@
 # Resonance 덱 빌더 (Resonance Deck Builder)
 
-![Image](https://github.com/user-attachments/assets/31e1f7ff-1eb4-4bcd-a0ad-18d1a8d30cef)
+![image](https://github.com/user-attachments/assets/1d967fb9-da06-4b69-a360-d180f51a330a)
+
 
 📌 웹사이트 | Website: [https://rsns-deck-builder.vercel.app/](https://rsns-deck-builder.vercel.app/)
 
