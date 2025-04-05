@@ -8,9 +8,16 @@ interface EquipmentDetailsModalProps {
   onClose: () => void
   equipment: Equipment
   getTranslatedString: (key: string) => string
+  getSkill?: (skillId: number) => any
 }
 
-export function EquipmentDetailsModal({ isOpen, onClose, equipment, getTranslatedString }: EquipmentDetailsModalProps) {
+export function EquipmentDetailsModal({
+  isOpen,
+  onClose,
+  equipment,
+  getTranslatedString,
+  getSkill,
+}: EquipmentDetailsModalProps) {
   if (!equipment) {
     return null
   }
@@ -139,6 +146,25 @@ export function EquipmentDetailsModal({ isOpen, onClose, equipment, getTranslate
           </h5>
           <p className="text-sm text-gray-300">{formatColorText(getTranslatedString(equipment.des))}</p>
         </div>
+
+        {/* Equipment Effects - 스킬 리스트에서 효과 표시 */}
+        {equipment.skillList && equipment.skillList.length > 0 && getSkill && (
+          <div className="mb-4 character-detail-section">
+            <h5 className="character-detail-section-title">{getTranslatedString("equipment_effects") || "Effects"}</h5>
+            <div className="space-y-2">
+              {equipment.skillList.map((skillItem, index) => {
+                const skill = getSkill(skillItem.skillId)
+                if (!skill) return null
+
+                return (
+                  <div key={index} className="text-sm text-gray-300">
+                    {formatColorText(getTranslatedString(skill.description))}
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        )}
       </div>
     </Modal>
   )
