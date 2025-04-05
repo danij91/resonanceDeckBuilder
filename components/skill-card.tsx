@@ -73,7 +73,7 @@ export function SkillCard({
         <div className="flex-grow"></div>
 
         {/* 스킬 이미지 - 크기 증가 및 위치 조정 */}
-        <div className="flex justify-center mb-0 mt-auto">
+        <div className="flex justify-center mb-2 lg:mb-8 mt-auto">
           <div className="w-1/2 relative">
             {" "}
             {/* 이미지 크기를 1/4에서 1/2로 증가 */}
@@ -90,7 +90,7 @@ export function SkillCard({
         </div>
 
         {/* Card name - 두 줄까지 표시 가능하도록 수정 */}
-        <div className="text-white font-bold text-[0.6rem] line-clamp-2 mt-auto neon-text user-select-none px-0.5 pb-0.5">
+        <div className="text-white font-bold lg:text-[1rem] text-[0.6rem] line-clamp-2 mt-auto neon-text user-select-none px-0.5 pb-0.5">
           {getTranslatedString(extraInfo.name)}
         </div>
       </div>
