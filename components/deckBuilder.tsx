@@ -31,6 +31,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
   const { getTranslatedString, currentLanguage } = useLanguage()
   const searchParams = useSearchParams()
   const { showToast, ToastContainer } = useToast()
+  const [isPhotoMode, setIsPhotoMode] = useState(false)
 
   // useDataLoader 훅을 사용하여 실제 데이터 로드
   const { data, loading, error } = useDataLoader()
@@ -93,7 +94,8 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         }
       }
 
-      return "images/placeHolder Card.jpg" // 기본 이미지 경로
+      // ownerId가 없거나 이미지를 찾을 수 없으면 기본 이미지 반환
+      return "images/placeHolder Card.jpg"
     },
     [data],
   )
@@ -230,6 +232,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         // 캐릭터 이미지 연결 - 더 강력한 로직 사용
         // 선택된 카드가 있으면 그 카드 객체를 사용, 없으면 기본 카드 객체 사용
         const cardForImage = selectedCard || card
+        console.log(`Finding image for card ${id}, using card:`, cardForImage)
         const characterImage = findCharacterImageForCard(cardForImage)
 
         return { card, cardForImage, extraInfo, characterImage }
@@ -308,6 +311,11 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
     showToast(getTranslatedString("deck_cleared"), "success")
   }
 
+  // 사진찍기모드 토글
+  const togglePhotoMode = () => {
+    setIsPhotoMode(!isPhotoMode)
+  }
+
   // 로딩 중 표시
   if (loading || isLocalLoading) {
     return <LoadingScreen message={getTranslatedString("loading") || "Loading..."} />
@@ -346,7 +354,14 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
     <div className="min-h-screen bg-black text-white">
       <ToastContainer />
 
-      <TopBar onClear={handleClear} onImport={handleImport} onExport={handleExport} onShare={handleShare} />
+      <TopBar
+        onClear={handleClear}
+        onImport={handleImport}
+        onExport={handleExport}
+        onShare={handleShare}
+        onTogglePhotoMode={togglePhotoMode}
+        isPhotoMode={isPhotoMode}
+      />
 
       {/* 컨테이너의 패딩을 조정하여 모바일에서 더 많은 공간을 확보합니다. */}
       <div className="container mx-auto px-0 sm:px-3 md:px-4 pt-40 md:pt-28 pb-8">
@@ -369,28 +384,39 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
           getSkill={getSkill}
         />
 
-        {/* 스킬 창 */}
-        <SkillWindow
-          selectedCards={selectedCards}
-          availableCards={availableCards}
-          onAddCard={addCard}
-          onRemoveCard={removeCard}
-          onReorderCards={reorderCards}
-          onUpdateCardSettings={updateCardSettings}
-          getTranslatedString={getTranslatedString}
-          specialControls={{}}
-        />
+        {/* 사진찍기모드가 아닐 때만 표시할 제목 */}
+        {!isPhotoMode && (
+          <div className="mt-8">
+            <h2 className="neon-section-title">{getTranslatedString("skill.section.title") || "Skills"}</h2>
+          </div>
+        )}
 
-        {/* 전투 설정 */}
-        <BattleSettings
-          settings={battleSettings}
-          onUpdateSettings={updateBattleSettings}
-          getTranslatedString={getTranslatedString}
-        />
+        {/* 스킬 창 - 사진찍기모드일 때는 마진 제거 */}
+        <div className={isPhotoMode ? "mt-0" : "mt-0"}>
+          <SkillWindow
+            selectedCards={selectedCards}
+            availableCards={availableCards}
+            onAddCard={addCard}
+            onRemoveCard={removeCard}
+            onReorderCards={reorderCards}
+            onUpdateCardSettings={updateCardSettings}
+            getTranslatedString={getTranslatedString}
+            specialControls={{}}
+          />
+        </div>
+
+        {/* 전투 설정 - 사진찍기모드일 때는 숨김 */}
+        {!isPhotoMode && (
+          <BattleSettings
+            settings={battleSettings}
+            onUpdateSettings={updateBattleSettings}
+            getTranslatedString={getTranslatedString}
+          />
+        )}
       </div>
 
-      {/* 댓글 섹션 */}
-      <CommentsSection currentLanguage={currentLanguage} />
+      {/* 댓글 섹션 - 사진찍기모드일 때는 숨김 */}
+      {!isPhotoMode && <CommentsSection currentLanguage={currentLanguage} />}
     </div>
   )
 }

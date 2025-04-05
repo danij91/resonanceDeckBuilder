@@ -63,6 +63,7 @@ export function CharacterWindow({
     setShowSelector(true)
   }
 
+  // 캐릭터 선택 모달에서 -1(없음)을 선택했을 때 처리하는 로직 추가
   const handleCharacterSelect = (characterId: number) => {
     if (selectedSlot !== -1) {
       // 슬롯에 이미 캐릭터가 있었다면 먼저 제거
@@ -70,8 +71,11 @@ export function CharacterWindow({
         onRemoveCharacter(selectedSlot)
       }
 
-      // 새 캐릭터 추가
-      onAddCharacter(characterId, selectedSlot)
+      // 새 캐릭터 추가 (characterId가 -1이면 슬롯을 비움)
+      if (characterId !== -1) {
+        onAddCharacter(characterId, selectedSlot)
+      }
+
       setShowSelector(false)
       setSelectedSlot(-1)
       setSlotHasExistingCharacter(false)
