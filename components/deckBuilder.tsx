@@ -8,7 +8,7 @@ import { SkillWindow } from "./skill-window"
 import { BattleSettings } from "./battle-settings"
 import { CommentsSection } from "./comments-section"
 import { useToast } from "./toast-notification"
-import { useDeckBuilder } from "../hooks/use-deck-builder"
+import { useDeckBuilder } from "../hooks/deck-builder/index"
 import { useLanguage } from "../contexts/language-context"
 import { decodePresetFromUrlParam } from "../utils/presetCodec"
 import { analytics, logEvent } from "../lib/firebase-config"
@@ -232,7 +232,6 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         // 캐릭터 이미지 연결 - 더 강력한 로직 사용
         // 선택된 카드가 있으면 그 카드 객체를 사용, 없으면 기본 카드 객체 사용
         const cardForImage = selectedCard || card
-        console.log(`Finding image for card ${id}, using card:`, cardForImage)
         const characterImage = findCharacterImageForCard(cardForImage)
 
         return { card, cardForImage, extraInfo, characterImage }

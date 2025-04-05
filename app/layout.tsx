@@ -4,7 +4,6 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   title: "Resonance Deck Builder",
-  description: "Created with lots of AI",
   generator: "ralf",
 }
 
