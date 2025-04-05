@@ -33,7 +33,6 @@ export function CardSettingsModal({
   const [useType, setUseType] = useState(initialUseType)
   const [useParam, setUseParam] = useState(initialUseParam)
   const [useParamMap, setUseParamMap] = useState<Record<string, number>>(initialUseParamMap)
-
   // Function to format text with color tags
   const formatColorText = (text: string) => {
     if (!text) return ""

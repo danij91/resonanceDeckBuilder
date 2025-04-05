@@ -109,6 +109,18 @@ export function useDataLoader() {
             if (images[equipImgKey]) {
               equipment.url = images[equipImgKey]
             }
+
+            // Ensure skillList is properly initialized if it exists
+            if (equipment.skillList && Array.isArray(equipment.skillList)) {
+              // skillList is already properly formatted, no need to modify
+            } else if (equipment.skillList) {
+              // If skillList exists but is not an array, convert it to proper format
+              const skillListObj = equipment.skillList as unknown as Record<string, any>
+              const skillListArray = Object.keys(skillListObj).map((key) => ({
+                skillId: Number(skillListObj[key].skillId || key),
+              }))
+              equipment.skillList = skillListArray
+            }
           })
 
           setData({
