@@ -285,7 +285,7 @@ export function CharacterSlot({
 
               {/* 이름을 하단으로 이동, 희귀도 뱃지 제거 */}
               <div className="mt-auto">
-                <h3 className="text-xs sm:text-base font-semibold text-white neon-text truncate">
+                <h3 className="lg:text-xl text-xs sm:text-base font-semibold text-white neon-text truncate">
                   {getTranslatedString(character.name)}
                 </h3>
               </div>
