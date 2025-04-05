@@ -1893,7 +1893,7 @@
   },
   "11800070": {
     "id": 11800070,
-    "name": "测试1",
+    "name": "equip_name_11800070",
     "des": "equip_des_11800070",
     "equipTagId": 12600161,
     "quality": "Orange",
@@ -1905,7 +1905,7 @@
   },
   "11800071": {
     "id": 11800071,
-    "name": "测试2",
+    "name": "equip_name_11800071",
     "des": "equip_des_11800071",
     "equipTagId": 12600161,
     "quality": "Orange",
@@ -1917,7 +1917,7 @@
   },
   "11800072": {
     "id": 11800072,
-    "name": "测试3",
+    "name": "equip_name_11800072",
     "des": "equip_des_11800072",
     "equipTagId": 12600161,
     "quality": "Orange",
