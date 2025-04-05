@@ -34,6 +34,15 @@ export function CharacterSearchModal({
     <SearchModal {...searchModalProps}>
       <div className="p-4">
         <div className="grid grid-cols-4 gap-2">
+          {/* 없음 옵션 추가 */}
+          <div onClick={() => onSelectCharacter(-1)} className="cursor-pointer">
+            <div className="relative w-full aspect-[3/4] rounded-lg border-2 border-gray-700 overflow-hidden transition-all duration-200 hover:scale-105 hover:shadow-lg bg-black bg-opacity-70">
+              <div className="flex items-center justify-center h-full">
+                <span className="text-lg font-bold text-white neon-text">{getTranslatedString("none") || "None"}</span>
+              </div>
+            </div>
+          </div>
+
           {characters.length === 0 ? (
             <div className="col-span-full text-center py-4 text-gray-400">
               {getTranslatedString("no_characters_found") || "No characters found"}

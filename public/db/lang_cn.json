@@ -1,4 +1,7 @@
 {
+  "equipment_effect": "效果",
+  "photo_mode": "拍照模式",
+  "help.photo_mode": "便于截图的功能，可将角色和技能集中展示",
   "longpress_to_drag": "长按后拖动",
   "share_link_copied_alert": "已将分享链接复制到剪贴板！",
   "deck_cleared": "预设已清除。",
@@ -97,7 +100,7 @@
   "battle.enemy.priority": "敌方卡牌 / 其他卡牌",
   "battle.enemy.use.now": "立即使用",
   "battle.enemy.use.later": "稍后使用",
-  "battle.enemy.use.random": "随机",
+  "battle.enemy.use.random": "不使用",
   "char_name_10000004": "卡塔斯",
   "char_identity_10000004": "索思学会·御敌枢纽成员",
   "char_ability_10000004": "火焰操纵",
