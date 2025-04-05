@@ -64,10 +64,10 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
     updateEquipment,
     clearAll,
     exportPreset,
-    importPreset,
     importPresetObject,
     createShareableUrl,
     decodePresetString,
+    importPreset, // importPreset 추가
   } = useDeckBuilder(data)
 
   // URL을 통해 덱 프리셋을 받아올 때 ownerId를 char_db에서 검색하여 카드에 캐릭터 초상화 표시 로직 개선
@@ -76,96 +76,26 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
   const findCharacterImageForCard = useCallback(
     (card: any) => {
       if (!data || !card) {
-        return "images/placeHolder Card.jpg" // 기본 이미지 경로 설정
+        return "images/placeHolder Card.jpg" // 기본 이미지 경로
       }
 
-      const cardId = card.id?.toString()
-
-      // 1. 가장 중요: 카드 자체의 ownerId를 우선적으로 사용
+      // 카드에 ownerId가 있고 유효한지 확인
       if (card.ownerId && card.ownerId !== -1) {
-        // 이미지 데이터베이스에서 char_{ownerId} 키로 직접 찾기
+        // 1. 이미지 데이터베이스에서 char_{ownerId} 키로 직접 찾기
         if (data.images && data.images[`char_${card.ownerId}`]) {
           return data.images[`char_${card.ownerId}`]
         }
 
-        // 캐릭터 객체에서 img_card 속성 찾기
+        // 2. 캐릭터 객체에서 img_card 속성 찾기
         const character = data.characters[card.ownerId.toString()]
         if (character && character.img_card) {
           return character.img_card
         }
       }
 
-      // 2. selectedCards 배열에서 동일한 카드 ID를 가진 카드를 찾아 ownerId 확인
-      if (cardId && selectedCards) {
-        const selectedCard = selectedCards.find((c) => c.id === cardId)
-        if (selectedCard && selectedCard.ownerId && selectedCard.ownerId !== -1) {
-          // 이미지 데이터베이스에서 char_{ownerId} 키로 직접 찾기
-          if (data.images && data.images[`char_${selectedCard.ownerId}`]) {
-            return data.images[`char_${selectedCard.ownerId}`]
-          }
-
-          // 캐릭터 객체에서 img_card 속성 찾기
-          const character = data.characters[selectedCard.ownerId.toString()]
-          if (character && character.img_card) {
-            return character.img_card
-          }
-        }
-      }
-
-      // 3. 카드 데이터베이스에서 ownerId 확인
-      if (cardId) {
-        const cardData = data.cards[cardId]
-        if (cardData && cardData.ownerId && cardData.ownerId !== -1) {
-          // 이미지 데이터베이스에서 char_{ownerId} 키로 직접 찾기
-          if (data.images && data.images[`char_${cardData.ownerId}`]) {
-            return data.images[`char_${cardData.ownerId}`]
-          }
-
-          // 캐릭터 객체에서 img_card 속성 찾기
-          const character = data.characters[cardData.ownerId.toString()]
-          if (character && character.img_card) {
-            return character.img_card
-          }
-        }
-      }
-
-      // 4. 카드 ID로 스킬을 찾고, 스킬에서 캐릭터 찾기
-      if (cardId) {
-        for (const skillId in data.skills) {
-          const skill = data.skills[skillId]
-          if (skill && skill.cardID && skill.cardID.toString() === cardId) {
-            // 이 스킬을 가진 캐릭터 찾기
-            for (const charId in data.characters) {
-              const character = data.characters[charId]
-              if (character && character.skillList) {
-                const hasSkill = character.skillList.some((skillItem) => skillItem.skillId.toString() === skillId)
-
-                if (hasSkill) {
-                  // 이미지 데이터베이스에서 char_{charId} 키로 직접 찾기
-                  if (data.images && data.images[`char_${charId}`]) {
-                    return data.images[`char_${charId}`]
-                  }
-
-                  // 캐릭터 객체에서 img_card 속성 찾기
-                  if (character.img_card) {
-                    return character.img_card
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-
-      // 5. 카드 이미지 직접 찾기
-      if (cardId && data.images && data.images[`card_${cardId}`]) {
-        return data.images[`card_${cardId}`]
-      }
-
-      // 6. 기본 이미지 반환
-      return "images/placeHolder Card.jpg"
+      return "images/placeHolder Card.jpg" // 기본 이미지 경로
     },
-    [data, selectedCards],
+    [data],
   )
 
   // URL에서 코드 파라미터 처리 - 비동기 함수 사용 문제 해결
@@ -243,6 +173,12 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
       }
     })
 
+    // 중요: selectedCards에서 모든 카드 ID를 cardSet에 추가
+    // 이렇게 하면 장비에서 추가된 카드들도 포함됩니다
+    selectedCards.forEach((card) => {
+      cardSet.add(card.id)
+    })
+
     // Convert to array
     return Array.from(cardSet)
       .map((id) => {
@@ -270,6 +206,9 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
             // 스킬 이름을 extraInfo.name에 할당
             extraInfo.name = skill.name
 
+            // 스킬 설명을 extraInfo.desc에 할당
+            extraInfo.desc = skill.description || ""
+
             // 스킬 이미지 URL 찾기
             if (data.images && data.images[`skill_${skillId}`]) {
               extraInfo.img_url = data.images[`skill_${skillId}`]
@@ -285,12 +224,18 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
           extraInfo.cost = costValue
         }
 
+        // 중요: selectedCards에서 해당 카드를 찾아 ownerId 정보 가져오기
+        const selectedCard = selectedCards.find((sc) => sc.id === id)
+
         // 캐릭터 이미지 연결 - 더 강력한 로직 사용
-        const characterImage = findCharacterImageForCard(card)
-        return { card, extraInfo, characterImage }
+        // 선택된 카드가 있으면 그 카드 객체를 사용, 없으면 기본 카드 객체 사용
+        const cardForImage = selectedCard || card
+        const characterImage = findCharacterImageForCard(cardForImage)
+
+        return { card, cardForImage, extraInfo, characterImage }
       })
       .filter(Boolean)
-  }, [data, selectedCharacters, findCharacterImageForCard])
+  }, [data, selectedCharacters, findCharacterImageForCard, selectedCards]) // selectedCards 의존성 추가
 
   // 클립보드에서 가져오기
   const handleImport = async () => {
