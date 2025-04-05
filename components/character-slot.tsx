@@ -255,7 +255,7 @@ export function CharacterSlot({
                 {getTranslatedString(weaponEquipment.name)}
               </div>
 
-              {/* 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 - 모바일에서도 잘 보이도록 수정 */}
+              {/* 장비 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 - 모바일에서도 잘 보이도록 수정 */}
               <button
                 className="equipment-info-btn hidden sm:flex"
                 onClick={(e) => {
@@ -434,6 +434,7 @@ export function CharacterSlot({
           onClose={() => setShowEquipmentDetails(null)}
           equipment={getEquipment(showEquipmentDetails)!}
           getTranslatedString={getTranslatedString}
+          getSkill={getSkill}
         />
       )}
     </div>

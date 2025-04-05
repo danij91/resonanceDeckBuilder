@@ -129,6 +129,7 @@ export interface Equipment {
   quality: string
   type?: string // weapon, armor, accessory
   url?: string
+  skillList?: Array<{ skillId: number }>
 }
 
 // Equipment Type Mapping

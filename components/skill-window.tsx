@@ -57,6 +57,7 @@ function SortableSkillCard({ id, children }: { id: string; children: React.React
 export function SkillWindow({
   selectedCards,
   availableCards,
+  onAddCard,
   onRemoveCard,
   onReorderCards,
   onUpdateCardSettings,

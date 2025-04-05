@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useCallback, useMemo, useEffect } from "react"
+import { useState, useCallback, useMemo, useEffect, useRef } from "react"
 import type { Database, Skill } from "../types"
 import { encodePreset, decodePreset, encodePresetForUrl } from "../utils/presetCodec"
 
@@ -16,25 +16,46 @@ export interface PresetCard {
   equipIdList: string[]
 }
 
+// Define the type for selected cards
+type SelectedCard = {
+  id: string
+  useType: number
+  useParam: number
+  useParamMap?: Record<string, number>
+  ownerId?: number
+  skillId?: number
+  skillIndex?: number
+  sources: Array<{
+    type: "character" | "equipment" | "passive"
+    id: number | string
+    skillId?: number
+    slotIndex?: number
+    equipType?: "weapon" | "armor" | "accessory"
+  }>
+}
+
 export function useDeckBuilder(data: Database | null) {
+  // Use useRef to hold the state of selectedCards
+  const selectedCardsRef = useRef<SelectedCard[]>([])
+
+  // useState for the setter function of selectedCards
+  const [, setSelectedCardsState] = useState<SelectedCard[]>([])
+
+  // Function to update selectedCards
+  const setSelectedCards = useCallback((newCards: SelectedCard[] | ((prevCards: SelectedCard[]) => SelectedCard[])) => {
+    if (typeof newCards === "function") {
+      selectedCardsRef.current = newCards(selectedCardsRef.current)
+    } else {
+      selectedCardsRef.current = newCards
+    }
+    setSelectedCardsState(selectedCardsRef.current) // Update state to trigger re-renders
+  }, [])
+
   // Character selection (5 slots, -1 means empty)
   const [selectedCharacters, setSelectedCharacters] = useState<number[]>([-1, -1, -1, -1, -1])
 
   // Leader character
   const [leaderCharacter, setLeaderCharacter] = useState<number>(-1)
-
-  // Selected cards in priority order
-  const [selectedCards, setSelectedCards] = useState<
-    {
-      id: string
-      useType: number
-      useParam: number
-      useParamMap?: Record<string, number>
-      ownerId?: number
-      skillId?: number
-      skillIndex?: number
-    }[]
-  >([])
 
   // Battle settings
   const [battleSettings, setBattleSettings] = useState({
@@ -109,18 +130,98 @@ export function useDeckBuilder(data: Database | null) {
     [data],
   )
 
-  // Add card to selection - MOVED UP to fix circular dependency
-  const addCard = useCallback((cardId: string) => {
-    setSelectedCards((prev) => {
-      // Check if card is already selected
-      if (prev.some((card) => card.id === cardId)) {
-        return prev
-      }
+  // Add card to selection with source information
+  const addCard = useCallback(
+    (
+      cardId: string,
+      sourceType: "character" | "equipment" | "passive",
+      sourceId: string | number,
+      sourceInfo?: {
+        skillId?: number
+        slotIndex?: number
+        equipType?: "weapon" | "armor" | "accessory"
+      },
+    ) => {
+      setSelectedCards((prev) => {
+        // Find existing card
+        const existingCard = prev.find((card) => card.id === cardId)
 
-      // Add card with default settings
-      return [...prev, { id: cardId, useType: 1, useParam: -1 }]
-    })
-  }, [])
+        // Create new source object
+        const newSource = {
+          type: sourceType,
+          id: sourceId,
+          ...sourceInfo,
+        }
+
+        // 즉시 ownerId 결정 - createPresetObject의 알고리즘 사용
+        let ownerId = -1
+        let skillId = -1
+
+        // 1. 소스 타입이 character 또는 passive인 경우 해당 캐릭터 ID를 ownerId로 설정
+        if (sourceType === "character" || sourceType === "passive") {
+          ownerId = Number(sourceId)
+          if (sourceInfo?.skillId) {
+            skillId = sourceInfo.skillId
+          }
+        }
+
+        // 2. 카드 데이터에서 ownerId 찾기 (아직 결정되지 않은 경우)
+        if (ownerId === -1 && data) {
+          const cardData = data.cards[cardId]
+          if (cardData && cardData.ownerId) {
+            ownerId = cardData.ownerId
+          }
+        }
+
+        // 3. 특수 스킬 확인 (specialSkillIds에 있는 경우)
+        if (sourceInfo?.skillId && data?.specialSkillIds && data.specialSkillIds.includes(sourceInfo.skillId)) {
+          ownerId = 10000001 // 특수 스킬의 경우 ownerId를 10000001로 설정
+        }
+
+        if (existingCard) {
+          // Check if this exact source already exists
+          const sourceExists = existingCard.sources.some(
+            (source) =>
+              source.type === newSource.type &&
+              source.id === newSource.id &&
+              source.skillId === newSource.skillId &&
+              source.slotIndex === newSource.slotIndex &&
+              source.equipType === newSource.equipType,
+          )
+
+          if (!sourceExists) {
+            // Add new source to existing card
+            return prev.map((card) =>
+              card.id === cardId
+                ? {
+                    ...card,
+                    sources: [...card.sources, newSource],
+                    // ownerId가 -1이 아닌 경우에만 업데이트
+                    ...(ownerId !== -1 && { ownerId }),
+                    ...(skillId !== -1 && { skillId }),
+                  }
+                : card,
+            )
+          }
+          return prev // No change needed if source already exists
+        }
+
+        // Add new card with source and ownerId
+        return [
+          ...prev,
+          {
+            id: cardId,
+            useType: 1,
+            useParam: -1,
+            ownerId, // 즉시 ownerId 설정
+            skillId: skillId !== -1 ? skillId : undefined,
+            sources: [newSource],
+          },
+        ]
+      })
+    },
+    [setSelectedCards, data],
+  )
 
   // Get all available cards for selected characters
   const availableCards = useMemo(() => {
@@ -178,7 +279,7 @@ export function useDeckBuilder(data: Database | null) {
       }
 
       const character = data.characters[characterId.toString()]
-      if (!character || !character.skillList) {
+      if (!character) {
         return
       }
 
@@ -186,7 +287,7 @@ export function useDeckBuilder(data: Database | null) {
       const processedSkills = new Set<number>()
 
       // 스킬 처리 함수
-      const processSkill = (skillId: number) => {
+      const processSkill = (skillId: number, isPassive = false) => {
         // 이미 처리한 스킬은 건너뛰기
         if (processedSkills.has(skillId)) return
         processedSkills.add(skillId)
@@ -202,37 +303,145 @@ export function useDeckBuilder(data: Database | null) {
         // 스킬에 cardID가 있으면 카드 추가
         if (skill.cardID) {
           const cardId = skill.cardID.toString()
-
-          // Check if this is a special skill
-          const isSpecialSkill = data.specialSkillIds && data.specialSkillIds.includes(skillId)
-
-          // For non-special skills, ensure the ownerId is set correctly
-          if (!isSpecialSkill) {
-            const cardData = data.cards[cardId]
-            if (cardData && cardData.ownerId === undefined) {
-              // This card originated from this character's skill, so set the ownerId
-              cardData.ownerId = characterId
-            }
-          }
-
-          addCard(cardId)
+          addCard(cardId, isPassive ? "passive" : "character", characterId, { skillId })
         }
 
         // ExSkillList 처리
         if (skill.ExSkillList && skill.ExSkillList.length > 0) {
           skill.ExSkillList.forEach((exSkill) => {
             const exSkillId = exSkill.ExSkillName
-            processSkill(exSkillId)
+            processSkill(exSkillId, isPassive)
           })
         }
       }
 
-      // 캐릭터의 모든 스킬 처리
-      character.skillList.forEach((skillItem) => {
-        processSkill(skillItem.skillId)
+      // 캐릭터의 일반 스킬 처리
+      if (character.skillList) {
+        character.skillList.forEach((skillItem) => {
+          processSkill(skillItem.skillId)
+        })
+      }
+
+      // 캐릭터의 패시브 스킬 처리
+      if (character.passiveSkillList) {
+        character.passiveSkillList.forEach((skillItem) => {
+          processSkill(skillItem.skillId, true)
+        })
+      }
+    },
+    [data, getSkill, addCard],
+  )
+
+  // 장비의 스킬 목록을 기반으로 카드를 생성하는 함수
+  const generateCardsFromEquipment = useCallback(
+    (equipId: string, slotIndex: number, equipType: "weapon" | "armor" | "accessory") => {
+      if (!data || !data.equipments) {
+        return
+      }
+
+      const equip = data.equipments[equipId]
+      if (!equip || !equip.skillList || equip.skillList.length === 0) {
+        return
+      }
+
+      // 처리된 스킬 ID를 추적하기 위한 Set
+      const processedSkills = new Set<number>()
+
+      // 장비의 모든 스킬 처리
+      equip.skillList.forEach((skillItem) => {
+        const skillId = skillItem.skillId
+        const skill = getSkill(skillId)
+
+        if (!skill) return
+
+        // 스킬 자체에 cardID가 있으면 카드 추가 (이 부분 추가)
+        if (skill.cardID) {
+          const cardId = skill.cardID.toString()
+          addCard(cardId, "equipment", equipId, { skillId, slotIndex, equipType })
+        }
+
+        // 스킬의 ExSkillList 처리
+        if (skill.ExSkillList && skill.ExSkillList.length > 0) {
+          skill.ExSkillList.forEach((exSkillItem) => {
+            const exSkillId = exSkillItem.ExSkillName
+
+            // 이미 처리한 스킬은 건너뛰기
+            if (processedSkills.has(exSkillId)) return
+            processedSkills.add(exSkillId)
+
+            // 제외된 스킬 ID 목록에 있는지 확인
+            if (data.excludedSkillIds && data.excludedSkillIds.includes(exSkillId)) {
+              return
+            }
+
+            // ExSkill 정보 가져오기
+            const exSkill = getSkill(exSkillId)
+            if (!exSkill) return
+
+            // ExSkill에 cardID가 있으면 카드 추가
+            if (exSkill.cardID) {
+              const cardId = exSkill.cardID.toString()
+              addCard(cardId, "equipment", equipId, { skillId: exSkillId, slotIndex, equipType })
+            }
+          })
+        }
       })
     },
     [data, getSkill, addCard],
+  )
+
+  // 장비 관련 카드 제거 함수
+  const removeCardsFromEquipment = useCallback(
+    (equipId: string, slotIndex: number, equipType: "weapon" | "armor" | "accessory") => {
+      setSelectedCards((prev) => {
+        // 각 카드의 소스 목록에서 해당 장비 소스만 제거
+        const updatedCards = prev.map((card) => {
+          const updatedSources = card.sources.filter(
+            (source) =>
+              !(
+                source.type === "equipment" &&
+                source.id === equipId &&
+                source.slotIndex === slotIndex &&
+                source.equipType === equipType
+              ),
+          )
+
+          return {
+            ...card,
+            sources: updatedSources,
+          }
+        })
+
+        // 소스가 없는 카드는 제거
+        return updatedCards.filter((card) => card.sources.length > 0)
+      })
+    },
+    [setSelectedCards],
+  )
+
+  // Update cards after character removal
+  const updateCardsAfterCharacterRemoval = useCallback(
+    (removedCharacterId: number) => {
+      setSelectedCards((prev) => {
+        // 각 카드의 소스 목록에서 제거된 캐릭터 소스만 제거
+        const updatedCards = prev.map((card) => {
+          const updatedSources = card.sources.filter(
+            (source) =>
+              !(source.type === "character" && source.id === removedCharacterId) &&
+              !(source.type === "passive" && source.id === removedCharacterId),
+          )
+
+          return {
+            ...card,
+            sources: updatedSources,
+          }
+        })
+
+        // 소스가 없는 카드는 제거
+        return updatedCards.filter((card) => card.sources.length > 0)
+      })
+    },
+    [setSelectedCards],
   )
 
   // Add character to a specific slot
@@ -275,7 +484,7 @@ export function useDeckBuilder(data: Database | null) {
       // 캐릭터의 스킬 목록을 기반으로 카드 생성
       generateCardsFromSkills(characterId)
     },
-    [leaderCharacter, generateCardsFromSkills],
+    [leaderCharacter, generateCardsFromSkills, setSelectedCharacters],
   )
 
   // Remove character from a specific slot
@@ -285,15 +494,30 @@ export function useDeckBuilder(data: Database | null) {
 
       const characterId = selectedCharacters[slot]
 
+      // 장비 정보 저장 (제거 전)
+      const slotEquipment = equipment[slot]
+
       setSelectedCharacters((prev) => {
         const newSelection = [...prev]
         newSelection[slot] = -1
         return newSelection
       })
 
-      // Clear equipment for this slot
+      // Clear equipment for this slot and remove related cards
       setEquipment((prev) => {
         const newEquipment = [...prev]
+
+        // 각 장비 타입별로 처리
+        if (slotEquipment.weapon) {
+          removeCardsFromEquipment(slotEquipment.weapon, slot, "weapon")
+        }
+        if (slotEquipment.armor) {
+          removeCardsFromEquipment(slotEquipment.armor, slot, "armor")
+        }
+        if (slotEquipment.accessory) {
+          removeCardsFromEquipment(slotEquipment.accessory, slot, "accessory")
+        }
+
         newEquipment[slot] = { weapon: null, armor: null, accessory: null }
         return newEquipment
       })
@@ -307,7 +531,7 @@ export function useDeckBuilder(data: Database | null) {
       // Update cards after character removal
       updateCardsAfterCharacterRemoval(characterId)
     },
-    [selectedCharacters, leaderCharacter],
+    [selectedCharacters, leaderCharacter, equipment, removeCardsFromEquipment, updateCardsAfterCharacterRemoval],
   )
 
   // Set a character as the leader
@@ -320,115 +544,41 @@ export function useDeckBuilder(data: Database | null) {
     [selectedCharacters],
   )
 
-  // Update cards after character removal
-  const updateCardsAfterCharacterRemoval = useCallback(
-    (removedCharacterId: number) => {
-      if (!data) return
-
-      // Get remaining characters
-      const remainingCharacters = selectedCharacters.filter((id) => id !== -1 && id !== removedCharacterId)
-
-      // 제거된 캐릭터의 스킬 목록 가져오기
-      const removedCharacter = data.characters[removedCharacterId.toString()]
-      if (!removedCharacter || !removedCharacter.skillList) return
-
-      // 제거된 캐릭터의 스킬 ID 목록
-      const removedSkillIds = new Set<number>()
-      removedCharacter.skillList.forEach((skillItem) => {
-        removedSkillIds.add(skillItem.skillId)
-      })
-
-      // ExSkillList 처리
-      removedSkillIds.forEach((skillId) => {
-        const skill = getSkill(skillId)
-        if (skill && skill.ExSkillList) {
-          skill.ExSkillList.forEach((exSkill) => {
-            removedSkillIds.add(exSkill.ExSkillName)
-          })
-        }
-      })
-
-      // 제거된 캐릭터의 카드 ID 목록
-      const removedCardIds = new Set<string>()
-      removedSkillIds.forEach((skillId) => {
-        const skill = getSkill(skillId)
-        if (skill && skill.cardID) {
-          removedCardIds.add(skill.cardID.toString())
-        }
-      })
-
-      // 남아있는 캐릭터
-      removedSkillIds.forEach((skillId) => {
-        const skill = getSkill(skillId)
-        if (skill && skill.cardID) {
-          removedCardIds.add(skill.cardID.toString())
-        }
-      })
-
-      // 남아있는 캐릭터들의 스킬 ID 목록
-      const remainingSkillIds = new Set<number>()
-      remainingCharacters.forEach((charId) => {
-        const character = data.characters[charId.toString()]
-        if (character && character.skillList) {
-          character.skillList.forEach((skillItem) => {
-            remainingSkillIds.add(skillItem.skillId)
-          })
-        }
-      })
-
-      // ExSkillList 처리
-      remainingSkillIds.forEach((skillId) => {
-        const skill = getSkill(skillId)
-        if (skill && skill.ExSkillList) {
-          skill.ExSkillList.forEach((exSkill) => {
-            remainingSkillIds.add(exSkill.ExSkillName)
-          })
-        }
-      })
-
-      // 남아있는 캐릭터들의 카드 ID 목록
-      const remainingCardIds = new Set<string>()
-      remainingSkillIds.forEach((skillId) => {
-        const skill = getSkill(skillId)
-        if (skill && skill.cardID) {
-          remainingCardIds.add(skill.cardID.toString())
-        }
-      })
-
-      // 제거된 카드 중 남아있는 캐릭터들이 가지고 있지 않은 카드만 제거
-      setSelectedCards((prev) => {
-        return prev.filter((card) => {
-          // 제거된 캐릭터의 카드가 아니거나, 남아있는 캐릭터들이 가지고 있는 카드는 유지
-          return !removedCardIds.has(card.id) || remainingCardIds.has(card.id)
-        })
-      })
+  // Remove card from selection
+  const removeCard = useCallback(
+    (cardId: string) => {
+      setSelectedCards((prev) => prev.filter((card) => card.id !== cardId))
     },
-    [data, selectedCharacters, getSkill],
+    [setSelectedCards],
   )
 
-  // Remove card from selection
-  const removeCard = useCallback((cardId: string) => {
-    setSelectedCards((prev) => prev.filter((card) => card.id !== cardId))
-  }, [])
-
   // Reorder cards
-  const reorderCards = useCallback((fromIndex: number, toIndex: number) => {
-    setSelectedCards((prev) => {
-      const result = [...prev]
-      const [removed] = result.splice(fromIndex, 1)
-      result.splice(toIndex, 0, removed)
-      return result
-    })
-  }, [])
+  const reorderCards = useCallback(
+    (fromIndex: number, toIndex: number) => {
+      setSelectedCards((prev) => {
+        const result = [...prev]
+        const [removed] = result.splice(fromIndex, 1)
+        result.splice(toIndex, 0, removed)
+        return result
+      })
+    },
+    [setSelectedCards],
+  )
 
   // Update card settings
   const updateCardSettings = useCallback(
     (cardId: string, useType: number, useParam: number, useParamMap?: Record<string, number>) => {
-      setSelectedCards((prev) =>
-        prev.map((card) => (card.id === cardId ? { ...card, useType, useParam, useParamMap } : card)),
-      )
+      setSelectedCards((currentCards) => {
+        // 새로운 카드 배열 생성
+        const newCards: SelectedCard[] = []
+
+        // 1. 먼저 프리셋의 cardList에 있는 모든 카드를 추가합니다
+        // 이렇게 하면 프리셋의 카드 순서가 유지됩니다
+
+        return currentCards.map((card) => (card.id === cardId ? { ...card, useType, useParam, useParamMap } : card))
+      })
     },
-    [],
+    [setSelectedCards],
   )
 
   // Update battle settings
@@ -441,14 +591,28 @@ export function useDeckBuilder(data: Database | null) {
     (slotIndex: number, equipType: "weapon" | "armor" | "accessory", equipId: string | null) => {
       setEquipment((prev) => {
         const newEquipment = [...prev]
+        const oldEquipId = newEquipment[slotIndex][equipType]
+
+        // 이전 장비가 있었다면 관련 카드 제거
+        if (oldEquipId) {
+          removeCardsFromEquipment(oldEquipId, slotIndex, equipType)
+        }
+
+        // 새 장비 설정
         newEquipment[slotIndex] = {
           ...newEquipment[slotIndex],
           [equipType]: equipId,
         }
+
+        // 새 장비가 있다면 관련 카드 추가
+        if (equipId) {
+          generateCardsFromEquipment(equipId, slotIndex, equipType)
+        }
+
         return newEquipment
       })
     },
-    [],
+    [removeCardsFromEquipment, generateCardsFromEquipment],
   )
 
   // Clear all settings
@@ -464,16 +628,13 @@ export function useDeckBuilder(data: Database | null) {
       otherCard: 0,
     })
     setEquipment(Array(5).fill({ weapon: null, armor: null, accessory: null }))
-  }, [])
-
-  // createPresetObject 함수를 수정하여 장비 정보 포함 여부를 매개변수로 받도록 변경합니다.
-  // 함수 시그니처와 내부 로직을 수정합니다.
+  }, [setSelectedCards, setSelectedCharacters])
 
   // 기존 createPresetObject 함수를 다음으로 교체:
   const createPresetObject = useCallback(
     (includeEquipment = false) => {
       // Transform selected cards to match the required format
-      const formattedCardList = selectedCards.map((card) => {
+      const formattedCardList = selectedCardsRef.current.map((card) => {
         // 기본 카드 객체 생성
         const cardObj: PresetCard = {
           id: card.id,
@@ -484,50 +645,52 @@ export function useDeckBuilder(data: Database | null) {
           useType: card.useType,
           useParam: card.useParam,
           useParamMap: card.useParamMap || {},
-          equipIdList: [],
+          equipIdList: [], // 기본 빈 배열
         }
 
-        // 만약 ownerId나 skillId가 없는 경우에만 데이터에서 찾아서 설정
-        if ((cardObj.ownerId === -1 || cardObj.skillId === -1) && data) {
+        // 장비 소스 정보 추가
+        if (card.sources) {
+          // 장비 소스 처리
+          const equipmentSources = card.sources.filter((source) => source.type === "equipment")
+          if (equipmentSources.length > 0) {
+            cardObj.equipIdList = equipmentSources.map((source) => source.id.toString())
+          }
+        }
+
+        // skillId가 없는 경우에만 데이터에서 찾아서 설정
+        if (cardObj.skillId === -1 && data) {
           const cardData = data.cards[card.id]
 
           if (cardData) {
-            // ownerId가 없는 경우에만 설정
-            if (cardObj.ownerId === -1) {
-              cardObj.ownerId = cardData.ownerId || -1
+            // skillId가 없는 경우에만 찾기
+            // Find the corresponding skill
+            let foundSkillId = -1
+            for (const skillId in data.skills) {
+              const skill = data.skills[skillId]
+              if (skill.cardID && skill.cardID.toString() === card.id) {
+                foundSkillId = Number.parseInt(skillId)
+                cardObj.skillId = foundSkillId
+                break
+              }
             }
 
-            // skillId가 없는 경우에만 찾기
-            if (cardObj.skillId === -1) {
-              // Find the corresponding skill
-              let foundSkillId = -1
-              for (const skillId in data.skills) {
-                const skill = data.skills[skillId]
-                if (skill.cardID && skill.cardID.toString() === card.id) {
-                  foundSkillId = Number.parseInt(skillId)
-                  cardObj.skillId = foundSkillId
-                  break
-                }
-              }
+            // Check if this is a special skill (in specialSkillIds)
+            const isSpecialSkill =
+              data.specialSkillIds && foundSkillId > 0 && data.specialSkillIds.includes(foundSkillId)
 
-              // Check if this is a special skill (in specialSkillIds)
-              const isSpecialSkill =
-                data.specialSkillIds && foundSkillId > 0 && data.specialSkillIds.includes(foundSkillId)
+            if (isSpecialSkill) {
+              // For special skills, set ownerId to 10000001
+              cardObj.ownerId = 10000001
+            }
 
-              if (isSpecialSkill) {
-                // For special skills, set ownerId to 10000001
-                cardObj.ownerId = 10000001
-              }
-
-              // Only set skillIndex if this skill is directly in the character's skillList and it's not already set
-              if (cardObj.skillIndex === -1 && cardObj.ownerId > 0 && foundSkillId > 0) {
-                const character = data.characters[cardObj.ownerId.toString()]
-                if (character && character.skillList) {
-                  const skillIndex = character.skillList.findIndex((s) => s.skillId === foundSkillId)
-                  if (skillIndex !== -1) {
-                    // skillIndex starts from 1, not 0
-                    cardObj.skillIndex = skillIndex + 1
-                  }
+            // Only set skillIndex if this skill is directly in the character's skillList and it's not already set
+            if (cardObj.skillIndex === -1 && cardObj.ownerId > 0 && foundSkillId > 0) {
+              const character = data.characters[cardObj.ownerId.toString()]
+              if (character && character.skillList) {
+                const skillIndex = character.skillList.findIndex((s) => s.skillId === foundSkillId)
+                if (skillIndex !== -1) {
+                  // skillIndex starts from 1, not 0
+                  cardObj.skillIndex = skillIndex + 1
                 }
               }
             }
@@ -544,7 +707,7 @@ export function useDeckBuilder(data: Database | null) {
 
       // Create a CardIdMap object (cardId: 1 format)
       const cardIdMap: Record<string, number> = {}
-      selectedCards.forEach((card) => {
+      selectedCardsRef.current.forEach((card) => {
         cardIdMap[card.id] = 1
       })
 
@@ -588,7 +751,7 @@ export function useDeckBuilder(data: Database | null) {
 
       return preset
     },
-    [selectedCharacters, leaderCharacter, selectedCards, battleSettings, data, equipment],
+    [selectedCharacters, leaderCharacter, battleSettings, data, equipment],
   )
 
   // exportPreset 함수를 수정하여 장비 정보를 포함하지 않도록 변경
@@ -607,77 +770,223 @@ export function useDeckBuilder(data: Database | null) {
   const exportPresetToString = useCallback(() => {
     try {
       const preset = createPresetObject(false) // 장비 정보 제외
-      const base64String = encodePreset(preset)
-      return base64String
+      return encodePreset(preset)
     } catch (error) {
       return ""
     }
   }, [createPresetObject])
 
   // 프리셋 객체를 직접 가져와서 적용
-  const importPresetObject = useCallback((preset: any) => {
-    try {
-      // Validate preset structure
-      if (!preset.roleList || !Array.isArray(preset.roleList) || preset.roleList.length !== 5) {
-        throw new Error("Invalid roleList")
-      }
+  const importPresetObject = useCallback(
+    (preset: any) => {
+      try {
+        // Validate preset structure
+        if (!preset.roleList || !Array.isArray(preset.roleList) || preset.roleList.length !== 5) {
+          throw new Error("Invalid roleList")
+        }
 
-      if (!preset.cardList || !Array.isArray(preset.cardList)) {
-        throw new Error("Invalid cardList")
-      }
+        if (!preset.cardList || !Array.isArray(preset.cardList)) {
+          throw new Error("Invalid cardList")
+        }
 
-      // Update state with imported preset
-      setSelectedCharacters(preset.roleList)
-      setLeaderCharacter(preset.header)
+        // 먼저 모든 상태 초기화
+        clearAll()
 
-      // Transform the cardList to our internal format
-      const simplifiedCardList = preset.cardList.map((card) => ({
-        id: card.id,
-        useType: card.useType,
-        useParam: card.useParam,
-        useParamMap: card.useParamMap || {},
-        ownerId: card.ownerId,
-        skillId: card.skillId,
-        skillIndex: card.skillIndex,
-      }))
+        // 로컬 변수로 업데이트된 상태 추적
+        const updatedCharacters = [-1, -1, -1, -1, -1]
+        const updatedEquipment = Array(5).fill({ weapon: null, armor: null, accessory: null })
 
-      setSelectedCards(simplifiedCardList)
-
-      // 기본값 설정
-      setBattleSettings({
-        isLeaderCardOn: preset.isLeaderCardOn !== undefined ? preset.isLeaderCardOn : true,
-        isSpCardOn: preset.isSpCardOn !== undefined ? preset.isSpCardOn : true,
-        keepCardNum: preset.keepCardNum !== undefined ? preset.keepCardNum : 0,
-        discardType: preset.discardType !== undefined ? preset.discardType - 1 : 0, // Subtract 1 from discardType
-        otherCard: preset.otherCard !== undefined ? preset.otherCard : 0,
-      })
-
-      // Reset equipment
-      const newEquipment = Array(5).fill({ weapon: null, armor: null, accessory: null })
-
-      // 장비 정보가 있으면 적용
-      if (preset.equipment) {
-        Object.entries(preset.equipment).forEach(([slotIndex, equipData]) => {
-          const index = Number.parseInt(slotIndex, 10)
-          if (index >= 0 && index < 5 && Array.isArray(equipData) && equipData.length === 3) {
-            newEquipment[index] = {
-              weapon: equipData[0],
-              armor: equipData[1],
-              accessory: equipData[2],
-            }
+        // 캐릭터 설정 - 이 과정에서 캐릭터 스킬 카드가 자동으로 추가됨
+        preset.roleList.forEach((charId: number, index: number) => {
+          if (charId !== -1) {
+            addCharacter(charId, index)
+            updatedCharacters[index] = charId
           }
         })
+
+        // 리더 설정
+        if (preset.header !== -1) {
+          setLeader(preset.header)
+        }
+
+        // 장비 설정 - 이 과정에서 장비 스킬 카드가 자동으로 추가됨
+        if (preset.equipment) {
+          Object.entries(preset.equipment).forEach(([slotIndex, equipData]) => {
+            const index = Number.parseInt(slotIndex, 10)
+            if (index >= 0 && index < 5 && Array.isArray(equipData) && equipData.length === 3) {
+              const [weapon, armor, accessory] = equipData as [string | null, string | null, string | null]
+
+              // 로컬 변수 업데이트
+              updatedEquipment[index] = {
+                weapon: weapon || null,
+                armor: armor || null,
+                accessory: accessory || null,
+              }
+
+              // 실제 상태 업데이트
+              if (weapon) updateEquipment(index, "weapon", weapon)
+              if (armor) updateEquipment(index, "armor", armor)
+              if (accessory) updateEquipment(index, "accessory", accessory)
+            }
+          })
+        }
+
+        // 장비 타입별로 다음에 사용할 캐릭터 슬롯 인덱스를 추적하는 맵
+        const equipmentTypeSlotMap = {
+          weapon: 0,
+          armor: 0,
+          accessory: 0,
+        }
+
+        // 유효한 캐릭터 슬롯 인덱스 배열 (캐릭터가 있는 슬롯만)
+        const validCharacterSlots = updatedCharacters
+          .map((charId, index) => (charId !== -1 ? index : -1))
+          .filter((index) => index !== -1)
+
+        // 이미 장착된 장비 ID를 추적하는 Set
+        const equippedItems = new Set<string>()
+
+        // 캐릭터 슬롯이 없으면 처리 중단
+        if (validCharacterSlots.length === 0) return { success: true, message: "import_success" }
+
+        // 카드의 equipIdList 처리
+        preset.cardList.forEach((presetCard: any) => {
+          if (presetCard.equipIdList && Array.isArray(presetCard.equipIdList) && presetCard.equipIdList.length > 0) {
+            // 각 장비 ID에 대해 처리
+            presetCard.equipIdList.forEach((equipId: string) => {
+              // 이미 장착된 장비는 건너뛰기
+              if (equippedItems.has(equipId)) return
+
+              // 장비 정보 가져오기
+              const equipmentData = data?.equipments?.[equipId]
+              if (!equipmentData) return
+
+              // 장비 타입 확인
+              const equipType = equipmentData.type as "weapon" | "armor" | "accessory"
+              if (!equipType) return
+
+              // 해당 장비가 실제로 이 카드의 스킬을 추가하는지 확인
+              let isValidEquipment = false
+
+              // 장비의 스킬 목록 확인
+              if (equipmentData.skillList) {
+                for (const skillItem of equipmentData.skillList) {
+                  const skill = getSkill(skillItem.skillId)
+
+                  // ExSkillList 확인
+                  if (skill && skill.ExSkillList) {
+                    for (const exSkill of skill.ExSkillList) {
+                      const exSkillData = getSkill(exSkill.ExSkillName)
+                      if (exSkillData && exSkillData.cardID && exSkillData.cardID.toString() === presetCard.id) {
+                        isValidEquipment = true
+                        break
+                      }
+                    }
+                    if (isValidEquipment) break
+                  }
+                }
+              }
+
+              // 유효한 장비라면 순서대로 캐릭터 슬롯에 장착
+              if (isValidEquipment) {
+                // 현재 장비 타입에 대한 슬롯 인덱스 가져오기
+                let slotIndex = equipmentTypeSlotMap[equipType]
+
+                // 모든 캐릭터 슬롯을 순회했다면 다시 처음부터 시작
+                if (slotIndex >= validCharacterSlots.length) {
+                  slotIndex = 0
+                  equipmentTypeSlotMap[equipType] = 0
+                }
+
+                // 실제 캐릭터 슬롯 인덱스 가져오기
+                const charSlotIndex = validCharacterSlots[slotIndex]
+
+                // 장비 장착
+                updateEquipment(charSlotIndex, equipType, equipId)
+
+                // 로컬 변수 업데이트
+                updatedEquipment[charSlotIndex] = {
+                  ...updatedEquipment[charSlotIndex],
+                  [equipType]: equipId,
+                }
+
+                // 장착된 장비 Set에 추가
+                equippedItems.add(equipId)
+
+                // 다음 슬롯 인덱스로 업데이트
+                equipmentTypeSlotMap[equipType]++
+              }
+            })
+          }
+        })
+
+        // 카드 설정 업데이트 (useType, useParam 등)
+        // 이 부분을 완전히 새로운 접근 방식으로 변경합니다
+        setSelectedCards((currentCards) => {
+          // 새로운 카드 배열 생성
+          const newCards: SelectedCard[] = []
+
+          // 1. 먼저 프리셋의 cardList에 있는 모든 카드를 추가합니다
+          // 이렇게 하면 프리셋의 카드 순서가 유지됩니다
+          preset.cardList.forEach((presetCard: any) => {
+            // 현재 카드 목록에서 해당 ID를 가진 카드 찾기
+            const existingCard = currentCards.find((card) => card.id === presetCard.id)
+
+            if (existingCard) {
+              // 기존 카드가 있으면 설정만 업데이트
+              newCards.push({
+                ...existingCard,
+                useType: presetCard.useType,
+                useParam: presetCard.useParam,
+                useParamMap: presetCard.useParamMap || {},
+              })
+            } else {
+              // 기존 카드가 없으면 새로 생성
+              // 이 경우는 프리셋에는 있지만 현재 선택된 캐릭터/장비에서는 생성되지 않은 카드
+              // 소스 정보는 비어있게 설정하고, 나중에 필요하면 업데이트할 수 있습니다
+              newCards.push({
+                id: presetCard.id,
+                useType: presetCard.useType,
+                useParam: presetCard.useParam,
+                useParamMap: presetCard.useParamMap || {},
+                ownerId: presetCard.ownerId,
+                skillId: presetCard.skillId,
+                skillIndex: presetCard.skillIndex,
+                sources: [], // 빈 소스 배열로 시작
+              })
+            }
+          })
+
+          // 2. 프리셋의 cardList에 없는 카드 중 현재 선택된 카드 목록에 있는 카드 추가
+          // 이는 주로 장비로부터 파생된 카드들입니다
+          const presetCardIds = new Set(preset.cardList.map((card: any) => card.id))
+
+          currentCards.forEach((card) => {
+            // 이미 추가되지 않은 카드만 추가
+            if (!presetCardIds.has(card.id)) {
+              newCards.push(card)
+            }
+          })
+
+          return newCards
+        })
+
+        // 전투 설정 업데이트
+        setBattleSettings({
+          isLeaderCardOn: preset.isLeaderCardOn !== undefined ? preset.isLeaderCardOn : true,
+          isSpCardOn: preset.isSpCardOn !== undefined ? preset.isSpCardOn : true,
+          keepCardNum: preset.keepCardNum !== undefined ? preset.keepCardNum : 0,
+          discardType: preset.discardType !== undefined ? preset.discardType - 1 : 0, // Subtract 1 from discardType
+          otherCard: preset.otherCard !== undefined ? preset.otherCard : 0,
+        })
+
+        return { success: true, message: "import_success" }
+      } catch (error) {
+        return { success: false, message: "import_failed" }
       }
-
-      setEquipment(newEquipment)
-
-      // 하드코딩된 메시지 대신 언어팩 키 사용
-      return { success: true, message: "import_success" }
-    } catch (error) {
-      // 하드코딩된 메시지 대신 언어팩 키 사용
-      return { success: false, message: "import_failed" }
-    }
-  }, [])
+    },
+    [addCharacter, setLeader, updateEquipment, clearAll, setSelectedCards, data, getSkill],
+  )
 
   // Import preset from clipboard
   const importPreset = useCallback(async () => {
@@ -787,7 +1096,7 @@ export function useDeckBuilder(data: Database | null) {
   return {
     selectedCharacters,
     leaderCharacter,
-    selectedCards,
+    selectedCards: selectedCardsRef.current,
     battleSettings,
     equipment,
     isDarkMode,
