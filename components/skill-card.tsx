@@ -24,7 +24,11 @@ export function SkillCard({
   return (
     <div
       className="skill-card relative overflow-hidden h-full cursor-pointer user-select-none"
-      style={{ aspectRatio: "1/1.5" }}
+      style={{
+        aspectRatio: "1/1.5",
+        maxWidth: "100%",
+        width: "100%",
+      }}
       onClick={(e) => {
         e.stopPropagation()
         onEdit()
@@ -60,17 +64,19 @@ export function SkillCard({
         </div>
       )}
 
-      {/* Cost badge - 원형 배경 제거하고 오른쪽 위에 바짝 붙이기 */}
-      <div className="absolute top-0 right-0 px-2 py-1 text-white font-bold text-lg z-10">{extraInfo.cost}</div>
+      {/* Cost badge - 더 작게 만들기 */}
+      <div className="absolute top-0 right-0 px-0.5 py-0 text-white font-bold text-xs z-10">{extraInfo.cost}</div>
 
       {/* Card content */}
-      <div className="relative z-1 p-2 flex flex-col h-full">
+      <div className="relative z-1 p-0 flex flex-col h-full">
         {/* Empty space in the middle */}
         <div className="flex-grow"></div>
 
-        {/* 스킬 이미지 - 크기 조정 */}
-        <div className="flex justify-center mb-2">
-          <div className="w-3/5 relative">
+        {/* 스킬 이미지 - 크기 증가 및 위치 조정 */}
+        <div className="flex justify-center mb-2 lg:mb-8 mt-auto">
+          <div className="w-1/2 relative">
+            {" "}
+            {/* 이미지 크기를 1/4에서 1/2로 증가 */}
             <div className="aspect-square transform rotate-45 overflow-hidden bg-black bg-opacity-30 border border-[hsla(var(--neon-white),0.5)] shadow-[0_0_5px_rgba(255,255,255,0.3)]">
               {extraInfo.img_url && (
                 <img
@@ -83,11 +89,12 @@ export function SkillCard({
           </div>
         </div>
 
-        {/* Card name - 두 줄까지 표시하고 패딩 제거 */}
-        <div className="text-white font-bold skill-card-name mt-auto neon-text user-select-none">
+        {/* Card name - 두 줄까지 표시 가능하도록 수정 */}
+        <div className="text-white font-bold lg:text-[1rem] text-[0.6rem] line-clamp-2 mt-auto neon-text user-select-none px-0.5 pb-0.5">
           {getTranslatedString(extraInfo.name)}
         </div>
       </div>
     </div>
   )
 }
+
