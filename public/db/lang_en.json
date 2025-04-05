@@ -1,4 +1,7 @@
 {
+  "equipment_effect": "Effect",
+  "photo_mode": "Photo Mode",
+  "help.photo_mode": "Helps gather characters and skills together for easier screenshot capture.",
   "longpress_to_drag": "Long press and drag",
   "share_link_copied_alert": "Share link copied to clipboard!",
   "deck_cleared": "Preset has been cleared.",
@@ -96,7 +99,7 @@
   "battle.enemy.priority": "Enemy Card / Other Card",
   "battle.enemy.use.now": "Use Now",
   "battle.enemy.use.later": "Use Later",
-  "battle.enemy.use.random": "Random",
+  "battle.enemy.use.random": "Do not use",
   "char_name_10000004": "Katas",
   "char_identity_10000004": "소스 시타델·디펜스 센터 멤버",
   "char_ability_10000004": "화염 컨트롤",

@@ -25,8 +25,8 @@
   /* 모바일에서 스킬 카드 스타일 */
   @media (max-width: 640px) {
     .skill-card {
-      min-width: 60px;
-      max-width: 80px;
+      /* min-width: 60px; 이 줄을 제거 또는 주석 처리 */
+      /* max-width: 80px; 이 줄을 제거 또는 주석 처리 */
     }
 
     .skill-cost-badge {
@@ -389,20 +389,63 @@ body {
 }
 
 /* 버튼 호버 효과 */
-.language-button:hover::before,
-.share-button:hover::before,
-.clear-button:hover::before,
-.import-button:hover::before,
-.export-button:hover::before,
-.help-button:hover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.1);
-  z-index: 1;
+@media (hover: hover) {
+  /* 호버 기능이 있는 디바이스에서만 호버 효과 적용 */
+  .neon-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+
+  .language-button:hover::before,
+  .share-button:hover::before,
+  .clear-button:hover::before,
+  .import-button:hover::before,
+  .export-button:hover::before,
+  .help-button:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+  }
+
+  .character-action-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: hsla(var(--neon-white), 0.5);
+    color: hsla(var(--neon-white), 1);
+  }
+
+  .equipment-info-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: hsla(var(--neon-white), 0.5);
+  }
+
+  .skill-card:hover {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5), 0 0 12px rgba(255, 255, 255, 0.3);
+  }
+
+  .character-slot-empty:hover {
+    border-color: hsla(var(--neon-white), 0.8);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .character-slot-filled:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .equipment-slot-empty:hover {
+    border-color: hsla(var(--neon-white), 0.8);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .equipment-card:hover {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5), 0 0 12px rgba(255, 255, 255, 0.3);
+  }
 }
 
 /* 공통 네온 효과 클래스 - 재사용 가능한 컴포넌트 */
@@ -641,9 +684,10 @@ body {
     transition: all 0.2s ease-in-out;
   }
 
+  /* 캐릭터 슬롯 호버 효과 개선 */
   .character-slot-empty:hover {
-    border: 1px solid hsla(var(--neon-white), 0.8);
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.7), 0 0 16px rgba(255, 255, 255, 0.5);
+    border-color: hsla(var(--neon-white), 0.8);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
     background-color: rgba(255, 255, 255, 0.1);
   }
 
@@ -655,9 +699,7 @@ body {
   }
 
   .character-slot-filled:hover {
-    border: 1px solid hsla(var(--neon-white), 0.7);
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5), 0 0 12px rgba(255, 255, 255, 0.3);
-    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.1);
   }
 
   /* 모달 공통 스타일 */
@@ -772,7 +814,8 @@ body {
     color: white;
   }
 
-  /* 드롭다운 옵션 스타일 - 브라우저 기본 스타일 오버라이드 시도 */
+  /* 드롭다운 옵션 스타일 - */
+  /* 브라우저 기본 스타일 오버라이드 시도 */
   .battle-dropdown option {
     background-color: #000000;
     color: white;
@@ -1063,41 +1106,49 @@ input:checked + .toggle-slider:before {
 /* 스킬 카드 이름 스타일 추가 */
 .skill-card-name {
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 2; /* 1에서 2로 변경 */
   -webkit-box-orient: vertical;
   overflow: hidden;
   word-break: keep-all;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.25;
 }
 
-/*
-화면 크기에 따른 폰트 사이즈 조정
-*/
-@media (max-width: 768px) {
-  .skill-card-name {
-    font-size: 0.75rem;
-  }
+/* 추가: line-clamp-2 유틸리티 클래스 */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-@media (max-width: 640px) {
+/* 화면 크기에 따른 폰트 사이즈 조정 */
+@media (max-width: 768px) {
   .skill-card-name {
     font-size: 0.7rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .skill-card-name {
     font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-card-name {
+    font-size: 0.6rem;
   }
 }
 
 /* 스킬 그리드 레이아웃 */
 .skill-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 8px;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0;
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 /* 드래그 중인 컨테이너 스타일 */
@@ -1118,19 +1169,19 @@ input:checked + .toggle-slider:before {
 /* 반응형 스타일 - 화면 크기에 따라 카드 크기와 간격 조절 */
 @media (max-width: 1200px) {
   .skill-grid {
-    gap: 6px;
+    gap: 0;
   }
 }
 
 @media (max-width: 992px) {
   .skill-grid {
-    gap: 4px;
+    gap: 0;
   }
 }
 
 @media (max-width: 768px) {
   .skill-grid {
-    gap: 3px;
+    gap: 0;
   }
 
   .skill-card {
@@ -1140,7 +1191,7 @@ input:checked + .toggle-slider:before {
 
 @media (max-width: 640px) {
   .skill-grid {
-    gap: 2px;
+    gap: 0;
   }
 
   .skill-card {
@@ -1155,7 +1206,7 @@ input:checked + .toggle-slider:before {
 
 @media (max-width: 480px) {
   .skill-grid {
-    gap: 1px;
+    gap: 0;
   }
 
   .skill-card {
@@ -1182,5 +1233,36 @@ body.dragging {
   overflow: hidden !important;
   touch-action: none !important;
   -webkit-overflow-scrolling: none !important;
+}
+
+/* 캐릭터 슬롯 테두리에 빛나는 효과 추가 */
+.character-slot-filled {
+  border: 1px solid hsla(var(--neon-white), 0.5);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.character-slot-filled:hover {
+  border: 1px solid hsla(var(--neon-white), 0.7);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5), 0 0 12px rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+/* 희귀도별 테두리 빛나는 효과 추가 */
+.border-orange-500 {
+  box-shadow: 0 0 10px rgba(249, 115, 22, 0.7), 0 0 15px rgba(249, 115, 22, 0.4);
+}
+
+.border-yellow-500 {
+  box-shadow: 0 0 10px rgba(234, 179, 8, 0.7), 0 0 15px rgba(234, 179, 8, 0.4);
+}
+
+.border-purple-500 {
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.7), 0 0 15px rgba(168, 85, 247, 0.4);
+}
+
+.border-blue-500 {
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.7), 0 0 15px rgba(59, 130, 246, 0.4);
 }
 

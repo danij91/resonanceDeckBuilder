@@ -1,7 +1,7 @@
 "use client"
 
-import { Plus, Info, X, Crown } from "lucide-react"
-import { useState } from "react"
+import { Plus, Info, Crown, Sword, Shield, Gem } from "lucide-react"
+import { useState, useRef, useEffect } from "react"
 import type { Character, Card, Equipment } from "../types"
 import { EquipmentSearchModal } from "./ui/modal/EquipmentSearchModal"
 import { CharacterDetailsModal } from "./character-details-modal"
@@ -23,7 +23,7 @@ interface CharacterSlotProps {
   isLeader: boolean
   onSetLeader: () => void
   getCardInfo: (cardId: string) => { card: Card } | null
-  getSkill?: (skillId: number) => any // getSkill 추가
+  getSkill?: (skillId: number) => any
   getEquipment: (equipId: string) => Equipment | null
   equipments?: Equipment[]
   data: any
@@ -44,7 +44,7 @@ export function CharacterSlot({
   getCardInfo,
   getSkill,
   getEquipment,
-  equipments = [], // Provide default empty array
+  equipments = [],
   data,
   hasAnyCharacter,
 }: CharacterSlotProps) {
@@ -52,6 +52,25 @@ export function CharacterSlot({
   const [showEquipmentSelector, setShowEquipmentSelector] = useState<"weapon" | "armor" | "accessory" | null>(null)
   const [showCharacterDetails, setShowCharacterDetails] = useState(false)
   const [showEquipmentDetails, setShowEquipmentDetails] = useState<string | null>(null)
+  const characterSlotRef = useRef<HTMLDivElement>(null)
+  const [slotWidth, setSlotWidth] = useState(0)
+
+  // 캐릭터 슬롯의 너비를 측정하여 버튼 크기를 동적으로 조정
+  useEffect(() => {
+    const updateSlotWidth = () => {
+      if (characterSlotRef.current) {
+        setSlotWidth(characterSlotRef.current.offsetWidth)
+      }
+    }
+
+    // 초기 로드 시 및 창 크기 변경 시 너비 업데이트
+    updateSlotWidth()
+    window.addEventListener("resize", updateSlotWidth)
+
+    return () => {
+      window.removeEventListener("resize", updateSlotWidth)
+    }
+  }, [])
 
   const handleEquipmentClick = (type: "weapon" | "armor" | "accessory") => {
     if (isEmpty) return
@@ -104,36 +123,78 @@ export function CharacterSlot({
   const armorEquipment = equipment.armor ? getEquipment(equipment.armor) : null
   const accessoryEquipment = equipment.accessory ? getEquipment(equipment.accessory) : null
 
-  // Leader style class - only apply if the character is a leader and not empty
-  const leaderStyleClass =
-    !isEmpty && isLeader
-      ? "ring-2 ring-[#ff0000] scale-105 shadow-[0_0_10px_2px_rgba(255,0,0,0.7)] z-10 transform transition-transform duration-200"
-      : ""
+  // 캐릭터 등급에 따른 테두리 색상 및 그림자 효과 직접 설정
+  const getRarityBorderStyle = (rarity: string) => {
+    switch (rarity) {
+      case "UR":
+        return {
+          borderColor: "#f97316", // orange-500
+          boxShadow: "0 0 10px rgba(249, 115, 22, 0.7), 0 0 15px rgba(249, 115, 22, 0.4)",
+        }
+      case "SSR":
+        return {
+          borderColor: "#eab308", // yellow-500
+          boxShadow: "0 0 10px rgba(234, 179, 8, 0.7), 0 0 15px rgba(234, 179, 8, 0.4)",
+        }
+      case "SR":
+        return {
+          borderColor: "#a855f7", // purple-500
+          boxShadow: "0 0 10px rgba(168, 85, 247, 0.7), 0 0 15px rgba(168, 85, 247, 0.4)",
+        }
+      case "R":
+        return {
+          borderColor: "#3b82f6", // blue-500
+          boxShadow: "0 0 10px rgba(59, 130, 246, 0.7), 0 0 15px rgba(59, 130, 246, 0.4)",
+        }
+      default:
+        return {
+          borderColor: "rgba(255, 255, 255, 0.5)",
+          boxShadow: "0 0 5px rgba(255, 255, 255, 0.3)",
+        }
+    }
+  }
+
+  // 캐릭터 슬롯 스타일 - 직접 인라인 스타일로 적용
+  const characterSlotStyle =
+    !isEmpty && character
+      ? {
+          border: "2px solid",
+          ...getRarityBorderStyle(character.rarity),
+        }
+      : {}
+
+  // 버튼 크기 계산 - 슬롯 너비의 25%
+  const buttonSize = Math.max(slotWidth * 0.25, 20) // 최소 20px 보장
+
+  // 왕관 아이콘 크기 계산 - 슬롯 너비의 33%
+  const crownSize = Math.max(slotWidth * 0.33, 24) // 최소 24px 보장
 
   return (
-    <div className="flex flex-col relative">
-      {/* Leader Crown - 카드 바깥에 표시 */}
-      {!isEmpty && isLeader && (
-        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-30">
-          <div className="bg-red-600 rounded-full p-1 shadow-lg">
-            <Crown className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-300" />
+    <div className="flex flex-col relative" ref={characterSlotRef}>
+      {/* 기존 상단 왕관 아이콘 제거 */}
+      {/* {!isEmpty && isLeader && (
+        <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 z-30">
+          <div 
+            className="bg-red-600 rounded-full p-1 shadow-lg flex items-center justify-center"
+            style={{ width: `${crownSize}px`, height: `${crownSize}px` }}
+          >
+            <Crown className="w-full h-full text-yellow-300" />
           </div>
         </div>
-      )}
+      )} */}
       {/* Character Card - 모바일에서도 적절한 크기로 표시되도록 수정 */}
       <div
         className={`
-          relative w-full aspect-[3/4] rounded-lg overflow-hidden
-          ${
-            isEmpty
-              ? hasAnyCharacter
-                ? "flex items-center justify-center cursor-pointer border border-[hsla(var(--neon-white),0.3)] bg-black bg-opacity-70 hover:bg-opacity-60"
-                : "flex items-center justify-center cursor-pointer character-slot-empty"
-              : "cursor-pointer character-slot-filled"
-          }
-          ${leaderStyleClass}
-        `}
+  relative w-full aspect-[3/4] rounded-lg overflow-hidden
+  ${
+    isEmpty
+      ? "flex items-center justify-center cursor-pointer border border-[hsla(var(--neon-white),0.3)] bg-black bg-opacity-70 hover:bg-white hover:bg-opacity-10"
+      : "cursor-pointer character-slot-filled hover:bg-white hover:bg-opacity-10"
+  }
+  transition-all duration-200
+`}
         onClick={onAddCharacter}
+        style={characterSlotStyle}
       >
         {isEmpty ? (
           <Plus className="w-6 h-6 sm:w-8 sm:h-8 text-[hsl(var(--neon-white))]" />
@@ -155,54 +216,78 @@ export function CharacterSlot({
 
             {/* Content */}
             <div className="relative z-10 p-1 sm:p-3 flex flex-col h-full">
-              {/* Top section - Name and Rarity */}
-              <div className="flex items-center mb-1 sm:mb-2">
-                <span
-                  className={`text-[0.6rem] sm:text-xs font-bold px-1 sm:px-2 py-0.5 rounded-full text-white mr-1 sm:mr-2 ${getRarityColor(
-                    character.rarity,
-                  )}`}
-                >
-                  {character.rarity}
-                </span>
-                <h3 className="text-xs sm:text-base font-semibold text-white neon-text truncate">
-                  {getTranslatedString(character.name)}
-                </h3>
-              </div>
-
-              {/* Character action buttons - 모바일에서도 잘 보이도록 수정 */}
-              <div className="character-action-buttons absolute bottom-1 sm:right-1 w-full sm:w-auto flex justify-center sm:justify-end gap-1 z-10">
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation()
-                    setShowCharacterDetails(true)
+              {/* Character action buttons - 상단에 위치 */}
+              <div className="flex justify-between w-full">
+                {/* 리더 임명 버튼 또는 리더 왕관 뱃지 - 왼쪽 위 */}
+                <div
+                  style={{
+                    width: `${buttonSize}px`,
+                    height: `${buttonSize}px`,
+                    minWidth: `${buttonSize}px`,
+                    minHeight: `${buttonSize}px`,
                   }}
-                  aria-label={getTranslatedString("character.details") || "Character details"}
-                  className="character-action-btn w-[calc(33%-2px)] sm:w-auto"
                 >
-                  <Info className="w-3 h-3" />
-                </button>
-                {!isLeader && (
+                  {!isEmpty &&
+                    (isLeader ? (
+                      <div
+                        className="bg-red-600 rounded-md flex items-center justify-center transition-all duration-300"
+                        style={{
+                          width: `${buttonSize}px`,
+                          height: `${buttonSize}px`,
+                          minWidth: `${buttonSize}px`,
+                          minHeight: `${buttonSize}px`,
+                          border: "1px solid #f59e0b",
+                          boxShadow: "0 0 8px rgba(245, 158, 11, 0.6)",
+                        }}
+                      >
+                        <Crown className="w-3/4 h-3/4 text-yellow-300" />
+                      </div>
+                    ) : (
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          onSetLeader()
+                        }}
+                        aria-label={getTranslatedString("set_as_leader") || "Set as leader"}
+                        className="character-action-btn hover:bg-black hover:bg-opacity-80 transition-all duration-300"
+                        style={{
+                          width: `${buttonSize}px`,
+                          height: `${buttonSize}px`,
+                          minWidth: `${buttonSize}px`,
+                          minHeight: `${buttonSize}px`,
+                        }}
+                      >
+                        <Crown className="w-3/4 h-3/4" />
+                      </button>
+                    ))}
+                </div>
+
+                {/* 정보 버튼 - 오른쪽 위 */}
+                {!isEmpty && (
                   <button
                     onClick={(e) => {
                       e.stopPropagation()
-                      onSetLeader()
+                      setShowCharacterDetails(true)
                     }}
-                    aria-label={getTranslatedString("set_as_leader") || "Set as leader"}
-                    className="character-action-btn w-[calc(33%-2px)] sm:w-auto"
+                    aria-label={getTranslatedString("character.details") || "Character details"}
+                    className="character-action-btn"
+                    style={{
+                      width: `${buttonSize}px`,
+                      height: `${buttonSize}px`,
+                      minWidth: `${buttonSize}px`,
+                      minHeight: `${buttonSize}px`,
+                    }}
                   >
-                    <Crown className="w-3 h-3" />
+                    <Info className="w-3/4 h-3/4" />
                   </button>
                 )}
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation()
-                    onRemoveCharacter()
-                  }}
-                  className="character-action-btn text-red-400 w-[calc(33%-2px)] sm:w-auto"
-                  aria-label={getTranslatedString("remove_character") || "Remove character"}
-                >
-                  <X className="w-3 h-3" />
-                </button>
+              </div>
+
+              {/* 이름을 하단으로 이동, 희귀도 뱃지 제거 */}
+              <div className="mt-auto">
+                <h3 className="text-xs sm:text-base font-semibold text-white neon-text truncate">
+                  {getTranslatedString(character.name)}
+                </h3>
               </div>
             </div>
           </div>
@@ -211,21 +296,17 @@ export function CharacterSlot({
 
       {/* Equipment Slots - 모바일에서도 적절한 크기로 표시되도록 수정 */}
       <div className="mt-1 sm:mt-2 grid grid-cols-3 gap-0.5 sm:gap-1">
-        {/* Weapon Slot */}
+        {/* Weapon Slot - Sword 아이콘 사용 */}
         <div
           className={`
-            w-full aspect-square rounded-lg overflow-hidden cursor-pointer relative
-            ${isEmpty ? "opacity-50 pointer-events-none" : ""}
-            ${
-              !weaponEquipment
-                ? "equipment-slot-empty neon-border"
-                : getEquipmentQualityBgColor(weaponEquipment.quality)
-            }
-          `}
+          w-full aspect-square rounded-lg overflow-hidden cursor-pointer relative flex items-center justify-center
+          ${isEmpty ? "opacity-50 pointer-events-none" : ""}
+          ${!weaponEquipment ? "equipment-slot-empty neon-border" : getEquipmentQualityBgColor(weaponEquipment.quality)}
+        `}
           onClick={() => handleEquipmentClick("weapon")}
         >
           {!weaponEquipment ? (
-            <span className="text-[0.6rem] sm:text-xs text-[hsl(var(--neon-white))]">1</span>
+            <Sword className="w-5 h-5 sm:w-6 sm:h-6 text-[hsl(var(--neon-white))]" />
           ) : (
             <div className="w-full h-full relative">
               {weaponEquipment.url ? (
@@ -269,17 +350,17 @@ export function CharacterSlot({
           )}
         </div>
 
-        {/* Armor Slot */}
+        {/* Armor Slot - Shield 아이콘 사용 */}
         <div
           className={`
-            w-full aspect-square rounded-lg overflow-hidden cursor-pointer relative
-            ${isEmpty ? "opacity-50 pointer-events-none" : ""}
-            ${!armorEquipment ? "equipment-slot-empty neon-border" : getEquipmentQualityBgColor(armorEquipment.quality)}
-          `}
+          w-full aspect-square rounded-lg overflow-hidden cursor-pointer relative flex items-center justify-center
+          ${isEmpty ? "opacity-50 pointer-events-none" : ""}
+          ${!armorEquipment ? "equipment-slot-empty neon-border" : getEquipmentQualityBgColor(armorEquipment.quality)}
+        `}
           onClick={() => handleEquipmentClick("armor")}
         >
           {!armorEquipment ? (
-            <span className="text-[0.6rem] sm:text-xs text-[hsl(var(--neon-white))]">2</span>
+            <Shield className="w-5 h-5 sm:w-6 sm:h-6 text-[hsl(var(--neon-white))]" />
           ) : (
             <div className="w-full h-full relative">
               {armorEquipment.url ? (
@@ -309,7 +390,7 @@ export function CharacterSlot({
                 {getTranslatedString(armorEquipment.name)}
               </div>
 
-              {/* 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 - 모바일에서도 잘 보이도록 수정 */}
+              {/* 장비 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 - 모바일에서도 잘 보이도록 수정 */}
               <button
                 className="equipment-info-btn hidden sm:flex"
                 onClick={(e) => {
@@ -323,21 +404,21 @@ export function CharacterSlot({
           )}
         </div>
 
-        {/* Accessory Slot */}
+        {/* Accessory Slot - Gem 아이콘 사용 */}
         <div
           className={`
-            w-full aspect-square rounded-lg overflow-hidden cursor-pointer relative
-            ${isEmpty ? "opacity-50 pointer-events-none" : ""}
-            ${
-              !accessoryEquipment
-                ? "equipment-slot-empty neon-border"
-                : getEquipmentQualityBgColor(accessoryEquipment.quality)
-            }
-          `}
+          w-full aspect-square rounded-lg overflow-hidden cursor-pointer relative flex items-center justify-center
+          ${isEmpty ? "opacity-50 pointer-events-none" : ""}
+          ${
+            !accessoryEquipment
+              ? "equipment-slot-empty neon-border"
+              : getEquipmentQualityBgColor(accessoryEquipment.quality)
+          }
+        `}
           onClick={() => handleEquipmentClick("accessory")}
         >
           {!accessoryEquipment ? (
-            <span className="text-[0.6rem] sm:text-xs text-[hsl(var(--neon-white))]">3</span>
+            <Gem className="w-5 h-5 sm:w-6 sm:h-6 text-[hsl(var(--neon-white))]" />
           ) : (
             <div className="w-full h-full relative">
               {accessoryEquipment.url ? (
@@ -367,7 +448,7 @@ export function CharacterSlot({
                 {getTranslatedString(accessoryEquipment.name)}
               </div>
 
-              {/* 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 - 모바일에서도 잘 보이도록 수정 */}
+              {/* 장비 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 - 모바일에서도 잘 보이도록 수정 */}
               <button
                 className="equipment-info-btn hidden sm:flex"
                 onClick={(e) => {
