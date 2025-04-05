@@ -166,17 +166,12 @@ export function SkillWindow({
   const activeCardInfo = activeId ? availableCards.find((c) => c.card.id.toString() === activeId) : null
 
   return (
-    <div className="w-full mt-8">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="neon-section-title">{getTranslatedString("skill.section.title") || "Skills"}</h2>
-        {isTouchDevice && (
-          <div className="text-xs text-gray-400">
-            {getTranslatedString("longpress_to_drag") || "Long press to drag"}
-          </div>
-        )}
-      </div>
+    <div className="w-full">
+      {/* 제목 부분 제거 - DeckBuilder에서 관리하도록 변경 */}
 
-      <div ref={skillContainerRef} className="neon-container p-4 min-h-[300px] overflow-hidden skill-container">
+      {/* 스킬 그리드 컨테이너의 패딩을 줄이고 여백을 최소화합니다 */}
+      {/* neon-container 클래스가 있는 div의 패딩을 수정합니다 */}
+      <div ref={skillContainerRef} className="neon-container p-0 min-h-[300px] overflow-hidden skill-container w-full">
         {selectedCards.length === 0 ? (
           <div className="flex items-center justify-center h-[300px] text-gray-400">
             {getTranslatedString("no.skill.cards") || "No skill cards"}
@@ -189,7 +184,7 @@ export function SkillWindow({
             onDragEnd={handleDragEnd}
           >
             <SortableContext items={selectedCards.map((c) => c.id)} strategy={rectSortingStrategy}>
-              <div className="skill-grid">
+              <div className="skill-grid w-full">
                 {selectedCards.map((selectedCard) => {
                   const cardInfo = availableCards.find((c) => c.card.id.toString() === selectedCard.id.toString())
 

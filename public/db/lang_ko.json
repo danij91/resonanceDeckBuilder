@@ -1,4 +1,7 @@
 {
+  "equipment_effect":"효과",
+  "photo_mode":"캡쳐 모드",
+  "help.photo_mode":"캡쳐하기 편하도록 캐릭터랑 스킬 모아주는 기능",
   "longpress_to_drag": "길게 누르고 이동",
   "share_link_copied_alert": "공유 URL이 클립보드에 복사되었습니다!",
   "deck_cleared": "프리셋이 초기화되었습니다.",
@@ -96,7 +99,7 @@
   "battle.enemy.priority": "적 카드/기타 카드",
   "battle.enemy.use.now": "즉시 사용",
   "battle.enemy.use.later": "나중에 사용",
-  "battle.enemy.use.random": "무작위",
+  "battle.enemy.use.random": "사용 안함",
   "char_name_10000004": "카타스",
   "char_identity_10000004": "소스 시타델·디펜스 센터 멤버",
   "char_ability_10000004": "화염 컨트롤",

@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { Globe, Download, Upload, RefreshCw, Share2, HelpCircle } from "lucide-react"
+import { Globe, Download, Upload, RefreshCw, Share2, HelpCircle, Camera } from "lucide-react"
 import { StylizedTitle } from "./stylized-title"
 import { HelpModal } from "./ui/modal/HelpModal"
 import { useLanguage } from "../contexts/language-context"
@@ -11,9 +11,11 @@ interface TopBarProps {
   onImport: () => Promise<void>
   onExport: () => void
   onShare: () => void
+  onTogglePhotoMode: () => void
+  isPhotoMode: boolean
 }
 
-export function TopBar({ onClear, onImport, onExport, onShare }: TopBarProps) {
+export function TopBar({ onClear, onImport, onExport, onShare, onTogglePhotoMode, isPhotoMode }: TopBarProps) {
   const { currentLanguage, supportedLanguages, getTranslatedString, changeLanguage, isChangingLanguage } = useLanguage()
 
   const [showLanguageMenu, setShowLanguageMenu] = useState(false)
@@ -48,24 +50,16 @@ export function TopBar({ onClear, onImport, onExport, onShare }: TopBarProps) {
     setShowLanguageMenu(false)
   }
 
-  // 언어 메뉴 토글 핸들러 추가
+  // 언어 메뉴 토글 핸들러 수정 - 드롭다운이 언어 버튼의 왼쪽 선에 맞춰서 나오도록 변경
   const toggleLanguageMenu = () => {
     if (!showLanguageMenu && languageButtonRef.current) {
       // 버튼 위치 계산
       const rect = languageButtonRef.current.getBoundingClientRect()
 
-      // 화면 너비 확인
-      const screenWidth = window.innerWidth
-
-      // 드롭다운 메뉴의 예상 너비 (160px)
-      const dropdownWidth = 160
-
-      // 드롭다운이 오른쪽으로 펼쳐질 경우 화면 바깥으로 나가는지 확인
-      const wouldOverflowRight = rect.right + dropdownWidth > screenWidth
+      // 드롭다운 메뉴 위치 설정 - 버튼 왼쪽에 맞춤
+      document.documentElement.style.setProperty("--language-dropdown-top", `${rect.bottom}px`)
       document.documentElement.style.setProperty("--language-dropdown-left", `${rect.left}px`)
       document.documentElement.style.setProperty("--language-dropdown-right", "auto")
-      // CSS 변수로 위치 설정
-      document.documentElement.style.setProperty("--language-dropdown-top", `${rect.bottom}px`)
     }
     setShowLanguageMenu(!showLanguageMenu)
   }
@@ -101,128 +95,141 @@ export function TopBar({ onClear, onImport, onExport, onShare }: TopBarProps) {
     }
   }, [showLanguageMenu, showHelpPopup])
 
-  // 상단 바 컴포넌트의 버튼 색상 일관성 있게 변경
-  const buttonBaseClass =
-    "neon-button flex items-center justify-center w-10 h-10 rounded-lg transition-colors duration-200 shadow-md relative overflow-hidden"
+  // 상단 바 컴포넌트의 버튼 크기 조정 - 작은 화면에서 더 작게 표시
+  const buttonBaseClass = `neon-button flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-lg transition-colors duration-200 shadow-md relative overflow-hidden`
 
-  // 버튼 아이콘 스타일 클래스
-  const iconClass = "w-5 h-5 text-[hsl(var(--neon-white))] relative z-10"
+  // 버튼 아이콘 스타일 클래스 - 작은 화면에서 더 작게 표시
+  const iconClass = `w-4 h-4 sm:w-5 sm:h-5 text-[hsl(var(--neon-white))] relative z-10`
 
   return (
-    <div
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-black/80 backdrop-blur-md shadow-lg py-2" : "bg-black py-4"
-      }`}
-      style={{ width: "100%" }}
-    >
-      <div className="container mx-auto px-4">
-        {/* 큰 화면에서는 타이틀과 버튼이 같은 행에 표시되고, 작은 화면에서는 버튼이 아래로 내려감 */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-          {/* Logo/Title - 스크롤 시 숨김 */}
-          <div className={`flex items-center ${scrolled ? "hidden" : ""}`}>
-            <StylizedTitle
-              mainText={getTranslatedString("app.title.main") || "레조넌스"}
-              subText={getTranslatedString("app.title.sub") || "SOLSTICE"}
-            />
-          </div>
-
-          {/* 버튼들 - 작은 화면에서는 가로 스크롤, 큰 화면에서는 오른쪽 정렬 */}
-          <div className="flex items-center space-x-3 mt-2 md:mt-0 overflow-x-auto py-1 justify-end">
-            {/* Language Selector */}
-            <div className="relative language-dropdown">
-              <button
-                ref={languageButtonRef}
-                onClick={toggleLanguageMenu}
-                className={`${buttonBaseClass} language-button ${isChangingLanguage ? "opacity-50" : ""}`}
-                aria-label={getTranslatedString("language") || "Language"}
-                disabled={isChangingLanguage}
-              >
-                <Globe className={iconClass} />
-              </button>
-
-              {showLanguageMenu && (
-                <div
-                  ref={languageMenuRef}
-                  className="fixed mt-2 w-40 neon-dropdown animate-fadeIn bg-black bg-opacity-95 z-[100]"
-                  style={{
-                    top: "var(--language-dropdown-top, 4rem)",
-                    right: "var(--language-dropdown-right, 1rem)",
-                    left: "var(--language-dropdown-left, auto)",
-                  }}
-                >
-                  {supportedLanguages.map((lang) => (
-                    <button
-                      key={lang}
-                      onClick={() => handleLanguageChange(lang)}
-                      className={`block w-full text-left px-4 py-3 text-sm hover:bg-[rgba(255,255,255,0.1)] transition-colors duration-150 ${
-                        currentLanguage === lang
-                          ? "bg-[rgba(255,255,255,0.1)] text-[hsl(var(--neon-white))] neon-text"
-                          : ""
-                      }`}
-                    >
-                      {lang.toUpperCase()}
-                    </button>
-                  ))}
-                </div>
-              )}
+    <>
+      <div
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          scrolled ? "bg-black/80 backdrop-blur-md shadow-lg py-2" : "bg-black py-4"
+        }`}
+        style={{ width: "100%" }}
+      >
+        <div className="container mx-auto px-4">
+          {/* 큰 화면에서는 타이틀과 버튼이 같은 행에 표시되고, 작은 화면에서는 버튼이 아래로 내려감 */}
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+            {/* Logo/Title - 스크롤 시 숨김 */}
+            <div className={`flex items-center ${scrolled ? "hidden" : ""}`}>
+              <StylizedTitle
+                mainText={getTranslatedString("app.title.main") || "레조넌스"}
+                subText={getTranslatedString("app.title.sub") || "SOLSTICE"}
+              />
             </div>
 
-            {/* Share Button */}
-            <button
-              onClick={onShare}
-              className={`${buttonBaseClass} share-button`}
-              aria-label={getTranslatedString("share") || "Share"}
-            >
-              <Share2 className={iconClass} />
-            </button>
+            {/* 버튼들 - 작은 화면에서는 가로 스크롤, 큰 화면에서는 오른쪽 정렬 */}
+            {/* 간격 조절 - space-x-3에서 space-x-1로 변경하여 더 많은 버튼이 화면에 들어오도록 함 */}
+            <div className="flex items-center space-x-1 sm:space-x-2 mt-2 md:mt-0 overflow-x-auto py-1 justify-end">
+              {/* Language Selector */}
+              <div className="relative language-dropdown">
+                <button
+                  ref={languageButtonRef}
+                  onClick={toggleLanguageMenu}
+                  className={`${buttonBaseClass} language-button ${isChangingLanguage ? "opacity-50" : ""}`}
+                  aria-label={getTranslatedString("language") || "Language"}
+                  disabled={isChangingLanguage}
+                >
+                  <Globe className={iconClass} />
+                </button>
 
-            {/* Clear Button */}
-            <button
-              onClick={onClear}
-              className={`${buttonBaseClass} clear-button`}
-              aria-label={getTranslatedString("button.clear") || "Clear"}
-            >
-              <RefreshCw className={iconClass} />
-            </button>
+                {showLanguageMenu && (
+                  <div
+                    ref={languageMenuRef}
+                    className="fixed mt-2 w-40 neon-dropdown animate-fadeIn bg-black bg-opacity-95 z-[100]"
+                    style={{
+                      top: "var(--language-dropdown-top, 4rem)",
+                      left: "var(--language-dropdown-left, auto)",
+                      right: "var(--language-dropdown-right, auto)",
+                    }}
+                  >
+                    {supportedLanguages.map((lang) => (
+                      <button
+                        key={lang}
+                        onClick={() => handleLanguageChange(lang)}
+                        className={`block w-full text-left px-4 py-3 text-sm hover:bg-[rgba(255,255,255,0.1)] transition-colors duration-150 ${
+                          currentLanguage === lang
+                            ? "bg-[rgba(255,255,255,0.1)] text-[hsl(var(--neon-white))] neon-text"
+                            : ""
+                        }`}
+                      >
+                        {lang.toUpperCase()}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
 
-            {/* Import Button */}
-            <button
-              onClick={onImport}
-              className={`${buttonBaseClass} import-button`}
-              aria-label={getTranslatedString("import_from_clipboard") || "Import"}
-            >
-              <Download className={iconClass} />
-            </button>
+              {/* Photo Mode Button - 활성화 시 파란색 배경 유지 */}
+              <button
+                onClick={onTogglePhotoMode}
+                className={`${buttonBaseClass} photo-mode-button ${isPhotoMode ? "bg-blue-600 hover:bg-blue-600" : ""}`}
+                aria-label={getTranslatedString("photo_mode") || "Photo Mode"}
+              >
+                <Camera className={iconClass} />
+              </button>
 
-            {/* Export Button */}
-            <button
-              onClick={onExport}
-              className={`${buttonBaseClass} export-button`}
-              aria-label={getTranslatedString("export_to_clipboard") || "Export"}
-            >
-              <Upload className={iconClass} />
-            </button>
+              {/* Share Button */}
+              <button
+                onClick={onShare}
+                className={`${buttonBaseClass} share-button`}
+                aria-label={getTranslatedString("share") || "Share"}
+              >
+                <Share2 className={iconClass} />
+              </button>
 
-            {/* Help Button */}
-            <button
-              onClick={toggleHelpPopup}
-              className={`${buttonBaseClass} help-button`}
-              aria-label={getTranslatedString("help") || "Help"}
-            >
-              <HelpCircle className={iconClass} />
-            </button>
+              {/* Clear Button */}
+              <button
+                onClick={onClear}
+                className={`${buttonBaseClass} clear-button`}
+                aria-label={getTranslatedString("button.clear") || "Clear"}
+              >
+                <RefreshCw className={iconClass} />
+              </button>
+
+              {/* Import Button */}
+              <button
+                onClick={onImport}
+                className={`${buttonBaseClass} import-button`}
+                aria-label={getTranslatedString("import_from_clipboard") || "Import"}
+              >
+                <Download className={iconClass} />
+              </button>
+
+              {/* Export Button */}
+              <button
+                onClick={onExport}
+                className={`${buttonBaseClass} export-button`}
+                aria-label={getTranslatedString("export_to_clipboard") || "Export"}
+              >
+                <Upload className={iconClass} />
+              </button>
+
+              {/* Help Button */}
+              <button
+                onClick={toggleHelpPopup}
+                className={`${buttonBaseClass} help-button`}
+                aria-label={getTranslatedString("help") || "Help"}
+              >
+                <HelpCircle className={iconClass} />
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* 새 HelpModal 컴포넌트 추가 (return 문 마지막에 추가) */}
-      <HelpModal
-        isOpen={showHelpPopup}
-        onClose={() => setShowHelpPopup(false)}
-        getTranslatedString={getTranslatedString}
-        maxWidth="max-w-2xl"
-      />
-    </div>
+      {/* 도움말 모달 - 전체 화면을 덮도록 수정하고 TopBar 바깥으로 이동 */}
+      {showHelpPopup && (
+        <HelpModal
+          isOpen={showHelpPopup}
+          onClose={() => setShowHelpPopup(false)}
+          getTranslatedString={getTranslatedString}
+          maxWidth="max-w-2xl"
+        />
+      )}
+    </>
   )
 }
 
