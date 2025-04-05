@@ -65,7 +65,7 @@ export function SkillCard({
       )}
 
       {/* Cost badge - 더 작게 만들기 */}
-      <div className="absolute top-0 right-0 px-0.5 py-0 text-white font-bold text-xs z-10">{extraInfo.cost}</div>
+      <div className="absolute right-0 sm:top-0 px-0.5 py-0 text-white font-bold z-10 text-base sm:text-lg lg:text-3xl">{extraInfo.cost}</div>
 
       {/* Card content */}
       <div className="relative z-1 p-0 flex flex-col h-full">
