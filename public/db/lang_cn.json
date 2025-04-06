@@ -1,7 +1,7 @@
 {
     "equipment_effect": "效果",
-    "photo_mode": "拍照模式",
-    "help.photo_mode": "便于截图的功能，可将角色和技能集中展示",
+    "photo_mode": "截图按钮",
+    "help.photo_mode": "点击后自动截图。",
     "longpress_to_drag": "长按后拖动",
     "share_link_copied_alert": "已将分享链接复制到剪贴板！",
     "deck_cleared": "预设已清除。",
