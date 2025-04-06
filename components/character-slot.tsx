@@ -199,7 +199,7 @@ export function CharacterSlot({
           }
           transition-all duration-200
         `}
-        onClick={isEmpty ? onAddCharacter : handleOpenCharacterDetails}
+        onClick={onAddCharacter}
         style={characterSlotStyle}
       >
         {isEmpty ? (
