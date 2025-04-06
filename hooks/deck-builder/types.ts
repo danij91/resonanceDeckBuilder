@@ -47,6 +47,11 @@ export type BattleSettings = {
   otherCard: number
 }
 
+// 각성 정보 타입 추가
+export type AwakeningInfo = {
+  [characterId: number]: number // 캐릭터 ID를 키로, 각성 단계를 값으로
+}
+
 // 프리셋 타입
 export type Preset = {
   roleList: number[]
@@ -59,6 +64,7 @@ export type Preset = {
   discardType: number
   otherCard: number
   equipment?: Record<number, [string | null, string | null, string | null]>
+  awakening?: AwakeningInfo // 각성 정보 추가
 }
 
 // 덱 빌더 상태 타입
@@ -69,6 +75,7 @@ export interface DeckBuilderState {
   battleSettings: BattleSettings
   equipment: EquipmentSlot[]
   isDarkMode: boolean
+  awakening: AwakeningInfo // 각성 정보 추가
 }
 
 // 덱 빌더 액션 타입
@@ -79,6 +86,7 @@ export interface DeckBuilderActions {
   setBattleSettings: (settings: Partial<BattleSettings>) => void
   setEquipment: (equipment: EquipmentSlot[] | ((prev: EquipmentSlot[]) => EquipmentSlot[])) => void
   setIsDarkMode: (isDarkMode: boolean | ((prev: boolean) => boolean)) => void
+  setAwakening: (awakening: AwakeningInfo | ((prev: AwakeningInfo) => AwakeningInfo)) => void // 각성 정보 설정 함수 추가
 }
 
 // 덱 빌더 컨텍스트 타입

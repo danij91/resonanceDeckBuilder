@@ -1,6 +1,6 @@
 "use client"
 
-import { Plus, Info, Crown, Sword, Shield, Gem } from "lucide-react"
+import { Plus, Info, Crown, Sword, Shield, Gem, Star } from "lucide-react"
 import { useState, useRef, useEffect } from "react"
 import type { Character, Card, Equipment } from "../types"
 import { EquipmentSearchModal } from "./ui/modal/EquipmentSearchModal"
@@ -28,6 +28,8 @@ interface CharacterSlotProps {
   equipments?: Equipment[]
   data: any
   hasAnyCharacter: boolean
+  awakeningStage?: number | null // 각성 단계 추가
+  onAwakeningSelect?: (characterId: number, stage: number | null) => void // 각성 선택 콜백 추가
 }
 
 export function CharacterSlot({
@@ -47,6 +49,8 @@ export function CharacterSlot({
   equipments = [],
   data,
   hasAnyCharacter,
+  awakeningStage = null,
+  onAwakeningSelect,
 }: CharacterSlotProps) {
   const isEmpty = characterId === -1
   const [showEquipmentSelector, setShowEquipmentSelector] = useState<"weapon" | "armor" | "accessory" | null>(null)
@@ -81,6 +85,19 @@ export function CharacterSlot({
     if (showEquipmentSelector && !isEmpty) {
       onEquipItem(index, showEquipmentSelector, equipId)
       setShowEquipmentSelector(null)
+    }
+  }
+
+  // 캐릭터 상세 정보 모달 열기
+  const handleOpenCharacterDetails = () => {
+    if (isEmpty) return
+    setShowCharacterDetails(true)
+  }
+
+  // 각성 선택 핸들러
+  const handleAwakeningSelect = (stage: number | null) => {
+    if (onAwakeningSelect && !isEmpty) {
+      onAwakeningSelect(characterId, stage)
     }
   }
 
@@ -171,29 +188,18 @@ export function CharacterSlot({
 
   return (
     <div className="flex flex-col relative" ref={characterSlotRef}>
-      {/* 기존 상단 왕관 아이콘 제거 */}
-      {/* {!isEmpty && isLeader && (
-        <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 z-30">
-          <div 
-            className="bg-red-600 rounded-full p-1 shadow-lg flex items-center justify-center"
-            style={{ width: `${crownSize}px`, height: `${crownSize}px` }}
-          >
-            <Crown className="w-full h-full text-yellow-300" />
-          </div>
-        </div>
-      )} */}
       {/* Character Card - 모바일에서도 적절한 크기로 표시되도록 수정 */}
       <div
         className={`
-  relative w-full aspect-[3/4] rounded-lg overflow-hidden
-  ${
-    isEmpty
-      ? "flex items-center justify-center cursor-pointer border border-[hsla(var(--neon-white),0.3)] bg-black bg-opacity-70 hover:bg-white hover:bg-opacity-10"
-      : "cursor-pointer character-slot-filled hover:bg-white hover:bg-opacity-10"
-  }
-  transition-all duration-200
-`}
-        onClick={onAddCharacter}
+          relative w-full aspect-[3/4] rounded-lg overflow-hidden
+          ${
+            isEmpty
+              ? "flex items-center justify-center cursor-pointer border border-[hsla(var(--neon-white),0.3)] bg-black bg-opacity-70 hover:bg-white hover:bg-opacity-10"
+              : "cursor-pointer character-slot-filled hover:bg-white hover:bg-opacity-10"
+          }
+          transition-all duration-200
+        `}
+        onClick={isEmpty ? onAddCharacter : handleOpenCharacterDetails}
         style={characterSlotStyle}
       >
         {isEmpty ? (
@@ -283,9 +289,21 @@ export function CharacterSlot({
                 )}
               </div>
 
-              {/* 이름을 하단으로 이동, 희귀도 뱃지 제거 */}
+              {/* 각성 단계 표시 - 이름 위 왼쪽 정렬로 표시, 반응형으로 조정 */}
+              {!isEmpty && (
+                <div className="absolute bottom-6 lg:bottom-11 px-0">
+                  <div className="bg-purple-600 rounded-full px-1 py-0.5 sm:px-2 sm:py-1 shadow-lg flex items-center justify-center">
+                    <Star  fill="#fbbf24" className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-500" />
+                    <span className="text-white text-xs sm:text-sm font-bold ml-0.5 sm:ml-1">
+                      {awakeningStage !== null ? awakeningStage : 0}
+                    </span>
+                  </div>
+                </div>
+              )}
+
+              {/* 이름을 하단으로 이동, 각성 표시와 겹치지 않도록 패딩 추가 */}
               <div className="mt-auto">
-                <h3 className="lg:text-xl text-xs sm:text-base font-semibold text-white neon-text truncate">
+                <h3 className="text-xs sm:text-xl font-semibold text-white neon-text truncate px-0 pb-0">
                   {getTranslatedString(character.name)}
                 </h3>
               </div>
@@ -505,6 +523,8 @@ export function CharacterSlot({
           getCardInfo={getCardInfo}
           getSkill={getSkill}
           data={data}
+          selectedAwakeningStage={awakeningStage}
+          onAwakeningSelect={handleAwakeningSelect}
         />
       )}
 

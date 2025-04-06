@@ -2,7 +2,7 @@
 
 import { useCallback } from "react"
 import type { Database } from "../../types"
-import type { SelectedCard, PresetCard, Preset, EquipmentSlot, Result } from "./types"
+import type { SelectedCard, PresetCard, Preset, EquipmentSlot, Result, AwakeningInfo } from "./types"
 import { encodePreset, decodePreset, encodePresetForUrl } from "../../utils/presetCodec"
 
 export function usePresets(
@@ -18,12 +18,13 @@ export function usePresets(
     otherCard: number
   },
   equipment: EquipmentSlot[],
+  awakening: AwakeningInfo, // 각성 정보 추가
   clearAll: () => void,
   importPresetObject: (preset: any) => Result,
 ) {
   // 프리셋 객체 생성
   const createPresetObject = useCallback(
-    (includeEquipment = false) => {
+    (includeEquipment = false, includeAwakening = false) => {
       // 선택된 카드를 필요한 형식으로 변환
       const formattedCardList = selectedCards.map((card) => {
         // 기본 카드 객체 생성
@@ -128,22 +129,24 @@ export function usePresets(
 
         // 장비 정보가 있는 경우에만 추가
         if (Object.keys(equipmentData).length > 0) {
-          return {
-            ...preset,
-            equipment: equipmentData,
-          }
+          preset.equipment = equipmentData
         }
+      }
+
+      // 각성 정보 포함 여부
+      if (includeAwakening && Object.keys(awakening).length > 0) {
+        preset.awakening = awakening
       }
 
       return preset
     },
-    [selectedCharacters, leaderCharacter, selectedCards, battleSettings, equipment, data],
+    [selectedCharacters, leaderCharacter, selectedCards, battleSettings, equipment, awakening, data],
   )
 
   // 프리셋 내보내기
   const exportPreset = useCallback(() => {
     try {
-      const preset = createPresetObject(false) // 장비 정보 제외
+      const preset = createPresetObject(false, false) // 장비 정보와 각성 정보 제외
       const base64String = encodePreset(preset)
       navigator.clipboard.writeText(base64String)
       return { success: true, message: "export_success" }
@@ -155,7 +158,7 @@ export function usePresets(
   // 프리셋을 문자열로 내보내기
   const exportPresetToString = useCallback(() => {
     try {
-      const preset = createPresetObject(false) // 장비 정보 제외
+      const preset = createPresetObject(false, false) // 장비 정보와 각성 정보 제외
       return encodePreset(preset)
     } catch (error) {
       return ""
@@ -218,7 +221,7 @@ export function usePresets(
   // 공유 URL 생성
   const createShareableUrl = useCallback(() => {
     try {
-      const preset = createPresetObject(true) // 장비 정보 포함
+      const preset = createPresetObject(true, true) // 장비 정보와 각성 정보 포함
       const encodedPreset = encodePresetForUrl(preset)
 
       // 현재 URL에서 기본 경로 가져오기
@@ -236,7 +239,7 @@ export function usePresets(
   // 루트 공유 URL 생성
   const createRootShareableUrl = useCallback(() => {
     try {
-      const preset = createPresetObject(true) // 장비 정보 포함
+      const preset = createPresetObject(true, true) // 장비 정보와 각성 정보 포함
       const encodedPreset = encodePresetForUrl(preset)
 
       // 루트 URL 가져오기
