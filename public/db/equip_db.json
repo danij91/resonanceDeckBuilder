@@ -9,6 +9,57 @@
       {
         "skillId": 12301170
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "曼德矿场铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "荒原站作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "铁盟装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800030": {
@@ -20,6 +71,57 @@
     "skillList": [
       {
         "skillId": 12301181
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "曼德矿场铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "荒原站作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "铁盟装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -33,6 +135,15 @@
       {
         "skillId": 12301185
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "铁盟赴命奖章兑换商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800034": {
@@ -44,6 +155,15 @@
     "skillList": [
       {
         "skillId": 12301187
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "列车长始发签到活动-第7日",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -57,6 +177,57 @@
       {
         "skillId": 12301171
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "曼德矿场铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "荒原站作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "铁盟装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800044": {
@@ -68,6 +239,57 @@
     "skillList": [
       {
         "skillId": 12301173
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "曼德矿场铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "荒原站作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "铁盟装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -81,6 +303,15 @@
       {
         "skillId": 12301184
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城市声望15级奖励",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800046": {
@@ -92,6 +323,57 @@
     "skillList": [
       {
         "skillId": 12301174
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "曼德矿场铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "荒原站作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "铁盟装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -105,6 +387,57 @@
       {
         "skillId": 12301175
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "曼德矿场铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "荒原站作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "铁盟装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800048": {
@@ -116,6 +449,15 @@
     "skillList": [
       {
         "skillId": 12301186
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "铁盟赴命奖章兑换商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -129,6 +471,57 @@
       {
         "skillId": 12301176
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "曼德矿场铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "荒原站作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "铁盟装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800098": {
@@ -140,6 +533,57 @@
     "skillList": [
       {
         "skillId": 12301177
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "曼德矿场铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "荒原站作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "铁盟装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -153,6 +597,57 @@
       {
         "skillId": 12301178
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "曼德矿场铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "荒原站作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "铁盟装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800103": {
@@ -164,6 +659,57 @@
     "skillList": [
       {
         "skillId": 12301179
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "曼德矿场铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "荒原站作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "铁盟装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -177,6 +723,57 @@
       {
         "skillId": 12301180
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "曼德矿场铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "荒原站作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "铁盟装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800105": {
@@ -188,6 +785,57 @@
     "skillList": [
       {
         "skillId": 12301182
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "曼德矿场铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "荒原站作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "铁盟装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -201,6 +849,57 @@
       {
         "skillId": 12301183
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "曼德矿场铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "荒原站作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "铁盟装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800107": {
@@ -213,23 +912,58 @@
       {
         "skillId": 12301172
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "曼德矿场铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "荒原站作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "铁盟装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
-  },
-  "11800220": {
-    "id": 11800220,
-    "name": "",
-    "des": "",
-    "equipTagId": -1,
-    "quality": "Golden",
-    "skillList": []
-  },
-  "11800235": {
-    "id": 11800235,
-    "name": "",
-    "des": "",
-    "equipTagId": 12600155,
-    "quality": "White",
-    "skillList": []
   },
   "11800035": {
     "id": 11800035,
@@ -240,6 +974,50 @@
     "skillList": [
       {
         "skillId": 12300958
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "七号自由港铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "能源研究所作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "阿妮塔装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -253,6 +1031,43 @@
       {
         "skillId": 12301017
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "海角城铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800037": {
@@ -264,6 +1079,28 @@
     "skillList": [
       {
         "skillId": 12301052
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -277,6 +1114,50 @@
       {
         "skillId": 12301033
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "澄明数据中心铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800039": {
@@ -288,6 +1169,50 @@
     "skillList": [
       {
         "skillId": 12300951
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "七号自由港铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "能源研究所作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "阿妮塔装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -301,6 +1226,50 @@
       {
         "skillId": 12300952
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "七号自由港铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "能源研究所作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "阿妮塔装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800238": {
@@ -312,6 +1281,50 @@
     "skillList": [
       {
         "skillId": 12300934
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "七号自由港铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "能源研究所作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "阿妮塔装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -325,6 +1338,50 @@
       {
         "skillId": 12300947
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "七号自由港铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "能源研究所作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "阿妮塔装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800240": {
@@ -336,6 +1393,50 @@
     "skillList": [
       {
         "skillId": 12300944
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "七号自由港铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "能源研究所作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "阿妮塔装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -349,6 +1450,50 @@
       {
         "skillId": 12300956
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "七号自由港铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "能源研究所作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "阿妮塔装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800242": {
@@ -360,6 +1505,50 @@
     "skillList": [
       {
         "skillId": 12300990
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "七号自由港铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "能源研究所作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "阿妮塔装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -373,6 +1562,43 @@
       {
         "skillId": 12301014
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "七号自由港铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "阿妮塔装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800244": {
@@ -384,6 +1610,43 @@
     "skillList": [
       {
         "skillId": 12301016
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "七号自由港铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "阿妮塔装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -397,6 +1660,43 @@
       {
         "skillId": 12300991
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "七号自由港铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "阿妮塔装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800246": {
@@ -408,6 +1708,43 @@
     "skillList": [
       {
         "skillId": 12301015
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "七号自由港铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "阿妮塔装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -421,6 +1758,15 @@
       {
         "skillId": 12300708
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "7号自由港城市声望15级奖励",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800248": {
@@ -432,6 +1778,15 @@
     "skillList": [
       {
         "skillId": 12301486
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "阿妮塔发射中心声望15级奖励",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -445,6 +1800,15 @@
       {
         "skillId": 12300706
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "阿妮塔发射中心-卡莱雅-兑换",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800250": {
@@ -456,6 +1820,43 @@
     "skillList": [
       {
         "skillId": 12301018
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "海角城铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -469,6 +1870,43 @@
       {
         "skillId": 12301019
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "海角城铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800252": {
@@ -480,6 +1918,43 @@
     "skillList": [
       {
         "skillId": 12301020
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "海角城铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -493,6 +1968,43 @@
       {
         "skillId": 12301021
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "海角城铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800254": {
@@ -504,6 +2016,43 @@
     "skillList": [
       {
         "skillId": 12301022
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "海角城铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -517,6 +2066,43 @@
       {
         "skillId": 12301023
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "海角城铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800256": {
@@ -528,6 +2114,43 @@
     "skillList": [
       {
         "skillId": 12301024
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "海角城铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -541,6 +2164,43 @@
       {
         "skillId": 12301025
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "海角城铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800258": {
@@ -552,6 +2212,43 @@
     "skillList": [
       {
         "skillId": 12301026
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "海角城铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -565,6 +2262,43 @@
       {
         "skillId": 12301027
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "海角城铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800260": {
@@ -577,17 +2311,42 @@
       {
         "skillId": 12300006
       }
-    ]
-  },
-  "11800261": {
-    "id": 11800261,
-    "name": "equip_name_11800261",
-    "des": "equip_des_11800261",
-    "equipTagId": 12600155,
-    "quality": "Orange",
-    "skillList": [
+    ],
+    "Getway": [
       {
-        "skillId": 12301029
+        "DisplayName": "海角城铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -601,6 +2360,15 @@
       {
         "skillId": 12300896
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "淘金乐园-约书亚-兑换",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800263": {
@@ -612,6 +2380,15 @@
     "skillList": [
       {
         "skillId": 12301031
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "汇流塔-冯里奈-兑换",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -625,6 +2402,15 @@
       {
         "skillId": 12301032
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "海角城城市声望15级奖励",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800265": {
@@ -636,6 +2422,28 @@
     "skillList": [
       {
         "skillId": 12301053
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -649,6 +2457,28 @@
       {
         "skillId": 12301054
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800267": {
@@ -660,6 +2490,28 @@
     "skillList": [
       {
         "skillId": 12301055
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -673,6 +2525,28 @@
       {
         "skillId": 12301056
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800269": {
@@ -684,6 +2558,28 @@
     "skillList": [
       {
         "skillId": 12301057
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -697,6 +2593,28 @@
       {
         "skillId": 12301058
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800271": {
@@ -708,6 +2626,28 @@
     "skillList": [
       {
         "skillId": 12301059
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -721,6 +2661,28 @@
       {
         "skillId": 12301060
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800273": {
@@ -732,6 +2694,28 @@
     "skillList": [
       {
         "skillId": 12301061
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -745,6 +2729,28 @@
       {
         "skillId": 12301062
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800275": {
@@ -756,6 +2762,28 @@
     "skillList": [
       {
         "skillId": 12301063
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -769,41 +2797,14 @@
       {
         "skillId": 12302146
       }
-    ]
-  },
-  "11800277": {
-    "id": 11800277,
-    "name": "equip_name_11800277",
-    "des": "equip_des_11800277",
-    "equipTagId": 12600155,
-    "quality": "Orange",
-    "skillList": [
+    ],
+    "Getway": [
       {
-        "skillId": 12301064
-      }
-    ]
-  },
-  "11800278": {
-    "id": 11800278,
-    "name": "equip_name_11800278",
-    "des": "equip_des_11800278",
-    "equipTagId": 12600161,
-    "quality": "Orange",
-    "skillList": [
-      {
-        "skillId": 12301066
-      }
-    ]
-  },
-  "11800279": {
-    "id": 11800279,
-    "name": "equip_name_11800279",
-    "des": "equip_des_11800279",
-    "equipTagId": 12600162,
-    "quality": "Orange",
-    "skillList": [
-      {
-        "skillId": 12301067
+        "DisplayName": "贡露城城市声望15级奖励",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -817,6 +2818,50 @@
       {
         "skillId": 12301034
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "澄明数据中心铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800281": {
@@ -828,6 +2873,50 @@
     "skillList": [
       {
         "skillId": 12301035
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "澄明数据中心铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -841,6 +2930,50 @@
       {
         "skillId": 12301036
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "澄明数据中心铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800283": {
@@ -852,6 +2985,50 @@
     "skillList": [
       {
         "skillId": 12301040
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "澄明数据中心铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -865,6 +3042,50 @@
       {
         "skillId": 12301041
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "澄明数据中心铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800285": {
@@ -876,6 +3097,50 @@
     "skillList": [
       {
         "skillId": 12301042
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "澄明数据中心铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -889,6 +3154,50 @@
       {
         "skillId": 12301043
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "澄明数据中心铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800287": {
@@ -900,6 +3209,50 @@
     "skillList": [
       {
         "skillId": 12301044
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "澄明数据中心铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -913,6 +3266,50 @@
       {
         "skillId": 12301045
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "澄明数据中心铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800289": {
@@ -924,6 +3321,50 @@
     "skillList": [
       {
         "skillId": 12301046
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "澄明数据中心铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -937,6 +3378,50 @@
       {
         "skillId": 12301047
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "澄明数据中心铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800291": {
@@ -948,6 +3433,15 @@
     "skillList": [
       {
         "skillId": 12301743
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "“叩响乐园之门”-活动商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -961,6 +3455,15 @@
       {
         "skillId": 12301049
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "铁山城城市声望15级奖励",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800293": {
@@ -972,6 +3475,15 @@
     "skillList": [
       {
         "skillId": 12301050
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "远星大桥-苏利耶-兑换",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -985,6 +3497,15 @@
       {
         "skillId": 12301051
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "澄明数据中心城市声望15级奖励",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800295": {
@@ -996,6 +3517,15 @@
     "skillList": [
       {
         "skillId": 12300742
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "铁盟赴命奖章兑换商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1009,6 +3539,15 @@
       {
         "skillId": 12301068
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "铁盟赴命奖章兑换商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800297": {
@@ -1020,6 +3559,43 @@
     "skillList": [
       {
         "skillId": 12301069
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "海角城铁安局任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1033,6 +3609,29 @@
       {
         "skillId": 12301070
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "混沌海装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800299": {
@@ -1044,6 +3643,28 @@
     "skillList": [
       {
         "skillId": 12301071
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1057,6 +3678,29 @@
       {
         "skillId": 12301072
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "混沌海装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800301": {
@@ -1068,6 +3712,28 @@
     "skillList": [
       {
         "skillId": 12301073
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1081,6 +3747,28 @@
       {
         "skillId": 12301074
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800303": {
@@ -1092,6 +3780,28 @@
     "skillList": [
       {
         "skillId": 12301075
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1105,6 +3815,36 @@
       {
         "skillId": 12301076
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "淘金乐园作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "混沌海装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800305": {
@@ -1116,6 +3856,36 @@
     "skillList": [
       {
         "skillId": 12301077
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "淘金乐园作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "混沌海装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1129,6 +3899,36 @@
       {
         "skillId": 12301078
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "淘金乐园作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "混沌海装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800307": {
@@ -1140,6 +3940,36 @@
     "skillList": [
       {
         "skillId": 12301079
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "淘金乐园作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "混沌海装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1153,6 +3983,36 @@
       {
         "skillId": 12301080
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "淘金乐园作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "混沌海装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800309": {
@@ -1164,6 +4024,36 @@
     "skillList": [
       {
         "skillId": 12301081
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "淘金乐园作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "混沌海装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1177,6 +4067,15 @@
       {
         "skillId": 12301082
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "曼德矿场城市声望15级奖励",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800311": {
@@ -1188,6 +4087,36 @@
     "skillList": [
       {
         "skillId": 12301083
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "淘金乐园作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "混沌海装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1201,6 +4130,36 @@
       {
         "skillId": 12301084
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "淘金乐园作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "混沌海装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800313": {
@@ -1212,6 +4171,29 @@
     "skillList": [
       {
         "skillId": 12301085
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "混沌海装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1225,6 +4207,28 @@
       {
         "skillId": 12301086
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800315": {
@@ -1236,6 +4240,43 @@
     "skillList": [
       {
         "skillId": 12301087
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "七号自由港铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "阿妮塔装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1249,39 +4290,16 @@
       {
         "skillId": 12301088
       }
-    ]
-  },
-  "11800023": {
-    "id": 11800023,
-    "name": "",
-    "des": "",
-    "equipTagId": -1,
-    "quality": "Golden",
-    "skillList": [
+    ],
+    "Getway": [
       {
-        "skillId": 12300007
+        "DisplayName": "阿妮塔能源研究所-妮蔻拉-兑换",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
-  },
-  "11800025": {
-    "id": 11800025,
-    "name": "",
-    "des": "",
-    "equipTagId": 12600155,
-    "quality": "Orange",
-    "skillList": [
-      {
-        "skillId": 12301244
-      }
-    ]
-  },
-  "11800026": {
-    "id": 11800026,
-    "name": "",
-    "des": "",
-    "equipTagId": 12600155,
-    "quality": "White",
-    "skillList": []
   },
   "11800002": {
     "id": 11800002,
@@ -1292,6 +4310,28 @@
     "skillList": [
       {
         "skillId": 12300002
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1305,6 +4345,15 @@
       {
         "skillId": 12301048
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "荒原站-雷比斯-兑换",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800003": {
@@ -1317,17 +4366,14 @@
       {
         "skillId": 12300191
       }
-    ]
-  },
-  "11800004": {
-    "id": 11800004,
-    "name": "",
-    "des": "",
-    "equipTagId": 12600155,
-    "quality": "White",
-    "skillList": [
+    ],
+    "Getway": [
       {
-        "skillId": 12300869
+        "DisplayName": "淘金乐园-约书亚-兑换",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1341,6 +4387,15 @@
       {
         "skillId": 12300894
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "阿妮塔战备工厂-伊尔-兑换",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800007": {
@@ -1352,6 +4407,15 @@
     "skillList": [
       {
         "skillId": 12300061
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城-塞西尔-兑换",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1365,6 +4429,15 @@
       {
         "skillId": 12300983
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "铁盟哨站-多萝西-兑换",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800009": {
@@ -1377,27 +4450,16 @@
       {
         "skillId": 12301143
       }
-    ]
-  },
-  "11800010": {
-    "id": 11800010,
-    "name": "equip_name_11800010",
-    "des": "equip_des_11800010",
-    "equipTagId": 12600155,
-    "quality": "Orange",
-    "skillList": [
+    ],
+    "Getway": [
       {
-        "skillId": 12301153
+        "DisplayName": "荒原站-雷比斯-兑换",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
-  },
-  "11800005": {
-    "id": 11800005,
-    "name": "",
-    "des": "",
-    "equipTagId": 12600155,
-    "quality": "White",
-    "skillList": []
   },
   "11800011": {
     "id": 11800011,
@@ -1408,6 +4470,15 @@
     "skillList": [
       {
         "skillId": 12301717
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "淘金乐园-金子小姐-兑换",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1421,6 +4492,15 @@
       {
         "skillId": 12301718
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "淘金乐园-金子小姐-兑换",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800012": {
@@ -1432,6 +4512,57 @@
     "skillList": [
       {
         "skillId": 12302033
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "“澄明异闻奇谈”-活动商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "澄明数据中心铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1445,6 +4576,57 @@
       {
         "skillId": 12302012
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "“澄明异闻奇谈”-活动商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "澄明数据中心铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800016": {
@@ -1456,6 +4638,57 @@
     "skillList": [
       {
         "skillId": 12302041
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "“澄明异闻奇谈”-活动商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "澄明数据中心铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1469,6 +4702,36 @@
       {
         "skillId": 12302034
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "“叩响乐园之门”-活动商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "混沌海装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800018": {
@@ -1480,6 +4743,15 @@
     "skillList": [
       {
         "skillId": 12302042
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "“澄明异闻奇谈”-活动商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1493,17 +4765,35 @@
       {
         "skillId": 12302035
       }
-    ]
-  },
-  "11800021": {
-    "id": 11800021,
-    "name": "equip_name_11800021",
-    "des": "equip_des_11800021",
-    "equipTagId": 12600155,
-    "quality": "Orange",
-    "skillList": [
+    ],
+    "Getway": [
       {
-        "skillId": 12302087
+        "DisplayName": "“叩响乐园之门”-活动商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "混沌海装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1517,6 +4807,15 @@
       {
         "skillId": 12300001
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "整顿中心-兑换商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800014": {
@@ -1528,6 +4827,36 @@
     "skillList": [
       {
         "skillId": 12300291
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "整顿中心-兑换商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "混沌海装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1541,6 +4870,36 @@
       {
         "skillId": 12300317
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "整顿中心-兑换商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "混沌海装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800029": {
@@ -1552,6 +4911,43 @@
     "skillList": [
       {
         "skillId": 12301979
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "海角城铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1565,6 +4961,43 @@
       {
         "skillId": 12301980
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "海角城铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800033": {
@@ -1577,17 +5010,42 @@
       {
         "skillId": 12301991
       }
-    ]
-  },
-  "11800040": {
-    "id": 11800040,
-    "name": "equip_name_11800040",
-    "des": "equip_des_11800040",
-    "equipTagId": 12600161,
-    "quality": "Orange",
-    "skillList": [
+    ],
+    "Getway": [
       {
-        "skillId": 12302011
+        "DisplayName": "海角城铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1601,6 +5059,15 @@
       {
         "skillId": 12302043
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "云岫桥基地-小麦-兑换",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800042": {
@@ -1612,6 +5079,36 @@
     "skillList": [
       {
         "skillId": 12302049
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "“叩响乐园之门”-活动商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "混沌海装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1625,6 +5122,15 @@
       {
         "skillId": 12302057
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城-塞西尔-兑换",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800050": {
@@ -1636,6 +5142,15 @@
     "skillList": [
       {
         "skillId": 12302058
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "岚心城城市声望15级奖励",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1649,6 +5164,29 @@
       {
         "skillId": 12302064
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "混沌海装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800052": {
@@ -1661,17 +5199,42 @@
       {
         "skillId": 12302086
       }
-    ]
-  },
-  "11800053": {
-    "id": 11800053,
-    "name": "equip_name_11800053",
-    "des": "equip_des_11800053",
-    "equipTagId": 12600155,
-    "quality": "Orange",
-    "skillList": [
+    ],
+    "Getway": [
       {
-        "skillId": 12302088
+        "DisplayName": "海角城铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1685,6 +5248,57 @@
       {
         "skillId": 12302090
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "曼德矿场铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "荒原站作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "铁盟装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800055": {
@@ -1696,6 +5310,57 @@
     "skillList": [
       {
         "skillId": 12302091
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "曼德矿场铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "荒原站作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "铁盟装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1709,6 +5374,50 @@
       {
         "skillId": 12302092
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "澄明数据中心铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800057": {
@@ -1720,6 +5429,43 @@
     "skillList": [
       {
         "skillId": 12302093
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "七号自由港铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "阿妮塔装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1733,6 +5479,28 @@
       {
         "skillId": 12302094
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800059": {
@@ -1744,6 +5512,43 @@
     "skillList": [
       {
         "skillId": 12302095
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "海角城铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1757,6 +5562,15 @@
       {
         "skillId": 12302096
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "汇流塔-冯里奈-兑换",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800061": {
@@ -1768,6 +5582,28 @@
     "skillList": [
       {
         "skillId": 12302097
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1781,6 +5617,50 @@
       {
         "skillId": 12302098
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "澄明数据中心铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800063": {
@@ -1792,6 +5672,43 @@
     "skillList": [
       {
         "skillId": 12302099
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "七号自由港铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "阿妮塔装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1805,6 +5722,57 @@
       {
         "skillId": 12302100
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "修格里城铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "曼德矿场铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "荒原站作战计划",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "铁盟装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800065": {
@@ -1816,6 +5784,43 @@
     "skillList": [
       {
         "skillId": 12302101
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "海角城铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1829,6 +5834,43 @@
       {
         "skillId": 12302102
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "七号自由港铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-寒潮浮囊体",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "阿妮塔装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800020": {
@@ -1840,6 +5882,29 @@
     "skillList": [
       {
         "skillId": 12302111
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "行车沿线桦树浮标-鸣爆虫母",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "混沌海装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1853,6 +5918,43 @@
       {
         "skillId": 12302113
       }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "海角城铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
     ]
   },
   "11800027": {
@@ -1864,6 +5966,43 @@
     "skillList": [
       {
         "skillId": 12302206
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "海角城铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-凛川骨龙",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "学会装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   },
@@ -1877,109 +6016,49 @@
       {
         "skillId": 12302217
       }
-    ]
-  },
-  "11800069": {
-    "id": 11800069,
-    "name": "equip_name_11800069",
-    "des": "equip_des_11800069",
-    "equipTagId": 12600162,
-    "quality": "Orange",
-    "skillList": [
+    ],
+    "Getway": [
       {
-        "skillId": 12302276
-      }
-    ]
-  },
-  "11800070": {
-    "id": 11800070,
-    "name": "equip_name_11800070",
-    "des": "equip_des_11800070",
-    "equipTagId": 12600161,
-    "quality": "Orange",
-    "skillList": [
+        "DisplayName": "澄明数据中心铁安局悬赏任务",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
       {
-        "skillId": 12301030
-      }
-    ]
-  },
-  "11800071": {
-    "id": 11800071,
-    "name": "equip_name_11800071",
-    "des": "equip_des_11800071",
-    "equipTagId": 12600161,
-    "quality": "Orange",
-    "skillList": [
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
       {
-        "skillId": 12303045
-      }
-    ]
-  },
-  "11800072": {
-    "id": 11800072,
-    "name": "equip_name_11800072",
-    "des": "equip_des_11800072",
-    "equipTagId": 12600161,
-    "quality": "Orange",
-    "skillList": [
+        "DisplayName": "行车沿线桦树浮标-尘鸣游磷",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
       {
-        "skillId": 12303048
-      }
-    ]
-  },
-  "11800073": {
-    "id": 11800073,
-    "name": "equip_name_11800073",
-    "des": "equip_des_11800073",
-    "equipTagId": 12600155,
-    "quality": "Orange",
-    "skillList": [
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
       {
-        "skillId": 12301030
-      }
-    ]
-  },
-  "11800074": {
-    "id": 11800074,
-    "name": "equip_name_11800074",
-    "des": "equip_des_11800074",
-    "equipTagId": 12600161,
-    "quality": "Orange",
-    "skillList": []
-  },
-  "11800075": {
-    "id": 11800075,
-    "name": "equip_name_11800075",
-    "des": "equip_des_11800075",
-    "equipTagId": 12600162,
-    "quality": "Orange",
-    "skillList": [
+        "DisplayName": "行车沿线桦树浮标-混厄石芝",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
       {
-        "skillId": 12303063
-      }
-    ]
-  },
-  "11800076": {
-    "id": 11800076,
-    "name": "equip_name_11800076",
-    "des": "equip_des_11800076",
-    "equipTagId": 12600162,
-    "quality": "Orange",
-    "skillList": [
-      {
-        "skillId": 12303064
-      }
-    ]
-  },
-  "11800077": {
-    "id": 11800077,
-    "name": "equip_name_11800077",
-    "des": "equip_des_11800077",
-    "equipTagId": 12600155,
-    "quality": "Orange",
-    "skillList": [
-      {
-        "skillId": 12303048
+        "DisplayName": "黑月装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
       }
     ]
   }
