@@ -293,7 +293,7 @@ export function CharacterSlot({
               {!isEmpty && (
                 <div className="absolute bottom-6 lg:bottom-11 px-0">
                   <div className="bg-purple-600 rounded-full px-1 py-0.5 sm:px-2 sm:py-1 shadow-lg flex items-center justify-center">
-                    <Star  fill="#fbbf24" className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-500" />
+                    <Star className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-300" />
                     <span className="text-white text-xs sm:text-sm font-bold ml-0.5 sm:ml-1">
                       {awakeningStage !== null ? awakeningStage : 0}
                     </span>

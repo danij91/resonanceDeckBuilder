@@ -21,13 +21,14 @@ export function useCharacters(data: Database | null) {
 
   // 리더 설정 - 개선된 버전
   const setLeader = useCallback(
-    (characterId: number) => {
-      // 유효한 캐릭터인지 확인 (현재 선택된 캐릭터 목록에 있는지)
-      if (selectedCharacters.includes(characterId)) {
+    (characterId: number, forceSet = false) => {
+      // forceSet이 true이면 검증 없이 리더 설정
+      // 또는 유효한 캐릭터인지 확인 (현재 선택된 캐릭터 목록에 있는지)
+      if (forceSet || selectedCharacters.includes(characterId)) {
         setLeaderCharacter(characterId)
       }
     },
-    [selectedCharacters],
+    [selectedCharacters, setLeaderCharacter],
   )
 
   // 선택된 캐릭터 변경 시 리더 유효성 검사 및 자동 설정
