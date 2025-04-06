@@ -1,4 +1,5 @@
 {
+    "leader_skill_condition": "Leader Skill Condition",
     "equipment_effect": "Effect",
     "photo_mode": "Screenshot Button",
     "help.photo_mode": "Press to automatically take a screenshot.",
