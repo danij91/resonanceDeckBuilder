@@ -8,7 +8,7 @@ import { useCards } from "./use-cards"
 import { useEquipment } from "./use-equipment"
 import { useBattle } from "./use-battle"
 import { usePresets } from "./use-presets"
-// 파일 상단에 import 추가
+import { useAwakening } from "./use-awakening" // 각성 훅 추가
 import { getSkillById, isExcludedSkill, getAvailableCardIds } from "./utils"
 
 export function useDeckBuilder(data: Database | null) {
@@ -36,6 +36,9 @@ export function useDeckBuilder(data: Database | null) {
 
   // 전투 설정
   const { battleSettings, updateBattleSettings } = useBattle()
+
+  // 각성 관리 추가
+  const { awakening, setAwakening, setCharacterAwakening, removeCharacterAwakening, clearAllAwakening } = useAwakening()
 
   // 스킬 정보 가져오기
   const getSkill = useCallback(
@@ -72,7 +75,15 @@ export function useDeckBuilder(data: Database | null) {
       otherCard: 0,
     })
     setEquipment(Array(5).fill({ weapon: null, armor: null, accessory: null }))
-  }, [setSelectedCharacters, setLeaderCharacter, setSelectedCards, updateBattleSettings, setEquipment])
+    clearAllAwakening() // 각성 정보 초기화 추가
+  }, [
+    setSelectedCharacters,
+    setLeaderCharacter,
+    setSelectedCards,
+    updateBattleSettings,
+    setEquipment,
+    clearAllAwakening,
+  ])
 
   // 캐릭터의 스킬 목록을 기반으로 카드를 생성하는 함수
   const generateCardsFromSkills = useCallback(
@@ -247,7 +258,6 @@ export function useDeckBuilder(data: Database | null) {
     [setSelectedCards],
   )
 
-  // addCharacter 함수에서 리더 설정 로직 제거
   // 캐릭터 추가
   const addCharacter = useCallback(
     (characterId: number, slot: number) => {
@@ -265,7 +275,6 @@ export function useDeckBuilder(data: Database | null) {
     [generateCardsFromSkills, setSelectedCharacters],
   )
 
-  // removeCharacter 함수에서 리더 설정 로직 수정
   // 캐릭터 제거
   const removeCharacter = useCallback(
     (slot: number) => {
@@ -303,6 +312,9 @@ export function useDeckBuilder(data: Database | null) {
 
       // 캐릭터 제거 후 카드 업데이트
       updateCardsAfterCharacterRemoval(characterId)
+
+      // 캐릭터 제거 시 각성 정보도 제거
+      removeCharacterAwakening(characterId)
     },
     [
       selectedCharacters,
@@ -311,6 +323,7 @@ export function useDeckBuilder(data: Database | null) {
       updateCardsAfterCharacterRemoval,
       setSelectedCharacters,
       setEquipment,
+      removeCharacterAwakening,
     ],
   )
 
@@ -343,7 +356,15 @@ export function useDeckBuilder(data: Database | null) {
     [removeCardsFromEquipment, generateCardsFromEquipment],
   )
 
-  // importPresetObject 함수 수정 - 리더 설정 로직 개선
+  // 각성 단계 업데이트
+  const updateAwakening = useCallback(
+    (characterId: number, stage: number | null) => {
+      setCharacterAwakening(characterId, stage)
+    },
+    [setCharacterAwakening],
+  )
+
+  // 프리셋 객체 가져오기
   const importPresetObject = useCallback(
     (preset: any): Result => {
       try {
@@ -380,7 +401,32 @@ export function useDeckBuilder(data: Database | null) {
           }, 0)
         }
 
-        // 나머지 코드는 그대로 유지...
+        // 각성 정보 설정 (있는 경우)
+        if (preset.awakening) {
+          setAwakening(preset.awakening)
+        }
+
+        // 장비 설정
+        if (preset.equipment) {
+          Object.entries(preset.equipment).forEach(([slotIndex, equipData]) => {
+            const index = Number.parseInt(slotIndex, 10)
+            if (index >= 0 && index < 5 && Array.isArray(equipData) && equipData.length === 3) {
+              const [weapon, armor, accessory] = equipData as [string | null, string | null, string | null]
+
+              // 로컬 변수 업데이트
+              updatedEquipment[index] = {
+                weapon: weapon || null,
+                armor: armor || null,
+                accessory: accessory || null,
+              }
+
+              // 실제 상태 업데이트
+              if (weapon) updateEquipment(index, "weapon", weapon)
+              if (armor) updateEquipment(index, "armor", armor)
+              if (accessory) updateEquipment(index, "accessory", accessory)
+            }
+          })
+        }
 
         // 장비 타입별로 다음에 사용할 캐릭터 슬롯 인덱스를 추적하는 맵
         const equipmentTypeSlotMap = {
@@ -579,6 +625,8 @@ export function useDeckBuilder(data: Database | null) {
                         if (data.specialSkillIds && data.specialSkillIds.includes(foundSkillId)) {
                           unavailableCard.ownerId = 10000001 // 특수 스킬의 경우 ownerId를 10000001로 설정
                         }
+
+                        console.log(`카드 교체: ${unavailableSkill.name} -> ${availableSkill.name}`)
                         break
                       }
                     }
@@ -616,6 +664,7 @@ export function useDeckBuilder(data: Database | null) {
       selectedCharacters,
       equipment,
       updateBattleSettings,
+      setAwakening,
     ],
   )
 
@@ -635,6 +684,7 @@ export function useDeckBuilder(data: Database | null) {
     selectedCards,
     battleSettings,
     equipment,
+    awakening, // 각성 정보 추가
     clearAll,
     importPresetObject,
   )
@@ -669,6 +719,7 @@ export function useDeckBuilder(data: Database | null) {
     equipment,
     isDarkMode,
     availableCards,
+    awakening, // 각성 정보 추가
     getCharacter,
     getCard,
     getCardInfo,
@@ -684,6 +735,7 @@ export function useDeckBuilder(data: Database | null) {
     updateCardSettings,
     updateBattleSettings,
     updateEquipment,
+    updateAwakening, // 각성 업데이트 함수 추가
     toggleDarkMode,
     clearAll,
     exportPreset,
