@@ -628,11 +628,28 @@ export function useDeckBuilder(data: Database | null) {
                         }
 
                         // 특수 스킬 확인 (specialSkillIds에 있는 경우)
-                        if (data.specialSkillIds && data.specialSkillIds.includes(foundSkillId)) {
+                        const isSpecialSkill = data.specialSkillIds && data.specialSkillIds.includes(foundSkillId);
+                        if (isSpecialSkill) {
                           unavailableCard.ownerId = 10000001 // 특수 스킬의 경우 ownerId를 10000001로 설정
                         }
 
-                        console.log(`카드 교체: ${unavailableSkill.name} -> ${availableSkill.name}`)
+                        // B카드의 소스 추가 - 간단한 방법
+                        // 소스 배열이 없으면 초기화
+                        if (!unavailableCard.sources) {
+                          unavailableCard.sources = [];
+                        }
+
+                        // 카드의 실제 소유자 찾기
+                        // const actualOwnerId = isSpecialSkill ? 10000001 : (cardData && cardData.ownerId ? cardData.ownerId : -1);
+
+                        // 소스 추가 - 카드의 소유자를 소스로 사용
+                        unavailableCard.sources.push({
+                          type: "character",
+                          id: cardData.ownerId,
+                          skillId: foundSkillId
+                        });
+
+                        console.log(`카드 교체: ${unavailableSkill.name} -> ${availableSkill.name} (소스 추가 완료)`)
                         break
                       }
                     }
