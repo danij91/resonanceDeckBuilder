@@ -24,7 +24,9 @@ interface CharacterWindowProps {
   getEquipment: (equipId: string) => Equipment | null
   equipments?: Equipment[]
   data: any
-  getSkill?: (skillId: number) => any // getSkill 추가
+  getSkill?: (skillId: number) => any
+  awakening?: Record<number, number> // 각성 정보 추가
+  onAwakeningSelect?: (characterId: number, stage: number | null) => void // 각성 선택 콜백 추가
 }
 
 export function CharacterWindow({
@@ -40,9 +42,11 @@ export function CharacterWindow({
   onEquipItem,
   getCardInfo,
   getEquipment,
-  equipments = [], // Provide default empty array
+  equipments = [],
   data,
-  getSkill, // getSkill 추가
+  getSkill,
+  awakening = {},
+  onAwakeningSelect,
 }: CharacterWindowProps) {
   const [showSelector, setShowSelector] = useState(false)
   const [selectedSlot, setSelectedSlot] = useState<number>(-1)
@@ -55,6 +59,9 @@ export function CharacterWindow({
   const handleOpenSelector = (slot: number) => {
     // 슬롯에 이미 캐릭터가 있는지 확인
     const hasExistingCharacter = selectedCharacters[slot] !== -1
+    setSlotHasExistingCharacter(hasExistingCharacter)
+
+    // 슬롯 정보 저장 및 검  !== -1
     setSlotHasExistingCharacter(hasExistingCharacter)
 
     // 슬롯 정보 저장 및 검색 모달 열기
@@ -132,8 +139,10 @@ export function CharacterWindow({
             getEquipment={getEquipment}
             equipments={equipments}
             data={data}
-            getSkill={getSkill} // getSkill 전달
+            getSkill={getSkill}
             hasAnyCharacter={hasAnyCharacter}
+            awakeningStage={characterId !== -1 ? awakening[characterId] || null : null}
+            onAwakeningSelect={onAwakeningSelect}
           />
         ))}
       </div>
