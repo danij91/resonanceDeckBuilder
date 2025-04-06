@@ -47,6 +47,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
     selectedCards,
     battleSettings,
     equipment,
+    awakening, // 각성 정보 추가
     availableCards: availableCardsFromHook,
     getCharacter,
     getCard,
@@ -63,12 +64,13 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
     updateCardSettings,
     updateBattleSettings,
     updateEquipment,
+    updateAwakening, // 각성 업데이트 함수 추가
     clearAll,
     exportPreset,
     importPresetObject,
     createShareableUrl,
     decodePresetString,
-    importPreset, // importPreset 추가
+    importPreset,
   } = useDeckBuilder(data)
 
   // URL을 통해 덱 프리셋을 받아올 때 ownerId를 char_db에서 검색하여 카드에 캐릭터 초상화 표시 로직 개선
@@ -237,7 +239,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         return { card, cardForImage, extraInfo, characterImage }
       })
       .filter(Boolean)
-  }, [data, selectedCharacters, findCharacterImageForCard, selectedCards]) // selectedCards 의존성 추가
+  }, [data, selectedCharacters, findCharacterImageForCard, selectedCards])
 
   // 클립보드에서 가져오기
   const handleImport = async () => {
@@ -315,6 +317,11 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
     setIsPhotoMode(!isPhotoMode)
   }
 
+  // 각성 단계 선택 핸들러
+  const handleAwakeningSelect = (characterId: number, stage: number | null) => {
+    updateAwakening(characterId, stage)
+  }
+
   // 로딩 중 표시
   if (loading || isLocalLoading) {
     return <LoadingScreen message={getTranslatedString("loading") || "Loading..."} />
@@ -381,6 +388,8 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
           equipments={allEquipments}
           data={data}
           getSkill={getSkill}
+          awakening={awakening}
+          onAwakeningSelect={handleAwakeningSelect}
         />
 
         {/* 사진찍기모드가 아닐 때만 표시할 제목 */}
