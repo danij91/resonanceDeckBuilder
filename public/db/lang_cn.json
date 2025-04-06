@@ -1,6 +1,6 @@
 {
   "leader_skill_condition": "队长技能条件",
-  "equipment_effect": "效果",
+  "equipment_effects": "效果",
   "photo_mode": "截图按钮",
   "help.photo_mode": "点击后自动截图。",
   "longpress_to_drag": "长按后拖动",
