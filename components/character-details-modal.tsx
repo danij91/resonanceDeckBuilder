@@ -12,6 +12,8 @@ interface CharacterDetailsModalProps {
   getSkill?: (skillId: number) => any
   data?: any
   initialTab?: "info" | "talents" | "breakthroughs"
+  selectedAwakeningStage?: number | null // 선택된 각성 단계 추가
+  onAwakeningSelect?: (stage: number | null) => void // 각성 선택 콜백 추가
 }
 
 export function CharacterDetailsModal({
@@ -23,6 +25,8 @@ export function CharacterDetailsModal({
   getSkill,
   data,
   initialTab = "info",
+  selectedAwakeningStage = null,
+  onAwakeningSelect,
 }: CharacterDetailsModalProps) {
   // Function to get rarity badge color
   const getRarityColor = (rarity: string) => {
@@ -86,6 +90,18 @@ export function CharacterDetailsModal({
     }
 
     return Array.from(tempDiv.childNodes).map((node, i) => convertNodeToReact(node, i))
+  }
+
+  // 각성 항목 선택 핸들러
+  const handleAwakeningSelect = (stage: number) => {
+    if (onAwakeningSelect) {
+      // 이미 선택된 항목을 다시 클릭하면 선택 취소
+      if (selectedAwakeningStage === stage) {
+        onAwakeningSelect(null)
+      } else {
+        onAwakeningSelect(stage)
+      }
+    }
   }
 
   return (
@@ -189,13 +205,25 @@ export function CharacterDetailsModal({
           content: (
             <div className="space-y-3 p-4">
               {character.breakthroughList && character.breakthroughList.length > 0 ? (
-                // 첫 번째 항목을 제외하고 표시
+                // 각성 항목 선택 가능하도록 수정
                 character.breakthroughList
                   .slice(1)
                   .map((breakthrough, index) => (
-                    <div key={`breakthrough-${index}`} className="p-3 bg-black bg-opacity-50 rounded-lg">
+                    <div
+                      key={`breakthrough-${index}`}
+                      className={`p-3 bg-black bg-opacity-50 rounded-lg cursor-pointer transition-all duration-200 ${
+                        selectedAwakeningStage === index + 1
+                          ? "border-2 border-blue-500 shadow-lg shadow-blue-500/50"
+                          : "hover:bg-black hover:bg-opacity-70"
+                      }`}
+                      onClick={() => handleAwakeningSelect(index + 1)}
+                    >
                       <div className="flex">
-                        <div className="w-8 h-8 bg-purple-600 rounded-full flex-shrink-0 flex items-center justify-center mr-3">
+                        <div
+                          className={`w-8 h-8 ${
+                            selectedAwakeningStage === index + 1 ? "bg-blue-600" : "bg-purple-600"
+                          } rounded-full flex-shrink-0 flex items-center justify-center mr-3`}
+                        >
                           <span className="text-white font-bold">{index + 1}</span>
                         </div>
                         <div className="flex-grow">
