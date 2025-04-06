@@ -1,7 +1,7 @@
 {
     "equipment_effect": "Effect",
-    "photo_mode": "Photo Mode",
-    "help.photo_mode": "Helps gather characters and skills together for easier screenshot capture.",
+    "photo_mode": "Screenshot Button",
+    "help.photo_mode": "Press to automatically take a screenshot.",
     "longpress_to_drag": "Long press and drag",
     "share_link_copied_alert": "Share link copied to clipboard!",
     "deck_cleared": "Preset has been cleared.",

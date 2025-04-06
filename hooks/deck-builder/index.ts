@@ -366,7 +366,7 @@ export function useDeckBuilder(data: Database | null) {
 
   // 프리셋 객체 가져오기
   const importPresetObject = useCallback(
-    (preset: any): Result => {
+    (preset: any, isUrlImport = false): Result => {
       try {
         // 프리셋 구조 검증
         if (!preset.roleList || !Array.isArray(preset.roleList) || preset.roleList.length !== 5) {
@@ -395,10 +395,11 @@ export function useDeckBuilder(data: Database | null) {
         // 리더 설정 - 모든 캐릭터 추가 후 명시적으로 설정
         // 프리셋의 header가 유효한 캐릭터인지 확인
         if (preset.header !== -1 && preset.roleList.includes(preset.header)) {
-          // 약간의 지연 후 리더 설정 (상태 업데이트 완료 보장)
+          // 상태 업데이트 큐에 추가하여 모든 캐릭터 추가 후 실행되도록 함
           setTimeout(() => {
-            setLeader(preset.header)
-          }, 0)
+            // forceSet 옵션을 true로 설정하여 리더 강제 설정
+            setLeader(preset.header, true)
+          }, 100) // 지연 시간을 100ms로 증가
         }
 
         // 각성 정보 설정 (있는 경우)
@@ -446,76 +447,81 @@ export function useDeckBuilder(data: Database | null) {
         // 캐릭터 슬롯이 없으면 처리 중단
         if (validCharacterSlots.length === 0) return { success: true, message: "import_success" }
 
-        // 카드의 equipIdList 처리
-        preset.cardList.forEach((presetCard: any) => {
-          if (presetCard.equipIdList && Array.isArray(presetCard.equipIdList) && presetCard.equipIdList.length > 0) {
-            // 각 장비 ID에 대해 처리
-            presetCard.equipIdList.forEach((equipId: string) => {
-              // 이미 장착된 장비는 건너뛰기
-              if (equippedItems.has(equipId)) return
+        // URL 임포트가 아닌 경우에만 cardList의 equipIdList 처리
+        // 이 부분이 핵심 변경 사항입니다
+        if (!isUrlImport) {
+          console.log(isUrlImport)
+          // 카드의 equipIdList 처리
+          preset.cardList.forEach((presetCard: any) => {
+            if (presetCard.equipIdList && Array.isArray(presetCard.equipIdList) && presetCard.equipIdList.length > 0) {
+              // 각 장비 ID에 대해 처리
+              presetCard.equipIdList.forEach((equipId: string) => {
+                // 이미 장착된 장비는 건너뛰기
+                if (equippedItems.has(equipId)) return
 
-              // 장비 정보 가져오기
-              const equipmentData = data?.equipments?.[equipId]
-              if (!equipmentData) return
+                // 장비 정보 가져오기
+                const equipmentData = data?.equipments?.[equipId]
+                if (!equipmentData) return
 
-              // 장비 타입 확인
-              const equipType = equipmentData.type as "weapon" | "armor" | "accessory"
-              if (!equipType) return
+                // 장비 타입 확인
+                const equipType = equipmentData.type as "weapon" | "armor" | "accessory"
+                if (!equipType) return
 
-              // 해당 장비가 실제로 이 카드의 스킬을 추가하는지 확인
-              let isValidEquipment = false
+                // 해당 장비가 실제로 이 카드의 스킬을 추가하는지 확인
+                let isValidEquipment = false
 
-              // 장비의 스킬 목록 확인
-              if (equipmentData.skillList) {
-                for (const skillItem of equipmentData.skillList) {
-                  const skill = getSkill(skillItem.skillId)
+                // 장비의 스킬 목록 확인
+                if (equipmentData.skillList) {
+                  for (const skillItem of equipmentData.skillList) {
+                    const skill = getSkill(skillItem.skillId)
 
-                  // ExSkillList 확인
-                  if (skill && skill.ExSkillList) {
-                    for (const exSkill of skill.ExSkillList) {
-                      const exSkillData = getSkill(exSkill.ExSkillName)
-                      if (exSkillData && exSkillData.cardID && exSkillData.cardID.toString() === presetCard.id) {
-                        isValidEquipment = true
-                        break
+                    // ExSkillList 확인
+                    if (skill && skill.ExSkillList) {
+                      for (const exSkill of skill.ExSkillList) {
+                        const exSkillData = getSkill(exSkill.ExSkillName)
+                        if (exSkillData && exSkillData.cardID && exSkillData.cardID.toString() === presetCard.id) {
+                          isValidEquipment = true
+                          break
+                        }
                       }
+                      if (isValidEquipment) break
                     }
-                    if (isValidEquipment) break
                   }
                 }
-              }
 
-              // 유효한 장비라면 순서대로 캐릭터 슬롯에 장착
-              if (isValidEquipment) {
-                // 현재 장비 타입에 대한 슬롯 인덱스 가져오기
-                let slotIndex = equipmentTypeSlotMap[equipType]
+                // 유효한 장비라면 순서대로 캐릭터 슬롯에 장착
+                if (isValidEquipment) {
+                  // 현재 장비 타입에 대한 슬롯 인덱스 가져오기
+                  let slotIndex = equipmentTypeSlotMap[equipType]
 
-                // 모든 캐릭터 슬롯을 순회했다면 다시 처음부터 시작
-                if (slotIndex >= validCharacterSlots.length) {
-                  slotIndex = 0
-                  equipmentTypeSlotMap[equipType] = 0
+                  // 모든 캐릭터 슬롯을 순회했다면 다시 처음부터 시작
+                  if (slotIndex >= validCharacterSlots.length) {
+                    slotIndex = 0
+                    equipmentTypeSlotMap[equipType] = 0
+                  }
+
+                  // 실제 캐릭터 슬롯 인덱스 가져오기
+                  const charSlotIndex = validCharacterSlots[slotIndex]
+
+                  // 장비 장착
+                  updateEquipment(charSlotIndex, equipType, equipId)
+
+                  // 로컬 변수 업데이트
+                  updatedEquipment[charSlotIndex] = {
+                    ...updatedEquipment[charSlotIndex],
+                    [equipType]: equipId,
+                  }
+
+                  // 장착된 장비 Set에 추가
+                  equippedItems.add(equipId)
+
+                  // 다음 슬롯 인덱스로 업데이트
+                  equipmentTypeSlotMap[equipType]++
                 }
-
-                // 실제 캐릭터 슬롯 인덱스 가져오기
-                const charSlotIndex = validCharacterSlots[slotIndex]
-
-                // 장비 장착
-                updateEquipment(charSlotIndex, equipType, equipId)
-
-                // 로컬 변수 업데이트
-                updatedEquipment[charSlotIndex] = {
-                  ...updatedEquipment[charSlotIndex],
-                  [equipType]: equipId,
-                }
-
-                // 장착된 장비 Set에 추가
-                equippedItems.add(equipId)
-
-                // 다음 슬롯 인덱스로 업데이트
-                equipmentTypeSlotMap[equipType]++
-              }
-            })
-          }
-        })
+              })
+            }
+          })
+        }
 
         // 카드 설정 업데이트 (useType, useParam 등)
         setSelectedCards((currentCards) => {

@@ -32,7 +32,7 @@ export function BattleSettings({ settings, onUpdateSettings, getTranslatedString
       <h2 className="neon-section-title">{getTranslatedString("battle.section.title") || "Battle Settings"}</h2>
 
       <div className="neon-container p-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 gap-6">
           <div className="space-y-6">
             {/* Leader Skill Toggle */}
             <div className="flex items-center justify-between">
