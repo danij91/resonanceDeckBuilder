@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useMemo, useCallback } from "react"
+import { useState, useEffect, useMemo, useCallback, useRef } from "react"
 import { useSearchParams } from "next/navigation"
 import { TopBar } from "./top-bar"
 import { CharacterWindow } from "./character-window"
@@ -31,7 +31,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
   const { getTranslatedString, currentLanguage } = useLanguage()
   const searchParams = useSearchParams()
   const { showToast, ToastContainer } = useToast()
-  const [isPhotoMode, setIsPhotoMode] = useState(false)
+  const contentRef = useRef<HTMLDivElement>(null) // 캡처할 컨텐츠 참조 추가
 
   // useDataLoader 훅을 사용하여 실제 데이터 로드
   const { data, loading, error } = useDataLoader()
@@ -112,7 +112,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         try {
           const preset = decodePresetFromUrlParam(urlDeckCode)
           if (preset) {
-            const result = importPresetObject(preset)
+            const result = importPresetObject(preset, true) // isUrlImport 매개변수를 true로 설정
             if (result.success) {
               showToast(getTranslatedString(result.message), "success")
 
@@ -312,11 +312,6 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
     showToast(getTranslatedString("deck_cleared"), "success")
   }
 
-  // 사진찍기모드 토글
-  const togglePhotoMode = () => {
-    setIsPhotoMode(!isPhotoMode)
-  }
-
   // 각성 단계 선택 핸들러
   const handleAwakeningSelect = (characterId: number, stage: number | null) => {
     updateAwakening(characterId, stage)
@@ -365,66 +360,60 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         onImport={handleImport}
         onExport={handleExport}
         onShare={handleShare}
-        onTogglePhotoMode={togglePhotoMode}
-        isPhotoMode={isPhotoMode}
+        contentRef={contentRef}
       />
 
       {/* 컨테이너의 패딩을 조정하여 모바일에서 더 많은 공간을 확보합니다. */}
       <div className="container mx-auto px-0 sm:px-3 md:px-4 pt-40 md:pt-28 pb-8">
-        {/* 캐릭터 창 */}
-        <CharacterWindow
-          selectedCharacters={selectedCharacters}
-          leaderCharacter={leaderCharacter}
-          onAddCharacter={addCharacter}
-          onRemoveCharacter={removeCharacter}
-          onSetLeader={setLeader}
-          getCharacter={getCharacter}
-          getTranslatedString={getTranslatedString}
-          availableCharacters={data && data.characters ? Object.values(data.characters) : []}
-          equipment={equipment}
-          onEquipItem={updateEquipment}
-          getCardInfo={getCardInfo}
-          getEquipment={getEquipment}
-          equipments={allEquipments}
-          data={data}
-          getSkill={getSkill}
-          awakening={awakening}
-          onAwakeningSelect={handleAwakeningSelect}
-        />
+        {/* 캡처할 영역 */}
+        <div ref={contentRef} className="capture-content">
+          {/* 캐릭터 창 */}
+          <CharacterWindow
+            selectedCharacters={selectedCharacters}
+            leaderCharacter={leaderCharacter}
+            onAddCharacter={addCharacter}
+            onRemoveCharacter={removeCharacter}
+            onSetLeader={setLeader}
+            getCharacter={getCharacter}
+            getTranslatedString={getTranslatedString}
+            availableCharacters={data && data.characters ? Object.values(data.characters) : []}
+            equipment={equipment}
+            onEquipItem={updateEquipment}
+            getCardInfo={getCardInfo}
+            getEquipment={getEquipment}
+            equipments={allEquipments}
+            data={data}
+            getSkill={getSkill}
+            awakening={awakening}
+            onAwakeningSelect={handleAwakeningSelect}
+          />
 
-        {/* 사진찍기모드가 아닐 때만 표시할 제목 */}
-        {!isPhotoMode && (
+          {/* 스킬 창 */}
           <div className="mt-8">
             <h2 className="neon-section-title">{getTranslatedString("skill.section.title") || "Skills"}</h2>
+            <SkillWindow
+              selectedCards={selectedCards}
+              availableCards={availableCards}
+              onAddCard={addCard}
+              onRemoveCard={removeCard}
+              onReorderCards={reorderCards}
+              onUpdateCardSettings={updateCardSettings}
+              getTranslatedString={getTranslatedString}
+              specialControls={{}}
+            />
           </div>
-        )}
 
-        {/* 스킬 창 - 사진찍기모드일 때는 마진 제거 */}
-        <div className={isPhotoMode ? "mt-0" : "mt-0"}>
-          <SkillWindow
-            selectedCards={selectedCards}
-            availableCards={availableCards}
-            onAddCard={addCard}
-            onRemoveCard={removeCard}
-            onReorderCards={reorderCards}
-            onUpdateCardSettings={updateCardSettings}
-            getTranslatedString={getTranslatedString}
-            specialControls={{}}
-          />
-        </div>
-
-        {/* 전투 설정 - 사진찍기모드일 때는 숨김 */}
-        {!isPhotoMode && (
+          {/* 전투 설정 - 캡처 영역에 포함 */}
           <BattleSettings
             settings={battleSettings}
             onUpdateSettings={updateBattleSettings}
             getTranslatedString={getTranslatedString}
           />
-        )}
+        </div>
       </div>
 
-      {/* 댓글 섹션 - 사진찍기모드일 때는 숨김 */}
-      {!isPhotoMode && <CommentsSection currentLanguage={currentLanguage} />}
+      {/* 댓글 섹션 */}
+      <CommentsSection currentLanguage={currentLanguage} />
     </div>
   )
 }

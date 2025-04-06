@@ -1266,3 +1266,141 @@ body.dragging {
   box-shadow: 0 0 10px rgba(59, 130, 246, 0.7), 0 0 15px rgba(59, 130, 246, 0.4);
 }
 
+/* 사진 모드 스타일 */
+.photo-mode {
+  /* 사진 모드에서 타이틀 숨기기 */
+  & .neon-section-title {
+    display: none;
+  }
+
+  /* 섹션 간 간격 줄이기 */
+  & .mt-8 {
+    margin-top: 0.5rem;
+  }
+
+  /* 캐릭터 슬롯과 스킬 창 사이 간격 줄이기 */
+  & .skill-container {
+    margin-top: 0.5rem;
+  }
+
+  /* 캡처 영역 스타일 */
+  background-color: #000;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+/* 사진 모드에서 불필요한 요소 숨기기 */
+.photo-mode .character-action-btn:not(.leader-btn),
+.photo-mode .equipment-info-btn {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 사진 모드에서 스킬 카드 그리드 최적화 */
+.photo-mode .skill-grid {
+  gap: 2px;
+}
+
+/* 캡처 모드 스타일 */
+.capture-mode {
+  /* 캡처 모드에서 타이틀 스타일 변경 */
+  & .neon-section-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* 섹션 간 간격 줄이기 */
+  & .mt-8 {
+    margin-top: 0.5rem;
+  }
+
+  /* 캐릭터 슬롯과 스킬 창 사이 간격 줄이기 */
+  & .skill-container {
+    margin-top: 0.5rem;
+  }
+
+  /* 캡처 영역 스타일 */
+  background-color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 1rem;
+
+  /* 캡처 모드에서 불필요한 요소 숨기기 */
+  & .character-action-btn:not(.leader-btn),
+  & .equipment-info-btn {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* 캡처 모드에서 스킬 카드 그리드 최적화 */
+  & .skill-grid {
+    gap: 2px;
+  }
+
+  /* 캡처 모드 스타일 내에서 전투 설정 관련 스타일 수정 */
+
+  /* 전투 설정 스타일 최적화 부분 수정 */
+  & .battle-dropdown {
+    height: 36px;
+  }
+
+  & .hand-retention-control {
+    max-width: 150px;
+  }
+
+  & .hand-retention-button,
+  & .hand-retention-display {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* 전투 설정 그리드 레이아웃 유지 (두 줄 유지) */
+  & .grid-cols-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* 모바일 환경에서 빛나는 효과만 제거 (테두리 색상은 유지) */
+  & .neon-border,
+  & .character-slot-filled,
+  & .equipment-slot-empty,
+  & .skill-card,
+  & .equipment-card {
+    box-shadow: none !important;
+  }
+
+  /* 네온 텍스트 효과 제거 */
+  & .neon-text {
+    text-shadow: none !important;
+  }
+
+  /* 리더 뱃지의 빛나는 효과 제거 */
+  & .bg-red-600 {
+    box-shadow: none !important;
+    border: 1px solid #f59e0b !important;
+  }
+
+  /* 희귀도별 테두리 효과 제거 (색상은 유지) */
+  & .border-orange-500,
+  & .border-yellow-500,
+  & .border-purple-500,
+  & .border-blue-500 {
+    box-shadow: none !important;
+  }
+
+  /* 장비 카드 품질별 배경 그라데이션은 유지하되 그림자 효과만 제거 */
+  & .from-orange-500,
+  & .from-yellow-500,
+  & .from-purple-500,
+  & .from-blue-500,
+  & .from-green-500 {
+    box-shadow: none !important;
+  }
+}
+
+/* 캡처 컨텐츠 영역 */
+.capture-content {
+  transition: all 0.1s ease;
+}
+

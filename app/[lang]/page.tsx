@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState, use } from "react"
+import { useEffect, useState , use } from "react"
 import { useSearchParams, usePathname } from "next/navigation"
 import DeckBuilder from "../../components/deckBuilder"
 import { LoadingScreen } from "../../components/loading-screen"
@@ -29,6 +29,13 @@ export default function Page({ params }: PageProps) {
     const codeParam = searchParams.get("code")
     if (codeParam) {
       setDeckCode(codeParam)
+
+      if (analytics && typeof window !== "undefined") {
+        logEvent(analytics, "deck_shared_visit", {
+          deck_code: codeParam,
+          language: lang,
+        })
+      }
     }
 
     setIsLoading(false)
@@ -62,3 +69,4 @@ export default function Page({ params }: PageProps) {
     </LanguageProvider>
   )
 }
+

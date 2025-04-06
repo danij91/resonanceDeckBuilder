@@ -1,21 +1,23 @@
 "use client"
 
+import type React from "react"
+
 import { useState, useEffect, useRef } from "react"
-import { Globe, Download, Upload, RefreshCw, Share2, HelpCircle, Camera } from "lucide-react"
+import { Globe, Download, Upload, RefreshCw, Share2, HelpCircle } from "lucide-react"
 import { StylizedTitle } from "./stylized-title"
 import { HelpModal } from "./ui/modal/HelpModal"
 import { useLanguage } from "../contexts/language-context"
+import { ScreenshotButton } from "./screenshot-button" // 추가
 
 interface TopBarProps {
   onClear: () => void
   onImport: () => Promise<void>
   onExport: () => void
   onShare: () => void
-  onTogglePhotoMode: () => void
-  isPhotoMode: boolean
+  contentRef: React.RefObject<HTMLElement> // 추가: 캡처할 컨텐츠 참조
 }
 
-export function TopBar({ onClear, onImport, onExport, onShare, onTogglePhotoMode, isPhotoMode }: TopBarProps) {
+export function TopBar({ onClear, onImport, onExport, onShare, contentRef }: TopBarProps) {
   const { currentLanguage, supportedLanguages, getTranslatedString, changeLanguage, isChangingLanguage } = useLanguage()
 
   const [showLanguageMenu, setShowLanguageMenu] = useState(false)
@@ -162,14 +164,8 @@ export function TopBar({ onClear, onImport, onExport, onShare, onTogglePhotoMode
                 )}
               </div>
 
-              {/* Photo Mode Button - 활성화 시 파란색 배경 유지 */}
-              <button
-                onClick={onTogglePhotoMode}
-                className={`${buttonBaseClass} photo-mode-button ${isPhotoMode ? "bg-blue-600 hover:bg-blue-600" : ""}`}
-                aria-label={getTranslatedString("photo_mode") || "Photo Mode"}
-              >
-                <Camera className={iconClass} />
-              </button>
+              {/* Screenshot Button - 캡처 버튼으로 변경 */}
+              <ScreenshotButton targetRef={contentRef} getTranslatedString={getTranslatedString} />
 
               {/* Share Button */}
               <button

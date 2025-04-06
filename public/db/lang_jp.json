@@ -1,7 +1,7 @@
 {
   "equipment_effect": "効果",
-  "photo_mode": "フォトモード",
-  "help.photo_mode": "スクリーンショットを撮りやすくするために、キャラとスキルをまとめる機能です。",
+  "photo_mode": "スクリーンショットボタン",
+  "help.photo_mode": "押すと自動でスクリーンショットを撮ります。",
   "longpress_to_drag": "長押しして移動",
   "share_link_copied_alert": "共有リンクをクリップボードにコピーしました！",
   "deck_cleared": "プリセットが初期化されました。",

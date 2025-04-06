@@ -158,7 +158,7 @@ export function usePresets(
   // 프리셋을 문자열로 내보내기
   const exportPresetToString = useCallback(() => {
     try {
-      const preset = createPresetObject(false, false) // 장비 정보와 각성 정보 제외
+      const preset = createPresetObject(false, false) // 장비 정보 각성 정보 제외
       return encodePreset(preset)
     } catch (error) {
       return ""
@@ -185,6 +185,13 @@ export function usePresets(
       if (!preset.cardList || !Array.isArray(preset.cardList)) {
         throw new Error("invalid_cardlist")
       }
+
+      // 리더 설정 부분 제거 - importPresetObject에서 처리하도록 함
+      // if (preset.header !== -1 && preset.roleList.includes(preset.header)) {
+      //   Promise.resolve().then(() => {
+      //     setLeaderCharacter(preset.header);
+      //   });
+      // }
 
       // 프리셋 객체 가져오기
       return importPresetObject(preset)
