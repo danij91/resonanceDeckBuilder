@@ -1,7 +1,7 @@
 {
     "equipment_effect": "효과",
-    "photo_mode": "캡쳐 모드",
-    "help.photo_mode": "캡쳐하기 편하도록 캐릭터랑 스킬 모아주는 기능",
+    "photo_mode": "스크린샷 버튼",
+    "help.photo_mode": "누르면 자동으로 스크린샷을 찍습니다.",
     "longpress_to_drag": "길게 누르고 이동",
     "share_link_copied_alert": "공유 URL이 클립보드에 복사되었습니다!",
     "deck_cleared": "프리셋이 초기화되었습니다.",
