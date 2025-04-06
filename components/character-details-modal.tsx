@@ -44,6 +44,35 @@ export function CharacterDetailsModal({
     }
   }
 
+  // Process skill description to replace #r with actual values
+  const processSkillDescription = (skill: any, description: string) => {
+    if (!skill || !description) return description
+
+    // Check if desParamList exists and has items
+    if (skill.desParamList && skill.desParamList.length > 0) {
+      const firstParam = skill.desParamList[0]
+      const paramValue = firstParam.param
+      // Check if skillParamList exists
+      if (skill.skillParamList) {
+        // Find the skillRate key based on param value
+        const rateKey = `skillRate${paramValue}_SN`
+        if (skill.skillParamList[0][rateKey] !== undefined) {
+          // Calculate the rate value (divide by 10000)
+          let rateValue = Math.floor(skill.skillParamList[0][rateKey] / 10000)
+          // Add % if isPercent is true
+          if (firstParam.isPercent) {
+            rateValue = `${rateValue}%`
+          }
+
+          // Replace #r with the calculated value
+          return description.replace(/#r/g, rateValue.toString()) 
+        }
+      }
+    }
+
+    return description
+  }
+
   // Format text with color tags and other HTML tags
   const formatColorText = (text: string) => {
     if (!text) return ""
@@ -283,6 +312,7 @@ export function CharacterDetailsModal({
 
     const skillItem = character.skillList[index]
     const skillId = skillItem.skillId
+    const skillQuantity = skillItem.num || 0
 
     // 스킬 정보 직접 가져오기
     const skill = getSkill ? getSkill(skillId) : null
@@ -317,6 +347,18 @@ export function CharacterDetailsModal({
       }
     }
 
+    // Get skill cost from card data if available
+    let skillCost = 0
+    if (skill.cardID) {
+      const cardData = data?.cards[skill.cardID]
+      if (cardData && cardData.cost_SN !== undefined) {
+        skillCost = Math.floor(cardData.cost_SN / 10000)
+      }
+    }
+
+    // Process skill description with #r replacement
+    const processedDescription = processSkillDescription(skill, getTranslatedString(skill.description))
+
     return (
       <div className="p-3 rounded-lg">
         <div className="flex">
@@ -337,10 +379,22 @@ export function CharacterDetailsModal({
                 {getTranslatedString(labelKey) || defaultLabel}
               </span>
               <span className="font-medium neon-text">{getTranslatedString(skill.name)}</span>
+
+              {/* Add cost and quantity information */}
+              <span className="ml-2 text-sm text-gray-300">
+                COST : {skillCost} / {getTranslatedString("amount")} : {skillQuantity}
+              </span>
             </div>
-            {skill.description && (
-              <div className="text-sm text-gray-400 mt-1">
-                {formatColorText(getTranslatedString(skill.description))}
+
+            {processedDescription && (
+              <div className="text-sm text-gray-400 mt-1">{formatColorText(processedDescription)}</div>
+            )}
+
+            {/* 필살기(인덱스 2)일 경우 리더 스킬 조건 표시 */}
+            {index === 2 && skill.leaderCardConditionDesc && (
+              <div className="text-sm mt-2" style={{ color: "#800020" }}>
+                <strong>{getTranslatedString("leader_skill_condition")}: </strong>
+                {formatColorText(getTranslatedString(skill.leaderCardConditionDesc))}
               </div>
             )}
           </div>

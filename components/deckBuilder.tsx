@@ -138,6 +138,43 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
     loadFromUrl()
   }, [data, urlDeckCode, importPresetObject, showToast, getTranslatedString, currentLanguage, initialLoadComplete])
 
+  // 스킬 설명에서 #r 태그를 실제 값으로 대체하는 함수
+  const processSkillDescription = useCallback(
+    (skill: any, description: string) => {
+      if (!skill || !description) return description
+
+      // 번역된 설명 가져오기
+      const translatedDesc = getTranslatedString(description)
+
+      // Check if desParamList exists and has items
+      if (skill.desParamList && skill.desParamList.length > 0) {
+        const firstParam = skill.desParamList[0]
+        const paramValue = firstParam.param
+
+        // Check if skillParamList exists
+        if (skill.skillParamList) {
+          // Find the skillRate key based on param value
+          const rateKey = `skillRate${paramValue}_SN`
+          if (skill.skillParamList[0][rateKey] !== undefined) {
+            // Calculate the rate value (divide by 10000)
+            let rateValue = Math.floor(skill.skillParamList[0][rateKey] / 10000)
+
+            // Add % if isPercent is true
+            if (firstParam.isPercent) {
+              rateValue = `${rateValue}%`
+            }
+
+            // Replace #r with the calculated value
+            return translatedDesc.replace(/#r/g, rateValue.toString())
+          }
+        }
+      }
+
+      return translatedDesc
+    },
+    [getTranslatedString],
+  )
+
   // 스킬 카드 정보 생성 부분 수정
   // availableCards 부분에서 extraInfo 객체 생성 시 cost 값을 제대로 설정하도록 수정
   const availableCards = useMemo(() => {
@@ -194,7 +231,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
           name: card.name || `card_name_${id}`,
           desc: "",
           cost: 0, // 기본값 설정
-          amount: 1,
+          amount: 0, // 기본 수량을 0으로 설정
           img_url: undefined,
         }
 
@@ -204,21 +241,34 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         }
 
         // 스킬 ID를 통해 추가 정보 찾기
-        for (const skillId in data.skills) {
-          const skill = data.skills[skillId]
+        let skillId = -1
+        let skillObj = null
+        for (const sId in data.skills) {
+          const skill = data.skills[sId]
           if (skill && skill.cardID && skill.cardID.toString() === id) {
             // 스킬 이름을 extraInfo.name에 할당
-            extraInfo.name = skill.name
-
-            // 스킬 설명을 extraInfo.desc에 할당
+            extraInfo.name = getTranslatedString(skill.name)
+            // 스킬 설명을 extraInfo.desc에 할당 - 번역 및 #r 값 교체 적용
             extraInfo.desc = skill.description || ""
+            // 스킬 ID 저장
+            skillId = Number.parseInt(sId)
+            // 스킬 객체 저장
+            skillObj = skill
 
             // 스킬 이미지 URL 찾기
-            if (data.images && data.images[`skill_${skillId}`]) {
-              extraInfo.img_url = data.images[`skill_${skillId}`]
+            if (data.images && data.images[`skill_${sId}`]) {
+              extraInfo.img_url = data.images[`skill_${sId}`]
             }
             break
           }
+        }
+
+        // 스킬 설명 처리 - 번역 및 #r 값 교체
+        if (skillObj) {
+          extraInfo.desc = processSkillDescription(skillObj, extraInfo.desc)
+        } else {
+          // 스킬 객체가 없는 경우 기본 번역만 적용
+          extraInfo.desc = getTranslatedString(extraInfo.desc)
         }
 
         // 카드 비용 정보 찾기 - cost_SN을 10000으로 나눈 값 사용
@@ -226,6 +276,20 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
           // cost_SN을 10000으로 나누고 내림 처리
           const costValue = card.cost_SN > 0 ? Math.floor(card.cost_SN / 10000) : 0
           extraInfo.cost = costValue
+        }
+
+        // 카드 수량 정보 찾기 - 캐릭터의 skillList에서 해당 스킬의 num 값 찾기
+        if (skillId !== -1) {
+          for (const charId of validCharacters) {
+            const character = data.characters[charId.toString()]
+            if (character && character.skillList) {
+              const skillItem = character.skillList.find((item) => item.skillId === skillId)
+              if (skillItem && skillItem.num) {
+                extraInfo.amount = skillItem.num
+                break
+              }
+            }
+          }
         }
 
         // 중요: selectedCards에서 해당 카드를 찾아 ownerId 정보 가져오기
@@ -239,7 +303,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         return { card, cardForImage, extraInfo, characterImage }
       })
       .filter(Boolean)
-  }, [data, selectedCharacters, findCharacterImageForCard, selectedCards])
+  }, [data, selectedCharacters, findCharacterImageForCard, selectedCards, processSkillDescription, getTranslatedString])
 
   // 클립보드에서 가져오기
   const handleImport = async () => {
