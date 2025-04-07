@@ -5828,7 +5828,7 @@
     ],
     "line": 1,
     "subLine": 139,
-    "identity": "无垠号临时乘员",
+    "identity": "char_identity_10000546",
     "ability": "待研究",
     "controllerId": 10300466,
     "equipmentSlotList": [
@@ -5925,7 +5925,7 @@
     ],
     "line": 3,
     "subLine": 450,
-    "identity": "“园丁”·特别派遣专员",
+    "identity": "char_identity_10000615",
     "ability": "“球球力场”",
     "controllerId": 10300493,
     "equipmentSlotList": [
@@ -6111,7 +6111,7 @@
     ],
     "line": 1,
     "subLine": 140,
-    "identity": "无垠号临时乘员",
+    "identity": "char_identity_10000624",
     "ability": "待研究",
     "controllerId": 10300501,
     "equipmentSlotList": [
@@ -6208,7 +6208,7 @@
     ],
     "line": 3,
     "subLine": 160,
-    "identity": "索思学会·导师",
+    "identity": "char_identity_10000632",
     "ability": "心智漫步",
     "controllerId": 10300507,
     "equipmentSlotList": [
@@ -6309,7 +6309,7 @@
     ],
     "line": 1,
     "subLine": 390,
-    "identity": "索思学会·“天使”（失败个体）",
+    "identity": "char_identity_10000749",
     "ability": "“裂穹”",
     "controllerId": 10300537,
     "equipmentSlotList": [
@@ -6410,7 +6410,7 @@
     ],
     "line": 1,
     "subLine": 160,
-    "identity": "索思学会·“天使”（失败个体）",
+    "identity": "char_identity_10000748",
     "ability": "心智漫步（待研究）",
     "controllerId": 10300539,
     "equipmentSlotList": [
@@ -6507,7 +6507,7 @@
     ],
     "line": 2,
     "subLine": 143,
-    "identity": "铁盟·澄明数据中心铁安局负责人",
+    "identity": "char_identity_10000969",
     "ability": "强韧（亚人型）",
     "controllerId": 10300551,
     "equipmentSlotList": [
@@ -6604,7 +6604,7 @@
     ],
     "line": 3,
     "subLine": 160,
-    "identity": "无垠号·特殊合同护卫乘员",
+    "identity": "char_identity_10000979",
     "ability": "“专业女仆的秘密能力”",
     "controllerId": 10300557,
     "equipmentSlotList": [
