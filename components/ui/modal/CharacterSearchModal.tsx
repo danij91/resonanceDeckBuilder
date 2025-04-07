@@ -95,7 +95,9 @@ export function CharacterSearchModal({
                               ? "#FFD700"
                               : character.rarity === "SR"
                                 ? "#9370DB"
-                                : "#6495ED",
+                                : character.rarity === "R"
+                                ? "#6495ED"
+                                : "#86878c"
                       }}
                     >
                       {character.rarity}
