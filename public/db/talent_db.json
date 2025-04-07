@@ -3272,21 +3272,21 @@
   "12800084": {
     "id": 12800084,
     "name": "talent_name_12800084",
-    "desc": "开局时生成1张【黑色药剂】，加入牌库底",
+    "desc": "talent_desc_12800084",
     "awakeLv": 6,
     "skillParamOffsetList": []
   },
   "12800090": {
     "id": 12800090,
-    "name": "卡巴内瑞之力",
-    "desc": "开局或每次牌库抽光触发洗牌时，从牌库将1张【蓄力】加入手牌\\n吸取生命值最高的1名我方10%当前生命值，使自身造成的最终伤害提高35%\\n同时使自身<color=#FF6666>【狂暴】</color>和<color=#7AB2FF>【霸体】</color>，持续12秒",
+    "name": "talent_name_12800090",
+    "desc": "talent_desc_12800090",
     "awakeLv": 5,
     "skillParamOffsetList": []
   },
   "12800095": {
     "id": 12800095,
     "name": "talent_name_12800095",
-    "desc": "【磁力饵】增强为：\\n使用下1张带有<color=#FFB800>【引雷】</color>词条的红卡/橙卡后，立刻从牌库或弃牌区将3张带有<color=#FFB800>【引雷】</color>词条的卡牌加入手牌\\n随后使下1张带有<color=#FFB800>【引雷】</color>词条的红卡/橙卡造成的伤害提高100%，有效1次",
+    "desc": "talent_desc_12800095",
     "awakeLv": 3,
     "skillParamOffsetList": [
       {
@@ -3299,7 +3299,7 @@
   "12800098": {
     "id": 12800098,
     "name": "talent_name_12800098",
-    "desc": "【磁力阱】和【蓄电磁场】的持续时间延长2秒",
+    "desc": "talent_desc_12800098",
     "awakeLv": 5,
     "skillParamOffsetList": [
       {
@@ -3326,92 +3326,92 @@
   },
   "12800101": {
     "id": 12800101,
-    "name": "双极电击",
-    "desc": "每积累十万【伏特值】，生成1张【十万伏特】加入手牌\\n每积累一百万【伏特值】，生成1张【百万伏特】加入牌库最上方",
+    "name": "talent_name_12800101",
+    "desc": "talent_desc_12800101",
     "awakeLv": 6,
     "skillParamOffsetList": []
   },
   "12800106": {
     "id": 12800106,
     "name": "talent_name_12800106",
-    "desc": "【磁力阱】消失后，使1名生命值最低的我方获得【磁力盾】，持续10秒，【磁力盾】的耐久为自身防御力的2000%\\n【磁力盾】存在时，其受到的电磁伤害降低50%",
+    "desc": "talent_desc_12800106",
     "awakeLv": 2,
     "skillParamOffsetList": []
   },
   "12800111": {
     "id": 12800111,
-    "name": "风舞",
-    "desc": "有20%概率回避受到的攻击\\n回避成功时，获得0.5点费用",
+    "name": "talent_name_12800111",
+    "desc": "talent_desc_12800111",
     "awakeLv": 3,
     "skillParamOffsetList": []
   },
   "12800119": {
     "id": 12800119,
-    "name": "卡巴内瑞之力",
-    "desc": "开局或每次牌库抽光触发洗牌时，从牌库将1张【蝶舞】加入手牌\\n吸取生命值最高的1名我方10%当前生命值，使自身造成的最终伤害提高35%\\n同时使自身<color=#FF6666>【狂暴】</color>和<color=#7AB2FF>【霸体】</color>，持续12秒",
+    "name": "talent_name_12800119",
+    "desc": "talent_desc_12800119",
     "awakeLv": 5,
     "skillParamOffsetList": []
   },
   "12800121": {
     "id": 12800121,
-    "name": "翩跹",
-    "desc": "使用【蝶舞】后，本场战斗【蝶舞】的攻击段数+2，限6次\\n使用【鬼舞】后，使下1张【浮光连舞】伤害提高50%，可叠加",
+    "name": "talent_name_12800121",
+    "desc": "talent_desc_12800121",
     "awakeLv": 6,
     "skillParamOffsetList": []
   },
   "12800124": {
     "id": 12800124,
     "name": "talent_name_12800124",
-    "desc": "使用【蝶舞】后，从牌库将1张【鬼舞】加入手牌\\n使用【鬼舞】后，从牌库将1张【蝶舞】加入手牌",
+    "desc": "talent_desc_12800124",
     "awakeLv": 2,
     "skillParamOffsetList": []
   },
   "12800132": {
     "id": 12800132,
-    "name": "工作序列",
-    "desc": "【掘金二号】获得得意技能【淘金】，精力值满时释放\\n\r【淘金】：投掷3个采矿工具，每个对随机敌方目标造成1段伤害并<color=#FF6666>【击晕】</color>，同时总计随机获得1~3枚金币",
+    "name": "talent_name_12800132",
+    "desc": "talent_desc_12800132",
     "awakeLv": 3,
     "skillParamOffsetList": []
   },
   "12800136": {
     "id": 12800136,
-    "name": "重启序列",
-    "desc": "【掘金二号】濒死时进入【瘫痪】状态无法行动，同时每秒回复10%生命值，持续10秒，持续期间内<color=#7AB2FF>【无敌】</color>\\n\r持续时间结束后【掘金二号】脱离【瘫痪】状态",
+    "name": "talent_name_12800136",
+    "desc": "talent_desc_12800136",
     "awakeLv": 5,
     "skillParamOffsetList": []
   },
   "12800140": {
     "id": 12800140,
-    "name": "掘金时代",
-    "desc": "开局召唤1只【掘金二号】登场助战，属性继承金子小姐\\n\r【掘金二号】为【机械单位】",
+    "name": "talent_name_12800140",
+    "desc": "talent_desc_12800140",
     "awakeLv": 2,
     "skillParamOffsetList": []
   },
   "12800144": {
     "id": 12800144,
     "name": "talent_name_12800144",
-    "desc": "【昴宿七】消失时，生成1张【新星】加入手牌",
+    "desc": "talent_desc_12800144",
     "awakeLv": 2,
     "skillParamOffsetList": []
   },
   "12800148": {
     "id": 12800148,
-    "name": "负源汲取",
-    "desc": "每有1张黑卡在牌库或手牌中时，每秒获得0.05点费用\\n从牌库抽到【负能】时，从弃牌区回收1张牌加入手牌",
+    "name": "talent_name_12800148",
+    "desc": "talent_desc_12800148",
     "awakeLv": 3,
     "skillParamOffsetList": []
   },
   "12800152": {
     "id": 12800152,
-    "name": "变星",
-    "desc": "【昴宿七】增强为：\\n召唤【昴宿七】，持续8秒，持续期间：\\n使用红卡时，释放微波脉冲，对敌方目标造成1段伤害，同时触发<color=#FF6666>【点燃】</color>\\n使用黄卡时，释放电磁脉冲，对敌方目标造成1段伤害，同时触发<color=#FFB800>【落雷】</color>\\n使用紫卡时，释放中微子脉冲，对敌方目标造成1段伤害，同时触发<color=#FF6666>【蚀灭】</color>\\n【昴宿七】为【机械单位】\\n微波脉冲/电磁脉冲/中微子脉冲为【波】\\n使用后，生成1张黑卡【负能】加入牌库底",
+    "name": "talent_name_12800152",
+    "desc": "talent_desc_12800152",
     "awakeLv": 5,
     "skillParamOffsetList": []
   },
   "12800156": {
     "id": 12800156,
-    "name": "脉冲星",
-    "desc": "使用【新星】后，每秒获得0.1点费用，持续8秒\\n使用【超新星】后，每秒获得0.5点费用，持续8秒",
+    "name": "talent_name_12800156",
+    "desc": "talent_desc_12800156",
     "awakeLv": 6,
     "skillParamOffsetList": []
   },
@@ -3487,29 +3487,29 @@
   },
   "12800128": {
     "id": 12800128,
-    "name": "怒相",
-    "desc": "乌刹娜拥有250点怒气值上限\\n每次使用【斩！】获得10点怒气值，每次自身造成击杀获得10点怒气值\\n每次我方造成<color=#FF6666>【斩裂】</color>获得1点怒气值\\n怒气值达到50/150/250时，本场战斗【斩！】额外造成1~2/1~3/1~5次<color=#FF6666>【斩裂】</color>",
+    "name": "talent_name_12800128",
+    "desc": "talent_desc_12800128",
     "awakeLv": 2,
     "skillParamOffsetList": []
   },
   "12800244": {
     "id": 12800244,
-    "name": "弹指",
-    "desc": "【斩！】增强为：\\n挥舞【裂穹】，对敌方目标造成1段伤害并<color=#FF6666>【斩裂】</color>1~3次\\n同时随机触发<color=#B383FF>【禁锢】</color>/<color=#B383FF>【枷锁】</color>",
+    "name": "talent_name_12800244",
+    "desc": "talent_desc_12800244",
     "awakeLv": 3,
     "skillParamOffsetList": []
   },
   "12800248": {
     "id": 12800248,
-    "name": "瞬",
-    "desc": "每有1张黑卡在牌库或手牌中时，每秒回复自身1%生命值\\n从牌库抽到【负能】时，从牌库或弃牌区将1张【斩！】加入手牌\\n同时释放1把【裂穹】贯穿敌方目标，每把对敌方造成1段伤害并<color=#FF6666>【裂蚀】</color>",
+    "name": "talent_name_12800248",
+    "desc": "talent_desc_12800248",
     "awakeLv": 5,
     "skillParamOffsetList": []
   },
   "12800256": {
     "id": 12800256,
-    "name": "刹那",
-    "desc": "自身造成的<color=#FF6666>【斩裂】</color>有20%概率触发<color=#FF6666>【裂蚀】</color>",
+    "name": "talent_name_12800256",
+    "desc": "talent_desc_12800256",
     "awakeLv": 6,
     "skillParamOffsetList": []
   },
@@ -3523,7 +3523,7 @@
   "12800306": {
     "id": 12800306,
     "name": "talent_name_12800306",
-    "desc": "使用【圣痕】后，自身获得【蚀界之帷】，持续6秒\\n持续期间，每秒对附近敌方触发1次<color=#FF6666>【蚀灭】</color>，并将造成伤害回复自身生命值\\n持续期间，每次造成【圣痕崩解】时，持续时间延长1秒",
+    "desc": "talent_desc_12800306",
     "awakeLv": 6,
     "skillParamOffsetList": []
   },
@@ -4124,29 +4124,29 @@
   },
   "12800572": {
     "id": 12800572,
-    "name": "战术掩护",
-    "desc": "每遇到1波敌人时，直接释放1次【致幻瓦斯】",
+    "name": "talent_name_12800572",
+    "desc": "talent_desc_12800572",
     "awakeLv": 2,
     "skillParamOffsetList": []
   },
   "12800573": {
     "id": 12800573,
-    "name": "胶质扩散",
-    "desc": "【黏胶炸弹】增强为：\\n投掷3枚黏胶炸弹附着随机敌方，持续5秒\\n持续期间，每秒对敌方目标造成1段伤害并有50%概率随机触发<color=#FF6666>【打断】</color>/<color=#FF6666>【击晕】</color>/<color=#FF6666>【点燃】</color>\\n【黏胶炸弹】为【爆炸物】",
+    "name": "talent_name_12800573",
+    "desc": "talent_desc_12800573",
     "awakeLv": 3,
     "skillParamOffsetList": []
   },
   "12800574": {
     "id": 12800574,
-    "name": "战术潜影",
-    "desc": "【致幻瓦斯】被丢弃入弃牌区时，视为使用\\n使用【致幻瓦斯】后，使我方后排<color=#7AB2FF>【隐形】</color>，持续5秒",
+    "name": "talent_name_12800574",
+    "desc": "talent_desc_12800574",
     "awakeLv": 5,
     "skillParamOffsetList": []
   },
   "12800576": {
     "id": 12800576,
     "name": "talent_name_12800576",
-    "desc": "【致幻瓦斯】持续期间：\\n使我方前排受到的最终伤害降低25%\\n使我方【机械单位】<color=#FF6666>【狂暴】</color>\\n使我方后排造成的最终伤害提高25%",
+    "desc": "talent_desc_12800576",
     "awakeLv": 6,
     "skillParamOffsetList": []
   },
@@ -4159,15 +4159,15 @@
   },
   "12800571": {
     "id": 12800571,
-    "name": "时序沏礼",
-    "desc": "【茶时法则】增强为：\\n抽1张牌，优先带有【使魔】词条的卡牌，基于抽到卡牌的费用，立刻获得等量时间自然回复的费用\\n同时使下1只带有持续时间限制的【使魔】持续时间延长等量时间",
+    "name": "talent_name_12800571",
+    "desc": "talent_desc_12800571",
     "awakeLv": 2,
     "skillParamOffsetList": []
   },
   "12800578": {
     "id": 12800578,
-    "name": "魔宠茶约",
-    "desc": "使用【茶时法则】时，场上每存在1个【使魔】，额外获得0.5点费用",
+    "name": "talent_name_12800578",
+    "desc": "talent_desc_12800578",
     "awakeLv": 3,
     "skillParamOffsetList": []
   },
@@ -4180,15 +4180,15 @@
   },
   "12800580": {
     "id": 12800580,
-    "name": "晶尘流饮",
-    "desc": "【晶簇】生成时，每层回复我方全体3%生命值",
+    "name": "talent_name_12800580",
+    "desc": "talent_desc_12800580",
     "awakeLv": 5,
     "skillParamOffsetList": []
   },
   "12800581": {
     "id": 12800581,
-    "name": "糖霜龙吻",
-    "desc": "【茶晶龙】的攻击速度加倍",
+    "name": "talent_name_12800581",
+    "desc": "talent_desc_12800581",
     "awakeLv": 6,
     "skillParamOffsetList": []
   },
@@ -4201,42 +4201,42 @@
   },
   "12800583": {
     "id": 12800583,
-    "name": "阈限解放",
-    "desc": "开局自身攻击力+200并叠加10层【抑制】\\n每层【抑制】自身攻击力-20，上限10层\\n涟每次使用自身技能牌后移除1层【抑制】，当【抑制】减至0层时涟进入【暴走】状态\\n【暴走】状态期间，每秒移除自身1%生命值，涟无法使用自身技能牌同时将【普通攻击】转化为【碎骨】，每次【碎骨】叠加2层【抑制】\\n【抑制】叠加至10层时，解除【暴走】状态",
+    "name": "talent_name_12800583",
+    "desc": "talent_desc_12800583",
     "awakeLv": 2,
     "skillParamOffsetList": []
   },
   "12800584": {
     "id": 12800584,
-    "name": "“终焉毁灭者”",
-    "desc": "每次使用【崩裂】后额外移除1层【抑制】",
+    "name": "talent_name_12800584",
+    "desc": "talent_desc_12800584",
     "awakeLv": 3,
     "skillParamOffsetList": []
   },
   "12800585": {
     "id": 12800585,
-    "name": "盈蚀协律",
-    "desc": "每移除1层【抑制】，回复自身5%生命值\\n处于【暴走】状态时，每叠加1层【抑制】，获得0.5点费用",
+    "name": "talent_name_12800585",
+    "desc": "talent_desc_12800585",
     "awakeLv": 5,
     "skillParamOffsetList": []
   },
   "12800586": {
     "id": 12800586,
-    "name": "晦夜真瞳",
-    "desc": "【虚影视界】增强为：\\n展开【虚影视界】，持续5秒\\n持续期间：\\n使除自身外随机2名我方<color=#7AB2FF>【隐形】</color>\\n每秒丢弃1张手牌并从牌库或弃牌区将1张【崩裂】加入手牌\\n每秒对随机目标施加1层<color=#B383FF>【注视】</color>\\n每秒每只【瞵鸦】对随机敌方有50%概率随机触发<color=#B383FF>【混乱】</color>/<color=#FF6666>【灼心】</color>",
+    "name": "talent_name_12800586",
+    "desc": "talent_desc_12800586",
     "awakeLv": 6,
     "skillParamOffsetList": []
   },
   "12800399": {
     "id": 12800399,
-    "name": "愚者",
+    "name": "talent_name_12800399",
     "desc": "",
     "awakeLv": 2,
     "skillParamOffsetList": []
   },
   "12800414": {
     "id": 12800414,
-    "name": "力量",
+    "name": "talent_name_12800414",
     "desc": "",
     "awakeLv": 3,
     "skillParamOffsetList": []
@@ -4250,14 +4250,14 @@
   },
   "12800588": {
     "id": 12800588,
-    "name": "星币",
+    "name": "talent_name_12800588",
     "desc": "",
     "awakeLv": 5,
     "skillParamOffsetList": []
   },
   "12800589": {
     "id": 12800589,
-    "name": "世界",
+    "name": "talent_name_12800589",
     "desc": "",
     "awakeLv": 6,
     "skillParamOffsetList": []
