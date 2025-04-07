@@ -52,7 +52,7 @@ export function CharacterWindow({
   const [selectedSlot, setSelectedSlot] = useState<number>(-1)
   const [searchTerm, setSearchTerm] = useState("")
   const [sortBy, setSortBy] = useState<"name" | "rarity">("rarity")
-  const [sortDirection, setSortDirection] = useState<"desc" | "asc">("asc")
+  const [sortDirection, setSortDirection] = useState<"desc" | "asc">("desc")
   const modalRef = useRef<HTMLDivElement>(null)
   const [slotHasExistingCharacter, setSlotHasExistingCharacter] = useState(false)
 
@@ -112,7 +112,7 @@ export function CharacterWindow({
     }
 
     // Apply sort direction
-    return sortDirection === "asc" ? result : -result
+    return sortDirection === "asc" ? -result : result
   })
 
   // Check if any character slot is filled
