@@ -28,6 +28,7 @@ export function useDataLoader() {
             imagesResponse,
             excludeCardResponse,
             equipmentsResponse,
+            homeSkillsResponse, // 홈 스킬 데이터 추가
           ] = await Promise.all([
             fetch("/api/db/char_db.json"),
             fetch("/api/db/card_db.json"),
@@ -37,9 +38,10 @@ export function useDataLoader() {
             fetch("/api/db/img_db.json"),
             fetch("/api/db/temp_exclude_card.json"),
             fetch("/api/db/equip_db.json"),
+            fetch("/api/db/home_skill_db.json"), // 홈 스킬 데이터 추가
           ])
 
-          const [characters, cards, skills, breakthroughs, talents, images, excludeCard, equipments] =
+          const [characters, cards, skills, breakthroughs, talents, images, excludeCard, equipments, homeSkills] =
             await Promise.all([
               charactersResponse.json(),
               cardsResponse.json(),
@@ -49,6 +51,7 @@ export function useDataLoader() {
               imagesResponse.json(),
               excludeCardResponse.json(),
               equipmentsResponse.json(),
+              homeSkillsResponse.json(), // 홈 스킬 데이터 추가
             ])
 
           // 언어 파일 목록 - 언어별로 다른 경로에서 로드 (절대 경로 사용)
@@ -135,6 +138,7 @@ export function useDataLoader() {
             specialSkillIds: excludeCard.specialSkillIds || [],
             equipments,
             equipmentTypes,
+            homeSkills, // 홈 스킬 데이터 추가
           })
         }
       } catch (err) {
