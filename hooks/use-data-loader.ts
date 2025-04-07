@@ -81,16 +81,16 @@ export function useDataLoader() {
 
             // Map quality to rarity for backward compatibility
             const qualityToRarity: Record<string, string> = {
-              OneStar: "R",
-              TwoStar: "R+",
-              ThreeStar: "SR",
-              FourStar: "SR+",
+              oneStar: "N-",
+              twoStar: "N",
+              threeStar: "R",
+              fourStar: "SR",
               FiveStar: "SSR",
               SixStar: "UR",
             }
 
             // Add rarity field for backward compatibility
-            char.rarity = qualityToRarity[char.quality] || "R"
+            char.rarity = qualityToRarity[char.quality] || "N-"
 
             // Add desc field for backward compatibility
             char.desc = char.identity || `char_desc_${charId}`
