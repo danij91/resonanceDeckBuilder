@@ -20,6 +20,7 @@ export interface Character {
   img_card?: string
   desc?: string
   rarity?: string
+  homeSkillList?: Array<{ id: string; resonanceLv: number; param?: number }>
 }
 
 // Card Types
@@ -79,6 +80,14 @@ export interface Talent {
     tag: string
     value_SN: number
   }> | null
+}
+
+// HomeSkill Types
+export interface HomeSkill {
+  id: string
+  name: string
+  desc: string
+  param?: number
 }
 
 // Image Database Type
@@ -150,6 +159,7 @@ export interface Database {
   specialSkillIds?: number[]
   equipments?: Record<string, Equipment>
   equipmentTypes?: EquipmentTypeMapping
+  homeSkills?: Record<string, HomeSkill> // 홈 스킬 데이터 추가
 }
 
 export interface CardExtraInfo {
