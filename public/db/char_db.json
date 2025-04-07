@@ -6638,7 +6638,7 @@
   },
   "10000855": {
     "id": 10000855,
-    "name": "涟",
+    "name": "char_name_10000855",
     "quality": "FiveStar",
     "sideId": 12600023,
     "passiveSkillList": [],
@@ -6701,7 +6701,7 @@
     ],
     "line": 1,
     "subLine": 890,
-    "identity": "无垠号·特殊合同护卫乘员",
+    "identity": "char_identity_10000855",
     "ability": "“专业女仆的秘密能力”",
     "controllerId": 10300566,
     "equipmentSlotList": [
