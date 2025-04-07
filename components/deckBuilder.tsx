@@ -148,26 +148,41 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
 
       // Check if desParamList exists and has items
       if (skill.desParamList && skill.desParamList.length > 0) {
-        const firstParam = skill.desParamList[0]
-        const paramValue = firstParam.param
+        // 모든 #r 태그를 찾아서 배열로 저장
+        const rTags = translatedDesc.match(/#r/g) || []
 
-        // Check if skillParamList exists
-        if (skill.skillParamList) {
-          // Find the skillRate key based on param value
-          const rateKey = `skillRate${paramValue}_SN`
-          if (skill.skillParamList[0][rateKey] !== undefined) {
-            // Calculate the rate value (divide by 10000)
-            let rateValue = Math.floor(skill.skillParamList[0][rateKey] / 10000)
+        // #r 태그가 없으면 원본 반환
+        if (rTags.length === 0) return translatedDesc
 
-            // Add % if isPercent is true
-            if (firstParam.isPercent) {
-              rateValue = `${rateValue}%`
+        let processedDesc = translatedDesc
+        let rTagIndex = 0
+
+        // desParamList의 각 항목을 순회하면서 #r 태그를 순서대로 대체
+        for (let i = 0; i < skill.desParamList.length && rTagIndex < rTags.length; i++) {
+          const param = skill.desParamList[i]
+          const paramValue = param.param
+
+          // Check if skillParamList exists
+          if (skill.skillParamList && skill.skillParamList[0]) {
+            // Find the skillRate key based on param value
+            const rateKey = `skillRate${paramValue}_SN`
+            if (skill.skillParamList[0][rateKey] !== undefined) {
+              // Calculate the rate value (divide by 10000)
+              let rateValue = Math.floor(skill.skillParamList[0][rateKey] / 10000)
+
+              // Add % if isPercent is true
+              if (param.isPercent) {
+                rateValue = `${rateValue}%`
+              }
+
+              // Replace only the first occurrence of #r
+              processedDesc = processedDesc.replace(/#r/, rateValue.toString())
+              rTagIndex++
             }
-
-            // Replace #r with the calculated value
-            return translatedDesc.replace(/#r/g, rateValue.toString())
           }
         }
+
+        return processedDesc
       }
 
       return translatedDesc
@@ -175,8 +190,8 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
     [getTranslatedString],
   )
 
+  // availableCards 부분에서 extraInfo 객체 생성 시 name 처리 수정
   // 스킬 카드 정보 생성 부분 수정
-  // availableCards 부분에서 extraInfo 객체 생성 시 cost 값을 제대로 설정하도록 수정
   const availableCards = useMemo(() => {
     if (!data) return []
 
@@ -246,7 +261,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         for (const sId in data.skills) {
           const skill = data.skills[sId]
           if (skill && skill.cardID && skill.cardID.toString() === id) {
-            // 스킬 이름을 extraInfo.name에 할당
+            // 스킬 이름을 extraInfo.name에 할당 - 번역된 이름 사용
             extraInfo.name = getTranslatedString(skill.name)
             // 스킬 설명을 extraInfo.desc에 할당 - 번역 및 #r 값 교체 적용
             extraInfo.desc = skill.description || ""
