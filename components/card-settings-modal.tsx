@@ -2,8 +2,8 @@
 import { useState } from "react"
 import type { Card, CardExtraInfo } from "../types"
 import { ChevronLeft, ChevronRight, PlusIcon as MoreThan, MinusIcon as LessThan, Equal } from "lucide-react"
-import React from "react"
 import { Modal } from "./ui/modal/Modal"
+import { formatColorText } from "../utils/format-text"
 
 interface CardSettingsModalProps {
   isOpen: boolean
@@ -33,54 +33,6 @@ export function CardSettingsModal({
   const [useType, setUseType] = useState(initialUseType)
   const [useParam, setUseParam] = useState(initialUseParam)
   const [useParamMap, setUseParamMap] = useState<Record<string, number>>(initialUseParamMap)
-
-  // Function to format text with color tags
-  const formatColorText = (text: string) => {
-    if (!text) return ""
-
-    // Remove newlines or replace with spaces
-    const textWithoutNewlines = text.replace(/\n/g, " ")
-
-    // Create a temporary DOM element to parse HTML
-    const tempDiv = document.createElement("div")
-    tempDiv.innerHTML = textWithoutNewlines
-      .replace(/<color=#([A-Fa-f0-9]{6})>/g, '<span style="color: #$1">')
-      .replace(/<\/color>/g, "</span>")
-
-    // Convert the DOM structure back to React elements
-    const convertNodeToReact = (node: Node, index: number): React.ReactNode => {
-      if (node.nodeType === Node.TEXT_NODE) {
-        return node.textContent
-      }
-
-      if (node.nodeType === Node.ELEMENT_NODE) {
-        const element = node as HTMLElement
-        const childElements = Array.from(element.childNodes).map((child, i) => convertNodeToReact(child, i))
-
-        if (element.tagName === "SPAN") {
-          return (
-            <span key={index} style={{ color: element.style.color }}>
-              {childElements}
-            </span>
-          )
-        }
-
-        if (element.tagName === "I") {
-          return <i key={index}>{childElements}</i>
-        }
-
-        if (element.tagName === "B") {
-          return <b key={index}>{childElements}</b>
-        }
-
-        return <React.Fragment key={index}>{childElements}</React.Fragment>
-      }
-
-      return null
-    }
-
-    return Array.from(tempDiv.childNodes).map((node, i) => convertNodeToReact(node, i))
-  }
 
   // 숫자 입력값 변경 핸들러
   const handleParamChange = (optionIndex: number, value: number, minNum: number, maxNum: number) => {
@@ -225,7 +177,7 @@ export function CardSettingsModal({
             </div>
           </div>
 
-          {/* 카드 설명 - 포맷팅 적용 */}
+          {/* 카드 설명 - 포맷팅 ���용 */}
           <div className="text-gray-300 mb-4">{formatColorText(extraInfo.desc)}</div>
         </div>
 

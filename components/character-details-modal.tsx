@@ -1,7 +1,8 @@
 "use client"
 import type { Character, Card } from "../types"
-import React, { useState, useEffect } from "react"
+import { useState, useEffect } from "react"
 import { TabModal } from "./ui/modal/TabModal"
+import { formatColorText } from "../utils/format-text"
 
 interface CharacterDetailsModalProps {
   isOpen: boolean
@@ -113,29 +114,49 @@ export function CharacterDetailsModal({
   const processSkillDescription = (skill: any, description: string) => {
     if (!skill || !description) return description
 
+    // 번역된 설명 가져오기
+    const translatedDesc = getTranslatedString(description)
+
     // Check if desParamList exists and has items
     if (skill.desParamList && skill.desParamList.length > 0) {
-      const firstParam = skill.desParamList[0]
-      const paramValue = firstParam.param
-      // Check if skillParamList exists
-      if (skill.skillParamList) {
-        // Find the skillRate key based on param value
-        const rateKey = `skillRate${paramValue}_SN`
-        if (skill.skillParamList[0][rateKey] !== undefined) {
-          // Calculate the rate value (divide by 10000)
-          let rateValue = Math.floor(skill.skillParamList[0][rateKey] / 10000)
-          // Add % if isPercent is true
-          if (firstParam.isPercent) {
-            rateValue = `${rateValue}%`
-          }
+      // 모든 #r 태그를 찾아서 배열로 저장
+      const rTags = translatedDesc.match(/#r/g) || []
 
-          // Replace #r with the calculated value
-          return description.replace(/#r/g, rateValue.toString())
+      // #r 태그가 없으면 원본 반환
+      if (rTags.length === 0) return translatedDesc
+
+      let processedDesc = translatedDesc
+      let rTagIndex = 0
+
+      // desParamList의 각 항목을 순회하면서 #r 태그를 순서대로 대체
+      for (let i = 0; i < skill.desParamList.length && rTagIndex < rTags.length; i++) {
+        const param = skill.desParamList[i]
+        const paramValue = param.param
+
+        // Check if skillParamList exists
+        if (skill.skillParamList && skill.skillParamList[0]) {
+          // Find the skillRate key based on param value
+          const rateKey = `skillRate${paramValue}_SN`
+          if (skill.skillParamList[0][rateKey] !== undefined) {
+            // Calculate the rate value (divide by 10000)
+            let rateValue = Math.floor(skill.skillParamList[0][rateKey] / 10000)
+
+            // Add % if isPercent is true
+            if (param.isPercent) {
+              rateValue = `${rateValue}%`
+            }
+
+            // Replace only the first occurrence of #r
+            processedDesc = processedDesc.replace(/#r/, rateValue.toString())
+            rTagIndex++
+          }
         }
       }
+
+      return processedDesc
     }
 
-    return description
+    return translatedDesc
   }
 
   // Process homeSkill description to replace %s with param value
@@ -155,52 +176,6 @@ export function CharacterDetailsModal({
   }
 
   // Format text with color tags and other HTML tags
-  const formatColorText = (text: string) => {
-    if (!text) return ""
-
-    // Remove newlines or replace with spaces
-    const textWithoutNewlines = text.replace(/\\n/g, "\n")
-    
-    // Create a temporary DOM element to parse HTML
-    const tempDiv = document.createElement("div")
-    tempDiv.innerHTML = textWithoutNewlines
-      .replace(/<color=#([A-Fa-f0-9]{6})>/g, '<span style="color: #$1">')
-      .replace(/<\/color>/g, "</span>")
-
-    // Convert the DOM structure back to React elements
-    const convertNodeToReact = (node: Node, index: number): React.ReactNode => {
-      if (node.nodeType === Node.TEXT_NODE) {
-        return node.textContent
-      }
-
-      if (node.nodeType === Node.ELEMENT_NODE) {
-        const element = node as HTMLElement
-        const childElements = Array.from(element.childNodes).map((child, i) => convertNodeToReact(child, i))
-
-        if (element.tagName === "SPAN") {
-          return (
-            <span key={index} style={{ color: element.style.color }}>
-              {childElements}
-            </span>
-          )
-        }
-
-        if (element.tagName === "I") {
-          return <i key={index}>{childElements}</i>
-        }
-
-        if (element.tagName === "B") {
-          return <b key={index}>{childElements}</b>
-        }
-
-        return <React.Fragment key={index}>{childElements}</React.Fragment>
-      }
-
-      return null
-    }
-
-    return Array.from(tempDiv.childNodes).map((node, i) => convertNodeToReact(node, i))
-  }
 
   // 각성 항목 선택 핸들러
   const handleAwakeningSelect = (stage: number) => {

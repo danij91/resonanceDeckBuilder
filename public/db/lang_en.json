@@ -6163,5 +6163,14 @@
   "talent_name_12800399": "愚者",
   "talent_name_12800414": "力量",
   "talent_name_12800588": "星币",
-  "talent_name_12800589": "世界"
+  "talent_name_12800589": "世界",
+  "skill_leaderCardConditionDesc_12302002": "冷却时间30秒，每次使用红卡/绿卡/紫卡，冷却缩短5秒",
+  "skill_leaderCardConditionDesc_12302038": "冷却时间30秒，每次获得带有<color=#FFB800>【引雷】</color>/<color=#FFB800>【落雷】</color>/<color=#FFB800>【轰雷】</color>/<color=#FFB800>【轰顶】</color>词条的卡牌，缩短5秒",
+  "skill_leaderCardConditionDesc_12302070": "冷却时间25秒，每次使用带有<color=#FFB800>【引雷】</color>/<color=#FFB800>【落雷】</color>/<color=#FFB800>【轰雷】</color>/<color=#FFB800>【轰顶】</color>词条的卡牌，缩短5秒",
+  "skill_leaderCardConditionDesc_12302084": "冷却时间30秒，每次获得红卡/绿卡/紫卡，冷却缩短5秒",
+  "skill_leaderCardConditionDesc_12302187": "冷却时间50秒，每次获得红卡/黄卡/紫卡或使用带有<color=#FF6666>【斩裂】</color>词条的卡牌，冷却缩短5秒；每次生成黑卡，冷却缩短5秒",
+  "skill_leaderCardConditionDesc_12302214": "冷却时间35秒，每次有卡牌生成时，冷却缩短5秒",
+  "skill_leaderCardConditionDesc_12302948": "冷却时间30秒，每次获得带有【爆炸物】/【机械单位】词条的卡牌，冷却缩短3秒",
+  "skill_leaderCardConditionDesc_12303072": "冷却时间30秒，每次使用带有<color=#FF6666>【崩坏】</color>/<color=#FF6666>【重伤】</color>/<color=#B383FF>【混乱】</color>/<color=#FF6666>【灼心】</color>/【注视】词条的卡牌，冷却缩短5秒",
+  "skill_leaderCardConditionDesc_12303050": "冷却时间30秒，每次使用带有<color=#FF6666>【崩坏】</color>/<color=#FF6666>【重伤】</color>/<color=#B383FF>【混乱】</color>/<color=#FF6666>【灼心】</color>/【注视】词条的卡牌，冷却缩短5秒"
 }
