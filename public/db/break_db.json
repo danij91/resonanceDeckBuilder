@@ -5304,7 +5304,7 @@
   "12100707": {
     "id": 12100707,
     "name": "break_name_12100707",
-    "desc": "“Just you and me\r使用【就是这样】后，每秒获得1点费用，持续5秒",
+    "desc": "break_desc_12100707",
     "attributeList": []
   },
   "12100708": {
@@ -5631,7 +5631,7 @@
   },
   "12100736": {
     "id": 12100736,
-    "name": "MIX",
+    "name": "break_name_12100736",
     "desc": "break_desc_12100736",
     "attributeList": []
   },
@@ -6748,14 +6748,14 @@
   },
   "12100838": {
     "id": 12100838,
-    "name": "青尾荡涤",
-    "desc": "【彗尾姬】跟随期间，目标队友造成的最终伤害提高20%",
+    "name": "break_name_12100838",
+    "desc": "break_desc_12100838",
     "attributeList": []
   },
   "12100837": {
     "id": 12100837,
-    "name": "琥珀茶漩",
-    "desc": "使用【茶时法则】抽到的卡牌，卡牌持有者攻击力+3%，上限60%",
+    "name": "break_name_12100837",
+    "desc": "break_desc_12100837",
     "attributeList": []
   },
   "12100839": {
@@ -6777,26 +6777,26 @@
   },
   "12100840": {
     "id": 12100840,
-    "name": "晶核溯光",
-    "desc": "【晶簇】上限+4",
+    "name": "break_name_12100840",
+    "desc": "break_desc_12100840",
     "attributeList": []
   },
   "12100841": {
     "id": 12100841,
-    "name": "绀夜温沏",
-    "desc": "【热应力】/【冷缩力】层数越高，敌方受到的火焰/冰冻伤害越高，最高50%",
+    "name": "break_name_12100841",
+    "desc": "break_desc_12100841",
     "attributeList": []
   },
   "12100842": {
     "id": 12100842,
-    "name": "“黑羽凝视者”",
-    "desc": "【注视】可对我方使用",
+    "name": "break_name_12100842",
+    "desc": "break_desc_12100842",
     "attributeList": []
   },
   "12100843": {
     "id": 12100843,
-    "name": "夜啼悲歌",
-    "desc": "每次我方造成<color=#FF6666>【崩坏】</color>/<color=#FF6666>【重伤】</color>/<color=#B383FF>【混乱】</color>/<color=#FF6666>【灼心】</color>/<color=#B383FF>【注视】</color>时，自身攻击力+0.5%，上限60%",
+    "name": "break_name_12100843",
+    "desc": "break_desc_12100843",
     "attributeList": []
   },
   "12100844": {
@@ -6824,14 +6824,14 @@
   },
   "12100846": {
     "id": 12100846,
-    "name": "“永夜观测者”",
-    "desc": "我方场上每存在1只【瞵鸦】，手牌补充冷却时间缩短0.33秒，可叠加\\n敌方场上每存在1只【瞵鸦】，每秒获得0.1点费用，可叠加",
+    "name": "break_name_12100846",
+    "desc": "break_desc_12100846",
     "attributeList": []
   },
   "12100847": {
     "id": 12100847,
-    "name": "PPPH",
-    "desc": "每获得3张自身技能牌，获得1点费用",
+    "name": "break_name_12100847",
+    "desc": "break_desc_12100847",
     "attributeList": []
   },
   "12100848": {
@@ -6842,13 +6842,13 @@
   },
   "12100849": {
     "id": 12100849,
-    "name": "隐者",
+    "name": "break_name_12100849",
     "desc": "",
     "attributeList": []
   },
   "12100850": {
     "id": 12100850,
-    "name": "恋人",
+    "name": "break_name_12100850",
     "desc": "",
     "attributeList": []
   },
@@ -6871,13 +6871,13 @@
   },
   "12100852": {
     "id": 12100852,
-    "name": "节制",
+    "name": "break_name_12100852",
     "desc": "",
     "attributeList": []
   },
   "12100853": {
     "id": 12100853,
-    "name": "宝剑",
+    "name": "break_name_12100853",
     "desc": "",
     "attributeList": []
   }
