@@ -1326,7 +1326,7 @@
   "10600121": {
     "id": 10600121,
     "idCN": "00原版/05五星/星花/A-0",
-    "name": "TATAKAE",
+    "name": "card_name_10600121",
     "color": "Purple",
     "cost_SN": 0,
     "cardType": "Normal",
@@ -1346,7 +1346,7 @@
   "10600122": {
     "id": 10600122,
     "idCN": "00原版/05五星/星花/A-1",
-    "name": "TATAKAU!",
+    "name": "card_name_10600122",
     "color": "Red",
     "cost_SN": 10000,
     "cardType": "Derive",
@@ -1356,7 +1356,7 @@
   "10600123": {
     "id": 10600123,
     "idCN": "00原版/05五星/星花/A-2",
-    "name": "TATAKAU!!",
+    "name": "card_name_10600123",
     "color": "Red",
     "cost_SN": 10000,
     "cardType": "Derive",
@@ -1366,7 +1366,7 @@
   "10600124": {
     "id": 10600124,
     "idCN": "00原版/05五星/星花/A-3",
-    "name": "TATAKAU!!!",
+    "name": "card_name_10600124",
     "color": "Red",
     "cost_SN": 10000,
     "cardType": "Derive",
@@ -1426,7 +1426,7 @@
   "10600077": {
     "id": 10600077,
     "idCN": "00原版/05五星/多萝西/B",
-    "name": "Bingo!",
+    "name": "card_name_10600077",
     "color": "Red",
     "cost_SN": 30000,
     "cardType": "Normal",
@@ -5947,7 +5947,7 @@
   "10600442": {
     "id": 10600442,
     "idCN": "00原版/05五星/奥莉薇恩/A",
-    "name": "茶时法则",
+    "name": "card_name_10600442",
     "color": "Yellow",
     "cost_SN": 10000,
     "cardType": "Normal",
@@ -5957,7 +5957,7 @@
   "10600443": {
     "id": 10600443,
     "idCN": "00原版/05五星/奥莉薇恩/B",
-    "name": "拭尘契约",
+    "name": "card_name_10600443",
     "color": "Blue",
     "cost_SN": 30000,
     "cardType": "Normal",
@@ -5980,7 +5980,7 @@
   "10600444": {
     "id": 10600444,
     "idCN": "00原版/05五星/奥莉薇恩/S",
-    "name": "鎏晶茶仪",
+    "name": "card_name_10600444",
     "color": "Purple",
     "cost_SN": 40000,
     "cardType": "Normal",
@@ -5990,7 +5990,7 @@
   "10600445": {
     "id": 10600445,
     "idCN": "00原版/05五星/奥莉薇恩/A共振一",
-    "name": "茶时法则",
+    "name": "card_name_10600445",
     "color": "Yellow",
     "cost_SN": 10000,
     "cardType": "Normal",
@@ -6000,7 +6000,7 @@
   "10600447": {
     "id": 10600447,
     "idCN": "00原版/05五星/涟/A",
-    "name": "崩裂",
+    "name": "card_name_10600447",
     "color": "Red",
     "cost_SN": 20000,
     "cardType": "Normal",
@@ -6010,7 +6010,7 @@
   "10600448": {
     "id": 10600448,
     "idCN": "00原版/05五星/涟/B",
-    "name": "注视",
+    "name": "card_name_10600448",
     "color": "Purple",
     "cost_SN": 30000,
     "cardType": "Normal",
@@ -6025,7 +6025,7 @@
   "10600449": {
     "id": 10600449,
     "idCN": "00原版/05五星/涟/S",
-    "name": "虚影视界",
+    "name": "card_name_10600449",
     "color": "Purple",
     "cost_SN": 40000,
     "cardType": "Normal",
@@ -6035,7 +6035,7 @@
   "10600446": {
     "id": 10600446,
     "idCN": "00原版/05五星/涟/S_共振5",
-    "name": "虚影视界",
+    "name": "card_name_10600446",
     "color": "Purple",
     "cost_SN": 40000,
     "cardType": "Normal",
@@ -6045,7 +6045,7 @@
   "10600450": {
     "id": 10600450,
     "idCN": "00原版/05五星/涟/B_觉醒2",
-    "name": "注视",
+    "name": "card_name_10600450",
     "color": "Purple",
     "cost_SN": 30000,
     "cardType": "Normal",
@@ -6072,7 +6072,7 @@
   "10600451": {
     "id": 10600451,
     "idCN": "00原版/05五星/马吉拉·星仪/S",
-    "name": "命运之轮",
+    "name": "card_name_10600451",
     "color": "Purple",
     "cost_SN": 50000,
     "cardType": "Normal",
@@ -6082,7 +6082,7 @@
   "10600452": {
     "id": 10600452,
     "idCN": "00原版/05五星/马吉拉·星仪/B",
-    "name": "塔",
+    "name": "card_name_10600452",
     "color": "Purple",
     "cost_SN": 30000,
     "cardType": "Normal",
@@ -6092,7 +6092,7 @@
   "10600453": {
     "id": 10600453,
     "idCN": "00原版/05五星/马吉拉·星仪/A-3",
-    "name": "太阳",
+    "name": "card_name_10600453",
     "color": "Red",
     "cost_SN": 10000,
     "cardType": "UseOnce",
@@ -6102,7 +6102,7 @@
   "10600454": {
     "id": 10600454,
     "idCN": "00原版/05五星/马吉拉·星仪/A-2",
-    "name": "月亮",
+    "name": "card_name_10600454",
     "color": "Blue",
     "cost_SN": 10000,
     "cardType": "UseOnce",
@@ -6112,7 +6112,7 @@
   "10600455": {
     "id": 10600455,
     "idCN": "00原版/05五星/马吉拉·星仪/A-1",
-    "name": "星星",
+    "name": "card_name_10600455",
     "color": "Yellow",
     "cost_SN": 10000,
     "cardType": "UseOnce",
@@ -6122,7 +6122,7 @@
   "10600456": {
     "id": 10600456,
     "idCN": "00原版/05五星/马吉拉·星仪/A-0",
-    "name": "女祭司",
+    "name": "card_name_10600456",
     "color": "Purple",
     "cost_SN": 20000,
     "cardType": "Normal",
