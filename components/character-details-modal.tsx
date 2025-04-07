@@ -1,6 +1,6 @@
 "use client"
 import type { Character, Card } from "../types"
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { TabModal } from "./ui/modal/TabModal"
 
 interface CharacterDetailsModalProps {
@@ -12,8 +12,8 @@ interface CharacterDetailsModalProps {
   getSkill?: (skillId: number) => any
   data?: any
   initialTab?: "info" | "talents" | "breakthroughs"
-  selectedAwakeningStage?: number | null // 선택된 각성 단계 추가
-  onAwakeningSelect?: (stage: number | null) => void // 각성 선택 콜백 추가
+  selectedAwakeningStage?: number | null
+  onAwakeningSelect?: (stage: number | null) => void
 }
 
 export function CharacterDetailsModal({
@@ -28,6 +28,71 @@ export function CharacterDetailsModal({
   selectedAwakeningStage = null,
   onAwakeningSelect,
 }: CharacterDetailsModalProps) {
+  // 홈 스킬 데이터를 저장할 상태 추가
+  const [homeSkills, setHomeSkills] = useState<any[]>([])
+
+  // 컴포넌트 마운트 시 홈 스킬 데이터 로드
+  useEffect(() => {
+    // 캐릭터에 homeSkillList가 있는 경우에만 처리
+    if (character && character.homeSkillList && data) {
+      const loadHomeSkills = async () => {
+        try {
+          // home_skill_db.json 데이터 로드 (이미 data에 있다면 그것을 사용)
+          let homeSkillDb = data.homeSkills
+
+          // data에 homeSkills가 없다면 API로 가져오기 시도
+          if (!homeSkillDb) {
+            try {
+              const response = await fetch("/api/db/home_skill_db.json")
+              homeSkillDb = await response.json()
+            } catch (error) {
+              console.error("Failed to load home skill data:", error)
+              return
+            }
+          }
+
+          // homeSkillType별로 param 값을 누적하기 위한 맵
+          const accumulatedParams: Record<string, number> = {}
+
+          // 캐릭터의 homeSkillList에서 정보 추출
+          const skills = character.homeSkillList
+            .map((homeSkill: any) => {
+              const skillData = homeSkillDb[homeSkill.id]
+              if (!skillData) return null
+
+              // param 값이 있으면 저장
+              const paramValue = homeSkill.param || skillData?.param || 0
+
+              // homeSkillType이 있으면 누적 값 계산
+              const homeSkillType = skillData.homeSkillType || homeSkill.homeSkillType || homeSkill.id
+
+              // 이전에 같은 타입이 있었다면 누적
+              if (accumulatedParams[homeSkillType] !== undefined) {
+                accumulatedParams[homeSkillType] += paramValue
+              } else {
+                accumulatedParams[homeSkillType] = paramValue
+              }
+
+              return {
+                ...homeSkill,
+                ...skillData,
+                paramValue,
+                homeSkillType,
+                accumulatedValue: accumulatedParams[homeSkillType],
+              }
+            })
+            .filter(Boolean)
+
+          setHomeSkills(skills)
+        } catch (error) {
+          console.error("Error processing home skills:", error)
+        }
+      }
+
+      loadHomeSkills()
+    }
+  }, [character, data])
+
   // Function to get rarity badge color
   const getRarityColor = (rarity: string) => {
     switch (rarity) {
@@ -65,7 +130,7 @@ export function CharacterDetailsModal({
           }
 
           // Replace #r with the calculated value
-          return description.replace(/#r/g, rateValue.toString()) 
+          return description.replace(/#r/g, rateValue.toString())
         }
       }
     }
@@ -73,13 +138,29 @@ export function CharacterDetailsModal({
     return description
   }
 
+  // Process homeSkill description to replace %s with param value
+  const processHomeSkillDesc = (desc: string, paramValue: number) => {
+    if (!desc) return desc
+
+    // %s% 패턴을 찾아 100을 곱한 값으로 교체 (예: 0.2 -> 20%)
+    let processedDesc = desc.replace(/%s%/g, () => {
+      const percentValue = Math.round(paramValue * 100)
+      return `${percentValue}`
+    })
+
+    // 일반 %s 패턴을 찾아 값으로 교체
+    processedDesc = processedDesc.replace(/%s/g, paramValue.toString())
+
+    return processedDesc
+  }
+
   // Format text with color tags and other HTML tags
   const formatColorText = (text: string) => {
     if (!text) return ""
 
     // Remove newlines or replace with spaces
-    const textWithoutNewlines = text.replace(/\n/g, " ")
-
+    const textWithoutNewlines = text.replace(/\\n/g, "\n")
+    
     // Create a temporary DOM element to parse HTML
     const tempDiv = document.createElement("div")
     tempDiv.innerHTML = textWithoutNewlines
@@ -131,6 +212,14 @@ export function CharacterDetailsModal({
         onAwakeningSelect(stage)
       }
     }
+  }
+
+  // 이미지 URL 가져오기 함수
+  const getImageUrl = (type: "talent" | "break", id: number) => {
+    if (!data || !data.images) return null
+
+    const imageKey = `${type}_${id}`
+    return data.images[imageKey] || null
   }
 
   return (
@@ -201,25 +290,72 @@ export function CharacterDetailsModal({
           content: (
             <div className="space-y-3 p-4">
               {character.talentList && character.talentList.length > 0 ? (
-                character.talentList.map((talent, index) => (
-                  <div key={`talent-${index}`} className="p-3 bg-black bg-opacity-50 rounded-lg">
-                    <div className="flex">
-                      <div className="w-8 h-8 bg-blue-600 rounded-full flex-shrink-0 flex items-center justify-center mr-3">
-                        <span className="text-white font-bold">{index + 1}</span>
-                      </div>
-                      <div className="flex-grow">
-                        <div className="font-medium neon-text">
-                          {getTranslatedString(`talent_name_${talent.talentId}`) || `Talent ${talent.talentId}`}
+                character.talentList.map((talent, index) => {
+                  // 공명 이미지 URL 가져오기
+                  const talentImageUrl = getImageUrl("talent", talent.talentId)
+
+                  // 해당 공명 단계에 맞는 홈 스킬 찾기
+                  const relatedHomeSkills = homeSkills.filter((skill) => skill.resonanceLv === index + 1)
+
+                  return (
+                    <div key={`talent-${index}`} className="p-3 bg-black bg-opacity-50 rounded-lg">
+                      <div className="flex">
+                        {/* 공명 이미지 또는 번호 표시 */}
+                        <div className="w-12 h-12 flex-shrink-0 mr-3 rounded-md overflow-hidden flex items-center justify-center">
+                          {talentImageUrl ? (
+                            <img
+                              src={talentImageUrl || "/placeholder.svg"}
+                              alt={`Talent ${index + 1}`}
+                              className="w-full h-full object-cover"
+                            />
+                          ) : (
+                            <span className="text-white font-bold">{index + 1}</span>
+                          )}
                         </div>
-                        <div className="text-sm text-gray-400 mt-1">
-                          {formatColorText(
-                            getTranslatedString(`talent_desc_${talent.talentId}`) || "No description available",
+
+                        <div className="flex-grow">
+                          <div className="flex items-center">
+                            <div className="font-medium neon-text">
+                              {data?.talents && data.talents[talent.talentId]
+                                ? getTranslatedString(data.talents[talent.talentId].name)
+                                : `Talent ${talent.talentId}`}
+                            </div>
+                            {/* 공명 단계 표시 */}
+                            <div className="ml-2 text-xs px-2 py-0.5 bg-gray-600 rounded-full text-white">
+                              {"Lv."} {index + 1}
+                            </div>
+                          </div>
+                          <div className="text-sm text-gray-400 mt-1">
+                            {formatColorText(
+                              data?.talents && data.talents[talent.talentId]
+                                ? getTranslatedString(data.talents[talent.talentId].desc)
+                                : "No description available",
+                            )}
+                          </div>
+
+                          {/* 관련 홈 스킬 표시 */}
+                          {relatedHomeSkills.length > 0 && (
+                            <div className="mt-2 border-t border-gray-700 pt-2">
+                              {relatedHomeSkills.map((skill, skillIndex) => (
+                                <div key={`home-skill-${skillIndex}`} className="text-xs text-gray-300 ml-2 mb-1">
+                                  <span className="font-medium text-white">
+                                    {getTranslatedString(skill.name) || skill.name}:
+                                  </span>{" "}
+                                  {formatColorText(
+                                    processHomeSkillDesc(
+                                      getTranslatedString(skill.desc) || skill.desc,
+                                      skill.accumulatedValue || skill.paramValue,
+                                    ),
+                                  )}
+                                </div>
+                              ))}
+                            </div>
                           )}
                         </div>
                       </div>
                     </div>
-                  </div>
-                ))
+                  )
+                })
               ) : (
                 <div className="text-gray-400 text-center p-4">
                   {getTranslatedString("no_talents") || "No talents available"}
@@ -237,39 +373,64 @@ export function CharacterDetailsModal({
                 // 각성 항목 선택 가능하도록 수정
                 character.breakthroughList
                   .slice(1)
-                  .map((breakthrough, index) => (
-                    <div
-                      key={`breakthrough-${index}`}
-                      className={`p-3 bg-black bg-opacity-50 rounded-lg cursor-pointer transition-all duration-200 ${
-                        selectedAwakeningStage === index + 1
-                          ? "border-2 border-blue-500 shadow-lg shadow-blue-500/50"
-                          : "hover:bg-black hover:bg-opacity-70"
-                      }`}
-                      onClick={() => handleAwakeningSelect(index + 1)}
-                    >
-                      <div className="flex">
-                        <div
-                          className={`w-8 h-8 ${
-                            selectedAwakeningStage === index + 1 ? "bg-blue-600" : "bg-purple-600"
-                          } rounded-full flex-shrink-0 flex items-center justify-center mr-3`}
-                        >
-                          <span className="text-white font-bold">{index + 1}</span>
-                        </div>
-                        <div className="flex-grow">
-                          <div className="font-medium neon-text">
-                            {getTranslatedString(`break_name_${breakthrough.breakthroughId}`) ||
-                              `Breakthrough ${breakthrough.breakthroughId}`}
-                          </div>
-                          <div className="text-sm text-gray-400 mt-1">
-                            {formatColorText(
-                              getTranslatedString(`break_desc_${breakthrough.breakthroughId}`) ||
-                                "No description available",
+                  .map((breakthrough, index) => {
+                    // 각성 이미지 URL 가져오기
+                    const breakImageUrl = getImageUrl("break", breakthrough.breakthroughId)
+
+                    return (
+                      <div
+                        key={`breakthrough-${index}`}
+                        className={`p-3 bg-black bg-opacity-50 rounded-lg cursor-pointer transition-all duration-200 ${
+                          selectedAwakeningStage !== null && index + 1 <= selectedAwakeningStage
+                            ? "border-2 border-blue-500 shadow-lg shadow-blue-500/50"
+                            : "hover:bg-black hover:bg-opacity-70"
+                        }`}
+                        onClick={() => handleAwakeningSelect(index + 1)}
+                      >
+                        <div className="flex">
+                          {/* 각성 이미지 또는 번호 표시 */}
+                          <div
+                            className={`w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center mr-3 overflow-hidden ${
+                              selectedAwakeningStage !== null && index + 1 <= selectedAwakeningStage
+                                ? "bg-purple-600"
+                                : ""
+                            }`}
+                          >
+                            {breakImageUrl ? (
+                              <img
+                                src={breakImageUrl || "/placeholder.svg"}
+                                alt={`Breakthrough ${index + 1}`}
+                                className="w-full h-full object-cover"
+                              />
+                            ) : (
+                              <span className="text-white font-bold">{index + 1}</span>
                             )}
+                          </div>
+
+                          <div className="flex-grow">
+                            <div className="flex items-center">
+                              <div className="font-medium neon-text">
+                                {data?.breakthroughs && data.breakthroughs[breakthrough.breakthroughId]
+                                  ? getTranslatedString(data.breakthroughs[breakthrough.breakthroughId].name)
+                                  : `Breakthrough ${breakthrough.breakthroughId}`}
+                              </div>
+                              {/* 각성 단계 표시 */}
+                              <div className="ml-2 text-xs px-2 py-0.5 bg-gray-600 rounded-full text-white">
+                                {"Lv."} {index + 1}
+                              </div>
+                            </div>
+                            <div className="text-sm text-gray-400 mt-1">
+                              {formatColorText(
+                                data?.breakthroughs && data.breakthroughs[breakthrough.breakthroughId]
+                                  ? getTranslatedString(data.breakthroughs[breakthrough.breakthroughId].desc)
+                                  : "No description available",
+                              )}
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  ))
+                    )
+                  })
               ) : (
                 <div className="text-gray-400 text-center p-4">
                   {getTranslatedString("no_breakthroughs") || "No breakthroughs available"}
