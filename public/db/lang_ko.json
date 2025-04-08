@@ -5793,5 +5793,10 @@
   "home_skill_name_83900239": "지정된 특산품 거래",
   "home_skill_desc_83900239": "구매 가능한 트위드 자켓 수량+%s%%",
   "home_skill_name_83900240": "지정된 특산품 거래",
-  "home_skill_name_83900241": "지정된 거래품 거래+"
+  "home_skill_name_83900241": "지정된 거래품 거래+",
+  "save_deck": "저장",
+  "load_deck": "불러오기",
+  "new_deck": "새로 만들기",
+  "deck_selection": "덱 선택",
+  "deck_name": "덱 제목"
 }

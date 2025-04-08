@@ -5793,5 +5793,10 @@
   "home_skill_name_83900240": "指定交易品买卖",
   "home_skill_desc_83900240": "游乐城主题配饰和纪念卫衣可买入数量+%s%%",
   "home_skill_name_83900241": "指定交易品买卖+",
-  "home_skill_desc_83900241": "游乐城主题配饰和纪念卫衣可买入数量+%s%%"
+  "home_skill_desc_83900241": "游乐城主题配饰和纪念卫衣可买入数量+%s%%",
+  "save_deck": "保存",
+  "load_deck": "加载",
+  "new_deck": "新建",
+  "deck_selection": "选择卡组",
+  "deck_name": "卡组名称"
 }
