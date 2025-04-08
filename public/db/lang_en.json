@@ -4147,5 +4147,10 @@
   "home_skill_name_83900239": "Designated Goods Trading",
   "home_skill_desc_83900239": "Available quantity of tweed jackets +%s%%.",
   "home_skill_name_83900240": "Designated Goods Trading",
-  "home_skill_name_83900241": "Designated Goods Trading +"
+  "home_skill_name_83900241": "Designated Goods Trading +",
+  "save_deck": "Save",
+  "load_deck": "Load",
+  "new_deck": "New Deck",
+  "deck_selection": "Deck Selection",
+  "deck_name": "Deck Name"
 }
