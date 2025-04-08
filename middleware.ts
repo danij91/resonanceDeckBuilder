@@ -2,7 +2,7 @@ import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
 
 // 지원하는 언어 목록
-const supportedLanguages = ["en", "ko", "jp", "cn"]
+const supportedLanguages = ["en", "ko", "jp", "cn", "tw"]
 const defaultLanguage = "en"
 
 export function middleware(request: NextRequest) {
@@ -58,4 +58,3 @@ export const config = {
     "/((?!api|_next/static|_next/image|favicon.ico).*)",
   ],
 }
-
