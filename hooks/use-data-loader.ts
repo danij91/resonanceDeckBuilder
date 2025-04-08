@@ -55,7 +55,7 @@ export function useDataLoader() {
             ])
 
           // 언어 파일 목록 - 언어별로 다른 경로에서 로드 (절대 경로 사용)
-          const supportedLanguages = ["ko", "en", "jp", "cn"]
+          const supportedLanguages = ["ko", "en", "jp", "cn", "tw"]
           const languagePromises = supportedLanguages.map((lang) =>
             fetch(`/api/db/lang_${lang}.json`).then((res) => res.json()),
           )
@@ -153,4 +153,3 @@ export function useDataLoader() {
 
   return { data, loading, error }
 }
-
