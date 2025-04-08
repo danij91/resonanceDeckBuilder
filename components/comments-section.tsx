@@ -42,6 +42,7 @@ function mapToLocale(lang: string): string {
     zh: "zh-CN",
     jp: "ja-JP",
     ja: "ja-JP",
+    tw: "zh-TW", // 대만어 추가
   }
 
   return localeMap[lang] || "en-US"
@@ -233,14 +234,14 @@ export function CommentsSection({ currentLanguage }: CommentsProps) {
     // 수정 모드일 경우: editContent 확인
     if (editingCommentId) {
       if (editContent.trim() === "") return
-  
+
       try {
         const commentRef = doc(db, "comments", editingCommentId)
         await updateDoc(commentRef, {
           content: editContent.trim(),
           lastEdited: serverTimestamp(),
         })
-  
+
         setEditingCommentId(null)
         setEditContent("")
         setNewComment("")
@@ -248,20 +249,20 @@ export function CommentsSection({ currentLanguage }: CommentsProps) {
       } catch (error) {
         console.error("Error updating comment:", error)
       }
-  
+
       return
     }
-  
+
     // 새 댓글 작성일 경우: newComment 확인
     if (newComment.trim() === "" || !canComment) return
-  
+
     try {
       await addDoc(collection(db, "comments"), {
         content: newComment.trim(),
         userId,
         createdAt: serverTimestamp(),
       })
-  
+
       const now = Date.now()
       localStorage.setItem("lastCommentTime", now.toString())
       setLastCommentTime(now)
@@ -272,7 +273,6 @@ export function CommentsSection({ currentLanguage }: CommentsProps) {
       console.error("Error adding comment:", error)
     }
   }
-  
 
   // 댓글 삭제
   const deleteComment = async (commentId: string) => {
@@ -500,4 +500,3 @@ export function CommentsSection({ currentLanguage }: CommentsProps) {
     </section>
   )
 }
-
