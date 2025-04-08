@@ -41,7 +41,6 @@ function mapToLocale(lang: string): string {
     cn: "zh-CN",
     zh: "zh-CN",
     jp: "ja-JP",
-    ja: "ja-JP",
     tw: "zh-TW", // 대만어 추가
   }
 

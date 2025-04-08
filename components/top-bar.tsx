@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState, useEffect, useRef } from "react"
-import { Globe, Download, Upload, RefreshCw, Share2, HelpCircle } from "lucide-react"
+import { Globe, Download, Upload, RefreshCw, Share2, HelpCircle, Save, FolderOpen } from "lucide-react"
 import { StylizedTitle } from "./stylized-title"
 import { HelpModal } from "./ui/modal/HelpModal"
 import { useLanguage } from "../contexts/language-context"
@@ -14,10 +14,12 @@ interface TopBarProps {
   onImport: () => Promise<void>
   onExport: () => void
   onShare: () => void
+  onSave: () => void // 추가: 저장 버튼 핸들러
+  onLoad: () => void // 추가: 불러오기 버튼 핸들러
   contentRef: React.RefObject<HTMLElement> // 추가: 캡처할 컨텐츠 참조
 }
 
-export function TopBar({ onClear, onImport, onExport, onShare, contentRef }: TopBarProps) {
+export function TopBar({ onClear, onImport, onExport, onShare, onSave, onLoad, contentRef }: TopBarProps) {
   const { currentLanguage, supportedLanguages, getTranslatedString, changeLanguage, isChangingLanguage } = useLanguage()
 
   const [showLanguageMenu, setShowLanguageMenu] = useState(false)
@@ -176,6 +178,24 @@ export function TopBar({ onClear, onImport, onExport, onShare, contentRef }: Top
                 <Share2 className={iconClass} />
               </button>
 
+              {/* Save Button - 추가 */}
+              <button
+                onClick={onSave}
+                className={`${buttonBaseClass} save-button`}
+                aria-label={getTranslatedString("save_deck") || "Save Deck"}
+              >
+                <Save className={iconClass} />
+              </button>
+
+              {/* Load Button - 추가 */}
+              <button
+                onClick={onLoad}
+                className={`${buttonBaseClass} load-button`}
+                aria-label={getTranslatedString("load_deck") || "Load Deck"}
+              >
+                <FolderOpen className={iconClass} />
+              </button>
+
               {/* Clear Button */}
               <button
                 onClick={onClear}
@@ -228,4 +248,3 @@ export function TopBar({ onClear, onImport, onExport, onShare, contentRef }: Top
     </>
   )
 }
-
