@@ -5793,5 +5793,10 @@
   "home_skill_name_83900239": "指定交易品買賣",
   "home_skill_desc_83900239": "花呢上衣可買入數量+%s%%",
   "home_skill_name_83900240": "指定交易品買賣",
-  "home_skill_name_83900241": "指定交易品買賣+"
+  "home_skill_name_83900241": "指定交易品買賣+",
+  "save_deck": "保存",
+  "load_deck": "載入",
+  "new_deck": "新建",
+  "deck_selection": "選擇卡組",
+  "deck_name": "卡組名稱"
 }
