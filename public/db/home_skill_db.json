@@ -577,7 +577,7 @@
     "id": 83900084,
     "name": "home_skill_name_83900084",
     "desc": "home_skill_desc_83900084",
-    "param": 4,
+    "param": 8,
     "homeSkillType": "AddEnergyMax"
   },
   "83900085": {
@@ -605,14 +605,14 @@
     "id": 83900089,
     "name": "home_skill_name_83900089",
     "desc": "home_skill_desc_83900089",
-    "param": 4,
+    "param": 8,
     "homeSkillType": "AddEnergyMax"
   },
   "83900090": {
     "id": 83900090,
     "name": "home_skill_name_83900090",
     "desc": "home_skill_desc_83900090",
-    "param": 4,
+    "param": 8,
     "homeSkillType": "AddEnergyMax"
   },
   "83900091": {
@@ -633,7 +633,7 @@
     "id": 83900093,
     "name": "home_skill_name_83900093",
     "desc": "home_skill_desc_83900093",
-    "param": 4,
+    "param": 8,
     "homeSkillType": "AddEnergyMax"
   },
   "83900094": {
@@ -1053,21 +1053,21 @@
     "id": 83900153,
     "name": "home_skill_name_83900153",
     "desc": "home_skill_desc_83900153",
-    "param": 4,
+    "param": 8,
     "homeSkillType": "AddEnergyMax"
   },
   "83900154": {
     "id": 83900154,
     "name": "home_skill_name_83900154",
     "desc": "home_skill_desc_83900154",
-    "param": 4,
+    "param": 8,
     "homeSkillType": "AddEnergyMax"
   },
   "83900155": {
     "id": 83900155,
     "name": "home_skill_name_83900155",
     "desc": "home_skill_desc_83900155",
-    "param": 4,
+    "param": 8,
     "homeSkillType": "AddEnergyMax"
   },
   "83900156": {
@@ -1242,7 +1242,7 @@
     "id": 83900178,
     "name": "home_skill_name_83900178",
     "desc": "home_skill_desc_83900178",
-    "param": 4,
+    "param": 8,
     "homeSkillType": "AddEnergyMax"
   },
   "83900179": {
@@ -1480,7 +1480,7 @@
     "id": 83900212,
     "name": "home_skill_name_83900212",
     "desc": "home_skill_desc_83900212",
-    "param": 4,
+    "param": 8,
     "homeSkillType": "AddEnergyMax"
   },
   "83900213": {
@@ -1664,5 +1664,26 @@
     "desc": "home_skill_desc_83900238",
     "param": 0.1,
     "homeSkillType": "AddSpecQty"
+  },
+  "83900239": {
+    "id": 83900239,
+    "name": "home_skill_name_83900239",
+    "desc": "home_skill_desc_83900239",
+    "param": 0.2,
+    "homeSkillType": "AddQty"
+  },
+  "83900240": {
+    "id": 83900240,
+    "name": "home_skill_name_83900240",
+    "desc": "home_skill_desc_83900240",
+    "param": 0.2,
+    "homeSkillType": "AddQty"
+  },
+  "83900241": {
+    "id": 83900241,
+    "name": "home_skill_name_83900241",
+    "desc": "home_skill_desc_83900241",
+    "param": 0.1,
+    "homeSkillType": "AddQty"
   }
 }

@@ -4261,5 +4261,40 @@
     "desc": "",
     "awakeLv": 6,
     "skillParamOffsetList": []
+  },
+  "12800590": {
+    "id": 12800590,
+    "name": "talent_name_12800590",
+    "desc": "",
+    "awakeLv": 6,
+    "skillParamOffsetList": []
+  },
+  "12800591": {
+    "id": 12800591,
+    "name": "talent_name_12800591",
+    "desc": "",
+    "awakeLv": 5,
+    "skillParamOffsetList": []
+  },
+  "12800592": {
+    "id": 12800592,
+    "name": "talent_name_12800592",
+    "desc": "",
+    "awakeLv": 2,
+    "skillParamOffsetList": []
+  },
+  "12800593": {
+    "id": 12800593,
+    "name": "talent_name_12800593",
+    "desc": "",
+    "awakeLv": 3,
+    "skillParamOffsetList": []
+  },
+  "12800594": {
+    "id": 12800594,
+    "name": "talent_name_12800594",
+    "desc": "talent_desc_12800594",
+    "awakeLv": 4,
+    "skillParamOffsetList": []
   }
 }
