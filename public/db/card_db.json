@@ -4396,7 +4396,20 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [
+      {
+        "condId": 96300003,
+        "des": 80608013
+      },
+      {
+        "condId": 96300009,
+        "des": 80610277
+      },
+      {
+        "condId": 96300010,
+        "des": 80610278
+      }
+    ]
   },
   "10600296": {
     "id": 10600296,
@@ -6015,12 +6028,7 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": [
-      {
-        "condId": 96300002,
-        "des": 80608010
-      }
-    ]
+    "ExActList": []
   },
   "10600449": {
     "id": 10600449,
@@ -6041,33 +6049,6 @@
     "cardType": "Normal",
     "ExCondList": [],
     "ExActList": []
-  },
-  "10600450": {
-    "id": 10600450,
-    "idCN": "00原版/05五星/涟/B_觉醒2",
-    "name": "card_name_10600450",
-    "color": "Purple",
-    "cost_SN": 30000,
-    "cardType": "Normal",
-    "ExCondList": [],
-    "ExActList": [
-      {
-        "condId": 96300009,
-        "des": 80610277
-      },
-      {
-        "condId": 96300010,
-        "des": 80610278
-      },
-      {
-        "condId": 96300002,
-        "des": 80608010
-      },
-      {
-        "condId": 96300004,
-        "des": 80610289
-      }
-    ]
   },
   "10600451": {
     "id": 10600451,
@@ -6125,6 +6106,76 @@
     "name": "card_name_10600456",
     "color": "Purple",
     "cost_SN": 20000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600460": {
+    "id": 10600460,
+    "idCN": "00原版/05五星/涟/C",
+    "name": "card_name_10600460",
+    "color": "Black",
+    "cost_SN": 0,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600458": {
+    "id": 10600458,
+    "idCN": "04测试/紫卡",
+    "name": "",
+    "color": "Purple",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600459": {
+    "id": 10600459,
+    "idCN": "06敌方/06深眠者/哀怜魔女/镜中的幸福",
+    "name": "card_name_10600459",
+    "color": "Red",
+    "cost_SN": 10000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600461": {
+    "id": 10600461,
+    "idCN": "00原版/04四星/小麦/A",
+    "name": "card_name_10600461",
+    "color": "Red",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [],
+    "ExActList": []
+  },
+  "10600462": {
+    "id": 10600462,
+    "idCN": "00原版/04四星/小麦/B",
+    "name": "card_name_10600462",
+    "color": "Green",
+    "cost_SN": 30000,
+    "cardType": "Normal",
+    "ExCondList": [
+      {
+        "condId": 96200028,
+        "des": 80608008,
+        "interValNum": 19,
+        "isNumCond": true,
+        "minNum": 5,
+        "numDuration": 5,
+        "typeEnum": "percent"
+      }
+    ],
+    "ExActList": []
+  },
+  "10600463": {
+    "id": 10600463,
+    "idCN": "00原版/04四星/小麦/S",
+    "name": "card_name_10600463",
+    "color": "Red",
+    "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
     "ExActList": []
