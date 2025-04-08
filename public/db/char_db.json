@@ -5829,7 +5829,7 @@
     "line": 1,
     "subLine": 139,
     "identity": "char_identity_10000546",
-    "ability": "待研究",
+    "ability": "char_ability_10000546",
     "controllerId": 10300466,
     "equipmentSlotList": [
       {
@@ -5926,7 +5926,7 @@
     "line": 3,
     "subLine": 450,
     "identity": "char_identity_10000615",
-    "ability": "“球球力场”",
+    "ability": "char_ability_10000615",
     "controllerId": 10300493,
     "equipmentSlotList": [
       {
@@ -6112,7 +6112,7 @@
     "line": 1,
     "subLine": 140,
     "identity": "char_identity_10000624",
-    "ability": "待研究",
+    "ability": "char_ability_10000624",
     "controllerId": 10300501,
     "equipmentSlotList": [
       {
@@ -6209,7 +6209,7 @@
     "line": 3,
     "subLine": 160,
     "identity": "char_identity_10000632",
-    "ability": "心智漫步",
+    "ability": "char_ability_10000632",
     "controllerId": 10300507,
     "equipmentSlotList": [
       {
@@ -6310,7 +6310,7 @@
     "line": 1,
     "subLine": 390,
     "identity": "char_identity_10000749",
-    "ability": "“裂穹”",
+    "ability": "char_ability_10000749",
     "controllerId": 10300537,
     "equipmentSlotList": [
       {
@@ -6411,7 +6411,7 @@
     "line": 1,
     "subLine": 160,
     "identity": "char_identity_10000748",
-    "ability": "心智漫步（待研究）",
+    "ability": "char_ability_10000748",
     "controllerId": 10300539,
     "equipmentSlotList": [
       {
@@ -6508,7 +6508,7 @@
     "line": 2,
     "subLine": 143,
     "identity": "char_identity_10000969",
-    "ability": "强韧（亚人型）",
+    "ability": "char_ability_10000969",
     "controllerId": 10300551,
     "equipmentSlotList": [
       {
@@ -6605,7 +6605,7 @@
     "line": 3,
     "subLine": 160,
     "identity": "char_identity_10000979",
-    "ability": "“专业女仆的秘密能力”",
+    "ability": "char_ability_10000979",
     "controllerId": 10300557,
     "equipmentSlotList": [
       {
@@ -6648,7 +6648,7 @@
         "skillId": 12303070
       },
       {
-        "num": 1,
+        "num": 2,
         "skillId": 12303071
       },
       {
@@ -6658,7 +6658,7 @@
     ],
     "tk_SN": null,
     "hp_SN": 83000000,
-    "def_SN": 730000,
+    "def_SN": 790000,
     "atk_SN": 870000,
     "atkSpeed_SN": 1000000,
     "luck_SN": 0,
@@ -6702,7 +6702,7 @@
     "line": 1,
     "subLine": 890,
     "identity": "char_identity_10000855",
-    "ability": "“专业女仆的秘密能力”",
+    "ability": "char_ability_10000855",
     "controllerId": 10300566,
     "equipmentSlotList": [
       {

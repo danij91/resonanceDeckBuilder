@@ -4516,13 +4516,6 @@
     ],
     "Getway": [
       {
-        "DisplayName": "“澄明异闻奇谈”-活动商店",
-        "FromLevel": -1,
-        "UIName": "",
-        "Way3": "",
-        "funcId": 4294967295
-      },
-      {
         "DisplayName": "澄明数据中心铁安局悬赏任务",
         "FromLevel": -1,
         "UIName": "",
@@ -6055,6 +6048,40 @@
       },
       {
         "DisplayName": "黑月装备箱",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
+    ]
+  },
+  "11800078": {
+    "id": 11800078,
+    "name": "equip_name_11800078",
+    "des": "equip_des_11800078",
+    "equipTagId": 12600162,
+    "quality": "Golden",
+    "skillList": [
+      {
+        "skillId": 12303408
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "黑月商店",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": ""
+      },
+      {
+        "DisplayName": "行车沿线桦树浮标-昏恶巨象",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      },
+      {
+        "DisplayName": "帝国装备箱",
         "FromLevel": -1,
         "UIName": "",
         "Way3": "",

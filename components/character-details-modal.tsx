@@ -139,11 +139,13 @@ export function CharacterDetailsModal({
           const rateKey = `skillRate${paramValue}_SN`
           if (skill.skillParamList[0][rateKey] !== undefined) {
             // Calculate the rate value (divide by 10000)
-            let rateValue = Math.floor(skill.skillParamList[0][rateKey] / 10000)
-
-            // Add % if isPercent is true
+            let rateValue = 0
+              // Add % if isPercent is true
             if (param.isPercent) {
+              rateValue = Math.floor(skill.skillParamList[0][rateKey] / 100)
               rateValue = `${rateValue}%`
+            }else{
+              rateValue = Math.floor(skill.skillParamList[0][rateKey] / 10000)
             }
 
             // Replace only the first occurrence of #r
