@@ -6880,5 +6880,52 @@
     "name": "break_name_12100853",
     "desc": "",
     "attributeList": []
+  },
+  "12100831": {
+    "id": 12100831,
+    "name": "break_name_12100831",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100854": {
+    "id": 12100854,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100855": {
+    "id": 12100855,
+    "name": "break_name_12100855",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100856": {
+    "id": 12100856,
+    "name": "break_name_12100856",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100858": {
+    "id": 12100858,
+    "name": "break_name_12100858",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100859": {
+    "id": 12100859,
+    "name": "break_name_12100859",
+    "desc": "",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1000000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1000000
+      }
+    ]
   }
 }
