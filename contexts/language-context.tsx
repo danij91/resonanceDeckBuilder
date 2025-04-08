@@ -1,5 +1,7 @@
 "use client"
 
+import type React from "react"
+
 import { createContext, useContext, useState, useEffect, useCallback } from "react"
 import { useRouter } from "next/navigation"
 import type { Database } from "../types"
@@ -27,7 +29,8 @@ export function LanguageProvider({
   const [isChangingLanguage, setIsChangingLanguage] = useState(false)
   const router = useRouter()
 
-  const supportedLanguages = ["ko", "en", "jp", "cn"]
+  // supportedLanguages 배열에 'tw' 추가
+  const supportedLanguages = ["ko", "en", "jp", "cn", "tw"]
 
   // 언어 데이터 동적 로딩
   useEffect(() => {
@@ -55,7 +58,7 @@ export function LanguageProvider({
       if (!data || !data.languages[currentLanguage]) return key
       return data.languages[currentLanguage][key] || key
     },
-    [data, currentLanguage]
+    [data, currentLanguage],
   )
 
   // 언어 변경 함수
@@ -76,7 +79,7 @@ export function LanguageProvider({
         setIsChangingLanguage(false)
       }, 300)
     },
-    [currentLanguage, router]
+    [currentLanguage, router],
   )
 
   return (
