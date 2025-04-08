@@ -14,6 +14,9 @@ import { decodePresetFromUrlParam } from "../utils/presetCodec"
 import { analytics, logEvent } from "../lib/firebase-config"
 import { useDataLoader } from "../hooks/use-data-loader"
 import { LoadingScreen } from "./loading-screen"
+import { SaveDeckModal } from "./ui/modal/SaveDeckModal" // 추가
+import { LoadDeckModal } from "./ui/modal/LoadDeckModal" // 추가
+import { getCurrentDeckId, setCurrentDeckId, removeCurrentDeckId, type SavedDeck } from "../utils/local-storage" // 추가
 
 interface DeckBuilderProps {
   urlDeckCode: string | null
@@ -39,6 +42,10 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
   // 로컬 로딩 상태 추가
   const [isLocalLoading, setIsLocalLoading] = useState(true)
   const [initialLoadComplete, setInitialLoadComplete] = useState(false)
+
+  // 저장/불러오기 모달 상태 추가
+  const [showSaveModal, setShowSaveModal] = useState(false)
+  const [showLoadModal, setShowLoadModal] = useState(false)
 
   // useDeckBuilder 훅 사용 - 실제 data 객체 전달
   const {
@@ -71,6 +78,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
     createShareableUrl,
     decodePresetString,
     importPreset,
+    createPresetObject, // 추가: 프리셋 객체 생성 함수
   } = useDeckBuilder(data)
 
   // URL을 통해 덱 프리셋을 받아올 때 ownerId를 char_db에서 검색하여 카드에 캐릭터 초상화 표시 로직 개선
@@ -116,6 +124,9 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
             if (result.success) {
               showToast(getTranslatedString(result.message), "success")
 
+              // URL에서 로드한 경우 현재 편집 중인 덱 ID 제거
+              removeCurrentDeckId()
+
               // Firebase Analytics 이벤트 전송
               if (analytics && typeof window !== "undefined") {
                 logEvent(analytics, "deck_shared_visit", {
@@ -127,6 +138,13 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
           }
         } catch (error) {
           console.error("Error decoding URL preset:", error)
+        }
+      } else {
+        // URL에서 로드하지 않은 경우 로컬스토리지에서 현재 편집 중인 덱 확인
+        const currentDeckId = getCurrentDeckId()
+        if (currentDeckId) {
+          // 현재 편집 중인 덱이 있으면 로드 모달 표시 여부 확인
+          // 실제 구현에서는 자동 로드 또는 사용자에게 물어볼 수 있음
         }
       }
 
@@ -168,14 +186,11 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
             const rateKey = `skillRate${paramValue}_SN`
             if (skill.skillParamList[0][rateKey] !== undefined) {
               // Calculate the rate value (divide by 10000)
-              
-              let rateValue = 0
+              let rateValue = Math.floor(skill.skillParamList[0][rateKey] / 10000)
+
               // Add % if isPercent is true
               if (param.isPercent) {
-                rateValue = Math.floor(skill.skillParamList[0][rateKey] / 100)
                 rateValue = `${rateValue}%`
-              }else{
-                rateValue = Math.floor(skill.skillParamList[0][rateKey] / 10000)
               }
 
               // Replace only the first occurrence of #r
@@ -329,6 +344,9 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
       const result = await importPreset()
       showToast(getTranslatedString(result.message), result.success ? "success" : "error")
 
+      // 클립보드에서 가져온 경우 현재 편집 중인 덱 ID 제거
+      removeCurrentDeckId()
+
       // Firebase Analytics 이벤트 전송
       if (analytics && result.success) {
         const characterIds = selectedCharacters.filter((id) => id !== -1)
@@ -391,12 +409,87 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
   // 초기화
   const handleClear = () => {
     clearAll()
+    // 현재 편집 중인 덱 ID 제거
+    removeCurrentDeckId()
     showToast(getTranslatedString("deck_cleared"), "success")
   }
 
   // 각성 단계 선택 핸들러
   const handleAwakeningSelect = (characterId: number, stage: number | null) => {
     updateAwakening(characterId, stage)
+  }
+
+  // 덱 저장 모달 열기
+  const handleOpenSaveModal = () => {
+    setShowSaveModal(true)
+  }
+
+  // 덱 불러오기 모달 열기
+  const handleOpenLoadModal = () => {
+    setShowLoadModal(true)
+  }
+
+  // 덱 저장 성공 처리
+  const handleSaveSuccess = (deckId: string) => {
+    showToast(getTranslatedString("deck_saved"), "success")
+    // 현재 편집 중인 덱 ID 설정
+    setCurrentDeckId(deckId)
+
+    // Firebase Analytics 이벤트 전송
+    if (analytics) {
+      const characterIds = selectedCharacters.filter((id) => id !== -1)
+      logEvent(analytics, "deck_saved", {
+        character_ids: JSON.stringify(characterIds),
+        language: currentLanguage,
+      })
+    }
+  }
+
+  // 덱 불러오기 처리
+  const handleLoadDeck = (deck: SavedDeck) => {
+    try {
+      // 덱 프리셋 불러오기
+      const result = importPresetObject(deck.preset)
+      if (result.success) {
+        // 현재 편집 중인 덱 ID 설정
+        setCurrentDeckId(deck.id)
+        showToast(getTranslatedString("deck_loaded") || "Deck loaded successfully!", "success")
+
+        // Firebase Analytics 이벤트 전송
+        if (analytics) {
+          const characterIds = selectedCharacters.filter((id) => id !== -1)
+          logEvent(analytics, "deck_loaded", {
+            character_ids: JSON.stringify(characterIds),
+            language: currentLanguage,
+          })
+        }
+      } else {
+        showToast(getTranslatedString("deck_load_error") || "Failed to load deck", "error")
+      }
+    } catch (error) {
+      console.error("Error loading deck:", error)
+      showToast(getTranslatedString("deck_load_error") || "Failed to load deck", "error")
+    }
+  }
+
+  // 덱 삭제 처리
+  const handleDeleteDeck = (deckId: string) => {
+    showToast(getTranslatedString("deck_deleted"), "success")
+
+    // 현재 편집 중인 덱이 삭제된 덱이면 현재 덱 ID 제거
+    if (getCurrentDeckId() === deckId) {
+      removeCurrentDeckId()
+    }
+  }
+
+  // 캐릭터 이름 가져오기 함수
+  const getCharacterName = (characterId: number): string => {
+    if (!data || characterId === -1) return ""
+
+    const character = data.characters[characterId.toString()]
+    if (!character) return ""
+
+    return getTranslatedString(character.name)
   }
 
   // 로딩 중 표시
@@ -433,6 +526,33 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
     )
   }
 
+  // 저장된 덱 공유 핸들러 추가
+  const handleShareSavedDeck = (deck: SavedDeck) => {
+    try {
+      // 덱 프리셋으로 공유 URL 생성
+      const result = createShareableUrl(deck.preset)
+      if (result.success && result.url) {
+        navigator.clipboard.writeText(result.url)
+        showToast(getTranslatedString("share_link_copied_alert"), "success")
+
+        // Firebase Analytics 이벤트 전송
+        if (analytics) {
+          const characterIds = deck.preset.roleList.filter((id) => id !== -1)
+          logEvent(analytics, "deck_shared", {
+            deck_name: deck.name,
+            character_ids: JSON.stringify(characterIds),
+            language: currentLanguage,
+          })
+        }
+      } else {
+        showToast(getTranslatedString("share_link_failed"), "error")
+      }
+    } catch (error) {
+      console.error("Share error:", error)
+      showToast(getTranslatedString("share_link_failed"), "error")
+    }
+  }
+
   return (
     <div className="min-h-screen bg-black text-white">
       <ToastContainer />
@@ -442,6 +562,8 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         onImport={handleImport}
         onExport={handleExport}
         onShare={handleShare}
+        onSave={handleOpenSaveModal}
+        onLoad={handleOpenLoadModal}
         contentRef={contentRef}
       />
 
@@ -496,7 +618,26 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
 
       {/* 댓글 섹션 */}
       <CommentsSection currentLanguage={currentLanguage} />
+
+      {/* 덱 저장 모달 */}
+      <SaveDeckModal
+        isOpen={showSaveModal}
+        onClose={() => setShowSaveModal(false)}
+        preset={createPresetObject(true, true)} // 장비 정보와 각성 정보 포함
+        getTranslatedString={getTranslatedString}
+        onSaveSuccess={handleSaveSuccess}
+        getCharacterName={getCharacterName}
+      />
+
+      {/* 덱 불러오기 모달 */}
+      <LoadDeckModal
+        isOpen={showLoadModal}
+        onClose={() => setShowLoadModal(false)}
+        getTranslatedString={getTranslatedString}
+        onLoadDeck={handleLoadDeck}
+        onDeleteDeck={handleDeleteDeck}
+        onShareDeck={handleShareSavedDeck} // 공유 기능 추가
+      />
     </div>
   )
 }
-

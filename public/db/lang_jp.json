@@ -5793,5 +5793,10 @@
   "home_skill_name_83900239": "指定取引品売買",
   "home_skill_desc_83900239": "ツイードジャケットの購入可能数+%s%%",
   "home_skill_name_83900240": "指定取引品売買",
-  "home_skill_name_83900241": "指定取引品売買+"
+  "home_skill_name_83900241": "指定取引品売買+",
+  "save_deck": "保存",
+  "load_deck": "読み込む",
+  "new_deck": "新しく作成",
+  "deck_selection": "デッキ選択",
+  "deck_name": "デッキ名"
 }
