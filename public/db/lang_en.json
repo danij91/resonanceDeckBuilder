@@ -454,7 +454,7 @@
   "skill_detailDescription_12300282": "Damage: 3000% (Physical).",
   "skill_name_12300284": "Explosive Flame Bomb",
   "skill_description_12300284": "Draws a card.\\nLaunches an Explosive Flame Bomb, dealing damage to the target and nearby enemies once and <color=#FF6666>Igniting</color> them.\\nThe Explosive Flame Bomb is considered Explosive.",
-  "skill_detailDescription_12300284": "Damage: 3500% (Physical).",
+  "skill_detailDescription_12300284": "Damage: 4000% (Physical).",
   "skill_name_12300285": "Lightning Burst Bomb",
   "skill_description_12300285": "Retrieves a card from the discard pile to your hand, prioritizing a 3-cost or higher card.\\nLaunches Lightning Burst Bombs equal to 300% of the retrieved card's cost, each dealing damage to a random enemy once and <color=#FFB800>Electrifying</color> them.\\nLightning Burst Bombs are considered Explosive.",
   "skill_detailDescription_12300285": "Damage: 500% per hit (EM).",
