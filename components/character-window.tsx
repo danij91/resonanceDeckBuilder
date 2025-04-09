@@ -160,22 +160,23 @@ export function CharacterWindow({
             {getTranslatedString("select_character") || "Select Character"}
           </h3>
         }
-        searchControl={{
-          searchTerm,
-          onSearchChange: setSearchTerm,
-          sortBy,
-          onSortByChange: setSortBy,
-          sortDirection,
-          onSortDirectionChange: () => setSortDirection((prev) => (prev === "asc" ? "desc" : "asc")),
-          sortOptions: [
-            { value: "rarity", label: getTranslatedString("sort_by_rarity") || "Sort by Rarity" },
-            { value: "name", label: getTranslatedString("sort_by_name") || "Sort by Name" },
-          ],
-          searchPlaceholder: getTranslatedString("search_characters") || "Search characters",
-        }}
+        searchTerm={searchTerm}
+        onSearchChange={setSearchTerm}
+        sortBy={sortBy}
+        onSortByChange={(value) => setSortBy(value as "name" | "rarity")}
+        sortDirection={sortDirection}
+        onSortDirectionChange={() => setSortDirection((prev) => (prev === "asc" ? "desc" : "asc"))}
+        sortOptions={[
+          { value: "rarity", label: getTranslatedString("sort_by_rarity") || "Sort by Rarity" },
+          { value: "name", label: getTranslatedString("sort_by_name") || "Sort by Name" },
+        ]}
+        searchPlaceholder={getTranslatedString("search_characters") || "Search characters"}
         characters={sortedCharacters}
         onSelectCharacter={handleCharacterSelect}
         getTranslatedString={getTranslatedString}
+        getCardInfo={getCardInfo}
+        getSkill={getSkill}
+        data={data}
         maxWidth="max-w-3xl"
         footer={
           <div className="flex justify-end">
@@ -195,4 +196,3 @@ export function CharacterWindow({
     </div>
   )
 }
-
