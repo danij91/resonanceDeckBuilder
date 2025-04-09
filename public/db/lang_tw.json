@@ -732,7 +732,7 @@
   "skill_detailDescription_12300282": "傷害：3000%（物理）",
   "skill_name_12300284": "爆炎彈",
   "skill_description_12300284": "抽1張牌\\n向目標發射爆炎彈，對目標及附近敵方造成1段傷害，同時觸發<color=#FF6666>【點燃】</color>\\n【爆炎彈】為【爆炸物】",
-  "skill_detailDescription_12300284": "傷害：3500%（物理）",
+  "skill_detailDescription_12300284": "傷害：4000%（物理）",
   "skill_name_12300285": "飛電彈",
   "skill_description_12300285": "從棄牌區回收1張牌加入手牌，優先3費及以上卡牌\\n基於回收卡牌的費用點數，發射3倍數量的飛電彈，每枚對隨機目標造成1段傷害，同時觸發<color=#FFB800>【引雷】</color>\\n【飛電彈】為【爆炸物】",
   "skill_detailDescription_12300285": "傷害：每段500%（電磁）",
