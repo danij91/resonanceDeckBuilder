@@ -288,7 +288,7 @@ export function CharacterSlot({
                   </button>
                 )}
               </div>
-              <div className="mt-auto flex flex-col">
+            <div className="mt-auto flex flex-col">
               {/* 각성 단계 표시 - 이름 위 왼쪽 정렬로 표시, 반응형으로 조정 */}
               {!isEmpty && (
                 <div className="w-max mb-1 inline-block px-0">

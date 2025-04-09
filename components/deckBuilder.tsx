@@ -187,10 +187,10 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
             if (skill.skillParamList[0][rateKey] !== undefined) {
               // Calculate the rate value (divide by 10000)
               let rateValue = Math.floor(skill.skillParamList[0][rateKey] / 10000)
-
-              // Add % if isPercent is true
+            
+            // Add % if isPercent is true
               if (param.isPercent) {
-                rateValue = `${rateValue}%`
+                rateValue = `${skill.skillParamList[0][rateKey]/100}%`
               }
 
               // Replace only the first occurrence of #r
