@@ -13,16 +13,19 @@ export interface TabItem {
 export interface TabModalProps extends Omit<ModalProps, "children" | "title"> {
   tabs: TabItem[]
   initialTabId?: string
+  closeOnOutsideClick?: boolean
 }
 
-export function TabModal({ tabs, initialTabId, ...modalProps }: TabModalProps) {
+export function TabModal({ tabs, initialTabId, closeOnOutsideClick = true, ...modalProps }: TabModalProps) {
   const [activeTabId, setActiveTabId] = useState(initialTabId || tabs[0]?.id || "")
 
   const activeTab = tabs.find((tab) => tab.id === activeTabId) || tabs[0]
 
+  // TabModal은 Modal을 래핑하는 컴포넌트이므로, onClose를 그대로 전달
   return (
     <Modal
       {...modalProps}
+      closeOnOutsideClick={closeOnOutsideClick}
       title={
         <div className="flex w-full border-b border-white/10">
           {tabs.map((tab) => (
@@ -46,4 +49,3 @@ export function TabModal({ tabs, initialTabId, ...modalProps }: TabModalProps) {
     </Modal>
   )
 }
-

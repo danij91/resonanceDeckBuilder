@@ -2,10 +2,11 @@
 import type { Equipment } from "../types"
 import { Modal } from "./ui/modal/Modal"
 import { formatColorText } from "../utils/format-text"
+import type React from "react"
 
 interface EquipmentDetailsModalProps {
   isOpen: boolean
-  onClose: () => void
+  onClose: (e?: React.MouseEvent) => void
   equipment: Equipment
   getTranslatedString: (key: string) => string
   getSkill?: (skillId: number) => any
@@ -43,7 +44,13 @@ export function EquipmentDetailsModal({
   return (
     <Modal
       isOpen={isOpen}
-      onClose={onClose}
+      onClose={(e) => {
+        if (e) {
+          e.preventDefault()
+          e.stopPropagation()
+        }
+        onClose(e)
+      }}
       title={
         <h3 className="text-lg font-bold neon-text">
           {getTranslatedString("equipment_details") || "Equipment Details"}
@@ -51,12 +58,13 @@ export function EquipmentDetailsModal({
       }
       footer={
         <div className="flex justify-end">
-          <button onClick={onClose} className="neon-button px-4 py-2 rounded-lg text-sm">
+          <button onClick={() => onClose()} className="neon-button px-4 py-2 rounded-lg text-sm">
             Close
           </button>
         </div>
       }
       maxWidth="max-w-md"
+      closeOnOutsideClick={true} // 외부 클릭으로 닫히지 않도록 설정
     >
       <div className="p-4">
         <div className="flex mb-4">
@@ -117,8 +125,23 @@ export function EquipmentDetailsModal({
             </div>
           </div>
         )}
+
+        {/* Equipment Acquisition Methods - 획득 방법 추가 */}
+        {equipment.Getway && equipment.Getway.length > 0 && (
+          <div className="mb-4 character-detail-section">
+            <h5 className="character-detail-section-title">
+              {getTranslatedString("equipment_acquisition") || "How to Obtain"}
+            </h5>
+            <ul className="space-y-1 list-disc list-inside">
+              {equipment.Getway.map((method, index) => (
+                <li key={index} className="text-sm text-gray-300">
+                  {formatColorText(getTranslatedString(method.DisplayName))}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </Modal>
   )
 }
-
