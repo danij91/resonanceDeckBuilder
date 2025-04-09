@@ -57,7 +57,7 @@
   --foreground-rgb: 255, 255, 255;
   --background-rgb: 0, 0, 0;
 
-  /* 모달 영역별 검은색 계열 색상 */
+  /* 모달 영역별 검은 계열 색상 */
   --modal-header-bg: #000000;
   --modal-content-bg: #0a0a0a;
   --modal-footer-bg: #050505;
@@ -74,8 +74,8 @@
   [role="button"]:not(.character-action-btn):not(.equipment-info-btn),
   select,
   input[type="checkbox"] + label {
-    min-height: 44px;
-    min-width: 44px;
+    min-height: 30px;
+    min-width: 30px;
   }
 
   .hand-retention-button {
@@ -644,7 +644,7 @@ body {
   /* 스킬 카드 */
   .skill-card {
     border: 1px solid hsla(var(--neon-white), 0.5);
-    border-radius: 0.5rem;
+    border-radius: 0.6rem;
     overflow: hidden;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
     transition: all 0.2s;
@@ -882,10 +882,10 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid hsla(var(--neon-white), 0.3);
     border-radius: 9999px;
-    width: 1rem;
-    height: 1rem;
-    min-width: 1rem;
-    min-height: 1rem;
+    width: 2rem; /* 1rem에서 2rem으로 변경 */
+    height: 2rem; /* 1rem에서 2rem으로 변경 */
+    min-width: 2rem; /* 1rem에서 2rem으로 변경 */
+    min-height: 2rem; /* 1rem에서 2rem으로 변경 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1401,6 +1401,5 @@ body.dragging {
 
 /* 캡처 컨텐츠 영역 */
 .capture-content {
-  transition: all 0.1s ease;
+  transition: all 0.3s ease;
 }
-

@@ -1,12 +1,13 @@
 "use client"
 import type { Character, Card } from "../types"
+import type React from "react"
 import { useState, useEffect } from "react"
 import { TabModal } from "./ui/modal/TabModal"
 import { formatColorText } from "../utils/format-text"
 
 interface CharacterDetailsModalProps {
   isOpen: boolean
-  onClose: () => void
+  onClose: (e?: React.MouseEvent) => void
   character: Character
   getTranslatedString: (key: string) => string
   getCardInfo: (cardId: string) => { card: Card } | null
@@ -139,13 +140,11 @@ export function CharacterDetailsModal({
           const rateKey = `skillRate${paramValue}_SN`
           if (skill.skillParamList[0][rateKey] !== undefined) {
             // Calculate the rate value (divide by 10000)
-            let rateValue = 0
-              // Add % if isPercent is true
+            let rateValue = Math.floor(skill.skillParamList[0][rateKey] / 10000)
+
+            // Add % if isPercent is true
             if (param.isPercent) {
-              rateValue = Math.floor(skill.skillParamList[0][rateKey] / 100)
               rateValue = `${rateValue}%`
-            }else{
-              rateValue = Math.floor(skill.skillParamList[0][rateKey] / 10000)
             }
 
             // Replace only the first occurrence of #r
@@ -199,90 +198,183 @@ export function CharacterDetailsModal({
     return data.images[imageKey] || null
   }
 
-  return (
-    <TabModal
-      isOpen={isOpen}
-      onClose={onClose}
-      tabs={[
-        {
-          id: "info",
-          label: getTranslatedString("character.info") || "Character & Skills",
-          content: (
-            <div className="flex flex-col md:flex-row gap-4 p-4">
-              {/* Character Image and Description */}
-              <div className="w-full md:w-1/3">
-                <div className="aspect-[3/4] max-w-[200px] mx-auto md:max-w-none bg-black rounded-lg overflow-hidden neon-border">
-                  {character.img_card && (
-                    <img
-                      src={character.img_card || "/placeholder.svg"}
-                      alt={getTranslatedString(character.name)}
-                      className="w-full h-full object-cover"
-                    />
-                  )}
-                </div>
-                <div className="mt-2 text-center">
-                  <div className="text-lg font-bold flex items-center justify-center">
-                    <span
-                      className={`text-xs font-bold px-2 py-0.5 rounded-full text-white mr-2 ${getRarityColor(character.rarity)}`}
-                    >
-                      {character.rarity}
-                    </span>
-                    <span className="neon-text">{getTranslatedString(character.name)}</span>
-                  </div>
-                </div>
-
-                {/* Character Description moved below portrait - 포맷팅 적용 */}
-                <div className="mt-4 character-detail-section">
-                  <h3 className="character-detail-section-title">
-                    {getTranslatedString("character.description") || "Description"}
-                  </h3>
-                  <p className="text-gray-300">{formatColorText(getTranslatedString(character.desc))}</p>
+  const modalProps = {
+    isOpen: isOpen,
+    onClose: (e) => onClose(e),
+    tabs: [
+      {
+        id: "info",
+        label: getTranslatedString("character.info") || "Character & Skills",
+        content: (
+          <div className="flex flex-col md:flex-row gap-4 p-4">
+            {/* Character Image and Description */}
+            <div className="w-full md:w-1/3">
+              <div className="aspect-[3/4] max-w-[200px] mx-auto md:max-w-none bg-black rounded-lg overflow-hidden neon-border">
+                {character.img_card && (
+                  <img
+                    src={character.img_card || "/placeholder.svg"}
+                    alt={getTranslatedString(character.name)}
+                    className="w-full h-full object-cover"
+                  />
+                )}
+              </div>
+              <div className="mt-2 text-center">
+                <div className="text-lg font-bold flex items-center justify-center">
+                  <span
+                    className={`text-xs font-bold px-2 py-0.5 rounded-full text-white mr-2 ${getRarityColor(character.rarity)}`}
+                  >
+                    {character.rarity}
+                  </span>
+                  <span className="neon-text">{getTranslatedString(character.name)}</span>
                 </div>
               </div>
 
-              {/* Character Skills */}
-              <div className="w-full md:w-2/3">
-                <div className="character-detail-section">
-                  <h3 className="character-detail-section-title">
-                    {getTranslatedString("character.skills") || "Skills"}
-                  </h3>
-                  <div className="space-y-3">
-                    {/* Skill 1 */}
-                    {renderSkill(0, "skill.normal_1", "Skill 1")}
+              {/* Character Description moved below portrait - 포맷팅 적용 */}
+              <div className="mt-4 character-detail-section">
+                <h3 className="character-detail-section-title">
+                  {getTranslatedString("character.description") || "Description"}
+                </h3>
+                <p className="text-gray-300">{formatColorText(getTranslatedString(character.desc))}</p>
+              </div>
+            </div>
 
-                    {/* Skill 2 */}
-                    {renderSkill(1, "skill.normal_2", "Skill 2")}
+            {/* Character Skills */}
+            <div className="w-full md:w-2/3">
+              <div className="character-detail-section">
+                <h3 className="character-detail-section-title">
+                  {getTranslatedString("character.skills") || "Skills"}
+                </h3>
+                <div className="space-y-3">
+                  {/* Skill 1 */}
+                  {renderSkill(0, "skill.normal_1", "Skill 1")}
 
-                    {/* Ultimate Skill */}
-                    {renderSkill(2, "skill.ultimate", "Ultimate")}
-                  </div>
+                  {/* Skill 2 */}
+                  {renderSkill(1, "skill.normal_2", "Skill 2")}
+
+                  {/* Ultimate Skill */}
+                  {renderSkill(2, "skill.ultimate", "Ultimate")}
                 </div>
               </div>
             </div>
-          ),
-        },
-        {
-          id: "talents",
-          label: getTranslatedString("character.talents") || "Talents",
-          content: (
-            <div className="space-y-3 p-4">
-              {character.talentList && character.talentList.length > 0 ? (
-                character.talentList.map((talent, index) => {
-                  // 공명 이미지 URL 가져오기
-                  const talentImageUrl = getImageUrl("talent", talent.talentId)
+          </div>
+        ),
+      },
+      {
+        id: "talents",
+        label: getTranslatedString("character.talents") || "Talents",
+        content: (
+          <div className="space-y-3 p-4">
+            {character.talentList && character.talentList.length > 0 ? (
+              character.talentList.map((talent, index) => {
+                // 공명 이미지 URL 가져오기
+                const talentImageUrl = getImageUrl("talent", talent.talentId)
 
-                  // 해당 공명 단계에 맞는 홈 스킬 찾기
-                  const relatedHomeSkills = homeSkills.filter((skill) => skill.resonanceLv === index + 1)
+                // 해당 공명 단계에 맞는 홈 스킬 찾기
+                const relatedHomeSkills = homeSkills.filter((skill) => skill.resonanceLv === index + 1)
+
+                return (
+                  <div key={`talent-${index}`} className="p-3 bg-black bg-opacity-50 rounded-lg">
+                    <div className="flex">
+                      {/* 공명 이미지 또는 번호 표시 */}
+                      <div className="w-12 h-12 flex-shrink-0 mr-3 rounded-md overflow-hidden flex items-center justify-center">
+                        {talentImageUrl ? (
+                          <img
+                            src={talentImageUrl || "/placeholder.svg"}
+                            alt={`Talent ${index + 1}`}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <span className="text-white font-bold">{index + 1}</span>
+                        )}
+                      </div>
+
+                      <div className="flex-grow">
+                        <div className="flex items-center">
+                          <div className="font-medium neon-text">
+                            {data?.talents && data.talents[talent.talentId]
+                              ? getTranslatedString(data.talents[talent.talentId].name)
+                              : `Talent ${talent.talentId}`}
+                          </div>
+                          {/* 공명 단계 표시 */}
+                          <div className="ml-2 text-xs px-2 py-0.5 bg-gray-600 rounded-full text-white">
+                            {"Lv."} {index + 1}
+                          </div>
+                        </div>
+                        <div className="text-sm text-gray-400 mt-1">
+                          {formatColorText(
+                            data?.talents && data.talents[talent.talentId]
+                              ? getTranslatedString(data.talents[talent.talentId].desc)
+                              : "No description available",
+                          )}
+                        </div>
+
+                        {/* 관련 홈 스킬 표시 */}
+                        {relatedHomeSkills.length > 0 && (
+                          <div className="mt-2 border-t border-gray-700 pt-2">
+                            {relatedHomeSkills.map((skill, skillIndex) => (
+                              <div key={`home-skill-${skillIndex}`} className="text-xs text-gray-300 ml-2 mb-1">
+                                <span className="font-medium text-white">
+                                  {getTranslatedString(skill.name) || skill.name}:
+                                </span>{" "}
+                                {formatColorText(
+                                  processHomeSkillDesc(
+                                    getTranslatedString(skill.desc) || skill.desc,
+                                    skill.accumulatedValue || skill.paramValue,
+                                  ),
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                )
+              })
+            ) : (
+              <div className="text-gray-400 text-center p-4">
+                {getTranslatedString("no_talents") || "No talents available"}
+              </div>
+            )}
+          </div>
+        ),
+      },
+      {
+        id: "breakthroughs",
+        label: getTranslatedString("character.breakthroughs") || "Breakthroughs",
+        content: (
+          <div className="space-y-3 p-4">
+            {character.breakthroughList && character.breakthroughList.length > 0 ? (
+              // 각성 항목 선택 가능하도록 수정
+              character.breakthroughList
+                .slice(1)
+                .map((breakthrough, index) => {
+                  // 각성 이미지 URL 가져오기
+                  const breakImageUrl = getImageUrl("break", breakthrough.breakthroughId)
 
                   return (
-                    <div key={`talent-${index}`} className="p-3 bg-black bg-opacity-50 rounded-lg">
+                    <div
+                      key={`breakthrough-${index}`}
+                      className={`p-3 bg-black bg-opacity-50 rounded-lg cursor-pointer transition-all duration-200 ${
+                        selectedAwakeningStage !== null && index + 1 <= selectedAwakeningStage
+                          ? "border-2 border-blue-500 shadow-lg shadow-blue-500/50"
+                          : "hover:bg-black hover:bg-opacity-70"
+                      }`}
+                      onClick={() => handleAwakeningSelect(index + 1)}
+                    >
                       <div className="flex">
-                        {/* 공명 이미지 또는 번호 표시 */}
-                        <div className="w-12 h-12 flex-shrink-0 mr-3 rounded-md overflow-hidden flex items-center justify-center">
-                          {talentImageUrl ? (
+                        {/* 각성 이미지 또는 번호 표시 */}
+                        <div
+                          className={`w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center mr-3 overflow-hidden ${
+                            selectedAwakeningStage !== null && index + 1 <= selectedAwakeningStage
+                              ? "bg-purple-600"
+                              : ""
+                          }`}
+                        >
+                          {breakImageUrl ? (
                             <img
-                              src={talentImageUrl || "/placeholder.svg"}
-                              alt={`Talent ${index + 1}`}
+                              src={breakImageUrl || "/placeholder.svg"}
+                              alt={`Breakthrough ${index + 1}`}
                               className="w-full h-full object-cover"
                             />
                           ) : (
@@ -293,139 +385,51 @@ export function CharacterDetailsModal({
                         <div className="flex-grow">
                           <div className="flex items-center">
                             <div className="font-medium neon-text">
-                              {data?.talents && data.talents[talent.talentId]
-                                ? getTranslatedString(data.talents[talent.talentId].name)
-                                : `Talent ${talent.talentId}`}
+                              {data?.breakthroughs && data.breakthroughs[breakthrough.breakthroughId]
+                                ? getTranslatedString(data.breakthroughs[breakthrough.breakthroughId].name)
+                                : `Breakthrough ${breakthrough.breakthroughId}`}
                             </div>
-                            {/* 공명 단계 표시 */}
+                            {/* 각성 단계 표시 */}
                             <div className="ml-2 text-xs px-2 py-0.5 bg-gray-600 rounded-full text-white">
                               {"Lv."} {index + 1}
                             </div>
                           </div>
                           <div className="text-sm text-gray-400 mt-1">
                             {formatColorText(
-                              data?.talents && data.talents[talent.talentId]
-                                ? getTranslatedString(data.talents[talent.talentId].desc)
+                              data?.breakthroughs && data.breakthroughs[breakthrough.breakthroughId]
+                                ? getTranslatedString(data.breakthroughs[breakthrough.breakthroughId].desc)
                                 : "No description available",
                             )}
                           </div>
-
-                          {/* 관련 홈 스킬 표시 */}
-                          {relatedHomeSkills.length > 0 && (
-                            <div className="mt-2 border-t border-gray-700 pt-2">
-                              {relatedHomeSkills.map((skill, skillIndex) => (
-                                <div key={`home-skill-${skillIndex}`} className="text-xs text-gray-300 ml-2 mb-1">
-                                  <span className="font-medium text-white">
-                                    {getTranslatedString(skill.name) || skill.name}:
-                                  </span>{" "}
-                                  {formatColorText(
-                                    processHomeSkillDesc(
-                                      getTranslatedString(skill.desc) || skill.desc,
-                                      skill.accumulatedValue || skill.paramValue,
-                                    ),
-                                  )}
-                                </div>
-                              ))}
-                            </div>
-                          )}
                         </div>
                       </div>
                     </div>
                   )
                 })
-              ) : (
-                <div className="text-gray-400 text-center p-4">
-                  {getTranslatedString("no_talents") || "No talents available"}
-                </div>
-              )}
-            </div>
-          ),
-        },
-        {
-          id: "breakthroughs",
-          label: getTranslatedString("character.breakthroughs") || "Breakthroughs",
-          content: (
-            <div className="space-y-3 p-4">
-              {character.breakthroughList && character.breakthroughList.length > 0 ? (
-                // 각성 항목 선택 가능하도록 수정
-                character.breakthroughList
-                  .slice(1)
-                  .map((breakthrough, index) => {
-                    // 각성 이미지 URL 가져오기
-                    const breakImageUrl = getImageUrl("break", breakthrough.breakthroughId)
+            ) : (
+              <div className="text-gray-400 text-center p-4">
+                {getTranslatedString("no_breakthroughs") || "No breakthroughs available"}
+              </div>
+            )}
+          </div>
+        ),
+      },
+    ],
+  }
 
-                    return (
-                      <div
-                        key={`breakthrough-${index}`}
-                        className={`p-3 bg-black bg-opacity-50 rounded-lg cursor-pointer transition-all duration-200 ${
-                          selectedAwakeningStage !== null && index + 1 <= selectedAwakeningStage
-                            ? "border-2 border-blue-500 shadow-lg shadow-blue-500/50"
-                            : "hover:bg-black hover:bg-opacity-70"
-                        }`}
-                        onClick={() => handleAwakeningSelect(index + 1)}
-                      >
-                        <div className="flex">
-                          {/* 각성 이미지 또는 번호 표시 */}
-                          <div
-                            className={`w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center mr-3 overflow-hidden ${
-                              selectedAwakeningStage !== null && index + 1 <= selectedAwakeningStage
-                                ? "bg-purple-600"
-                                : ""
-                            }`}
-                          >
-                            {breakImageUrl ? (
-                              <img
-                                src={breakImageUrl || "/placeholder.svg"}
-                                alt={`Breakthrough ${index + 1}`}
-                                className="w-full h-full object-cover"
-                              />
-                            ) : (
-                              <span className="text-white font-bold">{index + 1}</span>
-                            )}
-                          </div>
-
-                          <div className="flex-grow">
-                            <div className="flex items-center">
-                              <div className="font-medium neon-text">
-                                {data?.breakthroughs && data.breakthroughs[breakthrough.breakthroughId]
-                                  ? getTranslatedString(data.breakthroughs[breakthrough.breakthroughId].name)
-                                  : `Breakthrough ${breakthrough.breakthroughId}`}
-                              </div>
-                              {/* 각성 단계 표시 */}
-                              <div className="ml-2 text-xs px-2 py-0.5 bg-gray-600 rounded-full text-white">
-                                {"Lv."} {index + 1}
-                              </div>
-                            </div>
-                            <div className="text-sm text-gray-400 mt-1">
-                              {formatColorText(
-                                data?.breakthroughs && data.breakthroughs[breakthrough.breakthroughId]
-                                  ? getTranslatedString(data.breakthroughs[breakthrough.breakthroughId].desc)
-                                  : "No description available",
-                              )}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    )
-                  })
-              ) : (
-                <div className="text-gray-400 text-center p-4">
-                  {getTranslatedString("no_breakthroughs") || "No breakthroughs available"}
-                </div>
-              )}
-            </div>
-          ),
-        },
-      ]}
+  return (
+    <TabModal
+      {...modalProps}
       initialTabId={initialTab}
       footer={
         <div className="flex justify-end">
-          <button onClick={onClose} className="neon-button px-4 py-2 rounded-lg text-sm">
+          <button onClick={() => onClose()} className="neon-button px-4 py-2 rounded-lg text-sm">
             Close
           </button>
         </div>
       }
       maxWidth="max-w-2xl"
+      closeOnOutsideClick={true} // 외부 클릭으로 닫히지 않도록 설정
     />
   )
 
@@ -541,4 +545,3 @@ export function CharacterDetailsModal({
     )
   }
 }
-
