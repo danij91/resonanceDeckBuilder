@@ -1,4 +1,11 @@
 {
+    
+    "excludeSkillComment":[
+        "음에너지",
+        "과일씨",
+        "잿더미",
+        "스모킹 건"
+    ],
     "excludedSkillIds": [
         12300470,
         12300049,
