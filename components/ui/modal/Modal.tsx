@@ -1,12 +1,14 @@
 "use client"
 
 import type React from "react"
-import { useEffect, useRef } from "react"
-import { X } from "lucide-react"
+import { useEffect, useRef, useState } from "react"
+
+// 모달 관리를 위한 전역 변수
+let modalCounter = 0
 
 export interface ModalProps {
   isOpen: boolean
-  onClose: () => void
+  onClose: (e?: React.MouseEvent) => void
   title?: React.ReactNode
   children: React.ReactNode
   footer?: React.ReactNode
@@ -24,29 +26,51 @@ export function Modal({
   closeOnOutsideClick = true,
 }: ModalProps) {
   const modalRef = useRef<HTMLDivElement>(null)
+  // 각 모달 인스턴스에 고유 ID 부여
+  const [modalId] = useState(() => `modal-${modalCounter++}`)
+  // 모달의 z-index 관리
+  const [zIndex, setZIndex] = useState(100)
 
-  // 모달 외부 클릭 시 닫기
+  // 모달이 열릴 때 z-index 증가
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (closeOnOutsideClick && modalRef.current && !modalRef.current.contains(event.target as Node)) {
-        onClose()
-      }
-    }
-
     if (isOpen) {
-      document.addEventListener("mousedown", handleClickOutside)
-    }
+      // 현재 열린 모달 중 가장 높은 z-index 찾기
+      const modals = document.querySelectorAll(".neon-modal-backdrop")
+      let maxZIndex = 100
 
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [isOpen, onClose, closeOnOutsideClick])
+      modals.forEach((modal) => {
+        const currentZIndex = Number.parseInt(window.getComputedStyle(modal).zIndex, 10)
+        if (currentZIndex > maxZIndex) {
+          maxZIndex = currentZIndex
+        }
+      })
 
-  // ESC 키로 모달 닫기
+      // 현재 모달의 z-index를 가장 높은 값 + 10으로 설정
+      setZIndex(maxZIndex + 10)
+    }
+  }, [isOpen])
+
+  // ESC 키로 모달 닫기 - 가장 위에 있는 모달만 닫히도록 수정
   useEffect(() => {
     const handleEscKey = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        onClose()
+        // 현재 열린 모달 중 가장 높은 z-index를 가진 모달 찾기
+        const modals = document.querySelectorAll(".neon-modal-backdrop")
+        let maxZIndex = 0
+        let topModalId = ""
+
+        modals.forEach((modal) => {
+          const currentZIndex = Number.parseInt(window.getComputedStyle(modal).zIndex, 10)
+          if (currentZIndex > maxZIndex) {
+            maxZIndex = currentZIndex
+            topModalId = modal.id
+          }
+        })
+
+        // 현재 모달이 가장 위에 있는 경우에만 닫기
+        if (topModalId === modalId) {
+          onClose()
+        }
       }
     }
 
@@ -57,25 +81,44 @@ export function Modal({
     return () => {
       document.removeEventListener("keydown", handleEscKey)
     }
-  }, [isOpen, onClose])
+  }, [isOpen, onClose, modalId])
 
   // 모달이 열릴 때 body에 modal-open 클래스 추가
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("modal-open")
     } else {
-      document.body.classList.remove("modal-open")
+      // 열린 모달이 없는 경우에만 modal-open 클래스 제거
+      const openModals = document.querySelectorAll(".neon-modal-backdrop")
+      if (openModals.length <= 1) {
+        document.body.classList.remove("modal-open")
+      }
     }
 
     return () => {
-      document.body.classList.remove("modal-open")
+      // 컴포넌트 언마운트 시 열린 모달이 없는 경우에만 modal-open 클래스 제거
+      const openModals = document.querySelectorAll(".neon-modal-backdrop")
+      if (openModals.length <= 1) {
+        document.body.classList.remove("modal-open")
+      }
     }
   }, [isOpen])
 
   if (!isOpen) return null
 
   return (
-    <div className="neon-modal-backdrop fixed inset-0 flex items-center justify-center z-[100]">
+    <div
+      id={modalId}
+      className="neon-modal-backdrop fixed inset-0 flex items-center justify-center"
+      style={{ zIndex }}
+      onClick={(e) => {
+        // 현재 모달의 backdrop을 클릭한 경우에만 닫기
+        if (closeOnOutsideClick && e.target === e.currentTarget) {
+          console.log("Modal backdrop clicked, closing modal")
+          onClose(e)
+        }
+      }}
+    >
       <div
         ref={modalRef}
         className={`neon-modal ${maxWidth} w-full flex flex-col max-h-[90vh] overflow-y-auto`}
@@ -88,7 +131,6 @@ export function Modal({
           >
             <div className="w-full flex justify-between items-center">
               <div className="flex-1">{title}</div>
-
             </div>
           </div>
         )}
@@ -102,4 +144,3 @@ export function Modal({
     </div>
   )
 }
-
