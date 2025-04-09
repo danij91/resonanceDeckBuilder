@@ -69,14 +69,7 @@ export function SkillCard({
       <div className="absolute top-0 right-0 px-0.5 py-0 text-white font-bold sm:text-3xl text-xs z-10">
         {extraInfo.cost}
       </div>
-
-      {/* Amount badge - only show if amount > 0 */}
-      {extraInfo.amount > 0 && (
-        <div className="absolute top-0 left-0 px-1 py-0.5 bg-blue-600 bg-opacity-70 text-white font-bold sm:text-sm text-xs z-10 rounded-br-md">
-          x{extraInfo.amount}
-        </div>
-      )}
-
+      
       {/* Card content */}
       <div className="relative z-1 p-0 flex flex-col h-full">
         {/* Empty space in the middle */}

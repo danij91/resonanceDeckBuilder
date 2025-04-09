@@ -191,7 +191,7 @@ export function CharacterSlot({
       {/* Character Card - 모바일에서도 적절한 크기로 표시되도록 수정 */}
       <div
         className={`
-          relative w-full aspect-[3/4] rounded-lg overflow-hidden
+          relative w-full aspect-[3/4] rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden
           ${
             isEmpty
               ? "flex items-center justify-center cursor-pointer border border-[hsla(var(--neon-white),0.3)] bg-black bg-opacity-70 hover:bg-white hover:bg-opacity-10"
@@ -221,7 +221,7 @@ export function CharacterSlot({
             <div className="absolute inset-0 bg-black bg-opacity-20"></div>
 
             {/* Content */}
-            <div className="relative z-10 p-1 sm:p-3 flex flex-col h-full">
+            <div className="relative z-10 p-1 lg:p-3 flex flex-col h-full">
               {/* Character action buttons - 상단에 위치 */}
               <div className="flex justify-between w-full">
                 {/* 리더 임명 버튼 또는 리더 왕관 뱃지 - 왼쪽 위 */}
@@ -236,7 +236,7 @@ export function CharacterSlot({
                   {!isEmpty &&
                     (isLeader ? (
                       <div
-                        className="bg-red-600 rounded-md flex items-center justify-center transition-all duration-300"
+                        className="bg-red-600 rounded-full flex items-center justify-center transition-all duration-300"
                         style={{
                           width: `${buttonSize}px`,
                           height: `${buttonSize}px`,
@@ -255,7 +255,7 @@ export function CharacterSlot({
                           onSetLeader()
                         }}
                         aria-label={getTranslatedString("set_as_leader") || "Set as leader"}
-                        className="character-action-btn hover:bg-black hover:bg-opacity-80 transition-all duration-300"
+                        className="rounded-lg lg:rounded-xl character-action-btn hover:bg-black hover:bg-opacity-80 transition-all duration-300"
                         style={{
                           width: `${buttonSize}px`,
                           height: `${buttonSize}px`,
@@ -276,7 +276,7 @@ export function CharacterSlot({
                       setShowCharacterDetails(true)
                     }}
                     aria-label={getTranslatedString("character.details") || "Character details"}
-                    className="character-action-btn"
+                    className="rounded-lg lg:rounded-xl character-action-btn"
                     style={{
                       width: `${buttonSize}px`,
                       height: `${buttonSize}px`,
@@ -288,11 +288,11 @@ export function CharacterSlot({
                   </button>
                 )}
               </div>
-
+              <div className="mt-auto flex flex-col">
               {/* 각성 단계 표시 - 이름 위 왼쪽 정렬로 표시, 반응형으로 조정 */}
               {!isEmpty && (
-                <div className="absolute bottom-6 lg:bottom-11 px-0">
-                  <div className="bg-purple-600 rounded-full px-1 py-0.5 sm:px-2 sm:py-1 shadow-lg flex items-center justify-center">
+                <div className="w-max mb-1 inline-block px-0">
+                  <div className="bg-purple-600 rounded-full px-1 py-0.5 lg:px-2 lg:py-1 shadow-lg flex items-center justify-center">
                     <Star className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-300" />
                     <span className="text-white text-xs sm:text-sm font-bold ml-0.5 sm:ml-1">
                       {awakeningStage !== null ? awakeningStage : 0}
@@ -302,8 +302,8 @@ export function CharacterSlot({
               )}
 
               {/* 이름을 하단으로 이동, 각성 표시와 겹치지 않도록 패딩 추가 */}
-              <div className="mt-auto">
-                <h3 className="text-xs sm:text-xl font-semibold text-white neon-text truncate px-0 pb-0">
+              
+                <h3 className="w-max mb-0 rounded-full inline-block bg-gray-800 bg-opacity-60 text-xs sm:text-lg lg:text-xl xl:text-2xl font-semibold text-white neon-text truncate px-1 pb-0">
                   {getTranslatedString(character.name)}
                 </h3>
               </div>
@@ -350,19 +350,19 @@ export function CharacterSlot({
               )}
 
               {/* 장비 이름 - 슬롯 내부 하단에 표시 (모바일에서는 숨김) */}
-              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-[0.5rem] sm:text-xs text-center truncate neon-text hidden sm:block">
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-[0.5rem] sm:text-sm text-center truncate neon-text hidden lg:block">
                 {getTranslatedString(weaponEquipment.name)}
               </div>
 
               {/* 장비 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 - 모바일에서도 잘 보이도록 수정 */}
               <button
-                className="equipment-info-btn hidden sm:flex"
+                className="equipment-info-btn hidden lg:flex"
                 onClick={(e) => {
                   e.stopPropagation()
                   setShowEquipmentDetails(equipment.weapon)
                 }}
               >
-                <Info className="w-2 h-2" />
+                <Info className="w-4 h-4" />
               </button>
             </div>
           )}
@@ -404,7 +404,7 @@ export function CharacterSlot({
               )}
 
               {/* 장비 이름 - 슬롯 내부 하단에 표시 (모바일에서는 숨김) */}
-              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-[0.5rem] sm:text-xs text-center truncate neon-text hidden sm:block">
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-[0.5rem] sm:text-sm text-center truncate neon-text hidden sm:block">
                 {getTranslatedString(armorEquipment.name)}
               </div>
 
@@ -416,7 +416,7 @@ export function CharacterSlot({
                   setShowEquipmentDetails(equipment.armor)
                 }}
               >
-                <Info className="w-2 h-2" />
+                <Info className="w-4 h-4" />
               </button>
             </div>
           )}
@@ -462,7 +462,7 @@ export function CharacterSlot({
               )}
 
               {/* 장비 이름 - 슬롯 내부 하단에 표시 (모바일에서는 숨김) */}
-              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-[0.5rem] sm:text-xs text-center truncate neon-text hidden sm:block">
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-[0.5rem] sm:text-sm text-center truncate neon-text hidden sm:block">
                 {getTranslatedString(accessoryEquipment.name)}
               </div>
 
@@ -474,7 +474,7 @@ export function CharacterSlot({
                   setShowEquipmentDetails(equipment.accessory)
                 }}
               >
-                <Info className="w-2 h-2" />
+                <Info className="w-4 h-4" />
               </button>
             </div>
           )}

@@ -71,9 +71,7 @@ export function SearchModal({ searchControl, ...modalProps }: SearchModalProps) 
 
   return (
     <Modal {...modalProps} title={enhancedTitle}>
-      {/* 내용 영역 */}
       {modalProps.children}
     </Modal>
   )
 }
-

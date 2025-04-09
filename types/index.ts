@@ -139,6 +139,7 @@ export interface Equipment {
   type?: string // weapon, armor, accessory
   url?: string
   skillList?: Array<{ skillId: number }>
+  Getway?: Array<{ DisplayName: string }> // 획득 방법 배열 추가
 }
 
 // Equipment Type Mapping
@@ -177,4 +178,3 @@ export interface SpecialControl {
   minimum?: string
   maximum?: string
 }
-
