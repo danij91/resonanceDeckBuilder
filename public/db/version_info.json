@@ -1,0 +1,21 @@
+{
+  "activeGameData": {
+    "sourceRegion": "CN",
+    "clientVersion": "1.4.404",
+    "lastUpdated": "2025-04-09T20:44:49.017Z"
+  },
+  "translationData": {
+    "CN": {
+      "clientVersion": "1.4.404",
+      "lastUpdated": "2025-04-09T20:44:49.017Z"
+    },
+    "JP": {
+      "clientVersion": "1.4.68",
+      "lastUpdated": "2025-04-09T20:44:49.017Z"
+    },
+    "KR": {
+      "clientVersion": "1.4.187",
+      "lastUpdated": "2025-04-09T20:44:49.017Z"
+    }
+  }
+}
