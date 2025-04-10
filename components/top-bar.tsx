@@ -3,12 +3,13 @@
 import type React from "react"
 
 import { useState, useEffect, useRef } from "react"
-import { Globe, Download, Upload, RefreshCw, Share2, HelpCircle, Save, FolderOpen } from "lucide-react"
+import { Globe, Download, Upload, RefreshCw, Share2, HelpCircle, Save, FolderOpen, Camera } from "lucide-react"
 import { StylizedTitle } from "./stylized-title"
 import { HelpModal } from "./ui/modal/HelpModal"
 import { useLanguage } from "../contexts/language-context"
 import { ScreenshotButton } from "./screenshot-button" // 추가
 
+// TopBarProps 인터페이스에 isPhotoMode와 onTogglePhotoMode 속성을 추가합니다:
 interface TopBarProps {
   onClear: () => void
   onImport: () => Promise<void>
@@ -17,9 +18,21 @@ interface TopBarProps {
   onSave: () => void // 추가: 저장 버튼 핸들러
   onLoad: () => void // 추가: 불러오기 버튼 핸들러
   contentRef: React.RefObject<HTMLElement> // 추가: 캡처할 컨텐츠 참조
+  isPhotoMode: boolean // 추가: 사진 모드 상태
+  onTogglePhotoMode: () => void // 추가: 사진 모드 토글 함수
 }
 
-export function TopBar({ onClear, onImport, onExport, onShare, onSave, onLoad, contentRef }: TopBarProps) {
+export function TopBar({
+  onClear,
+  onImport,
+  onExport,
+  onShare,
+  onSave,
+  onLoad,
+  contentRef,
+  isPhotoMode,
+  onTogglePhotoMode,
+}: TopBarProps) {
   const { currentLanguage, supportedLanguages, getTranslatedString, changeLanguage, isChangingLanguage } = useLanguage()
 
   const [showLanguageMenu, setShowLanguageMenu] = useState(false)
@@ -230,6 +243,17 @@ export function TopBar({ onClear, onImport, onExport, onShare, onSave, onLoad, c
                 aria-label={getTranslatedString("help") || "Help"}
               >
                 <HelpCircle className={iconClass} />
+              </button>
+              {/* Camera Button */}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation()
+                  onTogglePhotoMode() // 사진 모드 토글 함수 호출
+                }}
+                className={`${buttonBaseClass} ${isPhotoMode ? "bg-blue-600" : ""}`}
+                aria-label={getTranslatedString("photo_mode") || "Photo Mode"}
+              >
+                <Camera className={iconClass} />
               </button>
             </div>
           </div>
