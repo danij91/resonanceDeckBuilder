@@ -5581,5 +5581,6 @@
   "tag_tagName_12601676": "Assault Commando",
   "tag_tagName_12601680": "Summoned Creature",
   "status_effects": "Keywords",
-  "no_status_effects": "No Keywords"
+  "no_status_effects": "No Keywords",
+  "total_cards": "Total Cards"
 }

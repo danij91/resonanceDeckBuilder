@@ -7446,5 +7446,6 @@
   "tag_tagName_12601680": "소환물",
   "tag_tagName_12601684": "그린랜드",
   "status_effects": "키워드",
-  "no_status_effects": "키워드 없음"
+  "no_status_effects": "키워드 없음",
+  "total_cards": "총 카드수"
 }
