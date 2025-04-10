@@ -68,9 +68,9 @@ export function getAvailableCardIds(
     const charSkillMap = data.charSkillMap?.[charId.toString()]
     if (!charSkillMap) return
 
-    // relatedSkill 처리
-    if (charSkillMap.relatedSkill) {
-      charSkillMap.relatedSkill.forEach((skillId: number) => {
+    // 새로운 구조: skills 배열 처리
+    if (charSkillMap.skills) {
+      charSkillMap.skills.forEach((skillId: number) => {
         const skill = data.skills[skillId.toString()]
         if (skill && skill.cardID) {
           availableCardIds.add(skill.cardID.toString())
@@ -78,7 +78,17 @@ export function getAvailableCardIds(
       })
     }
 
-    // notFromCharacters 처리
+    // 새로운 구조: relatedSkills 배열 처리
+    if (charSkillMap.relatedSkills) {
+      charSkillMap.relatedSkills.forEach((skillId: number) => {
+        const skill = data.skills[skillId.toString()]
+        if (skill && skill.cardID) {
+          availableCardIds.add(skill.cardID.toString())
+        }
+      })
+    }
+
+    // 새로운 구조: notFromCharacters 배열 처리
     if (charSkillMap.notFromCharacters) {
       charSkillMap.notFromCharacters.forEach((skillId: number) => {
         const skill = data.skills[skillId.toString()]
