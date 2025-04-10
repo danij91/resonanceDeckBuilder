@@ -36,8 +36,7 @@ export function ScreenshotButton({ targetRef, getTranslatedString }: ScreenshotB
       // 스크린샷 캡처
       const dataUrl = await htmlToImage.toPng(targetRef.current, {
         quality: 1,
-        pixelRatio: 1,
-        backgroundColor: "#000000",
+        pixelRatio: window.devicePixelRatio || 1,
       })
 
       // 다운로드 링크 생성 및 클릭

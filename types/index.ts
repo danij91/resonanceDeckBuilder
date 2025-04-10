@@ -31,6 +31,7 @@ export interface Card {
   cardType?: string
   ownerId?: number
   idCn?: string // Added for checking neutral cards
+  tagList?: string[] // Added for status effects
   ExCondList?: Array<{
     condId?: number
     des?: number
