@@ -17,7 +17,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600409
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600005": {
     "id": 10600005,
@@ -27,7 +35,24 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600125
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600128
+      },
+      {
+        "tagId": 12600087
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600014": {
     "id": 10600014,
@@ -37,7 +62,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600466
+      },
+      {
+        "tagId": 12601628
+      }
+    ]
   },
   "10600015": {
     "id": 10600015,
@@ -47,7 +83,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600071
+      },
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600057
+      }
+    ]
   },
   "10600016": {
     "id": 10600016,
@@ -67,7 +114,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600072
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600410
+      }
+    ]
   },
   "10600034": {
     "id": 10600034,
@@ -87,7 +148,24 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600207
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12601631
+      }
+    ]
   },
   "10600054": {
     "id": 10600054,
@@ -107,7 +185,15 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600039
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600055": {
     "id": 10600055,
@@ -117,7 +203,18 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600315
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600056": {
     "id": 10600056,
@@ -137,7 +234,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600420
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600128
+      }
+    ]
   },
   "10600058": {
     "id": 10600058,
@@ -147,7 +255,18 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600163
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600059": {
     "id": 10600059,
@@ -167,7 +286,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600147
+      },
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600210
+      }
+    ]
   },
   "10600060": {
     "id": 10600060,
@@ -177,7 +307,18 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600147
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600466
+      }
+    ]
   },
   "10600061": {
     "id": 10600061,
@@ -197,7 +338,15 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600147
+      },
+      {
+        "tagId": 12600009
+      }
+    ]
   },
   "10600063": {
     "id": 10600063,
@@ -207,7 +356,21 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600163
+      },
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600210
+      }
+    ]
   },
   "10600065": {
     "id": 10600065,
@@ -217,7 +380,21 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600163
+      },
+      {
+        "tagId": 12600019
+      },
+      {
+        "tagId": 12600009
+      }
+    ]
   },
   "10600078": {
     "id": 10600078,
@@ -227,7 +404,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600004
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600009
+      }
+    ]
   },
   "10600079": {
     "id": 10600079,
@@ -247,7 +435,12 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600009
+      }
+    ]
   },
   "10600080": {
     "id": 10600080,
@@ -257,7 +450,18 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600309
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600081": {
     "id": 10600081,
@@ -277,7 +481,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600121
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600082": {
     "id": 10600082,
@@ -287,7 +499,18 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601638
+      }
+    ]
   },
   "10600087": {
     "id": 10600087,
@@ -297,7 +520,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600220
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600088": {
     "id": 10600088,
@@ -307,7 +541,24 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600119
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600089": {
     "id": 10600089,
@@ -327,7 +578,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600219
+      },
+      {
+        "tagId": 12600128
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600090": {
     "id": 10600090,
@@ -337,7 +599,18 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600054
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600276
+      }
+    ]
   },
   "10600092": {
     "id": 10600092,
@@ -347,7 +620,24 @@
     "cost_SN": 60000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600106
+      },
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12600087
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600093": {
     "id": 10600093,
@@ -367,7 +657,15 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600109
+      },
+      {
+        "tagId": 12600028
+      }
+    ]
   },
   "10600094": {
     "id": 10600094,
@@ -387,7 +685,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600269
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601634
+      }
+    ]
   },
   "10600095": {
     "id": 10600095,
@@ -397,7 +709,21 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600126
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600186
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600096": {
     "id": 10600096,
@@ -407,7 +733,21 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600057
+      },
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600271
+      },
+      {
+        "tagId": 12601094
+      }
+    ]
   },
   "10600097": {
     "id": 10600097,
@@ -417,7 +757,18 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600114
+      },
+      {
+        "tagId": 12600057
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600098": {
     "id": 10600098,
@@ -427,7 +778,24 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600394
+      },
+      {
+        "tagId": 12600057
+      },
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600271
+      }
+    ]
   },
   "10600103": {
     "id": 10600103,
@@ -447,7 +815,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600311
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600104": {
     "id": 10600104,
@@ -467,7 +843,24 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600404
+      },
+      {
+        "tagId": 12600084
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600106": {
     "id": 10600106,
@@ -477,7 +870,21 @@
     "cost_SN": 60000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600129
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600088
+      }
+    ]
   },
   "10600107": {
     "id": 10600107,
@@ -487,7 +894,21 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600069
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12600268
+      }
+    ]
   },
   "10600109": {
     "id": 10600109,
@@ -502,6 +923,14 @@
         "condId": 96300002,
         "des": 80608010
       }
+    ],
+    "tagList": [
+      {
+        "tagId": 12600130
+      },
+      {
+        "tagId": 12600145
+      }
     ]
   },
   "10600110": {
@@ -512,7 +941,18 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600132
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600113": {
     "id": 10600113,
@@ -532,7 +972,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600131
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600114": {
     "id": 10600114,
@@ -542,7 +990,24 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600124
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600087
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600115": {
     "id": 10600115,
@@ -552,7 +1017,27 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600314
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600087
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600154": {
     "id": 10600154,
@@ -562,7 +1047,21 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600004
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600019
+      },
+      {
+        "tagId": 12600009
+      }
+    ]
   },
   "10600159": {
     "id": 10600159,
@@ -572,7 +1071,18 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600160": {
     "id": 10600160,
@@ -592,7 +1102,15 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600043
+      },
+      {
+        "tagId": 12600028
+      }
+    ]
   },
   "10600161": {
     "id": 10600161,
@@ -612,7 +1130,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600133
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600057
+      }
+    ]
   },
   "10600162": {
     "id": 10600162,
@@ -632,7 +1164,24 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600057
+      },
+      {
+        "tagId": 12601619
+      }
+    ]
   },
   "10600170": {
     "id": 10600170,
@@ -642,7 +1191,15 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600134
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600173": {
     "id": 10600173,
@@ -652,7 +1209,27 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600122
+      },
+      {
+        "tagId": 12600277
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600268
+      },
+      {
+        "tagId": 12600011
+      }
+    ]
   },
   "10600174": {
     "id": 10600174,
@@ -672,7 +1249,15 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600262
+      },
+      {
+        "tagId": 12600028
+      }
+    ]
   },
   "10600175": {
     "id": 10600175,
@@ -692,7 +1277,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600263
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600176": {
     "id": 10600176,
@@ -712,7 +1305,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600228
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600177": {
     "id": 10600177,
@@ -722,7 +1326,21 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600063
+      },
+      {
+        "tagId": 12600057
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600178": {
     "id": 10600178,
@@ -732,7 +1350,15 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600182": {
     "id": 10600182,
@@ -752,7 +1378,15 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600137
+      },
+      {
+        "tagId": 12600009
+      }
+    ]
   },
   "10600184": {
     "id": 10600184,
@@ -762,7 +1396,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600312
+      },
+      {
+        "tagId": 12600128
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600185": {
     "id": 10600185,
@@ -782,7 +1427,21 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600082
+      },
+      {
+        "tagId": 12601620
+      }
+    ]
   },
   "10600186": {
     "id": 10600186,
@@ -792,7 +1451,18 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600140
+      },
+      {
+        "tagId": 12600207
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600187": {
     "id": 10600187,
@@ -802,7 +1472,18 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600382
+      }
+    ]
   },
   "10600013": {
     "id": 10600013,
@@ -822,7 +1503,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600107
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600057
+      }
+    ]
   },
   "10600017": {
     "id": 10600017,
@@ -832,7 +1527,18 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600103
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600057
+      }
+    ]
   },
   "10600019": {
     "id": 10600019,
@@ -852,7 +1558,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600405
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600020": {
     "id": 10600020,
@@ -872,7 +1589,12 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600023": {
     "id": 10600023,
@@ -882,7 +1604,21 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601637
+      }
+    ]
   },
   "10600009": {
     "id": 10600009,
@@ -892,7 +1628,18 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600308
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600037": {
     "id": 10600037,
@@ -912,7 +1659,15 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600147
+      },
+      {
+        "tagId": 12600028
+      }
+    ]
   },
   "10600038": {
     "id": 10600038,
@@ -932,7 +1687,18 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600163
+      },
+      {
+        "tagId": 12600028
+      }
+    ]
   },
   "10600039": {
     "id": 10600039,
@@ -952,7 +1718,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600041
+      },
+      {
+        "tagId": 12600269
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600047": {
     "id": 10600047,
@@ -972,7 +1749,12 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600048": {
     "id": 10600048,
@@ -982,7 +1764,21 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600113
+      },
+      {
+        "tagId": 12600084
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600051": {
     "id": 10600051,
@@ -1002,7 +1798,12 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600009
+      }
+    ]
   },
   "10600053": {
     "id": 10600053,
@@ -1022,7 +1823,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600064
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600057": {
     "id": 10600057,
@@ -1042,7 +1851,15 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600066
+      },
+      {
+        "tagId": 12600028
+      }
+    ]
   },
   "10600062": {
     "id": 10600062,
@@ -1062,7 +1879,15 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600118
+      },
+      {
+        "tagId": 12600028
+      }
+    ]
   },
   "10600064": {
     "id": 10600064,
@@ -1082,7 +1907,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600391
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600066": {
     "id": 10600066,
@@ -1092,7 +1925,15 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600105
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600067": {
     "id": 10600067,
@@ -1112,7 +1953,18 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600112
+      },
+      {
+        "tagId": 12600028
+      }
+    ]
   },
   "10600073": {
     "id": 10600073,
@@ -1132,7 +1984,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600307
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600074": {
     "id": 10600074,
@@ -1152,7 +2012,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600276
+      },
+      {
+        "tagId": 12600009
+      }
+    ]
   },
   "10600006": {
     "id": 10600006,
@@ -1172,7 +2040,15 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600419
+      },
+      {
+        "tagId": 12600028
+      }
+    ]
   },
   "10600007": {
     "id": 10600007,
@@ -1182,7 +2058,15 @@
     "cost_SN": 0,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600076
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600008": {
     "id": 10600008,
@@ -1202,7 +2086,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12601624
+      }
+    ]
   },
   "10600025": {
     "id": 10600025,
@@ -1231,7 +2123,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600028
+      },
+      {
+        "tagId": 12601623
+      }
+    ]
   },
   "10600026": {
     "id": 10600026,
@@ -1251,7 +2154,18 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600138
+      },
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600077
+      }
+    ]
   },
   "10600040": {
     "id": 10600040,
@@ -1271,7 +2185,15 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600005
+      },
+      {
+        "tagId": 12600028
+      }
+    ]
   },
   "10600041": {
     "id": 10600041,
@@ -1281,7 +2203,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600412
+      },
+      {
+        "tagId": 12600276
+      },
+      {
+        "tagId": 12600009
+      }
+    ]
   },
   "10600043": {
     "id": 10600043,
@@ -1291,7 +2224,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600400
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600091": {
     "id": 10600091,
@@ -1301,7 +2245,18 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600401
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600099": {
     "id": 10600099,
@@ -1321,7 +2276,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601636
+      }
+    ]
   },
   "10600121": {
     "id": 10600121,
@@ -1341,7 +2310,12 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600122": {
     "id": 10600122,
@@ -1351,7 +2325,21 @@
     "cost_SN": 10000,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600055
+      },
+      {
+        "tagId": 12600128
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600123": {
     "id": 10600123,
@@ -1361,7 +2349,21 @@
     "cost_SN": 10000,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600055
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600124": {
     "id": 10600124,
@@ -1371,7 +2373,24 @@
     "cost_SN": 10000,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600055
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600125": {
     "id": 10600125,
@@ -1391,7 +2410,12 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600126": {
     "id": 10600126,
@@ -1411,7 +2435,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600075
+      },
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600127": {
     "id": 10600127,
@@ -1421,7 +2456,21 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600127
+      },
+      {
+        "tagId": 12601658
+      }
+    ]
   },
   "10600077": {
     "id": 10600077,
@@ -1441,7 +2490,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600498
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600057
+      }
+    ]
   },
   "10600128": {
     "id": 10600128,
@@ -1451,7 +2511,15 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600108
+      },
+      {
+        "tagId": 12600037
+      }
+    ]
   },
   "10600132": {
     "id": 10600132,
@@ -1461,7 +2529,15 @@
     "cost_SN": 60000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12601403
+      }
+    ]
   },
   "10600133": {
     "id": 10600133,
@@ -1471,7 +2547,21 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600037
+      },
+      {
+        "tagId": 12600172
+      },
+      {
+        "tagId": 12600240
+      },
+      {
+        "tagId": 12601403
+      }
+    ]
   },
   "10600135": {
     "id": 10600135,
@@ -1481,7 +2571,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600037
+      },
+      {
+        "tagId": 12600229
+      },
+      {
+        "tagId": 12601403
+      }
+    ]
   },
   "10600144": {
     "id": 10600144,
@@ -1491,7 +2592,21 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600036
+      },
+      {
+        "tagId": 12600045
+      },
+      {
+        "tagId": 12600480
+      }
+    ]
   },
   "10600145": {
     "id": 10600145,
@@ -1501,7 +2616,21 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600481
+      }
+    ]
   },
   "10600155": {
     "id": 10600155,
@@ -1511,7 +2640,21 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600479
+      }
+    ]
   },
   "10600163": {
     "id": 10600163,
@@ -1531,7 +2674,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600222
+      }
+    ]
   },
   "10600164": {
     "id": 10600164,
@@ -1541,7 +2692,18 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600019
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600402
+      }
+    ]
   },
   "10600165": {
     "id": 10600165,
@@ -1561,7 +2723,12 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600166": {
     "id": 10600166,
@@ -1581,7 +2748,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600019
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601639
+      }
+    ]
   },
   "10600172": {
     "id": 10600172,
@@ -1601,7 +2782,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600399
+      },
+      {
+        "tagId": 12600173
+      },
+      {
+        "tagId": 12600009
+      }
+    ]
   },
   "10600188": {
     "id": 10600188,
@@ -1621,7 +2813,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600428
+      },
+      {
+        "tagId": 12600150
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600189": {
     "id": 10600189,
@@ -1631,7 +2834,21 @@
     "cost_SN": 0,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600408
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600216
+      },
+      {
+        "tagId": 12600206
+      }
+    ]
   },
   "10600190": {
     "id": 10600190,
@@ -1641,7 +2858,21 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600070
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600245
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600191": {
     "id": 10600191,
@@ -1670,7 +2901,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600242
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600199": {
     "id": 10600199,
@@ -1680,7 +2922,21 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600234
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600087
+      },
+      {
+        "tagId": 12600007
+      }
+    ]
   },
   "10600200": {
     "id": 10600200,
@@ -1690,7 +2946,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600336
+      },
+      {
+        "tagId": 12600173
+      },
+      {
+        "tagId": 12600009
+      }
+    ]
   },
   "10600201": {
     "id": 10600201,
@@ -1700,7 +2967,18 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600224
+      },
+      {
+        "tagId": 12600128
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600203": {
     "id": 10600203,
@@ -1710,7 +2988,15 @@
     "cost_SN": 20000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601403
+      }
+    ]
   },
   "10600207": {
     "id": 10600207,
@@ -1720,7 +3006,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600227
+      },
+      {
+        "tagId": 12600087
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600208": {
     "id": 10600208,
@@ -1730,7 +3027,15 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600276
+      },
+      {
+        "tagId": 12600009
+      }
+    ]
   },
   "10600209": {
     "id": 10600209,
@@ -1740,7 +3045,21 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600068
+      },
+      {
+        "tagId": 12600087
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600210": {
     "id": 10600210,
@@ -1750,7 +3069,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600028
+      },
+      {
+        "tagId": 12600230
+      },
+      {
+        "tagId": 12601403
+      }
+    ]
   },
   "10600211": {
     "id": 10600211,
@@ -1760,7 +3090,15 @@
     "cost_SN": 20000,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601403
+      }
+    ]
   },
   "10600212": {
     "id": 10600212,
@@ -1770,7 +3108,18 @@
     "cost_SN": 80000,
     "cardType": "SelfDestruction",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600079
+      },
+      {
+        "tagId": 12601403
+      }
+    ]
   },
   "10600213": {
     "id": 10600213,
@@ -1780,7 +3129,18 @@
     "cost_SN": 100000,
     "cardType": "SelfDestruction",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600091
+      },
+      {
+        "tagId": 12601403
+      }
+    ]
   },
   "10600214": {
     "id": 10600214,
@@ -1790,7 +3150,15 @@
     "cost_SN": 0,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600215": {
     "id": 10600215,
@@ -1810,7 +3178,12 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600216": {
     "id": 10600216,
@@ -1830,7 +3203,12 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600222": {
     "id": 10600222,
@@ -1840,7 +3218,18 @@
     "cost_SN": 10000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600240
+      },
+      {
+        "tagId": 12601403
+      }
+    ]
   },
   "10600223": {
     "id": 10600223,
@@ -1860,7 +3249,21 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600367
+      },
+      {
+        "tagId": 12600028
+      },
+      {
+        "tagId": 12601658
+      }
+    ]
   },
   "10600225": {
     "id": 10600225,
@@ -1880,7 +3283,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600150
+      },
+      {
+        "tagId": 12600207
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601207
+      }
+    ]
   },
   "10600226": {
     "id": 10600226,
@@ -1900,7 +3317,15 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600028
+      },
+      {
+        "tagId": 12601206
+      }
+    ]
   },
   "10600233": {
     "id": 10600233,
@@ -1910,7 +3335,21 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12601074
+      }
+    ]
   },
   "10600234": {
     "id": 10600234,
@@ -1920,7 +3359,18 @@
     "cost_SN": 0,
     "cardType": "SelfDestruction",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600037
+      },
+      {
+        "tagId": 12600164
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600236": {
     "id": 10600236,
@@ -1940,7 +3390,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600243
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600237": {
     "id": 10600237,
@@ -1960,7 +3418,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600398
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600273
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600158": {
     "id": 10600158,
@@ -1970,7 +3442,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600791
+      },
+      {
+        "tagId": 12600019
+      }
+    ]
   },
   "10600239": {
     "id": 10600239,
@@ -1990,7 +3473,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600090
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600266
+      },
+      {
+        "tagId": 12600001
+      }
+    ]
   },
   "10600244": {
     "id": 10600244,
@@ -2010,7 +3507,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600090
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600789
+      }
+    ]
   },
   "10600245": {
     "id": 10600245,
@@ -2020,7 +3528,21 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600090
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600015
+      },
+      {
+        "tagId": 12600007
+      }
+    ]
   },
   "10600247": {
     "id": 10600247,
@@ -2040,7 +3562,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600163
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600248": {
     "id": 10600248,
@@ -2050,7 +3583,21 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600147
+      },
+      {
+        "tagId": 12600053
+      },
+      {
+        "tagId": 12600269
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600018": {
     "id": 10600018,
@@ -2060,7 +3607,18 @@
     "cost_SN": 10000,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600053
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601573
+      }
+    ]
   },
   "10600140": {
     "id": 10600140,
@@ -2070,7 +3628,30 @@
     "cost_SN": 20000,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600313
+      },
+      {
+        "tagId": 12600128
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600271
+      },
+      {
+        "tagId": 12600057
+      }
+    ]
   },
   "10600143": {
     "id": 10600143,
@@ -2080,7 +3661,24 @@
     "cost_SN": 50000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12600216
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601159
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600141": {
     "id": 10600141,
@@ -2090,7 +3688,18 @@
     "cost_SN": 0,
     "cardType": "SelfDestruction",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600037
+      },
+      {
+        "tagId": 12600240
+      },
+      {
+        "tagId": 12601403
+      }
+    ]
   },
   "10600035": {
     "id": 10600035,
@@ -2100,7 +3709,21 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600082
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601602
+      }
+    ]
   },
   "10600249": {
     "id": 10600249,
@@ -2110,7 +3733,18 @@
     "cost_SN": 10000,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600310
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601476
+      }
+    ]
   },
   "10600250": {
     "id": 10600250,
@@ -2130,7 +3764,24 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600057
+      },
+      {
+        "tagId": 12601619
+      }
+    ]
   },
   "10600049": {
     "id": 10600049,
@@ -2150,7 +3801,24 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600404
+      },
+      {
+        "tagId": 12600084
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600252": {
     "id": 10600252,
@@ -2160,7 +3828,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600312
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600253": {
     "id": 10600253,
@@ -2170,7 +3849,18 @@
     "cost_SN": 0,
     "cardType": "SelfDestruction",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600037
+      },
+      {
+        "tagId": 12600386
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600257": {
     "id": 10600257,
@@ -2190,7 +3880,15 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600118
+      },
+      {
+        "tagId": 12600028
+      }
+    ]
   },
   "10600259": {
     "id": 10600259,
@@ -2210,7 +3908,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600197
+      },
+      {
+        "tagId": 12600082
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600202": {
     "id": 10600202,
@@ -2220,7 +3929,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600198
+      },
+      {
+        "tagId": 12600277
+      },
+      {
+        "tagId": 12600009
+      }
+    ]
   },
   "10600240": {
     "id": 10600240,
@@ -2240,7 +3960,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600082
+      },
+      {
+        "tagId": 12600269
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600044": {
     "id": 10600044,
@@ -2250,7 +3981,27 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601495
+      },
+      {
+        "tagId": 12600014
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600019
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600224": {
     "id": 10600224,
@@ -2270,7 +4021,24 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600150
+      },
+      {
+        "tagId": 12600207
+      },
+      {
+        "tagId": 12600272
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601207
+      }
+    ]
   },
   "10600262": {
     "id": 10600262,
@@ -2280,7 +4048,24 @@
     "cost_SN": 20000,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600074
+      },
+      {
+        "tagId": 12600275
+      },
+      {
+        "tagId": 12600272
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600263": {
     "id": 10600263,
@@ -2290,7 +4075,12 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600028
+      }
+    ]
   },
   "10600264": {
     "id": 10600264,
@@ -2300,7 +4090,12 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600265": {
     "id": 10600265,
@@ -2310,7 +4105,12 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600037
+      }
+    ]
   },
   "10600266": {
     "id": 10600266,
@@ -2320,7 +4120,12 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600009
+      }
+    ]
   },
   "10600267": {
     "id": 10600267,
@@ -2330,7 +4135,12 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600268": {
     "id": 10600268,
@@ -2340,7 +4150,12 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600269": {
     "id": 10600269,
@@ -2360,7 +4175,21 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600082
+      },
+      {
+        "tagId": 12601620
+      }
+    ]
   },
   "10600270": {
     "id": 10600270,
@@ -2370,7 +4199,18 @@
     "cost_SN": 30000,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600200
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600271": {
     "id": 10600271,
@@ -2380,7 +4220,21 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601637
+      }
+    ]
   },
   "10600272": {
     "id": 10600272,
@@ -2390,7 +4244,21 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600316
+      }
+    ]
   },
   "10600273": {
     "id": 10600273,
@@ -2400,7 +4268,21 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12601575
+      }
+    ]
   },
   "10600274": {
     "id": 10600274,
@@ -2410,7 +4292,21 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600406
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600268
+      }
+    ]
   },
   "10600275": {
     "id": 10600275,
@@ -2420,7 +4316,21 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12601575
+      }
+    ]
   },
   "10600278": {
     "id": 10600278,
@@ -2430,7 +4340,21 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601638
+      }
+    ]
   },
   "10600279": {
     "id": 10600279,
@@ -2440,7 +4364,18 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600130
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600280": {
     "id": 10600280,
@@ -2450,7 +4385,21 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600132
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600019
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600281": {
     "id": 10600281,
@@ -2460,7 +4409,15 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600037
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600045": {
     "id": 10600045,
@@ -2480,7 +4437,18 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600039
+      },
+      {
+        "tagId": 12600272
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600046": {
     "id": 10600046,
@@ -2500,7 +4468,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600041
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600269
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600282": {
     "id": 10600282,
@@ -2510,7 +4492,24 @@
     "cost_SN": 20000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601496
+      },
+      {
+        "tagId": 12600170
+      },
+      {
+        "tagId": 12600082
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600131": {
     "id": 10600131,
@@ -2520,7 +4519,21 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600211
+      },
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600276
+      }
+    ]
   },
   "10600138": {
     "id": 10600138,
@@ -2530,7 +4543,21 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600227
+      },
+      {
+        "tagId": 12600087
+      },
+      {
+        "tagId": 12600019
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600002": {
     "id": 10600002,
@@ -2550,7 +4577,21 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600109
+      },
+      {
+        "tagId": 12600019
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600028
+      }
+    ]
   },
   "10600003": {
     "id": 10600003,
@@ -2560,7 +4601,24 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600126
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600269
+      },
+      {
+        "tagId": 12600186
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600010": {
     "id": 10600010,
@@ -2580,7 +4638,12 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600011": {
     "id": 10600011,
@@ -2590,7 +4653,24 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601495
+      },
+      {
+        "tagId": 12601494
+      },
+      {
+        "tagId": 12600271
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600021": {
     "id": 10600021,
@@ -2600,7 +4680,27 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601495
+      },
+      {
+        "tagId": 12600403
+      },
+      {
+        "tagId": 12600019
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600022": {
     "id": 10600022,
@@ -2610,7 +4710,15 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600027": {
     "id": 10600027,
@@ -2620,7 +4728,18 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600111
+      },
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600028": {
     "id": 10600028,
@@ -2630,7 +4749,24 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600019
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600029": {
     "id": 10600029,
@@ -2640,7 +4776,18 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600111
+      },
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600030": {
     "id": 10600030,
@@ -2650,7 +4797,21 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600111
+      },
+      {
+        "tagId": 12600087
+      },
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600031": {
     "id": 10600031,
@@ -2660,7 +4821,21 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600111
+      },
+      {
+        "tagId": 12600089
+      },
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600032": {
     "id": 10600032,
@@ -2670,7 +4845,27 @@
     "cost_SN": 20000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601496
+      },
+      {
+        "tagId": 12601499
+      },
+      {
+        "tagId": 12600082
+      },
+      {
+        "tagId": 12600002
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600033": {
     "id": 10600033,
@@ -2680,7 +4875,18 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600111
+      },
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600036": {
     "id": 10600036,
@@ -2690,7 +4896,27 @@
     "cost_SN": 20000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601496
+      },
+      {
+        "tagId": 12601497
+      },
+      {
+        "tagId": 12600082
+      },
+      {
+        "tagId": 12600273
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600075": {
     "id": 10600075,
@@ -2700,7 +4926,27 @@
     "cost_SN": 20000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601496
+      },
+      {
+        "tagId": 12601498
+      },
+      {
+        "tagId": 12600082
+      },
+      {
+        "tagId": 12600216
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600076": {
     "id": 10600076,
@@ -2710,7 +4956,33 @@
     "cost_SN": 30000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601491
+      },
+      {
+        "tagId": 12600082
+      },
+      {
+        "tagId": 12601487
+      },
+      {
+        "tagId": 12600273
+      },
+      {
+        "tagId": 12600216
+      },
+      {
+        "tagId": 12600002
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600116": {
     "id": 10600116,
@@ -2720,7 +4992,15 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600037
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600117": {
     "id": 10600117,
@@ -2730,7 +5010,18 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600298
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600118": {
     "id": 10600118,
@@ -2740,7 +5031,18 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600037
+      },
+      {
+        "tagId": 12600006
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600139": {
     "id": 10600139,
@@ -2750,7 +5052,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600149": {
     "id": 10600149,
@@ -2760,7 +5067,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600150": {
     "id": 10600150,
@@ -2770,7 +5082,18 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600037
+      },
+      {
+        "tagId": 12600274
+      },
+      {
+        "tagId": 12600216
+      }
+    ]
   },
   "10600151": {
     "id": 10600151,
@@ -2780,7 +5103,15 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600216
+      }
+    ]
   },
   "10600152": {
     "id": 10600152,
@@ -2790,7 +5121,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600153": {
     "id": 10600153,
@@ -2800,7 +5136,15 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600274
+      }
+    ]
   },
   "10600156": {
     "id": 10600156,
@@ -2810,7 +5154,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600193": {
     "id": 10600193,
@@ -2820,7 +5169,15 @@
     "cost_SN": 10000,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600241
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600194": {
     "id": 10600194,
@@ -2830,7 +5187,15 @@
     "cost_SN": 20000,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600384
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600242": {
     "id": 10600242,
@@ -2840,7 +5205,18 @@
     "cost_SN": 30000,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600389
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600283": {
     "id": 10600283,
@@ -2850,7 +5226,15 @@
     "cost_SN": 40000,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600390
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600285": {
     "id": 10600285,
@@ -2860,7 +5244,21 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600382
+      }
+    ]
   },
   "10600286": {
     "id": 10600286,
@@ -2880,7 +5278,12 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600028
+      }
+    ]
   },
   "10600287": {
     "id": 10600287,
@@ -2890,7 +5293,12 @@
     "cost_SN": 10000,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600009
+      }
+    ]
   },
   "10600288": {
     "id": 10600288,
@@ -2900,7 +5308,12 @@
     "cost_SN": 10000,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600289": {
     "id": 10600289,
@@ -2910,7 +5323,15 @@
     "cost_SN": 30000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600028
+      },
+      {
+        "tagId": 12601625
+      }
+    ]
   },
   "10600167": {
     "id": 10600167,
@@ -2920,7 +5341,24 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600397
+      },
+      {
+        "tagId": 12600128
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600057
+      }
+    ]
   },
   "10600290": {
     "id": 10600290,
@@ -2940,7 +5378,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12601577
+      }
+    ]
   },
   "10600291": {
     "id": 10600291,
@@ -2950,7 +5396,18 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600396
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600292": {
     "id": 10600292,
@@ -2960,7 +5417,15 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600007
+      }
+    ]
   },
   "10600169": {
     "id": 10600169,
@@ -2980,7 +5445,12 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600192": {
     "id": 10600192,
@@ -3000,7 +5470,12 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600284": {
     "id": 10600284,
@@ -3020,7 +5495,12 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600293": {
     "id": 10600293,
@@ -3040,7 +5520,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600150
+      },
+      {
+        "tagId": 12600245
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601120
+      }
+    ]
   },
   "10600294": {
     "id": 10600294,
@@ -3050,7 +5544,21 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600426
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600084
+      }
+    ]
   },
   "10600297": {
     "id": 10600297,
@@ -3070,7 +5578,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601636
+      }
+    ]
   },
   "10600298": {
     "id": 10600298,
@@ -3080,7 +5602,21 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600140
+      },
+      {
+        "tagId": 12600207
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600299": {
     "id": 10600299,
@@ -3090,7 +5626,27 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600446
+      },
+      {
+        "tagId": 12600186
+      },
+      {
+        "tagId": 12600087
+      },
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12600206
+      }
+    ]
   },
   "10600300": {
     "id": 10600300,
@@ -3110,7 +5666,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600448
+      },
+      {
+        "tagId": 12600269
+      },
+      {
+        "tagId": 12600216
+      }
+    ]
   },
   "10600301": {
     "id": 10600301,
@@ -3120,7 +5690,36 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600449
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600087
+      },
+      {
+        "tagId": 12600216
+      },
+      {
+        "tagId": 12600150
+      },
+      {
+        "tagId": 12600245
+      },
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12600206
+      }
+    ]
   },
   "10600302": {
     "id": 10600302,
@@ -3140,7 +5739,12 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600050": {
     "id": 10600050,
@@ -3150,7 +5754,21 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600456
+      },
+      {
+        "tagId": 12600173
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600088
+      }
+    ]
   },
   "10600134": {
     "id": 10600134,
@@ -3170,7 +5788,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600457
+      },
+      {
+        "tagId": 12600173
+      },
+      {
+        "tagId": 12600009
+      }
+    ]
   },
   "10600137": {
     "id": 10600137,
@@ -3180,7 +5809,21 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600458
+      },
+      {
+        "tagId": 12600087
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600084
+      }
+    ]
   },
   "10600171": {
     "id": 10600171,
@@ -3190,7 +5833,18 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600493
+      }
+    ]
   },
   "10600183": {
     "id": 10600183,
@@ -3208,6 +5862,20 @@
       {
         "condId": 96300003,
         "des": 80608013
+      }
+    ],
+    "tagList": [
+      {
+        "tagId": 12600019
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600472
+      },
+      {
+        "tagId": 12600354
       }
     ]
   },
@@ -3229,7 +5897,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600472
+      }
+    ]
   },
   "10600241": {
     "id": 10600241,
@@ -3247,6 +5923,20 @@
       {
         "condId": 96300003,
         "des": 80608013
+      }
+    ],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600019
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600472
       }
     ]
   },
@@ -3268,7 +5958,18 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600468
+      },
+      {
+        "tagId": 12600244
+      },
+      {
+        "tagId": 12600028
+      }
+    ]
   },
   "10600255": {
     "id": 10600255,
@@ -3288,7 +5989,18 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600469
+      },
+      {
+        "tagId": 12600269
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600256": {
     "id": 10600256,
@@ -3298,7 +6010,24 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600090
+      },
+      {
+        "tagId": 12600087
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600499
+      },
+      {
+        "tagId": 12600007
+      }
+    ]
   },
   "10600260": {
     "id": 10600260,
@@ -3318,7 +6047,21 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600028
+      },
+      {
+        "tagId": 12600472
+      },
+      {
+        "tagId": 12601635
+      }
+    ]
   },
   "10600303": {
     "id": 10600303,
@@ -3338,7 +6081,24 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600207
+      },
+      {
+        "tagId": 12600216
+      },
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600490
+      }
+    ]
   },
   "10600304": {
     "id": 10600304,
@@ -3348,7 +6108,30 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600207
+      },
+      {
+        "tagId": 12600216
+      },
+      {
+        "tagId": 12600185
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600812
+      },
+      {
+        "tagId": 12600007
+      }
+    ]
   },
   "10600305": {
     "id": 10600305,
@@ -3368,7 +6151,24 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600207
+      },
+      {
+        "tagId": 12600216
+      },
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600490
+      }
+    ]
   },
   "10600307": {
     "id": 10600307,
@@ -3378,7 +6178,21 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12601632
+      }
+    ]
   },
   "10600308": {
     "id": 10600308,
@@ -3388,7 +6202,15 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600309": {
     "id": 10600309,
@@ -3398,7 +6220,21 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601633
+      }
+    ]
   },
   "10600310": {
     "id": 10600310,
@@ -3408,7 +6244,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600018
+      },
+      {
+        "tagId": 12600087
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600311": {
     "id": 10600311,
@@ -3428,7 +6275,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600021
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600312": {
     "id": 10600312,
@@ -3448,7 +6303,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600060
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600313": {
     "id": 10600313,
@@ -3458,7 +6324,24 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600273
+      },
+      {
+        "tagId": 12600496
+      },
+      {
+        "tagId": 12600057
+      }
+    ]
   },
   "10600314": {
     "id": 10600314,
@@ -3468,7 +6351,15 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600057
+      }
+    ]
   },
   "10600315": {
     "id": 10600315,
@@ -3478,7 +6369,27 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600207
+      },
+      {
+        "tagId": 12600216
+      },
+      {
+        "tagId": 12600208
+      },
+      {
+        "tagId": 12600057
+      }
+    ]
   },
   "10600316": {
     "id": 10600316,
@@ -3498,7 +6409,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600472
+      }
+    ]
   },
   "10600317": {
     "id": 10600317,
@@ -3508,7 +6427,18 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600483
+      }
+    ]
   },
   "10600318": {
     "id": 10600318,
@@ -3518,7 +6448,30 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600085
+      },
+      {
+        "tagId": 12600484
+      },
+      {
+        "tagId": 12600207
+      },
+      {
+        "tagId": 12600216
+      },
+      {
+        "tagId": 12600206
+      }
+    ]
   },
   "10600319": {
     "id": 10600319,
@@ -3528,7 +6481,27 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600087
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600500
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600085
+      }
+    ]
   },
   "10600168": {
     "id": 10600168,
@@ -3538,7 +6511,21 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600481
+      }
+    ]
   },
   "10600320": {
     "id": 10600320,
@@ -3548,7 +6535,30 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600085
+      },
+      {
+        "tagId": 12600484
+      },
+      {
+        "tagId": 12600207
+      },
+      {
+        "tagId": 12600216
+      },
+      {
+        "tagId": 12600206
+      }
+    ]
   },
   "10600321": {
     "id": 10600321,
@@ -3558,7 +6568,18 @@
     "cost_SN": 0,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600037
+      },
+      {
+        "tagId": 12600387
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600324": {
     "id": 10600324,
@@ -3568,7 +6589,24 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600019
+      },
+      {
+        "tagId": 12600082
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600813
+      },
+      {
+        "tagId": 12600007
+      }
+    ]
   },
   "10600325": {
     "id": 10600325,
@@ -3578,7 +6616,21 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600019
+      },
+      {
+        "tagId": 12600036
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600497
+      }
+    ]
   },
   "10600326": {
     "id": 10600326,
@@ -3588,7 +6640,21 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600277
+      },
+      {
+        "tagId": 12600019
+      },
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600495
+      }
+    ]
   },
   "10600327": {
     "id": 10600327,
@@ -3598,7 +6664,18 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600472
+      }
+    ]
   },
   "10600328": {
     "id": 10600328,
@@ -3618,7 +6695,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600290
+      },
+      {
+        "tagId": 12600616
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600329": {
     "id": 10600329,
@@ -3628,7 +6719,21 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600302
+      }
+    ]
   },
   "10600331": {
     "id": 10600331,
@@ -3638,7 +6743,15 @@
     "cost_SN": 0,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600332": {
     "id": 10600332,
@@ -3657,6 +6770,20 @@
         "condId": 96300007,
         "des": 80608012
       }
+    ],
+    "tagList": [
+      {
+        "tagId": 12600090
+      },
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600790
+      },
+      {
+        "tagId": 12601504
+      }
     ]
   },
   "10600333": {
@@ -3667,7 +6794,15 @@
     "cost_SN": 0,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600334": {
     "id": 10600334,
@@ -3687,7 +6822,15 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600028
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600330": {
     "id": 10600330,
@@ -3707,7 +6850,12 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600335": {
     "id": 10600335,
@@ -3717,7 +6865,15 @@
     "cost_SN": 30000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601054
+      }
+    ]
   },
   "10600336": {
     "id": 10600336,
@@ -3727,7 +6883,18 @@
     "cost_SN": 30000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601053
+      }
+    ]
   },
   "10600337": {
     "id": 10600337,
@@ -3737,7 +6904,18 @@
     "cost_SN": 30000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600082
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601052
+      }
+    ]
   },
   "10600338": {
     "id": 10600338,
@@ -3747,7 +6925,15 @@
     "cost_SN": 0,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601058
+      }
+    ]
   },
   "10600339": {
     "id": 10600339,
@@ -3767,7 +6953,24 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600087
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601055
+      },
+      {
+        "tagId": 12600410
+      }
+    ]
   },
   "10600024": {
     "id": 10600024,
@@ -3777,7 +6980,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600214
+      },
+      {
+        "tagId": 12600128
+      }
+    ]
   },
   "10600052": {
     "id": 10600052,
@@ -3787,7 +7001,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600214
+      },
+      {
+        "tagId": 12600128
+      }
+    ]
   },
   "10600068": {
     "id": 10600068,
@@ -3797,7 +7022,15 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600282
+      }
+    ]
   },
   "10600069": {
     "id": 10600069,
@@ -3807,7 +7040,21 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600028
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600283
+      },
+      {
+        "tagId": 12600277
+      }
+    ]
   },
   "10600070": {
     "id": 10600070,
@@ -3827,7 +7074,24 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600285
+      },
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600082
+      }
+    ]
   },
   "10600072": {
     "id": 10600072,
@@ -3847,7 +7111,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600287
+      },
+      {
+        "tagId": 12600088
+      }
+    ]
   },
   "10600100": {
     "id": 10600100,
@@ -3857,7 +7132,27 @@
     "cost_SN": 80000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600472
+      },
+      {
+        "tagId": 12600333
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600268
+      }
+    ]
   },
   "10600101": {
     "id": 10600101,
@@ -3867,7 +7162,21 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600472
+      },
+      {
+        "tagId": 12600332
+      },
+      {
+        "tagId": 12600210
+      }
+    ]
   },
   "10600102": {
     "id": 10600102,
@@ -3877,7 +7186,21 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600331
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600268
+      }
+    ]
   },
   "10600105": {
     "id": 10600105,
@@ -3897,7 +7220,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600334
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600108": {
     "id": 10600108,
@@ -3917,7 +7254,24 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600273
+      },
+      {
+        "tagId": 12600274
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600335
+      }
+    ]
   },
   "10600111": {
     "id": 10600111,
@@ -3927,7 +7281,21 @@
     "cost_SN": 30000,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600216
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600337
+      }
+    ]
   },
   "10600120": {
     "id": 10600120,
@@ -3937,7 +7305,18 @@
     "cost_SN": 30000,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600002
+      },
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600338
+      }
+    ]
   },
   "10600129": {
     "id": 10600129,
@@ -3947,7 +7326,15 @@
     "cost_SN": 0,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600339
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600112": {
     "id": 10600112,
@@ -3957,7 +7344,18 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600340
+      },
+      {
+        "tagId": 12600007
+      }
+    ]
   },
   "10600146": {
     "id": 10600146,
@@ -3977,7 +7375,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600021
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600147": {
     "id": 10600147,
@@ -3987,7 +7393,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600157": {
     "id": 10600157,
@@ -3997,7 +7408,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600179": {
     "id": 10600179,
@@ -4007,7 +7423,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600180": {
     "id": 10600180,
@@ -4017,7 +7438,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600181": {
     "id": 10600181,
@@ -4027,7 +7453,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600195": {
     "id": 10600195,
@@ -4037,7 +7468,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600196": {
     "id": 10600196,
@@ -4047,7 +7483,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600197": {
     "id": 10600197,
@@ -4057,7 +7498,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600198": {
     "id": 10600198,
@@ -4067,7 +7513,15 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600149
+      }
+    ]
   },
   "10600204": {
     "id": 10600204,
@@ -4077,7 +7531,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600205": {
     "id": 10600205,
@@ -4087,7 +7546,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600206": {
     "id": 10600206,
@@ -4097,7 +7561,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600217": {
     "id": 10600217,
@@ -4107,7 +7576,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600218": {
     "id": 10600218,
@@ -4117,7 +7591,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600219": {
     "id": 10600219,
@@ -4127,7 +7606,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600220": {
     "id": 10600220,
@@ -4137,7 +7621,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600221": {
     "id": 10600221,
@@ -4147,7 +7636,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600227": {
     "id": 10600227,
@@ -4157,7 +7651,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600228": {
     "id": 10600228,
@@ -4167,7 +7666,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600229": {
     "id": 10600229,
@@ -4177,7 +7681,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600230": {
     "id": 10600230,
@@ -4187,7 +7696,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600231": {
     "id": 10600231,
@@ -4197,7 +7711,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600232": {
     "id": 10600232,
@@ -4207,7 +7726,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600238": {
     "id": 10600238,
@@ -4217,7 +7741,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600340": {
     "id": 10600340,
@@ -4227,7 +7756,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600341": {
     "id": 10600341,
@@ -4237,7 +7771,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600342": {
     "id": 10600342,
@@ -4247,7 +7786,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600343": {
     "id": 10600343,
@@ -4257,7 +7801,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600344": {
     "id": 10600344,
@@ -4267,7 +7816,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600345": {
     "id": 10600345,
@@ -4277,7 +7831,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600346": {
     "id": 10600346,
@@ -4287,7 +7846,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600347": {
     "id": 10600347,
@@ -4297,7 +7861,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600348": {
     "id": 10600348,
@@ -4307,7 +7876,12 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600148": {
     "id": 10600148,
@@ -4317,7 +7891,21 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600063
+      },
+      {
+        "tagId": 12600057
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600254": {
     "id": 10600254,
@@ -4327,7 +7915,18 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601074
+      }
+    ]
   },
   "10600258": {
     "id": 10600258,
@@ -4356,7 +7955,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600242
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600276": {
     "id": 10600276,
@@ -4376,7 +7986,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600090
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600789
+      }
+    ]
   },
   "10600295": {
     "id": 10600295,
@@ -4409,6 +8030,17 @@
         "condId": 96300010,
         "des": 80610278
       }
+    ],
+    "tagList": [
+      {
+        "tagId": 12600276
+      },
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600238
+      }
     ]
   },
   "10600296": {
@@ -4429,7 +8061,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600239
+      }
+    ]
   },
   "10600277": {
     "id": 10600277,
@@ -4449,7 +8089,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600805
+      }
+    ]
   },
   "10600349": {
     "id": 10600349,
@@ -4469,7 +8120,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600274
+      },
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12601504
+      },
+      {
+        "tagId": 12601629
+      }
+    ]
   },
   "10600350": {
     "id": 10600350,
@@ -4489,7 +8154,18 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600050
+      },
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600351": {
     "id": 10600351,
@@ -4499,7 +8175,27 @@
     "cost_SN": 0,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600150
+      },
+      {
+        "tagId": 12600245
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601504
+      },
+      {
+        "tagId": 12601630
+      }
+    ]
   },
   "10600352": {
     "id": 10600352,
@@ -4519,7 +8215,18 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600094
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600353": {
     "id": 10600353,
@@ -4539,7 +8246,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600805
+      }
+    ]
   },
   "10600354": {
     "id": 10600354,
@@ -4559,7 +8277,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600090
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600266
+      },
+      {
+        "tagId": 12600001
+      }
+    ]
   },
   "10600130": {
     "id": 10600130,
@@ -4579,7 +8311,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600060
+      },
+      {
+        "tagId": 12600087
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600084": {
     "id": 10600084,
@@ -4599,7 +8345,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600121
+      },
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600085": {
     "id": 10600085,
@@ -4619,7 +8373,12 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600142": {
     "id": 10600142,
@@ -4629,7 +8388,24 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600074
+      },
+      {
+        "tagId": 12600275
+      },
+      {
+        "tagId": 12600272
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600355": {
     "id": 10600355,
@@ -4639,7 +8415,45 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600244
+      },
+      {
+        "tagId": 12600082
+      },
+      {
+        "tagId": 12600269
+      },
+      {
+        "tagId": 12600090
+      },
+      {
+        "tagId": 12600053
+      },
+      {
+        "tagId": 12600245
+      },
+      {
+        "tagId": 12600150
+      },
+      {
+        "tagId": 12600272
+      },
+      {
+        "tagId": 12601265
+      },
+      {
+        "tagId": 12600268
+      }
+    ]
   },
   "10600356": {
     "id": 10600356,
@@ -4662,6 +8476,23 @@
         "condId": 96300007,
         "des": 80608012
       }
+    ],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600269
+      },
+      {
+        "tagId": 12600244
+      },
+      {
+        "tagId": 12600057
+      },
+      {
+        "tagId": 12601263
+      }
     ]
   },
   "10600357": {
@@ -4672,7 +8503,21 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600053
+      },
+      {
+        "tagId": 12600090
+      },
+      {
+        "tagId": 12601262
+      }
+    ]
   },
   "10600358": {
     "id": 10600358,
@@ -4682,7 +8527,24 @@
     "cost_SN": 0,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600244
+      },
+      {
+        "tagId": 12600269
+      },
+      {
+        "tagId": 12601264
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600359": {
     "id": 10600359,
@@ -4702,7 +8564,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12601121
+      },
+      {
+        "tagId": 12600057
+      }
+    ]
   },
   "10600361": {
     "id": 10600361,
@@ -4712,7 +8585,24 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600057
+      },
+      {
+        "tagId": 12601108
+      }
+    ]
   },
   "10600362": {
     "id": 10600362,
@@ -4722,7 +8612,24 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600128
+      },
+      {
+        "tagId": 12600019
+      },
+      {
+        "tagId": 12600057
+      },
+      {
+        "tagId": 12601107
+      }
+    ]
   },
   "10600360": {
     "id": 10600360,
@@ -4742,7 +8649,27 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600002
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12601097
+      },
+      {
+        "tagId": 12600088
+      }
+    ]
   },
   "10600363": {
     "id": 10600363,
@@ -4762,7 +8689,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12601095
+      }
+    ]
   },
   "10600364": {
     "id": 10600364,
@@ -4772,7 +8710,21 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600019
+      },
+      {
+        "tagId": 12600057
+      },
+      {
+        "tagId": 12601096
+      }
+    ]
   },
   "10600366": {
     "id": 10600366,
@@ -4782,7 +8734,30 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600057
+      },
+      {
+        "tagId": 12601108
+      },
+      {
+        "tagId": 12600466
+      },
+      {
+        "tagId": 12600082
+      }
+    ]
   },
   "10600367": {
     "id": 10600367,
@@ -4802,7 +8777,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12601116
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600410
+      }
+    ]
   },
   "10600368": {
     "id": 10600368,
@@ -4812,7 +8798,21 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600069
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12600268
+      }
+    ]
   },
   "10600119": {
     "id": 10600119,
@@ -4822,7 +8822,27 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600273
+      },
+      {
+        "tagId": 12600207
+      },
+      {
+        "tagId": 12600496
+      },
+      {
+        "tagId": 12600057
+      }
+    ]
   },
   "10600136": {
     "id": 10600136,
@@ -4842,7 +8862,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600286
+      },
+      {
+        "tagId": 12600244
+      },
+      {
+        "tagId": 12600007
+      }
+    ]
   },
   "10600086": {
     "id": 10600086,
@@ -4862,7 +8896,24 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600288
+      },
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12600245
+      },
+      {
+        "tagId": 12600007
+      }
+    ]
   },
   "10600365": {
     "id": 10600365,
@@ -4882,7 +8933,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600287
+      },
+      {
+        "tagId": 12600088
+      }
+    ]
   },
   "10600369": {
     "id": 10600369,
@@ -4902,7 +8964,24 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600285
+      },
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600082
+      }
+    ]
   },
   "10600370": {
     "id": 10600370,
@@ -4922,7 +9001,24 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600288
+      },
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12600245
+      },
+      {
+        "tagId": 12600007
+      }
+    ]
   },
   "10600306": {
     "id": 10600306,
@@ -4932,7 +9028,18 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12601312
+      }
+    ]
   },
   "10600071": {
     "id": 10600071,
@@ -4952,7 +9059,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601307
+      }
+    ]
   },
   "10600083": {
     "id": 10600083,
@@ -4962,7 +9077,21 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600244
+      },
+      {
+        "tagId": 12601308
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600243": {
     "id": 10600243,
@@ -4972,7 +9101,24 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600082
+      },
+      {
+        "tagId": 12600090
+      },
+      {
+        "tagId": 12601309
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600246": {
     "id": 10600246,
@@ -4982,7 +9128,24 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600245
+      },
+      {
+        "tagId": 12600019
+      },
+      {
+        "tagId": 12601310
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600261": {
     "id": 10600261,
@@ -5002,7 +9165,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12601311
+      }
+    ]
   },
   "10600371": {
     "id": 10600371,
@@ -5022,7 +9193,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601339
+      }
+    ]
   },
   "10600372": {
     "id": 10600372,
@@ -5042,7 +9221,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12601323
+      }
+    ]
   },
   "10600373": {
     "id": 10600373,
@@ -5062,7 +9252,18 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600082
+      },
+      {
+        "tagId": 12601340
+      }
+    ]
   },
   "10600374": {
     "id": 10600374,
@@ -5091,7 +9292,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12601341
+      }
+    ]
   },
   "10600375": {
     "id": 10600375,
@@ -5111,7 +9320,30 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600082
+      },
+      {
+        "tagId": 12600466
+      },
+      {
+        "tagId": 12601342
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12601476
+      }
+    ]
   },
   "10600377": {
     "id": 10600377,
@@ -5139,6 +9371,14 @@
       {
         "condId": 96300003,
         "des": 80608013
+      }
+    ],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12601365
       }
     ]
   },
@@ -5169,6 +9409,14 @@
         "condId": 96300003,
         "des": 80608013
       }
+    ],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12601365
+      }
     ]
   },
   "10600379": {
@@ -5198,6 +9446,17 @@
         "condId": 96300003,
         "des": 80608013
       }
+    ],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12601365
+      }
     ]
   },
   "10600380": {
@@ -5218,7 +9477,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12601366
+      }
+    ]
   },
   "10600381": {
     "id": 10600381,
@@ -5228,7 +9495,21 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600019
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12601367
+      }
+    ]
   },
   "10600382": {
     "id": 10600382,
@@ -5257,7 +9538,12 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600383": {
     "id": 10600383,
@@ -5277,7 +9563,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12601366
+      }
+    ]
   },
   "10600384": {
     "id": 10600384,
@@ -5287,7 +9581,18 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600082
+      }
+    ]
   },
   "10600385": {
     "id": 10600385,
@@ -5297,7 +9602,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600312
+      },
+      {
+        "tagId": 12600128
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600386": {
     "id": 10600386,
@@ -5307,7 +9623,15 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600137
+      },
+      {
+        "tagId": 12600009
+      }
+    ]
   },
   "10600387": {
     "id": 10600387,
@@ -5317,7 +9641,18 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600269
+      },
+      {
+        "tagId": 12601405
+      }
+    ]
   },
   "10600388": {
     "id": 10600388,
@@ -5337,7 +9672,12 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600376": {
     "id": 10600376,
@@ -5347,7 +9687,21 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600272
+      },
+      {
+        "tagId": 12601406
+      }
+    ]
   },
   "10600389": {
     "id": 10600389,
@@ -5357,7 +9711,18 @@
     "cost_SN": 10000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600245
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600390": {
     "id": 10600390,
@@ -5367,7 +9732,15 @@
     "cost_SN": 10000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600391": {
     "id": 10600391,
@@ -5377,7 +9750,18 @@
     "cost_SN": 10000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600244
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600392": {
     "id": 10600392,
@@ -5397,7 +9781,18 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600028
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12601400
+      }
+    ]
   },
   "10600393": {
     "id": 10600393,
@@ -5426,7 +9821,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600028
+      },
+      {
+        "tagId": 12601395
+      }
+    ]
   },
   "10600394": {
     "id": 10600394,
@@ -5446,7 +9849,15 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600028
+      },
+      {
+        "tagId": 12601397
+      }
+    ]
   },
   "10600395": {
     "id": 10600395,
@@ -5456,7 +9867,18 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600269
+      },
+      {
+        "tagId": 12601405
+      }
+    ]
   },
   "10600001": {
     "id": 10600001,
@@ -5466,7 +9888,30 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12601431
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12601476
+      },
+      {
+        "tagId": 12600011
+      }
+    ]
   },
   "10600322": {
     "id": 10600322,
@@ -5476,7 +9921,15 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600216
+      }
+    ]
   },
   "10600323": {
     "id": 10600323,
@@ -5486,7 +9939,18 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12601433
+      },
+      {
+        "tagId": 12600011
+      }
+    ]
   },
   "10600397": {
     "id": 10600397,
@@ -5496,7 +9960,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600082
+      },
+      {
+        "tagId": 12601449
+      }
+    ]
   },
   "10600398": {
     "id": 10600398,
@@ -5516,7 +9991,15 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601448
+      }
+    ]
   },
   "10600399": {
     "id": 10600399,
@@ -5526,7 +10009,15 @@
     "cost_SN": 40000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601454
+      }
+    ]
   },
   "10600400": {
     "id": 10600400,
@@ -5536,7 +10027,21 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12601450
+      }
+    ]
   },
   "10600042": {
     "id": 10600042,
@@ -5546,7 +10051,18 @@
     "cost_SN": 90000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601446
+      },
+      {
+        "tagId": 12601403
+      }
+    ]
   },
   "10600401": {
     "id": 10600401,
@@ -5556,7 +10072,15 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601403
+      }
+    ]
   },
   "10600402": {
     "id": 10600402,
@@ -5566,7 +10090,21 @@
     "cost_SN": 60000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600129
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600088
+      }
+    ]
   },
   "10600403": {
     "id": 10600403,
@@ -5576,7 +10114,21 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12601459
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12601462
+      }
+    ]
   },
   "10600404": {
     "id": 10600404,
@@ -5586,7 +10138,15 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600210
+      }
+    ]
   },
   "10600405": {
     "id": 10600405,
@@ -5596,7 +10156,24 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12601469
+      },
+      {
+        "tagId": 12601476
+      }
+    ]
   },
   "10600406": {
     "id": 10600406,
@@ -5606,7 +10183,21 @@
     "cost_SN": 10000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600273
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12601627
+      }
+    ]
   },
   "10600407": {
     "id": 10600407,
@@ -5616,7 +10207,21 @@
     "cost_SN": 50000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600111
+      },
+      {
+        "tagId": 12600274
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12601464
+      }
+    ]
   },
   "10600408": {
     "id": 10600408,
@@ -5626,7 +10231,21 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12601471
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600268
+      }
+    ]
   },
   "10600409": {
     "id": 10600409,
@@ -5636,7 +10255,24 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12601152
+      },
+      {
+        "tagId": 12600268
+      }
+    ]
   },
   "10600411": {
     "id": 10600411,
@@ -5656,7 +10292,21 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12601474
+      },
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600210
+      },
+      {
+        "tagId": 12600244
+      }
+    ]
   },
   "10600413": {
     "id": 10600413,
@@ -5666,7 +10316,15 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601509
+      }
+    ]
   },
   "10600414": {
     "id": 10600414,
@@ -5676,7 +10334,24 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12601510
+      },
+      {
+        "tagId": 12600275
+      }
+    ]
   },
   "10600415": {
     "id": 10600415,
@@ -5686,7 +10361,21 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600087
+      },
+      {
+        "tagId": 12601513
+      }
+    ]
   },
   "10600416": {
     "id": 10600416,
@@ -5696,7 +10385,18 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12601490
+      }
+    ]
   },
   "10600417": {
     "id": 10600417,
@@ -5706,7 +10406,15 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12601489
+      }
+    ]
   },
   "10600418": {
     "id": 10600418,
@@ -5716,7 +10424,24 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600271
+      },
+      {
+        "tagId": 12601483
+      },
+      {
+        "tagId": 12600011
+      }
+    ]
   },
   "10600419": {
     "id": 10600419,
@@ -5726,7 +10451,27 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600271
+      },
+      {
+        "tagId": 12601487
+      },
+      {
+        "tagId": 12601483
+      },
+      {
+        "tagId": 12600011
+      }
+    ]
   },
   "10600410": {
     "id": 10600410,
@@ -5736,7 +10481,18 @@
     "cost_SN": 30000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601525
+      },
+      {
+        "tagId": 12601403
+      }
+    ]
   },
   "10600012": {
     "id": 10600012,
@@ -5746,7 +10502,15 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600216
+      }
+    ]
   },
   "10600396": {
     "id": 10600396,
@@ -5756,7 +10520,18 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12601487
+      }
+    ]
   },
   "10600429": {
     "id": 10600429,
@@ -5766,7 +10541,21 @@
     "cost_SN": 90000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12601626
+      }
+    ]
   },
   "10600430": {
     "id": 10600430,
@@ -5776,7 +10565,18 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12601543
+      }
+    ]
   },
   "10600431": {
     "id": 10600431,
@@ -5786,7 +10586,24 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12600245
+      },
+      {
+        "tagId": 12600150
+      },
+      {
+        "tagId": 12601543
+      }
+    ]
   },
   "10600432": {
     "id": 10600432,
@@ -5796,7 +10613,18 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600134
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600057
+      }
+    ]
   },
   "10600433": {
     "id": 10600433,
@@ -5806,7 +10634,18 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601487
+      },
+      {
+        "tagId": 12601566
+      }
+    ]
   },
   "10600434": {
     "id": 10600434,
@@ -5816,7 +10655,21 @@
     "cost_SN": 60000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12601487
+      },
+      {
+        "tagId": 12601565
+      }
+    ]
   },
   "10600436": {
     "id": 10600436,
@@ -5826,7 +10679,18 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600272
+      },
+      {
+        "tagId": 12601567
+      }
+    ]
   },
   "10600438": {
     "id": 10600438,
@@ -5846,7 +10710,12 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600412": {
     "id": 10600412,
@@ -5856,7 +10725,21 @@
     "cost_SN": 20000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601476
+      },
+      {
+        "tagId": 12601605
+      },
+      {
+        "tagId": 12601504
+      }
+    ]
   },
   "10600437": {
     "id": 10600437,
@@ -5885,7 +10768,12 @@
         "typeEnum": "number"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600439": {
     "id": 10600439,
@@ -5895,7 +10783,21 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600128
+      },
+      {
+        "tagId": 12600057
+      },
+      {
+        "tagId": 12601642
+      }
+    ]
   },
   "10600425": {
     "id": 10600425,
@@ -5905,7 +10807,21 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600057
+      },
+      {
+        "tagId": 12601601
+      },
+      {
+        "tagId": 12601641
+      }
+    ]
   },
   "10600422": {
     "id": 10600422,
@@ -5915,7 +10831,27 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600057
+      },
+      {
+        "tagId": 12600011
+      },
+      {
+        "tagId": 12601643
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600210
+      }
+    ]
   },
   "10600428": {
     "id": 10600428,
@@ -5925,7 +10861,27 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600128
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600057
+      },
+      {
+        "tagId": 12601644
+      }
+    ]
   },
   "10600435": {
     "id": 10600435,
@@ -5935,7 +10891,15 @@
     "cost_SN": 0,
     "cardType": "Derive",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601403
+      }
+    ]
   },
   "10600441": {
     "id": 10600441,
@@ -5945,7 +10909,15 @@
     "cost_SN": 20000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12601403
+      }
+    ]
   },
   "10600440": {
     "id": 10600440,
@@ -5955,7 +10927,18 @@
     "cost_SN": 200000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12601403
+      },
+      {
+        "tagId": 12601654
+      }
+    ]
   },
   "10600442": {
     "id": 10600442,
@@ -5965,7 +10948,18 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12601666
+      },
+      {
+        "tagId": 12601680
+      }
+    ]
   },
   "10600443": {
     "id": 10600443,
@@ -5988,6 +10982,17 @@
         "condId": 96300010,
         "des": 80610278
       }
+    ],
+    "tagList": [
+      {
+        "tagId": 12600009
+      },
+      {
+        "tagId": 12600001
+      },
+      {
+        "tagId": 12601667
+      }
     ]
   },
   "10600444": {
@@ -5998,7 +11003,21 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600001
+      },
+      {
+        "tagId": 12601668
+      }
+    ]
   },
   "10600445": {
     "id": 10600445,
@@ -6008,7 +11027,18 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      },
+      {
+        "tagId": 12601666
+      },
+      {
+        "tagId": 12601680
+      }
+    ]
   },
   "10600447": {
     "id": 10600447,
@@ -6018,7 +11048,24 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12601671
+      },
+      {
+        "tagId": 12600145
+      },
+      {
+        "tagId": 12600149
+      },
+      {
+        "tagId": 12600082
+      },
+      {
+        "tagId": 12600019
+      }
+    ]
   },
   "10600448": {
     "id": 10600448,
@@ -6028,7 +11075,27 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12601672
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600001
+      },
+      {
+        "tagId": 12601675
+      },
+      {
+        "tagId": 12600186
+      },
+      {
+        "tagId": 12600269
+      }
+    ]
   },
   "10600449": {
     "id": 10600449,
@@ -6038,7 +11105,21 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600276
+      },
+      {
+        "tagId": 12600001
+      }
+    ]
   },
   "10600446": {
     "id": 10600446,
@@ -6048,7 +11129,21 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600073
+      },
+      {
+        "tagId": 12600276
+      },
+      {
+        "tagId": 12600001
+      }
+    ]
   },
   "10600451": {
     "id": 10600451,
@@ -6058,7 +11153,15 @@
     "cost_SN": 50000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600452": {
     "id": 10600452,
@@ -6068,7 +11171,12 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600453": {
     "id": 10600453,
@@ -6078,7 +11186,12 @@
     "cost_SN": 10000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600454": {
     "id": 10600454,
@@ -6088,7 +11201,12 @@
     "cost_SN": 10000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600009
+      }
+    ]
   },
   "10600455": {
     "id": 10600455,
@@ -6098,7 +11216,12 @@
     "cost_SN": 10000,
     "cardType": "UseOnce",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600146
+      }
+    ]
   },
   "10600456": {
     "id": 10600456,
@@ -6108,7 +11231,12 @@
     "cost_SN": 20000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600460": {
     "id": 10600460,
@@ -6118,7 +11246,21 @@
     "cost_SN": 0,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600466
+      },
+      {
+        "tagId": 12600275
+      },
+      {
+        "tagId": 12600206
+      },
+      {
+        "tagId": 12600037
+      }
+    ]
   },
   "10600458": {
     "id": 10600458,
@@ -6128,7 +11270,12 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600073
+      }
+    ]
   },
   "10600459": {
     "id": 10600459,
@@ -6138,7 +11285,12 @@
     "cost_SN": 10000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12601403
+      }
+    ]
   },
   "10600461": {
     "id": 10600461,
@@ -6148,7 +11300,12 @@
     "cost_SN": 30000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600145
+      }
+    ]
   },
   "10600462": {
     "id": 10600462,
@@ -6168,7 +11325,12 @@
         "typeEnum": "percent"
       }
     ],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600028
+      }
+    ]
   },
   "10600463": {
     "id": 10600463,
@@ -6178,6 +11340,14 @@
     "cost_SN": 40000,
     "cardType": "Normal",
     "ExCondList": [],
-    "ExActList": []
+    "ExActList": [],
+    "tagList": [
+      {
+        "tagId": 12600007
+      },
+      {
+        "tagId": 12600145
+      }
+    ]
   }
 }

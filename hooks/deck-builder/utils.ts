@@ -44,25 +44,13 @@ export function hasSource(card: SelectedCard, source: CardSource): boolean {
   return card.sources.some((s) => isSameSource(s, source))
 }
 
-// 스킬이 제외된 스킬인지 확인
-export function isExcludedSkill(data: Database | null, skillId: number): boolean {
-  if (!data || !data.excludedSkillIds) return false
-  return data.excludedSkillIds.includes(skillId)
-}
-
-// 스킬이 특수 스킬인지 확인
-export function isSpecialSkill(data: Database | null, skillId: number): boolean {
-  if (!data || !data.specialSkillIds) return false
-  return data.specialSkillIds.includes(skillId)
-}
-
 // 카드 ID가 유효한지 확인
 export function isValidCardId(data: Database | null, cardId: string): boolean {
   if (!data) return false
   return !!data.cards[cardId]
 }
 
-// 사용 가능한 카드 ID 목록 가져오기 - 중복 로직 제거를 위한 유틸리티 함수
+// 사용 가능한 카드 ID 목록 가져오기 함수 수정
 export function getAvailableCardIds(
   data: Database | null,
   selectedCharacters: number[],
@@ -75,50 +63,33 @@ export function getAvailableCardIds(
   // 선택된 캐릭터의 스킬에서 카드 ID 수집
   const validCharacters = selectedCharacters.filter((id) => id !== -1)
 
-  // 각 캐릭터의 스킬에서 카드 ID 찾기
+  // 각 캐릭터의 스킬 맵에서 카드 ID 찾기
   validCharacters.forEach((charId) => {
-    const character = data.characters[charId.toString()]
-    if (character && character.skillList) {
-      character.skillList.forEach((skillItem) => {
-        const skill = data.skills[skillItem.skillId.toString()]
+    const charSkillMap = data.charSkillMap?.[charId.toString()]
+    if (!charSkillMap) return
+
+    // relatedSkill 처리
+    if (charSkillMap.relatedSkill) {
+      charSkillMap.relatedSkill.forEach((skillId: number) => {
+        const skill = data.skills[skillId.toString()]
         if (skill && skill.cardID) {
           availableCardIds.add(skill.cardID.toString())
-        }
-
-        // ExSkillList에서 카드 ID 찾기
-        if (skill && skill.ExSkillList && skill.ExSkillList.length > 0) {
-          skill.ExSkillList.forEach((exSkill) => {
-            const exSkillData = data.skills[exSkill.ExSkillName.toString()]
-            if (exSkillData && exSkillData.cardID) {
-              availableCardIds.add(exSkillData.cardID.toString())
-            }
-          })
         }
       })
     }
 
-    // 패시브 스킬에서도 카드 ID 찾기
-    if (character && character.passiveSkillList) {
-      character.passiveSkillList.forEach((skillItem) => {
-        const skill = data.skills[skillItem.skillId.toString()]
+    // notFromCharacters 처리
+    if (charSkillMap.notFromCharacters) {
+      charSkillMap.notFromCharacters.forEach((skillId: number) => {
+        const skill = data.skills[skillId.toString()]
         if (skill && skill.cardID) {
           availableCardIds.add(skill.cardID.toString())
-        }
-
-        // ExSkillList에서 카드 ID 찾기
-        if (skill && skill.ExSkillList && skill.ExSkillList.length > 0) {
-          skill.ExSkillList.forEach((exSkill) => {
-            const exSkillData = data.skills[exSkill.ExSkillName.toString()]
-            if (exSkillData && exSkillData.cardID) {
-              availableCardIds.add(exSkillData.cardID.toString())
-            }
-          })
         }
       })
     }
   })
 
-  // 장비에서도 카드 ID 수집
+  // 장비에서도 카드 ID 수집 (기존 로직 유지)
   validCharacters.forEach((charId, slotIndex) => {
     const charEquipment = equipment[slotIndex]
 
@@ -154,4 +125,3 @@ export function getAvailableCardIds(
 
   return availableCardIds
 }
-
