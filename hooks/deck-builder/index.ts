@@ -98,9 +98,9 @@ export function useDeckBuilder(data: Database | null) {
         return
       }
 
-      // relatedSkill 처리 - 캐릭터 ID를 ownerId로 설정
-      if (charSkillMap.relatedSkill) {
-        charSkillMap.relatedSkill.forEach((skillId: number) => {
+      // 새로운 구조: skills 배열 처리 - 캐릭터 ID를 ownerId로 설정
+      if (charSkillMap.skills) {
+        charSkillMap.skills.forEach((skillId: number) => {
           const skill = getSkill(skillId)
           if (skill && skill.cardID) {
             const cardId = skill.cardID.toString()
@@ -110,7 +110,19 @@ export function useDeckBuilder(data: Database | null) {
         })
       }
 
-      // notFromCharacters 처리 - ownerId를 10000001로 설정
+      // 새로운 구조: relatedSkills 배열 처리 - 캐릭터 ID를 ownerId로 설정
+      if (charSkillMap.relatedSkills) {
+        charSkillMap.relatedSkills.forEach((skillId: number) => {
+          const skill = getSkill(skillId)
+          if (skill && skill.cardID) {
+            const cardId = skill.cardID.toString()
+            // 캐릭터 ID를 ownerId로 설정
+            addCard(cardId, "character", characterId, { skillId, ownerId: characterId })
+          }
+        })
+      }
+
+      // 새로운 구조: notFromCharacters 배열 처리 - ownerId를 10000001로 설정
       if (charSkillMap.notFromCharacters) {
         charSkillMap.notFromCharacters.forEach((skillId: number) => {
           const skill = getSkill(skillId)
@@ -633,6 +645,17 @@ export function useDeckBuilder(data: Database | null) {
                           unavailableCard.ownerId = cardData.ownerId
                         }
 
+                        // 소스 정보 추가 - 이 부분이 누락되었습니다
+                        if (!unavailableCard.sources) {
+                          unavailableCard.sources = []
+                        }
+
+                        unavailableCard.sources.push({
+                          type: "character",
+                          id: cardData.ownerId,
+                          skillId: foundSkillId,
+                        })
+
                         // 특수 스킬 확인 (charSkillMap에서 notFromCharacters에 있는 경우)
                         let isSpecialSkill = false
                         for (const charId in data.charSkillMap) {
@@ -646,16 +669,6 @@ export function useDeckBuilder(data: Database | null) {
                         if (isSpecialSkill) {
                           unavailableCard.ownerId = 10000001 // 특수 스킬의 경우 ownerId를 10000001로 설정
                         }
-
-                        if(!unavailableCard.sources){
-                          unavailableCard.sources = [];
-                        }
-
-                        unavailableCard.sources.push({
-                          type:"character",
-                          id: cardData.ownerId,
-                          skillId: foundSkillId
-                        })
 
                         console.log(`카드 교체: ${unavailableSkill.name} -> ${availableSkill.name}`)
                         break

@@ -5,6 +5,8 @@ import { useState, useEffect, useRef } from "react"
 import type { Card, CardExtraInfo, SpecialControl } from "../types"
 import { SkillCard } from "./skill-card"
 import { CardSettingsModal } from "./card-settings-modal"
+import { TabbedInterface } from "./tabbed-interface"
+import { DeckStats } from "./deck-stats"
 
 // dnd-kit import - MouseSensor와 TouchSensor 추가
 import { DndContext, closestCenter, useSensor, useSensors, DragOverlay, MouseSensor, TouchSensor } from "@dnd-kit/core"
@@ -12,7 +14,13 @@ import { SortableContext, useSortable, rectSortingStrategy } from "@dnd-kit/sort
 import { CSS } from "@dnd-kit/utilities"
 
 interface SkillWindowProps {
-  selectedCards: { id: string; useType: number; useParam: number; useParamMap?: Record<string, number> }[]
+  selectedCards: {
+    id: string
+    useType: number
+    useParam: number
+    useParamMap?: Record<string, number>
+    skillId?: number
+  }[]
   availableCards: { card: Card; extraInfo: CardExtraInfo; characterImage?: string }[]
   onAddCard: (cardId: string) => void
   onRemoveCard: (cardId: string) => void
@@ -25,6 +33,7 @@ interface SkillWindowProps {
   ) => void
   getTranslatedString: (key: string) => string
   specialControls: Record<string, SpecialControl>
+  data: any
 }
 
 function SortableSkillCard({ id, children }: { id: string; children: React.ReactNode }) {
@@ -54,6 +63,82 @@ function SortableSkillCard({ id, children }: { id: string; children: React.React
   )
 }
 
+function SkillPriorityTab({
+  selectedCards,
+  availableCards,
+  onRemoveCard,
+  onReorderCards,
+  getTranslatedString,
+  onEditCard,
+  activeId,
+  activeCardInfo,
+}: {
+  selectedCards: { id: string; useType: number; useParam: number; useParamMap?: Record<string, number> }[]
+  availableCards: { card: Card; extraInfo: CardExtraInfo; characterImage?: string }[]
+  onRemoveCard: (cardId: string) => void
+  onReorderCards: (fromIndex: number, toIndex: number) => void
+  getTranslatedString: (key: string) => string
+  onEditCard: (cardId: string) => void
+  activeId: string | null
+  activeCardInfo: { card: Card; extraInfo: CardExtraInfo; characterImage?: string } | null
+}) {
+  return (
+    <div className="w-full">
+      {selectedCards.length === 0 ? (
+        <div className="flex items-center justify-center h-[300px] text-gray-400">
+          {getTranslatedString("no.skill.cards") || "No skill cards"}
+        </div>
+      ) : (
+        <SortableContext items={selectedCards.map((c) => c.id)} strategy={rectSortingStrategy}>
+          <div className="skill-grid w-full">
+            {selectedCards.map((selectedCard) => {
+              const cardInfo = availableCards.find((c) => c.card.id.toString() === selectedCard.id.toString())
+
+              if (!cardInfo) {
+                return null
+              }
+
+              const { card, extraInfo, characterImage } = cardInfo
+              const isDisabled = selectedCard.useType === 2
+
+              return (
+                <SortableSkillCard key={selectedCard.id} id={selectedCard.id}>
+                  <SkillCard
+                    card={card}
+                    extraInfo={extraInfo}
+                    getTranslatedString={getTranslatedString}
+                    onRemove={() => onRemoveCard(selectedCard.id)}
+                    onEdit={() => onEditCard(selectedCard.id)}
+                    isDisabled={isDisabled}
+                    characterImage={characterImage}
+                  />
+                </SortableSkillCard>
+              )
+            })}
+          </div>
+        </SortableContext>
+      )}
+
+      {/* 드래그 오버레이 추가 - 드래그 중인 카드의 시각적 표현 */}
+      <DragOverlay adjustScale={true}>
+        {activeId && activeCardInfo && (
+          <div className="dragging-overlay">
+            <SkillCard
+              card={activeCardInfo.card}
+              extraInfo={activeCardInfo.extraInfo}
+              getTranslatedString={getTranslatedString}
+              onRemove={() => {}}
+              onEdit={() => {}}
+              isDisabled={false}
+              characterImage={activeCardInfo.characterImage}
+            />
+          </div>
+        )}
+      </DragOverlay>
+    </div>
+  )
+}
+
 export function SkillWindow({
   selectedCards,
   availableCards,
@@ -63,6 +148,7 @@ export function SkillWindow({
   onUpdateCardSettings,
   getTranslatedString,
   specialControls,
+  data,
 }: SkillWindowProps) {
   const [editingCard, setEditingCard] = useState<string | null>(null)
   const [activeId, setActiveId] = useState<string | null>(null)
@@ -172,64 +258,46 @@ export function SkillWindow({
       {/* 스킬 그리드 컨테이너의 패딩을 줄이고 여백을 최소화합니다 */}
       {/* neon-container 클래스가 있는 div의 패딩을 수정합니다 */}
       <div ref={skillContainerRef} className="neon-container p-0 min-h-[300px] overflow-hidden skill-container w-full">
-        {selectedCards.length === 0 ? (
-          <div className="flex items-center justify-center h-[300px] text-gray-400">
-            {getTranslatedString("no.skill.cards") || "No skill cards"}
-          </div>
-        ) : (
-          <DndContext
-            sensors={sensors}
-            collisionDetection={closestCenter}
-            onDragStart={handleDragStart}
-            onDragEnd={handleDragEnd}
-          >
-            <SortableContext items={selectedCards.map((c) => c.id)} strategy={rectSortingStrategy}>
-              <div className="skill-grid w-full">
-                {selectedCards.map((selectedCard) => {
-                  const cardInfo = availableCards.find((c) => c.card.id.toString() === selectedCard.id.toString())
-
-                  if (!cardInfo) {
-                    return null
-                  }
-
-                  const { card, extraInfo, characterImage } = cardInfo
-                  const isDisabled = selectedCard.useType === 2
-
-                  return (
-                    <SortableSkillCard key={selectedCard.id} id={selectedCard.id}>
-                      <SkillCard
-                        card={card}
-                        extraInfo={extraInfo}
-                        getTranslatedString={getTranslatedString}
-                        onRemove={() => onRemoveCard(selectedCard.id)}
-                        onEdit={() => handleEditCard(selectedCard.id)}
-                        isDisabled={isDisabled}
-                        characterImage={characterImage}
-                      />
-                    </SortableSkillCard>
-                  )
-                })}
-              </div>
-            </SortableContext>
-
-            {/* 드래그 오버레이 추가 - 드래그 중인 카드의 시각적 표현 */}
-            <DragOverlay adjustScale={true}>
-              {activeId && activeCardInfo && (
-                <div className="dragging-overlay">
-                  <SkillCard
-                    card={activeCardInfo.card}
-                    extraInfo={activeCardInfo.extraInfo}
+        <DndContext
+          sensors={sensors}
+          collisionDetection={closestCenter}
+          onDragStart={handleDragStart}
+          onDragEnd={handleDragEnd}
+        >
+          <TabbedInterface
+            tabs={[
+              {
+                id: "priority",
+                label: getTranslatedString("skill_priority") || "Skill Priority",
+                content: (
+                  <SkillPriorityTab
+                    selectedCards={selectedCards}
+                    availableCards={availableCards}
+                    onRemoveCard={onRemoveCard}
+                    onReorderCards={onReorderCards}
                     getTranslatedString={getTranslatedString}
-                    onRemove={() => {}}
-                    onEdit={() => {}}
-                    isDisabled={false}
-                    characterImage={activeCardInfo.characterImage}
+                    onEditCard={handleEditCard}
+                    activeId={activeId}
+                    activeCardInfo={activeCardInfo}
                   />
-                </div>
-              )}
-            </DragOverlay>
-          </DndContext>
-        )}
+                ),
+              },
+              {
+                id: "stats",
+                label: getTranslatedString("deck_stats") || "Deck Stats",
+                content: (
+                  <DeckStats
+                    selectedCards={selectedCards}
+                    availableCards={availableCards}
+                    getTranslatedString={getTranslatedString}
+                    data={data}
+                  />
+                ),
+              },
+            ]}
+            defaultTabId="priority"
+          />
+        </DndContext>
       </div>
 
       {editingCard && editingCardInfo && editingCardSettings && (
@@ -249,4 +317,3 @@ export function SkillWindow({
     </div>
   )
 }
-
