@@ -1,12 +1,7 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics, isSupported, logEvent } from 'firebase/analytics'
-import { getFirestore } from 'firebase/firestore'
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { initializeApp } from "firebase/app"
+import { getFirestore } from "firebase/firestore"
+import { getAnalytics, logEvent as fbLogEvent } from "firebase/analytics"
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyAPp39tLQ5YkU0x2XDeU-ZuCG9pbmvGcUM",
   authDomain: "rsns-deck-builder.firebaseapp.com",
@@ -17,16 +12,23 @@ const firebaseConfig = {
   measurementId: "G-37YDR54077"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig)
+export const db = getFirestore(app)
 
-let analytics: ReturnType<typeof getAnalytics> | null = null
+// Initialize Firebase Analytics
+export const analytics = typeof window !== "undefined" ? getAnalytics(app) : null
 
-isSupported().then((supported) => {
-  if (supported) {
-    analytics = getAnalytics(app)
+// 새로운 래핑된 logEvent 함수로 대체
+export const logEvent = (eventName: string, eventParams?: Record<string, any>) => {
+  const isProd = process.env.NODE_ENV === "production"
+  const isAnalyticsEnabled = process.env.NEXT_PUBLIC_FIREBASE_ANALYTICS_ENABLED === "true"
+
+  if (!isProd || !isAnalyticsEnabled) {
+    console.log(`[DEV] Firebase Analytics Event: ${eventName}`, eventParams)
+    return
   }
-})
-const db = getFirestore(app)
 
-export { analytics, logEvent, db }
+  if (typeof window !== "undefined" && analytics) {
+    fbLogEvent(analytics, eventName, eventParams)
+  }
+}

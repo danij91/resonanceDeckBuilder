@@ -26,9 +26,9 @@ export function useDataLoader() {
             breakthroughsResponse,
             talentsResponse,
             imagesResponse,
-            excludeCardResponse,
             equipmentsResponse,
-            homeSkillsResponse, // 홈 스킬 데이터 추가
+            homeSkillsResponse,
+            charSkillMapResponse, // char_skill_map.json 추가
           ] = await Promise.all([
             fetch("/api/db/char_db.json"),
             fetch("/api/db/card_db.json"),
@@ -36,12 +36,12 @@ export function useDataLoader() {
             fetch("/api/db/break_db.json"),
             fetch("/api/db/talent_db.json"),
             fetch("/api/db/img_db.json"),
-            fetch("/api/db/temp_exclude_card.json"),
             fetch("/api/db/equip_db.json"),
-            fetch("/api/db/home_skill_db.json"), // 홈 스킬 데이터 추가
+            fetch("/api/db/home_skill_db.json"),
+            fetch("/api/db/char_skill_map.json"), // char_skill_map.json 추가
           ])
 
-          const [characters, cards, skills, breakthroughs, talents, images, excludeCard, equipments, homeSkills] =
+          const [characters, cards, skills, breakthroughs, talents, images, equipments, homeSkills, charSkillMap] =
             await Promise.all([
               charactersResponse.json(),
               cardsResponse.json(),
@@ -49,9 +49,9 @@ export function useDataLoader() {
               breakthroughsResponse.json(),
               talentsResponse.json(),
               imagesResponse.json(),
-              excludeCardResponse.json(),
               equipmentsResponse.json(),
-              homeSkillsResponse.json(), // 홈 스킬 데이터 추가
+              homeSkillsResponse.json(),
+              charSkillMapResponse.json(), // char_skill_map.json 추가
             ])
 
           // 언어 파일 목록 - 언어별로 다른 경로에서 로드 (절대 경로 사용)
@@ -97,7 +97,7 @@ export function useDataLoader() {
           })
 
           // Process equipment types
-          const equipmentTypes = excludeCard.equipmentTypes || {}
+          const equipmentTypes = {}
 
           // Add type to equipment based on equipTagId
           Object.keys(equipments).forEach((equipId) => {
@@ -105,6 +105,21 @@ export function useDataLoader() {
             const tagId = equipment.equipTagId
             if (equipmentTypes[tagId]) {
               equipment.type = equipmentTypes[tagId]
+            }
+
+            // 장비 타입이 없는 경우 기본값 설정 추가
+            if (!equipment.type) {
+              // equipTagId에 따라 타입 설정
+              if (tagId >= 12600155 && tagId <= 12600160) {
+                equipment.type = "weapon"
+              } else if (tagId >= 12600161 && tagId <= 12600161) {
+                equipment.type = "armor"
+              } else if (tagId >= 12600162 && tagId <= 12600162) {
+                equipment.type = "accessory"
+              } else {
+                // 기본값은 weapon으로 설정
+                equipment.type = "weapon"
+              }
             }
 
             // Add image URL if available
@@ -134,11 +149,10 @@ export function useDataLoader() {
             talents,
             images,
             languages,
-            excludedSkillIds: excludeCard.excludedSkillIds || [],
-            specialSkillIds: excludeCard.specialSkillIds || [],
             equipments,
             equipmentTypes,
-            homeSkills, // 홈 스킬 데이터 추가
+            homeSkills,
+            charSkillMap, // char_skill_map 추가
           })
         }
       } catch (err) {

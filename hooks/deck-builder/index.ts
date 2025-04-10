@@ -9,7 +9,7 @@ import { useEquipment } from "./use-equipment"
 import { useBattle } from "./use-battle"
 import { usePresets } from "./use-presets"
 import { useAwakening } from "./use-awakening" // 각성 훅 추가
-import { getSkillById, isExcludedSkill, getAvailableCardIds } from "./utils"
+import { getSkillById, getAvailableCardIds } from "./utils"
 
 export function useDeckBuilder(data: Database | null) {
   // 다크 모드
@@ -92,54 +92,33 @@ export function useDeckBuilder(data: Database | null) {
         return
       }
 
-      const character = data.characters[characterId.toString()]
-      if (!character) {
+      // char_skill_map에서 캐릭터 ID에 해당하는 스킬 맵 가져오기
+      const charSkillMap = data.charSkillMap?.[characterId.toString()]
+      if (!charSkillMap) {
         return
       }
 
-      // 처리된 스킬 ID를 추적하기 위한 Set
-      const processedSkills = new Set<number>()
-
-      // 스킬 처리 함수
-      const processSkill = (skillId: number, isPassive = false) => {
-        // 이미 처리한 스킬은 건너뛰기
-        if (processedSkills.has(skillId)) return
-        processedSkills.add(skillId)
-
-        // 제외된 스킬 ID 목록에 있는지 확인
-        if (isExcludedSkill(data, skillId)) {
-          return
-        }
-
-        const skill = getSkill(skillId)
-        if (!skill) return
-
-        // 스킬에 cardID가 있으면 카드 추가
-        if (skill.cardID) {
-          const cardId = skill.cardID.toString()
-          addCard(cardId, isPassive ? "passive" : "character", characterId, { skillId })
-        }
-
-        // ExSkillList 처리
-        if (skill.ExSkillList && skill.ExSkillList.length > 0) {
-          skill.ExSkillList.forEach((exSkill) => {
-            const exSkillId = exSkill.ExSkillName
-            processSkill(exSkillId, isPassive)
-          })
-        }
-      }
-
-      // 캐릭터의 일반 스킬 처리
-      if (character.skillList) {
-        character.skillList.forEach((skillItem) => {
-          processSkill(skillItem.skillId)
+      // relatedSkill 처리 - 캐릭터 ID를 ownerId로 설정
+      if (charSkillMap.relatedSkill) {
+        charSkillMap.relatedSkill.forEach((skillId: number) => {
+          const skill = getSkill(skillId)
+          if (skill && skill.cardID) {
+            const cardId = skill.cardID.toString()
+            // 캐릭터 ID를 ownerId로 설정
+            addCard(cardId, "character", characterId, { skillId, ownerId: characterId })
+          }
         })
       }
 
-      // 캐릭터의 패시브 스킬 처리
-      if (character.passiveSkillList) {
-        character.passiveSkillList.forEach((skillItem) => {
-          processSkill(skillItem.skillId, true)
+      // notFromCharacters 처리 - ownerId를 10000001로 설정
+      if (charSkillMap.notFromCharacters) {
+        charSkillMap.notFromCharacters.forEach((skillId: number) => {
+          const skill = getSkill(skillId)
+          if (skill && skill.cardID) {
+            const cardId = skill.cardID.toString()
+            // ownerId를 10000001로 설정
+            addCard(cardId, "character", characterId, { skillId, ownerId: 10000001 })
+          }
         })
       }
     },
@@ -171,7 +150,8 @@ export function useDeckBuilder(data: Database | null) {
         // 스킬 자체에 cardID가 있으면 카드 추가
         if (skill.cardID) {
           const cardId = skill.cardID.toString()
-          addCard(cardId, "equipment", equipId, { skillId, slotIndex, equipType })
+          // 장비에서 오는 카드는 ownerId를 10000001로 설정
+          addCard(cardId, "equipment", equipId, { skillId, slotIndex, equipType, ownerId: 10000001 })
         }
 
         // 스킬의 ExSkillList 처리
@@ -183,11 +163,6 @@ export function useDeckBuilder(data: Database | null) {
             if (processedSkills.has(exSkillId)) return
             processedSkills.add(exSkillId)
 
-            // 제외된 스킬 ID 목록에 있는지 확인
-            if (isExcludedSkill(data, exSkillId)) {
-              return
-            }
-
             // ExSkill 정보 가져오기
             const exSkill = getSkill(exSkillId)
             if (!exSkill) return
@@ -195,7 +170,8 @@ export function useDeckBuilder(data: Database | null) {
             // ExSkill에 cardID가 있으면 카드 추가
             if (exSkill.cardID) {
               const cardId = exSkill.cardID.toString()
-              addCard(cardId, "equipment", equipId, { skillId: exSkillId, slotIndex, equipType })
+              // 장비에서 오는 카드는 ownerId를 10000001로 설정
+              addCard(cardId, "equipment", equipId, { skillId: exSkillId, slotIndex, equipType, ownerId: 10000001 })
             }
           })
         }
@@ -269,10 +245,33 @@ export function useDeckBuilder(data: Database | null) {
         return newSelection
       })
 
+      // 리더 설정 로직
+      setSelectedCharacters((prev) => {
+        // 리더가 없는 경우
+        if (leaderCharacter === -1) {
+          setLeaderCharacter(characterId)
+        }
+        // 현재 리더가 교체되는 경우
+        else if (prev[slot] === leaderCharacter) {
+          const otherCharacters = prev.filter((id, i) => id !== -1 && i !== slot)
+          if (otherCharacters.length === 0) {
+            setLeaderCharacter(characterId)
+          }
+        }
+        // 현재 선택된 캐릭터가 유일한 캐릭터인 경우
+        else {
+          const selectedCharCount = prev.filter((id) => id !== -1).length
+          if (selectedCharCount <= 1) {
+            setLeaderCharacter(characterId)
+          }
+        }
+        return prev
+      })
+
       // 캐릭터의 스킬 목록을 기반으로 카드 생성
       generateCardsFromSkills(characterId)
     },
-    [generateCardsFromSkills, setSelectedCharacters],
+    [leaderCharacter, generateCardsFromSkills, setSelectedCharacters, setLeaderCharacter],
   )
 
   // 캐릭터 제거
@@ -310,6 +309,12 @@ export function useDeckBuilder(data: Database | null) {
         return newEquipment
       })
 
+      // 리더 캐릭터 제거 시 새 리더 설정
+      if (characterId === leaderCharacter) {
+        const remainingCharacters = selectedCharacters.filter((id, i) => id !== -1 && i !== slot)
+        setLeaderCharacter(remainingCharacters.length > 0 ? remainingCharacters[0] : -1)
+      }
+
       // 캐릭터 제거 후 카드 업데이트
       updateCardsAfterCharacterRemoval(characterId)
 
@@ -318,10 +323,12 @@ export function useDeckBuilder(data: Database | null) {
     },
     [
       selectedCharacters,
+      leaderCharacter,
       equipment,
       removeCardsFromEquipment,
       updateCardsAfterCharacterRemoval,
       setSelectedCharacters,
+      setLeaderCharacter,
       setEquipment,
       removeCharacterAwakening,
     ],
@@ -353,7 +360,7 @@ export function useDeckBuilder(data: Database | null) {
         return newEquipment
       })
     },
-    [removeCardsFromEquipment, generateCardsFromEquipment],
+    [removeCardsFromEquipment, generateCardsFromEquipment, setEquipment],
   )
 
   // 각성 단계 업데이트
@@ -626,10 +633,29 @@ export function useDeckBuilder(data: Database | null) {
                           unavailableCard.ownerId = cardData.ownerId
                         }
 
-                        // 특수 스킬 확인 (specialSkillIds에 있는 경우)
-                        if (data.specialSkillIds && data.specialSkillIds.includes(foundSkillId)) {
+                        // 특수 스킬 확인 (charSkillMap에서 notFromCharacters에 있는 경우)
+                        let isSpecialSkill = false
+                        for (const charId in data.charSkillMap) {
+                          const charSkillMap = data.charSkillMap[charId]
+                          if (charSkillMap.notFromCharacters && charSkillMap.notFromCharacters.includes(foundSkillId)) {
+                            isSpecialSkill = true
+                            break
+                          }
+                        }
+
+                        if (isSpecialSkill) {
                           unavailableCard.ownerId = 10000001 // 특수 스킬의 경우 ownerId를 10000001로 설정
                         }
+
+                        if(!unavailableCard.sources){
+                          unavailableCard.sources = [];
+                        }
+
+                        unavailableCard.sources.push({
+                          type:"character",
+                          id: cardData.ownerId,
+                          skillId: foundSkillId
+                        })
 
                         console.log(`카드 교체: ${unavailableSkill.name} -> ${availableSkill.name}`)
                         break

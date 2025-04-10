@@ -156,11 +156,16 @@ export interface Database {
   talents: Record<string, Talent>
   images: ImageDatabase
   languages: Languages
-  excludedSkillIds?: number[]
-  specialSkillIds?: number[]
   equipments?: Record<string, Equipment>
   equipmentTypes?: EquipmentTypeMapping
-  homeSkills?: Record<string, HomeSkill> // 홈 스킬 데이터 추가
+  homeSkills?: Record<string, HomeSkill>
+  charSkillMap?: Record<
+    string,
+    {
+      relatedSkill: number[]
+      notFromCharacters: number[]
+    }
+  >
 }
 
 export interface CardExtraInfo {

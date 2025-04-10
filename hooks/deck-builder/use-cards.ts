@@ -41,7 +41,7 @@ export function useCards(data: Database | null) {
     [data],
   )
 
-  // 카드 추가
+  // 카드 추가 함수 수정 - ownerId 파라미터 추가
   const addCard = useCallback(
     (
       cardId: string,
@@ -51,6 +51,7 @@ export function useCards(data: Database | null) {
         skillId?: number
         slotIndex?: number
         equipType?: "weapon" | "armor" | "accessory"
+        ownerId?: number // 명시적 ownerId 파라미터 추가
       },
     ) => {
       setSelectedCards((prev) => {
@@ -64,29 +65,15 @@ export function useCards(data: Database | null) {
           ...sourceInfo,
         } as CardSource
 
-        // ownerId 결정
-        let ownerId = -1
+        // ownerId 결정 - 명시적으로 제공된 경우 그것을 사용
+        const ownerId = sourceInfo?.ownerId !== undefined ? sourceInfo.ownerId : 10000001
         let skillId = -1
 
-        // 소스 타입이 character 또는 passive인 경우
+        // 소스 타입이 character 또는 passive인 경우 (기존 로직 유지)
         if (sourceType === "character" || sourceType === "passive") {
-          ownerId = Number(sourceId)
           if (sourceInfo?.skillId) {
             skillId = sourceInfo.skillId
           }
-        }
-
-        // 카드 데이터에서 ownerId 찾기
-        if (ownerId === -1 && data) {
-          const cardData = data.cards[cardId]
-          if (cardData && cardData.ownerId) {
-            ownerId = cardData.ownerId
-          }
-        }
-
-        // 특수 스킬 확인
-        if (sourceInfo?.skillId && data?.specialSkillIds && data.specialSkillIds.includes(sourceInfo.skillId)) {
-          ownerId = 10000001 // 특수 스킬의 경우 ownerId를 10000001로 설정
         }
 
         if (existingCard) {
@@ -121,7 +108,7 @@ export function useCards(data: Database | null) {
         ]
       })
     },
-    [data, setSelectedCards],
+    [setSelectedCards],
   )
 
   // 카드 제거
@@ -166,4 +153,3 @@ export function useCards(data: Database | null) {
     updateCardSettings,
   }
 }
-
