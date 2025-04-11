@@ -20,8 +20,7 @@ export function ScreenshotButton({ targetRef, getTranslatedString }: ScreenshotB
 
     try {
       if (analytics && typeof window !== "undefined") {
-        logEventWrapper(analytics, "take_screen_shot", {
-        })
+        logEventWrapper( "take_screen_shot", {})
       }
       setIsCapturing(true)
 
