@@ -19,15 +19,13 @@ export const db = getFirestore(app)
 // Initialize Firebase Analytics
 export const analytics = typeof window !== "undefined" ? getAnalytics(app) : null
 
-const isProd = process.env.NODE_ENV === "development"
+const isProd = process.env.NODE_ENV === "production"
 const isAnalyticsEnabled = process.env.NEXT_PUBLIC_FIREBASE_ANALYTICS_ENABLED === "true"
 
 // 새로운 래핑된 logEvent 함수로 대체
 export const logEventWrapper = (eventName: string, eventParams?: Record<string, any>) => {
   if (!isProd || !isAnalyticsEnabled) {
-    console.log(isProd)
-    console.log(isAnalyticsEnabled)
-    console.log(`[DEV] Firebase Analytics Events: ${eventName}/ isProd = ${isProd} ${isAnalyticsEnabled}`, eventParams)
+    console.log(`[DEV] Firebase Analytics Events: ${eventName}`, eventParams)
     return
   }
 
