@@ -1,9 +1,8 @@
 # Resonance 덱 빌더 (Resonance Deck Builder)
 
-![image](https://github.com/user-attachments/assets/1d967fb9-da06-4b69-a360-d180f51a330a)
+![image](https://github.com/user-attachments/assets/1d967fb9-da06-4b69-a360-d180f51a330a)<!-- 원한다면 스크린샷 이미지 추가 -->
 
-
-📌 웹사이트 | Website: [https://rsns-deck-builder.vercel.app/](https://rsns-deck-builder.vercel.app/)
+📌 웹사이트 | Website: https://rsns-deck-builder.vercel.app/
 
 ---
 
@@ -40,3 +39,51 @@ Import deck codes copied in-game, edit them on the site, and export them back in
 
 - **Deck Sharing via URL**  
   Share your custom deck with others using a unique URL.
+
+---
+
+## ⚙️ Tech Stack
+
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=flat)
+![Next.js](https://img.shields.io/badge/-Next.js-000000?logo=next.js&logoColor=white&style=flat)
+![Tailwind CSS](https://img.shields.io/badge/-TailwindCSS-06B6D4?logo=tailwind-css&logoColor=white&style=flat)
+![Vercel](https://img.shields.io/badge/-Vercel-000000?logo=vercel&logoColor=white&style=flat)
+![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?logo=firebase&logoColor=white&style=flat)
+
+---
+
+## 💻 개발 환경
+
+### 브랜치
+
+- `deploy`: 프로덕션 환경  
+
+### 실행 환경
+
+- Node.js: `18`
+- 패키지 매니저: `npm`
+
+---
+
+## 🔗 배포
+
+### Vercel
+
+- `deploy` 브랜치로 커밋 시 자동으로 **프로덕션 환경**에 배포됩니다.
+
+### Firebase Firestore
+
+- Firebase Firestore를 댓글 데이터를 관리합니다.
+
+---
+
+## 🧪 향후 계획 (TODO)
+
+- 당분간 큰 기능 업데이트 없음(취업해야됨)
+
+---
+
+## 📝 라이선스
+
+This project is licensed under the [GNU General Public License v3.0](./LICENSE).  
+See the LICENSE file for more information.
