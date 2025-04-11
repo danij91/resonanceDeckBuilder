@@ -11,7 +11,7 @@ import { useToast } from "./toast-notification"
 import { useDeckBuilder } from "../hooks/deck-builder/index"
 import { useLanguage } from "../contexts/language-context"
 import { decodePresetFromUrlParam } from "../utils/presetCodec"
-import { analytics, logEvent } from "../lib/firebase-config"
+import { analytics, logEventWrapper } from "../lib/firebase-config"
 import { useDataLoader } from "../hooks/use-data-loader"
 import { LoadingScreen } from "./loading-screen"
 import { SaveDeckModal } from "./ui/modal/SaveDeckModal" // 추가
@@ -129,7 +129,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
 
               // Firebase Analytics 이벤트 전송
               if (analytics && typeof window !== "undefined") {
-                logEvent(analytics, "deck_shared_visit", {
+                logEventWrapper(analytics, "deck_shared_visit", {
                   deck_code: urlDeckCode,
                   language: currentLanguage,
                 })
@@ -350,7 +350,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
       // Firebase Analytics 이벤트 전송
       if (analytics && result.success) {
         const characterIds = selectedCharacters.filter((id) => id !== -1)
-        logEvent(analytics, "deck_imported", {
+        logEventWrapper(analytics, "deck_imported", {
           character_ids: JSON.stringify(characterIds),
           language: currentLanguage,
         })
@@ -370,7 +370,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
       // Firebase Analytics 이벤트 전송
       if (analytics && result.success) {
         const characterIds = selectedCharacters.filter((id) => id !== -1)
-        logEvent(analytics, "deck_exported", {
+        logEventWrapper(analytics, "deck_exported", {
           character_ids: JSON.stringify(characterIds),
           language: currentLanguage,
         })
@@ -392,7 +392,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         // Firebase Analytics 이벤트 전송
         if (analytics) {
           const characterIds = selectedCharacters.filter((id) => id !== -1)
-          logEvent(analytics, "deck_shared", {
+          logEventWrapper(analytics, "deck_shared", {
             character_ids: JSON.stringify(characterIds),
             language: currentLanguage,
           })
@@ -438,7 +438,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
     // Firebase Analytics 이벤트 전송
     if (analytics) {
       const characterIds = selectedCharacters.filter((id) => id !== -1)
-      logEvent(analytics, "deck_saved", {
+      logEventWrapper(analytics, "deck_saved", {
         character_ids: JSON.stringify(characterIds),
         language: currentLanguage,
       })
@@ -458,7 +458,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         // Firebase Analytics 이벤트 전송
         if (analytics) {
           const characterIds = selectedCharacters.filter((id) => id !== -1)
-          logEvent(analytics, "deck_loaded", {
+          logEventWrapper(analytics, "deck_loaded", {
             character_ids: JSON.stringify(characterIds),
             language: currentLanguage,
           })
@@ -538,7 +538,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         // Firebase Analytics 이벤트 전송
         if (analytics) {
           const characterIds = deck.preset.roleList.filter((id) => id !== -1)
-          logEvent(analytics, "deck_shared", {
+          logEventWrapper(analytics, "deck_shared", {
             deck_name: deck.name,
             character_ids: JSON.stringify(characterIds),
             language: currentLanguage,
