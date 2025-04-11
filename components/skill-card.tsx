@@ -69,7 +69,7 @@ export function SkillCard({
       <div className="absolute top-0 right-0 px-0.5 py-0 text-white font-bold sm:text-3xl text-xs z-10">
         {extraInfo.cost}
       </div>
-      
+
       {/* Card content */}
       <div className="relative z-1 p-0 flex flex-col h-full">
         {/* Empty space in the middle */}
@@ -94,10 +94,9 @@ export function SkillCard({
 
         {/* Card name - 두 줄까지 표시 가능하도록 수정 */}
         <div className="text-white font-bold lg:text-[1rem] text-[0.6rem] line-clamp-2 mt-auto neon-text user-select-none px-0.5 pb-0.5">
-          {formatColorText(extraInfo.name)}
+          {formatColorText(getTranslatedString(card.name))}
         </div>
       </div>
     </div>
   )
 }
-
