@@ -8,7 +8,7 @@ import { useDataLoader } from "../../hooks/use-data-loader"
 import { LanguageProvider } from "../../contexts/language-context"
 
 // Firebase Analytics 관련 import
-import { analytics, logEvent } from "../../lib/firebase-config"
+import { analytics, logEventWrapper } from "../../lib/firebase-config"
 
 interface PageProps {
   params: {
@@ -31,7 +31,7 @@ export default function Page({ params }: PageProps) {
       setDeckCode(codeParam)
 
       if (analytics && typeof window !== "undefined") {
-        logEvent(analytics, "deck_shared_visit", {
+        logEventWrapper(analytics, "deck_shared_visit", {
           deck_code: codeParam,
           language: lang,
         })
@@ -42,7 +42,7 @@ export default function Page({ params }: PageProps) {
 
     // Firebase Analytics 이벤트 전송
     if (analytics && typeof window !== "undefined") {
-      logEvent(analytics, "page_view", {
+      logEventWrapper(analytics, "page_view", {
         page_path: pathname,
         language: lang,
       })
