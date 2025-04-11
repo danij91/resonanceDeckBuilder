@@ -5,7 +5,7 @@ import type React from "react"
 import { useState } from "react"
 import { Camera } from "lucide-react"
 import * as htmlToImage from "html-to-image"
-import { analytics, logEvent } from "../lib/firebase-config"
+import { analytics, logEventWrapper } from "../lib/firebase-config"
 
 interface ScreenshotButtonProps {
   targetRef: React.RefObject<HTMLElement>
@@ -20,7 +20,7 @@ export function ScreenshotButton({ targetRef, getTranslatedString }: ScreenshotB
 
     try {
       if (analytics && typeof window !== "undefined") {
-        logEvent(analytics, "take_screen_shot", {
+        logEventWrapper(analytics, "take_screen_shot", {
         })
       }
       setIsCapturing(true)
