@@ -128,12 +128,10 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
               removeCurrentDeckId()
 
               // Firebase Analytics 이벤트 전송
-              if (analytics && typeof window !== "undefined") {
-                logEventWrapper(analytics, "deck_shared_visit", {
-                  deck_code: urlDeckCode,
-                  language: currentLanguage,
-                })
-              }
+              logEventWrapper("deck_shared_visit", {
+                deck_code: urlDeckCode,
+                language: currentLanguage,
+              })
             }
           }
         } catch (error) {
@@ -350,7 +348,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
       // Firebase Analytics 이벤트 전송
       if (analytics && result.success) {
         const characterIds = selectedCharacters.filter((id) => id !== -1)
-        logEventWrapper(analytics, "deck_imported", {
+        logEventWrapper("deck_imported", {
           character_ids: JSON.stringify(characterIds),
           language: currentLanguage,
         })
@@ -370,7 +368,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
       // Firebase Analytics 이벤트 전송
       if (analytics && result.success) {
         const characterIds = selectedCharacters.filter((id) => id !== -1)
-        logEventWrapper(analytics, "deck_exported", {
+        logEventWrapper("deck_exported", {
           character_ids: JSON.stringify(characterIds),
           language: currentLanguage,
         })
@@ -392,7 +390,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         // Firebase Analytics 이벤트 전송
         if (analytics) {
           const characterIds = selectedCharacters.filter((id) => id !== -1)
-          logEventWrapper(analytics, "deck_shared", {
+          logEventWrapper("deck_shared", {
             character_ids: JSON.stringify(characterIds),
             language: currentLanguage,
           })
@@ -438,7 +436,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
     // Firebase Analytics 이벤트 전송
     if (analytics) {
       const characterIds = selectedCharacters.filter((id) => id !== -1)
-      logEventWrapper(analytics, "deck_saved", {
+      logEventWrapper("deck_saved", {
         character_ids: JSON.stringify(characterIds),
         language: currentLanguage,
       })
@@ -458,7 +456,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         // Firebase Analytics 이벤트 전송
         if (analytics) {
           const characterIds = selectedCharacters.filter((id) => id !== -1)
-          logEventWrapper(analytics, "deck_loaded", {
+          logEventWrapper("deck_loaded", {
             character_ids: JSON.stringify(characterIds),
             language: currentLanguage,
           })
@@ -538,7 +536,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         // Firebase Analytics 이벤트 전송
         if (analytics) {
           const characterIds = deck.preset.roleList.filter((id) => id !== -1)
-          logEventWrapper(analytics, "deck_shared", {
+          logEventWrapper( "deck_shared", {
             deck_name: deck.name,
             character_ids: JSON.stringify(characterIds),
             language: currentLanguage,

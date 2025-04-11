@@ -11,8 +11,10 @@ const firebaseConfig = {
   appId: "1:1016878414192:web:06c43b800bd056d02077b5",
   measurementId: "G-37YDR54077"
 };
-
+const isProd = process.env.NODE_ENV === "development"
+  const isAnalyticsEnabled = process.env.NEXT_PUBLIC_FIREBASE_ANALYTICS_ENABLED === "true"
 const app = initializeApp(firebaseConfig)
+
 export const db = getFirestore(app)
 
 // Initialize Firebase Analytics
@@ -20,18 +22,21 @@ export const analytics = typeof window !== "undefined" ? getAnalytics(app) : nul
 
 // 새로운 래핑된 logEvent 함수로 대체
 export const logEventWrapper = (eventName: string, eventParams?: Record<string, any>) => {
-  const isProd = process.env.NODE_ENV === "production"
-  const isAnalyticsEnabled = process.env.NEXT_PUBLIC_FIREBASE_ANALYTICS_ENABLED === "true"
+  
 
   if (!isProd || !isAnalyticsEnabled) {
-    console.log(`[DEV] Firebase Analytics Event: ${eventName}`, eventParams)
+    console.log(`[DEV] Firebase Analytics Events: ${eventName}`, eventParams)
     return
   }
 
   if (typeof window !== "undefined" && analytics) {
-    logEvent(analytics, eventName, eventParams)
-  }else{
-    console.log(`[DEV] Log Event something wrong ${eventName}`, eventParams)
-    console.log(`[DEV] isProd ${isProd} / isAnalyticsEnabled`, isAnalyticsEnabled)
+    try {
+      logEvent(analytics, eventName, eventParams)
+    } catch (error) {
+      console.error(`[ERROR] Failed to log event: ${eventName}`, error)
+    }
+  } else {
+    console.warn(`[WARN] Analytics not available. Event: ${eventName}`, eventParams)
+    console.log(`[DEBUG] isProd: ${isProd}, isAnalyticsEnabled: ${isAnalyticsEnabled}`)
   }
 }
