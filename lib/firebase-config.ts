@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app"
 import { getFirestore } from "firebase/firestore"
-import { getAnalytics, logEvent as fbLogEvent } from "firebase/analytics"
+import { getAnalytics, logEvent } from "firebase/analytics"
 
 const firebaseConfig = {
   apiKey: "AIzaSyAPp39tLQ5YkU0x2XDeU-ZuCG9pbmvGcUM",
@@ -19,7 +19,7 @@ export const db = getFirestore(app)
 export const analytics = typeof window !== "undefined" ? getAnalytics(app) : null
 
 // 새로운 래핑된 logEvent 함수로 대체
-export const logEvent = (eventName: string, eventParams?: Record<string, any>) => {
+export const logEventWrapper = (eventName: string, eventParams?: Record<string, any>) => {
   const isProd = process.env.NODE_ENV === "production"
   const isAnalyticsEnabled = process.env.NEXT_PUBLIC_FIREBASE_ANALYTICS_ENABLED === "true"
 
@@ -29,7 +29,7 @@ export const logEvent = (eventName: string, eventParams?: Record<string, any>) =
   }
 
   if (typeof window !== "undefined" && analytics) {
-    fbLogEvent(analytics, eventName, eventParams)
+    logEvent(analytics, eventName, eventParams)
   }else{
     console.log(`[DEV] Log Event something wrong ${eventName}`, eventParams)
     console.log(`[DEV] isProd ${isProd} / isAnalyticsEnabled`, isAnalyticsEnabled)
