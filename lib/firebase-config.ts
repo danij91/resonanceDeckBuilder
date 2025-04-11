@@ -30,5 +30,8 @@ export const logEvent = (eventName: string, eventParams?: Record<string, any>) =
 
   if (typeof window !== "undefined" && analytics) {
     fbLogEvent(analytics, eventName, eventParams)
+  }else{
+    console.log(`[DEV] Log Event something wrong ${eventName}`, eventParams)
+    console.log(`[DEV] isProd ${isProd} / isAnalyticsEnabled`, isAnalyticsEnabled)
   }
 }
