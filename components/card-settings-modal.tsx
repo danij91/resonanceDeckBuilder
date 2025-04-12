@@ -18,6 +18,7 @@ interface CardSettingsModalProps {
   characterImage?: string
 }
 
+// CardSettingsModal에서 selectedCard의 저장된 정보 활용
 export function CardSettingsModal({
   isOpen,
   onClose,

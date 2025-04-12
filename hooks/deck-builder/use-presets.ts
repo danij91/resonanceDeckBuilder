@@ -57,7 +57,7 @@ export function usePresets(
             let foundSkillId = -1
             for (const skillId in data.skills) {
               const skill = data.skills[skillId]
-              if (skill.cardID && skill.cardID.toString() === card.id) {
+              if (skill && skill.cardID && skill.cardID.toString() === card.id) {
                 foundSkillId = Number.parseInt(skillId)
                 cardObj.skillId = foundSkillId
                 break
@@ -186,13 +186,6 @@ export function usePresets(
         throw new Error("invalid_cardlist")
       }
 
-      // 리더 설정 부분 제거 - importPresetObject에서 처리하도록 함
-      // if (preset.header !== -1 && preset.roleList.includes(preset.header)) {
-      //   Promise.resolve().then(() => {
-      //     setLeaderCharacter(preset.header);
-      //   });
-      // }
-
       // 프리셋 객체 가져오기
       return importPresetObject(preset)
     } catch (error) {
@@ -270,4 +263,3 @@ export function usePresets(
     createPresetObject,
   }
 }
-
