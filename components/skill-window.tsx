@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef, useMemo } from "react"
 import type { Card, CardExtraInfo, SpecialControl } from "../types"
 import { SkillCard } from "./skill-card"
 import { CardSettingsModal } from "./card-settings-modal"
@@ -63,6 +63,73 @@ function SortableSkillCard({ id, children }: { id: string; children: React.React
   )
 }
 
+// 태그 컴포넌트 - 파생카드 토글 상태에 따라 표시/숨김 처리
+function StatusEffectTags({
+  statusEffects,
+  includeDerivedCards,
+  getTranslatedString,
+  forceShowAll = false, // 모든 태그를 강제로 표시할지 여부
+}: {
+  statusEffects: {
+    id: string
+    name: string
+    color: string
+    description: string
+    source: "normal" | "derived" | "both"
+  }[]
+  includeDerivedCards: boolean
+  getTranslatedString: (key: string) => string
+  forceShowAll?: boolean
+}) {
+  return (
+    <div className="neon-container p-4 mt-4">
+      <h3 className="text-lg font-semibold mb-4 neon-text">
+        {getTranslatedString("status_effects") || "Status Effects"}
+      </h3>
+      {statusEffects.length > 0 ? (
+        <div className="flex flex-wrap gap-2">
+          {statusEffects.map((effect) => (
+            <div
+              key={effect.id}
+              className={`relative group ${
+                !forceShowAll && !includeDerivedCards && effect.source === "derived" ? "hidden" : ""
+              }`}
+            >
+              <span
+                className="px-2 py-1 bg-black bg-opacity-50 border rounded-md text-sm cursor-help"
+                style={{
+                  borderColor: effect.color,
+                  color: effect.color,
+                  boxShadow: `0 0 5px ${effect.color}40`,
+                }}
+              >
+                {effect.name}
+                {/* 태그 소스 표시 (디버깅용, 필요시 주석 해제) */}
+                {/* <small className="ml-1 opacity-50">
+                  ({effect.source === "normal" ? "N" : effect.source === "derived" ? "D" : "B"})
+                </small> */}
+              </span>
+
+              {/* 툴팁 */}
+              <div
+                className="absolute left-0 bottom-full mb-2 w-64 bg-black bg-opacity-90 p-2 rounded text-xs text-gray-300 
+                           invisible group-hover:visible z-10 border border-gray-700 pointer-events-none"
+              >
+                <div className="font-bold mb-1" style={{ color: effect.color }}>
+                  {effect.name}
+                </div>
+                <div>{effect.description}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <p className="text-gray-400">{getTranslatedString("no_status_effects") || "No status effects found"}</p>
+      )}
+    </div>
+  )
+}
+
 function SkillPriorityTab({
   selectedCards,
   availableCards,
@@ -72,6 +139,8 @@ function SkillPriorityTab({
   onEditCard,
   activeId,
   activeCardInfo,
+  statusEffects,
+  includeDerivedCards,
 }: {
   selectedCards: { id: string; useType: number; useParam: number; useParamMap?: Record<string, number> }[]
   availableCards: { card: Card; extraInfo: CardExtraInfo; characterImage?: string }[]
@@ -81,6 +150,8 @@ function SkillPriorityTab({
   onEditCard: (cardId: string) => void
   activeId: string | null
   activeCardInfo: { card: Card; extraInfo: CardExtraInfo; characterImage?: string } | null
+  statusEffects: any[]
+  includeDerivedCards: boolean
 }) {
   return (
     <div className="w-full">
@@ -135,6 +206,14 @@ function SkillPriorityTab({
           </div>
         )}
       </DragOverlay>
+
+      {/* 상태 효과(태그) 표시 */}
+      <StatusEffectTags
+        statusEffects={statusEffects}
+        includeDerivedCards={includeDerivedCards}
+        getTranslatedString={getTranslatedString}
+        forceShowAll={true} // 우선순위 탭에서는 항상 모든 태그 표시
+      />
     </div>
   )
 }
@@ -154,6 +233,32 @@ export function SkillWindow({
   const [activeId, setActiveId] = useState<string | null>(null)
   const [isTouchDevice, setIsTouchDevice] = useState(false)
   const skillContainerRef = useRef<HTMLDivElement>(null)
+  const [includeDerivedCards, setIncludeDerivedCards] = useState(true)
+
+  // 태그 데이터와 색상 매핑을 상위 컴포넌트에서 관리
+  const [tagData, setTagData] = useState<Record<string, any>>({})
+  const [tagColorMapping, setTagColorMapping] = useState<Record<string, string[]>>({})
+
+  // 태그 데이터 로드 - 컴포넌트 마운트 시 한 번만 실행
+  useEffect(() => {
+    const loadTagData = async () => {
+      try {
+        // 태그 데이터 로드
+        const tagResponse = await fetch("/api/db/tag_db.json")
+        const tagData = await tagResponse.json()
+        setTagData(tagData)
+
+        // 태그 색상 매핑 데이터 로드
+        const tagColorResponse = await fetch("/api/db/tag_color_mapping.json")
+        const tagColorData = await tagColorResponse.json()
+        setTagColorMapping(tagColorData)
+      } catch (error) {
+        console.error("Failed to load tag data:", error)
+      }
+    }
+
+    loadTagData()
+  }, []) // 빈 의존성 배열로 마운트 시 한 번만 실행
 
   // 터치 디바이스 감지
   useEffect(() => {
@@ -190,6 +295,140 @@ export function SkillWindow({
       },
     }),
   )
+
+  // Get the cards that are actually in the deck (not disabled)
+  const activeCards = useMemo(() => {
+    return selectedCards
+      .filter((card) => card.useType !== 2) // Filter out disabled cards
+      .map((selectedCard) => {
+        const cardInfo = availableCards.find((c) => c.card.id.toString() === selectedCard.id)
+        return cardInfo ? { ...cardInfo, selectedCard } : null
+      })
+      .filter(Boolean) as {
+      card: Card
+      extraInfo: CardExtraInfo
+      characterImage?: string
+      selectedCard: any
+    }[]
+  }, [selectedCards, availableCards])
+
+  // 일반 카드와 파생 카드 분류
+  const { normalCards, derivedCards } = useMemo(() => {
+    if (!data) return { normalCards: [], derivedCards: [] }
+
+    const normal: typeof activeCards = []
+    const derived: typeof activeCards = []
+
+    activeCards.forEach((cardInfo) => {
+      let isDerived = true
+
+      // 카드가 파생 카드인지 확인
+      if (cardInfo.selectedCard.skillId) {
+        // 모든 캐릭터의 스킬 맵 확인
+        for (const charId in data.charSkillMap) {
+          const charSkillMap = data.charSkillMap[charId]
+
+          // 스킬이 캐릭터의 기본 스킬 목록에 있으면 파생 카드가 아님
+          if (charSkillMap.skills && charSkillMap.skills.includes(cardInfo.selectedCard.skillId)) {
+            isDerived = false
+            break
+          }
+        }
+      } else {
+        // skillId가 없으면 일반 카드로 간주
+        isDerived = false
+      }
+
+      if (isDerived) {
+        derived.push(cardInfo)
+      } else {
+        normal.push(cardInfo)
+      }
+    })
+
+    return { normalCards: normal, derivedCards: derived }
+  }, [activeCards, data])
+
+  // 상태 효과(태그) 계산 - 일반 카드와 파생 카드에서 나온 태그 분리
+  const statusEffects = useMemo(() => {
+    // 태그 데이터나 색상 매핑이 로드되지 않았으면 빈 배열 반환
+    if (Object.keys(tagData).length === 0 || Object.keys(tagColorMapping).length === 0) {
+      return []
+    }
+
+    // 모든 태그 ID를 색상 코드에 매핑하는 객체 생성
+    const tagToColorMap: Record<string, string> = {}
+
+    // 색상 코드별 태그 ID 배열을 순회하며 매핑 생성
+    Object.entries(tagColorMapping).forEach(([colorCode, tagIds]) => {
+      tagIds.forEach((tagId) => {
+        tagToColorMap[tagId.toString()] = colorCode
+      })
+    })
+
+    // 일반 카드에서 나온 태그 ID 집합
+    const normalTagIds = new Set<string>()
+
+    // 파생 카드에서 나온 태그 ID 집합
+    const derivedTagIds = new Set<string>()
+
+    // 일반 카드에서 태그 수집
+    normalCards.forEach(({ card }) => {
+      if (card.tagList && Array.isArray(card.tagList)) {
+        card.tagList.forEach((tagItem) => {
+          if (tagItem && tagItem.tagId) {
+            normalTagIds.add(tagItem.tagId.toString())
+          }
+        })
+      }
+    })
+
+    // 파생 카드에서 태그 수집
+    derivedCards.forEach(({ card }) => {
+      if (card.tagList && Array.isArray(card.tagList)) {
+        card.tagList.forEach((tagItem) => {
+          if (tagItem && tagItem.tagId) {
+            derivedTagIds.add(tagItem.tagId.toString())
+          }
+        })
+      }
+    })
+
+    // 모든 태그 ID 집합
+    const allTagIds = new Set([...normalTagIds, ...derivedTagIds])
+
+    // 태그 ID를 태그 정보로 변환
+    return Array.from(allTagIds)
+      .map((tagId) => {
+        const tag = tagData[tagId]
+        if (!tag) return null
+
+        // 색상 매핑에 있는 태그만 포함
+        const colorCode = tagToColorMap[tagId]
+        if (!colorCode) return null
+
+        // 태그 소스 결정 (일반, 파생, 또는 둘 다)
+        let source: "normal" | "derived" | "both" = "normal"
+        if (normalTagIds.has(tagId) && derivedTagIds.has(tagId)) {
+          source = "both"
+        } else if (derivedTagIds.has(tagId)) {
+          source = "derived"
+        }
+
+        // Get translated tag name and description
+        const tagName = getTranslatedString(tag.tagName) || tag.tagName
+        const tagDesc = getTranslatedString(tag.detail) || tag.detail || ""
+
+        return {
+          id: tagId,
+          name: tagName,
+          color: colorCode,
+          description: tagDesc,
+          source, // 태그 소스 추가
+        }
+      })
+      .filter(Boolean)
+  }, [normalCards, derivedCards, tagData, tagColorMapping, getTranslatedString])
 
   const handleEditCard = (cardId: string) => {
     setEditingCard(cardId)
@@ -279,6 +518,8 @@ export function SkillWindow({
                     onEditCard={handleEditCard}
                     activeId={activeId}
                     activeCardInfo={activeCardInfo}
+                    statusEffects={statusEffects}
+                    includeDerivedCards={includeDerivedCards}
                   />
                 ),
               },
@@ -291,6 +532,9 @@ export function SkillWindow({
                     availableCards={availableCards}
                     getTranslatedString={getTranslatedString}
                     data={data}
+                    statusEffects={statusEffects}
+                    includeDerivedCards={includeDerivedCards}
+                    setIncludeDerivedCards={setIncludeDerivedCards}
                   />
                 ),
               },
