@@ -537,7 +537,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         // Firebase Analytics 이벤트 전송
         if (analytics) {
           const characterIds = deck.preset.roleList.filter((id) => id !== -1)
-          logEventWrapper( "deck_shared", {
+          logEventWrapper("deck_shared", {
             deck_name: deck.name,
             character_ids: JSON.stringify(characterIds),
             language: currentLanguage,
