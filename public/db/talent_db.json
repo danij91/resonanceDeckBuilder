@@ -4230,14 +4230,14 @@
   "12800399": {
     "id": 12800399,
     "name": "talent_name_12800399",
-    "desc": "",
+    "desc": "talent_desc_12800399",
     "awakeLv": 2,
     "skillParamOffsetList": []
   },
   "12800414": {
     "id": 12800414,
     "name": "talent_name_12800414",
-    "desc": "",
+    "desc": "talent_desc_12800414",
     "awakeLv": 3,
     "skillParamOffsetList": []
   },
@@ -4251,14 +4251,14 @@
   "12800588": {
     "id": 12800588,
     "name": "talent_name_12800588",
-    "desc": "",
+    "desc": "talent_desc_12800588",
     "awakeLv": 5,
     "skillParamOffsetList": []
   },
   "12800589": {
     "id": 12800589,
     "name": "talent_name_12800589",
-    "desc": "",
+    "desc": "talent_desc_12800589",
     "awakeLv": 6,
     "skillParamOffsetList": []
   },
