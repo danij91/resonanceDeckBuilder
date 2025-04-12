@@ -510,6 +510,7 @@ export function CharacterSlot({
               </button>
             </div>
           }
+          getSkill={getSkill}
         />
       )}
 
@@ -541,4 +542,3 @@ export function CharacterSlot({
     </div>
   )
 }
-
