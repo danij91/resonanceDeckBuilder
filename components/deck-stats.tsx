@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useMemo, useEffect } from "react"
+import { useMemo } from "react"
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, Legend } from "recharts"
 import type { Card, CardExtraInfo } from "../types"
 
@@ -15,36 +15,20 @@ interface DeckStatsProps {
   availableCards: { card: Card; extraInfo: CardExtraInfo; characterImage?: string }[]
   getTranslatedString: (key: string) => string
   data: any
+  statusEffects: any[] // 상위 컴포넌트에서 계산된 statusEffects를 받음
+  includeDerivedCards: boolean
+  setIncludeDerivedCards: (include: boolean) => void
 }
 
-export function DeckStats({ selectedCards, availableCards, getTranslatedString, data }: DeckStatsProps) {
-  const [includeDerivedCards, setIncludeDerivedCards] = useState(true)
-  const [tagData, setTagData] = useState<Record<string, any>>({})
-
-  // Load tag data와 tag color mapping data
-  useEffect(() => {
-    const loadData = async () => {
-      try {
-        // 태그 데이터 로드
-        const tagResponse = await fetch("/api/db/tag_db.json")
-        const tagData = await tagResponse.json()
-        setTagData(tagData)
-
-        // 태그 색상 매핑 데이터 로드
-        const tagColorResponse = await fetch("/api/db/tag_color_mapping.json")
-        const tagColorData = await tagColorResponse.json()
-        setTagColorMapping(tagColorData)
-      } catch (error) {
-        console.error("Failed to load tag data:", error)
-      }
-    }
-
-    loadData()
-  }, [])
-
-  // 태그 색상 매핑 상태 추가
-  const [tagColorMapping, setTagColorMapping] = useState<Record<string, string[]>>({})
-
+export function DeckStats({
+  selectedCards,
+  availableCards,
+  getTranslatedString,
+  data,
+  statusEffects,
+  includeDerivedCards,
+  setIncludeDerivedCards,
+}: DeckStatsProps) {
   // Get the cards that are actually in the deck (not disabled)
   const activeCards = useMemo(() => {
     return selectedCards
@@ -63,29 +47,29 @@ export function DeckStats({ selectedCards, availableCards, getTranslatedString, 
 
   // Filter cards based on includeDerivedCards toggle
   const filteredCards = useMemo(() => {
-    if (!data || !includeDerivedCards) {
-      // If no data or derived cards should be excluded, filter based on char_skill_map
-      return activeCards.filter((cardInfo) => {
-        // If no skillId, we can't determine if it's derived, so include it
-        if (!cardInfo.selectedCard.skillId) return true
-
-        // Check all characters in char_skill_map
-        for (const charId in data.charSkillMap) {
-          const charSkillMap = data.charSkillMap[charId]
-
-          // If the skill is in the skills array, it's not derived
-          if (charSkillMap.skills && charSkillMap.skills.includes(cardInfo.selectedCard.skillId)) {
-            return true
-          }
-        }
-
-        // If not found in any character's skills array, it's derived
-        return false
-      })
+    if (!data || includeDerivedCards) {
+      // Include all cards
+      return activeCards
     }
 
-    // Include all cards
-    return activeCards
+    // If derived cards should be excluded, filter based on char_skill_map
+    return activeCards.filter((cardInfo) => {
+      // If no skillId, we can't determine if it's derived, so include it
+      if (!cardInfo.selectedCard.skillId) return true
+
+      // Check all characters in char_skill_map
+      for (const charId in data.charSkillMap) {
+        const charSkillMap = data.charSkillMap[charId]
+
+        // If the skill is in the skills array, it's not derived
+        if (charSkillMap.skills && charSkillMap.skills.includes(cardInfo.selectedCard.skillId)) {
+          return true
+        }
+      }
+
+      // If not found in any character's skills array, it's derived
+      return false
+    })
   }, [activeCards, includeDerivedCards, data])
 
   // 색상 순서 배열 추가
@@ -168,53 +152,6 @@ export function DeckStats({ selectedCards, availableCards, getTranslatedString, 
     )
   }, [filteredCards, getTranslatedString, data])
 
-  // Get status effects from tagList
-  const statusEffects = useMemo(() => {
-    // 모든 태그 ID를 색상 코드에 매핑하는 객체 생성
-    const tagToColorMap: Record<string, string> = {}
-
-    // 색상 코드별 태그 ID 배열을 순회하며 매핑 생성
-    Object.entries(tagColorMapping).forEach(([colorCode, tagIds]) => {
-      tagIds.forEach((tagId) => {
-        tagToColorMap[tagId.toString()] = colorCode
-      })
-    })
-
-    const effectIds = new Set<string>()
-
-    filteredCards.forEach(({ card }) => {
-      if (card.tagList && Array.isArray(card.tagList)) {
-        card.tagList.forEach((tagItem) => {
-          // tagList는 객체 배열이며 각 객체에는 tagId 속성이 있음
-          if (tagItem && tagItem.tagId) {
-            effectIds.add(tagItem.tagId.toString())
-          }
-        })
-      }
-    })
-
-    // Map tagIds to tag names and colors
-    return Array.from(effectIds)
-      .map((tagId) => {
-        const tag = tagData[tagId]
-        if (!tag) return null
-
-        // 색상 매핑에 있는 태그만 포함
-        const colorCode = tagToColorMap[tagId]
-        if (!colorCode) return null
-
-        // Get translated tag name
-        const tagName = getTranslatedString(tag.tagName) || tag.tagName
-
-        return {
-          id: tagId,
-          name: tagName,
-          color: colorCode,
-        }
-      })
-      .filter(Boolean)
-  }, [filteredCards, tagData, tagColorMapping, getTranslatedString])
-
   // Total card count
   const totalCards = useMemo(() => {
     return colorDistribution.reduce((sum, color) => sum + color.count, 0)
@@ -251,6 +188,13 @@ export function DeckStats({ selectedCards, availableCards, getTranslatedString, 
         <label htmlFor="includeDerivedCards" className="text-sm cursor-pointer select-none">
           {getTranslatedString("include_derived_cards") || "Include derived cards"}
         </label>
+        <div className="ml-2 group relative">
+          <span className="text-gray-400 cursor-help text-xs rounded-full border border-gray-500 px-1">?</span>
+          <div className="absolute left-0 bottom-full mb-2 w-64 bg-black bg-opacity-90 p-2 rounded text-xs text-gray-300 invisible group-hover:visible z-10 border border-gray-700">
+            {getTranslatedString("derived_cards_tooltip") ||
+              "Derived cards are cards that are generated during battle and not directly owned by characters."}
+          </div>
+        </div>
       </div>
 
       {/* Total Card Count */}
@@ -313,25 +257,40 @@ export function DeckStats({ selectedCards, availableCards, getTranslatedString, 
         </div>
       </div>
 
-      {/* Status Effects */}
-      <div className="neon-container p-4">
+      {/* Status Effects - 상위 컴포넌트에서 계산된 statusEffects를 사용 */}
+      <div className="neon-container p-4 mt-4">
         <h3 className="text-lg font-semibold mb-4 neon-text">
           {getTranslatedString("status_effects") || "Status Effects"}
         </h3>
         {statusEffects.length > 0 ? (
           <div className="flex flex-wrap gap-2">
             {statusEffects.map((effect) => (
-              <span
+              <div
                 key={effect.id}
-                className="px-2 py-1 bg-black bg-opacity-50 border rounded-md text-sm"
-                style={{
-                  borderColor: effect.color,
-                  color: effect.color,
-                  boxShadow: `0 0 5px ${effect.color}40`,
-                }}
+                className={`relative group ${!includeDerivedCards && effect.source === "derived" ? "hidden" : ""}`}
               >
-                {effect.name}
-              </span>
+                <span
+                  className="px-2 py-1 bg-black bg-opacity-50 border rounded-md text-sm cursor-help"
+                  style={{
+                    borderColor: effect.color,
+                    color: effect.color,
+                    boxShadow: `0 0 5px ${effect.color}40`,
+                  }}
+                >
+                  {effect.name}
+                </span>
+
+                {/* 툴팁 */}
+                <div
+                  className="absolute left-0 bottom-full mb-2 w-64 bg-black bg-opacity-90 p-2 rounded text-xs text-gray-300 
+                             invisible group-hover:visible z-10 border border-gray-700 pointer-events-none"
+                >
+                  <div className="font-bold mb-1" style={{ color: effect.color }}>
+                    {effect.name}
+                  </div>
+                  <div>{effect.description}</div>
+                </div>
+              </div>
             ))}
           </div>
         ) : (
