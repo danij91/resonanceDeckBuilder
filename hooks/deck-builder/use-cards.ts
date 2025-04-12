@@ -41,7 +41,7 @@ export function useCards(data: Database | null) {
     [data],
   )
 
-  // 장비에 의한 카드 추가 함수 수정
+  // 카드 추가 함수 수정
   const addCard = useCallback(
     (
       cardId: string,
@@ -51,7 +51,7 @@ export function useCards(data: Database | null) {
         skillId?: number
         slotIndex?: number
         equipType?: "weapon" | "armor" | "accessory"
-        ownerId?: number // 명시적 ownerId 파라미터 추가
+        ownerId?: number
       },
     ) => {
       setSelectedCards((prev) => {
@@ -66,15 +66,98 @@ export function useCards(data: Database | null) {
         } as CardSource
 
         // ownerId 결정
-        // 장비에 의한 스킬은 항상 ownerId를 10000001로 설정
         const ownerId =
           sourceType === "equipment" ? 10000001 : sourceInfo?.ownerId !== undefined ? sourceInfo.ownerId : 10000001
         let skillId = -1
 
-        // 소스 타입이 character 또는 passive인 경우 (기존 로직 유지)
+        // 소스 타입이 character 또는 passive인 경우
         if (sourceType === "character" || sourceType === "passive") {
           if (sourceInfo?.skillId) {
             skillId = sourceInfo.skillId
+          }
+        }
+
+        // 카드 정보 가져오기
+        const card = data?.cards[cardId]
+
+        // 스킬 정보 가져오기
+        let skillInfo = undefined
+        if (skillId !== -1 && data?.skills) {
+          const skill = data.skills[skillId.toString()]
+          if (skill) {
+            skillInfo = {
+              name: skill.name,
+              description: skill.description,
+              detailDescription: skill.detailDescription,
+              cardID: skill.cardID,
+              leaderCardConditionDesc: skill.leaderCardConditionDesc,
+            }
+          } else if (card && data?.skills) {
+            // 카드 ID로 스킬 찾기
+            for (const sId in data.skills) {
+              const skill = data.skills[sId]
+              if (skill && skill.cardID && skill.cardID.toString() === cardId) {
+                skillId = Number.parseInt(sId)
+                skillInfo = {
+                  name: skill.name,
+                  description: skill.description,
+                  detailDescription: skill.detailDescription,
+                  cardID: skill.cardID,
+                  leaderCardConditionDesc: skill.leaderCardConditionDesc,
+                }
+                break
+              }
+            }
+          }
+        }
+
+        // 카드 추가 정보 생성
+        let extraInfo = undefined
+        if (card) {
+          // 비용 계산
+          let cost = 0
+          if (card.cost_SN !== undefined) {
+            cost = Math.floor(card.cost_SN / 10000)
+          }
+
+          // 수량 계산 (캐릭터의 skillList에서 찾기)
+          let amount = 0
+          if (skillId !== -1 && sourceType === "character" && typeof sourceId === "number") {
+            const character = data?.characters[sourceId.toString()]
+            if (character && character.skillList) {
+              const skillItem = character.skillList.find((item) => item.skillId === skillId)
+              if (skillItem && skillItem.num) {
+                amount = skillItem.num
+              }
+            }
+          }
+
+          // 이미지 URL 찾기
+          let img_url = undefined
+          if (data?.images) {
+            if (data.images[`card_${cardId}`]) {
+              img_url = data.images[`card_${cardId}`]
+            } else if (skillId !== -1 && data.images[`skill_${skillId}`]) {
+              img_url = data.images[`skill_${skillId}`]
+            }
+          }
+
+          extraInfo = {
+            cost,
+            amount,
+            img_url,
+            desc: skillInfo?.description || "",
+          }
+        }
+
+        // 카드 정보 생성
+        let cardInfo = undefined
+        if (card) {
+          cardInfo = {
+            name: card.name,
+            color: card.color,
+            cardType: card.cardType,
+            tagList: card.tagList,
           }
         }
 
@@ -89,6 +172,12 @@ export function useCards(data: Database | null) {
                     sources: [...card.sources, newSource],
                     ...(ownerId !== -1 && { ownerId }),
                     ...(skillId !== -1 && { skillId }),
+                    // 스킬 정보가 없는 경우에만 추가
+                    ...(skillInfo && !card.skillInfo && { skillInfo }),
+                    // 카드 정보가 없는 경우에만 추가
+                    ...(cardInfo && !card.cardInfo && { cardInfo }),
+                    // 추가 정보가 없는 경우에만 추가
+                    ...(extraInfo && !card.extraInfo && { extraInfo }),
                   }
                 : card,
             )
@@ -106,11 +195,14 @@ export function useCards(data: Database | null) {
             ownerId,
             skillId: skillId !== -1 ? skillId : undefined,
             sources: [newSource],
+            skillInfo,
+            cardInfo,
+            extraInfo,
           },
         ]
       })
     },
-    [setSelectedCards],
+    [setSelectedCards, data, hasSource],
   )
 
   // 카드 제거

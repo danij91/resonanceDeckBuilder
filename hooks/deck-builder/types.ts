@@ -16,6 +16,29 @@ export type SelectedCard = {
   skillId?: number
   skillIndex?: number
   sources: CardSource[]
+  // 스킬 정보 직접 저장을 위한 필드 추가
+  skillInfo?: {
+    name: string
+    description: string
+    detailDescription?: string
+    cardID?: number | null
+    leaderCardConditionDesc?: string
+    // 추가 스킬 정보가 필요하면 여기에 추가
+  }
+  // 카드 정보 직접 저장
+  cardInfo?: {
+    name: string
+    color?: string
+    cardType?: string
+    tagList?: any[]
+  }
+  // 추가 정보 (비용, 수량 등)
+  extraInfo?: {
+    cost: number
+    amount: number
+    img_url?: string
+    desc?: string
+  }
 }
 
 // 프리셋 카드 타입
@@ -100,4 +123,3 @@ export type Result = {
   message: string
   url?: string
 }
-
