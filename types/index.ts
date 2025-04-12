@@ -167,6 +167,12 @@ export interface Database {
       notFromCharacters: number[]
     }
   >
+  itemSkillMap?: Record<
+    string,
+    {
+      relatedSkills: number[]
+    }
+  >
 }
 
 export interface CardExtraInfo {

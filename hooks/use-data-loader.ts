@@ -29,6 +29,7 @@ export function useDataLoader() {
             equipmentsResponse,
             homeSkillsResponse,
             charSkillMapResponse, // char_skill_map.json 추가
+            itemSkillMapResponse, // item_skill_map.json 추가
           ] = await Promise.all([
             fetch("/api/db/char_db.json"),
             fetch("/api/db/card_db.json"),
@@ -39,20 +40,32 @@ export function useDataLoader() {
             fetch("/api/db/equip_db.json"),
             fetch("/api/db/home_skill_db.json"),
             fetch("/api/db/char_skill_map.json"), // char_skill_map.json 추가
+            fetch("/api/db/item_skill_map.json"), // item_skill_map.json 추가
           ])
 
-          const [characters, cards, skills, breakthroughs, talents, images, equipments, homeSkills, charSkillMap] =
-            await Promise.all([
-              charactersResponse.json(),
-              cardsResponse.json(),
-              skillsResponse.json(),
-              breakthroughsResponse.json(),
-              talentsResponse.json(),
-              imagesResponse.json(),
-              equipmentsResponse.json(),
-              homeSkillsResponse.json(),
-              charSkillMapResponse.json(), // char_skill_map.json 추가
-            ])
+          const [
+            characters,
+            cards,
+            skills,
+            breakthroughs,
+            talents,
+            images,
+            equipments,
+            homeSkills,
+            charSkillMap,
+            itemSkillMap,
+          ] = await Promise.all([
+            charactersResponse.json(),
+            cardsResponse.json(),
+            skillsResponse.json(),
+            breakthroughsResponse.json(),
+            talentsResponse.json(),
+            imagesResponse.json(),
+            equipmentsResponse.json(),
+            homeSkillsResponse.json(),
+            charSkillMapResponse.json(), // char_skill_map.json 추가
+            itemSkillMapResponse.json(), // item_skill_map.json 추가
+          ])
 
           // 언어 파일 목록 - 언어별로 다른 경로에서 로드 (절대 경로 사용)
           const supportedLanguages = ["ko", "en", "jp", "cn", "tw"]
@@ -153,6 +166,7 @@ export function useDataLoader() {
             equipmentTypes,
             homeSkills,
             charSkillMap, // char_skill_map 추가
+            itemSkillMap, // item_skill_map 추가
           })
         }
       } catch (err) {
