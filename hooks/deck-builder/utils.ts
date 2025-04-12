@@ -50,7 +50,7 @@ export function isValidCardId(data: Database | null, cardId: string): boolean {
   return !!data.cards[cardId]
 }
 
-// 사용 가능한 카드 ID 목록 가져오기 함수 수정
+// getAvailableCardIds 함수 수정
 export function getAvailableCardIds(
   data: Database | null,
   selectedCharacters: number[],
@@ -99,38 +99,33 @@ export function getAvailableCardIds(
     }
   })
 
-  // 장비에서도 카드 ID 수집 (기존 로직 유지)
+  // 장비에서 카드 ID 수집 - item_skill_map.json 사용
   validCharacters.forEach((charId, slotIndex) => {
     const charEquipment = equipment[slotIndex]
 
     // 각 장비 타입별로 처리
-    const processEquipment = (equipId: string | null, equipType: "weapon" | "armor" | "accessory") => {
+    const processEquipment = (equipId: string | null) => {
       if (!equipId) return
 
-      const equip = data.equipments?.[equipId]
-      if (!equip || !equip.skillList) return
+      // item_skill_map.json에서 장비 ID에 해당하는 스킬 맵 찾기
+      const itemSkillMap = data.itemSkillMap?.[equipId]
+      if (!itemSkillMap) return
 
-      equip.skillList.forEach((skillItem) => {
-        const skill = data.skills[skillItem.skillId.toString()]
-        if (skill && skill.cardID) {
-          availableCardIds.add(skill.cardID.toString())
-        }
-
-        // ExSkillList에서 카드 ID 찾기
-        if (skill && skill.ExSkillList && skill.ExSkillList.length > 0) {
-          skill.ExSkillList.forEach((exSkill) => {
-            const exSkillData = data.skills[exSkill.ExSkillName.toString()]
-            if (exSkillData && exSkillData.cardID) {
-              availableCardIds.add(exSkillData.cardID.toString())
-            }
-          })
-        }
-      })
+      // relatedSkills 배열 처리
+      if (itemSkillMap.relatedSkills) {
+        itemSkillMap.relatedSkills.forEach((skillId: number) => {
+          const skill = data.skills[skillId.toString()]
+          if (skill && skill.cardID) {
+            availableCardIds.add(skill.cardID.toString())
+          }
+        })
+      }
     }
 
-    processEquipment(charEquipment.weapon, "weapon")
-    processEquipment(charEquipment.armor, "armor")
-    processEquipment(charEquipment.accessory, "accessory")
+    // 각 장비 타입에 대해 처리
+    if (charEquipment.weapon) processEquipment(charEquipment.weapon)
+    if (charEquipment.armor) processEquipment(charEquipment.armor)
+    if (charEquipment.accessory) processEquipment(charEquipment.accessory)
   })
 
   return availableCardIds

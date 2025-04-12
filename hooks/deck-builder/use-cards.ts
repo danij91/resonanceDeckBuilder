@@ -41,7 +41,7 @@ export function useCards(data: Database | null) {
     [data],
   )
 
-  // 카드 추가 함수 수정 - ownerId 파라미터 추가
+  // 장비에 의한 카드 추가 함수 수정
   const addCard = useCallback(
     (
       cardId: string,
@@ -65,8 +65,10 @@ export function useCards(data: Database | null) {
           ...sourceInfo,
         } as CardSource
 
-        // ownerId 결정 - 명시적으로 제공된 경우 그것을 사용
-        const ownerId = sourceInfo?.ownerId !== undefined ? sourceInfo.ownerId : 10000001
+        // ownerId 결정
+        // 장비에 의한 스킬은 항상 ownerId를 10000001로 설정
+        const ownerId =
+          sourceType === "equipment" ? 10000001 : sourceInfo?.ownerId !== undefined ? sourceInfo.ownerId : 10000001
         let skillId = -1
 
         // 소스 타입이 character 또는 passive인 경우 (기존 로직 유지)

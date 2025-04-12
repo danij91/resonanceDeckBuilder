@@ -140,23 +140,19 @@ export function useDeckBuilder(data: Database | null) {
   // 장비의 스킬 목록을 기반으로 카드를 생성하는 함수
   const generateCardsFromEquipment = useCallback(
     (equipId: string, slotIndex: number, equipType: "weapon" | "armor" | "accessory") => {
-      if (!data || !data.equipments) {
+      if (!data) {
         return
       }
 
-      const equip = data.equipments[equipId]
-      if (!equip || !equip.skillList || equip.skillList.length === 0) {
+      // item_skill_map.json에서 장비 ID에 해당하는 스킬 맵 찾기
+      const itemSkillMap = data.itemSkillMap?.[equipId]
+      if (!itemSkillMap || !itemSkillMap.relatedSkills || itemSkillMap.relatedSkills.length === 0) {
         return
       }
 
-      // 처리된 스킬 ID를 추적하기 위한 Set
-      const processedSkills = new Set<number>()
-
-      // 장비의 모든 스킬 처리
-      equip.skillList.forEach((skillItem) => {
-        const skillId = skillItem.skillId
+      // relatedSkills 배열 처리
+      itemSkillMap.relatedSkills.forEach((skillId: number) => {
         const skill = getSkill(skillId)
-
         if (!skill) return
 
         // 스킬 자체에 cardID가 있으면 카드 추가
@@ -164,28 +160,6 @@ export function useDeckBuilder(data: Database | null) {
           const cardId = skill.cardID.toString()
           // 장비에서 오는 카드는 ownerId를 10000001로 설정
           addCard(cardId, "equipment", equipId, { skillId, slotIndex, equipType, ownerId: 10000001 })
-        }
-
-        // 스킬의 ExSkillList 처리
-        if (skill.ExSkillList && skill.ExSkillList.length > 0) {
-          skill.ExSkillList.forEach((exSkillItem) => {
-            const exSkillId = exSkillItem.ExSkillName
-
-            // 이미 처리한 스킬은 건너뛰기
-            if (processedSkills.has(exSkillId)) return
-            processedSkills.add(exSkillId)
-
-            // ExSkill 정보 가져오기
-            const exSkill = getSkill(exSkillId)
-            if (!exSkill) return
-
-            // ExSkill에 cardID가 있으면 카드 추가
-            if (exSkill.cardID) {
-              const cardId = exSkill.cardID.toString()
-              // 장비에서 오는 카드는 ownerId를 10000001로 설정
-              addCard(cardId, "equipment", equipId, { skillId: exSkillId, slotIndex, equipType, ownerId: 10000001 })
-            }
-          })
         }
       })
     },
