@@ -11,6 +11,20 @@ import { usePresets } from "./use-presets"
 import { useAwakening } from "./use-awakening" // 각성 훅 추가
 import { getSkillById, getAvailableCardIds } from "./utils"
 
+// 임시 타입 정의 (실제 타입 정의로 대체해야 함)
+type CardExtraInfo = {
+  name: string
+  desc: string
+  cost: number
+  amount: number
+  img_url: string | undefined
+}
+
+// 임시 함수 정의 (실제 함수 정의로 대체해야 함)
+const getTranslatedString = (key: string) => key // 임시 구현
+const processSkillDescription = (skill: any, desc: string) => desc // 임시 구현
+const findCharacterImageForCard = (card: any) => undefined // 임시 구현
+
 export function useDeckBuilder(data: Database | null) {
   // 다크 모드
   const [isDarkMode, setIsDarkMode] = useState(true)
@@ -462,21 +476,14 @@ export function useDeckBuilder(data: Database | null) {
                 // 해당 장비가 실제로 이 카드의 스킬을 추가하는지 확인
                 let isValidEquipment = false
 
-                // 장비의 스킬 목록 확인
-                if (equipmentData.skillList) {
-                  for (const skillItem of equipmentData.skillList) {
-                    const skill = getSkill(skillItem.skillId)
-
-                    // ExSkillList 확인
-                    if (skill && skill.ExSkillList) {
-                      for (const exSkill of skill.ExSkillList) {
-                        const exSkillData = getSkill(exSkill.ExSkillName)
-                        if (exSkillData && exSkillData.cardID && exSkillData.cardID.toString() === presetCard.id) {
-                          isValidEquipment = true
-                          break
-                        }
-                      }
-                      if (isValidEquipment) break
+                // item_skill_map에서 장비 관련 스킬 확인
+                const itemSkillMap = data.itemSkillMap?.[equipId]
+                if (itemSkillMap && itemSkillMap.relatedSkills) {
+                  for (const skillId of itemSkillMap.relatedSkills) {
+                    const skill = getSkill(skillId)
+                    if (skill && skill.cardID && skill.cardID.toString() === presetCard.id) {
+                      isValidEquipment = true
+                      break
                     }
                   }
                 }
@@ -644,7 +651,6 @@ export function useDeckBuilder(data: Database | null) {
                           unavailableCard.ownerId = 10000001 // 특수 스킬의 경우 ownerId를 10000001로 설정
                         }
 
-                        console.log(`카드 교체: ${unavailableSkill.name} -> ${availableSkill.name}`)
                         break
                       }
                     }
@@ -711,23 +717,191 @@ export function useDeckBuilder(data: Database | null) {
   const availableCards = useMemo(() => {
     if (!data) return []
 
-    // 공통 유틸리티 함수 사용
-    const cardIds = getAvailableCardIds(data, selectedCharacters, equipment)
+    const cardSet = new Set<string>()
+    const validCharacters = selectedCharacters.filter((id) => id !== -1)
 
-    // 선택된 카드에서 모든 카드 ID 추가
-    selectedCards.forEach((card) => {
-      cardIds.add(card.id)
+    // 캐릭터 스킬 맵에서 카드 ID 수집
+    validCharacters.forEach((charId) => {
+      const charSkillMap = data.charSkillMap?.[charId.toString()]
+      if (!charSkillMap) return
+
+      // 기본 스킬 처리
+      if (charSkillMap.skills && Array.isArray(charSkillMap.skills)) {
+        charSkillMap.skills.forEach((skillId: number) => {
+          const skill = data.skills[skillId.toString()]
+          if (skill && skill.cardID) {
+            cardSet.add(skill.cardID.toString())
+          }
+        })
+      }
+
+      // 관련 스킬 처리
+      if (charSkillMap.relatedSkills && Array.isArray(charSkillMap.relatedSkills)) {
+        charSkillMap.relatedSkills.forEach((skillId: number) => {
+          const skill = data.skills[skillId.toString()]
+          if (skill && skill.cardID) {
+            cardSet.add(skill.cardID.toString())
+          }
+        })
+      }
+
+      // 캐릭터에서 오지 않는 스킬 처리
+      if (charSkillMap.notFromCharacters && Array.isArray(charSkillMap.notFromCharacters)) {
+        charSkillMap.notFromCharacters.forEach((skillId: number) => {
+          const skill = data.skills[skillId.toString()]
+          if (skill && skill.cardID) {
+            cardSet.add(skill.cardID.toString())
+          }
+        })
+      }
     })
 
-    // 배열로 변환
-    return Array.from(cardIds)
+    // 장비 스킬 맵에서 카드 ID 수집
+    validCharacters.forEach((charId, slotIndex) => {
+      const charEquipment = equipment[slotIndex]
+
+      // 각 장비 타입별로 처리
+      const processEquipment = (equipId: string | null) => {
+        if (!equipId) return
+
+        // 장비 스킬 맵에서 관련 스킬 찾기
+        const itemSkillMap = data.itemSkillMap?.[equipId]
+        if (!itemSkillMap || !itemSkillMap.relatedSkills) return
+
+        // 관련 스킬에서 카드 ID 수집
+        itemSkillMap.relatedSkills.forEach((skillId: number) => {
+          const skill = data.skills[skillId.toString()]
+          if (skill && skill.cardID) {
+            cardSet.add(skill.cardID.toString())
+          }
+        })
+      }
+
+      // 각 장비 타입에 대해 처리
+      if (charEquipment.weapon) processEquipment(charEquipment.weapon)
+      if (charEquipment.armor) processEquipment(charEquipment.armor)
+      if (charEquipment.accessory) processEquipment(charEquipment.accessory)
+    })
+
+    // 중요: selectedCards에서 모든 카드 ID를 cardSet에 추가
+    // 이렇게 하면 장비에서 추가된 카드들도 포함됩니다
+    selectedCards.forEach((card) => {
+      cardSet.add(card.id)
+    })
+
+    // Convert to array
+    return Array.from(cardSet)
       .map((id) => {
+        // 먼저 selectedCards에서 해당 카드 찾기
+        const selectedCard = selectedCards.find((card) => card.id === id)
+
+        // selectedCards에 있으면 저장된 정보 사용
+        if (selectedCard && selectedCard.skillInfo && selectedCard.cardInfo && selectedCard.extraInfo) {
+          return {
+            card: {
+              id: Number(id),
+              ...selectedCard.cardInfo,
+            },
+            extraInfo: {
+              name: getTranslatedString(selectedCard.skillInfo.name),
+              desc: processSkillDescription(
+                selectedCard.skillInfo,
+                selectedCard.extraInfo.desc || selectedCard.skillInfo.description,
+              ),
+              cost: selectedCard.extraInfo.cost,
+              amount: selectedCard.extraInfo.amount,
+              img_url: selectedCard.extraInfo.img_url,
+            },
+            characterImage: findCharacterImageForCard(selectedCard),
+          }
+        }
+
+        // selectedCards에 없으면 기존 로직으로 처리
         const card = data.cards[id]
         if (!card) return null
-        return { card }
+
+        // 기본 extraInfo 객체 생성 - 일단 카드 이름으로 초기화
+        const extraInfo: CardExtraInfo = {
+          name: card.name || `card_name_${id}`,
+          desc: "",
+          cost: 0, // 기본값 설정
+          amount: 0, // 기본 수량을 0으로 설정
+          img_url: undefined,
+        }
+
+        // 카드 ID에 해당하는 이미지 URL 찾기
+        if (data.images && data.images[`card_${id}`]) {
+          extraInfo.img_url = data.images[`card_${id}`]
+        }
+
+        // 스킬 ID를 통해 추가 정보 찾기
+        let skillId = -1
+        let skillObj = null
+        for (const sId in data.skills) {
+          const skill = data.skills[sId]
+          if (skill && skill.cardID && skill.cardID.toString() === id) {
+            // 스킬 이름을 extraInfo.name에 할당 - 번역된 이름 사용
+            extraInfo.name = getTranslatedString(skill.name)
+            // 스킬 설명을 extraInfo.desc에 할당 - 번역 및 #r 값 교체 적용
+            extraInfo.desc = skill.description || ""
+            // 스킬 ID 저장
+            skillId = Number.parseInt(sId)
+            // 스킬 객체 저장
+            skillObj = skill
+
+            // 스킬 이미지 URL 찾기
+            if (data.images && data.images[`skill_${sId}`]) {
+              extraInfo.img_url = data.images[`skill_${sId}`]
+            }
+            break
+          }
+        }
+
+        // 스킬 설명 처리 - 번역 및 #r 값 교체
+        if (skillObj) {
+          extraInfo.desc = processSkillDescription(skillObj, extraInfo.desc)
+        } else {
+          // 스킬 객체가 없는 경우 기본 번역만 적용
+          extraInfo.desc = getTranslatedString(extraInfo.desc)
+        }
+
+        // 카드 비용 정보 찾기 - cost_SN을 10000으로 나눈 값 사용
+        if (card.cost_SN !== undefined) {
+          // cost_SN을 10000으로 나누고 내림 처리
+          const costValue = card.cost_SN > 0 ? Math.floor(card.cost_SN / 10000) : 0
+          extraInfo.cost = costValue
+        }
+
+        // 카드 수량 정보 찾기 - 캐릭터의 skillList에서 해당 스킬의 num 값 찾기
+        if (skillId !== -1) {
+          for (const charId of validCharacters) {
+            const character = data.characters[charId.toString()]
+            if (character && character.skillList) {
+              const skillItem = character.skillList.find((item) => item.skillId === skillId)
+              if (skillItem && skillItem.num) {
+                extraInfo.amount = skillItem.num
+                break
+              }
+            }
+          }
+        }
+
+        // 중요: selectedCards에서 해당 카드를 찾아 ownerId 정보 가져오기
+        const cardForImage = selectedCard || card
+        const characterImage = findCharacterImageForCard(cardForImage)
+
+        return { card, extraInfo, characterImage }
       })
       .filter(Boolean)
-  }, [data, selectedCharacters, equipment, selectedCards])
+  }, [
+    data,
+    selectedCharacters,
+    findCharacterImageForCard,
+    selectedCards,
+    processSkillDescription,
+    getTranslatedString,
+    equipment,
+  ])
 
   return {
     selectedCharacters,

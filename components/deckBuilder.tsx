@@ -8,7 +8,6 @@ import { SkillWindow } from "./skill-window"
 import { BattleSettings } from "./battle-settings"
 import { CommentsSection } from "./comments-section"
 import { useToast } from "./toast-notification"
-import { Github } from "lucide-react"
 import { useDeckBuilder } from "../hooks/deck-builder/index"
 import { useLanguage } from "../contexts/language-context"
 import { decodePresetFromUrlParam } from "../utils/presetCodec"
@@ -215,35 +214,67 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
     const cardSet = new Set<string>()
     const validCharacters = selectedCharacters.filter((id) => id !== -1)
 
-    // 모든 카드 순회
-    Object.values(data.cards).forEach((card) => {
-      // 카드 소유자 확인
-      if (card.ownerId && validCharacters.includes(card.ownerId)) {
-        cardSet.add(card.id.toString())
-      }
-    })
-
-    // 스킬에서 카드 ID 찾기
+    // 캐릭터 스킬 맵에서 카드 ID 수집
     validCharacters.forEach((charId) => {
-      const character = data.characters[charId.toString()]
-      if (character && character.skillList) {
-        character.skillList.forEach((skillItem) => {
-          const skill = data.skills[skillItem.skillId.toString()]
+      const charSkillMap = data.charSkillMap?.[charId.toString()]
+      if (!charSkillMap) return
+
+      // 기본 스킬 처리
+      if (charSkillMap.skills && Array.isArray(charSkillMap.skills)) {
+        charSkillMap.skills.forEach((skillId: number) => {
+          const skill = data.skills[skillId.toString()]
           if (skill && skill.cardID) {
             cardSet.add(skill.cardID.toString())
           }
+        })
+      }
 
-          // ExSkillList에서 카드 ID 찾기
-          if (skill && skill.ExSkillList && skill.ExSkillList.length > 0) {
-            skill.ExSkillList.forEach((exSkill) => {
-              const exSkillData = data.skills[exSkill.ExSkillName.toString()]
-              if (exSkillData && exSkillData.cardID) {
-                cardSet.add(exSkillData.cardID.toString())
-              }
-            })
+      // 관련 스킬 처리
+      if (charSkillMap.relatedSkills && Array.isArray(charSkillMap.relatedSkills)) {
+        charSkillMap.relatedSkills.forEach((skillId: number) => {
+          const skill = data.skills[skillId.toString()]
+          if (skill && skill.cardID) {
+            cardSet.add(skill.cardID.toString())
           }
         })
       }
+
+      // 캐릭터에서 오지 않는 스킬 처리
+      if (charSkillMap.notFromCharacters && Array.isArray(charSkillMap.notFromCharacters)) {
+        charSkillMap.notFromCharacters.forEach((skillId: number) => {
+          const skill = data.skills[skillId.toString()]
+          if (skill && skill.cardID) {
+            cardSet.add(skill.cardID.toString())
+          }
+        })
+      }
+    })
+
+    // 장비 스킬 맵에서 카드 ID 수집
+    validCharacters.forEach((charId, slotIndex) => {
+      const charEquipment = equipment[slotIndex]
+
+      // 각 장비 타입별로 처리
+      const processEquipment = (equipId: string | null) => {
+        if (!equipId) return
+
+        // 장비 스킬 맵에서 관련 스킬 찾기
+        const itemSkillMap = data.itemSkillMap?.[equipId]
+        if (!itemSkillMap || !itemSkillMap.relatedSkills) return
+
+        // 관련 스킬에서 카드 ID 수집
+        itemSkillMap.relatedSkills.forEach((skillId: number) => {
+          const skill = data.skills[skillId.toString()]
+          if (skill && skill.cardID) {
+            cardSet.add(skill.cardID.toString())
+          }
+        })
+      }
+
+      // 각 장비 타입에 대해 처리
+      if (charEquipment.weapon) processEquipment(charEquipment.weapon)
+      if (charEquipment.armor) processEquipment(charEquipment.armor)
+      if (charEquipment.accessory) processEquipment(charEquipment.accessory)
     })
 
     // 중요: selectedCards에서 모든 카드 ID를 cardSet에 추가
@@ -267,17 +298,13 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
           img_url: undefined,
         }
 
-        // 카드 ID에 해당하는 이미지 URL 찾기
-        if (data.images && data.images[`card_${id}`]) {
-          extraInfo.img_url = data.images[`card_${id}`]
-        }
 
         // 스킬 ID를 통해 추가 정보 찾기
         let skillId = -1
         let skillObj = null
         for (const sId in data.skills) {
           const skill = data.skills[sId]
-          if (skill && skill.cardID && skill.cardID.toString() === id) {
+          if (skill && skill.cardID && skill.cardID.toString() === id&& skill.name) {
             // 스킬 이름을 extraInfo.name에 할당 - 번역된 이름 사용
             extraInfo.name = getTranslatedString(skill.name)
             // 스킬 설명을 extraInfo.desc에 할당 - 번역 및 #r 값 교체 적용
@@ -287,7 +314,6 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
             // 스킬 객체 저장
             skillObj = skill
 
-            // 스킬 이미지 URL 찾기
             if (data.images && data.images[`skill_${sId}`]) {
               extraInfo.img_url = data.images[`skill_${sId}`]
             }
@@ -335,7 +361,15 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         return { card, cardForImage, extraInfo, characterImage }
       })
       .filter(Boolean)
-  }, [data, selectedCharacters, findCharacterImageForCard, selectedCards, processSkillDescription, getTranslatedString])
+  }, [
+    data,
+    selectedCharacters,
+    findCharacterImageForCard,
+    selectedCards,
+    processSkillDescription,
+    getTranslatedString,
+    equipment,
+  ])
 
   // 클립보드에서 가져오기
   const handleImport = async () => {
@@ -617,18 +651,14 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
       </div>
 
       <div className="mt-0 mb-0 text-center text-sm text-muted-foreground flex items-center justify-center gap-2">
-      <span>Resonance Deck Builder © 2025 Heeyong Chang</span>
-      <span className="hidden sm:inline">·</span>
-      <a
-        href="https://github.com/danij91/resonanceDeckBuilder"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img className="w-6 h-6" src="images/github-mark-white2.svg"/>
-      </a>
-      <span className="hidden sm:inline">·</span>
-      <span className="hidden sm:inline">GPLv3</span>
-    </div>
+        <span>Resonance Deck Builder © 2025 Heeyong Chang</span>
+        <span className="hidden sm:inline">·</span>
+        <a href="https://github.com/danij91/resonanceDeckBuilder" target="_blank" rel="noopener noreferrer">
+          <img className="w-6 h-6" src="images/github-mark-white2.svg" />
+        </a>
+        <span className="hidden sm:inline">·</span>
+        <span className="hidden sm:inline">GPLv3</span>
+      </div>
       {/* 댓글 섹션 */}
       <CommentsSection currentLanguage={currentLanguage} />
 

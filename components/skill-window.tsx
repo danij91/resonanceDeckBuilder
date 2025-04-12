@@ -107,12 +107,12 @@ function StatusEffectTags({
                   tag.style.setProperty("--tooltip-align", "left")
                 } else {
                   // 왼쪽에 있으면 툴팁을 오른쪽으로 정렬
-                  tag.style.setProperty("--tooltip-x", `${tagRect.right -60}px`)
+                  tag.style.setProperty("--tooltip-x", `${tagRect.right}px`)
                   tag.style.setProperty("--tooltip-align", "right")
                 }
 
                 // Y 위치는 태그 위에 표시
-                const tooltipY = tagRect.top - 100
+                const tooltipY = tagRect.top - 10
                 tag.style.setProperty("--tooltip-y", `${tooltipY}px`)
               }}
             >
@@ -153,6 +153,7 @@ function StatusEffectTags({
   )
 }
 
+// SkillCard 컴포넌트에서 selectedCards의 저장된 정보를 직접 사용하도록 수정
 function SkillPriorityTab({
   selectedCards,
   availableCards,
@@ -164,8 +165,17 @@ function SkillPriorityTab({
   activeCardInfo,
   statusEffects,
   includeDerivedCards,
+  data,
 }: {
-  selectedCards: { id: string; useType: number; useParam: number; useParamMap?: Record<string, number> }[]
+  selectedCards: {
+    id: string
+    useType: number
+    useParam: number
+    useParamMap?: Record<string, number>
+    skillInfo?: any
+    cardInfo?: any
+    extraInfo?: any
+  }[]
   availableCards: { card: Card; extraInfo: CardExtraInfo; characterImage?: string }[]
   onRemoveCard: (cardId: string) => void
   onReorderCards: (fromIndex: number, toIndex: number) => void
@@ -175,6 +185,7 @@ function SkillPriorityTab({
   activeCardInfo: { card: Card; extraInfo: CardExtraInfo; characterImage?: string } | null
   statusEffects: any[]
   includeDerivedCards: boolean
+  data: any
 }) {
   return (
     <div className="w-full">
@@ -186,6 +197,51 @@ function SkillPriorityTab({
         <SortableContext items={selectedCards.map((c) => c.id)} strategy={rectSortingStrategy}>
           <div className="skill-grid w-full">
             {selectedCards.map((selectedCard) => {
+              // 먼저 selectedCard에 저장된 정보 사용 시도
+              if (selectedCard.cardInfo && selectedCard.skillInfo && selectedCard.extraInfo) {
+                const card = {
+                  id: Number(selectedCard.id),
+                  ...selectedCard.cardInfo,
+                }
+
+                const extraInfo = {
+                  name: getTranslatedString(selectedCard.skillInfo.name),
+                  desc: selectedCard.extraInfo.desc || getTranslatedString(selectedCard.skillInfo.description),
+                  cost: selectedCard.extraInfo.cost,
+                  amount: selectedCard.extraInfo.amount,
+                  img_url: selectedCard.extraInfo.img_url,
+                }
+
+                const isDisabled = selectedCard.useType === 2
+
+                // 캐릭터 이미지 찾기
+                let characterImage
+                if (selectedCard.ownerId) {
+                  // 저장된 ownerId로 이미지 찾기 시도
+                  const character = data?.characters[selectedCard.ownerId.toString()]
+                  if (character && character.img_card) {
+                    characterImage = character.img_card
+                  } else if (data?.images && data.images[`char_${selectedCard.ownerId}`]) {
+                    characterImage = data.images[`char_${selectedCard.ownerId}`]
+                  }
+                }
+
+                return (
+                  <SortableSkillCard key={selectedCard.id} id={selectedCard.id}>
+                    <SkillCard
+                      card={card}
+                      extraInfo={extraInfo}
+                      getTranslatedString={getTranslatedString}
+                      onRemove={() => onRemoveCard(selectedCard.id)}
+                      onEdit={() => onEditCard(selectedCard.id)}
+                      isDisabled={isDisabled}
+                      characterImage={characterImage}
+                    />
+                  </SortableSkillCard>
+                )
+              }
+
+              // 저장된 정보가 없으면 availableCards에서 찾기
               const cardInfo = availableCards.find((c) => c.card.id.toString() === selectedCard.id.toString())
 
               if (!cardInfo) {
@@ -543,6 +599,7 @@ export function SkillWindow({
                     activeCardInfo={activeCardInfo}
                     statusEffects={statusEffects}
                     includeDerivedCards={includeDerivedCards}
+                    data={data}
                   />
                 ),
               },
