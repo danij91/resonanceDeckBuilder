@@ -91,9 +91,30 @@ function StatusEffectTags({
           {statusEffects.map((effect) => (
             <div
               key={effect.id}
-              className={`relative group ${
+              className={`relative group tooltip-group ${
                 !forceShowAll && !includeDerivedCards && effect.source === "derived" ? "hidden" : ""
               }`}
+              onMouseEnter={(e) => {
+                const tag = e.currentTarget
+                const tagRect = tag.getBoundingClientRect()
+                const tooltipWidth = 256 // 툴팁 너비
+                const screenWidth = window.innerWidth
+
+                // 태그의 중앙이 화면 중앙보다 오른쪽에 있는지 확인
+                if (tagRect.left + tagRect.width / 2 > screenWidth / 2) {
+                  // 오른쪽에 있으면 툴팁을 왼쪽으로 정렬
+                  tag.style.setProperty("--tooltip-x", `${Math.max(tagRect.left - tooltipWidth, 10)}px`)
+                  tag.style.setProperty("--tooltip-align", "left")
+                } else {
+                  // 왼쪽에 있으면 툴팁을 오른쪽으로 정렬
+                  tag.style.setProperty("--tooltip-x", `${tagRect.right -60}px`)
+                  tag.style.setProperty("--tooltip-align", "right")
+                }
+
+                // Y 위치는 태그 위에 표시
+                const tooltipY = tagRect.top - 100
+                tag.style.setProperty("--tooltip-y", `${tooltipY}px`)
+              }}
             >
               <span
                 className="px-2 py-1 bg-black bg-opacity-50 border rounded-md text-sm cursor-help"
@@ -104,16 +125,18 @@ function StatusEffectTags({
                 }}
               >
                 {effect.name}
-                {/* 태그 소스 표시 (디버깅용, 필요시 주석 해제) */}
-                {/* <small className="ml-1 opacity-50">
-                  ({effect.source === "normal" ? "N" : effect.source === "derived" ? "D" : "B"})
-                </small> */}
               </span>
 
               {/* 툴팁 */}
               <div
-                className="absolute left-0 bottom-full mb-2 w-64 bg-black bg-opacity-90 p-2 rounded text-xs text-gray-300 
-                           invisible group-hover:visible z-10 border border-gray-700 pointer-events-none"
+                className="fixed p-2 rounded text-xs text-gray-300 
+                          invisible group-hover:visible z-10 border border-gray-700 pointer-events-none
+                          bg-black bg-opacity-90 shadow-lg w-64"
+                style={{
+                  // 화면 위치에 따라 동적으로 위치 조정
+                  left: "var(--tooltip-x, 0)",
+                  top: "var(--tooltip-y, 0)",
+                }}
               >
                 <div className="font-bold mb-1" style={{ color: effect.color }}>
                   {effect.name}
