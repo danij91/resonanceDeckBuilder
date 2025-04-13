@@ -3,13 +3,12 @@
 import type React from "react"
 
 import { useState, useEffect, useRef } from "react"
-import { Globe, Download, Upload, RefreshCw, Share2, HelpCircle, Save, FolderOpen, Camera } from "lucide-react"
+import { Globe, Download, Upload, RefreshCw, Share2, HelpCircle, Save, FolderOpen } from "lucide-react"
 import { StylizedTitle } from "./stylized-title"
 import { HelpModal } from "./ui/modal/HelpModal"
 import { useLanguage } from "../contexts/language-context"
 import { ScreenshotButton } from "./screenshot-button" // 추가
 
-// TopBarProps 인터페이스에 isPhotoMode와 onTogglePhotoMode 속성을 추가합니다:
 interface TopBarProps {
   onClear: () => void
   onImport: () => Promise<void>
@@ -18,21 +17,9 @@ interface TopBarProps {
   onSave: () => void // 추가: 저장 버튼 핸들러
   onLoad: () => void // 추가: 불러오기 버튼 핸들러
   contentRef: React.RefObject<HTMLElement> // 추가: 캡처할 컨텐츠 참조
-  isPhotoMode: boolean // 추가: 사진 모드 상태
-  onTogglePhotoMode: () => void // 추가: 사진 모드 토글 함수
 }
 
-export function TopBar({
-  onClear,
-  onImport,
-  onExport,
-  onShare,
-  onSave,
-  onLoad,
-  contentRef,
-  isPhotoMode,
-  onTogglePhotoMode,
-}: TopBarProps) {
+export function TopBar({ onClear, onImport, onExport, onShare, onSave, onLoad, contentRef }: TopBarProps) {
   const { currentLanguage, supportedLanguages, getTranslatedString, changeLanguage, isChangingLanguage } = useLanguage()
 
   const [showLanguageMenu, setShowLanguageMenu] = useState(false)
@@ -131,10 +118,12 @@ export function TopBar({
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
             {/* Logo/Title - 스크롤 시 숨김 */}
             <div className={`flex items-center ${scrolled ? "hidden" : ""}`}>
-              <StylizedTitle
-                mainText={getTranslatedString("app.title.main") || "레조넌스"}
-                subText={getTranslatedString("app.title.sub") || "SOLSTICE"}
-              />
+              <a href={`/${currentLanguage}`} className="cursor-pointer hover:opacity-80 transition-opacity">
+                <StylizedTitle
+                  mainText={getTranslatedString("app.title.main") || "레조넌스"}
+                  subText={getTranslatedString("app.title.sub") || "SOLSTICE"}
+                />
+              </a>
             </div>
 
             {/* 버튼들 - 작은 화면에서는 가로 스크롤, 큰 화면에서는 오른쪽 정렬 */}
@@ -243,17 +232,6 @@ export function TopBar({
                 aria-label={getTranslatedString("help") || "Help"}
               >
                 <HelpCircle className={iconClass} />
-              </button>
-              {/* Camera Button */}
-              <button
-                onClick={(e) => {
-                  e.stopPropagation()
-                  onTogglePhotoMode() // 사진 모드 토글 함수 호출
-                }}
-                className={`${buttonBaseClass} ${isPhotoMode ? "bg-blue-600" : ""}`}
-                aria-label={getTranslatedString("photo_mode") || "Photo Mode"}
-              >
-                <Camera className={iconClass} />
               </button>
             </div>
           </div>

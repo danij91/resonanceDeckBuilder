@@ -67,18 +67,40 @@ export function useDataLoader() {
             itemSkillMapResponse.json(), // item_skill_map.json 추가
           ])
 
-          // 언어 파일 목록 - 언어별로 다른 경로에서 로드 (절대 경로 사용)
-          const supportedLanguages = ["ko", "en", "jp", "cn", "tw"]
-          const languagePromises = supportedLanguages.map((lang) =>
-            fetch(`/api/db/lang_${lang}.json`).then((res) => res.json()),
-          )
-          const languageData = await Promise.all(languagePromises)
+          // 현재 브라우저 언어 또는 URL 경로에서 언어 코드 추출
+          const currentLang = getCurrentLanguage()
 
-          // 언어 데이터 구성
+          // 현재 언어만 로드
+          const languageResponse = await fetch(`/api/db/lang_${currentLang}.json`)
+          const languageData = await languageResponse.json()
+
+          // 언어 데이터 구성 - 현재 언어만 포함
           const languages: Record<string, any> = {}
-          supportedLanguages.forEach((lang, index) => {
-            languages[lang] = languageData[index]
-          })
+          languages[currentLang] = languageData
+
+          // 현재 언어 코드를 추출하는 함수
+          function getCurrentLanguage(): string {
+            // 브라우저 환경인 경우에만 실행
+            if (typeof window !== "undefined") {
+              // URL 경로에서 언어 코드 추출 시도
+              const pathParts = window.location.pathname.split("/")
+              if (pathParts.length > 1) {
+                const langFromPath = pathParts[1]
+                if (["ko", "en", "jp", "cn", "tw"].includes(langFromPath)) {
+                  return langFromPath
+                }
+              }
+
+              // URL에서 언어를 찾지 못한 경우 브라우저 언어 설정 사용
+              const browserLang = navigator.language.split("-")[0]
+              if (["ko", "en", "jp", "cn", "tw"].includes(browserLang)) {
+                return browserLang
+              }
+            }
+
+            // 기본값은 영어
+            return "en"
+          }
 
           // Add image URLs to characters
           Object.keys(characters).forEach((charId) => {

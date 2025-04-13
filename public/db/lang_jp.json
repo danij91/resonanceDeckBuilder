@@ -7876,5 +7876,7 @@
   "tag_tagName_12601691": "B",
   "tag_tagName_12601692": "B",
   "tag_tagName_12601695": "特別募集",
-  "tag_tagName_12601696": "Bot2"
+  "tag_tagName_12601696": "Bot2",
+  "help.save_deck": "ローカルブラウザにデッキプリセットを保存します。",
+  "help.load_deck": "ローカルブラウザからデッキプリセットを読み込みます。"
 }
