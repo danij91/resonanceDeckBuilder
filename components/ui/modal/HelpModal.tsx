@@ -1,6 +1,6 @@
 "use client"
 import { Modal, type ModalProps } from "./Modal"
-import { Globe, Download, Upload, RefreshCw, Share2, Camera } from "lucide-react"
+import { Globe, Download, Upload, RefreshCw, Share2, Camera, Save, FolderOpen } from "lucide-react"
 import { useLanguage } from "../../../contexts/language-context"
 
 export interface HelpModalProps extends Omit<ModalProps, "children" | "title"> {
@@ -113,8 +113,33 @@ export function HelpModal({ getTranslatedString: propGetTranslatedString, ...mod
             </p>
           </div>
         </div>
+
+        {/* Save Button - 새로 추가 */}
+        <div className="flex items-start">
+          <div className={`${buttonBaseClass} mr-4`}>
+            <Save className={iconClass} />
+          </div>
+          <div className="flex-grow">
+            <h3 className="font-medium neon-text">{getTranslatedString("save_deck") || "Save Deck"}</h3>
+            <p className="text-sm text-gray-400 break-words">
+              {getTranslatedString("help.save_deck") || "Save current deck configuration locally"}
+            </p>
+          </div>
+        </div>
+
+        {/* Load Button - 새로 추가 */}
+        <div className="flex items-start">
+          <div className={`${buttonBaseClass} mr-4`}>
+            <FolderOpen className={iconClass} />
+          </div>
+          <div className="flex-grow">
+            <h3 className="font-medium neon-text">{getTranslatedString("load_deck") || "Load Deck"}</h3>
+            <p className="text-sm text-gray-400 break-words">
+              {getTranslatedString("help.load_deck") || "Load a saved deck configuration"}
+            </p>
+          </div>
+        </div>
       </div>
     </Modal>
   )
 }
-

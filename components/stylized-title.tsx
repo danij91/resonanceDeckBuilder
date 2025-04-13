@@ -8,7 +8,7 @@ interface StylizedTitleProps {
 // Fix the title text rendering issue by simplifying the component
 export function StylizedTitle({ mainText, subText }: StylizedTitleProps) {
   return (
-    <div className="flex items-center relative">
+    <div className="flex items-center relative cursor-pointer">
       {/* Horizontal line */}
       <div className="absolute w-full h-px bg-[hsl(var(--neon-white))] opacity-30 top-1/2 -z-10"></div>
 
@@ -22,4 +22,3 @@ export function StylizedTitle({ mainText, subText }: StylizedTitleProps) {
     </div>
   )
 }
-

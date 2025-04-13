@@ -35,14 +35,27 @@ export function LanguageProvider({
   // 언어 데이터 동적 로딩
   useEffect(() => {
     async function loadLanguageData() {
-      if (!data || data.languages[currentLanguage]) return
+      if (!data) return
+
+      // 이미 해당 언어 데이터가 있으면 로드하지 않음
+      if (data.languages[currentLanguage]) return
 
       try {
-        const langResponse = await fetch(`/api/db/lang/${currentLanguage}.json`)
+        // 언어 파일 경로 수정 - 실제 API 경로에 맞게 조정
+        const langResponse = await fetch(`/api/db/lang_${currentLanguage}.json`)
+        if (!langResponse.ok) {
+          throw new Error(`Failed to load language data: ${langResponse.status}`)
+        }
+
         const langData = await langResponse.json()
 
+        // 데이터 구조 확인 후 언어 데이터 추가
         if (data && data.languages) {
           data.languages[currentLanguage] = langData
+
+          // 상태 업데이트를 위해 강제 리렌더링 트리거 (선택적)
+          setIsChangingLanguage(true)
+          setTimeout(() => setIsChangingLanguage(false), 10)
         }
       } catch (error) {
         console.error("Failed to load language data:", error)

@@ -1,13 +1,13 @@
 "use client"
 
-import { useEffect, useState , use } from "react"
+import { useEffect, useState ,use} from "react"
 import { useSearchParams, usePathname } from "next/navigation"
 import DeckBuilder from "../../components/deckBuilder"
 import { LoadingScreen } from "../../components/loading-screen"
 import { useDataLoader } from "../../hooks/use-data-loader"
 import { LanguageProvider } from "../../contexts/language-context"
 
-// Firebase Analytics 관련 import
+// Firebase Analytics 관련 import 수정
 import { logEventWrapper } from "../../lib/firebase-config"
 
 interface PageProps {
@@ -27,22 +27,27 @@ export default function Page({ params }: PageProps) {
   useEffect(() => {
     // URL에서 code 파라미터 추출
     const codeParam = searchParams.get("code")
+    // logEvent 호출 부분 수정 (analytics 전달 제거)
     if (codeParam) {
       setDeckCode(codeParam)
 
-      logEventWrapper("deck_shared_visit", {
-        deck_code: codeParam,
-        language: lang,
-      })
+      if (typeof window !== "undefined") {
+        logEventWrapper("deck_shared_visit", {
+          deck_code: codeParam,
+          language: lang,
+        })
+      }
     }
 
     setIsLoading(false)
 
-    // Firebase Analytics 이벤트 전송
-    logEventWrapper("page_view", {
-      page_path: pathname,
-      language: lang,
-    })
+    // 다른 logEvent 호출 부분도 수정
+    if (typeof window !== "undefined") {
+      logEventWrapper("page_view", {
+        page_path: pathname,
+        language: lang,
+      })
+    }
   }, [searchParams, pathname, lang])
 
   if (loading || isLoading) {
@@ -65,4 +70,3 @@ export default function Page({ params }: PageProps) {
     </LanguageProvider>
   )
 }
-
