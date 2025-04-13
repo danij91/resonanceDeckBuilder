@@ -7818,5 +7818,7 @@
   "tag_tagName_12601691": "B",
   "tag_tagName_12601692": "B",
   "tag_tagName_12601695": "特設招募",
-  "tag_tagName_12601696": "Bot2"
+  "tag_tagName_12601696": "Bot2",
+  "help.save_deck": "將卡組預設保存到本地瀏覽器。",
+  "help.load_deck": "從本地瀏覽器加載卡組預設。"
 }

@@ -7834,5 +7834,7 @@
   "tag_tagName_12601691": "B",
   "tag_tagName_12601692": "B",
   "tag_tagName_12601695": "특별 모집",
-  "tag_tagName_12601696": "Bot2"
+  "tag_tagName_12601696": "Bot2",
+  "help.save_deck": "로컬 브라우저에 덱 프리셋을 저장합니다.",
+  "help.load_deck": "로컬 브라우저에서 덱 프리셋을 불러옵니다."
 }
