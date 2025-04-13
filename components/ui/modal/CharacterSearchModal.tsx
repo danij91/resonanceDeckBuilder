@@ -159,7 +159,7 @@ export function CharacterSearchModal({
                         console.log("Character info button clicked", character.id)
                       }}
                     >
-                      <Info className="w-5 h-5 text-white" />
+                      <Info className="w-7 h-7 text-white" />
                     </button>
                 </div>
               ))

@@ -186,6 +186,13 @@ export function CharacterSlot({
   // 왕관 아이콘 크기 계산 - 슬롯 너비의 33%
   const crownSize = Math.max(slotWidth * 0.33, 24) // 최소 24px 보장
 
+  // 1. 공통 장비 슬롯 클래스를 만들어 재사용합니다.
+  const getEquipmentSlotClass = (equipment: any) => `
+  w-full aspect-square rounded-lg overflow-hidden cursor-pointer relative flex items-center justify-center
+  ${isEmpty ? "opacity-50 pointer-events-none" : ""}
+  ${!equipment ? "equipment-slot-empty neon-border" : getEquipmentQualityBgColor(equipment.quality)}
+`
+
   return (
     <div className="flex flex-col relative" ref={characterSlotRef}>
       {/* Character Card - 모바일에서도 적절한 크기로 표시되도록 수정 */}
@@ -288,21 +295,21 @@ export function CharacterSlot({
                   </button>
                 )}
               </div>
-            <div className="mt-auto flex flex-col">
-              {/* 각성 단계 표시 - 이름 위 왼쪽 정렬로 표시, 반응형으로 조정 */}
-              {!isEmpty && (
-                <div className="w-max mb-1 inline-block px-0">
-                  <div className="bg-purple-600 rounded-full px-1 py-0.5 lg:px-2 lg:py-1 shadow-lg flex items-center justify-center">
-                    <Star className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-300" />
-                    <span className="text-white text-xs sm:text-sm font-bold ml-0.5 sm:ml-1">
-                      {awakeningStage !== null ? awakeningStage : 0}
-                    </span>
+              <div className="mt-auto flex flex-col">
+                {/* 각성 단계 표시 - 이름 위 왼쪽 정렬로 표시, 반응형으로 조정 */}
+                {!isEmpty && (
+                  <div className="w-max mb-1 inline-block px-0">
+                    <div className="bg-purple-600 rounded-full px-1 py-0.5 lg:px-2 lg:py-1 shadow-lg flex items-center justify-center">
+                      <Star className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-300" />
+                      <span className="text-white text-xs sm:text-sm font-bold ml-0.5 sm:ml-1">
+                        {awakeningStage !== null ? awakeningStage : 0}
+                      </span>
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
 
-              {/* 이름을 하단으로 이동, 각성 표시와 겹치지 않도록 패딩 추가 */}
-              
+                {/* 이름을 하단으로 이동, 각성 표시와 겹치지 않도록 패딩 추가 */}
+
                 <h3 className="w-max mb-0 rounded-full inline-block bg-gray-800 bg-opacity-60 text-xs sm:text-lg lg:text-xl xl:text-2xl font-semibold text-white neon-text truncate px-1 pb-0">
                   {getTranslatedString(character.name)}
                 </h3>
@@ -315,14 +322,7 @@ export function CharacterSlot({
       {/* Equipment Slots - 모바일에서도 적절한 크기로 표시되도록 수정 */}
       <div className="mt-1 sm:mt-2 grid grid-cols-3 gap-0.5 sm:gap-1">
         {/* Weapon Slot - Sword 아이콘 사용 */}
-        <div
-          className={`
-          w-full aspect-square rounded-lg overflow-hidden cursor-pointer relative flex items-center justify-center
-          ${isEmpty ? "opacity-50 pointer-events-none" : ""}
-          ${!weaponEquipment ? "equipment-slot-empty neon-border" : getEquipmentQualityBgColor(weaponEquipment.quality)}
-        `}
-          onClick={() => handleEquipmentClick("weapon")}
-        >
+        <div className={getEquipmentSlotClass(weaponEquipment)} onClick={() => handleEquipmentClick("weapon")}>
           {!weaponEquipment ? (
             <Sword className="w-5 h-5 sm:w-6 sm:h-6 text-[hsl(var(--neon-white))]" />
           ) : (
@@ -350,11 +350,11 @@ export function CharacterSlot({
               )}
 
               {/* 장비 이름 - 슬롯 내부 하단에 표시 (모바일에서는 숨김) */}
-              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-[0.5rem] sm:text-sm text-center truncate neon-text hidden lg:block">
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-[0.5rem] sm:text-sm text-center truncate neon-text hidden xl:block">
                 {getTranslatedString(weaponEquipment.name)}
               </div>
 
-              {/* 장비 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 - 모바일에서도 잘 보이도록 수정 */}
+              {/* 장비 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 */}
               <button
                 className="equipment-info-btn hidden lg:flex"
                 onClick={(e) => {
@@ -369,14 +369,7 @@ export function CharacterSlot({
         </div>
 
         {/* Armor Slot - Shield 아이콘 사용 */}
-        <div
-          className={`
-          w-full aspect-square rounded-lg overflow-hidden cursor-pointer relative flex items-center justify-center
-          ${isEmpty ? "opacity-50 pointer-events-none" : ""}
-          ${!armorEquipment ? "equipment-slot-empty neon-border" : getEquipmentQualityBgColor(armorEquipment.quality)}
-        `}
-          onClick={() => handleEquipmentClick("armor")}
-        >
+        <div className={getEquipmentSlotClass(armorEquipment)} onClick={() => handleEquipmentClick("armor")}>
           {!armorEquipment ? (
             <Shield className="w-5 h-5 sm:w-6 sm:h-6 text-[hsl(var(--neon-white))]" />
           ) : (
@@ -404,13 +397,13 @@ export function CharacterSlot({
               )}
 
               {/* 장비 이름 - 슬롯 내부 하단에 표시 (모바일에서는 숨김) */}
-              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-[0.5rem] sm:text-sm text-center truncate neon-text hidden sm:block">
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-[0.5rem] sm:text-sm text-center truncate neon-text hidden xl:block">
                 {getTranslatedString(armorEquipment.name)}
               </div>
 
-              {/* 장비 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 - 모바일에서도 잘 보이도록 수정 */}
+              {/* 장비 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 */}
               <button
-                className="equipment-info-btn hidden sm:flex"
+                className="equipment-info-btn hidden lg:flex"
                 onClick={(e) => {
                   e.stopPropagation()
                   setShowEquipmentDetails(equipment.armor)
@@ -423,18 +416,7 @@ export function CharacterSlot({
         </div>
 
         {/* Accessory Slot - Gem 아이콘 사용 */}
-        <div
-          className={`
-          w-full aspect-square rounded-lg overflow-hidden cursor-pointer relative flex items-center justify-center
-          ${isEmpty ? "opacity-50 pointer-events-none" : ""}
-          ${
-            !accessoryEquipment
-              ? "equipment-slot-empty neon-border"
-              : getEquipmentQualityBgColor(accessoryEquipment.quality)
-          }
-        `}
-          onClick={() => handleEquipmentClick("accessory")}
-        >
+        <div className={getEquipmentSlotClass(accessoryEquipment)} onClick={() => handleEquipmentClick("accessory")}>
           {!accessoryEquipment ? (
             <Gem className="w-5 h-5 sm:w-6 sm:h-6 text-[hsl(var(--neon-white))]" />
           ) : (
@@ -462,13 +444,13 @@ export function CharacterSlot({
               )}
 
               {/* 장비 이름 - 슬롯 내부 하단에 표시 (모바일에서는 숨김) */}
-              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-[0.5rem] sm:text-sm text-center truncate neon-text hidden sm:block">
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 px-1 py-0.5 text-[0.5rem] sm:text-sm text-center truncate neon-text hidden xl:block">
                 {getTranslatedString(accessoryEquipment.name)}
               </div>
 
-              {/* 장비 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 - 모바일에서도 잘 보이도록 수정 */}
+              {/* 장비 정보 버튼 - 슬롯 내부 오른쪽 상단에 표시 */}
               <button
-                className="equipment-info-btn hidden sm:flex"
+                className="equipment-info-btn hidden lg:flex"
                 onClick={(e) => {
                   e.stopPropagation()
                   setShowEquipmentDetails(equipment.accessory)
