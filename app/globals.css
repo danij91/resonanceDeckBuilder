@@ -877,21 +877,22 @@ body {
   /* 장비 정보 버튼 - 모바일에서도 잘 보이도록 수정 */
   .equipment-info-btn {
     position: absolute;
-    top: 0.25rem;
-    right: 0.25rem;
+    top: 0.1rem;
+    right: 0.1rem;
     background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid hsla(var(--neon-white), 0.3);
     border-radius: 9999px;
-    width: 2rem; /* 1rem에서 2rem으로 변경 */
-    height: 2rem; /* 1rem에서 2rem으로 변경 */
-    min-width: 2rem; /* 1rem에서 2rem으로 변경 */
-    min-height: 2rem; /* 1rem에서 2rem으로 변경 */
+    width: 1.5rem; /* 1rem에서 2rem으로 변경 */
+    height: 1.5rem; /* 1rem에서 2rem으로 변경 */
+    min-width: 1rem; /* 1rem에서 2rem으로 변경 */
+    min-height: 1rem; /* 1rem에서 2rem으로 변경 */
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 10;
     padding: 0;
   }
+
 
   .equipment-info-btn:hover {
     background-color: rgba(0, 0, 0, 0.8);

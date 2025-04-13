@@ -167,7 +167,7 @@ export function EquipmentSearchModal({
                         setShowEquipmentDetails(equipment.id.toString())
                       }}
                     >
-                      <Info className="w-5 h-5 text-white" />
+                      <Info className="w-7 h-7 text-white" />
                     </button>
                   </div>
                   <div
