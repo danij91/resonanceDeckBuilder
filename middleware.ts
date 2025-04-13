@@ -10,12 +10,16 @@ export function middleware(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams.toString()
   const queryString = searchParams ? `?${searchParams}` : ""
 
+  // 현재 경로를 x-pathname 헤더에 추가
+  const response = NextResponse.next()
+  response.headers.set("x-pathname", pathname)
+
   // 이미 언어 경로가 있는지 확인
   const pathnameHasLanguage = supportedLanguages.some(
     (lang) => pathname.startsWith(`/${lang}/`) || pathname === `/${lang}`,
   )
 
-  if (pathnameHasLanguage) return NextResponse.next()
+  if (pathnameHasLanguage) return response
 
   // 브라우저의 언어 설정 감지
   const acceptLanguage = request.headers.get("accept-language") || ""
