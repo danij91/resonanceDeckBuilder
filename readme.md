@@ -22,6 +22,18 @@
 - **덱 공유 기능**  
   구성한 덱을 URL 링크로 쉽게 공유할 수 있습니다.
 
+- **스크린샷 버튼**  
+  버튼을 누르면 덱 화면을 자동으로 스크린샷 저장합니다.
+
+- **초기화**  
+  현재 작성 중인 덱을 전부 초기화합니다. 초기화된 내용은 되돌릴 수 없습니다.
+
+- **로컬 저장 / 불러오기**  
+  브라우저에 덱 프리셋을 저장하거나 불러올 수 있습니다.
+
+- **언어 설정**  
+  다양한 언어(KO/EN/JP/CN/TW)를 지원합니다.
+
 ---
 
 ## 🇺🇸 Introduction (English)
@@ -40,7 +52,17 @@ Import deck codes copied in-game, edit them on the site, and export them back in
 - **Deck Sharing via URL**  
   Share your custom deck with others using a unique URL.
 
----
+- **Screenshot Button**  
+  Automatically capture and save a screenshot of your deck.
+
+- **Reset Deck**  
+  Clears the current deck. This action cannot be undone.
+
+- **Save / Load Locally**  
+  Save your deck presets to your browser or load them later.
+
+- **Language Support**  
+  Supports multiple languages (Korean, English, Japanese, Simplified/Traditional Chinese).
 
 ## ⚙️ Tech Stack
 
