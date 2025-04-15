@@ -212,7 +212,7 @@ export function CardSettingsModal({
                 const optionIndex = index + 3
                 const isNumCond = cond.isNumCond === true
                 const minNum = cond.minNum || 0
-                const maxNum = cond.interValNum && cond.numDuration ? (cond.interValNum - 1) * cond.numDuration : 100
+                const maxNum = cond.interValNum && cond.numDuration ? (minNum + (cond.interValNum - 1) * cond.numDuration) : 100
                 const step = cond.numDuration || 1
 
                 // 현재 값 계산 - Use option index as key, not condId
@@ -221,6 +221,14 @@ export function CardSettingsModal({
 
                 // 언어팩 키 생성
                 const textKey = `text_${cond.des}`
+                let text = getTranslatedString(textKey)
+                let specialChar = "";
+                const match = text.match(/(≥|≤|<|>)$/);
+                console.log(specialChar)
+                if (match) {
+                  specialChar = match[0];
+                  text = text.slice(0, -1); // 마지막 문자 제거
+                }
 
                 return (
                   <div
@@ -231,8 +239,8 @@ export function CardSettingsModal({
                     <div className="flex items-center">
                       <div className="font-medium flex items-center">
                         {/* 텍스트 */}
-                        <span>{getTranslatedString(textKey) || textKey}</span>
-
+                        <span>{text}</span>
+                        {specialChar?<span>{specialChar}</span>:null}
                         {/* 아이콘 */}
                         {cond.typeEnum && (
                           <span className="mx-1">{renderIcon(getIconForCondition(cond.typeEnum))}</span>
@@ -242,14 +250,21 @@ export function CardSettingsModal({
                         {isNumCond && (
                           <div className="ml-2 flex items-center" onClick={(e) => e.stopPropagation()}>
                             <button
-                              className="w-6 h-6 bg-black bg-opacity-20 rounded-l flex items-center justify-center"
+                              className="w-4 h-6 bg-black bg-opacity-20 rounded-l flex items-center justify-center"
                               onClick={() => handleParamChange(optionIndex, currentValue - step, minNum, maxNum)}
                             >
                               <ChevronLeft className="w-4 h-4" />
                             </button>
-                            <span className="px-2 font-bold">{currentValue}%</span>
+                            <span
+                              className={`font-mono inline-block text-right ${
+                                cond.typeEnum === "percent" ? "w-[3ch]" : "w-[2ch]"
+                              }`}
+                            >
+                              {currentValue}
+                              {cond.typeEnum === "percent" ? "%" : ""}
+                            </span>
                             <button
-                              className="w-6 h-6 bg-black bg-opacity-20 rounded-r flex items-center justify-center"
+                              className="w-4 h-6 bg-black bg-opacity-20 rounded-r flex items-center justify-center"
                               onClick={() => handleParamChange(optionIndex, currentValue + step, minNum, maxNum)}
                             >
                               <ChevronRight className="w-4 h-4" />
