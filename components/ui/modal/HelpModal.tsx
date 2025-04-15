@@ -1,6 +1,6 @@
 "use client"
 import { Modal, type ModalProps } from "./Modal"
-import { Globe, Download, Upload, RefreshCw, Share2, Camera, Save, FolderOpen } from "lucide-react"
+import { Globe, Download, Upload, RefreshCw, Share2, Camera, Save, FolderOpen,  Star, Hand } from "lucide-react"
 import { useLanguage } from "../../../contexts/language-context"
 
 export interface HelpModalProps extends Omit<ModalProps, "children" | "title"> {
@@ -136,6 +136,28 @@ export function HelpModal({ getTranslatedString: propGetTranslatedString, ...mod
             <h3 className="font-medium neon-text">{getTranslatedString("load_deck") || "Load Deck"}</h3>
             <p className="text-sm text-gray-400 break-words">
               {getTranslatedString("help.load_deck") || "Load a saved deck configuration"}
+            </p>
+          </div>
+        </div>
+        <div className="flex items-start">
+        <div className="flex items-center justify-center w-12 h-12 rounded-lg transition-colors duration-200 shadow-md relative overflow-hidden flex-shrink-0 mr-4">
+            <Star className={iconClass} />
+          </div>
+          <div className="flex-grow">
+            <h3 className="font-medium neon-text">{getTranslatedString("character.breakthroughs") || "Load Deck"}</h3>
+            <p className="text-sm text-gray-400 break-words">
+              {getTranslatedString("help.breakthroughs") || "Load a saved deck configuration"}
+            </p>
+          </div>
+        </div>
+        <div className="flex items-start">
+          <div className="flex items-center justify-center w-12 h-12 rounded-lg transition-colors duration-200 shadow-md relative overflow-hidden flex-shrink-0 mr-4">
+            <Hand className={iconClass} />
+          </div>
+          <div className="flex-grow">
+            <h3 className="font-medium neon-text">{getTranslatedString("usage_settings") || "Load Deck"}</h3>
+            <p className="text-sm text-gray-400 break-words">
+              {getTranslatedString("help.usage_settings") || "Load a saved deck configuration"}
             </p>
           </div>
         </div>
