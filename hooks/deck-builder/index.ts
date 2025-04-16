@@ -10,6 +10,7 @@ import { useBattle } from "./use-battle"
 import { usePresets } from "./use-presets"
 import { useAwakening } from "./use-awakening" // 각성 훅 추가
 import { getSkillById, getAvailableCardIds } from "./utils"
+import { useLanguage } from "../../contexts/language-context"
 
 // 임시 타입 정의 (실제 타입 정의로 대체해야 함)
 type CardExtraInfo = {
@@ -28,7 +29,7 @@ const findCharacterImageForCard = (card: any) => undefined // 임시 구현
 export function useDeckBuilder(data: Database | null) {
   // 다크 모드
   const [isDarkMode, setIsDarkMode] = useState(true)
-
+  const {getTranslatedString } = useLanguage();
   // 캐릭터 관리
   const { selectedCharacters, setSelectedCharacters, leaderCharacter, setLeaderCharacter, getCharacter, setLeader } =
     useCharacters(data)
@@ -575,17 +576,14 @@ export function useDeckBuilder(data: Database | null) {
             const unavailableCards = newCards.filter((card) => !availableCardIds.has(card.id))
 
             // 사용할 수 없는 카드들에 대해 이름 매칭을 통한 대체 카드 찾기
-            const currentLanguage = "ko"
             unavailableCards.forEach((unavailableCard) => {
               // 스킬 ID가 있으면 해당 스킬의 이름 찾기
               if (unavailableCard.skillId && data.skills[unavailableCard.skillId]) {
                 const unavailableSkill = data.skills[unavailableCard.skillId]
                 // 언어팩에서 번역된 스킬 이름 가져오기
-                const translatedUnavailableSkillName =
-                  data.languages && data.languages[currentLanguage]
-                    ? data.languages[currentLanguage][unavailableSkill.name] || unavailableSkill.name
-                    : unavailableSkill.name
+                const translatedUnavailableSkillName = getTranslatedString(unavailableSkill.name)
 
+                // console.log(translatedUnavailableSkillName)
                 // 사용 가능한 카드들 중에서 같은 이름을 가진 카드 찾기
                 for (const availableCardId of availableCardIds) {
                   // 해당 카드의 스킬 ID 찾기
@@ -604,11 +602,8 @@ export function useDeckBuilder(data: Database | null) {
                     const availableSkill = data.skills[foundSkillId.toString()]
                     if (availableSkill) {
                       // 언어팩에서 번역된 사용 가능한 스킬 이름 가져오기
-                      const translatedAvailableSkillName =
-                        data.languages && data.languages[currentLanguage]
-                          ? data.languages[currentLanguage][availableSkill.name] || availableSkill.name
-                          : availableSkill.name
-
+                      const translatedAvailableSkillName = getTranslatedString(availableSkill.name)
+                      // console.log(translatedAvailableSkillName +" 2")
                       // 번역된 이름으로 비교
                       if (translatedAvailableSkillName === translatedUnavailableSkillName) {
                         const index = newCards.findIndex((card) => card.id === availableCardId)
