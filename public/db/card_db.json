@@ -4416,6 +4416,9 @@
       },
       {
         "tagId": 12601504
+      },
+      {
+        "tagId": 12601697
       }
     ]
   },
@@ -4818,7 +4821,7 @@
     "idCN": "03中立卡/新星系/太初之光",
     "name": "card_name_10600031",
     "color": "Orange",
-    "cost_SN": 40000,
+    "cost_SN": 50000,
     "cardType": "UseOnce",
     "ExCondList": [],
     "ExActList": [],
@@ -9575,10 +9578,10 @@
   },
   "10600384": {
     "id": 10600384,
-    "idCN": "00原版/50测试/测试单位/S",
-    "name": "card_name_10600384",
+    "idCN": "00原版/55测试/空/S",
+    "name": "",
     "color": "Blue",
-    "cost_SN": 50000,
+    "cost_SN": 0,
     "cardType": "Normal",
     "ExCondList": [],
     "ExActList": [],
@@ -9588,28 +9591,19 @@
       },
       {
         "tagId": 12600009
-      },
-      {
-        "tagId": 12600082
       }
     ]
   },
   "10600385": {
     "id": 10600385,
-    "idCN": "00原版/50测试/测试单位/A",
-    "name": "card_name_10600385",
+    "idCN": "00原版/55测试/空/A",
+    "name": "",
     "color": "Red",
-    "cost_SN": 20000,
+    "cost_SN": 0,
     "cardType": "Normal",
     "ExCondList": [],
     "ExActList": [],
     "tagList": [
-      {
-        "tagId": 12600312
-      },
-      {
-        "tagId": 12600128
-      },
       {
         "tagId": 12600145
       }
@@ -9617,17 +9611,14 @@
   },
   "10600386": {
     "id": 10600386,
-    "idCN": "00原版/50测试/测试单位/B",
-    "name": "card_name_10600386",
+    "idCN": "00原版/55测试/空/B",
+    "name": "",
     "color": "Blue",
-    "cost_SN": 20000,
+    "cost_SN": 0,
     "cardType": "Normal",
     "ExCondList": [],
     "ExActList": [],
     "tagList": [
-      {
-        "tagId": 12600137
-      },
       {
         "tagId": 12600009
       }
@@ -11150,7 +11141,7 @@
     "idCN": "00原版/05五星/马吉拉·星仪/S",
     "name": "card_name_10600451",
     "color": "Purple",
-    "cost_SN": 50000,
+    "cost_SN": 60000,
     "cardType": "Normal",
     "ExCondList": [],
     "ExActList": [],
@@ -11166,6 +11157,18 @@
       },
       {
         "tagId": 12600001
+      },
+      {
+        "tagId": 12600088
+      },
+      {
+        "tagId": 12600273
+      },
+      {
+        "tagId": 12600216
+      },
+      {
+        "tagId": 12600002
       }
     ]
   },
@@ -11192,7 +11195,7 @@
     "idCN": "00原版/05五星/马吉拉·星仪/A-3",
     "name": "card_name_10600453",
     "color": "Red",
-    "cost_SN": 10000,
+    "cost_SN": 20000,
     "cardType": "UseOnce",
     "ExCondList": [],
     "ExActList": [],
@@ -11202,6 +11205,9 @@
       },
       {
         "tagId": 12601692
+      },
+      {
+        "tagId": 12600216
       }
     ]
   },
@@ -11210,7 +11216,7 @@
     "idCN": "00原版/05五星/马吉拉·星仪/A-2",
     "name": "card_name_10600454",
     "color": "Blue",
-    "cost_SN": 10000,
+    "cost_SN": 20000,
     "cardType": "UseOnce",
     "ExCondList": [],
     "ExActList": [],
@@ -11220,6 +11226,12 @@
       },
       {
         "tagId": 12601691
+      },
+      {
+        "tagId": 12600002
+      },
+      {
+        "tagId": 12601698
       }
     ]
   },
@@ -11228,7 +11240,7 @@
     "idCN": "00原版/05五星/马吉拉·星仪/A-1",
     "name": "card_name_10600455",
     "color": "Yellow",
-    "cost_SN": 10000,
+    "cost_SN": 20000,
     "cardType": "UseOnce",
     "ExCondList": [],
     "ExActList": [],
@@ -11238,6 +11250,9 @@
       },
       {
         "tagId": 12601686
+      },
+      {
+        "tagId": 12600273
       }
     ]
   },
@@ -11304,7 +11319,7 @@
     "name": "card_name_10600459",
     "color": "Red",
     "cost_SN": 10000,
-    "cardType": "Normal",
+    "cardType": "Derive",
     "ExCondList": [],
     "ExActList": [],
     "tagList": [
@@ -11368,24 +11383,6 @@
       },
       {
         "tagId": 12600145
-      }
-    ]
-  },
-  "10600450": {
-    "id": 10600450,
-    "idCN": "00原版/05五星/马吉拉·星仪/A-0_共振1",
-    "name": "card_name_10600450",
-    "color": "Purple",
-    "cost_SN": 20000,
-    "cardType": "Normal",
-    "ExCondList": [],
-    "ExActList": [],
-    "tagList": [
-      {
-        "tagId": 12600073
-      },
-      {
-        "tagId": 12601689
       }
     ]
   }
