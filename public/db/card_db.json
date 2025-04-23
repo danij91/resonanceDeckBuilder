@@ -11168,7 +11168,7 @@
         "tagId": 12600216
       },
       {
-        "tagId": 12600002
+        "tagId": 12601698
       }
     ]
   },
@@ -11187,6 +11187,9 @@
       },
       {
         "tagId": 12601688
+      },
+      {
+        "tagId": 12601698
       }
     ]
   },
@@ -11195,7 +11198,7 @@
     "idCN": "00原版/05五星/马吉拉·星仪/A-3",
     "name": "card_name_10600453",
     "color": "Red",
-    "cost_SN": 20000,
+    "cost_SN": 30000,
     "cardType": "UseOnce",
     "ExCondList": [],
     "ExActList": [],
@@ -11216,7 +11219,7 @@
     "idCN": "00原版/05五星/马吉拉·星仪/A-2",
     "name": "card_name_10600454",
     "color": "Blue",
-    "cost_SN": 20000,
+    "cost_SN": 30000,
     "cardType": "UseOnce",
     "ExCondList": [],
     "ExActList": [],
@@ -11240,7 +11243,7 @@
     "idCN": "00原版/05五星/马吉拉·星仪/A-1",
     "name": "card_name_10600455",
     "color": "Yellow",
-    "cost_SN": 20000,
+    "cost_SN": 30000,
     "cardType": "UseOnce",
     "ExCondList": [],
     "ExActList": [],
@@ -11261,7 +11264,7 @@
     "idCN": "00原版/05五星/马吉拉·星仪/A-0",
     "name": "card_name_10600456",
     "color": "Purple",
-    "cost_SN": 20000,
+    "cost_SN": 0,
     "cardType": "Normal",
     "ExCondList": [],
     "ExActList": [],
@@ -11317,14 +11320,17 @@
     "id": 10600459,
     "idCN": "06敌方/06深眠者/哀怜魔女/镜中的幸福",
     "name": "card_name_10600459",
-    "color": "Red",
+    "color": "Purple",
     "cost_SN": 10000,
-    "cardType": "Derive",
+    "cardType": "UseOnce",
     "ExCondList": [],
     "ExActList": [],
     "tagList": [
       {
         "tagId": 12601403
+      },
+      {
+        "tagId": 12601504
       }
     ]
   },
