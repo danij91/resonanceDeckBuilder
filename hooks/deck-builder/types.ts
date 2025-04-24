@@ -50,7 +50,7 @@ export type PresetCard = {
   targetType: number
   useType: number
   useParam: number
-  useParamMap: Record<string, number>
+  useParamMap?: Record<string, number>
   equipIdList: string[]
 }
 

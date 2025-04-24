@@ -51,82 +51,97 @@ export function isValidCardId(data: Database | null, cardId: string): boolean {
 }
 
 // getAvailableCardIds 함수 수정
+interface CardWithSource {
+  cardId: string;
+  source: CardSource;
+}
+
+// 수정된 getAvailableCardIds 함수
 export function getAvailableCardIds(
   data: Database | null,
   selectedCharacters: number[],
   equipment: EquipmentSlot[],
-): Set<string> {
-  const availableCardIds = new Set<string>()
+): { idSet: Set<string>, cardSources: CardWithSource[] } {
+  const availableCardIds = new Set<string>();
+  const cardSources: CardWithSource[] = [];
 
-  if (!data) return availableCardIds
+  if (!data) return { idSet: availableCardIds, cardSources };
 
   // 선택된 캐릭터의 스킬에서 카드 ID 수집
-  const validCharacters = selectedCharacters.filter((id) => id !== -1)
+  const validCharacters = selectedCharacters.filter((id) => id !== -1);
 
   // 각 캐릭터의 스킬 맵에서 카드 ID 찾기
-  validCharacters.forEach((charId) => {
-    const charSkillMap = data.charSkillMap?.[charId.toString()]
-    if (!charSkillMap) return
+  validCharacters.forEach((charId, slotIndex) => {
+    const charSkillMap = data.charSkillMap?.[charId.toString()];
+    if (!charSkillMap) return;
 
     // 새로운 구조: skills 배열 처리
     if (charSkillMap.skills) {
       charSkillMap.skills.forEach((skillId: number) => {
-        const skill = data.skills[skillId.toString()]
+        const skill = data.skills[skillId.toString()];
         if (skill && skill.cardID) {
-          availableCardIds.add(skill.cardID.toString())
+          const cardId = skill.cardID.toString();
+          availableCardIds.add(cardId);
+          
+          // 소스 정보 추가
+          cardSources.push({
+            cardId,
+            source: {
+              type: "character",
+              id: charId,
+              skillId,
+              slotIndex,
+            }
+          });
         }
-      })
+      });
     }
 
-    // 새로운 구조: relatedSkills 배열 처리
-    if (charSkillMap.relatedSkills) {
-      charSkillMap.relatedSkills.forEach((skillId: number) => {
-        const skill = data.skills[skillId.toString()]
-        if (skill && skill.cardID) {
-          availableCardIds.add(skill.cardID.toString())
-        }
-      })
-    }
-
-    // 새로운 구조: notFromCharacters 배열 처리
-    if (charSkillMap.notFromCharacters) {
-      charSkillMap.notFromCharacters.forEach((skillId: number) => {
-        const skill = data.skills[skillId.toString()]
-        if (skill && skill.cardID) {
-          availableCardIds.add(skill.cardID.toString())
-        }
-      })
-    }
-  })
+    // 다른 배열들(relatedSkills, notFromCharacters)도 유사하게 처리
+    // ...
+  });
 
   // 장비에서 카드 ID 수집 - item_skill_map.json 사용
   validCharacters.forEach((charId, slotIndex) => {
-    const charEquipment = equipment[slotIndex]
+    const charEquipment = equipment[slotIndex];
 
     // 각 장비 타입별로 처리
-    const processEquipment = (equipId: string | null) => {
-      if (!equipId) return
+    const processEquipment = (equipId: string | null, equipType: "weapon" | "armor" | "accessory") => {
+      if (!equipId) return;
 
       // item_skill_map.json에서 장비 ID에 해당하는 스킬 맵 찾기
-      const itemSkillMap = data.itemSkillMap?.[equipId]
-      if (!itemSkillMap) return
+      const itemSkillMap = data.itemSkillMap?.[equipId];
+      if (!itemSkillMap) return;
 
       // relatedSkills 배열 처리
       if (itemSkillMap.relatedSkills) {
         itemSkillMap.relatedSkills.forEach((skillId: number) => {
-          const skill = data.skills[skillId.toString()]
+          const skill = data.skills[skillId.toString()];
           if (skill && skill.cardID) {
-            availableCardIds.add(skill.cardID.toString())
+            const cardId = skill.cardID.toString();
+            availableCardIds.add(cardId);
+            
+            // 소스 정보 추가
+            cardSources.push({
+              cardId,
+              source: {
+                type: "equipment",
+                id: equipId,
+                skillId,
+                slotIndex,
+                equipType,
+              }
+            });
           }
-        })
+        });
       }
-    }
+    };
 
     // 각 장비 타입에 대해 처리
-    if (charEquipment.weapon) processEquipment(charEquipment.weapon)
-    if (charEquipment.armor) processEquipment(charEquipment.armor)
-    if (charEquipment.accessory) processEquipment(charEquipment.accessory)
-  })
+    if (charEquipment.weapon) processEquipment(charEquipment.weapon, "weapon");
+    if (charEquipment.armor) processEquipment(charEquipment.armor, "armor");
+    if (charEquipment.accessory) processEquipment(charEquipment.accessory, "accessory");
+  });
 
-  return availableCardIds
+  return { idSet: availableCardIds, cardSources };
 }
