@@ -36,7 +36,7 @@ export function usePresets(
           targetType: 0,
           useType: card.useType,
           useParam: card.useParam,
-          useParamMap: card.useParamMap || {},
+          ...(card.useParamMap ? { useParamMap: card.useParamMap } : {}),
           equipIdList: [],
         }
 
