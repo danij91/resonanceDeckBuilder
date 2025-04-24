@@ -53,6 +53,7 @@ export function useCards(data: Database | null) {
         equipType?: "weapon" | "armor" | "accessory"
         ownerId?: number
       },
+      skillIndex?:number
     ) => {
       setSelectedCards((prev) => {
         // 기존 카드 찾기
@@ -198,6 +199,7 @@ export function useCards(data: Database | null) {
             skillInfo,
             cardInfo,
             extraInfo,
+            ...(skillIndex !== undefined ? { skillIndex } : {})
           },
         ]
       })

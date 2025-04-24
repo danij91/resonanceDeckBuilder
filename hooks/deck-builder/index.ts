@@ -114,13 +114,14 @@ export function useDeckBuilder(data: Database | null) {
       }
 
       // 새로운 구조: skills 배열 처리 - 캐릭터 ID를 ownerId로 설정
+
       if (charSkillMap.skills) {
-        charSkillMap.skills.forEach((skillId: number) => {
+        charSkillMap.skills.forEach((skillId: number, index: number) => {
           const skill = getSkill(skillId)
           if (skill && skill.cardID) {
             const cardId = skill.cardID.toString()
-            // 캐릭터 ID를 ownerId로 설정
-            addCard(cardId, "character", characterId, { skillId, ownerId: characterId })
+            // 캐릭터 ID를 ownerId로 설정하고, skillIndex를 마지막 인자로 추가
+            addCard(cardId, "character", characterId, { skillId, ownerId: characterId }, index+1)
           }
         })
       }
@@ -215,6 +216,7 @@ export function useDeckBuilder(data: Database | null) {
     (removedCharacterId: number) => {
       setSelectedCards((prev) => {
         // 각 카드의 소스 목록에서 제거된 캐릭터 소스만 제거
+        console.log(removedCharacterId)
         const updatedCards = prev.map((card) => {
           const updatedSources = card.sources.filter(
             (source) =>
@@ -531,17 +533,19 @@ export function useDeckBuilder(data: Database | null) {
           // 프리셋의 카드 목록을 처리하여 새 카드 배열 생성
           preset.cardList.forEach((presetCard: any) => {
             const cardId = presetCard.id
-
             // 현재 카드 목록에서 해당 ID를 가진 카드 찾기
             const existingCard = currentCards.find((card) => card.id === cardId)
 
             if (existingCard) {
               // 기존 카드가 있으면 설정만 업데이트
+              if(existingCard.skillIndex==undefined && presetCard.skillIndex!=undefined){
+                existingCard.skillIndex = presetCard.skillIndex
+              }
               newCards.push({
                 ...existingCard,
                 useType: presetCard.useType,
                 useParam: presetCard.useParam,
-                useParamMap: presetCard.useParamMap || {},
+                ...(presetCard.useParamMap ? { useParamMap: presetCard.useParamMap } : {}),
               })
             } else {
               // 기존 카드가 없으면 새로 생성
@@ -549,7 +553,7 @@ export function useDeckBuilder(data: Database | null) {
                 id: cardId,
                 useType: presetCard.useType,
                 useParam: presetCard.useParam,
-                useParamMap: presetCard.useParamMap || {},
+                ...(presetCard.useParamMap ? { useParamMap: presetCard.useParamMap } : {}),
                 ownerId: presetCard.ownerId,
                 skillId: presetCard.skillId,
                 skillIndex: presetCard.skillIndex,
@@ -571,9 +575,9 @@ export function useDeckBuilder(data: Database | null) {
           // 3. 사용할 수 없는 카드 식별 및 교체
           if (data) {
             // 공통 유틸리티 함수 사용
-            const availableCardIds = getAvailableCardIds(data, preset.roleList, equipment)
+            const { idSet: availableCardIds, cardSources } = getAvailableCardIds(data, preset.roleList, equipment);
             // 사용할 수 없는 카드 식별
-            const unavailableCards = newCards.filter((card) => !availableCardIds.has(card.id))
+            const unavailableCards = newCards.filter((card) =>!availableCardIds.has(card.id));
 
             // 사용할 수 없는 카드들에 대해 이름 매칭을 통한 대체 카드 찾기
             unavailableCards.forEach((unavailableCard) => {
@@ -617,20 +621,20 @@ export function useDeckBuilder(data: Database | null) {
 
                         // 카드의 ownerId 업데이트
                         const cardData = data.cards[availableCardId]
-                        if (cardData && cardData.ownerId) {
-                          unavailableCard.ownerId = cardData.ownerId
-                        }
+                        // if (cardData && cardData.ownerId) {
+                        //   unavailableCard.ownerId = cardData.ownerId
+                        // }
 
                         // 소스 정보 추가 - 이 부분이 누락되었습니다
                         if (!unavailableCard.sources) {
-                          unavailableCard.sources = []
+                          unavailableCard.sources = [];
                         }
-
-                        unavailableCard.sources.push({
-                          type: "character",
-                          id: cardData.ownerId,
-                          skillId: foundSkillId,
-                        })
+                        
+                        // 해당 카드 ID에 대한 모든 소스 정보 추가
+                        const sourcesForCard = cardSources.filter(cs => cs.cardId === availableCardId);
+                        sourcesForCard.forEach(cs => {
+                          unavailableCard.sources.push(cs.source);
+                        });
 
                         // 특수 스킬 확인 (charSkillMap에서 notFromCharacters에 있는 경우)
                         let isSpecialSkill = false
