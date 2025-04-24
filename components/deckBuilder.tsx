@@ -11,7 +11,7 @@ import { useToast } from "./toast-notification"
 import { useDeckBuilder } from "../hooks/deck-builder/index"
 import { useLanguage } from "../contexts/language-context"
 import { decodePresetFromUrlParam } from "../utils/presetCodec"
-import { analytics, logEventWrapper } from "../lib/firebase-config"
+import { logEventWrapper } from "../lib/firebase-config"
 import { useDataLoader } from "../hooks/use-data-loader"
 import { LoadingScreen } from "./loading-screen"
 import { SaveDeckModal } from "./ui/modal/SaveDeckModal" // 추가
@@ -79,6 +79,8 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
     decodePresetString,
     importPreset,
     createPresetObject, // 추가: 프리셋 객체 생성 함수
+    setSelectedCharacters,
+    setLeaderCharacter,
   } = useDeckBuilder(data)
 
   // URL을 통해 덱 프리셋을 받아올 때 ownerId를 char_db에서 검색하여 카드에 캐릭터 초상화 표시 로직 개선
@@ -298,13 +300,17 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
           img_url: undefined,
         }
 
+        // 카드 ID에 해당하는 이미지 URL 찾기
+        if (data.images && data.images[`card_${id}`]) {
+          extraInfo.img_url = data.images[`card_${id}`]
+        }
 
         // 스킬 ID를 통해 추가 정보 찾기
         let skillId = -1
         let skillObj = null
         for (const sId in data.skills) {
           const skill = data.skills[sId]
-          if (skill && skill.cardID && skill.cardID.toString() === id&& skill.name) {
+          if (skill && skill.cardID && skill.cardID.toString() === id) {
             // 스킬 이름을 extraInfo.name에 할당 - 번역된 이름 사용
             extraInfo.name = getTranslatedString(skill.name)
             // 스킬 설명을 extraInfo.desc에 할당 - 번역 및 #r 값 교체 적용
@@ -314,6 +320,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
             // 스킬 객체 저장
             skillObj = skill
 
+            // 스킬 이미지 URL 찾기
             if (data.images && data.images[`skill_${sId}`]) {
               extraInfo.img_url = data.images[`skill_${sId}`]
             }
@@ -372,7 +379,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
   ])
 
   // 클립보드에서 가져오기
-  const handleImport = async () => {
+  const handleImport = useCallback(async () => {
     try {
       const result = await importPreset()
       showToast(getTranslatedString(result.message), result.success ? "success" : "error")
@@ -381,41 +388,37 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
       removeCurrentDeckId()
 
       // Firebase Analytics 이벤트 전송
-      if (analytics && result.success) {
-        const characterIds = selectedCharacters.filter((id) => id !== -1)
-        logEventWrapper("deck_imported", {
-          character_ids: JSON.stringify(characterIds),
-          language: currentLanguage,
-        })
-      }
+      const characterIds = selectedCharacters.filter((id) => id !== -1)
+      logEventWrapper("deck_imported", {
+        character_ids: JSON.stringify(characterIds),
+        language: currentLanguage,
+      })
     } catch (error) {
       console.error("Import error:", error)
       showToast(getTranslatedString("import_failed"), "error")
     }
-  }
+  }, [importPreset, showToast, getTranslatedString, selectedCharacters, currentLanguage])
 
   // 클립보드로 내보내기
-  const handleExport = () => {
+  const handleExport = useCallback(() => {
     try {
       const result = exportPreset()
       showToast(getTranslatedString(result.message), result.success ? "success" : "error")
 
       // Firebase Analytics 이벤트 전송
-      if (analytics && result.success) {
-        const characterIds = selectedCharacters.filter((id) => id !== -1)
-        logEventWrapper("deck_exported", {
-          character_ids: JSON.stringify(characterIds),
-          language: currentLanguage,
-        })
-      }
+      const characterIds = selectedCharacters.filter((id) => id !== -1)
+      logEventWrapper("deck_exported", {
+        character_ids: JSON.stringify(characterIds),
+        language: currentLanguage,
+      })
     } catch (error) {
       console.error("Export error:", error)
       showToast(getTranslatedString("export_failed"), "error")
     }
-  }
+  }, [exportPreset, showToast, getTranslatedString, selectedCharacters, currentLanguage])
 
   // 공유 링크 생성
-  const handleShare = () => {
+  const handleShare = useCallback(() => {
     try {
       const result = createShareableUrl()
       if (result.success && result.url) {
@@ -423,13 +426,11 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         showToast(getTranslatedString("share_link_copied_alert"), "success")
 
         // Firebase Analytics 이벤트 전송
-        if (analytics) {
-          const characterIds = selectedCharacters.filter((id) => id !== -1)
-          logEventWrapper("deck_shared", {
-            character_ids: JSON.stringify(characterIds),
-            language: currentLanguage,
-          })
-        }
+        const characterIds = selectedCharacters.filter((id) => id !== -1)
+        logEventWrapper("deck_shared", {
+          character_ids: JSON.stringify(characterIds),
+          language: currentLanguage,
+        })
       } else {
         showToast(getTranslatedString("share_link_failed"), "error")
       }
@@ -437,93 +438,191 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
       console.error("Share error:", error)
       showToast(getTranslatedString("share_link_failed"), "error")
     }
-  }
+  }, [createShareableUrl, showToast, getTranslatedString, selectedCharacters, currentLanguage])
 
   // 초기화
-  const handleClear = () => {
+  const handleClear = useCallback(() => {
     clearAll()
     // 현재 편집 중인 덱 ID 제거
     removeCurrentDeckId()
     showToast(getTranslatedString("deck_cleared"), "success")
-  }
+  }, [clearAll, showToast, getTranslatedString])
 
   // 각성 단계 선택 핸들러
-  const handleAwakeningSelect = (characterId: number, stage: number | null) => {
-    updateAwakening(characterId, stage)
-  }
+  const handleAwakeningSelect = useCallback(
+    (characterId: number, stage: number | null) => {
+      updateAwakening(characterId, stage)
+    },
+    [updateAwakening],
+  )
 
   // 덱 저장 모달 열기
-  const handleOpenSaveModal = () => {
+  const handleOpenSaveModal = useCallback(() => {
     setShowSaveModal(true)
-  }
+  }, [])
 
   // 덱 불러오기 모달 열기
-  const handleOpenLoadModal = () => {
+  const handleOpenLoadModal = useCallback(() => {
     setShowLoadModal(true)
-  }
+  }, [])
 
   // 덱 저장 성공 처리
-  const handleSaveSuccess = (deckId: string) => {
-    showToast(getTranslatedString("deck_saved"), "success")
-    // 현재 편집 중인 덱 ID 설정
-    setCurrentDeckId(deckId)
+  const handleSaveSuccess = useCallback(
+    (deckId: string) => {
+      showToast(getTranslatedString("deck_saved"), "success")
+      // 현재 편집 중인 덱 ID 설정
+      setCurrentDeckId(deckId)
 
-    // Firebase Analytics 이벤트 전송
-    if (analytics) {
+      // Firebase Analytics 이벤트 전송
       const characterIds = selectedCharacters.filter((id) => id !== -1)
       logEventWrapper("deck_saved", {
         character_ids: JSON.stringify(characterIds),
         language: currentLanguage,
       })
-    }
-  }
+    },
+    [showToast, getTranslatedString, selectedCharacters, currentLanguage],
+  )
 
   // 덱 불러오기 처리
-  const handleLoadDeck = (deck: SavedDeck) => {
-    try {
-      // 덱 프리셋 불러오기
-      const result = importPresetObject(deck.preset)
-      if (result.success) {
-        // 현재 편집 중인 덱 ID 설정
-        setCurrentDeckId(deck.id)
-        showToast(getTranslatedString("deck_loaded") || "Deck loaded successfully!", "success")
+  const handleLoadDeck = useCallback(
+    (deck: SavedDeck) => {
+      try {
+        // 덱 프리셋 불러오기
+        const result = importPresetObject(deck.preset)
+        if (result.success) {
+          // 현재 편집 중인 덱 ID 설정
+          setCurrentDeckId(deck.id)
+          showToast(getTranslatedString("deck_loaded") || "Deck loaded successfully!", "success")
 
-        // Firebase Analytics 이벤트 전송
-        if (analytics) {
+          // Firebase Analytics 이벤트 전송
           const characterIds = selectedCharacters.filter((id) => id !== -1)
           logEventWrapper("deck_loaded", {
             character_ids: JSON.stringify(characterIds),
             language: currentLanguage,
           })
+        } else {
+          showToast(getTranslatedString("deck_load_error") || "Failed to load deck", "error")
         }
-      } else {
+      } catch (error) {
+        console.error("Error loading deck:", error)
         showToast(getTranslatedString("deck_load_error") || "Failed to load deck", "error")
       }
-    } catch (error) {
-      console.error("Error loading deck:", error)
-      showToast(getTranslatedString("deck_load_error") || "Failed to load deck", "error")
-    }
-  }
+    },
+    [importPresetObject, showToast, getTranslatedString, selectedCharacters, currentLanguage],
+  )
 
   // 덱 삭제 처리
-  const handleDeleteDeck = (deckId: string) => {
-    showToast(getTranslatedString("deck_deleted"), "success")
+  const handleDeleteDeck = useCallback(
+    (deckId: string) => {
+      showToast(getTranslatedString("deck_deleted"), "success")
 
-    // 현재 편집 중인 덱이 삭제된 덱이면 현재 덱 ID 제거
-    if (getCurrentDeckId() === deckId) {
-      removeCurrentDeckId()
-    }
-  }
+      // 현재 편집 중인 덱이 삭제된 덱이면 현재 덱 ID 제거
+      if (getCurrentDeckId() === deckId) {
+        removeCurrentDeckId()
+      }
+    },
+    [showToast, getTranslatedString],
+  )
 
   // 캐릭터 이름 가져오기 함수
-  const getCharacterName = (characterId: number): string => {
-    if (!data || characterId === -1) return ""
+  const getCharacterName = useCallback(
+    (characterId: number): string => {
+      if (!data || characterId === -1) return ""
 
-    const character = data.characters[characterId.toString()]
-    if (!character) return ""
+      const character = data.characters[characterId.toString()]
+      if (!character) return ""
 
-    return getTranslatedString(character.name)
-  }
+      return getTranslatedString(character.name)
+    },
+    [data, getTranslatedString],
+  )
+
+  // 저장된 덱 공유 핸들러 추가
+  const handleShareSavedDeck = useCallback(
+    (deck: SavedDeck) => {
+      try {
+        // 덱 프리셋으로 공유 URL 생성
+        const result = createShareableUrl(deck.preset)
+        if (result.success && result.url) {
+          navigator.clipboard.writeText(result.url)
+          showToast(getTranslatedString("share_link_copied_alert"), "success")
+
+          // Firebase Analytics 이벤트 전송
+          const characterIds = deck.preset.roleList.filter((id) => id !== -1)
+          logEventWrapper("deck_shared", {
+            deck_name: deck.name,
+            character_ids: JSON.stringify(characterIds),
+            language: currentLanguage,
+          })
+        } else {
+          showToast(getTranslatedString("share_link_failed"), "error")
+        }
+      } catch (error) {
+        console.error("Share error:", error)
+        showToast(getTranslatedString("share_link_failed"), "error")
+      }
+    },
+    [createShareableUrl, showToast, getTranslatedString, currentLanguage],
+  )
+
+  // 캐릭터 정렬 함수 추가 - 항상 정의되도록 수정
+  const handleSortCharacters = useCallback(() => {
+    if (!data || !data.characters) return
+
+    // 현재 선택된 캐릭터 중 유효한 캐릭터만 필터링
+    const validCharacters = selectedCharacters
+      .filter((id) => id !== -1)
+      .map((id) => {
+        const character = data.characters[id.toString()]
+        return {
+          id,
+          line: character?.line || 999, // 기본값 설정
+          subLine: character?.subLine || 0, // 기본값 설정
+        }
+      })
+
+    // line이 작을수록 오른쪽, line이 같으면 subLine이 클수록 오른쪽으로 정렬
+    validCharacters.sort((a, b) => {
+      if (a.line !== b.line) return a.line - b.line;      // line 오름차순
+      return b.subLine - a.subLine;                       // subLine 내림차순
+    })
+    // 정렬된 캐릭터와 빈 슬롯(-1)을 조합하여 새 배열 생성
+    const newSelectedCharacters = Array(5).fill(-1)
+
+    // 정렬된 캐릭터를 오른쪽부터 채우기
+    validCharacters.forEach((char, index) => {
+      // 오른쪽부터 채우기 위해 역순으로 인덱스 계산
+      const slotIndex = 4 - index
+      if (slotIndex >= 0) {
+        newSelectedCharacters[slotIndex] = char.id
+      }
+    })
+
+    // 캐릭터 배열 업데이트
+    setSelectedCharacters(newSelectedCharacters)
+
+    // 리더 캐릭터 유효성 검사 및 업데이트
+    if (leaderCharacter !== -1 && !newSelectedCharacters.includes(leaderCharacter)) {
+      // 리더가 더 이상 선택된 캐릭터에 없으면 첫 번째 유효한 캐릭터를 리더로 설정
+      const firstValidChar = newSelectedCharacters.find((id) => id !== -1)
+      if (firstValidChar !== undefined) {
+        setLeaderCharacter(firstValidChar)
+      } else {
+        setLeaderCharacter(-1)
+      }
+    }
+
+    // 정렬 완료 알림
+    showToast(getTranslatedString("characters_sorted") || "Characters sorted by position", "success")
+  }, [
+    data,
+    selectedCharacters,
+    leaderCharacter,
+    setSelectedCharacters,
+    setLeaderCharacter,
+    showToast,
+    getTranslatedString,
+  ])
 
   // 로딩 중 표시
   if (loading || isLocalLoading) {
@@ -559,33 +658,6 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
     )
   }
 
-  // 저장된 덱 공유 핸들러 추가
-  const handleShareSavedDeck = (deck: SavedDeck) => {
-    try {
-      // 덱 프리셋으로 공유 URL 생성
-      const result = createShareableUrl(deck.preset)
-      if (result.success && result.url) {
-        navigator.clipboard.writeText(result.url)
-        showToast(getTranslatedString("share_link_copied_alert"), "success")
-
-        // Firebase Analytics 이벤트 전송
-        if (analytics) {
-          const characterIds = deck.preset.roleList.filter((id) => id !== -1)
-          logEventWrapper("deck_shared", {
-            deck_name: deck.name,
-            character_ids: JSON.stringify(characterIds),
-            language: currentLanguage,
-          })
-        }
-      } else {
-        showToast(getTranslatedString("share_link_failed"), "error")
-      }
-    } catch (error) {
-      console.error("Share error:", error)
-      showToast(getTranslatedString("share_link_failed"), "error")
-    }
-  }
-
   return (
     <div className="min-h-screen bg-black text-white">
       <ToastContainer />
@@ -597,6 +669,7 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         onShare={handleShare}
         onSave={handleOpenSaveModal}
         onLoad={handleOpenLoadModal}
+        onSortCharacters={handleSortCharacters} // 정렬 함수 전달
         contentRef={contentRef}
       />
 

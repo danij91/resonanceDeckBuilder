@@ -1,4 +1,6 @@
 {
+  "sort_characters": "排序",
+  "help.sort_characters": "根据战斗时的站位顺序进行排序，右边的角色排在最前。",
   "help.save_deck": "将卡组预设保存到本地浏览器。",
   "help.load_deck": "从本地浏览器加载卡组预设。",
   "total_cards": "卡牌总数",
@@ -23,7 +25,7 @@
   "deck_name": "卡组名称",
   "leader_skill_condition": "队长技能条件",
   "equipment_effects": "效果",
-  "photo_mode": "截图按钮",
+  "capture-screenshot": "截图按钮",
   "help.photo_mode": "点击后自动截图。",
   "longpress_to_drag": "长按后拖动",
   "share_link_copied_alert": "已将分享链接复制到剪贴板！",
@@ -318,6 +320,9 @@
   "char_name_10000855": "涟",
   "char_identity_10000855": "黑月·执行人",
   "char_ability_10000855": "恶意视界",
+  "char_name_10000572": "马吉拉·星仪",
+  "char_identity_10000572": "黑月锁链·魔女",
+  "char_ability_10000572": "元素秘法",
   "skill_name_12300007": "攻+10%",
   "skill_description_12300007": "编队中所有成员攻击力+10%",
   "skill_detailDescription_12300007": "编队中所有成员攻击力+10%",
@@ -7911,7 +7916,7 @@
   "battle.enemy.use.now": "优先使用",
   "battle.enemy.use.later": "最后使用",
   "battle.enemy.use.random": "不使用",
-  "char_name_10000572": "马吉拉·星仪",
-  "char_identity_10000572": "黑月锁链·魔女",
-  "char_ability_10000572": "元素秘法"
+  "characters_sorted": "已排序",
+  "deck_saved": "已保存",
+  "deck_loaded": "已加载"
 }
