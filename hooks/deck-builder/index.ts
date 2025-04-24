@@ -29,7 +29,7 @@ const findCharacterImageForCard = (card: any) => undefined // 임시 구현
 export function useDeckBuilder(data: Database | null) {
   // 다크 모드
   const [isDarkMode, setIsDarkMode] = useState(true)
-  const {getTranslatedString } = useLanguage();
+  const {getTranslatedString } = useLanguage()
   // 캐릭터 관리
   const { selectedCharacters, setSelectedCharacters, leaderCharacter, setLeaderCharacter, getCharacter, setLeader } =
     useCharacters(data)
@@ -121,7 +121,7 @@ export function useDeckBuilder(data: Database | null) {
           if (skill && skill.cardID) {
             const cardId = skill.cardID.toString()
             // 캐릭터 ID를 ownerId로 설정하고, skillIndex를 마지막 인자로 추가
-            addCard(cardId, "character", characterId, { skillId, ownerId: characterId }, index+1)
+            addCard(cardId, "character", characterId, { skillId, ownerId: characterId }, index + 1)
           }
         })
       }
@@ -538,7 +538,7 @@ export function useDeckBuilder(data: Database | null) {
 
             if (existingCard) {
               // 기존 카드가 있으면 설정만 업데이트
-              if(existingCard.skillIndex==undefined && presetCard.skillIndex!=undefined){
+              if (existingCard.skillIndex == undefined && presetCard.skillIndex != undefined){
                 existingCard.skillIndex = presetCard.skillIndex
               }
               newCards.push({
@@ -575,9 +575,9 @@ export function useDeckBuilder(data: Database | null) {
           // 3. 사용할 수 없는 카드 식별 및 교체
           if (data) {
             // 공통 유틸리티 함수 사용
-            const { idSet: availableCardIds, cardSources } = getAvailableCardIds(data, preset.roleList, equipment);
+            const { idSet: availableCardIds, cardSources } = getAvailableCardIds(data, preset.roleList, equipment)
             // 사용할 수 없는 카드 식별
-            const unavailableCards = newCards.filter((card) =>!availableCardIds.has(card.id));
+            const unavailableCards = newCards.filter((card) =>!availableCardIds.has(card.id))
 
             // 사용할 수 없는 카드들에 대해 이름 매칭을 통한 대체 카드 찾기
             unavailableCards.forEach((unavailableCard) => {
@@ -627,13 +627,13 @@ export function useDeckBuilder(data: Database | null) {
 
                         // 소스 정보 추가 - 이 부분이 누락되었습니다
                         if (!unavailableCard.sources) {
-                          unavailableCard.sources = [];
+                          unavailableCard.sources = []
                         }
                         
                         // 해당 카드 ID에 대한 모든 소스 정보 추가
-                        const sourcesForCard = cardSources.filter(cs => cs.cardId === availableCardId);
+                        const sourcesForCard = cardSources.filter(cs => cs.cardId === availableCardId)
                         sourcesForCard.forEach(cs => {
-                          unavailableCard.sources.push(cs.source);
+                          unavailableCard.sources.push(cs.source)
                         });
 
                         // 특수 스킬 확인 (charSkillMap에서 notFromCharacters에 있는 경우)
@@ -937,5 +937,7 @@ export function useDeckBuilder(data: Database | null) {
     createRootShareableUrl,
     decodePresetString,
     createPresetObject, // 이 함수를 내보내야 함
+    setSelectedCharacters, // 추가: 캐릭터 배열 직접 설정 함수
+    setLeaderCharacter,
   }
 }
