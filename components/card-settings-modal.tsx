@@ -85,7 +85,6 @@ export function CardSettingsModal({
         return <span>{iconText}</span>
     }
   }
-
   // 옵션 선택 시 호출되는 함수
   const handleOptionSelect = (newUseType: number, paramValue = -1) => {
     setUseType(newUseType)
@@ -212,7 +211,8 @@ export function CardSettingsModal({
                 const optionIndex = index + 3
                 const isNumCond = cond.isNumCond === true
                 const minNum = cond.minNum || 0
-                const maxNum = cond.interValNum && cond.numDuration ? (minNum + (cond.interValNum - 1) * cond.numDuration) : 100
+                const maxNum =
+                  cond.interValNum && cond.numDuration ? minNum + (cond.interValNum - 1) * cond.numDuration : 100
                 const step = cond.numDuration || 1
 
                 // 현재 값 계산 - Use option index as key, not condId
@@ -222,12 +222,12 @@ export function CardSettingsModal({
                 // 언어팩 키 생성
                 const textKey = `text_${cond.des}`
                 let text = getTranslatedString(textKey)
-                let specialChar = "";
-                const match = text.match(/(≥|≤|<|>)$/);
+                let specialChar = ""
+                const match = text.match(/(≥|≤|<|>)$/)
                 console.log(specialChar)
                 if (match) {
-                  specialChar = match[0];
-                  text = text.slice(0, -1); // 마지막 문자 제거
+                  specialChar = match[0]
+                  text = text.slice(0, -1) // 마지막 문자 제거
                 }
 
                 return (

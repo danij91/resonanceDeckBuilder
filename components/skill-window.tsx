@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useState, useEffect, useRef, useMemo } from "react"
-import type { Card, CardExtraInfo, SpecialControl } from "../types"
+import type { Card, CardExtraInfo } from "../types"
 import { SkillCard } from "./skill-card"
 import { CardSettingsModal } from "./card-settings-modal"
 import { TabbedInterface } from "./tabbed-interface"
@@ -32,7 +32,6 @@ interface SkillWindowProps {
     useParamMap?: Record<string, number>,
   ) => void
   getTranslatedString: (key: string) => string
-  specialControls: Record<string, SpecialControl>
   data: any
 }
 
@@ -197,51 +196,7 @@ function SkillPriorityTab({
         <SortableContext items={selectedCards.map((c) => c.id)} strategy={rectSortingStrategy}>
           <div className="skill-grid w-full">
             {selectedCards.map((selectedCard) => {
-              // 먼저 selectedCard에 저장된 정보 사용 시도
-              if (selectedCard.cardInfo && selectedCard.skillInfo && selectedCard.extraInfo) {
-                const card = {
-                  id: Number(selectedCard.id),
-                  ...selectedCard.cardInfo,
-                }
-
-                const extraInfo = {
-                  name: getTranslatedString(selectedCard.skillInfo.name),
-                  desc: selectedCard.extraInfo.desc || getTranslatedString(selectedCard.skillInfo.description),
-                  cost: selectedCard.extraInfo.cost,
-                  amount: selectedCard.extraInfo.amount,
-                  img_url: selectedCard.extraInfo.img_url,
-                }
-
-                const isDisabled = selectedCard.useType === 2
-
-                // 캐릭터 이미지 찾기
-                let characterImage
-                if (selectedCard.ownerId) {
-                  // 저장된 ownerId로 이미지 찾기 시도
-                  const character = data?.characters[selectedCard.ownerId.toString()]
-                  if (character && character.img_card) {
-                    characterImage = character.img_card
-                  } else if (data?.images && data.images[`char_${selectedCard.ownerId}`]) {
-                    characterImage = data.images[`char_${selectedCard.ownerId}`]
-                  }
-                }
-
-                return (
-                  <SortableSkillCard key={selectedCard.id} id={selectedCard.id}>
-                    <SkillCard
-                      card={card}
-                      extraInfo={extraInfo}
-                      getTranslatedString={getTranslatedString}
-                      onRemove={() => onRemoveCard(selectedCard.id)}
-                      onEdit={() => onEditCard(selectedCard.id)}
-                      isDisabled={isDisabled}
-                      characterImage={characterImage}
-                    />
-                  </SortableSkillCard>
-                )
-              }
-
-              // 저장된 정보가 없으면 availableCards에서 찾기
+              // 항상 availableCards에서 카드 정보 찾기 (CardSettingsModal과 동일한 방식)
               const cardInfo = availableCards.find((c) => c.card.id.toString() === selectedCard.id.toString())
 
               if (!cardInfo) {
@@ -261,6 +216,8 @@ function SkillPriorityTab({
                     onEdit={() => onEditCard(selectedCard.id)}
                     isDisabled={isDisabled}
                     characterImage={characterImage}
+                    useType={selectedCard.useType}
+                    useParam={selectedCard.useParam}
                   />
                 </SortableSkillCard>
               )
@@ -281,6 +238,8 @@ function SkillPriorityTab({
               onEdit={() => {}}
               isDisabled={false}
               characterImage={activeCardInfo.characterImage}
+              useType={selectedCards.find((c) => c.id === activeId)?.useType || 1}
+              useParam={selectedCards.find((c) => c.id === activeId)?.useParam || -1}
             />
           </div>
         )}
@@ -305,7 +264,6 @@ export function SkillWindow({
   onReorderCards,
   onUpdateCardSettings,
   getTranslatedString,
-  specialControls,
   data,
 }: SkillWindowProps) {
   const [editingCard, setEditingCard] = useState<string | null>(null)
