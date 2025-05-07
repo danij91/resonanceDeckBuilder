@@ -7940,5 +7940,9 @@
   "text_80608012": "Targets self",
   "text_80608013": "Targets the ally with the lowest HP",
   "text_80610278": "以攻击力最高的友方为目标释放",
-  "text_80610277": "以队长作为目标释放"
+  "text_80610277": "以队长作为目标释放",
+  "talent_name_12800575": "Vitality",
+  "talent_desc_12800575": "HP +10%",
+  "tag_tagName_12601726": "Assault Commando",
+  "tag_tagName_12601730": "Summoned Creature"
 }
