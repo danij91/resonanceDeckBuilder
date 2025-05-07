@@ -7943,5 +7943,9 @@
   "battle.enemy.priority": "敵對卡牌/其他卡牌",
   "battle.enemy.use.now": "優先使用",
   "battle.enemy.use.later": "最後使用",
-  "battle.enemy.use.random": "不使用"
+  "battle.enemy.use.random": "不使用",
+  "talent_name_12800575": "生機",
+  "talent_desc_12800575": "生命值+10%",
+  "tag_tagName_12601726": "突擊乘員",
+  "tag_tagName_12601730": "召喚物"
 }
