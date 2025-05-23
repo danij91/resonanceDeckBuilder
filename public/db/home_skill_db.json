@@ -332,7 +332,7 @@
     "id": 83900046,
     "name": "home_skill_name_83900046",
     "desc": "home_skill_desc_83900046",
-    "param": 0.3,
+    "param": 0.1,
     "homeSkillType": "AddQty"
   },
   "83900059": {
@@ -1137,7 +1137,7 @@
     "id": 83900163,
     "name": "home_skill_name_83900163",
     "desc": "home_skill_desc_83900163",
-    "param": 0.3,
+    "param": 0.1,
     "homeSkillType": "AddQty"
   },
   "83900164": {
