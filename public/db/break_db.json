@@ -1163,33 +1163,26 @@
   },
   "12100212": {
     "id": 12100212,
-    "name": "",
-    "desc": "",
+    "name": "break_name_12100212",
+    "desc": "break_desc_12100212",
     "attributeList": []
   },
   "12100213": {
     "id": 12100213,
-    "name": "",
-    "desc": "",
+    "name": "break_name_12100213",
+    "desc": "break_desc_12100213",
     "attributeList": []
   },
   "12100214": {
     "id": 12100214,
-    "name": "",
+    "name": "break_name_12100214",
     "desc": "break_desc_12100214",
     "attributeList": [
       {
         "attributeType": "Atk",
         "numType": "Number",
         "num_SN": 1500000
-      }
-    ]
-  },
-  "12100215": {
-    "id": 12100215,
-    "name": "",
-    "desc": "break_desc_12100215",
-    "attributeList": [
+      },
       {
         "attributeType": "Def",
         "numType": "Number",
@@ -1197,10 +1190,16 @@
       }
     ]
   },
+  "12100215": {
+    "id": 12100215,
+    "name": "break_name_12100215",
+    "desc": "break_desc_12100215",
+    "attributeList": []
+  },
   "12100216": {
     "id": 12100216,
-    "name": "",
-    "desc": "",
+    "name": "break_name_12100216",
+    "desc": "break_desc_12100216",
     "attributeList": []
   },
   "12100217": {
