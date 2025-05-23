@@ -5042,6 +5042,27 @@
       }
     ]
   },
+  "11800040": {
+    "id": 11800040,
+    "name": "equip_name_11800040",
+    "des": "equip_des_11800040",
+    "equipTagId": 12600161,
+    "quality": "Orange",
+    "skillList": [
+      {
+        "skillId": 12302011
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "equip_Getway_11800040_0_DisplayName",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
+    ]
+  },
   "11800041": {
     "id": 11800041,
     "name": "equip_name_11800041",
@@ -6158,6 +6179,27 @@
       },
       {
         "DisplayName": "equip_Getway_11800081_2_DisplayName",
+        "FromLevel": -1,
+        "UIName": "",
+        "Way3": "",
+        "funcId": 4294967295
+      }
+    ]
+  },
+  "11800084": {
+    "id": 11800084,
+    "name": "equip_name_11800084",
+    "des": "equip_des_11800084",
+    "equipTagId": 12600155,
+    "quality": "Orange",
+    "skillList": [
+      {
+        "skillId": 12301143
+      }
+    ],
+    "Getway": [
+      {
+        "DisplayName": "equip_Getway_11800084_0_DisplayName",
         "FromLevel": -1,
         "UIName": "",
         "Way3": "",
