@@ -6901,7 +6901,7 @@
   "12100831": {
     "id": 12100831,
     "name": "break_name_12100831",
-    "desc": "",
+    "desc": "break_desc_12100831",
     "attributeList": []
   },
   "12100854": {
@@ -6913,25 +6913,25 @@
   "12100855": {
     "id": 12100855,
     "name": "break_name_12100855",
-    "desc": "",
+    "desc": "break_desc_12100855",
     "attributeList": []
   },
   "12100856": {
     "id": 12100856,
     "name": "break_name_12100856",
-    "desc": "",
+    "desc": "break_desc_12100856",
     "attributeList": []
   },
   "12100858": {
     "id": 12100858,
     "name": "break_name_12100858",
-    "desc": "",
+    "desc": "break_desc_12100858",
     "attributeList": []
   },
   "12100859": {
     "id": 12100859,
     "name": "break_name_12100859",
-    "desc": "",
+    "desc": "break_desc_12100859",
     "attributeList": [
       {
         "attributeType": "Atk",

@@ -2380,6 +2380,113 @@
       }
     ]
   },
+  "10000297": {
+    "id": 10000297,
+    "name": "char_name_10000297",
+    "quality": "FiveStar",
+    "sideId": 12600026,
+    "passiveSkillList": [
+      {
+        "skillId": 12303598
+      },
+      {
+        "skillId": 12303213
+      },
+      {
+        "skillId": 12303249
+      }
+    ],
+    "skillList": [
+      {
+        "num": 3,
+        "skillId": 12300142
+      },
+      {
+        "num": 1,
+        "skillId": 12300144
+      },
+      {
+        "num": 1,
+        "skillId": 12300145
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 80000000,
+    "def_SN": 750000,
+    "atk_SN": 850000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800134
+      },
+      {
+        "talentId": 12800135
+      },
+      {
+        "talentId": 12800552
+      },
+      {
+        "talentId": 12800137
+      },
+      {
+        "talentId": 12800324
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100211
+      },
+      {
+        "breakthroughId": 12100212
+      },
+      {
+        "breakthroughId": 12100213
+      },
+      {
+        "breakthroughId": 12100214
+      },
+      {
+        "breakthroughId": 12100215
+      },
+      {
+        "breakthroughId": 12100216
+      }
+    ],
+    "line": 2,
+    "subLine": 210,
+    "identity": "char_identity_10000297",
+    "ability": "char_ability_10000297",
+    "controllerId": 10300198,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ],
+    "homeSkillList": [
+      {
+        "id": 83900234,
+        "nextIndex": 0,
+        "resonanceLv": 1
+      },
+      {
+        "id": 83900002,
+        "nextIndex": 3,
+        "resonanceLv": 4
+      },
+      {
+        "id": 83900016,
+        "nextIndex": 4294967295,
+        "resonanceLv": 5
+      }
+    ]
+  },
   "10000298": {
     "id": 10000298,
     "name": "char_name_10000298",
@@ -3427,6 +3534,9 @@
     "passiveSkillList": [
       {
         "skillId": 12301825
+      },
+      {
+        "skillId": 12303274
       }
     ],
     "skillList": [
@@ -4502,7 +4612,7 @@
     "passiveSkillList": [],
     "skillList": [
       {
-        "num": 4,
+        "num": 3,
         "skillId": 12301104
       },
       {

@@ -1,21 +1,21 @@
 {
   "activeGameData": {
     "sourceRegion": "CN",
-    "clientVersion": "1.4.573",
-    "lastUpdated": "2025-05-23T11:07:02.586Z"
+    "clientVersion": "1.4.603",
+    "lastUpdated": "2025-05-31T14:55:16.993Z"
   },
   "translationData": {
     "CN": {
-      "clientVersion": "1.4.573",
-      "lastUpdated": "2025-05-23T11:07:02.586Z"
+      "clientVersion": "1.4.603",
+      "lastUpdated": "2025-05-31T14:55:16.993Z"
     },
     "JP": {
-      "clientVersion": "1.4.126",
-      "lastUpdated": "2025-05-23T11:07:02.586Z"
+      "clientVersion": "1.4.156",
+      "lastUpdated": "2025-05-31T14:55:16.993Z"
     },
     "KR": {
-      "clientVersion": "1.4.222",
-      "lastUpdated": "2025-05-23T11:07:02.586Z"
+      "clientVersion": "1.4.233",
+      "lastUpdated": "2025-05-31T14:55:16.993Z"
     }
   }
 }
