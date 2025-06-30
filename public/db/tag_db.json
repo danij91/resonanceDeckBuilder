@@ -16,107 +16,107 @@
   "12600105": {
     "id": 12600105,
     "idCN": "战斗/角色技能/03/卡莲/B-0",
-    "tagName": "tag_tagName_12600105",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600106": {
     "id": 12600106,
     "idCN": "战斗/角色技能/04/魇/S",
-    "tagName": "tag_tagName_12600106",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600112": {
     "id": 12600112,
     "idCN": "战斗/角色技能/03/卡莲/S",
-    "tagName": "tag_tagName_12600112",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600113": {
     "id": 12600113,
     "idCN": "战斗/角色技能/04/黛丝莉/A",
-    "tagName": "tag_tagName_12600113",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600114": {
     "id": 12600114,
     "idCN": "战斗/角色技能/03/雷火/B",
-    "tagName": "tag_tagName_12600114",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600121": {
     "id": 12600121,
     "idCN": "战斗/角色技能/03/塔拉/A",
-    "tagName": "tag_tagName_12600121",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600129": {
     "id": 12600129,
     "idCN": "战斗/角色技能/05/夏洛蒂/S",
-    "tagName": "tag_tagName_12600129",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600130": {
     "id": 12600130,
     "idCN": "战斗/角色技能/04/苍叶/A",
-    "tagName": "tag_tagName_12600130",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600131": {
     "id": 12600131,
     "idCN": "战斗/角色技能/04/苍叶/B",
-    "tagName": "tag_tagName_12600131",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600132": {
     "id": 12600132,
     "idCN": "战斗/角色技能/04/苍叶/S",
-    "tagName": "tag_tagName_12600132",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600133": {
     "id": 12600133,
     "idCN": "战斗/角色技能/03/艾略特/B",
-    "tagName": "tag_tagName_12600133",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600134": {
     "id": 12600134,
     "idCN": "战斗/角色技能/05/伊洛娜/A",
-    "tagName": "tag_tagName_12600134",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600136": {
     "id": 12600136,
     "idCN": "战斗/角色技能/05/加莉娜/B",
-    "tagName": "tag_tagName_12600136",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600137": {
     "id": 12600137,
     "idCN": "战斗/角色技能/03/弗兰/B",
-    "tagName": "tag_tagName_12600137",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600138": {
     "id": 12600138,
     "idCN": "战斗/角色技能/04/宵月/B-1",
-    "tagName": "tag_tagName_12600138",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600139": {
     "id": 12600139,
@@ -128,9 +128,9 @@
   "12600140": {
     "id": 12600140,
     "idCN": "战斗/角色技能/04/宵月/A",
-    "tagName": "tag_tagName_12600140",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600145": {
     "id": 12600145,
@@ -149,9 +149,9 @@
   "12600147": {
     "id": 12600147,
     "idCN": "战斗/角色技能/04/莉薇娅/B",
-    "tagName": "tag_tagName_12600147",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600008": {
     "id": 12600008,
@@ -212,37 +212,37 @@
   "12600039": {
     "id": 12600039,
     "idCN": "战斗/角色技能/05/马吉拉/A",
-    "tagName": "tag_tagName_12600039",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600041": {
     "id": 12600041,
     "idCN": "战斗/角色技能/05/马吉拉/B",
-    "tagName": "tag_tagName_12600041",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600043": {
     "id": 12600043,
     "idCN": "战斗/角色技能/03/艾略特/A",
-    "tagName": "tag_tagName_12600043",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600063": {
     "id": 12600063,
     "idCN": "战斗/角色技能/03/静流/A",
-    "tagName": "tag_tagName_12600063",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600064": {
     "id": 12600064,
     "idCN": "战斗/角色技能/03/静流/B",
-    "tagName": "tag_tagName_12600064",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600065": {
     "id": 12600065,
@@ -254,7 +254,7 @@
   "12600066": {
     "id": 12600066,
     "idCN": "战斗/角色技能/03/卡莲/A",
-    "tagName": "tag_tagName_12600066",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -268,23 +268,23 @@
   "12600069": {
     "id": 12600069,
     "idCN": "战斗/角色技能/05/夏洛蒂/A",
-    "tagName": "tag_tagName_12600069",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600071": {
     "id": 12600071,
     "idCN": "战斗/角色技能/03/朱利安/B",
-    "tagName": "tag_tagName_12600071",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600072": {
     "id": 12600072,
     "idCN": "战斗/角色技能/03/朱利安/S",
-    "tagName": "tag_tagName_12600072",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600073": {
     "id": 12600073,
@@ -331,23 +331,23 @@
   "12600054": {
     "id": 12600054,
     "idCN": "战斗/角色技能/04/魇/A-0",
-    "tagName": "tag_tagName_12600054",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600055": {
     "id": 12600055,
     "idCN": "战斗/角色技能/05/星花/TATAKAU",
-    "tagName": "tag_tagName_12600055",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600075": {
     "id": 12600075,
     "idCN": "战斗/角色技能/05/星花/B-1",
-    "tagName": "tag_tagName_12600075",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600102": {
     "id": 12600102,
@@ -359,63 +359,63 @@
   "12600103": {
     "id": 12600103,
     "idCN": "战斗/角色技能/05/多萝西/A",
-    "tagName": "tag_tagName_12600103",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600107": {
     "id": 12600107,
     "idCN": "战斗/角色技能/05/多萝西/S",
-    "tagName": "tag_tagName_12600107",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600109": {
     "id": 12600109,
     "idCN": "战斗/角色技能/04/塞西尔/A",
-    "tagName": "tag_tagName_12600109",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600117": {
     "id": 12600117,
     "idCN": "战斗/角色技能/05/加莉娜/A",
-    "tagName": "tag_tagName_12600117",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600119": {
     "id": 12600119,
     "idCN": "战斗/角色技能/03/狮鬃/S",
-    "tagName": "tag_tagName_12600119",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600122": {
     "id": 12600122,
     "idCN": "战斗/角色技能/05/伊洛娜/S",
-    "tagName": "tag_tagName_12600122",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600127": {
     "id": 12600127,
     "idCN": "战斗/角色技能/05/星花/S",
-    "tagName": "tag_tagName_12600127",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600159": {
     "id": 12600159,
     "idCN": "战斗/角色技能/05/瑞瓦/B-0",
-    "tagName": "tag_tagName_12600159",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600151": {
     "id": 12600151,
     "idCN": "战斗/角色技能/05/加莉娜/S",
-    "tagName": "tag_tagName_12600151",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -443,7 +443,7 @@
   "12600163": {
     "id": 12600163,
     "idCN": "战斗/角色技能/04/莉薇娅/S",
-    "tagName": "tag_tagName_12600163",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -590,28 +590,28 @@
   "12600222": {
     "id": 12600222,
     "idCN": "战斗/角色技能/05/闻笙/A-0",
-    "tagName": "tag_tagName_12600222",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600220": {
     "id": 12600220,
     "idCN": "战斗/角色技能/03/狮鬃/A",
-    "tagName": "tag_tagName_12600220",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600219": {
     "id": 12600219,
     "idCN": "战斗/角色技能/03/狮鬃/B",
-    "tagName": "tag_tagName_12600219",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600224": {
     "id": 12600224,
     "idCN": "战斗/角色技能/03/跳鼠/A",
-    "tagName": "tag_tagName_12600224",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -646,28 +646,28 @@
   "12600231": {
     "id": 12600231,
     "idCN": "战斗/角色技能/05/米莉/B",
-    "tagName": "tag_tagName_12600231",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600232": {
     "id": 12600232,
     "idCN": "战斗/角色技能/05/米莉/A",
-    "tagName": "tag_tagName_12600232",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600233": {
     "id": 12600233,
     "idCN": "战斗/角色技能/05/米莉/S",
-    "tagName": "tag_tagName_12600233",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600234": {
     "id": 12600234,
     "idCN": "战斗/角色技能/03/跳鼠/S",
-    "tagName": "tag_tagName_12600234",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -681,42 +681,42 @@
   "12600235": {
     "id": 12600235,
     "idCN": "战斗/角色技能/05/埃兹拉/B+",
-    "tagName": "tag_tagName_12600235",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600227": {
     "id": 12600227,
     "idCN": "战斗/角色技能/03/山岚/A",
-    "tagName": "tag_tagName_12600227",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600007": {
     "id": 12600007,
-    "idCN": "战斗/得意技能",
-    "tagName": "tag_tagName_12600007",
+    "idCN": "战斗/卡牌/得意技能",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600016": {
     "id": 12600016,
     "idCN": "战斗/角色技能/05/埃兹拉/A",
-    "tagName": "tag_tagName_12600016",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600017": {
     "id": 12600017,
     "idCN": "战斗/角色技能/05/瑞瓦/A",
-    "tagName": "tag_tagName_12600017",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600020": {
     "id": 12600020,
     "idCN": "战斗/角色技能/05/瑞瓦/S-0",
-    "tagName": "tag_tagName_12600020",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -772,16 +772,16 @@
   "12600238": {
     "id": 12600238,
     "idCN": "战斗/角色技能/05/那由他/A",
-    "tagName": "tag_tagName_12600238",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600239": {
     "id": 12600239,
     "idCN": "战斗/角色技能/05/那由他/B",
-    "tagName": "tag_tagName_12600239",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600240": {
     "id": 12600240,
@@ -793,14 +793,14 @@
   "12600241": {
     "id": 12600241,
     "idCN": "战斗/角色技能/03/波克士/A-1",
-    "tagName": "tag_tagName_12600241",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600243": {
     "id": 12600243,
     "idCN": "战斗/角色技能/04/菲妮娅/B",
-    "tagName": "tag_tagName_12600243",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -821,7 +821,7 @@
   "12600228": {
     "id": 12600228,
     "idCN": "战斗/角色技能/03/阿尔喀娜/S",
-    "tagName": "tag_tagName_12600228",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -926,14 +926,14 @@
   "12600262": {
     "id": 12600262,
     "idCN": "战斗/角色技能/03/阿尔喀娜/A",
-    "tagName": "tag_tagName_12600262",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600263": {
     "id": 12600263,
     "idCN": "战斗/角色技能/03/阿尔喀娜/B",
-    "tagName": "tag_tagName_12600263",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -947,9 +947,9 @@
   "12600004": {
     "id": 12600004,
     "idCN": "战斗/角色技能/05/柯娜/A",
-    "tagName": "tag_tagName_12600004",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600029": {
     "id": 12600029,
@@ -961,7 +961,7 @@
   "12600126": {
     "id": 12600126,
     "idCN": "战斗/角色技能/04/塞西尔/B",
-    "tagName": "tag_tagName_12600126",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -982,7 +982,7 @@
   "12600266": {
     "id": 12600266,
     "idCN": "战斗/角色技能/05/薇尔岚/B-0",
-    "tagName": "tag_tagName_12600266",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -1031,21 +1031,21 @@
   "12600076": {
     "id": 12600076,
     "idCN": "战斗/角色技能/05/瑞秋/B-0",
-    "tagName": "tag_tagName_12600076",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600118": {
     "id": 12600118,
     "idCN": "战斗/角色技能/03/卡莲/B-2",
-    "tagName": "tag_tagName_12600118",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600068": {
     "id": 12600068,
     "idCN": "战斗/角色技能/03/山岚/S",
-    "tagName": "tag_tagName_12600068",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -1108,16 +1108,16 @@
   "12600197": {
     "id": 12600197,
     "idCN": "战斗/角色技能/03/跳鼠/B-1",
-    "tagName": "tag_tagName_12600197",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600198": {
     "id": 12600198,
     "idCN": "战斗/角色技能/03/朱利安/A-1",
-    "tagName": "tag_tagName_12600198",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600199": {
     "id": 12600199,
@@ -1220,9 +1220,9 @@
   "12600211": {
     "id": 12600211,
     "idCN": "战斗/角色技能/04/魇/A-1",
-    "tagName": "tag_tagName_12600211",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600168": {
     "id": 12600168,
@@ -1535,77 +1535,77 @@
   "12600307": {
     "id": 12600307,
     "idCN": "战斗/角色技能/05/夏洛蒂/B",
-    "tagName": "tag_tagName_12600307",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600308": {
     "id": 12600308,
     "idCN": "战斗/角色技能/05/柯娜/S-1",
-    "tagName": "tag_tagName_12600308",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600309": {
     "id": 12600309,
     "idCN": "战斗/角色技能/05/柯娜/S-0",
-    "tagName": "tag_tagName_12600309",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600310": {
     "id": 12600310,
     "idCN": "战斗/角色技能/05/柯娜/B-2",
-    "tagName": "tag_tagName_12600310",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600311": {
     "id": 12600311,
     "idCN": "战斗/角色技能/04/黛丝莉/B",
-    "tagName": "tag_tagName_12600311",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600312": {
     "id": 12600312,
     "idCN": "战斗/角色技能/03/弗兰/A",
-    "tagName": "tag_tagName_12600312",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600313": {
     "id": 12600313,
     "idCN": "战斗/角色技能/03/伽罗尔/A-2",
-    "tagName": "tag_tagName_12600313",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600314": {
     "id": 12600314,
     "idCN": "战斗/角色技能/05/卡塔斯/S-2",
-    "tagName": "tag_tagName_12600314",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600315": {
     "id": 12600315,
     "idCN": "战斗/角色技能/05/马吉拉/S",
-    "tagName": "tag_tagName_12600315",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600316": {
     "id": 12600316,
     "idCN": "战斗/角色技能/04/叶珏/S",
-    "tagName": "tag_tagName_12600316",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600108": {
     "id": 12600108,
     "idCN": "战斗/角色技能/04/塞西尔/焚心余烬",
-    "tagName": "tag_tagName_12600108",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -1696,14 +1696,14 @@
   "12600124": {
     "id": 12600124,
     "idCN": "战斗/角色技能/05/卡塔斯/S-1",
-    "tagName": "tag_tagName_12600124",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600125": {
     "id": 12600125,
     "idCN": "战斗/角色技能/05/卡塔斯/S-0",
-    "tagName": "tag_tagName_12600125",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -1717,56 +1717,56 @@
   "12600336": {
     "id": 12600336,
     "idCN": "战斗/角色技能/03/跳鼠/B-0",
-    "tagName": "tag_tagName_12600336",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600384": {
     "id": 12600384,
     "idCN": "战斗/角色技能/03/波克士/A-2",
-    "tagName": "tag_tagName_12600384",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600389": {
     "id": 12600389,
     "idCN": "战斗/角色技能/03/波克士/A-3",
-    "tagName": "tag_tagName_12600389",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600390": {
     "id": 12600390,
     "idCN": "战斗/角色技能/03/波克士/A-4",
-    "tagName": "tag_tagName_12600390",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600391": {
     "id": 12600391,
     "idCN": "战斗/角色技能/03/卡莲/B-1",
-    "tagName": "tag_tagName_12600391",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600394": {
     "id": 12600394,
     "idCN": "战斗/角色技能/03/雷火/S",
-    "tagName": "tag_tagName_12600394",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600396": {
     "id": 12600396,
     "idCN": "战斗/角色技能/03/遥/S-0",
-    "tagName": "tag_tagName_12600396",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600397": {
     "id": 12600397,
     "idCN": "战斗/角色技能/03/遥/A",
-    "tagName": "tag_tagName_12600397",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -1787,42 +1787,42 @@
   "12600398": {
     "id": 12600398,
     "idCN": "战斗/角色技能/04/菲妮娅/S",
-    "tagName": "tag_tagName_12600398",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600242": {
     "id": 12600242,
     "idCN": "战斗/角色技能/04/冯里奈/S",
-    "tagName": "tag_tagName_12600242",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600399": {
     "id": 12600399,
     "idCN": "战斗/角色技能/04/冯里奈/A-0",
-    "tagName": "tag_tagName_12600399",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600400": {
     "id": 12600400,
     "idCN": "战斗/角色技能/04/瓦伦汀/A",
-    "tagName": "tag_tagName_12600400",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600401": {
     "id": 12600401,
     "idCN": "战斗/角色技能/04/瓦伦汀/B",
-    "tagName": "tag_tagName_12600401",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600402": {
     "id": 12600402,
     "idCN": "战斗/角色技能/05/闻笙/A-1",
-    "tagName": "tag_tagName_12600402",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -1850,42 +1850,42 @@
   "12600404": {
     "id": 12600404,
     "idCN": "战斗/角色技能/04/黛丝莉/S",
-    "tagName": "tag_tagName_12600404",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600405": {
     "id": 12600405,
     "idCN": "战斗/角色技能/03/伽罗尔/A-0",
-    "tagName": "tag_tagName_12600405",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600406": {
     "id": 12600406,
     "idCN": "战斗/角色技能/04/叶珏/A",
-    "tagName": "tag_tagName_12600406",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600408": {
     "id": 12600408,
     "idCN": "战斗/角色技能/04/冯里奈/A-2",
-    "tagName": "tag_tagName_12600408",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600409": {
     "id": 12600409,
     "idCN": "战斗/角色技能/05/卡塔斯/B",
-    "tagName": "tag_tagName_12600409",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600412": {
     "id": 12600412,
     "idCN": "战斗/角色技能/05/伊洛娜/B",
-    "tagName": "tag_tagName_12600412",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -1920,7 +1920,7 @@
   "12600419": {
     "id": 12600419,
     "idCN": "战斗/角色技能/03/瑞秋/A",
-    "tagName": "tag_tagName_12600419",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -1934,9 +1934,9 @@
   "12600420": {
     "id": 12600420,
     "idCN": "战斗/角色技能/04/莉薇娅/A",
-    "tagName": "tag_tagName_12600420",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600421": {
     "id": 12600421,
@@ -1948,21 +1948,21 @@
   "12600426": {
     "id": 12600426,
     "idCN": "战斗/角色技能/05/约书亚/S-0",
-    "tagName": "tag_tagName_12600426",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600070": {
     "id": 12600070,
     "idCN": "战斗/角色技能/04/冯里奈/B",
-    "tagName": "tag_tagName_12600070",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600428": {
     "id": 12600428,
     "idCN": "战斗/角色技能/04/冯里奈/A-1",
-    "tagName": "tag_tagName_12600428",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -2067,7 +2067,7 @@
   "12600446": {
     "id": 12600446,
     "idCN": "战斗/角色技能/05/隼/A",
-    "tagName": "tag_tagName_12600446",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -2081,14 +2081,14 @@
   "12600448": {
     "id": 12600448,
     "idCN": "战斗/角色技能/05/隼/B",
-    "tagName": "tag_tagName_12600448",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600449": {
     "id": 12600449,
     "idCN": "战斗/角色技能/05/隼/S",
-    "tagName": "tag_tagName_12600449",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -2116,23 +2116,23 @@
   "12600456": {
     "id": 12600456,
     "idCN": "战斗/角色技能/04/奈弥/A",
-    "tagName": "tag_tagName_12600456",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600457": {
     "id": 12600457,
     "idCN": "战斗/角色技能/04/奈弥/B-0",
-    "tagName": "tag_tagName_12600457",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600458": {
     "id": 12600458,
     "idCN": "战斗/角色技能/04/奈弥/B-1",
-    "tagName": "tag_tagName_12600458",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600452": {
     "id": 12600452,
@@ -2214,16 +2214,16 @@
   "12600468": {
     "id": 12600468,
     "idCN": "战斗/角色技能/05/亚莉奈/A",
-    "tagName": "tag_tagName_12600468",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600469": {
     "id": 12600469,
     "idCN": "战斗/角色技能/05/亚莉奈/B",
-    "tagName": "tag_tagName_12600469",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600006": {
     "id": 12600006,
@@ -2242,23 +2242,23 @@
   "12600018": {
     "id": 12600018,
     "idCN": "战斗/角色技能/03/甘雅/A",
-    "tagName": "tag_tagName_12600018",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600021": {
     "id": 12600021,
     "idCN": "战斗/角色技能/03/甘雅/B",
-    "tagName": "tag_tagName_12600021",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600060": {
     "id": 12600060,
     "idCN": "战斗/角色技能/03/甘雅/S",
-    "tagName": "tag_tagName_12600060",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600062": {
     "id": 12600062,
@@ -2354,23 +2354,23 @@
   "12600479": {
     "id": 12600479,
     "idCN": "战斗/角色技能/04/阿知波/A",
-    "tagName": "tag_tagName_12600479",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600480": {
     "id": 12600480,
     "idCN": "战斗/角色技能/04/阿知波/B",
-    "tagName": "tag_tagName_12600480",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600481": {
     "id": 12600481,
     "idCN": "战斗/角色技能/04/阿知波/S",
-    "tagName": "tag_tagName_12600481",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600477": {
     "id": 12600477,
@@ -2396,23 +2396,23 @@
   "12600382": {
     "id": 12600382,
     "idCN": "战斗/角色技能/04/宵月/S",
-    "tagName": "tag_tagName_12600382",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600483": {
     "id": 12600483,
     "idCN": "战斗/角色技能/03/参宿一/A",
-    "tagName": "tag_tagName_12600483",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600484": {
     "id": 12600484,
     "idCN": "战斗/角色技能/03/参宿一/B",
-    "tagName": "tag_tagName_12600484",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600485": {
     "id": 12600485,
@@ -2438,37 +2438,37 @@
   "12600354": {
     "id": 12600354,
     "idCN": "战斗/角色技能/04/伊尔/A",
-    "tagName": "tag_tagName_12600354",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600490": {
     "id": 12600490,
     "idCN": "战斗/角色技能/04/卡莱雅/B",
-    "tagName": "tag_tagName_12600490",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600493": {
     "id": 12600493,
     "idCN": "战斗/角色技能/04/奈弥/S",
-    "tagName": "tag_tagName_12600493",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600496": {
     "id": 12600496,
     "idCN": "战斗/角色技能/04/达斯廷/A",
-    "tagName": "tag_tagName_12600496",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600499": {
     "id": 12600499,
     "idCN": "战斗/角色技能/05/亚莉奈/S",
-    "tagName": "tag_tagName_12600499",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600501": {
     "id": 12600501,
@@ -3089,9 +3089,9 @@
   "12600500": {
     "id": 12600500,
     "idCN": "战斗/角色技能/03/参宿一/S",
-    "tagName": "tag_tagName_12600500",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600474": {
     "id": 12600474,
@@ -3278,23 +3278,23 @@
   "12600214": {
     "id": 12600214,
     "idCN": "战斗/角色技能/03/神盾波克士/A",
-    "tagName": "tag_tagName_12600214",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600282": {
     "id": 12600282,
     "idCN": "战斗/角色技能/03/神盾波克士/B",
-    "tagName": "tag_tagName_12600282",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600283": {
     "id": 12600283,
     "idCN": "战斗/角色技能/03/神盾波克士/S",
-    "tagName": "tag_tagName_12600283",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600022": {
     "id": 12600022,
@@ -3327,30 +3327,30 @@
   "12600285": {
     "id": 12600285,
     "idCN": "战斗/角色技能/05/索玛/A",
-    "tagName": "tag_tagName_12600285",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600286": {
     "id": 12600286,
     "idCN": "战斗/角色技能/05/索玛/S-0",
-    "tagName": "tag_tagName_12600286",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600287": {
     "id": 12600287,
     "idCN": "战斗/角色技能/05/索玛/B",
-    "tagName": "tag_tagName_12600287",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600288": {
     "id": 12600288,
     "idCN": "战斗/角色技能/05/索玛/S-1",
-    "tagName": "tag_tagName_12600288",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600290": {
     "id": 12600290,
@@ -3446,9 +3446,9 @@
   "12600302": {
     "id": 12600302,
     "idCN": "战斗/角色技能/05/卡洛琳/S",
-    "tagName": "tag_tagName_12600302",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600303": {
     "id": 12600303,
@@ -3502,63 +3502,63 @@
   "12600331": {
     "id": 12600331,
     "idCN": "战斗/角色技能/05/妮蔻拉/A",
-    "tagName": "tag_tagName_12600331",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600332": {
     "id": 12600332,
     "idCN": "战斗/角色技能/05/妮蔻拉/B",
-    "tagName": "tag_tagName_12600332",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600333": {
     "id": 12600333,
     "idCN": "战斗/角色技能/05/妮蔻拉/S",
-    "tagName": "tag_tagName_12600333",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600334": {
     "id": 12600334,
     "idCN": "战斗/角色技能/05/雷比斯/A-0",
-    "tagName": "tag_tagName_12600334",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600335": {
     "id": 12600335,
     "idCN": "战斗/角色技能/05/雷比斯/A-1",
-    "tagName": "tag_tagName_12600335",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600337": {
     "id": 12600337,
     "idCN": "战斗/角色技能/05/雷比斯/A-2",
-    "tagName": "tag_tagName_12600337",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600338": {
     "id": 12600338,
     "idCN": "战斗/角色技能/05/雷比斯/A-3",
-    "tagName": "tag_tagName_12600338",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600339": {
     "id": 12600339,
     "idCN": "战斗/角色技能/05/雷比斯/B",
-    "tagName": "tag_tagName_12600339",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600340": {
     "id": 12600340,
     "idCN": "战斗/角色技能/05/雷比斯/S",
-    "tagName": "tag_tagName_12600340",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -3872,8 +3872,8 @@
   },
   "12600410": {
     "id": 12600410,
-    "idCN": "战斗/x费卡",
-    "tagName": "tag_tagName_12600410",
+    "idCN": "战斗/卡牌/x费卡",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -3971,21 +3971,21 @@
   "12600495": {
     "id": 12600495,
     "idCN": "战斗/角色技能/04/晃/A",
-    "tagName": "tag_tagName_12600495",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600497": {
     "id": 12600497,
     "idCN": "战斗/角色技能/04/晃/B",
-    "tagName": "tag_tagName_12600497",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600498": {
     "id": 12600498,
     "idCN": "战斗/角色技能/05/多萝西/B",
-    "tagName": "tag_tagName_12600498",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -3999,9 +3999,9 @@
   "12600616": {
     "id": 12600616,
     "idCN": "战斗/角色技能/05/卡洛琳/B",
-    "tagName": "tag_tagName_12600616",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600571": {
     "id": 12600571,
@@ -5217,21 +5217,21 @@
   "12600789": {
     "id": 12600789,
     "idCN": "战斗/角色技能/05/薇尔岚/B-1",
-    "tagName": "tag_tagName_12600789",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600790": {
     "id": 12600790,
     "idCN": "战斗/角色技能/05/薇尔岚/B-3",
-    "tagName": "tag_tagName_12600790",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600791": {
     "id": 12600791,
     "idCN": "战斗/角色技能/05/薇尔岚/A",
-    "tagName": "tag_tagName_12600791",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -5329,9 +5329,9 @@
   "12600805": {
     "id": 12600805,
     "idCN": "战斗/角色技能/05/那由他/S-0",
-    "tagName": "tag_tagName_12600805",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600806": {
     "id": 12600806,
@@ -5364,14 +5364,14 @@
   "12600812": {
     "id": 12600812,
     "idCN": "战斗/角色技能/04/卡莱雅/S",
-    "tagName": "tag_tagName_12600812",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12600813": {
     "id": 12600813,
     "idCN": "战斗/角色技能/04/晃/S",
-    "tagName": "tag_tagName_12600813",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -5819,9 +5819,9 @@
   "12600094": {
     "id": 12600094,
     "idCN": "战斗/角色技能/05/那由他/S-4",
-    "tagName": "tag_tagName_12600094",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12600001": {
     "id": 12600001,
@@ -6988,28 +6988,28 @@
   "12601052": {
     "id": 12601052,
     "idCN": "战斗/角色技能/03/圣剑波克士/A-3",
-    "tagName": "tag_tagName_12601052",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601053": {
     "id": 12601053,
     "idCN": "战斗/角色技能/03/圣剑波克士/A-2",
-    "tagName": "tag_tagName_12601053",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601054": {
     "id": 12601054,
     "idCN": "战斗/角色技能/03/圣剑波克士/A-1",
-    "tagName": "tag_tagName_12601054",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601055": {
     "id": 12601055,
     "idCN": "战斗/角色技能/03/圣剑波克士/S",
-    "tagName": "tag_tagName_12601055",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -7023,7 +7023,7 @@
   "12601058": {
     "id": 12601058,
     "idCN": "战斗/角色技能/03/圣剑波克士/B",
-    "tagName": "tag_tagName_12601058",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -7170,7 +7170,7 @@
   "12601074": {
     "id": 12601074,
     "idCN": "战斗/角色技能/04/菲妮娅/A",
-    "tagName": "tag_tagName_12601074",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -7618,28 +7618,28 @@
   "12601094": {
     "id": 12601094,
     "idCN": "战斗/角色技能/03/雷火/A",
-    "tagName": "tag_tagName_12601094",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601095": {
     "id": 12601095,
     "idCN": "战斗/角色技能/05/苔妮/A",
-    "tagName": "tag_tagName_12601095",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601096": {
     "id": 12601096,
     "idCN": "战斗/角色技能/05/苔妮/B",
-    "tagName": "tag_tagName_12601096",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601097": {
     "id": 12601097,
     "idCN": "战斗/角色技能/05/苔妮/S",
-    "tagName": "tag_tagName_12601097",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -7709,14 +7709,14 @@
   "12601107": {
     "id": 12601107,
     "idCN": "战斗/角色技能/05/海因里希/A",
-    "tagName": "tag_tagName_12601107",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601108": {
     "id": 12601108,
     "idCN": "战斗/角色技能/05/海因里希/S",
-    "tagName": "tag_tagName_12601108",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -7765,7 +7765,7 @@
   "12601116": {
     "id": 12601116,
     "idCN": "战斗/角色技能/05/约书亚/S-1",
-    "tagName": "tag_tagName_12601116",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -7786,14 +7786,14 @@
   "12601120": {
     "id": 12601120,
     "idCN": "战斗/角色技能/05/约书亚/A",
-    "tagName": "tag_tagName_12601120",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601121": {
     "id": 12601121,
     "idCN": "战斗/角色技能/05/海因里希/B",
-    "tagName": "tag_tagName_12601121",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -8073,9 +8073,9 @@
   "12601159": {
     "id": 12601159,
     "idCN": "战斗/角色技能/05/卡塔斯/S-3",
-    "tagName": "tag_tagName_12601159",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601161": {
     "id": 12601161,
@@ -8752,28 +8752,28 @@
   "12601262": {
     "id": 12601262,
     "idCN": "战斗/角色技能/05/夏尔/A",
-    "tagName": "tag_tagName_12601262",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601263": {
     "id": 12601263,
     "idCN": "战斗/角色技能/05/夏尔/B",
-    "tagName": "tag_tagName_12601263",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601264": {
     "id": 12601264,
     "idCN": "战斗/角色技能/05/夏尔/C",
-    "tagName": "tag_tagName_12601264",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601265": {
     "id": 12601265,
     "idCN": "战斗/角色技能/05/夏尔/S",
-    "tagName": "tag_tagName_12601265",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -9116,42 +9116,42 @@
   "12601307": {
     "id": 12601307,
     "idCN": "战斗/角色技能/05/安菲娅/A-0",
-    "tagName": "tag_tagName_12601307",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601308": {
     "id": 12601308,
     "idCN": "战斗/角色技能/05/安菲娅/A-1",
-    "tagName": "tag_tagName_12601308",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601309": {
     "id": 12601309,
     "idCN": "战斗/角色技能/05/安菲娅/A-2",
-    "tagName": "tag_tagName_12601309",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601310": {
     "id": 12601310,
     "idCN": "战斗/角色技能/05/安菲娅/A-3",
-    "tagName": "tag_tagName_12601310",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601311": {
     "id": 12601311,
     "idCN": "战斗/角色技能/05/安菲娅/B",
-    "tagName": "tag_tagName_12601311",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601312": {
     "id": 12601312,
     "idCN": "战斗/角色技能/05/安菲娅/S",
-    "tagName": "tag_tagName_12601312",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -9262,8 +9262,8 @@
   },
   "12601297": {
     "id": 12601297,
-    "idCN": "战斗/衍生卡",
-    "tagName": "tag_tagName_12601297",
+    "idCN": "战斗/卡牌/衍生卡",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -9277,9 +9277,9 @@
   "12601323": {
     "id": 12601323,
     "idCN": "战斗/角色技能/05/丽桑德拉/A-1",
-    "tagName": "tag_tagName_12601323",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601330": {
     "id": 12601330,
@@ -9354,30 +9354,30 @@
   "12601339": {
     "id": 12601339,
     "idCN": "战斗/角色技能/05/丽桑德拉/A-0",
-    "tagName": "tag_tagName_12601339",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601340": {
     "id": 12601340,
     "idCN": "战斗/角色技能/05/丽桑德拉/A-2",
-    "tagName": "tag_tagName_12601340",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601341": {
     "id": 12601341,
     "idCN": "战斗/角色技能/05/丽桑德拉/B",
-    "tagName": "tag_tagName_12601341",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601342": {
     "id": 12601342,
     "idCN": "战斗/角色技能/05/丽桑德拉/S",
-    "tagName": "tag_tagName_12601342",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601343": {
     "id": 12601343,
@@ -9550,21 +9550,21 @@
   "12601367": {
     "id": 12601367,
     "idCN": "战斗/角色技能/05/泳装静流/S",
-    "tagName": "tag_tagName_12601367",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601365": {
     "id": 12601365,
     "idCN": "战斗/角色技能/05/泳装静流/A",
-    "tagName": "tag_tagName_12601365",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601366": {
     "id": 12601366,
     "idCN": "战斗/角色技能/05/泳装静流/B",
-    "tagName": "tag_tagName_12601366",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -9746,9 +9746,9 @@
   "12601395": {
     "id": 12601395,
     "idCN": "战斗/角色技能/05/伊索斯/B",
-    "tagName": "tag_tagName_12601395",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601396": {
     "id": 12601396,
@@ -9760,9 +9760,9 @@
   "12601397": {
     "id": 12601397,
     "idCN": "战斗/角色技能/05/伊索斯/A",
-    "tagName": "tag_tagName_12601397",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601398": {
     "id": 12601398,
@@ -9781,9 +9781,9 @@
   "12601400": {
     "id": 12601400,
     "idCN": "战斗/角色技能/05/伊索斯/S",
-    "tagName": "tag_tagName_12601400",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601401": {
     "id": 12601401,
@@ -9801,24 +9801,24 @@
   },
   "12601403": {
     "id": 12601403,
-    "idCN": "战斗/敌方卡牌",
-    "tagName": "tag_tagName_12601403",
+    "idCN": "战斗/卡牌/敌方卡牌",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601405": {
     "id": 12601405,
     "idCN": "战斗/角色技能/05/雅莱/A",
-    "tagName": "tag_tagName_12601405",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601406": {
     "id": 12601406,
     "idCN": "战斗/角色技能/05/雅莱/S",
-    "tagName": "tag_tagName_12601406",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601407": {
     "id": 12601407,
@@ -9998,16 +9998,16 @@
   "12601431": {
     "id": 12601431,
     "idCN": "战斗/角色技能/05/帕拉笛/S",
-    "tagName": "tag_tagName_12601431",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601433": {
     "id": 12601433,
     "idCN": "战斗/角色技能/05/帕拉笛/A",
-    "tagName": "tag_tagName_12601433",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601434": {
     "id": 12601434,
@@ -10103,21 +10103,21 @@
   "12601448": {
     "id": 12601448,
     "idCN": "战斗/角色技能/05/生驹/B",
-    "tagName": "tag_tagName_12601448",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601449": {
     "id": 12601449,
     "idCN": "战斗/角色技能/05/生驹/A",
-    "tagName": "tag_tagName_12601449",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601450": {
     "id": 12601450,
     "idCN": "战斗/角色技能/05/生驹/S",
-    "tagName": "tag_tagName_12601450",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -10145,7 +10145,7 @@
   "12601454": {
     "id": 12601454,
     "idCN": "战斗/角色技能/05/生驹/C",
-    "tagName": "tag_tagName_12601454",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -10208,7 +10208,7 @@
   "12601462": {
     "id": 12601462,
     "idCN": "战斗/角色技能/05/佩罗塔/A",
-    "tagName": "tag_tagName_12601462",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -10250,7 +10250,7 @@
   "12601469": {
     "id": 12601469,
     "idCN": "战斗/角色技能/05/佩罗塔/S-0",
-    "tagName": "tag_tagName_12601469",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -10264,7 +10264,7 @@
   "12601464": {
     "id": 12601464,
     "idCN": "战斗/角色技能/05/佩罗塔/S-2",
-    "tagName": "tag_tagName_12601464",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -10278,21 +10278,21 @@
   "12601471": {
     "id": 12601471,
     "idCN": "战斗/角色技能/03/金子小姐/A",
-    "tagName": "tag_tagName_12601471",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601474": {
     "id": 12601474,
     "idCN": "战斗/角色技能/03/金子小姐/B",
-    "tagName": "tag_tagName_12601474",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601475": {
     "id": 12601475,
     "idCN": "战斗/角色技能/03/金子小姐/S",
-    "tagName": "tag_tagName_12601475",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -10341,9 +10341,9 @@
   "12601483": {
     "id": 12601483,
     "idCN": "战斗/角色技能/05/罗洁尔_人/A",
-    "tagName": "tag_tagName_12601483",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601484": {
     "id": 12601484,
@@ -10369,16 +10369,16 @@
   "12601489": {
     "id": 12601489,
     "idCN": "战斗/角色技能/05/罗洁尔_人/B",
-    "tagName": "tag_tagName_12601489",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601490": {
     "id": 12601490,
     "idCN": "战斗/角色技能/05/罗洁尔_人/S",
-    "tagName": "tag_tagName_12601490",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601491": {
     "id": 12601491,
@@ -10522,8 +10522,8 @@
   },
   "12601504": {
     "id": 12601504,
-    "idCN": "战斗/不可复制（影响人罗5觉）",
-    "tagName": "tag_tagName_12601504",
+    "idCN": "战斗/卡牌/不可复制（影响人罗5觉）",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -10551,14 +10551,14 @@
   "12601509": {
     "id": 12601509,
     "idCN": "战斗/角色技能/05/无名/A",
-    "tagName": "tag_tagName_12601509",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601510": {
     "id": 12601510,
     "idCN": "战斗/角色技能/05/无名/B",
-    "tagName": "tag_tagName_12601510",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -10579,7 +10579,7 @@
   "12601513": {
     "id": 12601513,
     "idCN": "战斗/角色技能/05/无名/S",
-    "tagName": "tag_tagName_12601513",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -10782,9 +10782,9 @@
   "12601543": {
     "id": 12601543,
     "idCN": "战斗/角色技能/05/乌刹娜/A",
-    "tagName": "tag_tagName_12601543",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601544": {
     "id": 12601544,
@@ -10943,21 +10943,21 @@
   "12601565": {
     "id": 12601565,
     "idCN": "战斗/角色技能/05/罗洁尔_天使/S",
-    "tagName": "tag_tagName_12601565",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601566": {
     "id": 12601566,
     "idCN": "战斗/角色技能/05/罗洁尔_天使/B",
-    "tagName": "tag_tagName_12601566",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601567": {
     "id": 12601567,
     "idCN": "战斗/角色技能/05/罗洁尔_天使/A",
-    "tagName": "tag_tagName_12601567",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -10999,7 +10999,7 @@
   "12601573": {
     "id": 12601573,
     "idCN": "战斗/角色技能/03/伽罗尔/A-1",
-    "tagName": "tag_tagName_12601573",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -11013,7 +11013,7 @@
   "12601575": {
     "id": 12601575,
     "idCN": "战斗/角色技能/04/叶珏/B",
-    "tagName": "tag_tagName_12601575",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -11027,7 +11027,7 @@
   "12601577": {
     "id": 12601577,
     "idCN": "战斗/角色技能/03/遥/B",
-    "tagName": "tag_tagName_12601577",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -11195,9 +11195,9 @@
   "12601602": {
     "id": 12601602,
     "idCN": "战斗/角色技能/05/柯娜/S-2",
-    "tagName": "tag_tagName_12601602",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601539": {
     "id": 12601539,
@@ -11223,9 +11223,9 @@
   "12601605": {
     "id": 12601605,
     "idCN": "战斗/角色技能/05/罗洁尔_天使/C",
-    "tagName": "tag_tagName_12601605",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601606": {
     "id": 12601606,
@@ -11314,37 +11314,37 @@
   "12601619": {
     "id": 12601619,
     "idCN": "战斗/角色技能/03/艾略特/S",
-    "tagName": "tag_tagName_12601619",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601620": {
     "id": 12601620,
     "idCN": "战斗/角色技能/03/弗兰/S",
-    "tagName": "tag_tagName_12601620",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601623": {
     "id": 12601623,
     "idCN": "战斗/角色技能/05/瑞秋/S",
-    "tagName": "tag_tagName_12601623",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601624": {
     "id": 12601624,
     "idCN": "战斗/角色技能/05/瑞秋/B-1",
-    "tagName": "tag_tagName_12601624",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601628": {
     "id": 12601628,
     "idCN": "战斗/角色技能/03/朱利安/A-0",
-    "tagName": "tag_tagName_12601628",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601622": {
     "id": 12601622,
@@ -11356,91 +11356,91 @@
   "12601625": {
     "id": 12601625,
     "idCN": "战斗/角色技能/03/波克士/S-1",
-    "tagName": "tag_tagName_12601625",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601626": {
     "id": 12601626,
     "idCN": "战斗/角色技能/05/乌刹娜/S",
-    "tagName": "tag_tagName_12601626",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601627": {
     "id": 12601627,
     "idCN": "战斗/角色技能/05/佩罗塔/S-1",
-    "tagName": "tag_tagName_12601627",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601629": {
     "id": 12601629,
     "idCN": "战斗/角色技能/05/那由他/S-1",
-    "tagName": "tag_tagName_12601629",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601630": {
     "id": 12601630,
     "idCN": "战斗/角色技能/05/那由他/S-3",
-    "tagName": "tag_tagName_12601630",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601631": {
     "id": 12601631,
     "idCN": "战斗/角色技能/05/卡塔斯/A",
-    "tagName": "tag_tagName_12601631",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601632": {
     "id": 12601632,
     "idCN": "战斗/角色技能/04/霖/A",
-    "tagName": "tag_tagName_12601632",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601633": {
     "id": 12601633,
     "idCN": "战斗/角色技能/04/霖/S",
-    "tagName": "tag_tagName_12601633",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601634": {
     "id": 12601634,
     "idCN": "战斗/角色技能/04/塞西尔/S",
-    "tagName": "tag_tagName_12601634",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601635": {
     "id": 12601635,
     "idCN": "战斗/角色技能/04/卡莱雅/A",
-    "tagName": "tag_tagName_12601635",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601636": {
     "id": 12601636,
     "idCN": "战斗/角色技能/04/瓦伦汀/S",
-    "tagName": "tag_tagName_12601636",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601637": {
     "id": 12601637,
     "idCN": "战斗/角色技能/03/伽罗尔/S",
-    "tagName": "tag_tagName_12601637",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601638": {
     "id": 12601638,
     "idCN": "战斗/角色技能/03/塔拉/S",
-    "tagName": "tag_tagName_12601638",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -11461,7 +11461,7 @@
   "12601639": {
     "id": 12601639,
     "idCN": "战斗/角色技能/05/闻笙/S",
-    "tagName": "tag_tagName_12601639",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -11475,28 +11475,28 @@
   "12601641": {
     "id": 12601641,
     "idCN": "战斗/角色技能/05/莱卡吉亚/B",
-    "tagName": "tag_tagName_12601641",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601642": {
     "id": 12601642,
     "idCN": "战斗/角色技能/05/莱卡吉亚/A",
-    "tagName": "tag_tagName_12601642",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601643": {
     "id": 12601643,
     "idCN": "战斗/角色技能/05/莱卡吉亚/S",
-    "tagName": "tag_tagName_12601643",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601644": {
     "id": 12601644,
     "idCN": "战斗/角色技能/05/莱卡吉亚/A共振2",
-    "tagName": "tag_tagName_12601644",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -11643,21 +11643,21 @@
   "12601666": {
     "id": 12601666,
     "idCN": "战斗/角色技能/05/奥莉薇恩/A",
-    "tagName": "tag_tagName_12601666",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601667": {
     "id": 12601667,
     "idCN": "战斗/角色技能/05/奥莉薇恩/B",
-    "tagName": "tag_tagName_12601667",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601668": {
     "id": 12601668,
     "idCN": "战斗/角色技能/05/奥莉薇恩/S",
-    "tagName": "tag_tagName_12601668",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -11685,14 +11685,14 @@
   "12601671": {
     "id": 12601671,
     "idCN": "战斗/角色技能/05/涟/A",
-    "tagName": "tag_tagName_12601671",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601672": {
     "id": 12601672,
     "idCN": "战斗/角色技能/05/涟/B",
-    "tagName": "tag_tagName_12601672",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -11783,28 +11783,28 @@
   "12601686": {
     "id": 12601686,
     "idCN": "战斗/角色技能/05/马吉拉·星仪/A-1",
-    "tagName": "tag_tagName_12601686",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601687": {
     "id": 12601687,
     "idCN": "战斗/角色技能/05/马吉拉·星仪/S",
-    "tagName": "tag_tagName_12601687",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601688": {
     "id": 12601688,
     "idCN": "战斗/角色技能/05/马吉拉·星仪/B",
-    "tagName": "tag_tagName_12601688",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601689": {
     "id": 12601689,
     "idCN": "战斗/角色技能/05/马吉拉·星仪/A-0",
-    "tagName": "tag_tagName_12601689",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -11818,14 +11818,14 @@
   "12601691": {
     "id": 12601691,
     "idCN": "战斗/角色技能/05/马吉拉·星仪/A-2",
-    "tagName": "tag_tagName_12601691",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601692": {
     "id": 12601692,
     "idCN": "战斗/角色技能/05/马吉拉·星仪/A-3",
-    "tagName": "tag_tagName_12601692",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -12021,51 +12021,51 @@
   "12601719": {
     "id": 12601719,
     "idCN": "战斗/角色技能/05/真咲/A-3",
-    "tagName": "tag_tagName_12601719",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601720": {
     "id": 12601720,
     "idCN": "战斗/角色技能/05/真咲/A-2",
-    "tagName": "tag_tagName_12601720",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601721": {
     "id": 12601721,
     "idCN": "战斗/角色技能/05/真咲/A-1",
-    "tagName": "tag_tagName_12601721",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601722": {
     "id": 12601722,
     "idCN": "战斗/角色技能/05/真咲/S",
-    "tagName": "tag_tagName_12601722",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601723": {
     "id": 12601723,
     "idCN": "战斗/角色技能/05/真咲/B",
-    "tagName": "tag_tagName_12601723",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601724": {
     "id": 12601724,
     "idCN": "战斗/角色技能/05/真咲/A-0",
-    "tagName": "tag_tagName_12601724",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601725": {
     "id": 12601725,
     "idCN": "战斗/角色技能/05/真咲/C",
-    "tagName": "tag_tagName_12601725",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601718": {
     "id": 12601718,
@@ -12161,56 +12161,56 @@
   "12601738": {
     "id": 12601738,
     "idCN": "战斗/角色技能/05/瑞瓦/B-1",
-    "tagName": "tag_tagName_12601738",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601739": {
     "id": 12601739,
     "idCN": "战斗/角色技能/05/瑞瓦/B-2",
-    "tagName": "tag_tagName_12601739",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601740": {
     "id": 12601740,
     "idCN": "战斗/角色技能/05/瑞瓦/B-3",
-    "tagName": "tag_tagName_12601740",
+    "tagName": "",
     "mod": "标签",
-    "detail": null
+    "detail": ""
   },
   "12601741": {
     "id": 12601741,
     "idCN": "战斗/角色技能/05/瑞瓦/S-1",
-    "tagName": "tag_tagName_12601741",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601742": {
     "id": 12601742,
     "idCN": "战斗/角色技能/05/瑞瓦/S-2",
-    "tagName": "tag_tagName_12601742",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601743": {
     "id": 12601743,
     "idCN": "战斗/角色技能/05/瑞瓦/C",
-    "tagName": "tag_tagName_12601743",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601744": {
     "id": 12601744,
     "idCN": "战斗/角色技能/05/瑞瓦/瑞瓦自身",
-    "tagName": "tag_tagName_12601744",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601745": {
     "id": 12601745,
     "idCN": "战斗/角色技能/05/瑞瓦/待回收",
-    "tagName": "tag_tagName_12601745",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -12231,21 +12231,21 @@
   "12601749": {
     "id": 12601749,
     "idCN": "战斗/角色技能/05/薇尔岚/待回收",
-    "tagName": "tag_tagName_12601749",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601750": {
     "id": 12601750,
-    "idCN": "战斗/决一卡",
-    "tagName": "tag_tagName_12601750",
+    "idCN": "战斗/卡牌/决一卡",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
   "12601751": {
     "id": 12601751,
     "idCN": "战斗/角色技能/05/薇尔岚/特殊免控",
-    "tagName": "tag_tagName_12601751",
+    "tagName": "",
     "mod": "标签",
     "detail": ""
   },
@@ -12399,7 +12399,203 @@
   "12601772": {
     "id": 12601772,
     "idCN": "战斗/角色技能/04/小麦/A",
-    "tagName": "tag_tagName_12601772",
+    "tagName": "",
+    "mod": "标签",
+    "detail": ""
+  },
+  "12601774": {
+    "id": 12601774,
+    "idCN": "单位/05队员/克洛伊",
+    "tagName": "tag_tagName_12601774",
+    "mod": "标签",
+    "detail": null
+  },
+  "12601775": {
+    "id": 12601775,
+    "idCN": "卡池大保底/03真限定卡池-静流复刻3",
+    "tagName": "tag_tagName_12601775",
+    "mod": "卡池大保底",
+    "detail": null
+  },
+  "12601777": {
+    "id": 12601777,
+    "idCN": "战斗/准备丢弃（影响杖剑乌",
+    "tagName": "",
+    "mod": "标签",
+    "detail": ""
+  },
+  "12601776": {
+    "id": 12601776,
+    "idCN": "单位/10召唤物/小麦-大福号",
+    "tagName": "tag_tagName_12601776",
+    "mod": "标签",
+    "detail": null
+  },
+  "12601773": {
+    "id": 12601773,
+    "idCN": "战斗/角色技能/05/克洛伊/A",
+    "tagName": "",
+    "mod": "标签",
+    "detail": ""
+  },
+  "12601778": {
+    "id": 12601778,
+    "idCN": "战斗/角色技能/05/克洛伊/B",
+    "tagName": "",
+    "mod": "标签",
+    "detail": ""
+  },
+  "12601779": {
+    "id": 12601779,
+    "idCN": "战斗/角色技能/05/克洛伊/S",
+    "tagName": "",
+    "mod": "标签",
+    "detail": ""
+  },
+  "12601781": {
+    "id": 12601781,
+    "idCN": "战斗/词缀/技术/蚀灭/蚀灭免疫",
+    "tagName": "tag_tagName_12601781",
+    "mod": "标签",
+    "detail": "tag_detail_12601781"
+  },
+  "12601788": {
+    "id": 12601788,
+    "idCN": "战斗/卡牌/生命值回复",
+    "tagName": "",
+    "mod": "标签",
+    "detail": ""
+  },
+  "12601787": {
+    "id": 12601787,
+    "idCN": "传单地点标签/贡露城/明珠港口",
+    "tagName": null,
+    "mod": "传单地点",
+    "detail": null
+  },
+  "12601786": {
+    "id": 12601786,
+    "idCN": "传单地点标签/贡露城/诺玛餐厅",
+    "tagName": null,
+    "mod": "传单地点",
+    "detail": null
+  },
+  "12601785": {
+    "id": 12601785,
+    "idCN": "传单地点标签/贡露城/观海步道",
+    "tagName": null,
+    "mod": "传单地点",
+    "detail": null
+  },
+  "12601784": {
+    "id": 12601784,
+    "idCN": "传单地点标签/贡露城/新鱼记",
+    "tagName": null,
+    "mod": "传单地点",
+    "detail": null
+  },
+  "12601783": {
+    "id": 12601783,
+    "idCN": "传单地点标签/贡露城/鱼吟亭",
+    "tagName": null,
+    "mod": "传单地点",
+    "detail": null
+  },
+  "12601782": {
+    "id": 12601782,
+    "idCN": "传单地点标签/贡露城/城市月台",
+    "tagName": null,
+    "mod": "传单地点",
+    "detail": null
+  },
+  "12601789": {
+    "id": 12601789,
+    "idCN": "活动标签/全面征收",
+    "tagName": "tag_tagName_12601789",
+    "mod": "标签",
+    "detail": ""
+  },
+  "12601790": {
+    "id": 12601790,
+    "idCN": "单位/15敌方/泳装静流",
+    "tagName": "",
+    "mod": "标签",
+    "detail": ""
+  },
+  "12601791": {
+    "id": 12601791,
+    "idCN": "战斗/词缀/技术/重伤/重伤效果免疫",
+    "tagName": "tag_tagName_12601791",
+    "mod": "标签",
+    "detail": "tag_detail_12601791"
+  },
+  "12601792": {
+    "id": 12601792,
+    "idCN": "战斗/中立卡/庇佑",
+    "tagName": "",
+    "mod": "标签",
+    "detail": ""
+  },
+  "12601793": {
+    "id": 12601793,
+    "idCN": "战斗/词缀/技术/熔心",
+    "tagName": "tag_tagName_12601793",
+    "mod": "标签",
+    "detail": "tag_detail_12601793"
+  },
+  "12601794": {
+    "id": 12601794,
+    "idCN": "阵营标签/敌人/沼泞",
+    "tagName": null,
+    "mod": "阵营",
+    "detail": null
+  },
+  "12601795": {
+    "id": 12601795,
+    "idCN": "活动标签/核心挑战",
+    "tagName": "tag_tagName_12601795",
+    "mod": "标签",
+    "detail": ""
+  },
+  "12601797": {
+    "id": 12601797,
+    "idCN": "战斗/角色技能/05/伊卡菈/伊卡菈",
+    "tagName": "",
+    "mod": "标签",
+    "detail": ""
+  },
+  "12601798": {
+    "id": 12601798,
+    "idCN": "战斗/待使用（伊卡菈",
+    "tagName": "tag_tagName_12601798",
+    "mod": "标签",
+    "detail": ""
+  },
+  "12601796": {
+    "id": 12601796,
+    "idCN": "战斗/角色技能/05/伊卡菈/A",
+    "tagName": "",
+    "mod": "标签",
+    "detail": ""
+  },
+  "12601780": {
+    "id": 12601780,
+    "idCN": "单位/05队员/伊卡菈",
+    "tagName": "tag_tagName_12601780",
+    "mod": "标签",
+    "detail": null
+  },
+  "12601799": {
+    "id": 12601799,
+    "idCN": "列车皮肤/涟",
+    "tagName": "tag_tagName_12601799",
+    "mod": "标签",
+    "detail": ""
+  },
+  "12601800": {
+    "id": 12601800,
+    "idCN": "列车皮肤/伊卡菈",
+    "tagName": "tag_tagName_12601800",
     "mod": "标签",
     "detail": ""
   }

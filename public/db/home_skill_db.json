@@ -1713,5 +1713,54 @@
     "desc": "home_skill_desc_83900245",
     "param": 0.1,
     "homeSkillType": "AddQty"
+  },
+  "83900246": {
+    "id": 83900246,
+    "name": "home_skill_name_83900246",
+    "desc": "home_skill_desc_83900246",
+    "param": 0.01,
+    "homeSkillType": "HaggleSuccessRate"
+  },
+  "83900247": {
+    "id": 83900247,
+    "name": "home_skill_name_83900247",
+    "desc": "home_skill_desc_83900247",
+    "param": 5,
+    "homeSkillType": "RiseSpaceLimited"
+  },
+  "83900248": {
+    "id": 83900248,
+    "name": "home_skill_name_83900248",
+    "desc": "home_skill_desc_83900248",
+    "param": 5,
+    "homeSkillType": "AddSpeed"
+  },
+  "83900249": {
+    "id": 83900249,
+    "name": "home_skill_name_83900249",
+    "desc": "home_skill_desc_83900249",
+    "param": 0.2,
+    "homeSkillType": "AddSpecQty"
+  },
+  "83900250": {
+    "id": 83900250,
+    "name": "home_skill_name_83900250",
+    "desc": "home_skill_desc_83900250",
+    "param": 0.1,
+    "homeSkillType": "AddSpecQty"
+  },
+  "83900252": {
+    "id": 83900252,
+    "name": "home_skill_name_83900252",
+    "desc": "home_skill_desc_83900252",
+    "param": 0.15,
+    "homeSkillType": "AddTrailerSpeed"
+  },
+  "83900253": {
+    "id": 83900253,
+    "name": "home_skill_name_83900253",
+    "desc": "home_skill_desc_83900253",
+    "param": 0.1,
+    "homeSkillType": "AddTrailerSpeed"
   }
 }

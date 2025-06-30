@@ -3180,7 +3180,7 @@
     "desParamList": [],
     "skillParamList": [
       {
-        "skillRateA_SN": 50000,
+        "skillRateA_SN": 100000,
         "skillRateB_SN": 400000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -3194,7 +3194,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 51500,
+        "skillRateA_SN": 103000,
         "skillRateB_SN": 412000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -3208,7 +3208,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 53000,
+        "skillRateA_SN": 106000,
         "skillRateB_SN": 424000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -3222,7 +3222,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 54500,
+        "skillRateA_SN": 109000,
         "skillRateB_SN": 436000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -3236,7 +3236,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 56000,
+        "skillRateA_SN": 112000,
         "skillRateB_SN": 448000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -3250,7 +3250,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 57500,
+        "skillRateA_SN": 115000,
         "skillRateB_SN": 460000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -3264,7 +3264,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 59000,
+        "skillRateA_SN": 118000,
         "skillRateB_SN": 472000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -3278,7 +3278,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 60500,
+        "skillRateA_SN": 121000,
         "skillRateB_SN": 484000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -3292,7 +3292,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 62000,
+        "skillRateA_SN": 124000,
         "skillRateB_SN": 496000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -3306,7 +3306,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 63500,
+        "skillRateA_SN": 127000,
         "skillRateB_SN": 508000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -3320,7 +3320,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 65000,
+        "skillRateA_SN": 130000,
         "skillRateB_SN": 520000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -6455,7 +6455,7 @@
     "desParamList": [],
     "skillParamList": [
       {
-        "skillRateA_SN": 50000,
+        "skillRateA_SN": 70000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -6469,7 +6469,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 51500,
+        "skillRateA_SN": 72100,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -6483,7 +6483,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 53000,
+        "skillRateA_SN": 74200,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -6497,7 +6497,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 54500,
+        "skillRateA_SN": 76300,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -6511,7 +6511,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 56000,
+        "skillRateA_SN": 78400,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -6525,7 +6525,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 57500,
+        "skillRateA_SN": 80500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -6539,7 +6539,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 59000,
+        "skillRateA_SN": 82600,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -6553,7 +6553,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 60500,
+        "skillRateA_SN": 84700,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -6567,7 +6567,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 62000,
+        "skillRateA_SN": 86800,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -6581,7 +6581,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 63500,
+        "skillRateA_SN": 88900,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -6595,7 +6595,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 65000,
+        "skillRateA_SN": 91000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -8311,7 +8311,7 @@
     "desParamList": [],
     "skillParamList": [
       {
-        "skillRateA_SN": 180000,
+        "skillRateA_SN": 200000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -8325,7 +8325,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 185400,
+        "skillRateA_SN": 206000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -8339,7 +8339,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 190800,
+        "skillRateA_SN": 212000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -8353,7 +8353,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 196200,
+        "skillRateA_SN": 218000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -8367,7 +8367,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 201600,
+        "skillRateA_SN": 224000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -8381,7 +8381,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 207000,
+        "skillRateA_SN": 230000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -8395,7 +8395,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 212400,
+        "skillRateA_SN": 236000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -8409,7 +8409,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 217800,
+        "skillRateA_SN": 242000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -8423,7 +8423,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 223200,
+        "skillRateA_SN": 248000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -8437,7 +8437,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 228600,
+        "skillRateA_SN": 254000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -8451,7 +8451,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 234000,
+        "skillRateA_SN": 260000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14084,7 +14084,7 @@
     "desParamList": [],
     "skillParamList": [
       {
-        "skillRateA_SN": 500000,
+        "skillRateA_SN": 700000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14098,7 +14098,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 515000,
+        "skillRateA_SN": 721000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14112,7 +14112,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 530000,
+        "skillRateA_SN": 742000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14126,7 +14126,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 545000,
+        "skillRateA_SN": 763000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14140,7 +14140,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 560000,
+        "skillRateA_SN": 784000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14154,7 +14154,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 575000,
+        "skillRateA_SN": 805000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14168,7 +14168,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 590000,
+        "skillRateA_SN": 826000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14182,7 +14182,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 605000,
+        "skillRateA_SN": 847000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14196,7 +14196,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 620000,
+        "skillRateA_SN": 868000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14210,7 +14210,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 635000,
+        "skillRateA_SN": 889000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14224,7 +14224,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 650000,
+        "skillRateA_SN": 910000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14472,7 +14472,7 @@
     "desParamList": [],
     "skillParamList": [
       {
-        "skillRateA_SN": 80000,
+        "skillRateA_SN": 100000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14486,7 +14486,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 82400,
+        "skillRateA_SN": 103000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14500,7 +14500,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 84800,
+        "skillRateA_SN": 106000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14514,7 +14514,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 87200,
+        "skillRateA_SN": 109000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14528,7 +14528,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 89600,
+        "skillRateA_SN": 112000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14542,7 +14542,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 92000,
+        "skillRateA_SN": 115000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14556,7 +14556,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 94400,
+        "skillRateA_SN": 118000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14570,7 +14570,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 96800,
+        "skillRateA_SN": 121000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14584,7 +14584,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 99200,
+        "skillRateA_SN": 124000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14598,7 +14598,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 101600,
+        "skillRateA_SN": 127000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -14612,7 +14612,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 104000,
+        "skillRateA_SN": 130000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -19830,7 +19830,7 @@
     "id": 12300569,
     "name": "skill_name_12300569",
     "mod": "主动技能",
-    "description": "",
+    "description": "skill_description_12300569",
     "detailDescription": "",
     "ExSkillList": [],
     "cardID": 10600141,
@@ -20500,7 +20500,7 @@
     "desParamList": [],
     "skillParamList": [
       {
-        "skillRateA_SN": 50000,
+        "skillRateA_SN": 70000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -20514,7 +20514,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 51500,
+        "skillRateA_SN": 72100,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -20528,7 +20528,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 53000,
+        "skillRateA_SN": 74200,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -20542,7 +20542,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 54500,
+        "skillRateA_SN": 76300,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -20556,7 +20556,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 56000,
+        "skillRateA_SN": 78400,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -20570,7 +20570,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 57500,
+        "skillRateA_SN": 80500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -20584,7 +20584,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 59000,
+        "skillRateA_SN": 82600,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -20598,7 +20598,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 60500,
+        "skillRateA_SN": 84700,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -20612,7 +20612,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 62000,
+        "skillRateA_SN": 86800,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -20626,7 +20626,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 63500,
+        "skillRateA_SN": 88900,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -20640,7 +20640,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 65000,
+        "skillRateA_SN": 91000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -23285,105 +23285,7 @@
     "desParamList": [],
     "skillParamList": [
       {
-        "skillRateA_SN": 150000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 157500,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 165000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 172500,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 180000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 187500,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 195000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 202500,
+        "skillRateA_SN": 200000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -23411,7 +23313,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 217500,
+        "skillRateA_SN": 220000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -23425,7 +23327,105 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 225000,
+        "skillRateA_SN": 230000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 240000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 250000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 260000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 270000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 280000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 290000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 300000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -23452,76 +23452,6 @@
     "desParamList": [],
     "skillParamList": [
       {
-        "skillRateA_SN": 40000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 42000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 44000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 46000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 48000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
         "skillRateA_SN": 50000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
@@ -23536,7 +23466,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 52000,
+        "skillRateA_SN": 52500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -23550,7 +23480,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 54000,
+        "skillRateA_SN": 55000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -23564,21 +23494,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 56000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 58000,
+        "skillRateA_SN": 57500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -23593,6 +23509,90 @@
       },
       {
         "skillRateA_SN": 60000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 62500,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 65000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 67500,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 70000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 72500,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 75000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -23625,7 +23625,7 @@
     "skillParamList": [
       {
         "skillRateA_SN": 120000,
-        "skillRateB_SN": 40000,
+        "skillRateB_SN": 70000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -23940,76 +23940,6 @@
     ],
     "skillParamList": [
       {
-        "skillRateA_SN": 40000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 42000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 44000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 46000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 48000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
         "skillRateA_SN": 50000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
@@ -24024,7 +23954,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 52000,
+        "skillRateA_SN": 52500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -24038,7 +23968,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 54000,
+        "skillRateA_SN": 55000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -24052,21 +23982,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 56000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 58000,
+        "skillRateA_SN": 57500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -24081,6 +23997,90 @@
       },
       {
         "skillRateA_SN": 60000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 62500,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 65000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 67500,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 70000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 72500,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 75000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -27757,7 +27757,7 @@
     "desParamList": [],
     "skillParamList": [
       {
-        "skillRateA_SN": 180000,
+        "skillRateA_SN": 200000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -27771,7 +27771,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 185400,
+        "skillRateA_SN": 206000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -27785,7 +27785,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 190800,
+        "skillRateA_SN": 212000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -27799,7 +27799,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 196200,
+        "skillRateA_SN": 218000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -27813,7 +27813,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 201600,
+        "skillRateA_SN": 224000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -27827,7 +27827,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 207000,
+        "skillRateA_SN": 230000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -27841,7 +27841,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 212400,
+        "skillRateA_SN": 236000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -27855,7 +27855,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 217800,
+        "skillRateA_SN": 242000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -27869,7 +27869,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 223200,
+        "skillRateA_SN": 248000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -27883,7 +27883,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 228600,
+        "skillRateA_SN": 254000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -27897,7 +27897,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 234000,
+        "skillRateA_SN": 260000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -29435,7 +29435,7 @@
     ],
     "skillParamList": [
       {
-        "skillRateA_SN": 20000,
+        "skillRateA_SN": 30000,
         "skillRateB_SN": 10000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -35837,7 +35837,7 @@
     ],
     "skillParamList": [
       {
-        "skillRateA_SN": 500000,
+        "skillRateA_SN": 700000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -35851,7 +35851,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 515000,
+        "skillRateA_SN": 721000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -35865,7 +35865,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 530000,
+        "skillRateA_SN": 742000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -35879,7 +35879,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 545000,
+        "skillRateA_SN": 763000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -35893,7 +35893,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 560000,
+        "skillRateA_SN": 784000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -35907,7 +35907,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 575000,
+        "skillRateA_SN": 805000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -35921,7 +35921,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 590000,
+        "skillRateA_SN": 826000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -35935,7 +35935,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 605000,
+        "skillRateA_SN": 847000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -35949,7 +35949,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 620000,
+        "skillRateA_SN": 868000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -35963,7 +35963,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 635000,
+        "skillRateA_SN": 889000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -35977,7 +35977,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 650000,
+        "skillRateA_SN": 910000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -51263,76 +51263,6 @@
     "desParamList": [],
     "skillParamList": [
       {
-        "skillRateA_SN": 200000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 210000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 220000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 230000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 240000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
         "skillRateA_SN": 250000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
@@ -51347,7 +51277,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 260000,
+        "skillRateA_SN": 262500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -51361,7 +51291,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 270000,
+        "skillRateA_SN": 275000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -51375,21 +51305,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 280000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 290000,
+        "skillRateA_SN": 287500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -51404,6 +51320,90 @@
       },
       {
         "skillRateA_SN": 300000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 312500,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 325000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 337500,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 350000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 362500,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 375000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -51444,7 +51444,7 @@
     "desParamList": [],
     "skillParamList": [
       {
-        "skillRateA_SN": 200000,
+        "skillRateA_SN": 250000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -51458,7 +51458,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 206000,
+        "skillRateA_SN": 257500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -51472,7 +51472,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 212000,
+        "skillRateA_SN": 265000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -51486,7 +51486,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 218000,
+        "skillRateA_SN": 272500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -51500,7 +51500,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 224000,
+        "skillRateA_SN": 280000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -51514,7 +51514,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 230000,
+        "skillRateA_SN": 287500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -51528,7 +51528,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 236000,
+        "skillRateA_SN": 295000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -51542,7 +51542,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 242000,
+        "skillRateA_SN": 302500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -51556,7 +51556,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 248000,
+        "skillRateA_SN": 310000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -51570,7 +51570,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 254000,
+        "skillRateA_SN": 317500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -51584,7 +51584,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 260000,
+        "skillRateA_SN": 325000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -52414,7 +52414,7 @@
     "desParamList": [],
     "skillParamList": [
       {
-        "skillRateA_SN": 200000,
+        "skillRateA_SN": 250000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -52428,7 +52428,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 206000,
+        "skillRateA_SN": 257500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -52442,7 +52442,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 212000,
+        "skillRateA_SN": 265000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -52456,7 +52456,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 218000,
+        "skillRateA_SN": 272500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -52470,7 +52470,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 224000,
+        "skillRateA_SN": 280000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -52484,7 +52484,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 230000,
+        "skillRateA_SN": 287500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -52498,7 +52498,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 236000,
+        "skillRateA_SN": 295000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -52512,7 +52512,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 242000,
+        "skillRateA_SN": 302500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -52526,7 +52526,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 248000,
+        "skillRateA_SN": 310000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -52540,7 +52540,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 254000,
+        "skillRateA_SN": 317500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -52554,7 +52554,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 260000,
+        "skillRateA_SN": 325000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56052,7 +56052,7 @@
     "desParamList": [],
     "skillParamList": [
       {
-        "skillRateA_SN": 900000,
+        "skillRateA_SN": 1000000,
         "skillRateB_SN": 200000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56066,7 +56066,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 927000,
+        "skillRateA_SN": 1030000,
         "skillRateB_SN": 206000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56080,7 +56080,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 954000,
+        "skillRateA_SN": 1060000,
         "skillRateB_SN": 212000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56094,7 +56094,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 981000,
+        "skillRateA_SN": 1090000,
         "skillRateB_SN": 218000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56108,7 +56108,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1008000,
+        "skillRateA_SN": 1120000,
         "skillRateB_SN": 224000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56122,7 +56122,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1035000,
+        "skillRateA_SN": 1150000,
         "skillRateB_SN": 230000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56136,7 +56136,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1062000,
+        "skillRateA_SN": 1180000,
         "skillRateB_SN": 236000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56150,7 +56150,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1089000,
+        "skillRateA_SN": 1210000,
         "skillRateB_SN": 242000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56164,7 +56164,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1116000,
+        "skillRateA_SN": 1240000,
         "skillRateB_SN": 248000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56178,7 +56178,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1143000,
+        "skillRateA_SN": 1270000,
         "skillRateB_SN": 254000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56192,7 +56192,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1170000,
+        "skillRateA_SN": 1300000,
         "skillRateB_SN": 260000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56219,7 +56219,7 @@
     "desParamList": [],
     "skillParamList": [
       {
-        "skillRateA_SN": 900000,
+        "skillRateA_SN": 1000000,
         "skillRateB_SN": 200000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56233,7 +56233,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 927000,
+        "skillRateA_SN": 1030000,
         "skillRateB_SN": 206000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56247,7 +56247,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 954000,
+        "skillRateA_SN": 1060000,
         "skillRateB_SN": 212000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56261,7 +56261,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 981000,
+        "skillRateA_SN": 1090000,
         "skillRateB_SN": 218000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56275,7 +56275,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1008000,
+        "skillRateA_SN": 1120000,
         "skillRateB_SN": 224000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56289,7 +56289,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1035000,
+        "skillRateA_SN": 1150000,
         "skillRateB_SN": 230000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56303,7 +56303,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1062000,
+        "skillRateA_SN": 1180000,
         "skillRateB_SN": 236000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56317,7 +56317,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1089000,
+        "skillRateA_SN": 1210000,
         "skillRateB_SN": 242000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56331,7 +56331,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1116000,
+        "skillRateA_SN": 1240000,
         "skillRateB_SN": 248000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56345,7 +56345,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1143000,
+        "skillRateA_SN": 1270000,
         "skillRateB_SN": 254000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56359,7 +56359,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1170000,
+        "skillRateA_SN": 1300000,
         "skillRateB_SN": 260000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56725,7 +56725,7 @@
     "desParamList": [],
     "skillParamList": [
       {
-        "skillRateA_SN": 900000,
+        "skillRateA_SN": 1000000,
         "skillRateB_SN": 200000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56739,7 +56739,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 927000,
+        "skillRateA_SN": 1030000,
         "skillRateB_SN": 206000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56753,7 +56753,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 954000,
+        "skillRateA_SN": 1060000,
         "skillRateB_SN": 212000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56767,7 +56767,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 981000,
+        "skillRateA_SN": 1090000,
         "skillRateB_SN": 218000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56781,7 +56781,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1008000,
+        "skillRateA_SN": 1120000,
         "skillRateB_SN": 224000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56795,7 +56795,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1035000,
+        "skillRateA_SN": 1150000,
         "skillRateB_SN": 230000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56809,7 +56809,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1062000,
+        "skillRateA_SN": 1180000,
         "skillRateB_SN": 236000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56823,7 +56823,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1089000,
+        "skillRateA_SN": 1210000,
         "skillRateB_SN": 242000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56837,7 +56837,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1116000,
+        "skillRateA_SN": 1240000,
         "skillRateB_SN": 248000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56851,7 +56851,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1143000,
+        "skillRateA_SN": 1270000,
         "skillRateB_SN": 254000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -56865,7 +56865,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 1170000,
+        "skillRateA_SN": 1300000,
         "skillRateB_SN": 260000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -66909,7 +66909,7 @@
     "skillParamList": [
       {
         "skillRateA_SN": 80000,
-        "skillRateB_SN": 400000,
+        "skillRateB_SN": 640000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -66923,7 +66923,7 @@
       },
       {
         "skillRateA_SN": 82400,
-        "skillRateB_SN": 412000,
+        "skillRateB_SN": 659200,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -66937,7 +66937,7 @@
       },
       {
         "skillRateA_SN": 84800,
-        "skillRateB_SN": 424000,
+        "skillRateB_SN": 678400,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -66951,7 +66951,7 @@
       },
       {
         "skillRateA_SN": 87200,
-        "skillRateB_SN": 436000,
+        "skillRateB_SN": 697600,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -66965,7 +66965,7 @@
       },
       {
         "skillRateA_SN": 89600,
-        "skillRateB_SN": 448000,
+        "skillRateB_SN": 716800,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -66979,7 +66979,7 @@
       },
       {
         "skillRateA_SN": 92000,
-        "skillRateB_SN": 460000,
+        "skillRateB_SN": 736000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -66993,7 +66993,7 @@
       },
       {
         "skillRateA_SN": 94400,
-        "skillRateB_SN": 472000,
+        "skillRateB_SN": 755200,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -67007,7 +67007,7 @@
       },
       {
         "skillRateA_SN": 96800,
-        "skillRateB_SN": 484000,
+        "skillRateB_SN": 774400,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -67021,7 +67021,7 @@
       },
       {
         "skillRateA_SN": 99200,
-        "skillRateB_SN": 496000,
+        "skillRateB_SN": 793600,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -67035,7 +67035,7 @@
       },
       {
         "skillRateA_SN": 101600,
-        "skillRateB_SN": 508000,
+        "skillRateB_SN": 812800,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -67049,7 +67049,7 @@
       },
       {
         "skillRateA_SN": 104000,
-        "skillRateB_SN": 520000,
+        "skillRateB_SN": 832000,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -79418,7 +79418,7 @@
     "name": "skill_name_12303021",
     "mod": "主动技能",
     "description": "skill_description_12303021",
-    "detailDescription": "",
+    "detailDescription": "skill_detailDescription_12303021",
     "ExSkillList": [],
     "cardID": 10600441,
     "leaderCardConditionDesc": "",
@@ -79594,7 +79594,7 @@
   },
   "12302348": {
     "id": 12302348,
-    "name": "",
+    "name": "skill_name_12302348",
     "mod": "主动技能",
     "description": "skill_description_12302348",
     "detailDescription": "",
@@ -79954,7 +79954,7 @@
     ],
     "skillParamList": [
       {
-        "skillRateA_SN": 3600,
+        "skillRateA_SN": 3750,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -79968,7 +79968,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 3780,
+        "skillRateA_SN": 3938,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -79982,7 +79982,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 3960,
+        "skillRateA_SN": 4125,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -79996,21 +79996,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 4140,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 4320,
+        "skillRateA_SN": 4313,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -80038,7 +80024,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 4680,
+        "skillRateA_SN": 4688,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -80052,7 +80038,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 4860,
+        "skillRateA_SN": 4875,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -80066,7 +80052,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 5040,
+        "skillRateA_SN": 5063,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -80080,7 +80066,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 5220,
+        "skillRateA_SN": 5250,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -80094,7 +80080,21 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 5400,
+        "skillRateA_SN": 5438,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 5625,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -80121,8 +80121,8 @@
     "desParamList": [],
     "skillParamList": [
       {
-        "skillRateA_SN": 120000,
-        "skillRateB_SN": 60000,
+        "skillRateA_SN": 125000,
+        "skillRateB_SN": 62500,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -80135,8 +80135,8 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 126000,
-        "skillRateB_SN": 63000,
+        "skillRateA_SN": 131250,
+        "skillRateB_SN": 65625,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -80149,8 +80149,8 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 132000,
-        "skillRateB_SN": 66000,
+        "skillRateA_SN": 137500,
+        "skillRateB_SN": 68750,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -80163,22 +80163,8 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 138000,
-        "skillRateB_SN": 69000,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 144000,
-        "skillRateB_SN": 72000,
+        "skillRateA_SN": 143750,
+        "skillRateB_SN": 71875,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -80205,8 +80191,8 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 156000,
-        "skillRateB_SN": 78000,
+        "skillRateA_SN": 156250,
+        "skillRateB_SN": 78125,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -80219,8 +80205,8 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 162000,
-        "skillRateB_SN": 81000,
+        "skillRateA_SN": 162500,
+        "skillRateB_SN": 81250,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -80233,8 +80219,8 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 168000,
-        "skillRateB_SN": 84000,
+        "skillRateA_SN": 168750,
+        "skillRateB_SN": 84375,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -80247,8 +80233,8 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 174000,
-        "skillRateB_SN": 87000,
+        "skillRateA_SN": 175000,
+        "skillRateB_SN": 87500,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -80261,8 +80247,22 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 180000,
-        "skillRateB_SN": 90000,
+        "skillRateA_SN": 181250,
+        "skillRateB_SN": 90625,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 187500,
+        "skillRateB_SN": 93750,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
         "skillRateE_SN": 0,
@@ -80288,7 +80288,7 @@
     "desParamList": [],
     "skillParamList": [
       {
-        "skillRateA_SN": 120000,
+        "skillRateA_SN": 125000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -80302,7 +80302,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 123600,
+        "skillRateA_SN": 128750,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -80316,7 +80316,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 127200,
+        "skillRateA_SN": 132500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -80330,7 +80330,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 130800,
+        "skillRateA_SN": 136250,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -80344,7 +80344,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 134400,
+        "skillRateA_SN": 140000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -80358,7 +80358,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 138000,
+        "skillRateA_SN": 143750,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -80372,7 +80372,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 141600,
+        "skillRateA_SN": 147500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -80386,7 +80386,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 145200,
+        "skillRateA_SN": 151250,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -80400,7 +80400,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 148800,
+        "skillRateA_SN": 155000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -80414,7 +80414,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 152400,
+        "skillRateA_SN": 158750,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -80428,7 +80428,7 @@
         "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 156000,
+        "skillRateA_SN": 162500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84424,7 +84424,7 @@
     "name": "skill_name_12303169",
     "mod": "主动技能",
     "description": "skill_description_12303169",
-    "detailDescription": "",
+    "detailDescription": "skill_detailDescription_12303169",
     "ExSkillList": [],
     "cardID": 10600461,
     "leaderCardConditionDesc": "",
@@ -84595,10 +84595,15 @@
     "ExSkillList": [],
     "cardID": 10600462,
     "leaderCardConditionDesc": "",
-    "desParamList": [],
+    "desParamList": [
+      {
+        "isPercent": true,
+        "param": "A"
+      }
+    ],
     "skillParamList": [
       {
-        "skillRateA_SN": 500000,
+        "skillRateA_SN": 2000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84609,10 +84614,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 525000,
+        "skillRateA_SN": 2100,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84623,10 +84628,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 550000,
+        "skillRateA_SN": 2200,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84637,10 +84642,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 575000,
+        "skillRateA_SN": 2300,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84651,10 +84656,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 600000,
+        "skillRateA_SN": 2400,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84665,10 +84670,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 625000,
+        "skillRateA_SN": 2500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84679,10 +84684,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 650000,
+        "skillRateA_SN": 2600,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84693,10 +84698,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 675000,
+        "skillRateA_SN": 2700,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84707,10 +84712,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 700000,
+        "skillRateA_SN": 2800,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84721,10 +84726,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 725000,
+        "skillRateA_SN": 2900,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84735,10 +84740,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 750000,
+        "skillRateA_SN": 3000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84749,7 +84754,7 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
+        "skillRateT_SN": 0
       }
     ]
   },
@@ -84758,14 +84763,14 @@
     "name": "skill_name_12303171",
     "mod": "主动技能",
     "description": "skill_description_12303171",
-    "detailDescription": "",
+    "detailDescription": "skill_detailDescription_12303171",
     "ExSkillList": [],
     "cardID": 10600463,
     "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12303171",
     "desParamList": [],
     "skillParamList": [
       {
-        "skillRateA_SN": 500000,
+        "skillRateA_SN": 300000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84779,7 +84784,7 @@
         "skillRateT_SN": 6000000
       },
       {
-        "skillRateA_SN": 515000,
+        "skillRateA_SN": 309000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84793,7 +84798,7 @@
         "skillRateT_SN": 6000000
       },
       {
-        "skillRateA_SN": 530000,
+        "skillRateA_SN": 318000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84807,7 +84812,7 @@
         "skillRateT_SN": 6000000
       },
       {
-        "skillRateA_SN": 545000,
+        "skillRateA_SN": 327000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84821,7 +84826,7 @@
         "skillRateT_SN": 6000000
       },
       {
-        "skillRateA_SN": 560000,
+        "skillRateA_SN": 336000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84835,7 +84840,7 @@
         "skillRateT_SN": 6000000
       },
       {
-        "skillRateA_SN": 575000,
+        "skillRateA_SN": 345000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84849,7 +84854,7 @@
         "skillRateT_SN": 6000000
       },
       {
-        "skillRateA_SN": 590000,
+        "skillRateA_SN": 354000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84863,7 +84868,7 @@
         "skillRateT_SN": 6000000
       },
       {
-        "skillRateA_SN": 605000,
+        "skillRateA_SN": 363000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84877,7 +84882,7 @@
         "skillRateT_SN": 6000000
       },
       {
-        "skillRateA_SN": 620000,
+        "skillRateA_SN": 372000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84891,7 +84896,7 @@
         "skillRateT_SN": 6000000
       },
       {
-        "skillRateA_SN": 635000,
+        "skillRateA_SN": 381000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -84905,7 +84910,7 @@
         "skillRateT_SN": 6000000
       },
       {
-        "skillRateA_SN": 650000,
+        "skillRateA_SN": 390000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -89494,30 +89499,6 @@
     "desParamList": [],
     "skillParamList": []
   },
-  "12303530": {
-    "id": 12303530,
-    "name": "",
-    "mod": "被动技能",
-    "description": "",
-    "detailDescription": "",
-    "ExSkillList": [],
-    "cardID": null,
-    "leaderCardConditionDesc": null,
-    "desParamList": [],
-    "skillParamList": []
-  },
-  "12303531": {
-    "id": 12303531,
-    "name": "",
-    "mod": "被动技能",
-    "description": "",
-    "detailDescription": "",
-    "ExSkillList": [],
-    "cardID": null,
-    "leaderCardConditionDesc": null,
-    "desParamList": [],
-    "skillParamList": []
-  },
   "12303532": {
     "id": 12303532,
     "name": "",
@@ -91973,173 +91954,6 @@
     "desParamList": [],
     "skillParamList": []
   },
-  "12303279": {
-    "id": 12303279,
-    "name": "skill_name_12303279",
-    "mod": "主动技能",
-    "description": "skill_description_12303279",
-    "detailDescription": "",
-    "ExSkillList": [],
-    "cardID": 10600477,
-    "leaderCardConditionDesc": "",
-    "desParamList": [],
-    "skillParamList": [
-      {
-        "skillRateA_SN": 300000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 315000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 330000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 345000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 360000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 375000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 390000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 405000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 420000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 435000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      },
-      {
-        "skillRateA_SN": 450000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 0
-      }
-    ]
-  },
   "12303280": {
     "id": 12303280,
     "name": "skill_name_12303280",
@@ -92149,177 +91963,15 @@
     "ExSkillList": [],
     "cardID": 10600476,
     "leaderCardConditionDesc": "",
-    "desParamList": [],
-    "skillParamList": [
+    "desParamList": [
       {
-        "skillRateA_SN": 500000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
-      },
-      {
-        "skillRateA_SN": 525000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
-      },
-      {
-        "skillRateA_SN": 550000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
-      },
-      {
-        "skillRateA_SN": 575000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
-      },
-      {
-        "skillRateA_SN": 600000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
-      },
-      {
-        "skillRateA_SN": 625000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
-      },
-      {
-        "skillRateA_SN": 650000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
-      },
-      {
-        "skillRateA_SN": 675000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
-      },
-      {
-        "skillRateA_SN": 700000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
-      },
-      {
-        "skillRateA_SN": 725000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
-      },
-      {
-        "skillRateA_SN": 750000,
-        "skillRateB_SN": 0,
-        "skillRateC_SN": 0,
-        "skillRateD_SN": 0,
-        "skillRateE_SN": 0,
-        "skillRateF_SN": 0,
-        "skillRateG_SN": 0,
-        "skillRateH_SN": 0,
-        "skillRateI_SN": 0,
-        "skillRateJ_SN": 0,
-        "skillRateL_SN": 0,
-        "skillRateT_SN": 3000000
+        "isPercent": true,
+        "param": "A"
       }
-    ]
-  },
-  "12303281": {
-    "id": 12303281,
-    "name": "skill_name_12303281",
-    "mod": "主动技能",
-    "description": "skill_description_12303281",
-    "detailDescription": "",
-    "ExSkillList": [],
-    "cardID": 10600475,
-    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12303281",
-    "desParamList": [],
+    ],
     "skillParamList": [
       {
-        "skillRateA_SN": 500000,
+        "skillRateA_SN": 2500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -92330,10 +91982,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 6000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 515000,
+        "skillRateA_SN": 2625,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -92344,10 +91996,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 6000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 530000,
+        "skillRateA_SN": 2750,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -92358,10 +92010,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 6000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 545000,
+        "skillRateA_SN": 2875,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -92372,10 +92024,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 6000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 560000,
+        "skillRateA_SN": 3000,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -92386,10 +92038,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 6000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 575000,
+        "skillRateA_SN": 3125,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -92400,10 +92052,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 6000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 590000,
+        "skillRateA_SN": 3250,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -92414,10 +92066,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 6000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 605000,
+        "skillRateA_SN": 3375,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -92428,10 +92080,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 6000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 620000,
+        "skillRateA_SN": 3500,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -92442,10 +92094,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 6000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 635000,
+        "skillRateA_SN": 3625,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -92456,10 +92108,10 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 6000000
+        "skillRateT_SN": 0
       },
       {
-        "skillRateA_SN": 650000,
+        "skillRateA_SN": 3750,
         "skillRateB_SN": 0,
         "skillRateC_SN": 0,
         "skillRateD_SN": 0,
@@ -92470,7 +92122,7 @@
         "skillRateI_SN": 0,
         "skillRateJ_SN": 0,
         "skillRateL_SN": 0,
-        "skillRateT_SN": 6000000
+        "skillRateT_SN": 0
       }
     ]
   },
@@ -92548,6 +92200,3095 @@
   },
   "12303288": {
     "id": 12303288,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303289": {
+    "id": 12303289,
+    "name": "skill_name_12303289",
+    "mod": "主动技能",
+    "description": "skill_description_12303289",
+    "detailDescription": "",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12300470,
+        "isNeturality": true
+      }
+    ],
+    "cardID": 10600480,
+    "leaderCardConditionDesc": "",
+    "desParamList": [],
+    "skillParamList": [
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      }
+    ]
+  },
+  "12303294": {
+    "id": 12303294,
+    "name": "skill_name_12303294",
+    "mod": "主动技能",
+    "description": "skill_description_12303294",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600479,
+    "leaderCardConditionDesc": "",
+    "desParamList": [],
+    "skillParamList": [
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      }
+    ]
+  },
+  "12303296": {
+    "id": 12303296,
+    "name": "skill_name_12303296",
+    "mod": "主动技能",
+    "description": "skill_description_12303296",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600478,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12303296",
+    "desParamList": [],
+    "skillParamList": [
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      }
+    ]
+  },
+  "12303297": {
+    "id": 12303297,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [
+      {
+        "isPercent": false,
+        "param": "a"
+      }
+    ],
+    "skillParamList": []
+  },
+  "12303304": {
+    "id": 12303304,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [
+      {
+        "isPercent": false,
+        "param": "a"
+      }
+    ],
+    "skillParamList": []
+  },
+  "12303305": {
+    "id": 12303305,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [
+      {
+        "isPercent": false,
+        "param": "a"
+      }
+    ],
+    "skillParamList": []
+  },
+  "12303306": {
+    "id": 12303306,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [
+      {
+        "isPercent": false,
+        "param": "a"
+      }
+    ],
+    "skillParamList": []
+  },
+  "12303307": {
+    "id": 12303307,
+    "name": "skill_name_12303307",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": [
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      }
+    ]
+  },
+  "12303308": {
+    "id": 12303308,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303309": {
+    "id": 12303309,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303329": {
+    "id": 12303329,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303330": {
+    "id": 12303330,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303331": {
+    "id": 12303331,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303332": {
+    "id": 12303332,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303352": {
+    "id": 12303352,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303353": {
+    "id": 12303353,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303357": {
+    "id": 12303357,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303358": {
+    "id": 12303358,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303361": {
+    "id": 12303361,
+    "name": "skill_name_12303361",
+    "mod": "被动技能",
+    "description": "skill_description_12303361",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303362": {
+    "id": 12303362,
+    "name": "skill_name_12303362",
+    "mod": "被动技能",
+    "description": "skill_description_12303362",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303363": {
+    "id": 12303363,
+    "name": "skill_name_12303363",
+    "mod": "被动技能",
+    "description": "skill_description_12303363",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303365": {
+    "id": 12303365,
+    "name": "skill_name_12303365",
+    "mod": "被动技能",
+    "description": "skill_description_12303365",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303366": {
+    "id": 12303366,
+    "name": "skill_name_12303366",
+    "mod": "被动技能",
+    "description": "skill_description_12303366",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303367": {
+    "id": 12303367,
+    "name": "skill_name_12303367",
+    "mod": "被动技能",
+    "description": "skill_description_12303367",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303364": {
+    "id": 12303364,
+    "name": "skill_name_12303364",
+    "mod": "被动技能",
+    "description": "skill_description_12303364",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303369": {
+    "id": 12303369,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303372": {
+    "id": 12303372,
+    "name": "skill_name_12303372",
+    "mod": "被动技能",
+    "description": "skill_description_12303372",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303373": {
+    "id": 12303373,
+    "name": "skill_name_12303373",
+    "mod": "被动技能",
+    "description": "skill_description_12303373",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303374": {
+    "id": 12303374,
+    "name": "skill_name_12303374",
+    "mod": "被动技能",
+    "description": "skill_description_12303374",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303375": {
+    "id": 12303375,
+    "name": "skill_name_12303375",
+    "mod": "被动技能",
+    "description": "skill_description_12303375",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303376": {
+    "id": 12303376,
+    "name": "skill_name_12303376",
+    "mod": "被动技能",
+    "description": "skill_description_12303376",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303377": {
+    "id": 12303377,
+    "name": "skill_name_12303377",
+    "mod": "被动技能",
+    "description": "skill_description_12303377",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303378": {
+    "id": 12303378,
+    "name": "skill_name_12303378",
+    "mod": "被动技能",
+    "description": "skill_description_12303378",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303379": {
+    "id": 12303379,
+    "name": "skill_name_12303379",
+    "mod": "被动技能",
+    "description": "skill_description_12303379",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303380": {
+    "id": 12303380,
+    "name": "skill_name_12303380",
+    "mod": "被动技能",
+    "description": "skill_description_12303380",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303381": {
+    "id": 12303381,
+    "name": "skill_name_12303381",
+    "mod": "被动技能",
+    "description": "skill_description_12303381",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303403": {
+    "id": 12303403,
+    "name": "skill_name_12303403",
+    "mod": "被动技能",
+    "description": "skill_description_12303403",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303402": {
+    "id": 12303402,
+    "name": "skill_name_12303402",
+    "mod": "被动技能",
+    "description": "skill_description_12303402",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303401": {
+    "id": 12303401,
+    "name": "skill_name_12303401",
+    "mod": "被动技能",
+    "description": "skill_description_12303401",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303400": {
+    "id": 12303400,
+    "name": "skill_name_12303400",
+    "mod": "被动技能",
+    "description": "skill_description_12303400",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303399": {
+    "id": 12303399,
+    "name": "skill_name_12303399",
+    "mod": "被动技能",
+    "description": "skill_description_12303399",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303396": {
+    "id": 12303396,
+    "name": "skill_name_12303396",
+    "mod": "被动技能",
+    "description": "skill_description_12303396",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303397": {
+    "id": 12303397,
+    "name": "skill_name_12303397",
+    "mod": "被动技能",
+    "description": "skill_description_12303397",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303398": {
+    "id": 12303398,
+    "name": "skill_name_12303398",
+    "mod": "被动技能",
+    "description": "skill_description_12303398",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303394": {
+    "id": 12303394,
+    "name": "skill_name_12303394",
+    "mod": "被动技能",
+    "description": "skill_description_12303394",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303392": {
+    "id": 12303392,
+    "name": "skill_name_12303392",
+    "mod": "被动技能",
+    "description": "skill_description_12303392",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303391": {
+    "id": 12303391,
+    "name": "skill_name_12303391",
+    "mod": "被动技能",
+    "description": "skill_description_12303391",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303385": {
+    "id": 12303385,
+    "name": "skill_name_12303385",
+    "mod": "被动技能",
+    "description": "skill_description_12303385",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303384": {
+    "id": 12303384,
+    "name": "skill_name_12303384",
+    "mod": "被动技能",
+    "description": "skill_description_12303384",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303383": {
+    "id": 12303383,
+    "name": "skill_name_12303383",
+    "mod": "被动技能",
+    "description": "skill_description_12303383",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303386": {
+    "id": 12303386,
+    "name": "skill_name_12303386",
+    "mod": "被动技能",
+    "description": "skill_description_12303386",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303389": {
+    "id": 12303389,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303388": {
+    "id": 12303388,
+    "name": "skill_name_12303388",
+    "mod": "被动技能",
+    "description": "skill_description_12303388",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303387": {
+    "id": 12303387,
+    "name": "skill_name_12303387",
+    "mod": "被动技能",
+    "description": "skill_description_12303387",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303390": {
+    "id": 12303390,
+    "name": "skill_name_12303390",
+    "mod": "被动技能",
+    "description": "skill_description_12303390",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303393": {
+    "id": 12303393,
+    "name": "skill_name_12303393",
+    "mod": "被动技能",
+    "description": "skill_description_12303393",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303395": {
+    "id": 12303395,
+    "name": "skill_name_12303395",
+    "mod": "被动技能",
+    "description": "skill_description_12303395",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303404": {
+    "id": 12303404,
+    "name": "skill_name_12303404",
+    "mod": "被动技能",
+    "description": "skill_description_12303404",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303645": {
+    "id": 12303645,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303644": {
+    "id": 12303644,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303643": {
+    "id": 12303643,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303642": {
+    "id": 12303642,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303641": {
+    "id": 12303641,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303407": {
+    "id": 12303407,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303405": {
+    "id": 12303405,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303406": {
+    "id": 12303406,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303648": {
+    "id": 12303648,
+    "name": "skill_name_12303648",
+    "mod": "被动技能",
+    "description": "skill_description_12303648",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303647": {
+    "id": 12303647,
+    "name": "skill_name_12303647",
+    "mod": "被动技能",
+    "description": "skill_description_12303647",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303646": {
+    "id": 12303646,
+    "name": "skill_name_12303646",
+    "mod": "被动技能",
+    "description": "skill_description_12303646",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303654": {
+    "id": 12303654,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [
+      {
+        "isPercent": false,
+        "param": "a"
+      }
+    ],
+    "skillParamList": []
+  },
+  "12303655": {
+    "id": 12303655,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [
+      {
+        "isPercent": false,
+        "param": "a"
+      }
+    ],
+    "skillParamList": []
+  },
+  "12303653": {
+    "id": 12303653,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [
+      {
+        "isPercent": false,
+        "param": "a"
+      }
+    ],
+    "skillParamList": []
+  },
+  "12303652": {
+    "id": 12303652,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [
+      {
+        "isPercent": false,
+        "param": "a"
+      }
+    ],
+    "skillParamList": []
+  },
+  "12303651": {
+    "id": 12303651,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [
+      {
+        "isPercent": false,
+        "param": "a"
+      }
+    ],
+    "skillParamList": []
+  },
+  "12303650": {
+    "id": 12303650,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [
+      {
+        "isPercent": false,
+        "param": "a"
+      }
+    ],
+    "skillParamList": []
+  },
+  "12303649": {
+    "id": 12303649,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [
+      {
+        "isPercent": false,
+        "param": "a"
+      }
+    ],
+    "skillParamList": []
+  },
+  "12303671": {
+    "id": 12303671,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303672": {
+    "id": 12303672,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303673": {
+    "id": 12303673,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303674": {
+    "id": 12303674,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303698": {
+    "id": 12303698,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303702": {
+    "id": 12303702,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303703": {
+    "id": 12303703,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303704": {
+    "id": 12303704,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303661": {
+    "id": 12303661,
+    "name": "skill_name_12303661",
+    "mod": "被动技能",
+    "description": "skill_description_12303661",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303662": {
+    "id": 12303662,
+    "name": "skill_name_12303662",
+    "mod": "被动技能",
+    "description": "skill_description_12303662",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303658": {
+    "id": 12303658,
+    "name": "skill_name_12303658",
+    "mod": "被动技能",
+    "description": "skill_description_12303658",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303659": {
+    "id": 12303659,
+    "name": "skill_name_12303659",
+    "mod": "被动技能",
+    "description": "skill_description_12303659",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303660": {
+    "id": 12303660,
+    "name": "skill_name_12303660",
+    "mod": "被动技能",
+    "description": "skill_description_12303660",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303669": {
+    "id": 12303669,
+    "name": "skill_name_12303669",
+    "mod": "被动技能",
+    "description": "skill_description_12303669",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303670": {
+    "id": 12303670,
+    "name": "skill_name_12303670",
+    "mod": "被动技能",
+    "description": "skill_description_12303670",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303663": {
+    "id": 12303663,
+    "name": "skill_name_12303663",
+    "mod": "被动技能",
+    "description": "skill_description_12303663",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303664": {
+    "id": 12303664,
+    "name": "skill_name_12303664",
+    "mod": "被动技能",
+    "description": "skill_description_12303664",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303656": {
+    "id": 12303656,
+    "name": "skill_name_12303656",
+    "mod": "被动技能",
+    "description": "skill_description_12303656",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303657": {
+    "id": 12303657,
+    "name": "skill_name_12303657",
+    "mod": "被动技能",
+    "description": "skill_description_12303657",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303667": {
+    "id": 12303667,
+    "name": "skill_name_12303667",
+    "mod": "被动技能",
+    "description": "skill_description_12303667",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303668": {
+    "id": 12303668,
+    "name": "skill_name_12303668",
+    "mod": "被动技能",
+    "description": "skill_description_12303668",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303677": {
+    "id": 12303677,
+    "name": "skill_name_12303677",
+    "mod": "被动技能",
+    "description": "skill_description_12303677",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303678": {
+    "id": 12303678,
+    "name": "skill_name_12303678",
+    "mod": "被动技能",
+    "description": "skill_description_12303678",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303679": {
+    "id": 12303679,
+    "name": "skill_name_12303679",
+    "mod": "被动技能",
+    "description": "skill_description_12303679",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303680": {
+    "id": 12303680,
+    "name": "skill_name_12303680",
+    "mod": "被动技能",
+    "description": "skill_description_12303680",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303681": {
+    "id": 12303681,
+    "name": "skill_name_12303681",
+    "mod": "被动技能",
+    "description": "skill_description_12303681",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303665": {
+    "id": 12303665,
+    "name": "skill_name_12303665",
+    "mod": "被动技能",
+    "description": "skill_description_12303665",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303666": {
+    "id": 12303666,
+    "name": "skill_name_12303666",
+    "mod": "被动技能",
+    "description": "skill_description_12303666",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303676": {
+    "id": 12303676,
+    "name": "skill_name_12303676",
+    "mod": "被动技能",
+    "description": "skill_description_12303676",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303685": {
+    "id": 12303685,
+    "name": "skill_name_12303685",
+    "mod": "被动技能",
+    "description": "skill_description_12303685",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303686": {
+    "id": 12303686,
+    "name": "skill_name_12303686",
+    "mod": "被动技能",
+    "description": "skill_description_12303686",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303687": {
+    "id": 12303687,
+    "name": "skill_name_12303687",
+    "mod": "被动技能",
+    "description": "skill_description_12303687",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303688": {
+    "id": 12303688,
+    "name": "skill_name_12303688",
+    "mod": "被动技能",
+    "description": "skill_description_12303688",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303689": {
+    "id": 12303689,
+    "name": "skill_name_12303689",
+    "mod": "被动技能",
+    "description": "skill_description_12303689",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303682": {
+    "id": 12303682,
+    "name": "skill_name_12303682",
+    "mod": "被动技能",
+    "description": "skill_description_12303682",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303683": {
+    "id": 12303683,
+    "name": "skill_name_12303683",
+    "mod": "被动技能",
+    "description": "skill_description_12303683",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303675": {
+    "id": 12303675,
+    "name": "skill_name_12303675",
+    "mod": "被动技能",
+    "description": "skill_description_12303675",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303693": {
+    "id": 12303693,
+    "name": "skill_name_12303693",
+    "mod": "被动技能",
+    "description": "skill_description_12303693",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303694": {
+    "id": 12303694,
+    "name": "skill_name_12303694",
+    "mod": "被动技能",
+    "description": "skill_description_12303694",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303695": {
+    "id": 12303695,
+    "name": "skill_name_12303695",
+    "mod": "被动技能",
+    "description": "skill_description_12303695",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303696": {
+    "id": 12303696,
+    "name": "skill_name_12303696",
+    "mod": "被动技能",
+    "description": "skill_description_12303696",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303697": {
+    "id": 12303697,
+    "name": "skill_name_12303697",
+    "mod": "被动技能",
+    "description": "skill_description_12303697",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303690": {
+    "id": 12303690,
+    "name": "skill_name_12303690",
+    "mod": "被动技能",
+    "description": "skill_description_12303690",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303691": {
+    "id": 12303691,
+    "name": "skill_name_12303691",
+    "mod": "被动技能",
+    "description": "skill_description_12303691",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303692": {
+    "id": 12303692,
+    "name": "skill_name_12303692",
+    "mod": "被动技能",
+    "description": "skill_description_12303692",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303684": {
+    "id": 12303684,
+    "name": "skill_name_12303684",
+    "mod": "被动技能",
+    "description": "skill_description_12303684",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303699": {
+    "id": 12303699,
+    "name": "skill_name_12303699",
+    "mod": "被动技能",
+    "description": "skill_description_12303699",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303700": {
+    "id": 12303700,
+    "name": "skill_name_12303700",
+    "mod": "被动技能",
+    "description": "skill_description_12303700",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303382": {
+    "id": 12303382,
+    "name": "skill_name_12303382",
+    "mod": "被动技能",
+    "description": "skill_description_12303382",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303701": {
+    "id": 12303701,
+    "name": "skill_name_12303701",
+    "mod": "被动技能",
+    "description": "skill_description_12303701",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303708": {
+    "id": 12303708,
+    "name": "skill_name_12303708",
+    "mod": "被动技能",
+    "description": "skill_description_12303708",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303709": {
+    "id": 12303709,
+    "name": "skill_name_12303709",
+    "mod": "主动技能",
+    "description": "skill_description_12303709",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600481,
+    "leaderCardConditionDesc": "",
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303710": {
+    "id": 12303710,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303530": {
+    "id": 12303530,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303711": {
+    "id": 12303711,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [
+      {
+        "isPercent": false,
+        "param": "a"
+      }
+    ],
+    "skillParamList": []
+  },
+  "12303712": {
+    "id": 12303712,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [
+      {
+        "isPercent": false,
+        "param": "a"
+      }
+    ],
+    "skillParamList": []
+  },
+  "12303713": {
+    "id": 12303713,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [
+      {
+        "isPercent": false,
+        "param": "a"
+      }
+    ],
+    "skillParamList": []
+  },
+  "12303714": {
+    "id": 12303714,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [
+      {
+        "isPercent": false,
+        "param": "a"
+      }
+    ],
+    "skillParamList": []
+  },
+  "12303715": {
+    "id": 12303715,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [
+      {
+        "isPercent": false,
+        "param": "a"
+      }
+    ],
+    "skillParamList": []
+  },
+  "12303716": {
+    "id": 12303716,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [
+      {
+        "isPercent": false,
+        "param": "a"
+      }
+    ],
+    "skillParamList": []
+  },
+  "12303717": {
+    "id": 12303717,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303718": {
+    "id": 12303718,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [
+      {
+        "isPercent": false,
+        "param": "a"
+      }
+    ],
+    "skillParamList": []
+  },
+  "12303719": {
+    "id": 12303719,
+    "name": "",
+    "mod": "被动技能",
+    "description": "skill_description_12303719",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303720": {
+    "id": 12303720,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303725": {
+    "id": 12303725,
+    "name": "skill_name_12303725",
+    "mod": "主动技能",
+    "description": "skill_description_12303725",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600474,
+    "leaderCardConditionDesc": "",
+    "desParamList": [],
+    "skillParamList": [
+      {}
+    ]
+  },
+  "12303724": {
+    "id": 12303724,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303726": {
+    "id": 12303726,
+    "name": "skill_name_12303726",
+    "mod": "主动技能",
+    "description": "skill_description_12303726",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": 10600483,
+    "leaderCardConditionDesc": "",
+    "desParamList": [],
+    "skillParamList": [
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      }
+    ]
+  },
+  "12303727": {
+    "id": 12303727,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303728": {
+    "id": 12303728,
+    "name": "skill_name_12303728",
+    "mod": "主动技能",
+    "description": "skill_description_12303728",
+    "detailDescription": "skill_detailDescription_12303728",
+    "ExSkillList": [],
+    "cardID": 10600485,
+    "leaderCardConditionDesc": "",
+    "desParamList": [],
+    "skillParamList": [
+      {
+        "skillRateA_SN": 160000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 168000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 176000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 184000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 192000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 200000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 208000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 216000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 224000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 232000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 240000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      }
+    ]
+  },
+  "12303729": {
+    "id": 12303729,
+    "name": "skill_name_12303729",
+    "mod": "主动技能",
+    "description": "skill_description_12303729",
+    "detailDescription": "skill_detailDescription_12303729",
+    "ExSkillList": [
+      {
+        "ExSkillName": 12303738,
+        "isNeturality": false
+      }
+    ],
+    "cardID": 10600484,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12303729",
+    "desParamList": [],
+    "skillParamList": [
+      {
+        "skillRateA_SN": 240000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 247200,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 254400,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 261600,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 268800,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 276000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 283200,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 290400,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 297600,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 304800,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 312000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      }
+    ]
+  },
+  "12303730": {
+    "id": 12303730,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303731": {
+    "id": 12303731,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303732": {
+    "id": 12303732,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303733": {
+    "id": 12303733,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303734": {
+    "id": 12303734,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303735": {
+    "id": 12303735,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303736": {
+    "id": 12303736,
+    "name": "skill_name_12303736",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": [
+      {
+        "skillRateA_SN": 0,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      }
+    ]
+  },
+  "12303737": {
+    "id": 12303737,
+    "name": "",
+    "mod": "被动技能",
+    "description": "",
+    "detailDescription": "",
+    "ExSkillList": [],
+    "cardID": null,
+    "leaderCardConditionDesc": null,
+    "desParamList": [],
+    "skillParamList": []
+  },
+  "12303738": {
+    "id": 12303738,
+    "name": "skill_name_12303738",
+    "mod": "主动技能",
+    "description": "skill_description_12303738",
+    "detailDescription": "skill_detailDescription_12303738",
+    "ExSkillList": [],
+    "cardID": 10600486,
+    "leaderCardConditionDesc": "skill_leaderCardConditionDesc_12303738",
+    "desParamList": [],
+    "skillParamList": [
+      {
+        "skillRateA_SN": 240000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 247200,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 254400,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 261600,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 268800,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 276000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 283200,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 290400,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 297600,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 304800,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      },
+      {
+        "skillRateA_SN": 312000,
+        "skillRateB_SN": 0,
+        "skillRateC_SN": 0,
+        "skillRateD_SN": 0,
+        "skillRateE_SN": 0,
+        "skillRateF_SN": 0,
+        "skillRateG_SN": 0,
+        "skillRateH_SN": 0,
+        "skillRateI_SN": 0,
+        "skillRateJ_SN": 0,
+        "skillRateL_SN": 0,
+        "skillRateT_SN": 0
+      }
+    ]
+  },
+  "12303739": {
+    "id": 12303739,
     "name": "",
     "mod": "被动技能",
     "description": "",
