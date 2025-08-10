@@ -1762,5 +1762,12 @@
     "desc": "home_skill_desc_83900253",
     "param": 0.1,
     "homeSkillType": "AddTrailerSpeed"
+  },
+  "83900254": {
+    "id": 83900254,
+    "name": "home_skill_name_83900254",
+    "desc": "home_skill_desc_83900254",
+    "param": 5,
+    "homeSkillType": "RiseSpaceLimited"
   }
 }
