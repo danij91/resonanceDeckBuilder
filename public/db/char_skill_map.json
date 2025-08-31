@@ -864,5 +864,16 @@
       12303814
     ],
     "notFromCharacters": []
+  },
+  "10001003": {
+    "skills": [
+      12303869,
+      12303866,
+      12303868
+    ],
+    "relatedSkills": [],
+    "notFromCharacters": [
+      12300683
+    ]
   }
 }
