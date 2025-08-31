@@ -3183,7 +3183,7 @@
       }
     ],
     "tk_SN": null,
-    "hp_SN": 67000000,
+    "hp_SN": 73000000,
     "def_SN": 710000,
     "atk_SN": 690000,
     "atkSpeed_SN": 1000000,
@@ -7062,6 +7062,9 @@
       },
       {
         "skillId": 12303542
+      },
+      {
+        "skillId": 12303882
       }
     ],
     "skillList": [
@@ -7288,19 +7291,19 @@
     "luck_SN": 0,
     "talentList": [
       {
-        "talentId": 12800617
+        "talentId": 12800619
       },
       {
-        "talentId": 12800619
+        "talentId": 12800618
       },
       {
         "talentId": 12800616
       },
       {
-        "talentId": 12800615
+        "talentId": 12800617
       },
       {
-        "talentId": 12800618
+        "talentId": 12800615
       }
     ],
     "breakthroughList": [
@@ -7458,7 +7461,7 @@
     "id": 10000942,
     "name": "char_name_10000942",
     "quality": "FiveStar",
-    "sideId": 12601524,
+    "sideId": 12601877,
     "passiveSkillList": [],
     "skillList": [
       {
@@ -7535,17 +7538,118 @@
     ],
     "homeSkillList": [
       {
-        "id": 83900062,
-        "nextIndex": 3,
+        "id": 83900251,
+        "nextIndex": 0,
         "resonanceLv": 1
       },
       {
-        "id": 83900034,
-        "nextIndex": 0,
+        "id": 83900076,
+        "nextIndex": 3,
         "resonanceLv": 4
       },
       {
-        "id": 83900061,
+        "id": 83900164,
+        "nextIndex": 4294967295,
+        "resonanceLv": 5
+      }
+    ]
+  },
+  "10001003": {
+    "id": 10001003,
+    "name": "char_name_10001003",
+    "quality": "FiveStar",
+    "sideId": 12600026,
+    "passiveSkillList": [
+      {
+        "skillId": 12303872
+      }
+    ],
+    "skillList": [
+      {
+        "num": 2,
+        "skillId": 12303869
+      },
+      {
+        "num": 1,
+        "skillId": 12303866
+      },
+      {
+        "num": 1,
+        "skillId": 12303868
+      }
+    ],
+    "tk_SN": null,
+    "hp_SN": 80000000,
+    "def_SN": 800000,
+    "atk_SN": 800000,
+    "atkSpeed_SN": 1000000,
+    "luck_SN": 0,
+    "talentList": [
+      {
+        "talentId": 12800638
+      },
+      {
+        "talentId": 12800639
+      },
+      {
+        "talentId": 12800635
+      },
+      {
+        "talentId": 12800637
+      },
+      {
+        "talentId": 12800636
+      }
+    ],
+    "breakthroughList": [
+      {
+        "breakthroughId": 12100906
+      },
+      {
+        "breakthroughId": 12100907
+      },
+      {
+        "breakthroughId": 12100910
+      },
+      {
+        "breakthroughId": 12100903
+      },
+      {
+        "breakthroughId": 12100909
+      },
+      {
+        "breakthroughId": 12100905
+      }
+    ],
+    "line": 3,
+    "subLine": 242,
+    "identity": "char_identity_10001003",
+    "ability": "char_ability_10001003",
+    "controllerId": 10300633,
+    "equipmentSlotList": [
+      {
+        "tagID": 12600155
+      },
+      {
+        "tagID": 12600161
+      },
+      {
+        "tagID": 12600162
+      }
+    ],
+    "homeSkillList": [
+      {
+        "id": 83900256,
+        "nextIndex": 0,
+        "resonanceLv": 1
+      },
+      {
+        "id": 83900076,
+        "nextIndex": 3,
+        "resonanceLv": 4
+      },
+      {
+        "id": 83900257,
         "nextIndex": 4294967295,
         "resonanceLv": 5
       }

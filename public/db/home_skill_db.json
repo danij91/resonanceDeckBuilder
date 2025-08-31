@@ -1769,5 +1769,26 @@
     "desc": "home_skill_desc_83900254",
     "param": 5,
     "homeSkillType": "RiseSpaceLimited"
+  },
+  "83900251": {
+    "id": 83900251,
+    "name": "home_skill_name_83900251",
+    "desc": "home_skill_desc_83900251",
+    "param": 0.2,
+    "homeSkillType": "AddTypeQty"
+  },
+  "83900256": {
+    "id": 83900256,
+    "name": "home_skill_name_83900256",
+    "desc": "home_skill_desc_83900256",
+    "param": 0.2,
+    "homeSkillType": "AddTypeQty"
+  },
+  "83900257": {
+    "id": 83900257,
+    "name": "home_skill_name_83900257",
+    "desc": "home_skill_desc_83900257",
+    "param": 0.1,
+    "homeSkillType": "AddTypeQty"
   }
 }

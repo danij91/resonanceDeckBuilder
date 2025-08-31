@@ -7327,5 +7327,52 @@
         "num_SN": 1500000
       }
     ]
+  },
+  "12100905": {
+    "id": 12100905,
+    "name": "break_name_12100905",
+    "desc": "break_desc_12100905",
+    "attributeList": []
+  },
+  "12100906": {
+    "id": 12100906,
+    "name": "",
+    "desc": "",
+    "attributeList": []
+  },
+  "12100909": {
+    "id": 12100909,
+    "name": "break_name_12100909",
+    "desc": "break_desc_12100909",
+    "attributeList": []
+  },
+  "12100910": {
+    "id": 12100910,
+    "name": "break_name_12100910",
+    "desc": "break_desc_12100910",
+    "attributeList": []
+  },
+  "12100907": {
+    "id": 12100907,
+    "name": "break_name_12100907",
+    "desc": "break_desc_12100907",
+    "attributeList": []
+  },
+  "12100903": {
+    "id": 12100903,
+    "name": "break_name_12100903",
+    "desc": "break_desc_12100903",
+    "attributeList": [
+      {
+        "attributeType": "Atk",
+        "numType": "Number",
+        "num_SN": 1500000
+      },
+      {
+        "attributeType": "Def",
+        "numType": "Number",
+        "num_SN": 1500000
+      }
+    ]
   }
 }
