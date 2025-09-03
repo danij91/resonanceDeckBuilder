@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState, useEffect, useRef } from "react"
-import { Globe, Download, Upload, RefreshCw, Share2, HelpCircle, Save, FolderOpen, UsersRound } from "lucide-react"
+import { Globe, Download, Upload, RefreshCw, Share2, HelpCircle, Save, FolderOpen, UsersRound, Gift } from "lucide-react"
 import { StylizedTitle } from "./stylized-title"
 import { HelpModal } from "./ui/modal/HelpModal"
 import { useLanguage } from "../contexts/language-context"
@@ -17,6 +17,8 @@ interface TopBarProps {
   onSave: () => void // 추가: 저장 버튼 핸들러
   onLoad: () => void // 추가: 불러오기 버튼 핸들러
   onSortCharacters?: () => void
+  onShowPromo: () => void // 추가: 홍보 모달 핸들러
+  customPromoIconUrl?: string // 추가: 커스텀 홍보 아이콘 URL
   contentRef: React.RefObject<HTMLElement> // 추가: 캡처할 컨텐츠 참조
 }
 
@@ -28,6 +30,8 @@ export function TopBar({
   onSave,
   onLoad,
   onSortCharacters,
+  onShowPromo,
+  customPromoIconUrl,
   contentRef,
 }: TopBarProps) {
   const { currentLanguage, supportedLanguages, getTranslatedString, changeLanguage, isChangingLanguage } = useLanguage()
@@ -139,6 +143,30 @@ export function TopBar({
             {/* 버튼들 - 작은 화면에서는 가로 스크롤, 큰 화면에서는 오른쪽 정렬 */}
             {/* 간격 조절 - space-x-3에서 space-x-1로 변경하여 더 많은 버튼이 화면에 들어오도록 함 */}
             <div className="flex items-center space-x-1 sm:space-x-2 mt-2 md:mt-0 overflow-x-auto py-1 justify-end">
+              {/* Promo Button - 제일 왼쪽에 배치 */}
+              <button
+                onClick={onShowPromo}
+                className={`${buttonBaseClass} promo-button overflow-hidden`}
+                aria-label="Check out my new app"
+                title="Check out my new app"
+              >
+                {customPromoIconUrl ? (
+                  <img 
+                    src={customPromoIconUrl} 
+                    alt="App Icon" 
+                    className="w-full h-full object-cover rounded-md"
+                    onError={(e) => {
+                      // 이미지 로드 실패 시 기본 아이콘으로 대체
+                      const target = e.target as HTMLImageElement
+                      target.style.display = 'none'
+                      const fallbackIcon = target.parentElement?.querySelector('.fallback-gift-icon') as HTMLElement
+                      if (fallbackIcon) fallbackIcon.style.display = 'block'
+                    }}
+                  />
+                ) : null}
+                <Gift className={`${iconClass} ${customPromoIconUrl ? 'fallback-gift-icon hidden' : ''}`} />
+              </button>
+
               {/* Language Selector */}
               <div className="relative language-dropdown">
                 <button
