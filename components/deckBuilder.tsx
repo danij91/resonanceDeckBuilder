@@ -16,7 +16,9 @@ import { useDataLoader } from "../hooks/use-data-loader"
 import { LoadingScreen } from "./loading-screen"
 import { SaveDeckModal } from "./ui/modal/SaveDeckModal" // 추가
 import { LoadDeckModal } from "./ui/modal/LoadDeckModal" // 추가
+import { PromotionalModal } from "./promotional-modal" // 추가
 import { getCurrentDeckId, setCurrentDeckId, removeCurrentDeckId, type SavedDeck } from "../utils/local-storage" // 추가
+import { isFirstVisit, markAsVisited } from "../utils/first-visit" // 추가
 
 interface DeckBuilderProps {
   urlDeckCode: string | null
@@ -46,6 +48,11 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
   // 저장/불러오기 모달 상태 추가
   const [showSaveModal, setShowSaveModal] = useState(false)
   const [showLoadModal, setShowLoadModal] = useState(false)
+  
+  // 홍보 모달 상태 추가
+  const [showPromoModal, setShowPromoModal] = useState(false)
+  const [isPromoModalFromButton, setIsPromoModalFromButton] = useState(false) // TopBar 버튼에서 열린 것인지 구분
+  const [customPromoIconUrl, setCustomPromoIconUrl] = useState<string | undefined>('/ko/images/tapntalk.png')
 
   // useDeckBuilder 훅 사용 - 실제 data 객체 전달
   const {
@@ -155,6 +162,18 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
 
     loadFromUrl()
   }, [data, urlDeckCode, importPresetObject, showToast, getTranslatedString, currentLanguage, initialLoadComplete])
+
+  // 처음 방문자 감지 및 홍보 모달 표시
+  useEffect(() => {
+    if (data && initialLoadComplete && !loading && !urlDeckCode) {
+      // URL을 통한 덱 공유가 아닌 경우에만 처음 방문자 체크
+      if (isFirstVisit()) {
+        setShowPromoModal(true)
+        setIsPromoModalFromButton(false) // 자동 표시이므로 false
+        // markAsVisited() 제거 - 사용자가 "오늘 하루 보지 않기"를 클릭할 때만 호출
+      }
+    }
+  }, [data, initialLoadComplete, loading, urlDeckCode])
 
   // 스킬 설명에서 #r 태그를 실제 값으로 대체하는 함수
   const processSkillDescription = useCallback(
@@ -670,6 +689,11 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         onSave={handleOpenSaveModal}
         onLoad={handleOpenLoadModal}
         onSortCharacters={handleSortCharacters} // 정렬 함수 전달
+        onShowPromo={() => {
+          setShowPromoModal(true)
+          setIsPromoModalFromButton(true) // TopBar 버튼에서 열린 것으로 표시
+        }} // 홍보 모달 표시 함수 전달
+        customPromoIconUrl={customPromoIconUrl} // 커스텀 홍보 아이콘 URL 전달
         contentRef={contentRef}
       />
 
@@ -753,6 +777,18 @@ export default function DeckBuilder({ urlDeckCode }: DeckBuilderProps) {
         onLoadDeck={handleLoadDeck}
         onDeleteDeck={handleDeleteDeck}
         onShareDeck={handleShareSavedDeck} // 공유 기능 추가
+      />
+
+      {/* 홍보 모달 */}
+      <PromotionalModal
+        isOpen={showPromoModal}
+        onClose={() => {
+          setShowPromoModal(false)
+          setIsPromoModalFromButton(false) // 모달 닫을 때 상태 초기화
+        }}
+        getTranslatedString={getTranslatedString}
+        customIconUrl={customPromoIconUrl}
+        hideDissmissButton={isPromoModalFromButton} // TopBar 버튼에서 열린 경우 "오늘 하루 보지 않기" 버튼 숨김
       />
     </div>
   )
